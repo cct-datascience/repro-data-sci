@@ -80,56 +80,7 @@ Includes what we left out, when order was changed, and when we did something dif
 
 ------------------------------------------------------------------------
 
-### Lesson 1 {#lesson-1}
-
-#### Topic
-
-Shell scripting
-
-#### Objective
-
-Learners should be comfortable with their file structure and navigating around it using command line commands in RStudio Terminal pane.
-
-#### Installation & materials
-
-1.  [Slides](https://docs.google.com/presentation/d/1RCiJkCre3ePP5tF4YkIU6C5EBtTVj2gv2aFJMpos-B8/edit#slide=id.p)
-2.  [macOS git installation](https://sourceforge.net/projects/git-osx-installer/files/) <!--# Did anyone actually have to install git on macOS -->
-3.  [Windows git installation](https://git-scm.com/download/win)
-4.  [Software Carpentry Unix Shell episode #1](https://swcarpentry.github.io/shell-novice/01-intro)
-5.  [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
-
-##### Modifications
-
--   Use terminal window within RStudio as command line interface
-    -   Start with a brief overview of RStudio panes
-    -   Only need to use Terminal and Files tabs
-    -   Emphasize that Files tab is analogous to file finder
--   Skip all exercises, including "Nelle" example
--   At beginning of episode #2, explain file path using example from instructor's file system; example diagram below
-
-![](figures/file-path-example.png)
-
--   Can also use example diagram for file system using instructor's ![](figures/file-structure-example.png)
-
-#### Teaching notes
-
--   If not already installed, learners should install R and RStudio
--   Need to install git initially for Windows users to have shell commands
-    -   Separate into 2 breakout rooms to install git/GitBash for Windows and Macs
-    -   Restart RStudio after installation
-    -   For Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected
--   Download shell-lesson-data.zip to `Desktop/` location; this won't be referenced in later lessons
--   Emphasize purposes for learning shell
-    -   Helpful for using git and GitHub
-    -   Easier to deal with installation problems
-    -   Understanding file structure and file paths
--   Unzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with `unzip`
-    -   Once unzipped, have everyone share absolute file path to location of file
--   If there's additional time, can also cover [Software Carpentry Unix Shell episode #3](https://swcarpentry.github.io/shell-novice/03-create)
-
-#### Homework
-
-Create diagram, with pen and paper or digitally, of their own file system.
+{{< include lessons/1-shell/notes.qmd >}}
 
 ------------------------------------------------------------------------
 
@@ -307,7 +258,7 @@ If lesson 4 was not covered, do the review section in lesson 4.
 
 -   RStudio
     -   Cover only "Introduction to RStudio" section unless learners need a refresher on R
-    -   Additional keyboard shortcuts from [RStudio's reference list](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
+    -   Additional keyboard shortcuts from [RStudio's reference list](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts) (and mention command palette cmd + shift + P)
 -   Project management
     -   Do "Best practices for project organization" including yellow "Tip: Good Enough Practices for Scientific Computing" box
     -   Then "A possible solution" section about R projects
@@ -588,17 +539,22 @@ None
 
 ## Post-lesson followup sessions
 
-It is optional but encouraged to include one or two followup sessions in this workshop series after the lessons focused on content. These can be used to review material, such as the [Jeopardy game](https://jeopardylabs.com/play/data-science-workshop-review-sessions-1-4) that we created. It can be used to cover a small amount of other material, such as this session we did on "Tips for getting your code to work" (see [slides](https://docs.google.com/presentation/d/1T0emX_CyvRH9QDXGzYUq0bwTw2_Oi4PPra_DPYbBeC0/edit#slide=id.p)). And it can be used for attendees to present the work that they've done as demos or "show and tells". 
+It is optional but encouraged to include one or two followup sessions in this workshop series after the lessons focused on content.
+These can be used to review material, such as the [Jeopardy game](https://jeopardylabs.com/play/data-science-workshop-review-sessions-1-4) that we created.
+It can be used to cover a small amount of other material, such as this session we did on "Tips for getting your code to work" (see [slides](https://docs.google.com/presentation/d/1T0emX_CyvRH9QDXGzYUq0bwTw2_Oi4PPra_DPYbBeC0/edit#slide=id.p)).
+And it can be used for attendees to present the work that they've done as demos or "show and tells".
 
----
+------------------------------------------------------------------------
 
 ## Technical notes
- - One early problem occurred when students were unsure of which 'Documents' or 'Desktop' folder they were saving to, which made navigating filepaths tricky. Note that on some PCs, the Windows OneDrive backup folders are saved to by default, but students should navigate to `C:/Users/username/Documents` or `C:/Users/username/Desktop`
-- R packages sometimes did not install properly. 
-    - One reason was that some usernames included special characters, which were not interpreted correctly. 
-    - Another included R being installed on a remote server, rather directly on the local machine
+
+-   One early problem occurred when students were unsure of which 'Documents' or 'Desktop' folder they were saving to, which made navigating filepaths tricky. Note that on some PCs, the Windows OneDrive backup folders are saved to by default, but students should navigate to `C:/Users/username/Documents` or `C:/Users/username/Desktop`
+-   R packages sometimes did not install properly.
+    -   One reason was that some usernames included special characters, which were not interpreted correctly.
+    -   Another included R being installed on a remote server, rather directly on the local machine
 
 ## Acknowlegements
 
-Thanks to Teresa Mourad and Fred Abbott of the Ecological Society of America, who invited us to teach the first half of the [Critical Skills to Scale Up Ecology workshop](https://www.esa.org/seeds/meetings/2021-gradstudent-critical-skills-workshop/), which planted the seed for developing this curriculum. We also appreciate the [inaugural class](https://datascience.cals.arizona.edu/spring-2022-workshop-series-reproducibility-and-data-science-skills) of this workshop series at UA in Spring 2022, who inspired deeper conversation about why and how to teach this course. Finally, a huge thanks to [The Carpentries organization](https://carpentries.org/) for generating all of the volunteer-created content we used here, and for training both of us in pedagogy. 
-
+Thanks to Teresa Mourad and Fred Abbott of the Ecological Society of America, who invited us to teach the first half of the [Critical Skills to Scale Up Ecology workshop](https://www.esa.org/seeds/meetings/2021-gradstudent-critical-skills-workshop/), which planted the seed for developing this curriculum.
+We also appreciate the [inaugural class](https://datascience.cals.arizona.edu/spring-2022-workshop-series-reproducibility-and-data-science-skills) of this workshop series at UA in Spring 2022, who inspired deeper conversation about why and how to teach this course.
+Finally, a huge thanks to [The Carpentries organization](https://carpentries.org/) for generating all of the volunteer-created content we used here, and for training both of us in pedagogy.
