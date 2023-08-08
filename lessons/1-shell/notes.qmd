@@ -11,8 +11,8 @@ Learners should be comfortable with their file structure and navigating around i
 #### Installation & materials
 
 1.  [Slides](https://docs.google.com/presentation/d/1RCiJkCre3ePP5tF4YkIU6C5EBtTVj2gv2aFJMpos-B8/edit#slide=id.p)
-2.  [macOS git installation](https://sourceforge.net/projects/git-osx-installer/files/) <!--# Did anyone actually have to install git on macOS -->
-3.  [Windows git installation](https://git-scm.com/download/win)
+2.  [macOS git installation](https://git-scm.com/download/mac)
+3.  [Windows git installation](https://git-scm.com/download/win) (detailed step-by-step [here](https://carpentries.github.io/workshop-template/#setup))
 4.  [Software Carpentry Unix Shell episode #1](https://swcarpentry.github.io/shell-novice/01-intro)
 5.  [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
 
@@ -33,7 +33,9 @@ Learners should be comfortable with their file structure and navigating around i
 
 -   If not already installed, learners should install R and RStudio
 -   Need to install git initially for Windows users to have shell commands
-    -   Separate into 2 breakout rooms to install git/GitBash for Windows and Macs
+    -   Separate into 2 breakout rooms to install Git for Windows and macOS
+    -   macOS may have git already, can check with `which git` or `git --version`
+    -   `git --version` may in fact prompt macOS users to install xcode command line tools, which comes with git.
     -   Restart RStudio after installation
     -   For Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected
 -   Download shell-lesson-data.zip to `Desktop/` location; this won't be referenced in later lessons

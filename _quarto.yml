@@ -8,6 +8,9 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - text: Instructor Notes
+        menu:
+          - "lessons/1-shell/notes.qmd"
 
 format:
   html:
