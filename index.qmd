@@ -2,17 +2,8 @@
 title: "Reproducibility & Data Science in R Curriculum"
 ---
 
-### 
+```{r}
+#| echo: false
+read.csv("schedule.csv") |> knitr::kable()
+```
 
-| Lesson      | Theme               | Topic                                                     | Notes                                                                                           |
-|-------------|------------------------|----------------------|-------------|
-| 1           | Share & collaborate | Shell scripting                                           | Intro, install git (windows), basic shell                                                       |
-| 2           | Share & collaborate | Version control with git & GitHub                         | Basic git with shell, then into RStudio to connect to GitHub (e.g. with `usethis::use_github()` |
-| 3           | Share & collaborate | Collaborating with GitHub                                 | branches & PRs & forks maybe                                                                    |
-| 4           | Continued learning  | Getting Help with Code                                    | GH Issues & discussions. `reprex` package & concept (this is not 2 hrs)                         |
-| 5           | Manage & organize   | [Project management and coding best practices](#lesson-5) | (is this 2 hours?)                                                                              |
-| 6 (modular) | Repeat & reproduce  | [Intermediate R programming I](#lesson-6)                 |                                                                                                 |
-| 7 (modular) | Repeat & reproduce  | [Intermediate R programming II](#lesson-7)                |                                                                                                 |
-| 8 (modular) | Clean & plot        | [Data manipulation](#lesson-8)                            |                                                                                                 |
-| 9 (modular) | Clean & plot        | [Data visualization](#lesson-9)                           |                                                                                                 |
-| 10          | Document & publish  | [Documentation](#lesson-10)                               |                                                                                                 |

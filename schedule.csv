@@ -1,0 +1,11 @@
+Lesson,Theme,Topic,Notes
+1,Manage & Organize,Project managment and coding best practices,"Also, setup RStudio for reproducibility"
+2,Share & Collaborate,Shell scripting,"Install git, carpentries shell episodes 1 & 2"
+3,Share & Collaborate,Version control with git,"git novice lessons 2-4, then git pane of RStudio"
+4,Share & Collaborate,Developing code on GitHub,"git_sitrep(), use_github(), git novice lesson 7"
+5,Share & Collaborate,Collaborating with GitHub,"git novice lesson 8, pr_init(), pr_push(), pr_finish()"
+6,Tidy & Wrangle,Data Manipulation,data carpentry R ecology episodes 2 & 3
+7,Repeat & Reproduce,Intermediate R programming I,functions
+8,Repeat & Reproduce,Intermediate R programming II,iteration (and anonymous functions)
+9,Document & Publish,Documentation and literate programming,"README.md, Quarto"
+10,Document & Publish,Getting credit for your hard work,"renv, LICENSE, CITATION.cff, Zenodo, GitHub releases"
