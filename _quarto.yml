@@ -3,6 +3,8 @@ project:
 
 website:
   title: "repro-data-sci"
+  repo-url: https://github.com/cct-datascience/repro-data-sci
+  site-url: https://cct-datascience.github.io/repro-data-sci/
   navbar:
     left:
       - href: index.qmd
