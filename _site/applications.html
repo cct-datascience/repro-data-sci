@@ -1,0 +1,3185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.288">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>repro-data-sci - Applications for Fall Workshop Series</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">repro-data-sci</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ajay-perumbeti" id="toc-ajay-perumbeti" class="nav-link active" data-scroll-target="#ajay-perumbeti">Ajay Perumbeti</a></li>
+  <li><a href="#allison-newton" id="toc-allison-newton" class="nav-link" data-scroll-target="#allison-newton">Allison Newton</a></li>
+  <li><a href="#alma-anides-morales" id="toc-alma-anides-morales" class="nav-link" data-scroll-target="#alma-anides-morales">Alma Anides Morales</a></li>
+  <li><a href="#anna-leach" id="toc-anna-leach" class="nav-link" data-scroll-target="#anna-leach">Anna Leach</a></li>
+  <li><a href="#annalysa-lovos" id="toc-annalysa-lovos" class="nav-link" data-scroll-target="#annalysa-lovos">Annalysa Lovos</a></li>
+  <li><a href="#bryan-blue" id="toc-bryan-blue" class="nav-link" data-scroll-target="#bryan-blue">Bryan Blue</a></li>
+  <li><a href="#bryan-roxas" id="toc-bryan-roxas" class="nav-link" data-scroll-target="#bryan-roxas">Bryan Roxas</a></li>
+  <li><a href="#damian-barraza" id="toc-damian-barraza" class="nav-link" data-scroll-target="#damian-barraza">Damian Barraza</a></li>
+  <li><a href="#derek-rice" id="toc-derek-rice" class="nav-link" data-scroll-target="#derek-rice">Derek Rice</a></li>
+  <li><a href="#edwin-alvarado-mena" id="toc-edwin-alvarado-mena" class="nav-link" data-scroll-target="#edwin-alvarado-mena">Edwin Alvarado-Mena</a></li>
+  <li><a href="#eldridge-wisely" id="toc-eldridge-wisely" class="nav-link" data-scroll-target="#eldridge-wisely">Eldridge Wisely</a></li>
+  <li><a href="#ellie-broadman" id="toc-ellie-broadman" class="nav-link" data-scroll-target="#ellie-broadman">Ellie Broadman</a></li>
+  <li><a href="#geoffrey-finch" id="toc-geoffrey-finch" class="nav-link" data-scroll-target="#geoffrey-finch">Geoffrey Finch</a></li>
+  <li><a href="#giovanni-melandri" id="toc-giovanni-melandri" class="nav-link" data-scroll-target="#giovanni-melandri">Giovanni Melandri</a></li>
+  <li><a href="#jordan-gunning" id="toc-jordan-gunning" class="nav-link" data-scroll-target="#jordan-gunning">Jordan Gunning</a></li>
+  <li><a href="#joshua-oyekanmi" id="toc-joshua-oyekanmi" class="nav-link" data-scroll-target="#joshua-oyekanmi">Joshua Oyekanmi</a></li>
+  <li><a href="#katherine-king" id="toc-katherine-king" class="nav-link" data-scroll-target="#katherine-king">Katherine King</a></li>
+  <li><a href="#kylie-boyd" id="toc-kylie-boyd" class="nav-link" data-scroll-target="#kylie-boyd">Kylie Boyd</a></li>
+  <li><a href="#likith-kumar-dundigalla" id="toc-likith-kumar-dundigalla" class="nav-link" data-scroll-target="#likith-kumar-dundigalla">Likith Kumar Dundigalla</a></li>
+  <li><a href="#madeleine-wallace" id="toc-madeleine-wallace" class="nav-link" data-scroll-target="#madeleine-wallace">Madeleine Wallace</a></li>
+  <li><a href="#madeleine-deblois" id="toc-madeleine-deblois" class="nav-link" data-scroll-target="#madeleine-deblois">Madeleine deBlois</a></li>
+  <li><a href="#mariam-hovhannisyan" id="toc-mariam-hovhannisyan" class="nav-link" data-scroll-target="#mariam-hovhannisyan">Mariam Hovhannisyan</a></li>
+  <li><a href="#marlon-de-la-pena-cuao" id="toc-marlon-de-la-pena-cuao" class="nav-link" data-scroll-target="#marlon-de-la-pena-cuao">Marlon De La Pena Cuao</a></li>
+  <li><a href="#mary-ahern" id="toc-mary-ahern" class="nav-link" data-scroll-target="#mary-ahern">Mary Ahern</a></li>
+  <li><a href="#meccah-jarrah" id="toc-meccah-jarrah" class="nav-link" data-scroll-target="#meccah-jarrah">Meccah Jarrah</a></li>
+  <li><a href="#michael-hernandez" id="toc-michael-hernandez" class="nav-link" data-scroll-target="#michael-hernandez">Michael Hernandez</a></li>
+  <li><a href="#parker" id="toc-parker" class="nav-link" data-scroll-target="#parker">Parker</a></li>
+  <li><a href="#pranshu-singh-rawat" id="toc-pranshu-singh-rawat" class="nav-link" data-scroll-target="#pranshu-singh-rawat">Pranshu Singh Rawat</a></li>
+  <li><a href="#rachel-fernandez" id="toc-rachel-fernandez" class="nav-link" data-scroll-target="#rachel-fernandez">Rachel Fernandez</a></li>
+  <li><a href="#rachel-gildersleeve" id="toc-rachel-gildersleeve" class="nav-link" data-scroll-target="#rachel-gildersleeve">Rachel Gildersleeve</a></li>
+  <li><a href="#rachel-leih" id="toc-rachel-leih" class="nav-link" data-scroll-target="#rachel-leih">Rachel Leih</a></li>
+  <li><a href="#renee-grambihler" id="toc-renee-grambihler" class="nav-link" data-scroll-target="#renee-grambihler">Renee Grambihler</a></li>
+  <li><a href="#rohit-hemaraja" id="toc-rohit-hemaraja" class="nav-link" data-scroll-target="#rohit-hemaraja">Rohit Hemaraja</a></li>
+  <li><a href="#rongbo-jin" id="toc-rongbo-jin" class="nav-link" data-scroll-target="#rongbo-jin">Rongbo Jin</a></li>
+  <li><a href="#rosa-luna" id="toc-rosa-luna" class="nav-link" data-scroll-target="#rosa-luna">Rosa Luna</a></li>
+  <li><a href="#ryan" id="toc-ryan" class="nav-link" data-scroll-target="#ryan">Ryan</a></li>
+  <li><a href="#sarah-britton" id="toc-sarah-britton" class="nav-link" data-scroll-target="#sarah-britton">Sarah Britton</a></li>
+  <li><a href="#sarah-leighton" id="toc-sarah-leighton" class="nav-link" data-scroll-target="#sarah-leighton">Sarah Leighton</a></li>
+  <li><a href="#simone-williams" id="toc-simone-williams" class="nav-link" data-scroll-target="#simone-williams">Simone Williams</a></li>
+  <li><a href="#tianyi-zhang" id="toc-tianyi-zhang" class="nav-link" data-scroll-target="#tianyi-zhang">Tianyi Zhang</a></li>
+  <li><a href="#ujjal-jyoti-phukan" id="toc-ujjal-jyoti-phukan" class="nav-link" data-scroll-target="#ujjal-jyoti-phukan">Ujjal Jyoti Phukan</a></li>
+  <li><a href="#xue-pan" id="toc-xue-pan" class="nav-link" data-scroll-target="#xue-pan">Xue Pan</a></li>
+  <li><a href="#yijyun-lin" id="toc-yijyun-lin" class="nav-link" data-scroll-target="#yijyun-lin">YIJYUN LIN</a></li>
+  <li><a href="#yijyun-lin-1" id="toc-yijyun-lin-1" class="nav-link" data-scroll-target="#yijyun-lin-1">YIJYUN LIN</a></li>
+  <li><a href="#zoe-scott" id="toc-zoe-scott" class="nav-link" data-scroll-target="#zoe-scott">Zoe Scott</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Applications for Fall Workshop Series</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+<section id="ajay-perumbeti" class="level2">
+<h2 class="anchored" data-anchor-id="ajay-perumbeti">Ajay Perumbeti</h2>
+<p>Post-doc | Biomedical Informatics | <a href="mailto:aperumbe@arizona.edu" class="email">aperumbe@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for">What are some common tasks you currently use R for?</h4>
+<p>I am currently using it for Transcriptome analysis, and electronic health record analysis.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I have found that I still struggle with data formatting errors when using analysis libraries, that take me a long time to resolve.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples." class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I would like to create strong analytic pipelines that can withstand repeat analysis, new data sets, and structured so they can be adapted to new similar, but not exactly the same problems.</p>
+</section>
+</section>
+<section id="allison-newton" class="level2">
+<h2 class="anchored" data-anchor-id="allison-newton">Allison Newton</h2>
+<p>Graduate student | Natural Resources and the Environment | <a href="mailto:canewton@arizona.edu" class="email">canewton@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-1" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-1">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-1" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-1">What are some common tasks you currently use R for?</h4>
+<p>Reformat data, visualize data, analyze data</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-1" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-1">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Too much information online, couldn’t get code to work</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-1" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-1">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>How to use github to share code and for version control. Better ways to organize code or code more efficiently (especially when reformatting).</p>
+</section>
+</section>
+<section id="alma-anides-morales" class="level2">
+<h2 class="anchored" data-anchor-id="alma-anides-morales">Alma Anides Morales</h2>
+<p>Graduate student | Environmental Science | <a href="mailto:Aanides@arizona.edu" class="email">Aanides@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-2" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-2">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-2" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-2">What are some common tasks you currently use R for?</h4>
+<p>Data visualization, cleaning up data, perform statistical analysis</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-2" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-2">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Getting data into format where R could read it the way I wanted to</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-2" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-2">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Geospatial analysis Creating graphic, maps, and charts Pulling large temporal scale climate data from government websites (precipitation, evapotranspiration, etc)</p>
+</section>
+</section>
+<section id="anna-leach" class="level2">
+<h2 class="anchored" data-anchor-id="anna-leach">Anna Leach</h2>
+<p>Graduate student | School of Information | <a href="mailto:arleach@arizona.edu" class="email">arleach@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-3" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-3">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-3" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-3">What are some common tasks you currently use R for?</h4>
+<p>data mining, cleaning, and organization. just start playing with social network analysis.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-3" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-3">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Forgetting the process when I am on my own.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-3" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-3">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Clean up my dissertation data so that my committee can access it easily.</p>
+</section>
+</section>
+<section id="annalysa-lovos" class="level2">
+<h2 class="anchored" data-anchor-id="annalysa-lovos">Annalysa Lovos</h2>
+<p>Graduate student | Psychology | <a href="mailto:aklovos@arizona.edu" class="email">aklovos@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-4" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-4">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-4" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-4">What are some common tasks you currently use R for?</h4>
+<p>Statistics (linera models, anova, permanova), cleaning dataframes</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-4" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-4">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Didn’t need to actually use them at the time</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-4" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-4">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I will have finished data collection for my dissertation in the Fall and will be ready to clean my data and run statistics. THis course will be very timely in helping me refamiliarize myself with shell commands, get confident with git, and all-around skill-building with R.</p>
+</section>
+</section>
+<section id="bryan-blue" class="level2">
+<h2 class="anchored" data-anchor-id="bryan-blue">Bryan Blue</h2>
+<p>Graduate student | Biosystems Engineering | <a href="mailto:bryanblue@arizona.edu" class="email">bryanblue@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-5" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-5">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-5" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-5">What are some common tasks you currently use R for?</h4>
+<p>Data analysis for climate and experiment data collected using a data logger from the Tropical Rainforest at Biosphere 2.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-5" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-5">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Writing clean R code, and I found that there are not a lot of others that conform to, or know how to, follow the same conventions.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-5" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-5">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I am collecting environment data from within Biosphere 2’s tropical rain forest. I will need to use this along with my data logger information to produce a report that will be able to be compared to very limited previous work. The previous work does not share data, calculations, data analysis methods. Ideally, I would like to lay a framework for future work that others could use to take a more standardized approach to these types of experiments. This will allow for a more direct comparison between experiments.</p>
+</section>
+</section>
+<section id="bryan-roxas" class="level2">
+<h2 class="anchored" data-anchor-id="bryan-roxas">Bryan Roxas</h2>
+<p>Research professional | Animal and Comparative Biomedical Sciences | <a href="mailto:baproxas@arizona.edu" class="email">baproxas@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-6" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-6">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-6" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-6">What are some common tasks you currently use R for?</h4>
+<p>R Shiny app development for gene expression data</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-6" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-6">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Making a github page for the app</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-6" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-6">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I would like to share the app documentation using github</p>
+</section>
+</section>
+<section id="damian-barraza" class="level2">
+<h2 class="anchored" data-anchor-id="damian-barraza">Damian Barraza</h2>
+<p>Undergraduate student | Biosystems Engineering | &lt;4048 E Jett St&gt;</p>
+<section id="how-comfortable-are-you-with-the-following-skills-7" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-7">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-7" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-7">What are some common tasks you currently use R for?</h4>
+<p>Write your own function in R</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-7" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-7">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>finding the function for each one</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-7" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-7">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>be a better student</p>
+</section>
+</section>
+<section id="derek-rice" class="level2">
+<h2 class="anchored" data-anchor-id="derek-rice">Derek Rice</h2>
+<p>Research professional | School of Information | <a href="mailto:derekrice@arizona.edu" class="email">derekrice@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-8" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-8">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-8" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-8">What are some common tasks you currently use R for?</h4>
+<p>completing survival analysis and writing reports</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-8" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-8">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I’ve not used git in my work structure</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-8" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-8">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>future collaboration with researchers at the University of Arizona</p>
+</section>
+</section>
+<section id="edwin-alvarado-mena" class="level2">
+<h2 class="anchored" data-anchor-id="edwin-alvarado-mena">Edwin Alvarado-Mena</h2>
+<p>Graduate student | SBS | <a href="mailto:ealvaradomena@arizona.edu" class="email">ealvaradomena@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-9" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-9">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-9" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-9">What are some common tasks you currently use R for?</h4>
+<p>Data wrangling, statistical modeling and learning, data visualization, as well as reporting and teaching.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-9" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-9">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Git and shell commands may seem a bit arcane for those who have no background in computer science.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-9" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-9">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I’ll utilize this knowledge to increase my productivity overall. I’m also interested in quality control and reproducibility, especially when it involves teamwork. My research agenda on causal inference is quite data-intensive, so I must keep honing my data management skill set. As a passionate R educator, I can tell that people are more attracted to the programming arena when they learn that R benefits -e.g., reproducibility- go well beyond mere data crunching.</p>
+</section>
+</section>
+<section id="eldridge-wisely" class="level2">
+<h2 class="anchored" data-anchor-id="eldridge-wisely">Eldridge Wisely</h2>
+<p>Graduate student | Genetics GIDP | <a href="mailto:EldridgeWisely@arizona.edu" class="email">EldridgeWisely@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-10" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-10">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-10" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-10">What are some common tasks you currently use R for?</h4>
+<p>Metabarcoding workflows using tutorials for R packages. It requires some reformatting of tables, but that’s about it.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-10" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-10">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I was introduced to git/github in a class once, but I never had anything I felt was worth sharing publicly, and now that I’m about to publish and I think I’ll need to publish my code, I’d like to re-learn how.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-10" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-10">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I’d like to have easily reproducible code on my GitHub account to back up my findings with my metabarcoding journal articles that will be coming out in about a year. I’d also like to just learn best practices, now that I’m finally getting more into coding.</p>
+</section>
+</section>
+<section id="ellie-broadman" class="level2">
+<h2 class="anchored" data-anchor-id="ellie-broadman">Ellie Broadman</h2>
+<p>Post-doc | Laboratory of Tree-Ring Research | <a href="mailto:ebroadman@arizona.edu" class="email">ebroadman@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-11" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-11">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-11" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-11">What are some common tasks you currently use R for?</h4>
+<p>time series analysis, spatial analysis, linear regression</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-11" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-11">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I never got enough practice with github and shell commands to really understand how they improve workflow, so now I don’t use them and I think my workflow could be more efficient</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-11" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-11">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>It would be much easier to collaborate on code with colleagues if I were more familiar with Github, and using version control would help my code stay more organized.</p>
+</section>
+</section>
+<section id="geoffrey-finch" class="level2">
+<h2 class="anchored" data-anchor-id="geoffrey-finch">Geoffrey Finch</h2>
+<p>Graduate student | Ecology and Evolutionary Biology | <a href="mailto:gsfinch@arizona.edu" class="email">gsfinch@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-12" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-12">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-12" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-12">What are some common tasks you currently use R for?</h4>
+<p>I use R for conducting some analyses, manipulating data and making figures. This often involves plotting annotating phylogenies and data associated with them. I have been experimenting with reformatting data and writing functions in R, but am still very much a beginner at these tasks.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-12" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-12">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I just need more structured time and guidance devoted to learning these skills.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-12" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-12">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I will be finishing grad school in two years, and I need to get better at coding, organizing my code and analyses, and making them publicly available before I do. I specifically expect to apply these skills to species distribution modelling and biogeography as well as a population genetics project. I would also like to be able to write functions for extracting data from online databases (particularly chromosome counts), cleaning and processing and analyzing the data. Finally, I will be sequencing and analyzing a number of plant genomes (and making associated figures) through a combination of python and R.</p>
+</section>
+</section>
+<section id="giovanni-melandri" class="level2">
+<h2 class="anchored" data-anchor-id="giovanni-melandri">Giovanni Melandri</h2>
+<p>Faculty | Plant Sciences | <a href="mailto:gmelandri@arizona.edu" class="email">gmelandri@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-13" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-13">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-13" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-13">What are some common tasks you currently use R for?</h4>
+<p>Basic stats, plotting, multivariate modeling</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-13" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-13">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I tried to learn by myself but I have never had a chance to follow a course. Only a course on the mentioned topics could help me filling my knowledge gap.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-13" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-13">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Establish guidelines for codig practices in my lab. Supervise my students on these practices.</p>
+</section>
+</section>
+<section id="jordan-gunning" class="level2">
+<h2 class="anchored" data-anchor-id="jordan-gunning">Jordan Gunning</h2>
+<p>Graduate student | Nutritional Sciences | <a href="mailto:jordangunning@arizona.edu" class="email">jordangunning@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-14" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-14">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-14" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-14">What are some common tasks you currently use R for?</h4>
+<p>I use R largely for analyzing bulk and single cell RNA sequencing data. The packages I use most often are Seurat, ggplot2, ggpubr, GSVA, and scGSVA for data analysis and visualization. I look at DEGs, pathway analysis from GSEA, and am wanting to learn things like ligand-receptor analysis and CellChat. I am currently working on a heavily-bioinformatics based immunometabolism project in radiation damaged salivary glands - we are using select GSEA kegg and hallmark pathways to understand how radiation is altering inflammatory and metabolic pathways, how these pathways are changing in specific subpopulations of immune cells, and how this may relate to chronic salivary gland dysfunction.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-14" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-14">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>One thing that has been difficult to learn is how to manipulate the data into the correct format (data frame vs matrix vs list vs dataset etc) with the appropriate columns/rows in order to do the desired analysis. Another obstacle is that I have little experience with github - I have put so much of my effort into learning R and I haven’t put the same effort into learning github. I know the basics but need to understand it better as I start working on bigger/more collaborative projects. Something I also struggle with is keeping all of my files organized - I use a “project” file in R with data/scripts/output folders but struggle to keep my files as organized as I would like.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-14" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-14">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Understanding and implementing version control will help me stay more organized - I tend to save everything and have multiple scripts for each figure/set of figures because I’m scared of losing them. I am also wanting to improve my programming skills - there are some ideas I have for figures (for example: plotting the top 5 different pathways in each cell type following radiation and the top 5 differentially expressed genes in each of these pathways, receptor/ligand analysis, upstream receptor analysis) that I would like to be able to do entirely on my own. I am almost always able to get started and come up with a preliminary idea of what the figure will look like, but I want to be able to fine tune the details and be able to make the exact figure I have in my head. Lastly, I want to understand Rmarkdown better - I am going to start working on a new bioinformatics project in my lab in the next ~6 months and would like to have Rmarkdown files for the code so that others in my lab &amp; collaborators can more easily follow along &amp; add their input. Further, some of my scripts have dozens of # lines in R with notes about what the code does, the data I’m using, and the analysis I’m trying to run - sometimes they get lost in the shuffle and it can be hard to find exactly what I’m looking for. Being able to have the code in an Rmarkdown file would make this less confusing for me and coworkers/collaborators I’m sending the scripts to.</p>
+</section>
+</section>
+<section id="joshua-oyekanmi" class="level2">
+<h2 class="anchored" data-anchor-id="joshua-oyekanmi">Joshua Oyekanmi</h2>
+<p>Graduate student | Plant Sciences | <a href="mailto:joyekanmi@arizona.edu" class="email">joyekanmi@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-15" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-15">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-15" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-15">What are some common tasks you currently use R for?</h4>
+<p>ANOVA and graphing</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-15" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-15">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>writing code</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-15" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-15">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Analyse research data</p>
+</section>
+</section>
+<section id="katherine-king" class="level2">
+<h2 class="anchored" data-anchor-id="katherine-king">Katherine King</h2>
+<p>Graduate student | Anthropology | <a href="mailto:kingk@arizona.edu" class="email">kingk@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-16" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-16">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-16" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-16">What are some common tasks you currently use R for?</h4>
+<p>Visualization (using ggplot)</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-16" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-16">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Establishing use across lab/teams is difficult, lack of experience made me nervous to try</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-16" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-16">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I hope to use the skills from this workshop to better organize my data and data for projects in my lab - sharing code and analysis across collaborators, organizing the data in a way that is easy for everyone to understand, and keeping myself organized and have a way to share my work easily!</p>
+</section>
+</section>
+<section id="kylie-boyd" class="level2">
+<h2 class="anchored" data-anchor-id="kylie-boyd">Kylie Boyd</h2>
+<p>Faculty | Department of Epidemiology and Biostatistics | <a href="mailto:kylieboyd@arizona.edu" class="email">kylieboyd@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-17" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-17">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-17" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-17">What are some common tasks you currently use R for?</h4>
+<p>I have never used R before, but I plan to download the software and begin to use it for data analysis for a systematic review that I am a part of.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-17" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-17">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I would say the intimation of using R because I don’t know many other research friends who have mastered R but I have heard that it will begin to be used much more in research and I would like to feel comfortable using R.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-17" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-17">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I would like to be able to use R for research analysis for different projects that I am currently a part of as well as for my hopeful PhD future career path.</p>
+</section>
+</section>
+<section id="likith-kumar-dundigalla" class="level2">
+<h2 class="anchored" data-anchor-id="likith-kumar-dundigalla">Likith Kumar Dundigalla</h2>
+<p>Graduate student | Data Science | <a href="mailto:likithkumard@arizona.edu" class="email">likithkumard@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-18" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-18">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-18" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-18">What are some common tasks you currently use R for?</h4>
+<p>For ETL</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-18" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-18">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Still in learning stage</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-18" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-18">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>ETL processes</p>
+</section>
+</section>
+<section id="madeleine-wallace" class="level2">
+<h2 class="anchored" data-anchor-id="madeleine-wallace">Madeleine Wallace</h2>
+<p>Graduate student | Natural Resources and the Environment | <a href="mailto:maddiewallace@arizona.edu" class="email">maddiewallace@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-19" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-19">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-19" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-19">What are some common tasks you currently use R for?</h4>
+<p>I’m a MS student in SNRE, wrapping up my data collection this summer, so I will be working on data cleaning, analysis, and graphs for my thesis!</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-19" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-19">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I haven’t really tried to learn this stuff before, but maybe one obstacle is that I never really feel like I have the ‘brain’ for coding stuff; silly and not true but I find it intimidating sometimes!</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-19" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-19">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I’m hoping the project I’m working on for my MS will be open access and reproducible; I’d like to publish everything on Github. I’m also interested in pursuing a PhD and I think having a portfolio/Github account with examples of my work/understanding how to do stuff with Git will help me down the line too!</p>
+</section>
+</section>
+<section id="madeleine-deblois" class="level2">
+<h2 class="anchored" data-anchor-id="madeleine-deblois">Madeleine deBlois</h2>
+<p>Research professional | Family and Consumer Sciences | <a href="mailto:mdeblois@arizona.edu" class="email">mdeblois@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-20" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-20">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-20" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-20">What are some common tasks you currently use R for?</h4>
+<p>Data analysis for evaluation projects that we conduct. There are more proficient R users in our group, so much of my current work in R is amending and updating code that they wrote.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-20" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-20">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Lack of regular use of new skills has led to their atrophy. I default to letting the more proficient coders do the coding. Helpful for efficient work flow, but I would like to make sure that I have the skills to continue that work.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-20" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-20">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>The more-expert R users in our group may have future life events that take them away from our group. I’d like to be functional in using (and making necessary updates to) the robust code they’ve written to do things like pull and process census data so that we could continue to do our needs assessments and related work processing secondary data for descriptive use by Cooperative Extension and community partners. Two members of our team took this class last year, so they have been working on making their processes replicable, but if they leave, there is no one currently able to pick up that baton.</p>
+</section>
+</section>
+<section id="mariam-hovhannisyan" class="level2">
+<h2 class="anchored" data-anchor-id="mariam-hovhannisyan">Mariam Hovhannisyan</h2>
+<p>Graduate student | Psychology | <a href="mailto:mhovhannisyan@arizona.edu" class="email">mhovhannisyan@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-21" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-21">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-21" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-21">What are some common tasks you currently use R for?</h4>
+<p>Making figures and doing statistical analysis</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-21" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-21">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Time</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-21" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-21">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>My research involves working with large behavioral and neuroimaging datasets. I think learning these skills will be immeasurable for my research. I will use these skills to plan out and do my research throughout my academic career.</p>
+</section>
+</section>
+<section id="marlon-de-la-pena-cuao" class="level2">
+<h2 class="anchored" data-anchor-id="marlon-de-la-pena-cuao">Marlon De La Pena Cuao</h2>
+<p>Post-doc | Plant Sciences | <a href="mailto:mdelapena@arizona.edu" class="email">mdelapena@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-22" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-22">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-22" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-22">What are some common tasks you currently use R for?</h4>
+<p>Data analysis, for instance, Anova, PCA, HEATMAPS, Correlations, Plots</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-22" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-22">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I got difficulties to apply the loops and don’t have a track of the changes that I have done in my scripts</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-22" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-22">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Organize my information, got a track of the changes that I have done, learn to use the loops so I can automatize data analysis and share my scripts with other researchers.</p>
+</section>
+</section>
+<section id="mary-ahern" class="level2">
+<h2 class="anchored" data-anchor-id="mary-ahern">Mary Ahern</h2>
+<p>Graduate student | Nutritional Sciences | <a href="mailto:maryahern01@arizona.edu" class="email">maryahern01@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-23" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-23">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-23" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-23">What are some common tasks you currently use R for?</h4>
+<p>Data analysis and graphics creation</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-23" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-23">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Repetition. Sometimes I will learn how to do something but then only do it once.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-23" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-23">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I am an incoming PhD student. I have worked with R in the past and would like to continue to refine my skills so that I can be more helpful with data analysis in my lab, and well as be able to be more independent in my analysis for my dissertation.</p>
+</section>
+</section>
+<section id="meccah-jarrah" class="level2">
+<h2 class="anchored" data-anchor-id="meccah-jarrah">Meccah Jarrah</h2>
+<p>Graduate student | Epidemiology &amp; Biostatistics | <a href="mailto:meccahjarrah@email.arizona.edu" class="email">meccahjarrah@email.arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-24" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-24">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-24" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-24">What are some common tasks you currently use R for?</h4>
+<p>I use STATA- I want to use R</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-24" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-24">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>NA</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-24" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-24">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Coding for ADHS</p>
+</section>
+</section>
+<section id="michael-hernandez" class="level2">
+<h2 class="anchored" data-anchor-id="michael-hernandez">Michael Hernandez</h2>
+<p>Undergraduate student | Nutritional Sciences | <a href="mailto:michaelhernandez@arizona.edu" class="email">michaelhernandez@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-25" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-25">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-25" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-25">What are some common tasks you currently use R for?</h4>
+<p>Practicing</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-25" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-25">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Practicing</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-25" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-25">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>REDCap to R data export, R to .sps/.sav, potential incubator relationships, future data needs, markdown, PowerBi, SQL uses, at least.</p>
+</section>
+</section>
+<section id="parker" class="level2">
+<h2 class="anchored" data-anchor-id="parker">Parker</h2>
+<p>Graduate student | Natural Resources and the Environment | <a href="mailto:parkergeffre@arizona.edu" class="email">parkergeffre@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-26" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-26">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-26" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-26">What are some common tasks you currently use R for?</h4>
+<p>Data wrangling and plotting</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-26" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-26">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Lack of conceptual experience / academic coding education from other similar languages like python. Want to make my code more readable.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-26" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-26">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I am working with new genomic data, I want to learn ways of developing a proper workflow that would be journal quality and not learn bad habits immediately when I start working on this the first time.</p>
+</section>
+</section>
+<section id="pranshu-singh-rawat" class="level2">
+<h2 class="anchored" data-anchor-id="pranshu-singh-rawat">Pranshu Singh Rawat</h2>
+<p>Graduate student | Data Science - School of Information | <a href="mailto:pranshurawat@arizona.edu" class="email">pranshurawat@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-27" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-27">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-27" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-27">What are some common tasks you currently use R for?</h4>
+<p>Learning R for machine learning and statistical analysis.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-27" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-27">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>R is slower is a slower programming language than python, and it also takes up a lot of memory. Also the complexities of advanced functionalities with R makes it more difficult to develop expertise(learning curve is much steeper than python).</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-27" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-27">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Since R is more optimized for deep statistical analysis and data visualization than python, i would love to learn more of R and it applications using Git. R also has a wide variety of tools and libraries for training and evaluating deep learning models.</p>
+</section>
+</section>
+<section id="rachel-fernandez" class="level2">
+<h2 class="anchored" data-anchor-id="rachel-fernandez">Rachel Fernandez</h2>
+<p>Graduate student | School of Information | <a href="mailto:rfernandez@arizona.edu" class="email">rfernandez@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-28" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-28">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-28" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-28">What are some common tasks you currently use R for?</h4>
+<p>Use for analysis of data and plots</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-28" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-28">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Have others in the project use them as well. Current project has varying levels of use with tech so have to consider that when creating workflows.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-28" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-28">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I envision using for better project management of existing projects, data analysis, and project documentation.</p>
+</section>
+</section>
+<section id="rachel-gildersleeve" class="level2">
+<h2 class="anchored" data-anchor-id="rachel-gildersleeve">Rachel Gildersleeve</h2>
+<p>Research professional | Frances McClelland Institute | <a href="mailto:ragildersleeve@arizona.edu" class="email">ragildersleeve@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-29" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-29">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-29" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-29">What are some common tasks you currently use R for?</h4>
+<p>None</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-29" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-29">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>N/A</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-29" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-29">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Understanding the R data flow for our research and evaluation projects; being able to feed new data years into existing code (e.g., ACS); helping to create reproducible code for repeating/longitudinal projects; basic R for statistics</p>
+</section>
+</section>
+<section id="rachel-leih" class="level2">
+<h2 class="anchored" data-anchor-id="rachel-leih">Rachel Leih</h2>
+<p>Research professional | Family and Consumer Sciences | <a href="mailto:rleih@arizona.edu" class="email">rleih@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-30" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-30">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-30" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-30">What are some common tasks you currently use R for?</h4>
+<p>I am still a novice in using R, because I have largely used other tools more (SPSS, STATA, Excel). I did take an advanced statistics course on structural equation modeling in R, so I can definitely find my way around R code through trial and error.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-30" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-30">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Organize and name files/folders for a research project - I work on a team with many collaborative projects. Part of the impetus for taking this course is for my team to get on the same page for data management conventions because we’ve had individual people save things in ways that work for them but don’t work for others and aren’t sustainable.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-30" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-30">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>On my team, I am much more likely to play the role of visualizing, interpreting and writing about the data that is analyzed. However, this workshop series will be really critical for my ability to help establish systems to better organize our data, for my ability to go into the data files of the data analysts on my team and make sense of the work they are doing, and to conduct more efficient data analysis on the projects where I hold that role that can be easily interpreted and handed off to other team members.</p>
+</section>
+</section>
+<section id="renee-grambihler" class="level2">
+<h2 class="anchored" data-anchor-id="renee-grambihler">Renee Grambihler</h2>
+<p>Research professional | Biosphere 2 | <a href="mailto:grambihler@arizona.edu" class="email">grambihler@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-31" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-31">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-31" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-31">What are some common tasks you currently use R for?</h4>
+<p>data wrangling, basic statistical analyses and visualizations</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-31" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-31">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>finding/developing a comprehensive or more formal format/flow/pipeline to follow in a research setting; actual application of the tools in a usable way for my research rather than just for small tasks or assignments</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-31" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-31">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I want to create data analysis pipelines for the data my team is producing that can be used by everyone on our team, including undergraduate interns, and for publications. We work with marine systems and water quality/monitoring data.</p>
+</section>
+</section>
+<section id="rohit-hemaraja" class="level2">
+<h2 class="anchored" data-anchor-id="rohit-hemaraja">Rohit Hemaraja</h2>
+<p>Graduate student | Data science | <a href="mailto:rohithemaraja@arizona.edu" class="email">rohithemaraja@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-32" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-32">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-32" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-32">What are some common tasks you currently use R for?</h4>
+<p>Data analysis</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-32" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-32">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Memory management</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-32" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-32">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I would utilize tho knowledge to construct or generate plans, analyze ideas or designs of Data</p>
+</section>
+</section>
+<section id="rongbo-jin" class="level2">
+<h2 class="anchored" data-anchor-id="rongbo-jin">Rongbo Jin</h2>
+<p>Graduate student | School of Government and Public Policy | <a href="mailto:rongbojin@arizona.edu" class="email">rongbojin@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-33" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-33">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-33" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-33">What are some common tasks you currently use R for?</h4>
+<p>data cleaning, data analysis, data visualization, text analysis</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-33" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-33">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I tried multiple times to learn Github for the purposes of reproduciblity but I frequently met errors and failure which made me fail to update my code and files on Github.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-33" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-33">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Political science is increasingly cautious about the replication of research. This workshop will help me learn advanced skills in this area. I have pulished two papers but haven’t set up a replication website. So after this workshop, I’ll publicize my previous codes and data. In addition, this will be a fantastic tool for me to teach data analysis.</p>
+</section>
+</section>
+<section id="rosa-luna" class="level2">
+<h2 class="anchored" data-anchor-id="rosa-luna">Rosa Luna</h2>
+<p>Graduate student | Animal and Comparative Biomedical Sciences | <a href="mailto:Rosaluna@arizona.edu" class="email">Rosaluna@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-34" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-34">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-34" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-34">What are some common tasks you currently use R for?</h4>
+<p>Analyzing RNAseq data</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-34" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-34">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Understanding the fundaments</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-34" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-34">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Get to know how to write my own codes and be able to share them. Also, to use existing codes from Github.</p>
+</section>
+</section>
+<section id="ryan" class="level2">
+<h2 class="anchored" data-anchor-id="ryan">Ryan</h2>
+<p>Graduate student | Pima County | <stephenson></stephenson></p>
+<section id="how-comfortable-are-you-with-the-following-skills-35" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-35">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-35" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-35">What are some common tasks you currently use R for?</h4>
+<p>Stats research, programming API</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-35" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-35">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Learning curve, every turn presents me with a “Google” challenge</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-35" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-35">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I want to incorporate all the skills and lessons from this workshop into practical tools and reproduceable research. Two projects I am working on now include bringing disparate source data (County GIS and County Assessor tables) together with an API and measures differences with some code; and exploring stat analysis of an old data set from Robert Putnam’s book Bowling Alone, including ggplot2 tools. Finally, I want to publish these on my own website.</p>
+</section>
+</section>
+<section id="sarah-britton" class="level2">
+<h2 class="anchored" data-anchor-id="sarah-britton">Sarah Britton</h2>
+<p>Graduate student | Entomology | <a href="mailto:sarahebritton3@gmail.com" class="email">sarahebritton3@gmail.com</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-36" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-36">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-36" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-36">What are some common tasks you currently use R for?</h4>
+<p>Statistical analysis, creating figures</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-36" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-36">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Not understanding language of help pages/ tutorials</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-36" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-36">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>This fall I will be working on analysis and ms preparation for one of my dissertation chapters and I hope to apply this knowledge for the project.</p>
+</section>
+</section>
+<section id="sarah-leighton" class="level2">
+<h2 class="anchored" data-anchor-id="sarah-leighton">Sarah Leighton</h2>
+<p>Graduate student | Psychology, College of Veterinary Medicine | <a href="mailto:sarahleighton@arizona.edu" class="email">sarahleighton@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-37" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-37">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-37" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-37">What are some common tasks you currently use R for?</h4>
+<p>Data manipulation and analysis (regression, ANOVA, etc.)</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-37" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-37">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Time limitations</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-37" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-37">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I envision using the skills from this workshop directly in my research by gaining greater autonomy, confidence, and control over my skills in R. Specific applications would include data wrangling and analysis, and developing reproducible code so that any findings that I present or publish are documented at the highest level of standards for reproducible research.</p>
+</section>
+</section>
+<section id="simone-williams" class="level2">
+<h2 class="anchored" data-anchor-id="simone-williams">Simone Williams</h2>
+<p>Graduate student | Arid Lands Resource Science and CALS - Water Resources Research Center | <a href="mailto:sawillms@arizona.edu" class="email">sawillms@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-38" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-38">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-38" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-38">What are some common tasks you currently use R for?</h4>
+<p>Data wrangling, statistical analysis, datavisualization including mapping</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-38" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-38">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I was a beginner, did not have my own dataset and had too many competing course obligations. Now, I am working only on my dissertation research and have data so I am able to put more time into learning and applying R to implement my research.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-38" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-38">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I expect to use skills to transposemy data, perform various statistical analysis (e.g.&nbsp;regression, cluster analysis) and visualization of data to write my dissertation. I also, would like to make my research data and codes used reproducible and open source when I publish.</p>
+</section>
+</section>
+<section id="tianyi-zhang" class="level2">
+<h2 class="anchored" data-anchor-id="tianyi-zhang">Tianyi Zhang</h2>
+<p>Graduate student | Systems &amp; Industrial Engineering | <a href="mailto:tianyi@arizona.edu" class="email">tianyi@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-39" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-39">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-39" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-39">What are some common tasks you currently use R for?</h4>
+<p>Currently using SQL for phenotyping.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-39" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-39">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Not familiar enough to comfortably incorporate them in my daily work.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-39" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-39">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I can collaborate with lab members on git, share codes, and make better documentation.</p>
+</section>
+</section>
+<section id="ujjal-jyoti-phukan" class="level2">
+<h2 class="anchored" data-anchor-id="ujjal-jyoti-phukan">Ujjal Jyoti Phukan</h2>
+<p>Post-doc | Plant Sciences | <a href="mailto:ujphukan@arizona.edu" class="email">ujphukan@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-40" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-40">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>1: Not able to perform task</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-40" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-40">What are some common tasks you currently use R for?</h4>
+<p>RNA-seq analysis and plotting the results</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-40" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-40">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I have not learned shell commands before, just a few of them to do RNA-seq data analysis. I have used HPC and some commands in putty for the analysis. I can use R for general plotting and RNA-seq analysis.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-40" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-40">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>For better (robust, efficient and quicker) analysis of RNA-seq data and proper visualization as well as statistical analysis of the output by R.</p>
+</section>
+</section>
+<section id="xue-pan" class="level2">
+<h2 class="anchored" data-anchor-id="xue-pan">Xue Pan</h2>
+<p>Graduate student | Plant Sciences | <a href="mailto:xpan1@arizona.edu" class="email">xpan1@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-41" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-41">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-41" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-41">What are some common tasks you currently use R for?</h4>
+<p>Data analysis like RNA-SEq, and other genomic sequencing data</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-41" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-41">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Take too long time and need more practice, cant find the perfect tool for analyzing the data</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-41" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-41">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>Be able to build my own git repo</p>
+</section>
+</section>
+<section id="yijyun-lin" class="level2">
+<h2 class="anchored" data-anchor-id="yijyun-lin">YIJYUN LIN</h2>
+<p>Post-doc | School of Government and Public Policy | <a href="mailto:yilin@arizona.edu" class="email">yilin@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-42" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-42">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>3: Perform task with no help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-42" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-42">What are some common tasks you currently use R for?</h4>
+<p>data analysis &amp; visualization</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-42" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-42">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>understanding R functions and loop</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-42" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-42">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I want to be able to apply functions or loops for data cleaning or analyses, whenever needed and be able to use version control with PIs.</p>
+</section>
+</section>
+<section id="yijyun-lin-1" class="level2">
+<h2 class="anchored" data-anchor-id="yijyun-lin-1">YIJYUN LIN</h2>
+<p>Post-doc | School of Government and Policy | <a href="mailto:yilin@arizona.edu" class="email">yilin@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-43" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-43">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-43" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-43">What are some common tasks you currently use R for?</h4>
+<p>data visualization, management, and analysis</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-43" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-43">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>I have tried to learn git and programming, but still not quite familiar yet and need more hand-on training.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-43" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-43">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>this training will help with our journal submissions and website building for our projects</p>
+</section>
+</section>
+<section id="zoe-scott" class="level2">
+<h2 class="anchored" data-anchor-id="zoe-scott">Zoe Scott</h2>
+<p>Research professional | Environmental Science | <a href="mailto:zoescott@arizona.edu" class="email">zoescott@arizona.edu</a></p>
+<section id="how-comfortable-are-you-with-the-following-skills-44" class="level4">
+<h4 class="anchored" data-anchor-id="how-comfortable-are-you-with-the-following-skills-44">How comfortable are you with the following skills?</h4>
+<table class="table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Navigate around filesystem using shell commands</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Use git commands such as git add and git push</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="odd">
+<td>Share your code using a GitHub repo</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Organize and name files/folders for a research project</td>
+<td>3: Perform task with no help</td>
+</tr>
+<tr class="odd">
+<td>Use R to clean and reformat dataframes</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Write your own function in R</td>
+<td>2: Perform task with some help</td>
+</tr>
+<tr class="odd">
+<td>Use a for loop in R</td>
+<td>1: Not able to perform task</td>
+</tr>
+<tr class="even">
+<td>Document text and code/output using RMarkdown</td>
+<td>2: Perform task with some help</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-are-some-common-tasks-you-currently-use-r-for-44" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-some-common-tasks-you-currently-use-r-for-44">What are some common tasks you currently use R for?</h4>
+<p>Data Visualization using ggplot, just basic graphics like a bar graph or box and whisker plot.</p>
+</section>
+<section id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-44" class="level4">
+<h4 class="anchored" data-anchor-id="if-youve-tried-to-learn-some-of-these-skills-before-what-were-some-obstacles-in-incorporating-them-into-your-research-44">If you’ve tried to learn some of these skills before, what were some obstacles in incorporating them into your research?</h4>
+<p>Not knowing enough R/coding to troubleshoot errors.</p>
+</section>
+<section id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-44" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-envision-applying-what-you-will-learn-in-this-workshop-series-to-your-on-research-provide-specific-examples.-44">How do you envision applying what you will learn in this workshop series to your on research? Provide specific examples.</h4>
+<p>I am currently working on several projects for a lab at the UA Maricopa Agriculture center. These projects are collaborative and I have to share my data with other academic labs and government agencies. I’m hoping the skills I learn in this course will allow me to communicate and share data better with my collaborators. I also am hoping to improve my project manag</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Col1</th>
+<th>Col2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

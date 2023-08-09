@@ -2,8 +2,5 @@
 title: "Reproducibility & Data Science in R Curriculum"
 ---
 
-```{r}
-#| echo: false
-read.csv("schedule.csv") |> knitr::kable()
-```
+
 

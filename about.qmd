@@ -1,9 +1,25 @@
 ---
-title: "About"
+title: "Instructors"
 ---
 
-About this site
+## Eric R. Scott
 
-```{r}
-1 + 1
-```
+picture
+
+bio
+
+email
+
+## Renata Diaz
+
+picture
+
+bio
+
+email
+
+## Getting Help
+
+Slack channel
+
+Drop-in hours

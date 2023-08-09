@@ -7,6 +7,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: syllabus.qmd
+        text: Syllabus
       - about.qmd
       - text: Instructor Notes
         menu:
