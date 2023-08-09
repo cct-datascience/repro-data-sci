@@ -1,5 +1,7 @@
 project:
   type: website
+  render:
+    - "!instructor-notes.qmd"
 
 website:
   title: "repro-data-sci"
