@@ -1,0 +1,47 @@
+---
+title: "Reproducibility & Data Science in R"
+subtitle: "Session 1"
+# date: TODO
+format: revealjs
+execute: 
+  echo: true
+engine: knitr
+chalkboard: true
+---
+
+## What is Reproducibility & Why?
+
+```{=html}
+<textarea id="freeform" name="freeform" rows="8" cols="60" style="font-size: 18pt">
+Reproducibility is...
+
+</textarea>
+```
+```{=html}
+<textarea rows="8" cols="60" style="font-size: 18pt">
+I want my work to be reproducible because...
+
+</textarea>
+```
+
+## The Whole Picture
+
+::: callout-note
+## A (usually fiction) story:
+
+You read a great paper and think "I bet I could apply their analysis methods to my work!" You click a DOI link in their Data Availability section that they definitely have.
+It opens to a web page where you can download a folder with R code, data, and documentation about the code and data.
+The page also has detailed information about how to cite the code and data.
+You open the folder in R Studio and you are prompted to install all the packages you need to run the code.
+You open the analysis code script and hit "run".
+All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper.
+You scroll through the well-formatted R code and understand from the authors' comments exactly what the code does and how to adapt it to your work.
+:::
+
+. . .
+
+We want to help you make this story a reality for someone else!
+
+## Syllabus & Course Materials
+
+<!--# probably just link to website with syllabus/schedule, code of conduct, suggested reading, etc. -->
