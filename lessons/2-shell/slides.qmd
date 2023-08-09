@@ -11,16 +11,18 @@ chalkboard: true
 
 ## What is Reproducibility & Why?
 
+```{=html}
 <textarea id="freeform" name="freeform" rows="8" cols="60" style="font-size: 18pt">
 Reproducibility is...
 
 </textarea>
-
+```
+```{=html}
 <textarea rows="8" cols="60" style="font-size: 18pt">
 I want my work to be reproducible because...
 
 </textarea>
-
+```
 ## The Whole Picture
 
 ::: callout-note
