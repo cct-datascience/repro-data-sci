@@ -80,7 +80,7 @@ Includes what we left out, when order was changed, and when we did something dif
 
 ------------------------------------------------------------------------
 
-{{< include lessons/1-shell/notes.qmd >}}
+{{< include lessons/2-shell/notes.qmd >}}
 
 ------------------------------------------------------------------------
 

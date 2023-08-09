@@ -1,0 +1,34 @@
+---
+title: "Project Management and Coding Best Practices"
+---
+
+#### Objective
+
+Learners will learn about and practice managing their projects using file structure and RStudio projects, and about current best practices and style guides for R coding.
+
+#### Installation & materials
+
+1.  [Slides](slides.qmd)
+2.  [Software Carpentry Introduction to R and RStudio episode](https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro)
+3.  [Software Carpentry Project Management with RStudio episode](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro)
+4.  [Software Carpentry Best Practices for Writing R Code](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R)
+
+##### Modifications
+
+-   RStudio
+    -   Cover only "Introduction to RStudio" section unless learners need a refresher on R
+    -   Additional keyboard shortcuts from [RStudio's reference list](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts) (and mention command palette cmd + shift + P)
+-   Project management
+    -   Do "Best practices for project organization" including yellow "Tip: Good Enough Practices for Scientific Computing" box
+    -   Then "A possible solution" section about R projects
+    -   Include splitting scripts up into modular chunks to promote reproducibility and avoiding rerunning time-intensive data cleaning
+-   Coding best practices
+    -   Condensed into a [single slide](https://docs.google.com/presentation/d/1WNNHQtzq2IUMA0RPz9pwgDCTMLzMIxqQhQsTuR0m_BY/edit#slide=id.geda00d7b2c_0_0)
+
+#### Teaching notes
+
+-   Include how R projects promotes reproducibility, by being able to save scripts and close them or entire project
+
+#### Homework
+
+Apply one or more of the organizing principles of a research compendium to an existing research project.

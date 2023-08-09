@@ -10,7 +10,7 @@ Learners should be comfortable with their file structure and navigating around i
 
 #### Installation & materials
 
-1.  [Slides](https://docs.google.com/presentation/d/1RCiJkCre3ePP5tF4YkIU6C5EBtTVj2gv2aFJMpos-B8/edit#slide=id.p)
+1.  [Slides](slides.qmd)
 2.  [macOS git installation](https://git-scm.com/download/mac)
 3.  [Windows git installation](https://git-scm.com/download/win) (detailed step-by-step [here](https://carpentries.github.io/workshop-template/#setup))
 4.  [Software Carpentry Unix Shell episode #1](https://swcarpentry.github.io/shell-novice/01-intro)

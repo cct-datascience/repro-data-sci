@@ -4,6 +4,7 @@ project:
 website:
   title: "repro-data-sci"
   repo-url: https://github.com/cct-datascience/repro-data-sci
+  repo-actions: [edit, issue]
   site-url: https://cct-datascience.github.io/repro-data-sci/
   navbar:
     left:
@@ -14,7 +15,10 @@ website:
       - about.qmd
       - text: Instructor Notes
         menu:
-          - "lessons/1-shell/notes.qmd"
+          - href: "lessons/1-project-management/notes.qmd"
+            text: "1. Project Management"
+          - href: "lessons/2-shell/notes.qmd"
+            text: "2. Shell Commands"
 
 format:
   html:

@@ -36,7 +36,7 @@ read_csv("schedule.csv") |>
 
 ## Code of Conduct
 
-<!--# we should probably create one more specific to teaching situations.  Contributor Covenant not really appropriate here -->
+<!--# we should probably create one more specific to teaching situations.  Contributor Covenant not really appropriate here-->
 
 > In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
