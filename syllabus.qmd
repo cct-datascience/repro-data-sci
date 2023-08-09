@@ -4,6 +4,8 @@ title: Syllabus
 
 ## Schedule (tentative)
 
+We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)
+
 <!-- Edit by editing schedule.csv.  To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list. -->
 
 ```{r}
@@ -47,11 +49,15 @@ This short course doesn't have anything like "required reading", but we think th
 Data analysis in R:
 
 -   [R for Data Science (2e)](https://r4ds.hadley.nz/)
--   [Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
+-   [Building reproducible analytical pipelines with R](https://raps-with-r.dev/) <!--# I don't love this, but seems like there should be more than one resource here -->
 
 Best practices for reproducibility:
 
 -   [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
--   [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
 -   [Data organization in spreadsheets](https://doi.org/10.1080/00031305.2017.1375989)
 -   [A beginner's guide to conducting reproducible research](https://doi.org/10.1002/bes2.1801)
+
+Version control:
+
+-   [Excuse me, do you have a moment to talk about version control?](https://doi.org/10.7287/peerj.preprints.3159v2)
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
