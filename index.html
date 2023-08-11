@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>repro-data-sci - Reproducibility &amp; Data Science in R Curriculum</title>
+<title>repro-data-sci - Reproduciblity and Data Science in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,12 +91,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html" rel="" target="">
- <span class="menu-text">Syllabus</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">Instructors</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-instructor-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
@@ -104,8 +100,12 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-instructor-notes">    
         <li>
-    <a class="dropdown-item" href="./lessons/1-shell/notes.html" rel="" target="">
- <span class="dropdown-text">Using the Shell</span></a>
+    <a class="dropdown-item" href="./lessons/1-project-management/notes.html" rel="" target="">
+ <span class="dropdown-text">1. Project Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/2-shell/notes.html" rel="" target="">
+ <span class="dropdown-text">2. Shell Commands</span></a>
   </li>  
     </ul>
   </li>
@@ -121,14 +121,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#schedule-tentative" id="toc-schedule-tentative" class="nav-link active" data-scroll-target="#schedule-tentative">Schedule (tentative)</a></li>
+  <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
+  <li><a href="#helpful-reads" id="toc-helpful-reads" class="nav-link" data-scroll-target="#helpful-reads">Helpful Reads</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproducibility &amp; Data Science in R Curriculum</h1>
+<h1 class="title">Reproduciblity and Data Science in R</h1>
+<p class="subtitle lead">Fall 2023</p>
 </div>
 
 
@@ -144,8 +153,572 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Welcome to the syllabus for the CCT Data Science fall workshop series: <strong>Reproducibility and Data Science in R.</strong> If you didn’t register for the course this year, sign up for our <a href="https://datascience.cct.arizona.edu/contact">mailing list</a> to be notified when enrollment opens for next year’s iteration and to be notified of our other monthly workshops.</p>
+<section id="schedule-tentative" class="level2">
+<h2 class="anchored" data-anchor-id="schedule-tentative">Schedule (tentative)</h2>
+<p>We’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)</p>
+<!-- Edit by editing schedule.csv.  To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list. -->
+<div class="cell">
+<div class="cell-output-display">
+<div id="prerqxhcyg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#prerqxhcyg .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#prerqxhcyg .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#prerqxhcyg .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#prerqxhcyg .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#prerqxhcyg .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#prerqxhcyg .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#prerqxhcyg .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#prerqxhcyg .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#prerqxhcyg .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#prerqxhcyg .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#prerqxhcyg .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#prerqxhcyg .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#prerqxhcyg .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#prerqxhcyg .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#prerqxhcyg .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#prerqxhcyg .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#prerqxhcyg .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#prerqxhcyg .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#prerqxhcyg .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#prerqxhcyg .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#prerqxhcyg .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#prerqxhcyg .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#prerqxhcyg .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#prerqxhcyg .gt_left {
+  text-align: left;
+}
+
+#prerqxhcyg .gt_center {
+  text-align: center;
+}
+
+#prerqxhcyg .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#prerqxhcyg .gt_font_normal {
+  font-weight: normal;
+}
+
+#prerqxhcyg .gt_font_bold {
+  font-weight: bold;
+}
+
+#prerqxhcyg .gt_font_italic {
+  font-style: italic;
+}
+
+#prerqxhcyg .gt_super {
+  font-size: 65%;
+}
+
+#prerqxhcyg .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#prerqxhcyg .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#prerqxhcyg .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#prerqxhcyg .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#prerqxhcyg .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#prerqxhcyg .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#prerqxhcyg .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 20%">
+<col style="width: 35%">
+<col style="width: 20%">
+</colgroup>
+<thead class="gt_col_headings">
+<tr class="header">
+<th id="Lesson" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Lesson</th>
+<th id="Date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Date</th>
+<th id="Theme" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Theme</th>
+<th id="Topic" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Topic</th>
+<th id="Links" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Links</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Lesson">1</td>
+<td class="gt_row gt_left" headers="Date">Tue, 9/5</td>
+<td class="gt_row gt_left" headers="Theme">Manage &amp; Organize</td>
+<td class="gt_row gt_left" headers="Topic">Project managment and coding best practices</td>
+<td class="gt_row gt_left" headers="Links"><div class="gt_from_md">
+<ul>
+<li><a href="lessons/1-project-management/slides.html">slides</a></li>
+</ul>
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Lesson">2</td>
+<td class="gt_row gt_left" headers="Date">Thu, 9/7</td>
+<td class="gt_row gt_left" headers="Theme">Share &amp; Collaborate</td>
+<td class="gt_row gt_left" headers="Topic">Using shell commands</td>
+<td class="gt_row gt_left" headers="Links"><div class="gt_from_md">
+<ul>
+<li><a href="lessons/2-shell/slides.html">slides</a></li>
+</ul>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Lesson">3</td>
+<td class="gt_row gt_left" headers="Date">Tue, 9/12</td>
+<td class="gt_row gt_left" headers="Theme">Share &amp; Collaborate</td>
+<td class="gt_row gt_left" headers="Topic">Version control with git</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Lesson">4</td>
+<td class="gt_row gt_left" headers="Date">Thu, 9/14</td>
+<td class="gt_row gt_left" headers="Theme">Share &amp; Collaborate</td>
+<td class="gt_row gt_left" headers="Topic">Developing code on GitHub</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Lesson">5</td>
+<td class="gt_row gt_left" headers="Date">Tue, 9/19</td>
+<td class="gt_row gt_left" headers="Theme">Share &amp; Collaborate</td>
+<td class="gt_row gt_left" headers="Topic">Collaborating with GitHub</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Lesson">6</td>
+<td class="gt_row gt_left" headers="Date">Thu, 9/21</td>
+<td class="gt_row gt_left" headers="Theme">Tidy &amp; Wrangle</td>
+<td class="gt_row gt_left" headers="Topic">Data Manipulation</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Lesson">7</td>
+<td class="gt_row gt_left" headers="Date">Tue, 9/26</td>
+<td class="gt_row gt_left" headers="Theme">Repeat &amp; Reproduce</td>
+<td class="gt_row gt_left" headers="Topic">Intermediate R programming I</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Lesson">8</td>
+<td class="gt_row gt_left" headers="Date">Thu, 9/28</td>
+<td class="gt_row gt_left" headers="Theme">Repeat &amp; Reproduce</td>
+<td class="gt_row gt_left" headers="Topic">Intermediate R programming II</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Lesson">9</td>
+<td class="gt_row gt_left" headers="Date">Tue, 10/3</td>
+<td class="gt_row gt_left" headers="Theme">Document &amp; Publish</td>
+<td class="gt_row gt_left" headers="Topic">Documentation and literate programming</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Lesson">10</td>
+<td class="gt_row gt_left" headers="Date">Thu, 10/5</td>
+<td class="gt_row gt_left" headers="Theme">Document &amp; Publish</td>
+<td class="gt_row gt_left" headers="Topic">Getting credit for your hard work</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Lesson">—</td>
+<td class="gt_row gt_left" headers="Date">Tue, 10/17</td>
+<td class="gt_row gt_left" headers="Theme">Showcase</td>
+<td class="gt_row gt_left" headers="Topic">Project updates and help session</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Lesson">—</td>
+<td class="gt_row gt_left" headers="Date">Tue, 10/24</td>
+<td class="gt_row gt_left" headers="Theme">Showcase</td>
+<td class="gt_row gt_left" headers="Topic">Project showcase with participant demos</td>
+<td class="gt_row gt_left" headers="Links">—</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="code-of-conduct" class="level2">
+<h2 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h2>
+<!--# we should probably create one more specific to teaching situations.  Contributor Covenant not really appropriate here-->
+<blockquote class="blockquote">
+<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
+</blockquote>
+<p>Read our full <a href="https://github.com/cct-datascience/.github/blob/master/.github/CODE_OF_CONDUCT.md">code of conduct</a> and please report any violations or concerns to the course instructors or to Kristina Riemer (<a href="mailto:kristinariemer@arizona.edu">kristinariemer@arizona.edu</a>).</p>
+</section>
+<section id="helpful-reads" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-reads">Helpful Reads</h2>
+<p>This workshop series doesn’t have anything like “required reading”, but we think these books and websites are good companions.</p>
+<p>Data analysis in R:</p>
+<ul>
+<li><a href="https://r4ds.hadley.nz/">R for Data Science (2e)</a></li>
+<li><a href="https://raps-with-r.dev/">Building reproducible analytical pipelines with R</a> <!--# I don't love this, but seems like there should be more than one resource here --></li>
+</ul>
+<p>Best practices for reproducibility:</p>
+<ul>
+<li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Good enough practices in scientific computing</a></li>
+<li><a href="https://doi.org/10.1080/00031305.2017.1375989">Data organization in spreadsheets</a></li>
+<li><a href="https://doi.org/10.1002/bes2.1801">A beginner’s guide to conducting reproducible research</a></li>
+</ul>
+<p>Version control:</p>
+<ul>
+<li><a href="https://doi.org/10.7287/peerj.preprints.3159v2">Excuse me, do you have a moment to talk about version control?</a></li>
+<li><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>repro-data-sci - Using the Shell</title>
+<title>repro-data-sci - Project Management and Coding Best Practices</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,12 +91,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../syllabus.html" rel="" target="">
- <span class="menu-text">Syllabus</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">Instructors</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-instructor-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
@@ -104,8 +100,12 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-instructor-notes">    
         <li>
-    <a class="dropdown-item" href="../../lessons/1-shell/notes.html" rel="" target="">
- <span class="dropdown-text">Using the Shell</span></a>
+    <a class="dropdown-item" href="../../lessons/1-project-management/notes.html" rel="" target="">
+ <span class="dropdown-text">1. Project Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../lessons/2-shell/notes.html" rel="" target="">
+ <span class="dropdown-text">2. Shell Commands</span></a>
   </li>  
     </ul>
   </li>
@@ -121,20 +121,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#lesson-1" id="toc-lesson-1" class="nav-link active" data-scroll-target="#lesson-1">Shell Commands</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Using the Shell</h1>
+<h1 class="title">Project Management and Coding Best Practices</h1>
 </div>
 
 
@@ -150,71 +144,50 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="lesson-1" class="level3">
-<h3 class="anchored" data-anchor-id="lesson-1">Shell Commands</h3>
 <section id="objective" class="level4">
 <h4 class="anchored" data-anchor-id="objective">Objective</h4>
-<p>Learners should be comfortable with their file structure and navigating around it using command line commands in RStudio Terminal pane.</p>
+<p>Learners will learn about and practice managing their projects using file structure and RStudio projects, and about current best practices and style guides for R coding.</p>
 </section>
 <section id="installation-materials" class="level4">
 <h4 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h4>
 <ol type="1">
-<li><a href="https://docs.google.com/presentation/d/1RCiJkCre3ePP5tF4YkIU6C5EBtTVj2gv2aFJMpos-B8/edit#slide=id.p">Slides</a></li>
-<li><a href="https://git-scm.com/download/mac">macOS git installation</a></li>
-<li><a href="https://git-scm.com/download/win">Windows git installation</a> (detailed step-by-step <a href="https://carpentries.github.io/workshop-template/#setup">here</a>)</li>
-<li><a href="https://swcarpentry.github.io/shell-novice/01-intro">Software Carpentry Unix Shell episode #1</a></li>
-<li><a href="https://swcarpentry.github.io/shell-novice/02-filedir">Software Carpentry Unix Shell episode #2</a></li>
+<li><a href="../../lessons/1-project-management/slides.html">Slides</a></li>
+<li><a href="https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro">Software Carpentry Introduction to R and RStudio episode</a></li>
+<li><a href="https://swcarpentry.github.io/r-novice-gapminder/02-project-intro">Software Carpentry Project Management with RStudio episode</a></li>
+<li><a href="http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R">Software Carpentry Best Practices for Writing R Code</a></li>
 </ol>
 <section id="modifications" class="level5">
 <h5 class="anchored" data-anchor-id="modifications">Modifications</h5>
 <ul>
-<li>Use terminal window within RStudio as command line interface
+<li>RStudio
 <ul>
-<li>Start with a brief overview of RStudio panes</li>
-<li>Only need to use Terminal and Files tabs</li>
-<li>Emphasize that Files tab is analogous to file finder</li>
+<li>Can skip most of the Introduction to R and RStudio lesson, but may be helpful as a refresher.</li>
+<li>Focus on setting up RStudio for reproducibility—don’t save or restore workspace, restart R session often.</li>
 </ul></li>
-<li>Skip all exercises, including “Nelle” example</li>
-<li>At beginning of episode #2, explain file path using example from instructor’s file system; example diagram below</li>
-</ul>
-<p><img src="figures/file-path-example.png" class="img-fluid"></p>
+<li>Project management
 <ul>
-<li>Can also use example diagram for file system using instructor’s <img src="figures/file-structure-example.png" class="img-fluid"></li>
+<li>Do “Best practices for project organization” including yellow “Tip: Good Enough Practices for Scientific Computing” box</li>
+<li>Then “A possible solution” section about R projects</li>
+<li>Include splitting scripts up into modular chunks to promote reproducibility and avoiding rerunning time-intensive data cleaning</li>
+</ul></li>
+<li>Coding best practices
+<ul>
+<li>Condensed into a <a href="https://docs.google.com/presentation/d/1WNNHQtzq2IUMA0RPz9pwgDCTMLzMIxqQhQsTuR0m_BY/edit#slide=id.geda00d7b2c_0_0">single slide</a></li>
+</ul></li>
 </ul>
 </section>
 </section>
 <section id="teaching-notes" class="level4">
 <h4 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h4>
 <ul>
-<li>If not already installed, learners should install R and RStudio</li>
-<li>Need to install git initially for Windows users to have shell commands
-<ul>
-<li>Separate into 2 breakout rooms to install Git for Windows and macOS</li>
-<li>macOS may have git already, can check with <code>which git</code> or <code>git --version</code></li>
-<li><code>git --version</code> may in fact prompt macOS users to install xcode command line tools, which comes with git.</li>
-<li>Restart RStudio after installation</li>
-<li>For Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected</li>
-</ul></li>
-<li>Download shell-lesson-data.zip to <code>Desktop/</code> location; this won’t be referenced in later lessons</li>
-<li>Emphasize purposes for learning shell
-<ul>
-<li>Helpful for using git and GitHub</li>
-<li>Easier to deal with installation problems</li>
-<li>Understanding file structure and file paths</li>
-</ul></li>
-<li>Unzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with <code>unzip</code>
-<ul>
-<li>Once unzipped, have everyone share absolute file path to location of file</li>
-</ul></li>
-<li>If there’s additional time, can also cover <a href="https://swcarpentry.github.io/shell-novice/03-create">Software Carpentry Unix Shell episode #3</a></li>
+<li>Include how R projects promotes reproducibility, by being able to save scripts and close them or entire project</li>
 </ul>
 </section>
 <section id="homework" class="level4">
 <h4 class="anchored" data-anchor-id="homework">Homework</h4>
-<p>Create diagram, with pen and paper or digitally, of their own file system.</p>
+<p>Apply one or more of the organizing principles of a research compendium to an existing research project.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -540,4 +513,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/1-project-management/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
