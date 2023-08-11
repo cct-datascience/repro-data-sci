@@ -23,7 +23,6 @@ I want my work to be reproducible because...
 
 </textarea>
 ```
-
 ## The Whole Picture
 
 ::: callout-note
@@ -45,3 +44,49 @@ We want to help you make this story a reality for someone else!
 ## Syllabus & Course Materials
 
 <!--# probably just link to website with syllabus/schedule, code of conduct, suggested reading, etc. -->
+
+## Settings for Success
+
+::: columns
+::: {.column width="60%"}
+![](rstudio-settings.png){fig-alt="image of RStudio global settings pane with the \"Workspace\" and \"History\" sections highlighted.  None of the boxes are checked and the dropdown for \"Save workspace to .RData on exit\" is set to \"never\"" fig-align="left"}
+:::
+
+::: {.column width="40%"}
+::: incremental
+-   Fresh start ensures reproducibility
+
+-   Use Session \> Restart R to check reproducibility
+
+-   If long-running code is a concern, there are better solutions
+:::
+:::
+:::
+
+## Project Management
+
+![](https://swcarpentry.github.io/r-novice-gapminder/fig/bad_layout.png)
+
+::: notes
+There are many reasons why we should *ALWAYS* avoid this:
+
+1.  It is really hard to tell which version of your data is the original and which is the modified;
+2.  It gets really messy because it mixes files with various extensions together;
+3.  It probably takes you a lot of time to actually find things, and relate the correct figures to the exact code that has been used to generate it;
+
+A good project layout will ultimately make your life easier:
+
+-   It will help ensure the integrity of your data;
+-   It makes it simpler to share your code with someone else (a lab-mate, collaborator, or supervisor);
+-   It allows you to easily upload your code with your manuscript submission;
+-   It makes it easier to pick the project back up after a break.
+:::
+
+## Creating a Research Compendium with R
+
+Learning Objectives:
+
+1.  Use RStudio projects to create self-contained reproducible projects
+2.  Use best practices for organizing files in a project
+3.  Use relative file paths to improve portability of projects
+4.  Structure R scripts so they are easier to understand

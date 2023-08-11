@@ -1,6 +1,7 @@
 project:
   type: website
   render:
+    - "*.qmd"
     - "!instructor-notes.qmd"
 
 website:

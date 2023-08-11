@@ -16,8 +16,8 @@ Learners will learn about and practice managing their projects using file struct
 ##### Modifications
 
 -   RStudio
-    -   Cover only "Introduction to RStudio" section unless learners need a refresher on R
-    -   Additional keyboard shortcuts from [RStudio's reference list](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts) (and mention command palette cmd + shift + P)
+    -   Can skip most of the Introduction to R and RStudio lesson, but may be helpful as a refresher.
+    -   Focus on setting up RStudio for reproducibility---don't save or restore workspace, restart R session often.
 -   Project management
     -   Do "Best practices for project organization" including yellow "Tip: Good Enough Practices for Scientific Computing" box
     -   Then "A possible solution" section about R projects
