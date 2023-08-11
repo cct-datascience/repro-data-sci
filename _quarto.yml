@@ -20,6 +20,8 @@ website:
             text: "1. Project Management"
           - href: "lessons/2-shell/notes.qmd"
             text: "2. Shell Commands"
+          - href: "lessons/3-git/notes.qmd"
+            text: "3. Version Control With Git"
 
 format:
   html:
