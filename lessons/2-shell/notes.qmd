@@ -2,8 +2,6 @@
 title: "Using the Shell"
 ---
 
-### Shell Commands {#lesson-1}
-
 #### Objective
 
 Learners should be comfortable with their file structure and navigating around it using command line commands in RStudio Terminal pane.
@@ -25,9 +23,9 @@ Learners should be comfortable with their file structure and navigating around i
 -   Skip all exercises, including "Nelle" example
 -   At beginning of episode #2, explain file path using example from instructor's file system; example diagram below
 
-![](figures/file-path-example.png)
+![](file-path-example.png)
 
--   Can also use example diagram for file system using instructor's ![](figures/file-structure-example.png)
+-   Can also use example diagram for file system using instructor's ![](file-structure-example.png)
 
 #### Teaching notes
 
