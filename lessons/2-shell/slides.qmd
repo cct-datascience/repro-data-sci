@@ -1,6 +1,6 @@
 ---
 title: "Shell Commands"
-subtitle: "Session 1"
+subtitle: "Session 2"
 # date: TODO
 format: revealjs
 execute: 
@@ -8,8 +8,6 @@ execute:
 engine: knitr
 chalkboard: true
 ---
-
-
 
 # Shell Commands
 
