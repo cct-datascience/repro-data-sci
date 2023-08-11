@@ -19,7 +19,8 @@ Learners should be comfortable with their file structure and navigating around i
 
 -   Use terminal window within RStudio as command line interface
     -   Start with a brief overview of RStudio panes
-    -   Only need to use Terminal and Files tabs
+    -   Show terminal pane menu and "Go To Current Directory"
+    -   Teach use of Files tab in RStudio
     -   Emphasize that Files tab is analogous to Finder (macOS), File Explorer (Windows)
 -   Skip all exercises, including "Nelle" example
 -   Mention Zsh, which is the default shell for recent versions of macOS and has `%` as the default prompt instead of `$`.

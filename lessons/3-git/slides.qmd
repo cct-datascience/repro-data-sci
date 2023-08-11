@@ -1,0 +1,11 @@
+---
+title: "Version Control With `git`"
+subtitle: "Session 2"
+format: revealjs
+---
+
+## Review {.smaller}
+
+![](/lessons/2-shell/file-structure-example.png)
+
+If your current working directory is `Users/kristinariemer/Dropbox/Documents`, what command could be used to change directory into the local Documents folder?

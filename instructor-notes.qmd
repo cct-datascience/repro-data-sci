@@ -53,7 +53,7 @@ Students should install [R](https://cran.r-project.org/) and [RStudio](https://w
 ### Table of contents
 
 | Lesson       | Theme               | Topic                                                     |
-|--------------|---------------------|-----------------------------------------------------------|
+|----------------|----------------|-----------------------------------------|
 | 1            | Share & collaborate | [Shell scripting](#lesson-1)                              |
 | 2            | Share & collaborate | [Version control with git](#lesson-2)                     |
 | 3            | Share & collaborate | [Developing code on GitHub](#lesson-3)                    |
