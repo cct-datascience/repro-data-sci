@@ -18,6 +18,7 @@ Learners will learn about and practice managing their projects using file struct
 -   RStudio
     -   Can skip most of the Introduction to R and RStudio lesson, but may be helpful as a refresher.
     -   Focus on setting up RStudio for reproducibility---don't save or restore workspace, restart R session often.
+    -   Show command pallette with {{< kbd mac=Cmd-Shift-P win=Control-Shift-P >}}
 -   Project management
     -   Do "Best practices for project organization" including yellow "Tip: Good Enough Practices for Scientific Computing" box
     -   Then "A possible solution" section about R projects

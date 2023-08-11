@@ -41,9 +41,14 @@ You scroll through the well-formatted R code and understand from the authors' co
 
 We want to help you make this story a reality for someone else!
 
-## Syllabus & Course Materials
+::: notes
+Including future you!
+:::
 
-<!--# probably just link to website with syllabus/schedule, code of conduct, suggested reading, etc. -->
+## Syllabus & Workshop Materials
+
+Workshop series website: \
+<https://cct-datascience.github.io/repro-data-sci/>
 
 ## Settings for Success
 
