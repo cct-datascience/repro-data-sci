@@ -33,6 +33,14 @@ pwd
 
 ![](shell_syntax.png){fig-align="center"}
 
+## 
+
+![](file-path-example.png)
+
+## 
+
+![](file-structure-example.png)
+
 ## Homework
 
 -   Diagram your home directory file structure including top 3 most used folders
