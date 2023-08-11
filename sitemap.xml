@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-git/slides.html</loc>
+    <lastmod>2023-08-11T19:36:46.043Z</lastmod>
+  </url>
+  <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/2-shell/slides.html</loc>
-    <lastmod>2023-08-11T17:23:07.037Z</lastmod>
+    <lastmod>2023-08-11T19:25:41.079Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/slides.html</loc>
-    <lastmod>2023-08-11T18:00:06.110Z</lastmod>
+    <lastmod>2023-08-11T18:44:47.799Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/index.html</loc>
-    <lastmod>2023-08-11T17:57:46.431Z</lastmod>
+    <lastmod>2023-08-11T18:47:20.110Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/about.html</loc>
@@ -18,10 +22,14 @@
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/notes.html</loc>
-    <lastmod>2023-08-11T16:50:52.189Z</lastmod>
+    <lastmod>2023-08-11T18:40:21.503Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/2-shell/notes.html</loc>
-    <lastmod>2023-08-09T21:14:52.393Z</lastmod>
+    <lastmod>2023-08-11T19:35:34.086Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-git/notes.html</loc>
+    <lastmod>2023-08-11T19:35:37.267Z</lastmod>
   </url>
 </urlset>

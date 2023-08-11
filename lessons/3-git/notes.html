@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>repro-data-sci - Project Management and Coding Best Practices</title>
+<title>repro-data-sci - Version control with git</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,8 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/kbd/kbd.js"></script>
-<link href="../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Management and Coding Best Practices</h1>
+<h1 class="title">Version control with git</h1>
 </div>
 
 
@@ -152,47 +150,46 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="objective" class="level4">
 <h4 class="anchored" data-anchor-id="objective">Objective</h4>
-<p>Learners will learn about and practice managing their projects using file structure and RStudio projects, and about current best practices and style guides for R coding.</p>
+<p>Learners will practice how changes to code are tracked with version control and become familiar with command-line git within the RStudio IDE.</p>
 </section>
 <section id="installation-materials" class="level4">
 <h4 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h4>
 <ol type="1">
-<li><a href="../../lessons/1-project-management/slides.html">Slides</a></li>
-<li><a href="https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro">Software Carpentry Introduction to R and RStudio episode</a></li>
-<li><a href="https://swcarpentry.github.io/r-novice-gapminder/02-project-intro">Software Carpentry Project Management with RStudio episode</a></li>
-<li><a href="http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R">Software Carpentry Best Practices for Writing R Code</a></li>
+<li><a href="https://docs.google.com/presentation/d/1sbHdLtxfVFv-4V6tY_P89zhnxCA49rKwW3B3RBBv7Qg/edit#slide=id.p">Slides</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/02-setup">Software Carpentry Version Control with Git episode #2</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/03-create">Software Carpentry Version Control with Git episode #3</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/04-changes">Software Carpentry Version Control with Git episode #4</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/06-ignore">Software Carpentry Version Control with Git episode #6</a></li>
+<li>(optional) <a href="https://swcarpentry.github.io/git-novice/05-history">Software Carpentry Version Control with Git episode #5</a></li>
 </ol>
+<section id="review" class="level5">
+<h5 class="anchored" data-anchor-id="review">Review</h5>
+<p>Ask students to share their diagram of their file system. Warm up with the review question in slide deck.</p>
+</section>
 <section id="modifications" class="level5">
 <h5 class="anchored" data-anchor-id="modifications">Modifications</h5>
 <ul>
-<li>RStudio
-<ul>
-<li>Can skip most of the Introduction to R and RStudio lesson, but may be helpful as a refresher.</li>
-<li>Focus on setting up RStudio for reproducibility—don’t save or restore workspace, restart R session often.</li>
-<li>Show command pallette with <kbd data-mac="Cmd-Shift-P" data-windows="Control-Shift-P"></kbd></li>
-</ul></li>
-<li>Project management
-<ul>
-<li>Do “Best practices for project organization” including yellow “Tip: Good Enough Practices for Scientific Computing” box</li>
-<li>Then “A possible solution” section about R projects</li>
-<li>Include splitting scripts up into modular chunks to promote reproducibility and avoiding rerunning time-intensive data cleaning</li>
-</ul></li>
-<li>Coding best practices
-<ul>
-<li>Condensed into a <a href="https://docs.google.com/presentation/d/1WNNHQtzq2IUMA0RPz9pwgDCTMLzMIxqQhQsTuR0m_BY/edit#slide=id.geda00d7b2c_0_0">single slide</a></li>
-</ul></li>
+<li>Navigate to <code>Desktop/</code> as a consistent location</li>
+<li>Use <code>mkdir</code> to make a new folder and name it <code>pilot-analyses/</code></li>
+<li>Use RStudio interface to create a new/blank R file (rather than using the planets example)</li>
+<li>Add R pseudocode or comments to blank R file</li>
 </ul>
 </section>
 </section>
 <section id="teaching-notes" class="level4">
 <h4 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h4>
 <ul>
-<li>Include how R projects promotes reproducibility, by being able to save scripts and close them or entire project</li>
+<li><code>pilot-analyses/</code> will be the locally created repository</li>
+<li>When setting up git for the first time, remind students to use the same email as their existing GitHub account or to select an email that will be used for GitHub</li>
+<li>Reinforce using <code>cd</code> and <code>ls -al</code> to move around the file structure and see contents</li>
+<li>Show how git restore can be used to undo a saved file</li>
+<li><code>HEAD</code> is the snapshot of your last commit</li>
+<li>Can use <code>git reset HEAD~</code> to undo the last commit and unstage everything—the equivalent of reversing the git add and git commit commands.</li>
 </ul>
 </section>
 <section id="homework" class="level4">
 <h4 class="anchored" data-anchor-id="homework">Homework</h4>
-<p>Apply one or more of the organizing principles of a research compendium to an existing research project.</p>
+<p>Create a GitHub account if you don’t already have one. For an extra challenge, identify an existing folder and turn into a repository.</p>
 
 
 </section>
@@ -520,4 +517,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/1-project-management/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/3-git/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

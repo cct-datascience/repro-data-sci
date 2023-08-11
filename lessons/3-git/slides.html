@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.288">
 
-  <title>repro-data-sci - Reproducibility &amp; Data Science in R</title>
+  <title>repro-data-sci - Version Control With git</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -33,8 +33,6 @@
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -327,117 +325,17 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Reproducibility &amp; Data Science in R</h1>
-  <p class="subtitle">Session 1</p>
+  <h1 class="title">Version Control With <code>git</code></h1>
+  <p class="subtitle">Session 2</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="what-is-reproducibility-why" class="slide level2">
-<h2>What is Reproducibility &amp; Why?</h2>
-<textarea id="freeform" name="freeform" rows="8" cols="60" style="font-size: 18pt">Reproducibility is...
+<section id="review" class="slide level2 smaller">
+<h2>Review</h2>
 
-</textarea>
-<textarea rows="8" cols="60" style="font-size: 18pt">I want my work to be reproducible because...
-
-</textarea>
-</section>
-<section id="the-whole-picture" class="slide level2">
-<h2>The Whole Picture</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>A (usually fiction) story:</strong></p>
-</div>
-<div class="callout-content">
-<p>You read a great paper and think “I bet I could apply their analysis methods to my work!” You click a DOI link in their Data Availability section that they definitely have. It opens to a web page where you can download a folder with R code, data, and documentation about the code and data. The page also has detailed information about how to cite the code and data. You open the folder in R Studio and you are prompted to install all the packages you need to run the code. You open the analysis code script and hit “run”. All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper. You scroll through the well-formatted R code and understand from the authors’ comments exactly what the code does and how to adapt it to your work.</p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p>We want to help you make this story a reality for someone else!</p>
-<aside class="notes">
-<p>Including future you!</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</div>
-</section>
-<section id="syllabus-workshop-materials" class="slide level2">
-<h2>Syllabus &amp; Workshop Materials</h2>
-<p>Workshop series website:<br>
-<a href="https://cct-datascience.github.io/repro-data-sci/" class="uri">https://cct-datascience.github.io/repro-data-sci/</a></p>
-</section>
-<section id="settings-for-success" class="slide level2">
-<h2>Settings for Success</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="rstudio-settings.png" alt="image of RStudio global settings pane with the &quot;Workspace&quot; and &quot;History&quot; sections highlighted.  None of the boxes are checked and the dropdown for &quot;Save workspace to .RData on exit&quot; is set to &quot;never&quot;"></p>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div>
-<ul>
-<li class="fragment"><p>Fresh start ensures reproducibility</p></li>
-<li class="fragment"><p>Use Session &gt; Restart R to check reproducibility</p></li>
-<li class="fragment"><p>If long-running code is a concern, there are better solutions</p></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="project-management" class="slide level2">
-<h2>Project Management</h2>
-
-<img data-src="https://swcarpentry.github.io/r-novice-gapminder/fig/bad_layout.png" class="r-stretch"><aside class="notes">
-<p>There are many reasons why we should <em>ALWAYS</em> avoid this:</p>
-<ol type="1">
-<li>It is really hard to tell which version of your data is the original and which is the modified;</li>
-<li>It gets really messy because it mixes files with various extensions together;</li>
-<li>It probably takes you a lot of time to actually find things, and relate the correct figures to the exact code that has been used to generate it;</li>
-</ol>
-<p>A good project layout will ultimately make your life easier:</p>
-<ul>
-<li>It will help ensure the integrity of your data;</li>
-<li>It makes it simpler to share your code with someone else (a lab-mate, collaborator, or supervisor);</li>
-<li>It allows you to easily upload your code with your manuscript submission;</li>
-<li>It makes it easier to pick the project back up after a break.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="creating-a-research-compendium-with-r" class="slide level2">
-<h2>Creating a Research Compendium with R</h2>
-<p>Learning Objectives:</p>
-<ol type="1">
-<li>Use RStudio projects to create self-contained reproducible projects</li>
-<li>Use best practices for organizing files in a project</li>
-<li>Use relative file paths to improve portability of projects</li>
-<li>Structure R scripts so they are easier to understand</li>
-</ol>
+<img data-src="../../lessons/2-shell/file-structure-example.png" class="r-stretch"><p>If your current working directory is <code>Users/kristinariemer/Dropbox/Documents</code>, what command could be used to change directory into the local Documents folder?</p>
 
 <div class="footer footer-default">
 
@@ -453,7 +351,6 @@
   <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -474,8 +371,7 @@
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -646,7 +542,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -655,44 +551,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
