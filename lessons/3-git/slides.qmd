@@ -9,3 +9,40 @@ format: revealjs
 ![](/lessons/2-shell/file-structure-example.png)
 
 If your current working directory is `Users/kristinariemer/Dropbox/Documents`, what command could be used to change directory into the local Documents folder?
+
+## 
+
+::: columns
+::: {.column width="50%"}
+[Version Control]{.r-fit-text}
+
+Semi-automated system for tracking changes with unlimited "undo"
+:::
+
+::: {.column width="50%"}
+![](phd_final.jpg){fig-align="center" width="449"}
+:::
+:::
+
+## Why Learn Version Control?
+
+-   Track development of research projects like a lab notebook
+
+-   Keep project in sync across computers including HPC
+
+-   Share and collaborate on projects in a sane way
+
+## Setting up `git` (once per machine)
+
+``` {.bash filename="Shell"}
+git config --global user.name "Your Name"
+git config --global user.email "youremail@arizona.edu" #GitHub associated email
+```
+
+## A two-step process
+
+![](git-simple.png)
+
+## Adding multiple files to same commit
+
+![](git-multiple.png)

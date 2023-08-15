@@ -22,8 +22,7 @@ Warm up with the review question in slide deck.
 
 ##### Modifications
 
--   Navigate to `Desktop/` as a consistent location
--   Use `mkdir` to make a new folder and name it `pilot-analyses/`
+-   Create an RStudio project to be the git repo. Get in practice of project = repo
 -   Use RStudio interface to create a new/blank R file (rather than using the planets example)
 -   Add R pseudocode or comments to blank R file
 
