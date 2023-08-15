@@ -1,0 +1,44 @@
+---
+title: "Collaborating with GitHub"
+format: html
+---
+
+## Objective
+
+Learners will fork and clone a repository on GitHub and use branches to open pull requests.
+
+<!--# Would like to add a bit about getting help and making a reprex.  This might be a good lesson to do it in? -->
+
+## Installation & materials
+
+1.  [Slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit)
+2.  Workshop [repository](https://github.com/az-digitalag/data-sci-workshop)
+3.  [Software Carpentry Version Control with Git episode #8](https://swcarpentry.github.io/git-novice/08-collab)
+
+### Review
+
+If anyone connected a local repository to GitHub, share how that went.
+Ask students to navigate to previous repository, amend an existing file, and practice an add-commit-push cycle.
+
+### Modifications
+
+-   The only part of #8 that was taught was cloning a forked repository. Ask students to fork an instructor-created repository, then clone locally. This will be the repo for downstream files.
+-   Use `git remote add upstream xxxx` to connect repo to upstream. If time permits, demonstrate a pull request (PR).
+-   Share [diagram](https://www.tomasbeuzen.com/post/git-fork-branch-pull/) of relationships between the remotes (upstream and origin) and local
+-   Demonstrate pull requests on GitHub
+-   Show how distinct units of work can be separately submitted via branches
+
+## Teaching notes
+
+-   Have students fork a `cct-datascience` repo as an example of a real research compendium
+-   Easy to check on learner progress by looking for who has and hasn't forked repo
+
+## Homework
+
+Skim the **Analyses** section of [tidyverse R style guide](https://style.tidyverse.org).
+What practice or guideline was new to you?
+
+Also, explore the upstream `cct-datascience` repo.
+What practices do you notices that are new or different from your own?
+
+<!--# practice making a reprex and pasting into Slack? -->

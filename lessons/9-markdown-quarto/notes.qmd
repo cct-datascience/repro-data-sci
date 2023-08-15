@@ -1,0 +1,18 @@
+---
+title: "Documentation and Literate Programming"
+format: html
+---
+
+## Objective
+
+Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto.
+
+## Installation & Materials
+
+### Review
+
+### Modifications
+
+## Teaching Notes
+
+## Homework

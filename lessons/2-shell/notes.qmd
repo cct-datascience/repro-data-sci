@@ -3,11 +3,11 @@ title: "Using the Shell"
 format: html
 ---
 
-#### Objective
+## Objective
 
 Learners should be comfortable with their file structure and navigating around it using command line commands in RStudio Terminal pane.
 
-#### Installation & materials
+## Installation & materials
 
 1.  [Slides](slides.qmd)
 2.  [macOS git installation](https://git-scm.com/download/mac)
@@ -16,11 +16,11 @@ Learners should be comfortable with their file structure and navigating around i
 5.  [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
 6.  [Software Carpentry Unix Shell episode #3](https://swcarpentry.github.io/shell-novice/03-create) (time permitting)
 
-##### Review
+### Review
 
 Ask students to share any successes or stumbling blocks when re-organizing projects or R code.
 
-##### Modifications
+### Modifications
 
 -   Use terminal window within RStudio as command line interface
     -   Start with a brief overview of RStudio panes
@@ -32,7 +32,7 @@ Ask students to share any successes or stumbling blocks when re-organizing proje
 -   At beginning of episode #2, explain file path using example from instructor's file system
 -   Can also use example diagram for file system using instructor's
 
-#### Teaching notes
+## Teaching notes
 
 -   Emphasize purposes for learning shell
     -   Helpful for using git and GitHub
@@ -50,6 +50,6 @@ Ask students to share any successes or stumbling blocks when re-organizing proje
 -   Unzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with `unzip`
     -   Once unzipped, have everyone share absolute file path to location of file
 
-#### Homework
+## Homework
 
 Read <https://peerj.com/preprints/3159/>

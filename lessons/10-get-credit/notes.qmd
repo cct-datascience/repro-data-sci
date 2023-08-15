@@ -1,0 +1,20 @@
+---
+title: "Getting Credit For Your Hard Work"
+format: html
+---
+
+## Objective
+
+Learn the wrap-up steps to publish/archive a research compendium with a DOI.
+Understand reproducible computational environment.
+Learn `renv` and discuss Docker (concept).
+
+## Installation & Materials
+
+### Review
+
+### Modifications
+
+## Teaching Notes
+
+## Homework

@@ -3,11 +3,11 @@ title: "Version control with git"
 format: html
 ---
 
-#### Objective
+## Objective
 
 Learners will practice how changes to code are tracked with version control and become familiar with command-line git within the RStudio IDE.
 
-#### Installation & materials
+## Installation & materials
 
 1.  [Slides](https://docs.google.com/presentation/d/1sbHdLtxfVFv-4V6tY_P89zhnxCA49rKwW3B3RBBv7Qg/edit#slide=id.p)
 2.  [Software Carpentry Version Control with Git episode #2](https://swcarpentry.github.io/git-novice/02-setup)
@@ -16,27 +16,28 @@ Learners will practice how changes to code are tracked with version control and 
 5.  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
 6.  (optional) [Software Carpentry Version Control with Git episode #5](https://swcarpentry.github.io/git-novice/05-history)
 
-##### Review
+### Review
 
 Ask students to share their diagram of their file system.
 Warm up with the review question in slide deck.
 
-##### Modifications
+### Modifications
 
--   Create an RStudio project to be the git repo. Get in practice of project = repo
+-   Create an RStudio project to be the git repo.
 -   Use RStudio interface to create a new/blank R file (rather than using the planets example)
 -   Add R pseudocode or comments to blank R file
 
-#### Teaching notes
+## Teaching notes
 
 -   `pilot-analyses/` will be the locally created repository
+-   Emphasize 1:1 relationship of RStudio Project to git repo
 -   When setting up git for the first time, remind students to use the same email as their existing GitHub account or to select an email that will be used for GitHub
 -   Reinforce using `cd` and `ls -al` to move around the file structure and see contents
 -   Show how git restore can be used to undo a saved file
 -   `HEAD` is the snapshot of your last commit
 -   Can use `git reset HEAD~` to undo the last commit and unstage everything---the equivalent of reversing the git add and git commit commands.
 
-#### Homework
+## Homework
 
 Create a GitHub account if you don't already have one.
 For an extra challenge, identify an existing folder and turn into a repository.

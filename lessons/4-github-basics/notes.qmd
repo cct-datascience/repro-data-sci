@@ -1,0 +1,41 @@
+---
+title: "Developing Code on Github"
+format: html
+---
+
+## Objective
+
+Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically.
+Learners will practice developing new code on branches.
+
+## Installation & materials
+
+1.  [Slides](https://docs.google.com/presentation/d/1u45oBwInH3HkDE0KbRUFeVK_-P1oP6PA-yjYPbNH7wM/edit#slide=id.p)
+2.  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
+3.  GitHub authentication with PAT using [Jenny Bryan's Git book chapter 9](https://happygitwithr.com/https-pat.html) (follow `usethis::git_sitrep()`)
+4.  [Software Carpentry Version Control with Git episode #7](https://swcarpentry.github.io/git-novice/07-github)
+5.  [Software Carpentry branching add-on](http://erdavenport.github.io/git-lessons/10-branching)
+
+### Review
+
+If anyone turned a folder into a repository, share how that went.
+Ask students to navigate to previous repository, add new R file, and practice an add-commit cycle.
+
+### Modifications
+
+-   Provide a large .csv file, ask students to move into pilot-analyses repo within a data folder using cd and filepaths
+-   If RStudio project was initialized as a git repo, should already have `.gitignore`. View and explain and practice adding something.
+-   Go with HTTPS + PAT setup, not SSH, but still mention SSH.
+-   Connect local git repo to GitHub with `usethis::use_github()`
+-   Create new repository entitled `repro-DS-workshop` on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized
+-   Show how checking out a branch literally changes the local files
+
+## Teaching notes
+
+-   Practice another add-commit cycle after creating the .gitignore
+-   Introduce the add-commit-push cycle
+
+## Homework
+
+Connect a personal repository to GitHub.
+Practice `usethis::use_git()` and `usethis::use_github()`.
