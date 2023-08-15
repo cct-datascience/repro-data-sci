@@ -103,3 +103,12 @@ Learning Objectives:
 2.  Use best practices for organizing files in a project
 3.  Use relative file paths to improve portability of projects
 4.  Structure R scripts so they are easier to understand
+
+## Takeaways
+
+-   Structure files in self-contained projects or "research compendia"
+-   Put data in a separate folder and never edit raw data!
+-   Avoid `setwd()` and `getwd()`---use relative paths and RStudio projects instead
+-   Naming things well is difficult but worth spending time on
+-   Use some consistent style in your code and organize scripts in sections
+-   Split long scripts into multiples and use `source()` to run them if needed

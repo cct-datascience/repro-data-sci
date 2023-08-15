@@ -12,13 +12,14 @@ Learners will learn about and practice managing their projects using file struct
 2.  [Software Carpentry Introduction to R and RStudio episode](https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro)
 3.  [Software Carpentry Project Management with RStudio episode](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro)
 4.  [Software Carpentry Best Practices for Writing R Code](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R)
+5.  <https://r4ds.hadley.nz/workflow-style>
 
 ##### Modifications
 
 -   RStudio
     -   Can skip most of the Introduction to R and RStudio lesson, but may be helpful as a refresher.
     -   Focus on setting up RStudio for reproducibility---don't save or restore workspace, restart R session often.
-    -   Show command pallette with {{< kbd mac=Cmd-Shift-P win=Control-Shift-P >}}
+    -   Show command palette with {{< kbd mac=Cmd-Shift-P win=Control-Shift-P >}}
 -   Project management
     -   Do "Best practices for project organization" including yellow "Tip: Good Enough Practices for Scientific Computing" box
     -   Then "A possible solution" section about R projects
@@ -30,6 +31,7 @@ Learners will learn about and practice managing their projects using file struct
 
 -   Encourage attendees to have two monitors---one for Zoom and one for RStudio
 -   Include how R projects promotes reproducibility, by being able to save scripts and close them or entire project
+-   When students download data, they will need to move it into the new project which helps mentally connect file pane of RStudio with filesystem of computer
 
 #### Homework
 
