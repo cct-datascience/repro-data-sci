@@ -111,4 +111,12 @@ Learning Objectives:
 -   Avoid `setwd()` and `getwd()`---use relative paths and RStudio projects instead
 -   Naming things well is difficult but worth spending time on
 -   Use some consistent style in your code and organize scripts in sections
--   Split long scripts into multiples and use `source()` to run them if needed
+-   Split long scripts into multiples and use `source()` to run them if needed'
+
+## Homework (optional)
+
+Re-organize an existing project into a research compendium with separate folders for raw data, cleaned data, data wrangling scripts, analysis scripts, and outputs
+
+OR
+
+Organize one of your R scripts with sections and apply a consistent coding style (e.g. with Code \> Reformat Code or with the `styler` package)
