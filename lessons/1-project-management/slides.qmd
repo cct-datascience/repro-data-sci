@@ -47,8 +47,16 @@ Including future you!
 
 ## Syllabus & Workshop Materials
 
-Workshop series website: \
+Workshop series website:\
 <https://cct-datascience.github.io/repro-data-sci/>
+
+## Screen Setup {{< fa desktop >}} {{< fa laptop >}}
+
+-   Dual monitors will be *very* helpful
+-   Virtual desktops ("Spaces" in macOS) also helpful
+-   Let us know if you do not have access to a second monitor
+
+![](desk.jpg){fig-alt="Photo of a desk with a laptop on a laptop stand to the left and a larger monitor to the right in front of an external keyboard.  Laptop monitor has Zoom open and the larger monitor has RStudio open." fig-align="center"}
 
 ## Settings for Success
 

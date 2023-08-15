@@ -28,6 +28,7 @@ Learners will learn about and practice managing their projects using file struct
 
 #### Teaching notes
 
+-   Encourage attendees to have two monitors---one for Zoom and one for RStudio
 -   Include how R projects promotes reproducibility, by being able to save scripts and close them or entire project
 
 #### Homework
