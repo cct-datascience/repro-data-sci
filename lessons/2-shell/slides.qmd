@@ -41,6 +41,6 @@ pwd
 
 ![](file-structure-example.png)
 
-## Homework
+## Homework (optional)
 
--   Diagram your home directory file structure including top 3 most used folders
+-   Read ["Excuse me, do you have a moment to talk about version control?"](https://peerj.com/preprints/3159/)
