@@ -1,0 +1,40 @@
+---
+title: "Intermediate R programming II"
+format: html
+---
+
+## Objective
+
+Learners will learn how to make their R code more reproducible using for loops and the apply family of functions.
+
+## Installation & materials
+
+1.  [Slides](https://docs.google.com/presentation/d/1SbLl55PzVloqdapmMiLlbRNFE1xTVZNqtZ9UFt-evxg/edit#slide=id.p)
+2.  [Data Carpentry for Biologists for loop lecture](https://datacarpentry.org/semester-biology/materials/for-loops-R/) <!--# switch to R4DS chapter on iteration? -->
+3.  [Data Carpentry for Biologists iteration without loops lecture](https://datacarpentry.org/semester-biology/materials/iteration-without-loops-R/)? <!--# switch to R4DS chapter? -->
+
+### Review
+
+Can share their plans for apply skills to their research.
+Lead optional discussion on when to use base R vs. tidyverse packages/functions.
+
+### Modifications
+
+-   For for loops lecture:
+    -   At "Do Tasks 3-4...", do "Basic For Loop" exercises #2 & #3
+    -   Skip sections "Looping over multiple values" and "Looping with functions"
+    -   Stop at "Looping over files" due to zip download issues
+-   For apply lecture:
+    -   Do "Size Estimates With Maximum" exercise
+    -   Do "Size Estimates Vectorized 2" exercise
+    -   Stop after first section in "Other apply functions (optional)" section
+
+## Teaching notes
+
+-   Create new R script for these materials. Put script into `repro-DS-workshop` repo
+-   Emphasize using for loops using index or non-index methods. Index can be useful for reducing memory use and for storing results
+-   If time, demonstrate combining `if` and `for`
+
+## Homework
+
+Identify a script from a research project that could benefit from a for loop, apply, conditional, or function.

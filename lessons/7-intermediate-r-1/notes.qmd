@@ -1,0 +1,45 @@
+---
+title: "Intermediate R programming I"
+format: html
+---
+
+## Objective
+
+Learners will learn how to make their R code more reproducible using functions and control flow approaches.
+
+## Installation & materials
+
+1.  [Slides](https://docs.google.com/presentation/d/1C9CFoqAr4Hmm_MqIZvos6grESpzauT5_xMyS0qgcmjk/edit)
+2.  [Data Carpentry for Biologists functions lecture](https://datacarpentry.org/semester-biology/materials/functions-R/)
+3.  [Data Carpentry for Biologists conditionals lecture](https://datacarpentry.org/semester-biology/materials/conditionals-R/)
+
+### Review
+
+Ask to share cleaning up of example script, their own script, or their research project folder from lesson 5.
+
+### Modifications
+
+-   For functions lecture, had them do only the "Use and Modify" exercise
+-   From conditionals lecture, only did "if statements" section
+-   From latter, only did "Basic If Statements" #2 exercise
+-   Added on brief explanation of `ifelse`, using the example of `ifelse(length == 5, "correct", "incorrect")`
+-   Mention `case_when` from dplyr for more complicated if & else steps
+
+## Teaching notes
+
+-   Before doing functions and conditions, demonstrate updating local `cct-organization` repo from upstream after adding a commit to the upstream
+-   Create new R script for functions content, and another new R script for control flow (`ifelse` and `for` loops) content. Put both scripts into `repro-DS-workshop` repo
+-   Mention functions are often used with for loops or apply statements
+-   After functions, mention consistent order of sections in scripts; example is libraries, read in data, functions, executing functions
+-   Include real world examples of `if` and `ifelse` statements to motivate their use, especially for checking if files already exist
+-   Demonstrate making a new branch and opening up a pull request in their `repro-DS-workshop` repo at the end of each set of material; can merge pull request
+
+## Homework
+
+Create a plan for applying these skills to their own research projects.
+Can apply different parts to different projects, or more integratively to one single project.
+Some possibilities:
+
+-   Turn the project folder for one of your current research project into a git/GitHub repo and/or R project
+-   Modify an R script to use functions, if/for loops, or format code according to best practices
+-   Improve file and folder organization for project or your entire computer!

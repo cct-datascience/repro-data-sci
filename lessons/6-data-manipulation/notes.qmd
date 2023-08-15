@@ -1,0 +1,29 @@
+---
+title: "Data manipulation"
+format: html
+---
+
+## Objective
+
+Learn how to reproducibly clean, summarize, and reorganize dataframes using tidyverse R packages.
+
+## Installation & materials
+
+1.  [Slides](https://docs.google.com/presentation/d/1YoVpsCq6MWv6TYiBil79b4X_qGRUiviYmjZPBEz7WqE/edit#slide=id.p)
+2.  Install R packages 'dplyr', 'tidyr', 'readr'
+3.  [Data carpentry R ecology revamp episode #2](https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data)
+4.  [Data carpentry R ecology revamp episode #3](https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data)
+
+### Modifications
+
+-   Explain data.frames and types of vectors, but skip over exercises on coercion and factors
+-   Clarify difference between `==` and `%in%`, including that no warning or error given for `==` that induces vector recycling
+-   End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository
+
+### Teaching notes
+
+-   Have students install each package separately rather than as the tidyverse---can be important to know which functions come from which packages
+
+### Homework
+
+None
