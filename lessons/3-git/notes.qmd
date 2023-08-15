@@ -23,13 +23,14 @@ Warm up with the review question in slide deck.
 
 ### Modifications
 
--   Create an RStudio project to be the git repo. Get in practice of project = repo
+-   Create an RStudio project to be the git repo.
 -   Use RStudio interface to create a new/blank R file (rather than using the planets example)
 -   Add R pseudocode or comments to blank R file
 
 ## Teaching notes
 
 -   `pilot-analyses/` will be the locally created repository
+-   Emphasize 1:1 relationship of RStudio Project to git repo
 -   When setting up git for the first time, remind students to use the same email as their existing GitHub account or to select an email that will be used for GitHub
 -   Reinforce using `cd` and `ls -al` to move around the file structure and see contents
 -   Show how git restore can be used to undo a saved file
