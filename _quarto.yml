@@ -28,6 +28,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
+  revealjs: 
+    footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
 editor: visual
 
