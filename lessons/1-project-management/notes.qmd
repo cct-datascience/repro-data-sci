@@ -1,5 +1,6 @@
 ---
 title: "Project Management and Coding Best Practices"
+format: html
 ---
 
 #### Objective

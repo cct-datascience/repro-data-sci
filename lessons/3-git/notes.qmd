@@ -1,5 +1,6 @@
 ---
 title: "Version control with git"
+format: html
 ---
 
 #### Objective
