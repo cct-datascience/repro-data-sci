@@ -23,6 +23,10 @@ I want my work to be reproducible because...
 
 </textarea>
 ```
+## 
+
+[![By The Turing Way Community](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions)
+
 ## The Whole Picture
 
 ::: callout-note

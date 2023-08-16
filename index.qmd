@@ -62,6 +62,7 @@ Best practices for reproducibility:
 -   [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
 -   [Data organization in spreadsheets](https://doi.org/10.1080/00031305.2017.1375989)
 -   [A beginner's guide to conducting reproducible research](https://doi.org/10.1002/bes2.1801)
+-   [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research)
 
 Version control:
 
