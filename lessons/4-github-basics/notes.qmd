@@ -10,7 +10,7 @@ Learners will practice developing new code on branches.
 
 ## Installation & materials
 
-1.  [Slides](https://docs.google.com/presentation/d/1u45oBwInH3HkDE0KbRUFeVK_-P1oP6PA-yjYPbNH7wM/edit#slide=id.p)
+1.  [Slides](slides.qmd)
 2.  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
 3.  GitHub authentication with PAT using [Jenny Bryan's Git book chapter 9](https://happygitwithr.com/https-pat.html) (follow `usethis::git_sitrep()`)
 4.  [Software Carpentry Version Control with Git episode #7](https://swcarpentry.github.io/git-novice/07-github)

@@ -1,0 +1,49 @@
+---
+title: "GitHub"
+format: revealjs
+bibliography: references.bib
+---
+
+## Review & Homework
+
+-   Turn folder into git repo with `git init`
+
+    -   Save changes to files with `git add` and `git commmit`
+
+-   If you turned another project into a repo, how did it go?
+
+## Today's goals
+
+1.  Learn how to tell git to ignore files
+2.  Put a local repo on GitHub
+3.  Use `git push` and `git pull` to synchronize with GitHub
+3.  Use branches for new work
+
+## Ignoring files
+
+-   If you created an RStudio project with git enabled, you should have a top-level `.gitignore`
+
+## Sharing with GitHub
+
+![](github-diagram-bryan.png){fig-align="center" width="671"}
+
+::: aside
+Figure 2 from [@bryan2018]
+:::
+
+::: notes
+-   All contributors have a local copy of the repo.
+-   You might also have a copy in multiple places (on multiple computers, on university HPC).
+-   GitHub has a central repo that allows you to synchronize and merge work from multiple sources.
+-   You can also access the repo through github.com web UI
+:::
+
+
+## Homework
+
+Put a project repo on GitHub and share the link on Slack
+
+## References
+
+::: refs
+:::
