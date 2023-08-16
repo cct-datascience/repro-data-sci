@@ -17,7 +17,7 @@ bibliography: references.bib
 1.  Learn how to tell git to ignore files
 2.  Put a local repo on GitHub
 3.  Use `git push` and `git pull` to synchronize with GitHub
-3.  Use branches for new work
+4.  Use branches for new work
 
 ## Ignoring files
 
@@ -37,7 +37,6 @@ Figure 2 from [@bryan2018]
 -   GitHub has a central repo that allows you to synchronize and merge work from multiple sources.
 -   You can also access the repo through github.com web UI
 :::
-
 
 ## Homework
 

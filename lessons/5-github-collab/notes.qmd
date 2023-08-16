@@ -11,7 +11,7 @@ Learners will fork and clone a repository on GitHub and use branches to open pul
 
 ## Installation & materials
 
-1.  [Slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit)
+1.  [Slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit) <!--# slides are great as-is.  No need to port to Quarto -->
 2.  Workshop [repository](https://github.com/az-digitalag/data-sci-workshop)
 3.  [Software Carpentry Version Control with Git episode #8](https://swcarpentry.github.io/git-novice/08-collab)
 
