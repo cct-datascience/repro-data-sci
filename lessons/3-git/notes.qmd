@@ -5,13 +5,12 @@ format: html
 
 ## Objective
 
-- Understand the concept and motivation of version control
-- Set up git correctly on their machine (email address linked to their GH account; `--global` config)
-- Understand that repos == folders =can= .Rproj. 
-- Initialize a git repo associated with an RStudio project called `pilot-analyses`. 
-- Understand the modify-add-commit progression. Apply this by making modifications to some R code and then committing it to the `pilot-analyses` repo (git commands: `status`, `log`, `diff`, `add`, `commit`)
-- Use .gitignore to selectively exclude files from git.
-
+-   Understand the concept and motivation of version control
+-   Set up git on their machine (email address linked to their GH account; `--global` config)
+-   Understand that repos == folders =can= .Rproj.
+-   Initialize a git repo associated with an RStudio project called `pilot-analyses`.
+-   Understand the modify-add-commit progression. Apply this by making modifications to some R code and then committing it to the `pilot-analyses` repo (git commands: `status`, `log`, `diff`, `add`, `commit`)
+-   Use .gitignore to selectively exclude files from git.
 
 ## Lesson outline
 

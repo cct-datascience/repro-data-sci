@@ -1,14 +1,26 @@
 ---
 title: "Version Control With `git`"
-subtitle: "Session 2"
+subtitle: "Session 3"
 format: revealjs
 ---
 
-## Review {.smaller}
+# Review 1
+
+What stood out to you when (if) you diagrammed your file system?
+
+# Review 2 {.smaller}
 
 ![](/lessons/2-shell/file-structure-example.png)
 
 If your current working directory is `Users/kristinariemer/Dropbox/Documents`, what command could be used to change directory into the local Documents folder?
+
+# Learning objectives
+
+-   Understand the what and why of version control
+-   Set up git on your computer
+-   Create a git repository associated with an R project 
+-   Use git to track and record changes to a git repository
+-   Use .gitignore to selectively exclude files from git.
 
 ## 
 
@@ -34,15 +46,41 @@ Semi-automated system for tracking changes with unlimited "undo"
 
 ## Setting up `git` (once per machine)
 
+We installed git last week, so you should be ready to set it up!
+
 ``` {.bash filename="Shell"}
 git config --global user.name "Your Name"
-git config --global user.email "youremail@arizona.edu" #GitHub associated email
+git config --global user.email "youremail@arizona.edu" 
+# Use your GitHub associated email
 ```
 
-## A two-step process
+# Coding time
+
+`git config`
+
+# Coding time
+
+Create an RStudio project and initialize it as a git repository.
+
+Use git status to check the state of the repo.
+
+# Coding time
+
+Track modifications to a git repository.
+
+## Saving modifications: a two-step process
 
 ![](git-simple.png)
 
 ## Adding multiple files to same commit
 
 ![](git-multiple.png)
+
+# Coding time
+
+`.gitignore`
+
+# Homework
+
+- Create a [GitHub](https://github.com) account if you don't have one.
+- Optional: Identify an exisitng folder on your computer and turn it into a git repository.
