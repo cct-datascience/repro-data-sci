@@ -5,58 +5,55 @@ format: html
 
 ## Objectives
 
-- Understand the concept of the shell and the anatomy of a shell command
-- Interact with the shell using common commands (`ls`, `pwd`, `cd`) 
-- Find help via --help, man, and online help pages
-- Navigate around their working directories using `ls`, `cd`
-- (Optional) Create, copy,  move, and delete files/directories using `mkdir`, `nano`, `touch`, `mv`,  `cp`, `rm`.
-
+-   Understand the concept of the shell and the anatomy of a shell command
+-   Interact with the shell using common commands (`ls`, `pwd`, `cd`)
+-   Find help via --help, man, and online help pages
+-   Navigate around their working directories using `ls`, `cd`
+-   (Optional) Create, copy, move, and delete files/directories using `mkdir`, `nano`, `touch`, `mv`, `cp`, `rm`.
 
 ## Lesson outline
 
-- Review of last week
-    - What happened as you were trying to re-organize projects or R code? Victories? Stumbling blocks?
-- Slides: Intro to the shell
-    - What is the shell?
-    - What does the shell let us do?
-    - Why would we want to learn how to use the shell?
-- Breakout rooms: Shell installation
-    - Instructor notes include links to git installation for both Mac and Windows.
-    - Split into 2 breakout rooms to install on different OS's. 
-- Break to all download shell-lesson-data
-    - Link
-    - Put it somewhere high in the file system (Desktop)
-    - Unzip using command line unzip (or just point-and-click in computer file system?)
-- Live coding: Intro to the terminal pane in RStudio
-    - Quick tour of RStudio panes
-        - Emphasize files pane, analogous to Finder/File Explorer
-        - Navigate to shell-lesson-data
-    - Everyone set up to use bash with Terminal pane
-    - Show navigation to Current Directory in Terminal pane in RStudio
-        - Make sure everyone ends up in shell-lesson-data
-- Live coding: Unix Shell lesson 1
-    - https://swcarpentry.github.io/shell-novice/01-intro
-    - (a lot of the text the content of this lesson will  be covered in the slides section above)
-    - Identify the prompt and note that it is different in zsh (%)
-    - Introduce ls
-    - Introduce `command not found`
-    - Introduce general anatomy of a shell prompt (Slide/share image)
-- Live coding: Unix Shell lesson 2
-    - `pwd` and file systems
-    - Using options and getting help
-    - Navigating around file systems
-- (Time-permitting) live coding: Unix Shell lesson 3
-    - Creating directories
-    - Creating and editing text files
-    - Moving and renaming files and directories
-    - Copying
-    - Removing
-    - Wildcards
-- Homework for next session
-    - Read <https://peerj.com/preprints/3159/>
-git (Version control prep)
-    - Create a diagram of your file system and note your most frequently used directories
-
+-   Review of last week
+    -   What happened as you were trying to re-organize projects or R code? Victories? Stumbling blocks?
+-   Slides: Intro to the shell
+    -   What is the shell?
+    -   What does the shell let us do?
+    -   Why would we want to learn how to use the shell?
+-   Breakout rooms: Shell installation
+    -   Instructor notes include links to git installation for both Mac and Windows.
+    -   Split into 2 breakout rooms to install on different OS's.
+-   Break to all download shell-lesson-data
+    -   Link
+    -   Put it somewhere high in the file system (Desktop)
+    -   Unzip using command line unzip (or just point-and-click in computer file system?)
+-   Live coding: Intro to the terminal pane in RStudio
+    -   Quick tour of RStudio panes
+        -   Emphasize files pane, analogous to Finder/File Explorer
+        -   Navigate to shell-lesson-data
+    -   Everyone set up to use bash with Terminal pane
+    -   Show navigation to Current Directory in Terminal pane in RStudio
+        -   Make sure everyone ends up in shell-lesson-data
+-   Live coding: Unix Shell lesson 1
+    -   https://swcarpentry.github.io/shell-novice/01-intro
+    -   (a lot of the text the content of this lesson will be covered in the slides section above)
+    -   Identify the prompt and note that it is different in zsh (%)
+    -   Introduce ls
+    -   Introduce `command not found`
+    -   Introduce general anatomy of a shell prompt (Slide/share image)
+-   Live coding: Unix Shell lesson 2
+    -   `pwd` and file systems
+    -   Using options and getting help
+    -   Navigating around file systems
+-   (Time-permitting) live coding: Unix Shell lesson 3
+    -   Creating directories
+    -   Creating and editing text files
+    -   Moving and renaming files and directories
+    -   Copying
+    -   Removing
+    -   Wildcards
+-   Homework for next session
+    -   Read <https://peerj.com/preprints/3159/> git (Version control prep)
+    -   Create a diagram of your file system and note your most frequently used directories
 
 ## Installation & materials
 
