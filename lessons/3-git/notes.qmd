@@ -7,6 +7,45 @@ format: html
 
 Learners will practice how changes to code are tracked with version control and become familiar with command-line git within the RStudio IDE.
 
+## Lesson outline
+
+- Review of last week
+    - Ask folks to share the diagram of their file system
+    - Warm-up with review question from the slide deck
+- Slides/lecture: Intro to version control with git
+    - What is version control?
+    - Why should I learn this? When will I need it?
+- Live coding: SW Carpentry Git lesson 2
+    - https://swcarpentry.github.io/git-novice/02-setup
+    - Setting up git using git config
+        - Make sure participants use their GH email/intended GH email
+- Live coding: SW Carpentry Git lesson 3
+    - https://swcarpentry.github.io/git-novice/03-create.html
+    - Introduce the concept of a repository
+    - Create a RStudio project using RStudio point-and-click interface. Call it `pilot-analyses`
+    - Use git init to initialize this project folder as a repository
+    - Use git status to check state of git repo
+- Live coding: SW Carpentry Git lesson 4
+    - https://swcarpentry.github.io/git-novice/04-changes
+    - Tracking changes to a Git repo (modify/add/commit). 
+    - Visualize in slides
+    - Create a blank R file (using RStudio point and click)
+    - Make comments/pseudocode changes.
+    - git status
+    - Go through git add/commit cycle
+    - Make additional changes, use git diff
+    - Show git restore
+    - git reset HEAD~
+- Live coding: SW Carpentry Git lesson 6
+    - https://swcarpentry.github.io/git-novice/06-ignore
+    - .gitignore
+- (Time permitting): SW Carpentry Git lesson 5
+    - https://swcarpentry.github.io/git-novice/05-history
+    - Navigating git history
+- Homework:
+    - Create a GitHub account if you don't have one.
+    - (Optional) identify an existing folder and turn it into a repository. 
+
 ## Installation & materials
 
 1.  [Slides](https://docs.google.com/presentation/d/1sbHdLtxfVFv-4V6tY_P89zhnxCA49rKwW3B3RBBv7Qg/edit#slide=id.p)
@@ -16,10 +55,11 @@ Learners will practice how changes to code are tracked with version control and 
 5.  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
 6.  (optional) [Software Carpentry Version Control with Git episode #5](https://swcarpentry.github.io/git-novice/05-history)
 
+## Notes from before
+
 ### Review
 
-Ask students to share their diagram of their file system.
-Warm up with the review question in slide deck.
+Ask students to share their diagram of their file system. Warm up with the review question in slide deck.
 
 ### Modifications
 
@@ -27,7 +67,7 @@ Warm up with the review question in slide deck.
 -   Use RStudio interface to create a new/blank R file (rather than using the planets example)
 -   Add R pseudocode or comments to blank R file
 
-## Teaching notes
+### Teaching notes
 
 -   `pilot-analyses/` will be the locally created repository
 -   Emphasize 1:1 relationship of RStudio Project to git repo
@@ -37,7 +77,6 @@ Warm up with the review question in slide deck.
 -   `HEAD` is the snapshot of your last commit
 -   Can use `git reset HEAD~` to undo the last commit and unstage everything---the equivalent of reversing the git add and git commit commands.
 
-## Homework
+### Homework
 
-Create a GitHub account if you don't already have one.
-For an extra challenge, identify an existing folder and turn into a repository.
+Create a GitHub account if you don't already have one. For an extra challenge, identify an existing folder and turn into a repository.

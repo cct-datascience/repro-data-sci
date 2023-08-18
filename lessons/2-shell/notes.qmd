@@ -54,7 +54,8 @@ format: html
     - Wildcards
 - Homework for next session
     - Read <https://peerj.com/preprints/3159/>
- (Version control prep)
+git (Version control prep)
+    - Create a diagram of your file system and note your most frequently used directories
 
 
 ## Installation & materials
