@@ -8,7 +8,7 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.288">
+  <meta name="generator" content="quarto-1.3.450">
 
   <title>repro-data-sci - Shell Commands</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -222,8 +157,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -399,53 +333,104 @@
 </div>
 
 </section>
-<section>
-<section id="shell-commands" class="title-slide slide level1 center">
-<h1>Shell Commands</h1>
+<section id="review-of-last-week" class="title-slide slide level1 center">
+<h1>Review of last week</h1>
 <ul>
-<li><p>Be able to work with tools that don’t have a GUI</p></li>
-<li><p>Batch large tasks (e.g.&nbsp;renaming files)</p></li>
-<li><p>Interact with remote computers like the University HPC</p></li>
+<li>What happened as you were trying to re-organize projects or R code?
+<ul>
+<li>Victories?</li>
+<li>Stumbling blocks?</li>
+</ul></li>
 </ul>
 </section>
-<section id="installation" class="slide level2">
-<h2>Installation</h2>
+
+<section id="learning-objectives" class="title-slide slide level1 center">
+<h1>Learning objectives</h1>
+<ul>
+<li>Understand the what and why of the shell</li>
+<li>Interact with the shell using common commands</li>
+<li>Find help via –help, man, and online help pages</li>
+<li>Navigate your file system from the command line</li>
+<li>(Time permitting) Manipulate and move files from the command line</li>
+</ul>
+</section>
+
+<section id="what-is-the-shell" class="title-slide slide level1 center">
+<h1>What is the shell?</h1>
+<ul>
+<li>Command-line interface, in contrast to a GUI</li>
+</ul>
+</section>
+
+<section id="why-learn-the-shell" class="title-slide slide level1 center">
+<h1>Why learn the shell?</h1>
+<ul>
+<li>Be able to work with tools that don’t have a GUI</li>
+<li>Batch large tasks (e.g.&nbsp;renaming files)</li>
+<li>Interact with remote computers like the University HPC</li>
+</ul>
+</section>
+
+<section id="lets-get-set-up" class="title-slide slide level1 center">
+<h1>Let’s get set up!</h1>
 <ul>
 <li><p>macOS comes with a shell (usually Bash or Zsh) built-in</p></li>
 <li><p>Windows need to install GitBash (includes Bash shell and git, which we will use later)</p></li>
+<li><p>Breakout rooms</p></li>
 </ul>
 </section>
-<section id="pwdprint-working-directory" class="slide level2">
-<h2><code>pwd</code>—print working directory</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>/Users/ericscott/Documents/GitHub/repro-data-sci/lessons/2-shell</code></pre>
-</div>
-</div>
+
+<section id="data-download" class="title-slide slide level1 center">
+<h1>Data download</h1>
+<ul>
+<li>Download <code>shell-lesson-data.zip</code>
+<ul>
+<li>Instructions here: <a href="https://swcarpentry.github.io/shell-novice/index.html#download-files" class="uri">https://swcarpentry.github.io/shell-novice/index.html#download-files</a></li>
+</ul></li>
+<li>Save it to your Desktop and unzip it.</li>
+</ul>
 </section>
-<section id="syntax-of-a-shell-command" class="slide level2">
-<h2>Syntax of a shell command</h2>
+
+<section id="coding-time" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<ul>
+<li>Intro to shell commands</li>
+</ul>
+</section>
+
+<section id="syntax-of-a-shell-command" class="title-slide slide level1 center">
+<h1>Syntax of a shell command</h1>
 
 <img data-src="shell_syntax.png" class="r-stretch quarto-figure-center"></section>
-<section id="section" class="slide level2">
-<h2></h2>
+
+<section id="coding-time-1" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<ul>
+<li>File systems</li>
+</ul>
+</section>
+
+<section id="example-file-system" class="title-slide slide level1 center">
+<h1>Example file system</h1>
 
 <img data-src="file-path-example.png" class="r-stretch"></section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+
+<section id="example-file-system-1" class="title-slide slide level1 center">
+<h1>Example file system</h1>
 
 <img data-src="file-structure-example.png" class="r-stretch"></section>
-<section id="homework" class="slide level2">
-<h2>Homework</h2>
+
+<section id="homework-for-next-time" class="title-slide slide level1 center">
+<h1>Homework for next time</h1>
 <ul>
-<li>Diagram your home directory file structure including top 3 most used folders</li>
+<li>Read <a href="https://peerj.com/preprints/3159/">“Excuse me, do you have a moment to talk about version control?”</a></li>
+<li>Create a diagram of your file system and note your most frequently used directories</li>
 </ul>
 
 <div class="footer footer-default">
-
+<p><a href="https://cct-datascience.github.io/repro-data-sci/">Reproduciblity &amp; Data Science in R</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -473,6 +458,7 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -772,9 +758,10 @@
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -784,17 +771,8 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

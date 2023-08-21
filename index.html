@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.288">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,11 +46,6 @@ ul.task-list li input[type="checkbox"] {
   "panel-placement": "end",
   "type": "overlay",
   "limit": 20,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">repro-data-sci</span>
     </a>
@@ -111,12 +106,40 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./lessons/3-git/notes.html" rel="" target="">
  <span class="dropdown-text">3. Version Control With Git</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/4-github-basics/notes.html" rel="" target="">
+ <span class="dropdown-text">4. Developing Code on GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/5-github-collab/notes.html" rel="" target="">
+ <span class="dropdown-text">5. Collaborating with GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/6-data-manipulation/notes.html" rel="" target="">
+ <span class="dropdown-text">6. Data Manipulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/7-intermediate-r-1/notes.html" rel="" target="">
+ <span class="dropdown-text">7. Intermediate R I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/8-intermediate-r-2/notes.html" rel="" target="">
+ <span class="dropdown-text">8. Intermediate R II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/9-markdown-quarto/notes.html" rel="" target="">
+ <span class="dropdown-text">9. Documentation &amp; Literate Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/10-get-credit/notes.html" rel="" target="">
+ <span class="dropdown-text">10. Getting Credit For Your Hard Work</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -133,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
   <li><a href="#helpful-reads" id="toc-helpful-reads" class="nav-link" data-scroll-target="#helpful-reads">Helpful Reads</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -154,7 +177,6 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
 
 <p>Welcome to the syllabus for the CCT Data Science fall workshop series: <strong>Reproducibility and Data Science in R.</strong> If you didn’t register for the course this year, sign up for our <a href="https://datascience.cct.arizona.edu/contact">mailing list</a> to be notified when enrollment opens for next year’s iteration and to be notified of our other monthly workshops.</p>
@@ -164,23 +186,24 @@ ul.task-list li input[type="checkbox"] {
 <!-- Edit by editing schedule.csv.  To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list. -->
 <div class="cell">
 <div class="cell-output-display">
-<div id="zmgjjfhhou" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zmgjjfhhou table {
+
+<div id="gdsdfkojwx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gdsdfkojwx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zmgjjfhhou thead, #zmgjjfhhou tbody, #zmgjjfhhou tfoot, #zmgjjfhhou tr, #zmgjjfhhou td, #zmgjjfhhou th {
+#gdsdfkojwx thead, #gdsdfkojwx tbody, #gdsdfkojwx tfoot, #gdsdfkojwx tr, #gdsdfkojwx td, #gdsdfkojwx th {
   border-style: none;
 }
 
-#zmgjjfhhou p {
+#gdsdfkojwx p {
   margin: 0;
   padding: 0;
 }
 
-#zmgjjfhhou .gt_table {
+#gdsdfkojwx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -206,12 +229,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_caption {
+#gdsdfkojwx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zmgjjfhhou .gt_title {
+#gdsdfkojwx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -223,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#zmgjjfhhou .gt_subtitle {
+#gdsdfkojwx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -235,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#zmgjjfhhou .gt_heading {
+#gdsdfkojwx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -247,13 +270,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_bottom_border {
+#gdsdfkojwx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_col_headings {
+#gdsdfkojwx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -268,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_col_heading {
+#gdsdfkojwx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -288,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#zmgjjfhhou .gt_column_spanner_outer {
+#gdsdfkojwx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -300,15 +323,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#zmgjjfhhou .gt_column_spanner_outer:first-child {
+#gdsdfkojwx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zmgjjfhhou .gt_column_spanner_outer:last-child {
+#gdsdfkojwx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zmgjjfhhou .gt_column_spanner {
+#gdsdfkojwx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -320,11 +343,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#zmgjjfhhou .gt_spanner_row {
+#gdsdfkojwx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zmgjjfhhou .gt_group_heading {
+#gdsdfkojwx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -350,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#zmgjjfhhou .gt_empty_group_heading {
+#gdsdfkojwx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -365,15 +388,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#zmgjjfhhou .gt_from_md > :first-child {
+#gdsdfkojwx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zmgjjfhhou .gt_from_md > :last-child {
+#gdsdfkojwx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zmgjjfhhou .gt_row {
+#gdsdfkojwx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -392,7 +415,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#zmgjjfhhou .gt_stub {
+#gdsdfkojwx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -405,7 +428,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zmgjjfhhou .gt_stub_row_group {
+#gdsdfkojwx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -419,15 +442,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#zmgjjfhhou .gt_row_group_first td {
+#gdsdfkojwx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zmgjjfhhou .gt_row_group_first th {
+#gdsdfkojwx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zmgjjfhhou .gt_summary_row {
+#gdsdfkojwx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -437,16 +460,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zmgjjfhhou .gt_first_summary_row {
+#gdsdfkojwx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_first_summary_row.thick {
+#gdsdfkojwx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zmgjjfhhou .gt_last_summary_row {
+#gdsdfkojwx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -456,7 +479,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_grand_summary_row {
+#gdsdfkojwx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -466,7 +489,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zmgjjfhhou .gt_first_grand_summary_row {
+#gdsdfkojwx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -476,7 +499,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_last_grand_summary_row_top {
+#gdsdfkojwx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -486,11 +509,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_striped {
+#gdsdfkojwx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zmgjjfhhou .gt_table_body {
+#gdsdfkojwx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -499,7 +522,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_footnotes {
+#gdsdfkojwx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -513,7 +536,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_footnote {
+#gdsdfkojwx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -522,7 +545,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zmgjjfhhou .gt_sourcenotes {
+#gdsdfkojwx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -536,7 +559,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zmgjjfhhou .gt_sourcenote {
+#gdsdfkojwx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -544,63 +567,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zmgjjfhhou .gt_left {
+#gdsdfkojwx .gt_left {
   text-align: left;
 }
 
-#zmgjjfhhou .gt_center {
+#gdsdfkojwx .gt_center {
   text-align: center;
 }
 
-#zmgjjfhhou .gt_right {
+#gdsdfkojwx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zmgjjfhhou .gt_font_normal {
+#gdsdfkojwx .gt_font_normal {
   font-weight: normal;
 }
 
-#zmgjjfhhou .gt_font_bold {
+#gdsdfkojwx .gt_font_bold {
   font-weight: bold;
 }
 
-#zmgjjfhhou .gt_font_italic {
+#gdsdfkojwx .gt_font_italic {
   font-style: italic;
 }
 
-#zmgjjfhhou .gt_super {
+#gdsdfkojwx .gt_super {
   font-size: 65%;
 }
 
-#zmgjjfhhou .gt_footnote_marks {
+#gdsdfkojwx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zmgjjfhhou .gt_asterisk {
+#gdsdfkojwx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zmgjjfhhou .gt_indent_1 {
+#gdsdfkojwx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zmgjjfhhou .gt_indent_2 {
+#gdsdfkojwx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zmgjjfhhou .gt_indent_3 {
+#gdsdfkojwx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zmgjjfhhou .gt_indent_4 {
+#gdsdfkojwx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zmgjjfhhou .gt_indent_5 {
+#gdsdfkojwx .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -643,27 +666,42 @@ ul.task-list li input[type="checkbox"] {
 <td headers="Date" class="gt_row gt_left">Tue, 9/12</td>
 <td headers="Theme" class="gt_row gt_left">Share &amp; Collaborate</td>
 <td headers="Topic" class="gt_row gt_left">Version control with git</td>
-<td headers="Links" class="gt_row gt_left">—</td></tr>
+<td headers="Links" class="gt_row gt_left"><div class="gt_from_md"><ul>
+<li><a href="lessons/3-git/slides.html">slides</a></li>
+</ul>
+</div></td></tr>
     <tr><td headers="Lesson" class="gt_row gt_left">4</td>
 <td headers="Date" class="gt_row gt_left">Thu, 9/14</td>
 <td headers="Theme" class="gt_row gt_left">Share &amp; Collaborate</td>
 <td headers="Topic" class="gt_row gt_left">Developing code on GitHub</td>
-<td headers="Links" class="gt_row gt_left">—</td></tr>
+<td headers="Links" class="gt_row gt_left"><div class="gt_from_md"><ul>
+<li><a href="lessons/4-github-basics/slides.html">slides</a></li>
+</ul>
+</div></td></tr>
     <tr><td headers="Lesson" class="gt_row gt_left">5</td>
 <td headers="Date" class="gt_row gt_left">Tue, 9/19</td>
 <td headers="Theme" class="gt_row gt_left">Share &amp; Collaborate</td>
 <td headers="Topic" class="gt_row gt_left">Collaborating with GitHub</td>
-<td headers="Links" class="gt_row gt_left">—</td></tr>
+<td headers="Links" class="gt_row gt_left"><div class="gt_from_md"><ul>
+<li><a href="https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/">slides</a></li>
+</ul>
+</div></td></tr>
     <tr><td headers="Lesson" class="gt_row gt_left">6</td>
 <td headers="Date" class="gt_row gt_left">Thu, 9/21</td>
 <td headers="Theme" class="gt_row gt_left">Tidy &amp; Wrangle</td>
 <td headers="Topic" class="gt_row gt_left">Data Manipulation</td>
-<td headers="Links" class="gt_row gt_left">—</td></tr>
+<td headers="Links" class="gt_row gt_left"><div class="gt_from_md"><ul>
+<li><a href="lessons/6-data-manipulation/slides.html">slides</a></li>
+</ul>
+</div></td></tr>
     <tr><td headers="Lesson" class="gt_row gt_left">7</td>
 <td headers="Date" class="gt_row gt_left">Tue, 9/26</td>
 <td headers="Theme" class="gt_row gt_left">Repeat &amp; Reproduce</td>
 <td headers="Topic" class="gt_row gt_left">Intermediate R programming I</td>
-<td headers="Links" class="gt_row gt_left">—</td></tr>
+<td headers="Links" class="gt_row gt_left"><div class="gt_from_md"><ul>
+<li><a href="lessons/7-intermediate-r-1/slides.html">slides</a></li>
+</ul>
+</div></td></tr>
     <tr><td headers="Lesson" class="gt_row gt_left">8</td>
 <td headers="Date" class="gt_row gt_left">Thu, 9/28</td>
 <td headers="Theme" class="gt_row gt_left">Repeat &amp; Reproduce</td>
@@ -719,6 +757,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Good enough practices in scientific computing</a></li>
 <li><a href="https://doi.org/10.1080/00031305.2017.1375989">Data organization in spreadsheets</a></li>
 <li><a href="https://doi.org/10.1002/bes2.1801">A beginner’s guide to conducting reproducible research</a></li>
+<li><a href="https://the-turing-way.netlify.app/reproducible-research/reproducible-research">The Turing Way: Guide for Reproducible Research</a></li>
 </ul>
 <p>Version control:</p>
 <ul>
@@ -809,9 +848,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -821,17 +861,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -844,81 +875,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        return container.innerHTML
-      } else {
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -962,7 +918,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1048,7 +1003,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
 
 
 
