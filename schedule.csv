@@ -1,11 +1,11 @@
 Lesson,Date,Theme,Topic,Links,Notes
-1,2023-09-05,Manage & Organize,Project managment and coding best practices,"[slides](lessons/1-project-management/slides.html)","Also, setup RStudio for reproducibility"
-2,2023-09-07,Share & Collaborate,Using shell commands,"[slides](lessons/2-shell/slides.html)","Install git, carpentries shell episodes 1 & 2"
-3,2023-09-12,Share & Collaborate,Version control with git,"[slides](lessons/3-git/slides.html)","git novice lessons 2-4, then git pane of RStudio"
-4,2023-09-14,Share & Collaborate,Developing code on GitHub,"[slides](lessons/4-github-basics/slides.html)","git_sitrep(), use_github(), git novice lesson 7"
-5,2023-09-19,Share & Collaborate,Collaborating with GitHub,"[slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/)","git novice lesson 8, pr_init(), pr_push(), pr_finish()"
-6,2023-09-21,Tidy & Wrangle,Data Manipulation,,data carpentry R ecology episodes 2 & 3
-7,2023-09-26,Repeat & Reproduce,Intermediate R programming I,,functions
+1,2023-09-05,Manage & Organize,Project managment and coding best practices,[slides](lessons/1-project-management/slides.html),"Also, setup RStudio for reproducibility"
+2,2023-09-07,Share & Collaborate,Using shell commands,[slides](lessons/2-shell/slides.html),"Install git, carpentries shell episodes 1 & 2"
+3,2023-09-12,Share & Collaborate,Version control with git,[slides](lessons/3-git/slides.html),"git novice lessons 2-4, then git pane of RStudio"
+4,2023-09-14,Share & Collaborate,Developing code on GitHub,[slides](lessons/4-github-basics/slides.html),"git_sitrep(), use_github(), git novice lesson 7"
+5,2023-09-19,Share & Collaborate,Collaborating with GitHub,[slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/),"git novice lesson 8, pr_init(), pr_push(), pr_finish()"
+6,2023-09-21,Tidy & Wrangle,Data Manipulation,[slides](lessons/6-data-manipulation/slides.html),data carpentry R ecology episodes 2 & 3
+7,2023-09-26,Repeat & Reproduce,Intermediate R programming I,[slides](lessons/7-intermediate-r-1/slides.html),functions
 8,2023-09-28,Repeat & Reproduce,Intermediate R programming II,,iteration (and anonymous functions)
 9,2023-10-03,Document & Publish,Documentation and literate programming,,"README.md, Quarto"
 10,2023-10-05,Document & Publish,Getting credit for your hard work,,"renv, LICENSE, CITATION.cff, Zenodo, GitHub releases"
