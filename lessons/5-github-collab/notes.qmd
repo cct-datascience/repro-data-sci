@@ -11,8 +11,7 @@ Learners will fork and clone a repository on GitHub and use branches to open pul
 
 -   Review Homework:
 
-    -   Anyone put a repo on GitHub?
-        Any difficulties encountered?
+    -   Anyone put a repo on GitHub? Any difficulties encountered?
 
 -   Live Coding: Collaborating with GitHub
 

@@ -2,11 +2,8 @@
 title: "Intermediate R: iteration and mapping"
 subtitle: "Session 8"
 format: revealjs
-execute: 
-  echo: true
-engine: knitr
 chalkboard: true
-footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 # Review
@@ -34,33 +31,33 @@ footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/
 
 # Why use code to iterate?
 
-- Less code: fewer bugs, easier to understand
-- Easier to apply to new situations
-- Faster to write, maybe faster to run
+-   Less code: fewer bugs, easier to understand
+-   Easier to apply to new situations
+-   Faster to write, maybe faster to run
 
 # Iteration 3 (or more!) ways
 
-- For loops
-- Functions + `apply` or `map`
+-   For loops
+-   Functions + `apply` or `map`
 
 # Coding time
 
-- For loop
-- For loop with different indices
+-   For loop
+-   For loop with different indices
 
 # For loops: pros and cons
 
-- Pros
-  - Simple to write and read
-- Cons
-  - Can be slow
-  - Still somewhat inefficient to write
-  - Still somewhat fragile
-  
+-   Pros
+    -   Simple to write and read
+-   Cons
+    -   Can be slow
+    -   Still somewhat inefficient to write
+    -   Still somewhat fragile
+
 # The `apply` family
 
-- Provide the function name and inputs to the `apply` functions
-- **applies** the function to a vector, list, or matrix of inputs
+-   Provide the function name and inputs to the `apply` functions
+-   **applies** the function to a vector, list, or matrix of inputs
 
 # Coding time
 
@@ -68,7 +65,7 @@ footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/
 
 # `purrr`
 
-- Similar to apply, but easier to read
+-   Similar to apply, but easier to read
 
 # Coding time
 
@@ -78,9 +75,7 @@ footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/
 
 Commit this week's work and create a new PR.
 
-
 # Homework
 
 -   Identify a section of your code that could be made more efficient using a for loop or iterating using a function
 -   Continue thinking about showcase projects.
-

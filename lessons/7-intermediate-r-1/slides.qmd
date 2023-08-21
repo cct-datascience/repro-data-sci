@@ -2,11 +2,8 @@
 title: "Intermediate R: functions and control flow"
 subtitle: "Session 7"
 format: revealjs
-execute: 
-  echo: true
-engine: knitr
 chalkboard: true
-footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 # Review
@@ -25,7 +22,7 @@ footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/
 # What are functions in R?
 
 -   We use pre-written functions constantly.
--   Automated "recipes" for executing code 
+-   Automated "recipes" for executing code
 -   Inputs ("arguments") and outputs
 
 # Why write our own functions?
@@ -45,7 +42,6 @@ Function scoping
 
 Arguments: defaults and naming
 
-
 # Part II: `ifelse`
 
 # `ifelse` logic
@@ -58,13 +54,13 @@ Arguments: defaults and naming
 
 # Conditionals in R
 
-- `==` for "is equal to"
-- `!=` for "not equal to:
-- `<`, `>` for less than/greater than
-- `<=`, `>=` for less than or equal to/greater than or equal to
-- `is.na()` for is it NA?
-- `%in%` for, is this value in a vector of possibilities
-- ...and more!
+-   `==` for "is equal to"
+-   `!=` for "not equal to:
+-   `<`, `>` for less than/greater than
+-   `<=`, `>=` for less than or equal to/greater than or equal to
+-   `is.na()` for is it NA?
+-   `%in%` for, is this value in a vector of possibilities
+-   ...and more!
 
 # Coding time
 
@@ -84,16 +80,17 @@ Practice committing changes and creating a PR.
 
 # Homework
 
-- Identify a section of your code that could be turned into a function or benefit from conditionals. Try it!
-- Begin thinking about a "showcase project".
+-   Identify a section of your code that could be turned into a function or benefit from conditionals. Try it!
+-   Begin thinking about a "showcase project".
 
 # Showcase projects
 
-- An opportunity to apply workshop skills to your own work.
-- You could apply different parts to different projects, or more integratively to one single project. 
-- Optional, but encouraged!
+-   An opportunity to apply workshop skills to your own work.
+-   You could apply different parts to different projects, or more integratively to one single project.
+-   Optional, but encouraged!
 
 # Some inspirations
+
 -   Turn the project folder for one of your current research project into a git/GitHub repo and/or R project
 -   Modify an R script to use functions, conditionals, or best-practices for code formatting
 -   Improve directory organization for project or your entire computer!
