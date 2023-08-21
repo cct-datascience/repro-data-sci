@@ -7,11 +7,54 @@ format: html
 
 Learners will fork and clone a repository on GitHub and use branches to open pull requests.
 
-<!--# Would like to add a bit about getting help and making a reprex.  This might be a good lesson to do it in? -->
+## Lesson Outline
+
+-   Review Homework:
+
+    -   Anyone put a repo on GitHub?
+        Any difficulties encountered?
+
+-   Live Coding: Collaborating with GitHub
+
+    -   Share a repo with everyone & have everyone clone w/ RStudio
+    -   Ask 1 (one) volunteer to make a change and practice commit + push
+    -   Both instructor and volunteer make a change in the same file and push to main
+    -   Show how to resolve merge conflict on GitHub
+
+-   Working on branches (slides)
+
+-   Live Coding:
+
+    -   Make a branch with your name in RStudio
+    -   Add your name to README and commit
+    -   Switch between branches and see the file change in RStudio AND in File Explorer / Finder
+    -   Push & see branches on GitHub
+
+-   Pull Requests (slides)
+
+-   Live Coding:
+
+    -   Have everyone make a PR to add their name
+    -   Demo merging one or two & ask volunteer to resolve any merge conflicts
+
+-   Forks (slides)
+
+    -   Discuss when you would work on a branch of a fork vs. working in a branch but on the same repo
+
+-   Live Coding:
+
+    -   Have students create a fork of a second example repo and clone their fork
+    -   In pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub
+
+-   Homework:
+
+    -   Maybe try cloning a repo that you don't have permission to push to to see what happens
+
+    -   Try using `usethis::pr_finish()` on a branch that was already merged on GitHub and take note of what it does
 
 ## Installation & materials
 
-1.  [Slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit) <!--# slides are great as-is.  No need to port to Quarto -->
+1.  [Slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit)
 2.  Workshop [repository](https://github.com/az-digitalag/data-sci-workshop)
 3.  [Software Carpentry Version Control with Git episode #8](https://swcarpentry.github.io/git-novice/08-collab)
 

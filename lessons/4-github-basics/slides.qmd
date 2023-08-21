@@ -11,11 +11,13 @@ bibliography: references.bib
 
 ## Review & Homework
 
--   Turn folder into git repo with `git init`
+-   Ways to create a git repo
 
-    -   Save changes to files with `git add` and `git commmit`
+    -   run `git init` from the command line inside of project directory
+    -   create a new RStudio project with "use git" checked
+    -   run `usethis::use_git()` in the R console in a RStudio project
 
--   If you turned another project into a repo, how did it go?
+-   If you turned an existing project into a git repo, how did it go?
 
 ## Today's goals
 
@@ -42,6 +44,12 @@ Figure 2 from [@bryan2018]
 -   GitHub has a central repo that allows you to synchronize and merge work from multiple sources.
 -   You can also access the repo through github.com web UI
 :::
+
+## Resources
+
+-   [happygitwithr.com](https://happygitwithr.com/)
+
+-   [`usethis::use_github()`](https://usethis.r-lib.org/reference/use_github.html)
 
 ## Homework
 
