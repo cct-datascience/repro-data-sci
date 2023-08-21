@@ -1,5 +1,0 @@
-format:
-  revealjs: 
-    footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
-  html: 
-    format-links: false
