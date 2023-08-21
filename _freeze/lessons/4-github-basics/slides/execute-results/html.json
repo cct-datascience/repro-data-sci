@@ -1,0 +1,18 @@
+{
+  "hash": "30c56442a65b0cd3f6aca80302e80754",
+  "result": {
+    "markdown": "---\ntitle: \"GitHub\"\nformat: revealjs\nexecute: \n  echo: true\nengine: knitr\nchalkboard: true\nfooter: \"[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)\"\nbibliography: references.bib\n---\n\n\n## Review & Homework\n\n-   Turn folder into git repo with `git init`\n\n    -   Save changes to files with `git add` and `git commmit`\n\n-   If you turned another project into a repo, how did it go?\n\n## Today's goals\n\n1.  Learn how to tell git to ignore files\n2.  Put a local repo on GitHub\n3.  Use `git push` and `git pull` to synchronize with GitHub\n4.  Use branches for new work\n\n## Ignoring files\n\n-   If you created an RStudio project with git enabled, you should have a top-level `.gitignore`\n\n## Sharing with GitHub\n\n![](github-diagram-bryan.png){fig-align=\"center\" width=\"671\"}\n\n::: aside\nFigure 2 from [@bryan2018]\n:::\n\n::: notes\n-   All contributors have a local copy of the repo.\n-   You might also have a copy in multiple places (on multiple computers, on university HPC).\n-   GitHub has a central repo that allows you to synchronize and merge work from multiple sources.\n-   You can also access the repo through github.com web UI\n:::\n\n## Homework\n\nPut a project repo on GitHub and share the link on Slack\n\n## References\n\n::: refs\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
