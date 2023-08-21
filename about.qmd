@@ -1,5 +1,6 @@
 ---
 title: "Instructors"
+format: html
 ---
 
 ## Eric R. Scott

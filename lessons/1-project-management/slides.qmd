@@ -7,6 +7,7 @@ execute:
   echo: true
 engine: knitr
 chalkboard: true
+footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
 ---
 
 ## What is Reproducibility & Why?
