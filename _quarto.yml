@@ -3,6 +3,9 @@ project:
   render:
     - "*.qmd"
     - "!instructor-notes.qmd"
+    
+execute: 
+  freeze: auto
 
 website:
   title: "repro-data-sci"
