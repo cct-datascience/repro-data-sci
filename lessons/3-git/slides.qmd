@@ -18,7 +18,7 @@ If your current working directory is `Users/kristinariemer/Dropbox/Documents`, w
 
 -   Understand the what and why of version control
 -   Set up git on your computer
--   Create a git repository associated with an R project 
+-   Create a git repository associated with an R project
 -   Use git to track and record changes to a git repository
 -   Use .gitignore to selectively exclude files from git.
 
@@ -82,5 +82,5 @@ Track modifications to a git repository.
 
 # Homework
 
-- Create a [GitHub](https://github.com) account if you don't have one.
-- Optional: Identify an exisitng folder on your computer and turn it into a git repository.
+-   Create a [GitHub](https://github.com) account if you don't have one.
+-   Optional: Identify an exisitng folder on your computer and turn it into a git repository.

@@ -64,7 +64,8 @@ format: html
 
 ### Review
 
-Ask students to share their diagram of their file system. Warm up with the review question in slide deck.
+Ask students to share their diagram of their file system.
+Warm up with the review question in slide deck.
 
 ### Modifications
 
@@ -84,4 +85,5 @@ Ask students to share their diagram of their file system. Warm up with the revie
 
 ### Homework
 
-Create a GitHub account if you don't already have one. For an extra challenge, identify an existing folder and turn into a repository.
+Create a GitHub account if you don't already have one.
+For an extra challenge, identify an existing folder and turn into a repository.
