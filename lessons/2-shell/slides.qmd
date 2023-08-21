@@ -3,11 +3,8 @@ title: "Shell Commands"
 subtitle: "Session 2"
 # date: TODO
 format: revealjs
-execute: 
-  echo: true
-engine: knitr
 chalkboard: true
-footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 # Review of last week

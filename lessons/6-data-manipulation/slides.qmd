@@ -2,11 +2,8 @@
 title: "Data manipulation with `dplyr` and `tidyr`"
 subtitle: "Session 6"
 format: revealjs
-execute: 
-  echo: true
-engine: knitr
 chalkboard: true
-footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 # Review
@@ -33,11 +30,9 @@ footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/
 
 # Installing packages
 
-```
-
+```         
 install.packages("dplyr")
 install.packages("tidyr")
-
 ```
 
 # Coding time

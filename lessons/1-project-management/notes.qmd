@@ -33,7 +33,7 @@ Learners will learn about and practice managing their projects using file struct
     -   Restart R and run from top often
     -   How to break up code (e.g. save output of `01-wrangle-data.R` into `data_clean/`, then read that in later)
 -   Homework:
-    -    Apply one or more of the organizing principles of a research compendium to an existing research project.
+    -   Apply one or more of the organizing principles of a research compendium to an existing research project.
 
 ## Installation & materials
 
