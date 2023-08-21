@@ -1,0 +1,18 @@
+{
+  "hash": "3b17e98dd718da99b63be71dcc30e76c",
+  "result": {
+    "markdown": "---\ntitle: \"Shell Commands\"\nsubtitle: \"Session 2\"\n# date: TODO\nformat: revealjs\nexecute: \n  echo: true\nengine: knitr\nchalkboard: true\nfooter: \"[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)\"\n---\n\n\n# Review of last week\n\n-   What happened as you were trying to re-organize projects or R code?\n    -   Victories?\n    -   Stumbling blocks?\n\n# Learning objectives\n\n-   Understand the what and why of the shell\n-   Interact with the shell using common commands\n-   Find help via --help, man, and online help pages\n-   Navigate your file system from the command line\n-   (Time permitting) Manipulate and move files from the command line\n\n# What is the shell?\n\n-   Command-line interface, in contrast to a GUI\n\n# Why learn the shell?\n\n-   Be able to work with tools that don't have a GUI\n-   Batch large tasks (e.g. renaming files)\n-   Interact with remote computers like the University HPC\n\n# Let's get set up!\n\n-   macOS comes with a shell (usually Bash or Zsh) built-in\n\n-   Windows need to install GitBash (includes Bash shell and git, which we will use later)\n\n-   Breakout rooms\n\n# Data download\n\n-   Download `shell-lesson-data.zip`\n    -   Instructions here: <https://swcarpentry.github.io/shell-novice/index.html#download-files>\n-   Save it to your Desktop and unzip it.\n\n# Coding time\n\n-   Intro to shell commands\n\n# Syntax of a shell command\n\n![](shell_syntax.png){fig-align=\"center\"}\n\n# Coding time\n\n-   File systems\n\n# Example file system\n\n![](file-path-example.png)\n\n# Example file system\n\n![](file-structure-example.png)\n\n# Homework for next time\n\n-   Read [\"Excuse me, do you have a moment to talk about version control?\"](https://peerj.com/preprints/3159/)\n-   Create a diagram of your file system and note your most frequently used directories\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
