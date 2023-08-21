@@ -1,0 +1,77 @@
+---
+title: "Sharing Code & Getting Credit"
+format: revealjs
+---
+
+## Why share code?
+
+<!--# pull quote from https://www.researchsquare.com/article/rs-3222221/v1 -->
+
+## Reproducible computational environments
+
+Congrats!
+Your code is reproducible!
+But what about ....
+
+-   in 3 years when an R package is updated with breaking changes?
+
+-   on a different operating system with different versions of system libraries?
+
+Capture the **computational environment** for ultimate reproducibility
+
+## Capture R package state with `renv`
+
+-   how renv works
+
+-   how to set it up
+
+-   when to set it up
+
+-   how to use a renv package
+
+-   quick demo
+
+## Capture entire computational environment with `Docker`
+
+-   How docker works
+
+-   Theoretically how to set it up
+
+-   Theoretically how to use a docker container with reproducible code
+
+## Hold up, what *is* reproducibility again?
+
+Tools like `renv` and Docker improve the numerical reproducibility, but add extra barriers.
+Producing accessible and understandable code is an important aspect of reproducibility, so need to balance that with capturing computational environments.
+
+-   Provide instructions on how to troubleshoot or disable `renv` if it's giving folks trouble
+
+-   Provide code in a GitHub repo *in addition* to inside of a Docker container
+
+-   Provide instructions on how to run code in README
+
+## Getting Credit with Zenodo
+
+-   Release code & data with a DOI
+
+-   Archive backed by CERN---not going anywhere!
+
+-   Version releases so you can release code before it is finalized (e.g. to provide to reviewers or alongside a pre-print)
+
+-   Easy integration with GitHub
+
+## Setup
+
+-   Zenodo does poor job at reading metadata from GitHub alone---provide a CITATION.cff file!
+
+-   `cffr` package helps
+
+-   show how to do that and walk though it
+
+-   show how citation shows up on GitHub now
+
+## Archive
+
+-   Show how to link Zenodo and Github repo
+
+-   Show how to make a release (maybe can use sandbox or something for this? or maybe just show parts separately? maybe a student is ready to make a release and can demo?)

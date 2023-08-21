@@ -11,6 +11,10 @@ Learn `renv` and discuss Docker (concept).
 
 ## Installation & Materials
 
+-   `renv`
+
+-   Log in to Zenodo with GitHub
+
 ### Review
 
 ### Modifications
