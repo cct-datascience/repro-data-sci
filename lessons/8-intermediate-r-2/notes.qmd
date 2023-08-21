@@ -15,8 +15,7 @@ Learners will learn how to make their R code more reproducible using for loops a
 
 ### Review
 
-Can share their plans for apply skills to their research.
-Lead optional discussion on when to use base R vs. tidyverse packages/functions.
+Can share their plans for apply skills to their research. Lead optional discussion on when to use base R vs. tidyverse packages/functions.
 
 ### Modifications
 
