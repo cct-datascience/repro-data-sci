@@ -2,6 +2,11 @@
 title: "Version Control With `git`"
 subtitle: "Session 3"
 format: revealjs
+execute: 
+  echo: true
+engine: knitr
+chalkboard: true
+footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
 ---
 
 # Review 1

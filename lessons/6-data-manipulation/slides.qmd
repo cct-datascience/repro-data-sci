@@ -2,29 +2,34 @@
 title: "Data manipulation with `dplyr` and `tidyr`"
 subtitle: "Session 6"
 format: revealjs
+execute: 
+  echo: true
+engine: knitr
+chalkboard: true
+footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
 ---
 
-# Review 
+# Review
 
 # Warm-up: create a branch for today's work
 
 # Learning objectives
 
-- Understand how R stores different data types 
-- Know what the tidyverse is, how it differs from base R, and the philosophy behind using it here.
-- Use tidyverse packages (`dplyr` and `tidyr`) to work with data in R.
-- Practice tracking our work in git
+-   Understand how R stores different data types
+-   Know what the tidyverse is, how it differs from base R, and the philosophy behind using it here.
+-   Use tidyverse packages (`dplyr` and `tidyr`) to work with data in R.
+-   Practice tracking our work in git
 
 # Why learn data management in R?
 
-- Reproducible workflows
-- Reduce repetition
+-   Reproducible workflows
+-   Reduce repetition
 
 # What is the tidyverse? Why use it?
 
-- (visual of the tidyverse)
-- Flexible and readable code
-- Consistent, widely-used formatting and syntax
+-   (visual of the tidyverse)
+-   Flexible and readable code
+-   Consistent, widely-used formatting and syntax
 
 # Installing packages
 
@@ -38,7 +43,6 @@ install.packages("tidyr")
 # Coding time
 
 How R understands data
-
 
 # Coding time
 
