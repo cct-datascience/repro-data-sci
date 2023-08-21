@@ -155,7 +155,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a>
+  <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson Outline</a></li>
+  <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a></li>
+  <li><a href="#notes-from-before" id="toc-notes-from-before" class="nav-link" data-scroll-target="#notes-from-before">Notes from before</a>
   <ul class="collapse">
   <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
   </ul></li>
@@ -188,6 +190,46 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="objective">Objective</h2>
 <p>Learners will learn about and practice managing their projects using file structure and RStudio projects, and about current best practices and style guides for R coding.</p>
 </section>
+<section id="lesson-outline" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-outline">Lesson Outline</h2>
+<ul>
+<li>Introductions</li>
+<li>Discuss reproducibility</li>
+<li>Give tour of course website &amp; syllabus
+<ul>
+<li>Point out code of conduct</li>
+</ul></li>
+<li>Screen setup</li>
+<li>Don’t save or load .RData!</li>
+<li>Discuss general best practices for research compendia
+<ul>
+<li>All files needed for a project in the same folder (ideally)</li>
+<li>Organize data, code, and outputs into different folders at a minimum</li>
+<li>Never edit raw data</li>
+<li>Include documentation on what each file is/does in a README</li>
+</ul></li>
+<li>Live Coding: create an R project and add <a href="https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv">gapminder data</a> to it
+<ul>
+<li>Show file pane &amp; connect to Windows Explorer / Finder</li>
+<li>Show how to make a file read-only</li>
+<li>Demo closing, opening, and switching projects</li>
+</ul></li>
+<li>Live Coding: R code best practices
+<ul>
+<li>Create <code>01-wrangle-data.R</code> in <code>R/</code></li>
+<li>Header comment</li>
+<li>Don’t use <code>setwd()</code>—not needed with .Rproj. Use relative paths!</li>
+<li>Keyboard shortcut for adding sections + outline view and navigator at bottom of script panel</li>
+<li>Load packages at top of script, even when not used until later</li>
+<li>Restart R and run from top often</li>
+<li>How to break up code (e.g.&nbsp;save output of <code>01-wrangle-data.R</code> into <code>data_clean/</code>, then read that in later)</li>
+</ul></li>
+<li>Homework:
+<ul>
+<li>Apply one or more of the organizing principles of a research compendium to an existing research project.</li>
+</ul></li>
+</ul>
+</section>
 <section id="installation-materials" class="level2">
 <h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h2>
 <ol type="1">
@@ -197,6 +239,9 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R">Software Carpentry Best Practices for Writing R Code</a></li>
 <li><a href="https://r4ds.hadley.nz/workflow-style" class="uri">https://r4ds.hadley.nz/workflow-style</a></li>
 </ol>
+</section>
+<section id="notes-from-before" class="level2">
+<h2 class="anchored" data-anchor-id="notes-from-before">Notes from before</h2>
 <section id="modifications" class="level3">
 <h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
 <ul>
@@ -222,7 +267,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="teaching-notes" class="level2">
 <h2 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h2>
 <ul>
-<li>Encourage attendees to have two monitors—one for Zoom and one for RStudio</li>
 <li>Include how R projects promotes reproducibility, by being able to save scripts and close them or entire project</li>
 <li>When students download data, they will need to move it into the new project which helps mentally connect file pane of RStudio with filesystem of computer</li>
 </ul>

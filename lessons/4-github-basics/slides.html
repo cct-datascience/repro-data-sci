@@ -346,6 +346,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">GitHub</h1>
+  <p class="subtitle">Session 4</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -354,11 +355,13 @@
 <section id="review-homework" class="slide level2">
 <h2>Review &amp; Homework</h2>
 <ul>
-<li><p>Turn folder into git repo with <code>git init</code></p>
+<li><p>Ways to create a git repo</p>
 <ul>
-<li>Save changes to files with <code>git add</code> and <code>git commmit</code></li>
+<li>run <code>git init</code> from the command line inside of project directory</li>
+<li>create a new RStudio project with “use git” checked</li>
+<li>run <code>usethis::use_git()</code> in the R console in a RStudio project</li>
 </ul></li>
-<li><p>If you turned another project into a repo, how did it go?</p></li>
+<li><p>If you turned an existing project into a git repo, how did it go?</p></li>
 </ul>
 </section>
 <section id="todays-goals" class="slide level2">
@@ -405,6 +408,13 @@
 <aside><div>
 <p>Figure 2 from <span class="citation" data-cites="bryan2018">(<a href="#/references" role="doc-biblioref" onclick="">Bryan 2018</a>)</span></p>
 </div></aside></section>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
+<ul>
+<li><p><a href="https://happygitwithr.com/">happygitwithr.com</a></p></li>
+<li><p><a href="https://usethis.r-lib.org/reference/use_github.html"><code>usethis::use_github()</code></a></p></li>
+</ul>
+</section>
 <section id="homework" class="slide level2">
 <h2>Homework</h2>
 <p>Put a project repo on GitHub and share the link on Slack</p>
@@ -416,7 +426,7 @@
 </div>
 
 <div class="footer footer-default">
-<p><a href="https://cct-datascience.github.io/repro-data-sci/">Reproduciblity &amp; Data Science in R</a></p>
+<p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
 </div>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-bryan2018" class="csl-entry" role="listitem">
@@ -637,44 +647,6 @@ Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk about Ve
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

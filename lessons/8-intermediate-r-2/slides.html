@@ -7,12 +7,10 @@
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <title>repro-data-sci - Reproducibility &amp; Data Science in R</title>
+  <title>repro-data-sci - Intermediate R: iteration and mapping</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,147 +326,129 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Reproducibility &amp; Data Science in R</h1>
-  <p class="subtitle">Session 1</p>
+  <h1 class="title">Intermediate R: iteration and mapping</h1>
+  <p class="subtitle">Session 8</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="what-is-reproducibility-why" class="slide level2">
-<h2>What is Reproducibility &amp; Why?</h2>
-<textarea id="freeform" name="freeform" rows="8" cols="60" style="font-size: 18pt">Reproducibility is...
-
-</textarea>
-<textarea rows="8" cols="60" style="font-size: 18pt">I want my work to be reproducible because...
-
-</textarea>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-
-<img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg" class="r-stretch quarto-figure-center"><p class="caption">By The Turing Way Community</p></section>
-<section id="the-whole-picture" class="slide level2">
-<h2>The Whole Picture</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>A (usually fiction) story:</strong></p>
-</div>
-<div class="callout-content">
-<p>You read a great paper and think “I bet I could apply their analysis methods to my work!” You click a DOI link in their Data Availability section that they definitely have. It opens to a web page where you can download a folder with R code, data, and documentation about the code and data. The page also has detailed information about how to cite the code and data. You open the folder in R Studio and you are prompted to install all the packages you need to run the code. You open the analysis code script and hit “run”. All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper. You scroll through the well-formatted R code and understand from the authors’ comments exactly what the code does and how to adapt it to your work.</p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p>We want to help you make this story a reality for someone else!</p>
-<aside class="notes">
-<p>Including future you!</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</div>
-</section>
-<section id="syllabus-workshop-materials" class="slide level2">
-<h2>Syllabus &amp; Workshop Materials</h2>
-<p>Workshop series website:<br>
-<a href="https://cct-datascience.github.io/repro-data-sci/" class="uri">https://cct-datascience.github.io/repro-data-sci/</a></p>
-</section>
-<section id="screen-setup-fa-desktop-fa-laptop" class="slide level2">
-<h2>Screen Setup <i class="fa-solid fa-desktop" aria-label="desktop"></i> <i class="fa-solid fa-laptop" aria-label="laptop"></i></h2>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
 <ul>
-<li>Dual monitors will be <em>very</em> helpful</li>
-<li>Virtual desktops (“Spaces” in macOS) also helpful</li>
-<li>Let us know if you do not have access to a second monitor</li>
-</ul>
-
-<img data-src="desk.jpg" alt="Photo of a desk with a laptop on a laptop stand to the left and a larger monitor to the right in front of an external keyboard.  Laptop monitor has Zoom open and the larger monitor has RStudio open." class="r-stretch quarto-figure-center"></section>
-<section id="settings-for-success" class="slide level2">
-<h2>Settings for Success</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="rstudio-settings.png" alt="image of RStudio global settings pane with the &quot;Workspace&quot; and &quot;History&quot; sections highlighted.  None of the boxes are checked and the dropdown for &quot;Save workspace to .RData on exit&quot; is set to &quot;never&quot;"></p>
-</figure>
-</div>
-</div><div class="column" style="width:40%;">
-<div>
-<ul>
-<li class="fragment"><p>Fresh start ensures reproducibility</p></li>
-<li class="fragment"><p>Use Session &gt; Restart R to check reproducibility</p></li>
-<li class="fragment"><p>If long-running code is a concern, there are better solutions</p></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="project-management" class="slide level2">
-<h2>Project Management</h2>
-
-<img data-src="https://swcarpentry.github.io/r-novice-gapminder/fig/bad_layout.png" class="r-stretch"><aside class="notes">
-<p>There are many reasons why we should <em>ALWAYS</em> avoid this:</p>
-<ol type="1">
-<li>It is really hard to tell which version of your data is the original and which is the modified;</li>
-<li>It gets really messy because it mixes files with various extensions together;</li>
-<li>It probably takes you a lot of time to actually find things, and relate the correct figures to the exact code that has been used to generate it;</li>
-</ol>
-<p>A good project layout will ultimately make your life easier:</p>
-<ul>
-<li>It will help ensure the integrity of your data;</li>
-<li>It makes it simpler to share your code with someone else (a lab-mate, collaborator, or supervisor);</li>
-<li>It allows you to easily upload your code with your manuscript submission;</li>
-<li>It makes it easier to pick the project back up after a break.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="creating-a-research-compendium-with-r" class="slide level2">
-<h2>Creating a Research Compendium with R</h2>
-<p>Learning Objectives:</p>
-<ol type="1">
-<li>Use RStudio projects to create self-contained reproducible projects</li>
-<li>Use best practices for organizing files in a project</li>
-<li>Use relative file paths to improve portability of projects</li>
-<li>Structure R scripts so they are easier to understand</li>
-</ol>
-</section>
-<section id="takeaways" class="slide level2">
-<h2>Takeaways</h2>
-<ul>
-<li>Structure files in self-contained projects or “research compendia”</li>
-<li>Put data in a separate folder and never edit raw data!</li>
-<li>Avoid <code>setwd()</code> and <code>getwd()</code>—use relative paths and RStudio projects instead</li>
-<li>Naming things well is difficult but worth spending time on</li>
-<li>Use some consistent style in your code and organize scripts in sections</li>
-<li>Split long scripts into multiples and use <code>source()</code> to run them if needed’</li>
+<li>Were you able to find a section of your own code to update using <code>ifelse</code> or a function?</li>
 </ul>
 </section>
-<section id="homework-optional" class="slide level2">
-<h2>Homework (optional)</h2>
-<p>Re-organize an existing project into a research compendium with separate folders for raw data, cleaned data, data wrangling scripts, analysis scripts, and outputs</p>
-<p>OR</p>
-<p>Organize one of your R scripts with sections and apply a consistent coding style (e.g.&nbsp;with Code &gt; Reformat Code or with the <code>styler</code> package)</p>
+
+<section id="review-1" class="title-slide slide level1 center">
+<h1>Review</h1>
+<ul>
+<li>What ideas do you have about possible showcase projects?</li>
+<li>What questions do you have about that?</li>
+</ul>
+</section>
+
+<section id="warm-up-create-a-new-branch-for-todays-work" class="title-slide slide level1 center">
+<h1>Warm-up: create a new branch for today’s work</h1>
+
+</section>
+
+<section id="learning-objectives" class="title-slide slide level1 center">
+<h1>Learning objectives</h1>
+<ul>
+<li>Understand how iterating can improve your code</li>
+<li>Iterate using <code>for</code> loops</li>
+<li>Iterate using <code>apply</code> functions <!--# Or purrr --></li>
+</ul>
+</section>
+
+<section id="what-do-we-mean-by-iteration" class="title-slide slide level1 center">
+<h1>What do we mean by iteration?</h1>
+
+</section>
+
+<section id="iteration-by-hand" class="title-slide slide level1 center">
+<h1>Iteration by hand</h1>
+<p>(visual of copy-paste)</p>
+</section>
+
+<section id="why-use-code-to-iterate" class="title-slide slide level1 center">
+<h1>Why use code to iterate?</h1>
+<ul>
+<li>Less code: fewer bugs, easier to understand</li>
+<li>Easier to apply to new situations</li>
+<li>Faster to write, maybe faster to run</li>
+</ul>
+</section>
+
+<section id="iteration-3-or-more-ways" class="title-slide slide level1 center">
+<h1>Iteration 3 (or more!) ways</h1>
+<ul>
+<li>For loops</li>
+<li>Functions + <code>apply</code> or <code>map</code></li>
+</ul>
+</section>
+
+<section id="coding-time" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<ul>
+<li>For loop</li>
+<li>For loop with different indices</li>
+</ul>
+</section>
+
+<section id="for-loops-pros-and-cons" class="title-slide slide level1 center">
+<h1>For loops: pros and cons</h1>
+<ul>
+<li>Pros
+<ul>
+<li>Simple to write and read</li>
+</ul></li>
+<li>Cons
+<ul>
+<li>Can be slow</li>
+<li>Still somewhat inefficient to write</li>
+<li>Still somewhat fragile</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="the-apply-family" class="title-slide slide level1 center">
+<h1>The <code>apply</code> family</h1>
+<ul>
+<li>Provide the function name and inputs to the <code>apply</code> functions</li>
+<li><strong>applies</strong> the function to a vector, list, or matrix of inputs</li>
+</ul>
+</section>
+
+<section id="coding-time-1" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<p><code>apply</code></p>
+</section>
+
+<section id="purrr" class="title-slide slide level1 center">
+<h1><code>purrr</code></h1>
+<ul>
+<li>Similar to apply, but easier to read</li>
+</ul>
+</section>
+
+<section id="coding-time-2" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<p><code>purrr</code></p>
+</section>
+
+<section id="coding-time-3" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<p>Commit this week’s work and create a new PR.</p>
+</section>
+
+<section id="homework" class="title-slide slide level1 center">
+<h1>Homework</h1>
+<ul>
+<li>Identify a section of your code that could be made more efficient using a for loop or iterating using a function</li>
+<li>Continue thinking about showcase projects.</li>
+</ul>
 
 <div class="footer footer-default">
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
