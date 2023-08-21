@@ -1,0 +1,86 @@
+---
+title: "Intermediate R: iteration and mapping"
+subtitle: "Session 8"
+format: revealjs
+execute: 
+  echo: true
+engine: knitr
+chalkboard: true
+footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/repro-data-sci/)"
+---
+
+# Review
+
+-   Were you able to find a section of your own code to update using `ifelse` or a function?
+
+# Review
+
+-   What ideas do you have about possible showcase projects?
+-   What questions do you have about that?
+
+# Warm-up: create a new branch for today's work
+
+# Learning objectives
+
+-   Understand how iterating can improve your code
+-   Iterate using `for` loops
+-   Iterate using `apply` functions <!--# Or purrr -->
+
+# What do we mean by iteration?
+
+# Iteration by hand
+
+(visual of copy-paste)
+
+# Why use code to iterate?
+
+- Less code: fewer bugs, easier to understand
+- Easier to apply to new situations
+- Faster to write, maybe faster to run
+
+# Iteration 3 (or more!) ways
+
+- For loops
+- Functions + `apply` or `map`
+
+# Coding time
+
+- For loop
+- For loop with different indices
+
+# For loops: pros and cons
+
+- Pros
+  - Simple to write and read
+- Cons
+  - Can be slow
+  - Still somewhat inefficient to write
+  - Still somewhat fragile
+  
+# The `apply` family
+
+- Provide the function name and inputs to the `apply` functions
+- **applies** the function to a vector, list, or matrix of inputs
+
+# Coding time
+
+`apply`
+
+# `purrr`
+
+- Similar to apply, but easier to read
+
+# Coding time
+
+`purrr`
+
+# Coding time
+
+Commit this week's work and create a new PR.
+
+
+# Homework
+
+-   Identify a section of your code that could be made more efficient using a for loop or iterating using a function
+-   Continue thinking about showcase projects.
+

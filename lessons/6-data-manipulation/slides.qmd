@@ -33,7 +33,7 @@ footer: "[Reproduciblity & Data Science in R](https://cct-datascience.github.io/
 
 # Installing packages
 
-```{r, eval = F, include =T, echo =T}
+```
 
 install.packages("dplyr")
 install.packages("tidyr")
