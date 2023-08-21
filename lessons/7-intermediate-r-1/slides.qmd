@@ -1,52 +1,94 @@
 ---
-title: "Intermediate R: loops and control flow"
+title: "Intermediate R: functions and control flow"
 subtitle: "Session 7"
 format: revealjs
 ---
 
 # Review
 
-# Warm-up: create a branch for today's work
+# Warm-up: update working branch from upstream
 
 # Learning objectives
 
--   Understand how R stores different data types
--   Know what the tidyverse is, how it differs from base R, and the philosophy behind using it here.
--   Use tidyverse packages (`dplyr` and `tidyr`) to work with data in R.
--   Practice tracking our work in git
+-   Understand how functions and `ifelse` logic can improve code
+-   Write your own functions to automate procedures in R
+-   Write `ifelse` statements to orchestrate control flow in R
+-   Practice working collaboratively in GitHub
 
-# Why learn data management in R?
+# Part I: Functions
 
--   Reproducible workflows
--   Reduce repetition
+# What are functions in R?
 
-# What is the tidyverse? Why use it?
+-   We use pre-written functions constantly.
+-   Automated "recipes" for executing code 
+-   Inputs ("arguments") and outputs
 
--   (visual of the tidyverse)
--   Flexible and readable code
--   Consistent, widely-used formatting and syntax
+# Why write our own functions?
 
-# Installing packages
-
-```{r, eval = F, include =T, echo =T}
-
-install.packages("dplyr")
-install.packages("tidyr")
-
-```
+-   Avoid repetition (+ mistakes)
+-   Enhance portability + reproducibility
 
 # Coding time
 
-How R understands data
+Writing a function
 
 # Coding time
 
-Data manipulation with dplyr and tidyr
+Function scoping
 
 # Coding time
 
-Practice git modify-add-commit cycle
+Arguments: defaults and naming
+
+
+# Part II: `ifelse`
+
+# `ifelse` logic
+
+-   What does an `if` statement do?
+
+# Applications in our work
+
+-   Can you think of an instance where you might want to use `ifelse` logic?
+
+# Conditionals in R
+
+- `==` for "is equal to"
+- `!=` for "not equal to:
+- `<`, `>` for less than/greater than
+- `<=`, `>=` for less than or equal to/greater than or equal to
+- `is.na()` for is it NA?
+- `%in%` for, is this value in a vector of possibilities
+- ...and more!
+
+# Coding time
+
+Practice with conditionals in R
+
+# Coding time
+
+Building if/else statements with conditionals
+
+# Coding time
+
+Nesting conditionals
+
+# Coding time
+
+Practice committing changes and creating a PR.
 
 # Homework
 
-None
+- Identify a section of your code that could be turned into a function or benefit from conditionals. Try it!
+- Begin thinking about a "showcase project".
+
+# Showcase projects
+
+- An opportunity to apply workshop skills to your own work.
+- You could apply different parts to different projects, or more integratively to one single project. 
+- Optional, but encouraged!
+
+# Some inspirations
+-   Turn the project folder for one of your current research project into a git/GitHub repo and/or R project
+-   Modify an R script to use functions, conditionals, or best-practices for code formatting
+-   Improve directory organization for project or your entire computer!
