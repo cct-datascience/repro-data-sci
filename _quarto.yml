@@ -1,8 +1,5 @@
 project:
   type: website
-  render:
-    - "*.qmd"
-    - "!instructor-notes.qmd"
     
 execute: 
   freeze: auto
