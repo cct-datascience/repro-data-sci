@@ -8,7 +8,7 @@ execute:
   freeze: auto
 
 website:
-  title: "repro-data-sci"
+  title: "Reproducibility & Data Science in R"
   repo-url: https://github.com/cct-datascience/repro-data-sci
   repo-actions: [edit, issue]
   site-url: https://cct-datascience.github.io/repro-data-sci/
