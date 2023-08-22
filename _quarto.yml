@@ -38,8 +38,10 @@ website:
             text: "10. Getting Credit For Your Hard Work"
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      - sandstone #feel free to change to a different one https://bootswatch.com/
+      - custom.scss
+    css: https://use.typekit.net/emv3zbo.css #proxima-nova font
     toc: true
 editor: 
   markdown:
