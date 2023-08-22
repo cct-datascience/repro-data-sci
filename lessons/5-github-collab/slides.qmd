@@ -1,0 +1,151 @@
+---
+title: "Collaborate With GitHub"
+subtitle: "Session 5"
+format: revealjs
+editor: visual
+chalkboard: true
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
+bibliography: references.bib
+---
+
+## Review
+
+::: callout-note
+## Word Bank
+
+repo \| commit \| remote \| push \| pull \| add
+:::
+
+::: incremental
+1.  A collection of files tracked by git
+2.  A snapshot of the state of a repository
+3.  `git` \_\_\_ is used to tell git to track a file
+4.  For example, a repo on GitHub
+5.  `git` *\_\_\_\_* is used to synchronize changes on your computer with a remote
+:::
+
+## Homework
+
+Did anyone add a repo to GitHub?
+What difficulties did you encounter?
+
+## Collaborating with GitHub
+
+![](github-diagram-bryan.png){fig-align="center" width="671"}
+
+::: aside
+Figure 2 from [@bryan2018]
+:::
+
+::: notes
+A GitHub repo can be used to coordinate collaboration
+
+If two people have permissions, both can push changes to the repo
+
+Ask for a volunteer and give them permission to push to a repo
+:::
+
+## Dealing with Conflicts
+
+-   What happens when two people make conflicting edits to a file and push them?
+
+-   Creates a *merge conflict*
+
+    ![](push_error.png)
+
+## Ok, try `git pull`
+
+![](pull_error.png)
+
+## Merge, rebase, fast-forward??
+
+-   These are alternative ways to deal with conflicts---we won't get into the deatils
+
+-   For now, we recommend you stick with the "merge" option
+
+. . .
+
+```         
+git config pull.rebase false
+```
+
+Or, if you want to set this option for all future repos too
+
+```         
+git config --global pull.rebase false
+```
+
+## Fixing a Merge Conflict
+
+![](merge_conflict.png)
+
+-   Resolve the conflict however you want (i.e. keep one of the two sections)
+
+-   Delete all lines with `<<<<<<<`, `>>>>>>>`, or `=======`
+
+-   Save and commit
+
+::: notes
+Let's have a round of applause for our volunteer!
+:::
+
+## Avoid merge conflicts by working on branches
+
+Each person works on a "branch"---an independent series of commits that can be merged back into the "main" branch.
+
+```{mermaid}
+gitGraph
+       commit
+       commit
+       branch person_1
+       commit
+       commit
+       commit
+       checkout main
+       branch person_2
+       commit
+       commit
+       checkout main
+       merge person_1
+       merge person_2
+       commit
+       
+```
+
+## Coding Time
+
+-   Clone a repository where you have permission to push
+
+-   Make a new branch with your name
+
+-   Commit changes and push
+
+-   View changes on GitHub
+
+## Pull Requests
+
+-   what is it
+
+-   figure
+
+-   Demo
+
+## Forks
+
+What if you don't have permission to push to a GitHub repo but you want to contribute?
+Make a fork!
+
+(pic of fork button)
+
+-   Creates a copy of the repo on your own GitHub that remains linked with the original ("upstream")
+
+-   Can sync your fork with upstream
+
+-   Can make a pull request from your fork to the upstream
+
+-   Still good practice to work on a branch
+
+## References
+
+::: refs
+:::
