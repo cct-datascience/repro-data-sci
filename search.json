@@ -1,108 +1,38 @@
 [
   {
-    "objectID": "lessons/9-markdown-quarto/notes.html",
-    "href": "lessons/9-markdown-quarto/notes.html",
-    "title": "Documentation and Literate Programming",
+    "objectID": "lessons/2-shell/notes.html",
+    "href": "lessons/2-shell/notes.html",
+    "title": "Using the Shell",
     "section": "",
-    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
+    "text": "Understand the concept of the shell and the anatomy of a shell command\nInteract with the shell using common commands (ls, pwd, cd)\nFind help via –help, man, and online help pages\nNavigate around their working directories using ls, cd\n(Optional) Create, copy, move, and delete files/directories using mkdir, nano, touch, mv, cp, rm."
   },
   {
-    "objectID": "lessons/9-markdown-quarto/notes.html#objective",
-    "href": "lessons/9-markdown-quarto/notes.html#objective",
-    "title": "Documentation and Literate Programming",
+    "objectID": "lessons/2-shell/notes.html#objectives",
+    "href": "lessons/2-shell/notes.html#objectives",
+    "title": "Using the Shell",
     "section": "",
-    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
+    "text": "Understand the concept of the shell and the anatomy of a shell command\nInteract with the shell using common commands (ls, pwd, cd)\nFind help via –help, man, and online help pages\nNavigate around their working directories using ls, cd\n(Optional) Create, copy, move, and delete files/directories using mkdir, nano, touch, mv, cp, rm."
   },
   {
-    "objectID": "lessons/9-markdown-quarto/notes.html#installation-materials",
-    "href": "lessons/9-markdown-quarto/notes.html#installation-materials",
-    "title": "Documentation and Literate Programming",
-    "section": "Installation & Materials",
-    "text": "Installation & Materials\n\nReview\n\n\nModifications"
-  },
-  {
-    "objectID": "lessons/9-markdown-quarto/notes.html#teaching-notes",
-    "href": "lessons/9-markdown-quarto/notes.html#teaching-notes",
-    "title": "Documentation and Literate Programming",
-    "section": "Teaching Notes",
-    "text": "Teaching Notes"
-  },
-  {
-    "objectID": "lessons/9-markdown-quarto/notes.html#homework",
-    "href": "lessons/9-markdown-quarto/notes.html#homework",
-    "title": "Documentation and Literate Programming",
-    "section": "Homework",
-    "text": "Homework"
-  },
-  {
-    "objectID": "lessons/8-intermediate-r-2/notes.html",
-    "href": "lessons/8-intermediate-r-2/notes.html",
-    "title": "Intermediate R programming II",
-    "section": "",
-    "text": "Learners will learn how to make their R code more reproducible using for loops and the apply family of functions."
-  },
-  {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#objective",
-    "href": "lessons/8-intermediate-r-2/notes.html#objective",
-    "title": "Intermediate R programming II",
-    "section": "",
-    "text": "Learners will learn how to make their R code more reproducible using for loops and the apply family of functions."
-  },
-  {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#installation-materials",
-    "href": "lessons/8-intermediate-r-2/notes.html#installation-materials",
-    "title": "Intermediate R programming II",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nData Carpentry for Biologists for loop lecture \nData Carpentry for Biologists iteration without loops lecture? \n\n\nReview\nCan share their plans for apply skills to their research. Lead optional discussion on when to use base R vs. tidyverse packages/functions.\n\n\nModifications\n\nFor for loops lecture:\n\nAt “Do Tasks 3-4…”, do “Basic For Loop” exercises #2 & #3\nSkip sections “Looping over multiple values” and “Looping with functions”\nStop at “Looping over files” due to zip download issues\n\nFor apply lecture:\n\nDo “Size Estimates With Maximum” exercise\nDo “Size Estimates Vectorized 2” exercise\nStop after first section in “Other apply functions (optional)” section"
-  },
-  {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#teaching-notes",
-    "href": "lessons/8-intermediate-r-2/notes.html#teaching-notes",
-    "title": "Intermediate R programming II",
-    "section": "Teaching notes",
-    "text": "Teaching notes\n\nCreate new R script for these materials. Put script into repro-DS-workshop repo\nEmphasize using for loops using index or non-index methods. Index can be useful for reducing memory use and for storing results\nIf time, demonstrate combining if and for"
-  },
-  {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#homework",
-    "href": "lessons/8-intermediate-r-2/notes.html#homework",
-    "title": "Intermediate R programming II",
-    "section": "Homework",
-    "text": "Homework\nIdentify a script from a research project that could benefit from a for loop, apply, conditional, or function."
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html",
-    "href": "lessons/7-intermediate-r-1/notes.html",
-    "title": "Intermediate R programming I",
-    "section": "",
-    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#objective",
-    "href": "lessons/7-intermediate-r-1/notes.html#objective",
-    "title": "Intermediate R programming I",
-    "section": "",
-    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#lesson-outline",
-    "href": "lessons/7-intermediate-r-1/notes.html#lesson-outline",
-    "title": "Intermediate R programming I",
+    "objectID": "lessons/2-shell/notes.html#lesson-outline",
+    "href": "lessons/2-shell/notes.html#lesson-outline",
+    "title": "Using the Shell",
     "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview from last session\nWarm-up\n\nUpdate working branch from upstream\n\nSlides/lecture: Why write functions?\n\nBase on DC semester biology lesson\nUnderstandable and reusable code\n\nHuman-understandable chunks\nDesigned to be reused\n\n\nLive-coding: functions\n\nFunction basics from DC semester lesson\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nDiscuss ordering of an R script\n\nSlides/lecture: control flow\n\nExamples of use of if/else statements (find some real-world examples)\nDC semester on conditionals\nReview conditional logic\nConditionals outside functions\nConditionals inside functions\n\nLive-coding: practice commit + PR\nDiscussion: application to own work + showcase\nHomework:\n\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!\n\nFind a section of own code to turn into a function"
+    "text": "Lesson outline\n\nReview of last week\n\nWhat happened as you were trying to re-organize projects or R code? Victories? Stumbling blocks?\n\nSlides: Intro to the shell\n\nWhat is the shell?\nWhat does the shell let us do?\nWhy would we want to learn how to use the shell?\n\nBreakout rooms: Shell installation\n\nInstructor notes include links to git installation for both Mac and Windows.\nSplit into 2 breakout rooms to install on different OS’s.\n\nBreak to all download shell-lesson-data\n\nLink\nPut it somewhere high in the file system (Desktop)\nUnzip using command line unzip (or just point-and-click in computer file system?)\n\nLive coding: Intro to the terminal pane in RStudio\n\nQuick tour of RStudio panes\n\nEmphasize files pane, analogous to Finder/File Explorer\nNavigate to shell-lesson-data\n\nEveryone set up to use bash with Terminal pane\nShow navigation to Current Directory in Terminal pane in RStudio\n\nMake sure everyone ends up in shell-lesson-data\n\n\nLive coding: Unix Shell lesson 1\n\nhttps://swcarpentry.github.io/shell-novice/01-intro\n(a lot of the text the content of this lesson will be covered in the slides section above)\nIdentify the prompt and note that it is different in zsh (%)\nIntroduce ls\nIntroduce command not found\nIntroduce general anatomy of a shell prompt (Slide/share image)\n\nLive coding: Unix Shell lesson 2\n\npwd and file systems\nUsing options and getting help\nNavigating around file systems\n\n(Time-permitting) live coding: Unix Shell lesson 3\n\nCreating directories\nCreating and editing text files\nMoving and renaming files and directories\nCopying\nRemoving\nWildcards\n\nHomework for next session\n\nRead https://peerj.com/preprints/3159/ git (Version control prep)\nCreate a diagram of your file system and note your most frequently used directories"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#installation-materials",
-    "href": "lessons/7-intermediate-r-1/notes.html#installation-materials",
-    "title": "Intermediate R programming I",
+    "objectID": "lessons/2-shell/notes.html#installation-materials",
+    "href": "lessons/2-shell/notes.html#installation-materials",
+    "title": "Using the Shell",
     "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nData Carpentry for Biologists functions lecture\nData Carpentry for Biologists conditionals lecture"
+    "text": "Installation & materials\n\nSlides\nmacOS git installation\nWindows git installation (detailed step-by-step here)\nSoftware Carpentry Unix Shell episode #1\nSoftware Carpentry Unix Shell episode #2\nSoftware Carpentry Unix Shell episode #3 (time permitting)"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#notes-from-before",
-    "href": "lessons/7-intermediate-r-1/notes.html#notes-from-before",
-    "title": "Intermediate R programming I",
-    "section": "Notes from before",
-    "text": "Notes from before\n\nReview\nAsk to share cleaning up of example script, their own script, or their research project folder from lesson 5.\n\n\nModifications\n\nFor functions lecture, had them do only the “Use and Modify” exercise\nFrom conditionals lecture, only did “if statements” section\nFrom latter, only did “Basic If Statements” #2 exercise\nAdded on brief explanation of ifelse, using the example of ifelse(length == 5, \"correct\", \"incorrect\")\nMention case_when from dplyr for more complicated if & else steps\n\n\n\nTeaching notes\n\nBefore doing functions and conditions, demonstrate updating local cct-organization repo from upstream after adding a commit to the upstream\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nMention functions are often used with for loops or apply statements\nAfter functions, mention consistent order of sections in scripts; example is libraries, read in data, functions, executing functions\nInclude real world examples of if and ifelse statements to motivate their use, especially for checking if files already exist\nDemonstrate making a new branch and opening up a pull request in their repro-DS-workshop repo at the end of each set of material; can merge pull request\n\n\n\nHomework\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!"
+    "objectID": "lessons/2-shell/notes.html#past-notes",
+    "href": "lessons/2-shell/notes.html#past-notes",
+    "title": "Using the Shell",
+    "section": "Past notes",
+    "text": "Past notes\n\nReview\nAsk students to share any successes or stumbling blocks when re-organizing projects or R code.\n\n\nModifications\n\nUse terminal window within RStudio as command line interface\n\nStart with a brief overview of RStudio panes\nShow terminal pane menu and “Go To Current Directory”\nTeach use of Files tab in RStudio\nEmphasize that Files tab is analogous to Finder (macOS), File Explorer (Windows)\n\nSkip all exercises, including “Nelle” example\nMention Zsh, which is the default shell for recent versions of macOS and has % as the default prompt instead of $.\nAt beginning of episode #2, explain file path using example from instructor’s file system\nCan also use example diagram for file system using instructor’s\n\n\n\nTeaching notes\n\nEmphasize purposes for learning shell\n\nHelpful for using git and GitHub\nEasier to deal with installation problems\nUnderstanding file structure and file paths\n\nNeed to install git initially for Windows users to have shell commands\n\nSeparate into 2 breakout rooms to install Git for Windows and macOS\n\nmacOS comes with Bash or Zsh for shell. Use time with mac users to check if they have git already\n\ncan check with which git or git --version\ngit --version may in fact prompt macOS users to install xcode command line tools, which comes with git.\nRestart RStudio after installation\nFor Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected\nFor macOS, have them select Bash (for now at least)\n\nDownload shell-lesson-data.zip to Desktop/ location; this won’t be referenced in later lessons\nUnzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with unzip\n\nOnce unzipped, have everyone share absolute file path to location of file\n\n\n\n\nHomework\nRead https://peerj.com/preprints/3159/"
   },
   {
     "objectID": "lessons/6-data-manipulation/notes.html",
@@ -140,53 +70,46 @@
     "text": "Notes from before\n\nModifications\n\nExplain data.frames and types of vectors, but skip over exercises on coercion and factors\nClarify difference between == and %in%, including that no warning or error given for == that induces vector recycling\nEnd with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository\n\n\n\nTeaching notes\n\nHave students install each package separately rather than as the tidyverse—can be important to know which functions come from which packages\n\n\n\nHomework\nNone"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#review-homework",
-    "href": "lessons/4-github-basics/slides.html#review-homework",
-    "title": "GitHub",
-    "section": "Review & Homework",
-    "text": "Review & Homework\n\nWays to create a git repo\n\nrun git init from the command line inside of project directory\ncreate a new RStudio project with “use git” checked\nrun usethis::use_git() in the R console in a RStudio project\n\nIf you turned an existing project into a git repo, how did it go?"
+    "objectID": "lessons/5-github-collab/notes.html",
+    "href": "lessons/5-github-collab/notes.html",
+    "title": "Collaborating with GitHub",
+    "section": "",
+    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#todays-goals",
-    "href": "lessons/4-github-basics/slides.html#todays-goals",
-    "title": "GitHub",
-    "section": "Today’s goals",
-    "text": "Today’s goals\n\nLearn how to tell git to ignore files\nPut a local repo on GitHub\nUse git push and git pull to synchronize with GitHub\nUse branches for new work"
+    "objectID": "lessons/5-github-collab/notes.html#objective",
+    "href": "lessons/5-github-collab/notes.html#objective",
+    "title": "Collaborating with GitHub",
+    "section": "",
+    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#ignoring-files",
-    "href": "lessons/4-github-basics/slides.html#ignoring-files",
-    "title": "GitHub",
-    "section": "Ignoring files",
-    "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore"
+    "objectID": "lessons/5-github-collab/notes.html#lesson-outline",
+    "href": "lessons/5-github-collab/notes.html#lesson-outline",
+    "title": "Collaborating with GitHub",
+    "section": "Lesson Outline",
+    "text": "Lesson Outline\n\nReview Homework:\n\nAnyone put a repo on GitHub? Any difficulties encountered?\n\nLive Coding: Collaborating with GitHub\n\nShare a repo with everyone & have everyone clone w/ RStudio\nAsk 1 (one) volunteer to make a change and practice commit + push\nBoth instructor and volunteer make a change in the same file and push to main\nShow how to resolve merge conflict on GitHub\n\nWorking on branches (slides)\nLive Coding:\n\nMake a branch with your name in RStudio\nAdd your name to README and commit\nSwitch between branches and see the file change in RStudio AND in File Explorer / Finder\nPush & see branches on GitHub\n\nPull Requests (slides)\nLive Coding:\n\nHave everyone make a PR to add their name\nDemo merging one or two & ask volunteer to resolve any merge conflicts\n\nForks (slides)\n\nDiscuss when you would work on a branch of a fork vs. working in a branch but on the same repo\n\nLive Coding:\n\nHave students create a fork of a second example repo and clone their fork\nIn pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub\n\nHomework:\n\nMaybe try cloning a repo that you don’t have permission to push to to see what happens\nTry using usethis::pr_finish() on a branch that was already merged on GitHub and take note of what it does"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#sharing-with-github",
-    "href": "lessons/4-github-basics/slides.html#sharing-with-github",
-    "title": "GitHub",
-    "section": "Sharing with GitHub",
-    "text": "Sharing with GitHub\n\n\n\n\n\n\n\n\nAll contributors have a local copy of the repo.\nYou might also have a copy in multiple places (on multiple computers, on university HPC).\nGitHub has a central repo that allows you to synchronize and merge work from multiple sources.\nYou can also access the repo through github.com web UI\n\n\n\nFigure 2 from (Bryan 2018)"
+    "objectID": "lessons/5-github-collab/notes.html#installation-materials",
+    "href": "lessons/5-github-collab/notes.html#installation-materials",
+    "title": "Collaborating with GitHub",
+    "section": "Installation & materials",
+    "text": "Installation & materials\n\nSlides\nWorkshop repository\nSoftware Carpentry Version Control with Git episode #8\n\n\nReview\nIf anyone connected a local repository to GitHub, share how that went. Ask students to navigate to previous repository, amend an existing file, and practice an add-commit-push cycle.\n\n\nModifications\n\nThe only part of #8 that was taught was cloning a forked repository. Ask students to fork an instructor-created repository, then clone locally. This will be the repo for downstream files.\nUse git remote add upstream xxxx to connect repo to upstream. If time permits, demonstrate a pull request (PR).\nShare diagram of relationships between the remotes (upstream and origin) and local\nDemonstrate pull requests on GitHub\nShow how distinct units of work can be separately submitted via branches"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#resources",
-    "href": "lessons/4-github-basics/slides.html#resources",
-    "title": "GitHub",
-    "section": "Resources",
-    "text": "Resources\n\nhappygitwithr.com\nusethis::use_github()"
+    "objectID": "lessons/5-github-collab/notes.html#teaching-notes",
+    "href": "lessons/5-github-collab/notes.html#teaching-notes",
+    "title": "Collaborating with GitHub",
+    "section": "Teaching notes",
+    "text": "Teaching notes\n\nHave students fork a cct-datascience repo as an example of a real research compendium\nEasy to check on learner progress by looking for who has and hasn’t forked repo"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#homework",
-    "href": "lessons/4-github-basics/slides.html#homework",
-    "title": "GitHub",
+    "objectID": "lessons/5-github-collab/notes.html#homework",
+    "href": "lessons/5-github-collab/notes.html#homework",
+    "title": "Collaborating with GitHub",
     "section": "Homework",
-    "text": "Homework\nPut a project repo on GitHub and share the link on Slack"
-  },
-  {
-    "objectID": "lessons/4-github-basics/slides.html#references",
-    "href": "lessons/4-github-basics/slides.html#references",
-    "title": "GitHub",
-    "section": "References",
-    "text": "References\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
+    "text": "Homework\nSkim the Analyses section of tidyverse R style guide. What practice or guideline was new to you?\nAlso, explore the upstream cct-datascience repo. What practices do you notices that are new or different from your own?"
   },
   {
     "objectID": "lessons/3-git/slides.html#section",
@@ -224,39 +147,46 @@
     "text": "Adding multiple files to same commit"
   },
   {
-    "objectID": "lessons/10-get-credit/notes.html",
-    "href": "lessons/10-get-credit/notes.html",
-    "title": "Getting Credit For Your Hard Work",
+    "objectID": "lessons/4-github-basics/notes.html",
+    "href": "lessons/4-github-basics/notes.html",
+    "title": "Developing Code on Github",
     "section": "",
-    "text": "Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn renv and discuss Docker (concept)."
+    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
   },
   {
-    "objectID": "lessons/10-get-credit/notes.html#objective",
-    "href": "lessons/10-get-credit/notes.html#objective",
-    "title": "Getting Credit For Your Hard Work",
+    "objectID": "lessons/4-github-basics/notes.html#objective",
+    "href": "lessons/4-github-basics/notes.html#objective",
+    "title": "Developing Code on Github",
     "section": "",
-    "text": "Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn renv and discuss Docker (concept)."
+    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
   },
   {
-    "objectID": "lessons/10-get-credit/notes.html#installation-materials",
-    "href": "lessons/10-get-credit/notes.html#installation-materials",
-    "title": "Getting Credit For Your Hard Work",
-    "section": "Installation & Materials",
-    "text": "Installation & Materials\n\nReview\n\n\nModifications"
+    "objectID": "lessons/4-github-basics/notes.html#lesson-outline",
+    "href": "lessons/4-github-basics/notes.html#lesson-outline",
+    "title": "Developing Code on Github",
+    "section": "Lesson Outline",
+    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\nHomework\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
   },
   {
-    "objectID": "lessons/10-get-credit/notes.html#teaching-notes",
-    "href": "lessons/10-get-credit/notes.html#teaching-notes",
-    "title": "Getting Credit For Your Hard Work",
-    "section": "Teaching Notes",
-    "text": "Teaching Notes"
+    "objectID": "lessons/4-github-basics/notes.html#installation-materials",
+    "href": "lessons/4-github-basics/notes.html#installation-materials",
+    "title": "Developing Code on Github",
+    "section": "Installation & materials",
+    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Version Control with Git episode #6\nGitHub authentication with PAT using Jenny Bryan’s Git book chapter 9 (follow usethis::git_sitrep())\nSoftware Carpentry Version Control with Git episode #7\nSoftware Carpentry branching add-on\n\n\nReview\nIf anyone turned a folder into a repository, share how that went. Ask students to navigate to previous repository, add new R file, and practice an add-commit cycle.\n\n\nModifications\n\nProvide a large .csv file, ask students to move into pilot-analyses repo within a data folder using cd and filepaths\nIf RStudio project was initialized as a git repo, should already have .gitignore. View and explain and practice adding something.\nGo with HTTPS + PAT setup, not SSH, but still mention SSH.\nConnect local git repo to GitHub with usethis::use_github()\nCreate new repository entitled repro-DS-workshop on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized\nShow how checking out a branch literally changes the local files"
   },
   {
-    "objectID": "lessons/10-get-credit/notes.html#homework",
-    "href": "lessons/10-get-credit/notes.html#homework",
-    "title": "Getting Credit For Your Hard Work",
+    "objectID": "lessons/4-github-basics/notes.html#teaching-notes",
+    "href": "lessons/4-github-basics/notes.html#teaching-notes",
+    "title": "Developing Code on Github",
+    "section": "Teaching notes",
+    "text": "Teaching notes\n\nPractice another add-commit cycle after creating the .gitignore\nIntroduce the add-commit-push cycle"
+  },
+  {
+    "objectID": "lessons/4-github-basics/notes.html#homework",
+    "href": "lessons/4-github-basics/notes.html#homework",
+    "title": "Developing Code on Github",
     "section": "Homework",
-    "text": "Homework"
+    "text": "Homework\nConnect a personal repository to GitHub. Practice usethis::use_git() and usethis::use_github()."
   },
   {
     "objectID": "lessons/1-project-management/notes.html",
@@ -306,34 +236,6 @@
     "title": "Project Management and Coding Best Practices",
     "section": "Homework",
     "text": "Homework\nApply one or more of the organizing principles of a research compendium to an existing research project."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Instructors",
-    "section": "",
-    "text": "picture\nbio\nemail"
-  },
-  {
-    "objectID": "about.html#eric-r.-scott",
-    "href": "about.html#eric-r.-scott",
-    "title": "Instructors",
-    "section": "",
-    "text": "picture\nbio\nemail"
-  },
-  {
-    "objectID": "about.html#renata-diaz",
-    "href": "about.html#renata-diaz",
-    "title": "Instructors",
-    "section": "Renata Diaz",
-    "text": "Renata Diaz\npicture\nbio\nemail"
-  },
-  {
-    "objectID": "about.html#getting-help",
-    "href": "about.html#getting-help",
-    "title": "Instructors",
-    "section": "Getting Help",
-    "text": "Getting Help\nSlack channel\nDrop-in hours"
   },
   {
     "objectID": "index.html",
@@ -434,39 +336,158 @@
     "text": "Homework (optional)\nRe-organize an existing project into a research compendium with separate folders for raw data, cleaned data, data wrangling scripts, analysis scripts, and outputs\nOR\nOrganize one of your R scripts with sections and apply a consistent coding style (e.g. with Code &gt; Reformat Code or with the styler package)\n\n\nReproduciblity & Data Science in R"
   },
   {
-    "objectID": "lessons/2-shell/notes.html",
-    "href": "lessons/2-shell/notes.html",
-    "title": "Using the Shell",
-    "section": "",
-    "text": "Understand the concept of the shell and the anatomy of a shell command\nInteract with the shell using common commands (ls, pwd, cd)\nFind help via –help, man, and online help pages\nNavigate around their working directories using ls, cd\n(Optional) Create, copy, move, and delete files/directories using mkdir, nano, touch, mv, cp, rm."
+    "objectID": "lessons/4-github-basics/slides.html#review-homework",
+    "href": "lessons/4-github-basics/slides.html#review-homework",
+    "title": "GitHub",
+    "section": "Review & Homework",
+    "text": "Review & Homework\n\nWays to create a git repo\n\nrun git init from the command line inside of project directory\ncreate a new RStudio project with “use git” checked\nrun usethis::use_git() in the R console in a RStudio project\n\nIf you turned an existing project into a git repo, how did it go?"
   },
   {
-    "objectID": "lessons/2-shell/notes.html#objectives",
-    "href": "lessons/2-shell/notes.html#objectives",
-    "title": "Using the Shell",
-    "section": "",
-    "text": "Understand the concept of the shell and the anatomy of a shell command\nInteract with the shell using common commands (ls, pwd, cd)\nFind help via –help, man, and online help pages\nNavigate around their working directories using ls, cd\n(Optional) Create, copy, move, and delete files/directories using mkdir, nano, touch, mv, cp, rm."
+    "objectID": "lessons/4-github-basics/slides.html#todays-goals",
+    "href": "lessons/4-github-basics/slides.html#todays-goals",
+    "title": "GitHub",
+    "section": "Today’s goals",
+    "text": "Today’s goals\n\nLearn how to tell git to ignore files\nPut a local repo on GitHub\nUse git push and git pull to synchronize with GitHub\nUse branches for new work"
   },
   {
-    "objectID": "lessons/2-shell/notes.html#lesson-outline",
-    "href": "lessons/2-shell/notes.html#lesson-outline",
-    "title": "Using the Shell",
+    "objectID": "lessons/4-github-basics/slides.html#ignoring-files",
+    "href": "lessons/4-github-basics/slides.html#ignoring-files",
+    "title": "GitHub",
+    "section": "Ignoring files",
+    "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore"
+  },
+  {
+    "objectID": "lessons/4-github-basics/slides.html#sharing-with-github",
+    "href": "lessons/4-github-basics/slides.html#sharing-with-github",
+    "title": "GitHub",
+    "section": "Sharing with GitHub",
+    "text": "Sharing with GitHub\n\n\n\n\n\n\n\n\nAll contributors have a local copy of the repo.\nYou might also have a copy in multiple places (on multiple computers, on university HPC).\nGitHub has a central repo that allows you to synchronize and merge work from multiple sources.\nYou can also access the repo through github.com web UI\n\n\n\nFigure 2 from (Bryan 2018)"
+  },
+  {
+    "objectID": "lessons/4-github-basics/slides.html#resources",
+    "href": "lessons/4-github-basics/slides.html#resources",
+    "title": "GitHub",
+    "section": "Resources",
+    "text": "Resources\n\nhappygitwithr.com\nusethis::use_github()"
+  },
+  {
+    "objectID": "lessons/4-github-basics/slides.html#homework",
+    "href": "lessons/4-github-basics/slides.html#homework",
+    "title": "GitHub",
+    "section": "Homework",
+    "text": "Homework\nPut a project repo on GitHub and share the link on Slack"
+  },
+  {
+    "objectID": "lessons/4-github-basics/slides.html#references",
+    "href": "lessons/4-github-basics/slides.html#references",
+    "title": "GitHub",
+    "section": "References",
+    "text": "References\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html",
+    "href": "lessons/10-get-credit/notes.html",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "",
+    "text": "Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn renv and discuss Docker (concept)."
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html#objective",
+    "href": "lessons/10-get-credit/notes.html#objective",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "",
+    "text": "Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn renv and discuss Docker (concept)."
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html#installation-materials",
+    "href": "lessons/10-get-credit/notes.html#installation-materials",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "Installation & Materials",
+    "text": "Installation & Materials\n\nReview\n\n\nModifications"
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html#teaching-notes",
+    "href": "lessons/10-get-credit/notes.html#teaching-notes",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "Teaching Notes",
+    "text": "Teaching Notes"
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html#homework",
+    "href": "lessons/10-get-credit/notes.html#homework",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "Homework",
+    "text": "Homework"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/notes.html",
+    "href": "lessons/7-intermediate-r-1/notes.html",
+    "title": "Intermediate R programming I",
+    "section": "",
+    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/notes.html#objective",
+    "href": "lessons/7-intermediate-r-1/notes.html#objective",
+    "title": "Intermediate R programming I",
+    "section": "",
+    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/notes.html#lesson-outline",
+    "href": "lessons/7-intermediate-r-1/notes.html#lesson-outline",
+    "title": "Intermediate R programming I",
     "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview of last week\n\nWhat happened as you were trying to re-organize projects or R code? Victories? Stumbling blocks?\n\nSlides: Intro to the shell\n\nWhat is the shell?\nWhat does the shell let us do?\nWhy would we want to learn how to use the shell?\n\nBreakout rooms: Shell installation\n\nInstructor notes include links to git installation for both Mac and Windows.\nSplit into 2 breakout rooms to install on different OS’s.\n\nBreak to all download shell-lesson-data\n\nLink\nPut it somewhere high in the file system (Desktop)\nUnzip using command line unzip (or just point-and-click in computer file system?)\n\nLive coding: Intro to the terminal pane in RStudio\n\nQuick tour of RStudio panes\n\nEmphasize files pane, analogous to Finder/File Explorer\nNavigate to shell-lesson-data\n\nEveryone set up to use bash with Terminal pane\nShow navigation to Current Directory in Terminal pane in RStudio\n\nMake sure everyone ends up in shell-lesson-data\n\n\nLive coding: Unix Shell lesson 1\n\nhttps://swcarpentry.github.io/shell-novice/01-intro\n(a lot of the text the content of this lesson will be covered in the slides section above)\nIdentify the prompt and note that it is different in zsh (%)\nIntroduce ls\nIntroduce command not found\nIntroduce general anatomy of a shell prompt (Slide/share image)\n\nLive coding: Unix Shell lesson 2\n\npwd and file systems\nUsing options and getting help\nNavigating around file systems\n\n(Time-permitting) live coding: Unix Shell lesson 3\n\nCreating directories\nCreating and editing text files\nMoving and renaming files and directories\nCopying\nRemoving\nWildcards\n\nHomework for next session\n\nRead https://peerj.com/preprints/3159/ git (Version control prep)\nCreate a diagram of your file system and note your most frequently used directories"
+    "text": "Lesson outline\n\nReview from last session\nWarm-up\n\nUpdate working branch from upstream\n\nSlides/lecture: Why write functions?\n\nBase on DC semester biology lesson\nUnderstandable and reusable code\n\nHuman-understandable chunks\nDesigned to be reused\n\n\nLive-coding: functions\n\nFunction basics from DC semester lesson\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nDiscuss ordering of an R script\n\nSlides/lecture: control flow\n\nExamples of use of if/else statements (find some real-world examples)\nDC semester on conditionals\nReview conditional logic\nConditionals outside functions\nConditionals inside functions\n\nLive-coding: practice commit + PR\nDiscussion: application to own work + showcase\nHomework:\n\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!\n\nFind a section of own code to turn into a function"
   },
   {
-    "objectID": "lessons/2-shell/notes.html#installation-materials",
-    "href": "lessons/2-shell/notes.html#installation-materials",
-    "title": "Using the Shell",
+    "objectID": "lessons/7-intermediate-r-1/notes.html#installation-materials",
+    "href": "lessons/7-intermediate-r-1/notes.html#installation-materials",
+    "title": "Intermediate R programming I",
     "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nmacOS git installation\nWindows git installation (detailed step-by-step here)\nSoftware Carpentry Unix Shell episode #1\nSoftware Carpentry Unix Shell episode #2\nSoftware Carpentry Unix Shell episode #3 (time permitting)"
+    "text": "Installation & materials\n\nSlides\nData Carpentry for Biologists functions lecture\nData Carpentry for Biologists conditionals lecture"
   },
   {
-    "objectID": "lessons/2-shell/notes.html#past-notes",
-    "href": "lessons/2-shell/notes.html#past-notes",
-    "title": "Using the Shell",
-    "section": "Past notes",
-    "text": "Past notes\n\nReview\nAsk students to share any successes or stumbling blocks when re-organizing projects or R code.\n\n\nModifications\n\nUse terminal window within RStudio as command line interface\n\nStart with a brief overview of RStudio panes\nShow terminal pane menu and “Go To Current Directory”\nTeach use of Files tab in RStudio\nEmphasize that Files tab is analogous to Finder (macOS), File Explorer (Windows)\n\nSkip all exercises, including “Nelle” example\nMention Zsh, which is the default shell for recent versions of macOS and has % as the default prompt instead of $.\nAt beginning of episode #2, explain file path using example from instructor’s file system\nCan also use example diagram for file system using instructor’s\n\n\n\nTeaching notes\n\nEmphasize purposes for learning shell\n\nHelpful for using git and GitHub\nEasier to deal with installation problems\nUnderstanding file structure and file paths\n\nNeed to install git initially for Windows users to have shell commands\n\nSeparate into 2 breakout rooms to install Git for Windows and macOS\n\nmacOS comes with Bash or Zsh for shell. Use time with mac users to check if they have git already\n\ncan check with which git or git --version\ngit --version may in fact prompt macOS users to install xcode command line tools, which comes with git.\nRestart RStudio after installation\nFor Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected\nFor macOS, have them select Bash (for now at least)\n\nDownload shell-lesson-data.zip to Desktop/ location; this won’t be referenced in later lessons\nUnzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with unzip\n\nOnce unzipped, have everyone share absolute file path to location of file\n\n\n\n\nHomework\nRead https://peerj.com/preprints/3159/"
+    "objectID": "lessons/7-intermediate-r-1/notes.html#notes-from-before",
+    "href": "lessons/7-intermediate-r-1/notes.html#notes-from-before",
+    "title": "Intermediate R programming I",
+    "section": "Notes from before",
+    "text": "Notes from before\n\nReview\nAsk to share cleaning up of example script, their own script, or their research project folder from lesson 5.\n\n\nModifications\n\nFor functions lecture, had them do only the “Use and Modify” exercise\nFrom conditionals lecture, only did “if statements” section\nFrom latter, only did “Basic If Statements” #2 exercise\nAdded on brief explanation of ifelse, using the example of ifelse(length == 5, \"correct\", \"incorrect\")\nMention case_when from dplyr for more complicated if & else steps\n\n\n\nTeaching notes\n\nBefore doing functions and conditions, demonstrate updating local cct-organization repo from upstream after adding a commit to the upstream\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nMention functions are often used with for loops or apply statements\nAfter functions, mention consistent order of sections in scripts; example is libraries, read in data, functions, executing functions\nInclude real world examples of if and ifelse statements to motivate their use, especially for checking if files already exist\nDemonstrate making a new branch and opening up a pull request in their repro-DS-workshop repo at the end of each set of material; can merge pull request\n\n\n\nHomework\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/notes.html",
+    "href": "lessons/8-intermediate-r-2/notes.html",
+    "title": "Intermediate R programming II",
+    "section": "",
+    "text": "Learners will learn how to make their R code more reproducible using for loops and the apply family of functions."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/notes.html#objective",
+    "href": "lessons/8-intermediate-r-2/notes.html#objective",
+    "title": "Intermediate R programming II",
+    "section": "",
+    "text": "Learners will learn how to make their R code more reproducible using for loops and the apply family of functions."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/notes.html#installation-materials",
+    "href": "lessons/8-intermediate-r-2/notes.html#installation-materials",
+    "title": "Intermediate R programming II",
+    "section": "Installation & materials",
+    "text": "Installation & materials\n\nSlides\nData Carpentry for Biologists for loop lecture \nData Carpentry for Biologists iteration without loops lecture? \n\n\nReview\nCan share their plans for apply skills to their research. Lead optional discussion on when to use base R vs. tidyverse packages/functions.\n\n\nModifications\n\nFor for loops lecture:\n\nAt “Do Tasks 3-4…”, do “Basic For Loop” exercises #2 & #3\nSkip sections “Looping over multiple values” and “Looping with functions”\nStop at “Looping over files” due to zip download issues\n\nFor apply lecture:\n\nDo “Size Estimates With Maximum” exercise\nDo “Size Estimates Vectorized 2” exercise\nStop after first section in “Other apply functions (optional)” section"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/notes.html#teaching-notes",
+    "href": "lessons/8-intermediate-r-2/notes.html#teaching-notes",
+    "title": "Intermediate R programming II",
+    "section": "Teaching notes",
+    "text": "Teaching notes\n\nCreate new R script for these materials. Put script into repro-DS-workshop repo\nEmphasize using for loops using index or non-index methods. Index can be useful for reducing memory use and for storing results\nIf time, demonstrate combining if and for"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/notes.html#homework",
+    "href": "lessons/8-intermediate-r-2/notes.html#homework",
+    "title": "Intermediate R programming II",
+    "section": "Homework",
+    "text": "Homework\nIdentify a script from a research project that could benefit from a for loop, apply, conditional, or function."
   },
   {
     "objectID": "lessons/3-git/notes.html",
@@ -504,87 +525,38 @@
     "text": "Notes from before\n\nReview\nAsk students to share their diagram of their file system. Warm up with the review question in slide deck.\n\n\nModifications\n\nCreate an RStudio project to be the git repo.\nUse RStudio interface to create a new/blank R file (rather than using the planets example)\nAdd R pseudocode or comments to blank R file\n\n\n\nTeaching notes\n\npilot-analyses/ will be the locally created repository\nEmphasize 1:1 relationship of RStudio Project to git repo\nWhen setting up git for the first time, remind students to use the same email as their existing GitHub account or to select an email that will be used for GitHub\nReinforce using cd and ls -al to move around the file structure and see contents\nShow how git restore can be used to undo a saved file\nHEAD is the snapshot of your last commit\nCan use git reset HEAD~ to undo the last commit and unstage everything—the equivalent of reversing the git add and git commit commands.\n\n\n\nHomework\nCreate a GitHub account if you don’t already have one. For an extra challenge, identify an existing folder and turn into a repository."
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html",
-    "href": "lessons/4-github-basics/notes.html",
-    "title": "Developing Code on Github",
+    "objectID": "lessons/9-markdown-quarto/notes.html",
+    "href": "lessons/9-markdown-quarto/notes.html",
+    "title": "Documentation and Literate Programming",
     "section": "",
-    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
+    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#objective",
-    "href": "lessons/4-github-basics/notes.html#objective",
-    "title": "Developing Code on Github",
+    "objectID": "lessons/9-markdown-quarto/notes.html#objective",
+    "href": "lessons/9-markdown-quarto/notes.html#objective",
+    "title": "Documentation and Literate Programming",
     "section": "",
-    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
+    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#lesson-outline",
-    "href": "lessons/4-github-basics/notes.html#lesson-outline",
-    "title": "Developing Code on Github",
-    "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\nHomework\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
+    "objectID": "lessons/9-markdown-quarto/notes.html#installation-materials",
+    "href": "lessons/9-markdown-quarto/notes.html#installation-materials",
+    "title": "Documentation and Literate Programming",
+    "section": "Installation & Materials",
+    "text": "Installation & Materials\n\nReview\n\n\nModifications"
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#installation-materials",
-    "href": "lessons/4-github-basics/notes.html#installation-materials",
-    "title": "Developing Code on Github",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Version Control with Git episode #6\nGitHub authentication with PAT using Jenny Bryan’s Git book chapter 9 (follow usethis::git_sitrep())\nSoftware Carpentry Version Control with Git episode #7\nSoftware Carpentry branching add-on\n\n\nReview\nIf anyone turned a folder into a repository, share how that went. Ask students to navigate to previous repository, add new R file, and practice an add-commit cycle.\n\n\nModifications\n\nProvide a large .csv file, ask students to move into pilot-analyses repo within a data folder using cd and filepaths\nIf RStudio project was initialized as a git repo, should already have .gitignore. View and explain and practice adding something.\nGo with HTTPS + PAT setup, not SSH, but still mention SSH.\nConnect local git repo to GitHub with usethis::use_github()\nCreate new repository entitled repro-DS-workshop on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized\nShow how checking out a branch literally changes the local files"
+    "objectID": "lessons/9-markdown-quarto/notes.html#teaching-notes",
+    "href": "lessons/9-markdown-quarto/notes.html#teaching-notes",
+    "title": "Documentation and Literate Programming",
+    "section": "Teaching Notes",
+    "text": "Teaching Notes"
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#teaching-notes",
-    "href": "lessons/4-github-basics/notes.html#teaching-notes",
-    "title": "Developing Code on Github",
-    "section": "Teaching notes",
-    "text": "Teaching notes\n\nPractice another add-commit cycle after creating the .gitignore\nIntroduce the add-commit-push cycle"
-  },
-  {
-    "objectID": "lessons/4-github-basics/notes.html#homework",
-    "href": "lessons/4-github-basics/notes.html#homework",
-    "title": "Developing Code on Github",
+    "objectID": "lessons/9-markdown-quarto/notes.html#homework",
+    "href": "lessons/9-markdown-quarto/notes.html#homework",
+    "title": "Documentation and Literate Programming",
     "section": "Homework",
-    "text": "Homework\nConnect a personal repository to GitHub. Practice usethis::use_git() and usethis::use_github()."
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html",
-    "href": "lessons/5-github-collab/notes.html",
-    "title": "Collaborating with GitHub",
-    "section": "",
-    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#objective",
-    "href": "lessons/5-github-collab/notes.html#objective",
-    "title": "Collaborating with GitHub",
-    "section": "",
-    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#lesson-outline",
-    "href": "lessons/5-github-collab/notes.html#lesson-outline",
-    "title": "Collaborating with GitHub",
-    "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nReview Homework:\n\nAnyone put a repo on GitHub? Any difficulties encountered?\n\nLive Coding: Collaborating with GitHub\n\nShare a repo with everyone & have everyone clone w/ RStudio\nAsk 1 (one) volunteer to make a change and practice commit + push\nBoth instructor and volunteer make a change in the same file and push to main\nShow how to resolve merge conflict on GitHub\n\nWorking on branches (slides)\nLive Coding:\n\nMake a branch with your name in RStudio\nAdd your name to README and commit\nSwitch between branches and see the file change in RStudio AND in File Explorer / Finder\nPush & see branches on GitHub\n\nPull Requests (slides)\nLive Coding:\n\nHave everyone make a PR to add their name\nDemo merging one or two & ask volunteer to resolve any merge conflicts\n\nForks (slides)\n\nDiscuss when you would work on a branch of a fork vs. working in a branch but on the same repo\n\nLive Coding:\n\nHave students create a fork of a second example repo and clone their fork\nIn pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub\n\nHomework:\n\nMaybe try cloning a repo that you don’t have permission to push to to see what happens\nTry using usethis::pr_finish() on a branch that was already merged on GitHub and take note of what it does"
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#installation-materials",
-    "href": "lessons/5-github-collab/notes.html#installation-materials",
-    "title": "Collaborating with GitHub",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nWorkshop repository\nSoftware Carpentry Version Control with Git episode #8\n\n\nReview\nIf anyone connected a local repository to GitHub, share how that went. Ask students to navigate to previous repository, amend an existing file, and practice an add-commit-push cycle.\n\n\nModifications\n\nThe only part of #8 that was taught was cloning a forked repository. Ask students to fork an instructor-created repository, then clone locally. This will be the repo for downstream files.\nUse git remote add upstream xxxx to connect repo to upstream. If time permits, demonstrate a pull request (PR).\nShare diagram of relationships between the remotes (upstream and origin) and local\nDemonstrate pull requests on GitHub\nShow how distinct units of work can be separately submitted via branches"
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#teaching-notes",
-    "href": "lessons/5-github-collab/notes.html#teaching-notes",
-    "title": "Collaborating with GitHub",
-    "section": "Teaching notes",
-    "text": "Teaching notes\n\nHave students fork a cct-datascience repo as an example of a real research compendium\nEasy to check on learner progress by looking for who has and hasn’t forked repo"
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#homework",
-    "href": "lessons/5-github-collab/notes.html#homework",
-    "title": "Collaborating with GitHub",
-    "section": "Homework",
-    "text": "Homework\nSkim the Analyses section of tidyverse R style guide. What practice or guideline was new to you?\nAlso, explore the upstream cct-datascience repo. What practices do you notices that are new or different from your own?"
+    "text": "Homework"
   }
 ]

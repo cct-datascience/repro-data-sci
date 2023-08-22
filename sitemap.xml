@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/9-markdown-quarto/notes.html</loc>
-    <lastmod>2023-08-21T20:41:15.453Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/8-intermediate-r-2/notes.html</loc>
-    <lastmod>2023-08-21T20:41:14.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/7-intermediate-r-1/notes.html</loc>
-    <lastmod>2023-08-21T20:41:14.117Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/6-data-manipulation/notes.html</loc>
-    <lastmod>2023-08-21T20:41:13.337Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/4-github-basics/slides.html</loc>
-    <lastmod>2023-08-21T20:41:12.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-git/slides.html</loc>
-    <lastmod>2023-08-21T20:41:11.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/2-shell/slides.html</loc>
-    <lastmod>2023-08-21T20:41:10.853Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/10-get-credit/notes.html</loc>
-    <lastmod>2023-08-21T20:41:09.945Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/notes.html</loc>
-    <lastmod>2023-08-21T20:41:07.805Z</lastmod>
-  </url>
-  <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/about.html</loc>
-    <lastmod>2023-08-21T20:41:06.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/index.html</loc>
-    <lastmod>2023-08-21T20:41:07.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/slides.html</loc>
-    <lastmod>2023-08-21T20:41:09.305Z</lastmod>
+    <lastmod>2023-08-22T15:36:58.480Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/2-shell/notes.html</loc>
-    <lastmod>2023-08-21T20:41:10.505Z</lastmod>
+    <lastmod>2023-08-22T15:36:57.716Z</lastmod>
   </url>
   <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-git/notes.html</loc>
-    <lastmod>2023-08-21T20:41:11.381Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/4-github-basics/notes.html</loc>
-    <lastmod>2023-08-21T20:41:12.165Z</lastmod>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/6-data-manipulation/notes.html</loc>
+    <lastmod>2023-08-22T15:36:56.636Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/5-github-collab/notes.html</loc>
-    <lastmod>2023-08-21T20:41:12.929Z</lastmod>
+    <lastmod>2023-08-22T15:36:55.824Z</lastmod>
   </url>
   <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/6-data-manipulation/slides.html</loc>
-    <lastmod>2023-08-21T20:41:13.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/7-intermediate-r-1/slides.html</loc>
-    <lastmod>2023-08-21T20:41:14.465Z</lastmod>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-git/slides.html</loc>
+    <lastmod>2023-08-22T15:36:54.684Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/8-intermediate-r-2/slides.html</loc>
-    <lastmod>2023-08-21T20:41:15.145Z</lastmod>
+    <lastmod>2023-08-22T15:36:53.868Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/7-intermediate-r-1/slides.html</loc>
+    <lastmod>2023-08-22T15:36:52.936Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/4-github-basics/notes.html</loc>
+    <lastmod>2023-08-22T15:36:52.228Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/notes.html</loc>
+    <lastmod>2023-08-22T15:36:51.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/index.html</loc>
+    <lastmod>2023-08-22T15:36:48.856Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/slides.html</loc>
+    <lastmod>2023-08-22T15:36:50.432Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/4-github-basics/slides.html</loc>
+    <lastmod>2023-08-22T15:36:51.760Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/10-get-credit/notes.html</loc>
+    <lastmod>2023-08-22T15:36:52.556Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/7-intermediate-r-1/notes.html</loc>
+    <lastmod>2023-08-22T15:36:53.484Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/8-intermediate-r-2/notes.html</loc>
+    <lastmod>2023-08-22T15:36:54.308Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-git/notes.html</loc>
+    <lastmod>2023-08-22T15:36:55.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/6-data-manipulation/slides.html</loc>
+    <lastmod>2023-08-22T15:36:56.172Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/2-shell/slides.html</loc>
+    <lastmod>2023-08-22T15:36:57.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/lessons/9-markdown-quarto/notes.html</loc>
+    <lastmod>2023-08-22T15:36:58.068Z</lastmod>
   </url>
 </urlset>
