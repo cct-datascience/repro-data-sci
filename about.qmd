@@ -1,26 +1,24 @@
 ---
 title: "Instructors"
-format: html
+format: 
+  html:
+    anchor-sections: false
 ---
 
 ::: columns
 ::: {.column width="50%"}
 ## Eric R. Scott
 
-![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/large/public/images/people/eric_scott_lowres.jpg){width="270"}
+![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/large/public/images/people/eric_scott_lowres.jpg){fig-align="left" width="270"}
 
-{{< fa envelope >}} [ericrscott\@arizona.edu](mailto:ericrscott@arizona.edu)\
-{{< fa brands mastodon >}} [\@LeafyEricScott\@fosstodon.org](https://fosstodon.org/@LeafyEricScott)\
-{{< fa brands github >}} [Aariq](https://github.com/Aariq)
+### [{{< fa envelope >}}](mailto:ericrscott@arizona.edu "email") \| [{{< fa brands mastodon >}}](https://fosstodon.org/@LeafyEricScott "mastodon") \| [{{< fa brands github >}}](https://github.com/Aariq "github")
 :::
 
 ::: {.column width="50%"}
 ## Renata Diaz
 
-![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/large/public/images/people/rmd.png){width="270"}
+![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/large/public/images/people/rmd.png){width="281"}
 
-{{< fa envelope >}} [renatadiaz\@arizona.edu](mailto:renatadiaz@arizona.edu)\
-{{< fa brands mastodon >}} [\@diaz_renm\@ecoevo.social](https://ecoevo.social/@diaz_renm)\
-{{< fa brands github >}} [diazrenata](https://github.com/diazrenata)
+### [{{< fa envelope >}}](mailto:renatadiaz@arizona.edu "email") \| [{{< fa brands mastodon >}}](https://ecoevo.social/@diaz_renm "mastodon") \| [{{< fa brands github >}}](https://github.com/diazrenata "github")
 :::
 :::
