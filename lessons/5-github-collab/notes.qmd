@@ -18,7 +18,8 @@ Learners will fork and clone a repository on GitHub and use branches to open pul
     -   Share a repo with everyone & have everyone clone w/ RStudio
     -   Ask 1 (one) volunteer to make a change and practice commit + push
     -   Both instructor and volunteer make a change in the same file and push to main
-    -   Show how to resolve merge conflict on GitHub
+    -   Should error for whoever pushes second
+    -   Try following hints and pull, then set `git config pull.rebase false`
 
 -   Working on branches (slides)
 
