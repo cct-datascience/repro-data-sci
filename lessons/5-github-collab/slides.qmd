@@ -45,6 +45,12 @@ If two people have permissions, both can push changes to the repo
 Ask for a volunteer and give them permission to push to a repo
 :::
 
+## Example repo
+
+-   Everyone practice cloning this example repo as a new RStudio project: <!--# TODO: add link -->
+
+-   Need one volunteer to edit the README.md and practice commit + push
+
 ## Dealing with Conflicts
 
 -   What happens when two people make conflicting edits to a file and push them?
@@ -65,13 +71,15 @@ Ask for a volunteer and give them permission to push to a repo
 
 . . .
 
-```         
+Use:
+
+``` bash
 git config pull.rebase false
 ```
 
 Or, if you want to set this option for all future repos too
 
-```         
+``` bash
 git config --global pull.rebase false
 ```
 
@@ -112,38 +120,52 @@ gitGraph
        
 ```
 
-## Coding Time
+## Working on a Branch
 
--   Clone a repository where you have permission to push
+-   Make a new branch with your name using RStudio's Git pane
 
--   Make a new branch with your name
-
--   Commit changes and push
+-   Commit changes and push to your branch
 
 -   View changes on GitHub
 
 ## Pull Requests
 
--   what is it
+A request to merge changes into the main branch
 
--   figure
+-   Need another volunteer to share screen and be guided through making a pull request
 
--   Demo
+-   This time, everyone can follow along!
 
-## Forks
+## Forks {.smaller}
 
+::: columns
+::: {.column width="40%"}
 What if you don't have permission to push to a GitHub repo but you want to contribute?
 Make a fork!
 
-(pic of fork button)
+![](fork_btn.png){fig-align="center"}
+:::
 
--   Creates a copy of the repo on your own GitHub that remains linked with the original ("upstream")
+::: {.column width="60%"}
 
--   Can sync your fork with upstream
+![](fork_diagram.png){fig-align="center" width="627"}
+:::
+:::
 
--   Can make a pull request from your fork to the upstream
+## Collaborating with Forks
 
--   Still good practice to work on a branch
+To contribute to a repo you don't have push permission for:
+
+1.  **Fork** the repo to your own GitHub
+2.  **Clone** the fork to your local computer
+3.  Make **commits** (ideally on a **branch**)
+4.  Make a **pull request** to the upstream repo
+
+::: callout-tip
+## Exercise
+
+In pairs, practice this workflow to make a PR to our example repo
+:::
 
 ## References
 
