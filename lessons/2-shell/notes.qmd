@@ -24,33 +24,38 @@ format: html
     -   Split into 2 breakout rooms to install on different OS's.
 -   Break to all download shell-lesson-data
     -   Link
-    -   Put it somewhere high in the file system (Desktop)
-    -   Unzip using command line unzip (or just point-and-click in computer file system?)
--   Live coding: Intro to the terminal pane in RStudio
-    -   Quick tour of RStudio panes
-        -   Emphasize files pane, analogous to Finder/File Explorer
-        -   Navigate to shell-lesson-data
-    -   Everyone set up to use bash with Terminal pane
-    -   Show navigation to Current Directory in Terminal pane in RStudio
-        -   Make sure everyone ends up in shell-lesson-data
--   Live coding: Unix Shell lesson 1
-    -   https://swcarpentry.github.io/shell-novice/01-intro
-    -   (a lot of the text the content of this lesson will be covered in the slides section above)
+    -   Put it on your Desktop
+    -   Unzip using point-and-click
+-   Live coding: Setup RStudio
+    -   Open RStudio
+    -   Tour panes: files and  terminal
+    -   Set up terminal pane to use bash
+-   Live coding: Navigating filesystems in files pane
+    -   Use file pane to navigate to shell-lesson-data
+-   Live coding: Navigate to shell-lesson-data in Terminal 
     -   Identify the prompt and note that it is different in zsh (%)
-    -   Introduce ls
-    -   Introduce `command not found`
-    -   Introduce general anatomy of a shell prompt (Slide/share image)
--   Live coding: Unix Shell lesson 2
-    -   `pwd` and file systems
-    -   Using options and getting help
-    -   Navigating around file systems
--   (Time-permitting) live coding: Unix Shell lesson 3
-    -   Creating directories
-    -   Creating and editing text files
-    -   Moving and renaming files and directories
-    -   Copying
-    -   Removing
-    -   Wildcards
+    - `pwd`
+    - `cd`
+    - `ls`
+        - Use `ls` flags to explain anatomy of a shell command
+        - Show `man ls` to show flag options for the `ls` command
+-   Live coding: Synchronizing file panes
+    - Show "Go to current directory" to bring Terminal to files pane
+    - Show "New terminal here" to create a terminal in files pane
+    - Show that Rstudio's working directory is not automatically wherever either Terminal or the file pane is
+- Live coding: using Rprojects to simplify filesystems
+    - Create an R project
+    - Show that, upon opening, Terminal, getwd(), and file pane are all on the same page
+- Live coding: `cp` and `move`
+    - Copy `shell_lesson_data` to the Rproject.
+    - Tell them we need `cp`, then use `man cp` to get the options
+    - Repeat using `ls` to explore contents of `shell_lesson_data` and mirror files pane
+-   Live coding/discussion: options for finding help
+    - `--help` flag
+    - `man` pages
+    - Manual pages: `?` in R, package websites
+    - StackOverflow
+    - ChatGPT
 -   Homework for next session
     -   Read <https://peerj.com/preprints/3159/> git (Version control prep)
     -   Create a diagram of your file system and note your most frequently used directories
