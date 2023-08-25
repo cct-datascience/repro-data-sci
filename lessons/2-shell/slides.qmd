@@ -131,7 +131,12 @@ git --help
 
 ![](drop-ins.png){fig-align="center"}
 
+# Takeaways
 
+- The shell is a command-line interface to the computer
+- The file system the shell sees is the *same* as your File Explorer tab
+- We can use the shell from the Terminal pane in RStudio
+- Find help from built-in manual pages, Google, (maybe) AI tools, or community
 
 # Homework for next time
 

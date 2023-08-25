@@ -5,11 +5,11 @@ format: html
 
 ## Objectives
 
--   Understand the concept of the shell and the anatomy of a shell command
--   Interact with the shell using common commands (`ls`, `pwd`, `cd`)
--   Find help via --help, man, and online help pages
--   Navigate around their working directories using `ls`, `cd`
--   (Optional) Create, copy, move, and delete files/directories using `mkdir`, `nano`, `touch`, `mv`, `cp`, `rm`.
+
+-   Understand the what and why of the shell
+-   Use the shell to navigate your computer's file system
+-   Use R projects to simplify file system navigation
+-   Know your options for finding help
 
 ## Lesson outline
 

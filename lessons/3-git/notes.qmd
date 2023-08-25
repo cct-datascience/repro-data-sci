@@ -20,30 +20,35 @@ format: html
 -   Slides/lecture: Intro to version control with git
     -   What is version control?
     -   Why should I learn this? When will I need it?
--   Live coding: SW Carpentry Git lesson 2
-    -   https://swcarpentry.github.io/git-novice/02-setup
+-   Live coding: git config
+    -   SW Carpentry Git lesson 2 https://swcarpentry.github.io/git-novice/02-setup
     -   Setting up git using git config
         -   Make sure participants use their GH email/intended GH email
--   Live coding: SW Carpentry Git lesson 3
-    -   https://swcarpentry.github.io/git-novice/03-create.html
+        - `git` `verb` `options`
+        - `git config --global core.editor "vim"`
+        - `git` `verb` `--help`
+-   Live coding: git init 
+    -   SW Carpentry Git lesson 3 https://swcarpentry.github.io/git-novice/03-create.html
     -   Introduce the concept of a repository
     -   Create a RStudio project using RStudio point-and-click interface. Call it `pilot-analyses`
     -   Use git init to initialize this project folder as a repository
     -   Use git status to check state of git repo
--   Live coding: SW Carpentry Git lesson 4
-    -   https://swcarpentry.github.io/git-novice/04-changes
-    -   Tracking changes to a Git repo (modify/add/commit).
+-   Live coding: Tracking changes
+    -   SW Carpentry Git lesson 4 https://swcarpentry.github.io/git-novice/04-changes
     -   Visualize in slides
     -   Create a blank R file (using RStudio point and click)
     -   Make comments/pseudocode changes.
     -   git status
     -   Go through git add/commit cycle
-    -   Make additional changes, use git diff
-    -   Show git restore
-    -   git reset HEAD\~
--   Live coding: SW Carpentry Git lesson 6
-    -   https://swcarpentry.github.io/git-novice/06-ignore
-    -   .gitignore
+    -   Repeat with additional changes, use git diff
+    -   Repeat with multiple files
+    -   Undo saved changes to a file using `git restore`
+    -   Use git reset HEAD\~ to undo the git add and git commit commands
+-   Live coding: `.gitignore`
+    -   SW Carpentry Git lesson 6https://swcarpentry.github.io/git-novice/06-ignore
+    -   .gitignore:
+        - `DS_Store`
+        - Create a file and then ignore it.
 -   (Time permitting): SW Carpentry Git lesson 5
     -   https://swcarpentry.github.io/git-novice/05-history
     -   Navigating git history

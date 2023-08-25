@@ -58,31 +58,67 @@ git config --global user.email "youremail@arizona.edu"
 
 # Coding time
 
-`git config`
+- General syntax: `git` `verb` `options`
+- Set up text editor choice: 
+```
+git config --global core.editor "vim" 
+```
+- Use the `--help` flag to see options
 
 # Coding time
 
-Create an RStudio project and initialize it as a git repository.
-
-Use git status to check the state of the repo.
+- Create a new RStudio project
+- Call it `pilot-analyses`
+- Use `git init` to initialize it as a git repository.
 
 # Coding time
 
-Track modifications to a git repository.
+- Introduce `git status`
 
-## Saving modifications: a two-step process
+# Saving modifications: a two-step process
 
 ![](git-simple.png)
 
-## Adding multiple files to same commit
+# Coding time
+
+- Introduce modifications to this repository
+- Try `git status` again
+
+# Adding multiple files to same commit
 
 ![](git-multiple.png)
 
 # Coding time
 
-`.gitignore`
+- Modify-add-commit cycle
+- `git diff`
+- `git restore` to reset saved changes to the last commit
+- `git reset HEAD\~` to (effectively) undo an add-commit cycle
+
+# Coding time
+
+- Ignore files with `.gitignore`
+
+# Takeaways
+
+- `git` handles keeping track of versions and changes
+- The core `git` workflow is the modify-add-commit cycle
+- `git` can travel backwards in time
+- Ignore files using `.gitignore`
 
 # Homework
 
 -   Create a [GitHub](https://github.com) account if you don't have one.
--   Optional: Identify an exisitng folder on your computer and turn it into a git repository.
+-   Optional: Identify an existing folder on your computer and turn it into a git repository.
+
+# Resources
+
+- Friendly reminder of [Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)!
+
+# Resources: Git
+
+-  [Software Carpentry Version Control with Git episode #2](https://swcarpentry.github.io/git-novice/02-setup)
+-  [Software Carpentry Version Control with Git episode #3](https://swcarpentry.github.io/git-novice/03-create)
+-  [Software Carpentry Version Control with Git episode #4](https://swcarpentry.github.io/git-novice/04-changes)
+-  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
+-  [Software Carpentry Version Control with Git episode #5](https://swcarpentry.github.io/git-novice/05-history)
