@@ -216,45 +216,54 @@ ul.task-list li input[type="checkbox"] {
 <li>Break to all download shell-lesson-data
 <ul>
 <li>Link</li>
-<li>Put it somewhere high in the file system (Desktop)</li>
-<li>Unzip using command line unzip (or just point-and-click in computer file system?)</li>
+<li>Put it on your Desktop</li>
+<li>Unzip using point-and-click</li>
 </ul></li>
-<li>Live coding: Intro to the terminal pane in RStudio
+<li>Live coding: Setup RStudio
 <ul>
-<li>Quick tour of RStudio panes
-<ul>
-<li>Emphasize files pane, analogous to Finder/File Explorer</li>
-<li>Navigate to shell-lesson-data</li>
+<li>Open RStudio</li>
+<li>Tour panes: files and terminal</li>
+<li>Set up terminal pane to use bash</li>
 </ul></li>
-<li>Everyone set up to use bash with Terminal pane</li>
-<li>Show navigation to Current Directory in Terminal pane in RStudio
+<li>Live coding: Navigating filesystems in files pane
 <ul>
-<li>Make sure everyone ends up in shell-lesson-data</li>
+<li>Use file pane to navigate to shell-lesson-data</li>
 </ul></li>
-</ul></li>
-<li>Live coding: Unix Shell lesson 1
+<li>Live coding: Navigate to shell-lesson-data in Terminal
 <ul>
-<li>https://swcarpentry.github.io/shell-novice/01-intro</li>
-<li>(a lot of the text the content of this lesson will be covered in the slides section above)</li>
 <li>Identify the prompt and note that it is different in zsh (%)</li>
-<li>Introduce ls</li>
-<li>Introduce <code>command not found</code></li>
-<li>Introduce general anatomy of a shell prompt (Slide/share image)</li>
-</ul></li>
-<li>Live coding: Unix Shell lesson 2
+<li><code>pwd</code></li>
+<li><code>cd</code></li>
+<li><code>ls</code>
 <ul>
-<li><code>pwd</code> and file systems</li>
-<li>Using options and getting help</li>
-<li>Navigating around file systems</li>
+<li>Use <code>ls</code> flags to explain anatomy of a shell command</li>
+<li>Show <code>man ls</code> to show flag options for the <code>ls</code> command</li>
 </ul></li>
-<li>(Time-permitting) live coding: Unix Shell lesson 3
+</ul></li>
+<li>Live coding: Synchronizing file panes
 <ul>
-<li>Creating directories</li>
-<li>Creating and editing text files</li>
-<li>Moving and renaming files and directories</li>
-<li>Copying</li>
-<li>Removing</li>
-<li>Wildcards</li>
+<li>Show “Go to current directory” to bring Terminal to files pane</li>
+<li>Show “New terminal here” to create a terminal in files pane</li>
+<li>Show that Rstudio’s working directory is not automatically wherever either Terminal or the file pane is</li>
+</ul></li>
+<li>Live coding: using Rprojects to simplify filesystems
+<ul>
+<li>Create an R project</li>
+<li>Show that, upon opening, Terminal, getwd(), and file pane are all on the same page</li>
+</ul></li>
+<li>Live coding: <code>cp</code> and <code>move</code>
+<ul>
+<li>Copy <code>shell_lesson_data</code> to the Rproject.</li>
+<li>Tell them we need <code>cp</code>, then use <code>man cp</code> to get the options</li>
+<li>Repeat using <code>ls</code> to explore contents of <code>shell_lesson_data</code> and mirror files pane</li>
+</ul></li>
+<li>Live coding/discussion: options for finding help
+<ul>
+<li><code>--help</code> flag</li>
+<li><code>man</code> pages</li>
+<li>Manual pages: <code>?</code> in R, package websites</li>
+<li>StackOverflow</li>
+<li>ChatGPT</li>
 </ul></li>
 <li>Homework for next session
 <ul>
