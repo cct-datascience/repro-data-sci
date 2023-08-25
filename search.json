@@ -270,7 +270,7 @@
     "href": "lessons/4-github-basics/slides.html#ignoring-files",
     "title": "GitHub",
     "section": "Ignoring files",
-    "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore"
+    "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore\nUse this file (or create one) to stop git/GitHub from tracking…\n\nlarge files that aren’t plain text\nfiles with sensitive data\nunnecessary files"
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#sharing-with-github",
@@ -382,7 +382,7 @@
     "href": "index.html#schedule-tentative",
     "title": "Reproduciblity and Data Science in R",
     "section": "Schedule (tentative)",
-    "text": "Schedule (tentative)\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)\n\n\n\n\n\n\n\n  \n    \n    \n    \n    \n    \n  \n  \n    \n    \n      Lesson\n      Date\n      Theme\n      Topic\n      Links\n    \n  \n  \n    1\nTue, 9/5\nManage & Organize\nProject managment and coding best practices\n\nslides\n\n\n    2\nThu, 9/7\nShare & Collaborate\nUsing shell commands\n\nslides\n\n\n    3\nTue, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n    4\nThu, 9/14\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n    5\nTue, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n    6\nThu, 9/21\nTidy & Wrangle\nData Manipulation\n\nslides\n\n\n    7\nTue, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n    8\nThu, 9/28\nRepeat & Reproduce\nIntermediate R programming II\n—\n    9\nTue, 10/3\nDocument & Publish\nDocumentation and literate programming\n—\n    10\nThu, 10/5\nDocument & Publish\nGetting credit for your hard work\n—\n    —\nTue, 10/17\nHelp\nDrop-in help session\n—\n    —\nTue, 10/24\nShow & Tell\nAn opportunity for you to show off what you've learned\n—"
+    "text": "Schedule (tentative)\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)\n\n\n\n\n\n\n\n  \n    \n    \n    \n    \n    \n  \n  \n    \n    \n      Lesson\n      Date\n      Theme\n      Topic\n      Links\n    \n  \n  \n    1\nTue, 9/5\nManage & Organize\nProject managment and coding best practices\n\nslides\n\n\n    2\nThu, 9/7\nShare & Collaborate\nUsing shell commands\n\nslides\n\n\n    3\nTue, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n    4\nThu, 9/14\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n    5\nTue, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n    6\nThu, 9/21\nTidy & Wrangle\nData Manipulation\n\nslides\n\n\n    7\nTue, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n    8\nThu, 9/28\nRepeat & Reproduce\nIntermediate R programming II\n\nslides\n\n\n    9\nTue, 10/3\nDocument & Publish\nDocumentation and literate programming\n—\n    10\nThu, 10/5\nDocument & Publish\nGetting credit for your hard work\n—\n    —\nTue, 10/17\nHelp\nDrop-in help session\n—\n    —\nTue, 10/24\nShow & Tell\nAn opportunity for you to show off what you've learned\n—"
   },
   {
     "objectID": "index.html#code-of-conduct",
