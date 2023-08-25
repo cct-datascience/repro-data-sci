@@ -1,6 +1,8 @@
 ---
 title: "Sharing Code & Getting Credit"
 format: revealjs
+chalkboard: true
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 ## Why share code?
@@ -19,36 +21,88 @@ But what about ....
 
 Capture the **computational environment** for ultimate reproducibility
 
-## Capture R package state with `renv`
+## Reproducible Environments With `renv`
 
--   how renv works
+-   The [`renv` package](https://rstudio.github.io/renv/articles/renv.html) helps create reproducible environments by recording all the packages used in your project
 
--   how to set it up
+-   Discovers and records required packages and their versions in `renv.lock`
 
--   when to set it up
+-   Each project can have its own independent collection of R packages installed
 
--   how to use a renv package
+## Using `renv`
 
--   quick demo
+::: callout-tip
+## Exercise
 
-## Capture entire computational environment with `Docker`
+Install `renv` and activate it for a project with `renv::init()`.
+Inspect the files that were created.
+:::
 
--   How docker works
+-   To deactivate `renv`, run `renv::deactivate()`. To also remove all the files it created, run `renv::deactivate(clean = TRUE)` instead.
 
--   Theoretically how to set it up
+## Limitations of `renv`
 
--   Theoretically how to use a docker container with reproducible code
+-   Only tracks R packages [^1]
+
+-   Can't reproduce operating system or system libraries
+
+-   Sometimes quite annoying to use
+
+## Reproducible Everything with Docker
+
+Docker containers...
+
+::: incremental
+-   Are isolated "virtual machines"
+
+-   Run Linux regardless of the host machine OS
+
+-   Can be built with specific versions of OS, system libraries, and R packages (using `renv`)
+
+-   Can be downloaded and run from the command line
+:::
+
+## Making a Docker Container
+
+Turning your research compendium into a Docker container is beyond the scope of this workshop, but it involves creating a **Dockerfile** with instructions on what to install and what code to run.
+
+``` docker
+# Base image https://hub.docker.com/u/rocker/
+FROM rocker/r-base:latest
+
+## create directories
+RUN mkdir -p /01_data
+RUN mkdir -p /02_code
+RUN mkdir -p /03_output
+
+## copy files
+COPY /02_code/install_packages.R /02_code/install_packages.R
+COPY /02_code/myScript.R /02_code/myScript.R
+
+## install R-packages
+RUN Rscript /02_code/install_packages.R
+```
 
 ## Hold up, what *is* reproducibility again?
 
-Tools like `renv` and Docker improve the numerical reproducibility, but add extra barriers.
-Producing accessible and understandable code is an important aspect of reproducibility, so need to balance that with capturing computational environments.
+`renv` and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code.
+If you use these tools:
 
 -   Provide instructions on how to troubleshoot or disable `renv` if it's giving folks trouble
-
 -   Provide code in a GitHub repo *in addition* to inside of a Docker container
-
 -   Provide instructions on how to run code in README
+
+## Make sure people know how to give you credit
+
+-   Citation File Format are plain text files that are human- and machine-readable
+
+-   Adding a `CITATION.cff` file to your repo...
+
+    -   Puts a "cite this repository" button on GitHub
+
+    -   Helps Zenodo fill out metadata correctly when you archive your repo
+
+-   Create a CITATION.cff file with this [helper](https://citation-file-format.github.io/cff-initializer-javascript/#/)
 
 ## Getting Credit with Zenodo
 
@@ -75,3 +129,5 @@ Producing accessible and understandable code is an important aspect of reproduci
 -   Show how to link Zenodo and Github repo
 
 -   Show how to make a release (maybe can use sandbox or something for this? or maybe just show parts separately? maybe a student is ready to make a release and can demo?)
+
+[^1]: `renv` can also be set up to track [Python dependencies](https://rstudio.github.io/renv/articles/python.html)
