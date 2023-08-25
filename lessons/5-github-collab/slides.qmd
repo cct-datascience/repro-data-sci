@@ -147,7 +147,6 @@ Make a fork!
 :::
 
 ::: {.column width="60%"}
-
 ![](fork_diagram.png){fig-align="center" width="627"}
 :::
 :::

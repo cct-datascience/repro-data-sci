@@ -27,6 +27,10 @@ bibliography: references.bib
 ## Ignoring files
 
 -   If you created an RStudio project with git enabled, you should have a top-level `.gitignore`
+-   Use this file (or create one) to stop git/GitHub from tracking...
+    -   large files that aren't plain text
+    -   files with sensitive data
+    -   unnecessary files
 
 ## Sharing with GitHub
 
