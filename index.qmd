@@ -36,6 +36,7 @@ read_csv("schedule.csv") |>
     Topic ~ pct(35),
     Links ~ pct(20)
   ) 
+
 ```
 
 ## Code of Conduct

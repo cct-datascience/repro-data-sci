@@ -6,7 +6,7 @@ Lesson,Date,Theme,Topic,Links,Notes
 5,2023-09-19,Share & Collaborate,Collaborating with GitHub,[slides](lessons/5-github-collab/slides.html),"git novice lesson 8, pr_init(), pr_push(), pr_finish()"
 6,2023-09-21,Tidy & Wrangle,Data Manipulation,[slides](lessons/6-data-manipulation/slides.html),data carpentry R ecology episodes 2 & 3
 7,2023-09-26,Repeat & Reproduce,Intermediate R programming I,[slides](lessons/7-intermediate-r-1/slides.html),functions
-8,2023-09-28,Repeat & Reproduce,Intermediate R programming II,,iteration (and anonymous functions)
+8,2023-09-28,Repeat & Reproduce,Intermediate R programming II,[slides](lessons/8-intermediate-r-2/slides.html),iteration (and anonymous functions)
 9,2023-10-03,Document & Publish,Documentation and literate programming,,"README.md, Quarto"
 10,2023-10-05,Document & Publish,Getting credit for your hard work,,"renv, LICENSE, CITATION.cff, Zenodo, GitHub releases"
 ,2023-10-17,Help,Drop-in help session,,"same day as SORTEE, might need to re-schedule"
