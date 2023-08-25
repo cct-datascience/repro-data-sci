@@ -4,13 +4,12 @@
 cff-version: 1.2.0
 title: Reproducibility & Data Science in R
 message: >-
-  If you use this software, please cite it using the
+  If you use this curriculum, please cite it using the
   metadata from this file.
 type: software
 authors:
   - given-names: Eric R
     family-names: Scott
-    email: ericrscott@arizona.edu
     affiliation: >-
       Communications & Cyber Technologies, the Arizona
       Experiment Station, University of Arizona
@@ -20,6 +19,7 @@ authors:
     affiliation: >-
       Communications & Cyber Technologies, the Arizona
       Experiment Station, University of Arizona
+    orcid: 'https://orcid.org/0000-0003-0803-4734'
   - given-names: Jessica
     family-names: Guo
     affiliation: >-
@@ -27,9 +27,11 @@ authors:
       Experiment Station, University of Arizona
   - given-names: Kristina
     family-names: Riemer
+    email: kristinariemer@arizona.edu
     affiliation: >-
       Communications & Cyber Technologies, the Arizona
       Experiment Station, University of Arizona
+    orcid: 'https://orcid.org/0000-0003-3802-3331'
 repository-code: 'https://github.com/cct-datascience/repro-data-sci'
 url: 'https://cct-datascience.github.io/repro-data-sci/'
 license: CC-BY-4.0
