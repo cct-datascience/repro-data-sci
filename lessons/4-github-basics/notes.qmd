@@ -8,6 +8,43 @@ format: html
 Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically.
 Learners will practice developing new code on branches.
 
+## Lesson Outline
+
+-   Review:
+
+    -   Ways of creating a git repo and how to know if it worked
+    -   Homework
+
+-   Live Coding: `.gitignore`
+
+    -   Explore `.gitignore` created by RStudio
+    -   Software Carpentry [.gitignore lesson](https://swcarpentry.github.io/git-novice/06-ignore)
+    -   Discuss what files to `.gitignore`: what is "non-diffable"?
+
+-   What is GitHub and why use it?
+    (slides)
+
+-   Live Coding: GitHub setup
+
+    -   Go through checklist of `usethis::git_sitrep()` with student sharing screen
+    -   **Don't have student share screen with PAT generation! Switch to your screen!**
+
+-   Live Coding: Putting your code on GitHub
+
+    -   Local first: `usethis::use_github()`
+    -   GitHub first: create new repo on GitHub and create new R Studio project from version control
+    -   Other ways are possible, but we're not going to cover them (unless someone has issues)
+
+-   Live Coding: Push and Pull
+
+    -   Make changes in RStudio, push
+    -   Make changes on GitHub, pull
+    -   Have Renata make changes, push, then pull
+
+-   Next time: How to work together on GitHub more *safely*
+
+-   Homework: Put a personal repository on GitHub.
+
 ## Installation & materials
 
 1.  [Slides](slides.qmd)

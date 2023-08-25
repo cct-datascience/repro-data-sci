@@ -1,32 +1,28 @@
 ---
-title: "Shell Commands"
+title: "Shell and Filesystems"
 subtitle: "Session 2"
 # date: TODO
 format: revealjs
-execute: 
-  echo: true
-engine: knitr
 chalkboard: true
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 # Review of last week
 
-- What happened as you were trying to re-organize projects or R code? 
-  - Victories? 
-  - Stumbling blocks?
+-   What happened as you were trying to re-organize projects or R code?
+    -   Victories?
+    -   Stumbling blocks?
 
 # Learning objectives
 
 -   Understand the what and why of the shell
--   Interact with the shell using common commands
--   Find help via --help, man, and online help pages
--   Navigate your file system from the command line
--   (Time permitting) Manipulate and move files from the command line
-
+-   Use the shell to navigate your computer's file system
+-   Use R projects to simplify file system navigation
+-   Know your options for finding help
 
 # What is the shell?
 
-- Command-line interface, in contrast to a GUI
+-   Command-line interface, in contrast to a GUI
 
 # Why learn the shell?
 
@@ -34,31 +30,33 @@ chalkboard: true
 -   Batch large tasks (e.g. renaming files)
 -   Interact with remote computers like the University HPC
 
-# Let's get set up! 
+# Shell in this workshop
+
+-   git/GitHub (next 2 lessons)
+-   Navigating your file system
+-   Quarto (lesson 9)
+
+# Let's get set up!
 
 -   macOS comes with a shell (usually Bash or Zsh) built-in
 
 -   Windows need to install GitBash (includes Bash shell and git, which we will use later)
 
-- Breakout rooms
+-   Breakout rooms
+    - Mac users go with Eric
+    - Windows users go with Renata
 
 # Data download
 
-- Download `shell-lesson-data.zip` 
-  - Instructions here: <https://swcarpentry.github.io/shell-novice/index.html#download-files>
-- Save it to your Desktop and unzip it.
+-   Download `shell-lesson-data.zip`
+    -   Instructions here: <https://swcarpentry.github.io/shell-novice/index.html#download-files>
+-   Save it to your Desktop and unzip it.
 
 # Coding time
 
-- Intro to shell commands
-
-# Syntax of a shell command
-
-![](shell_syntax.png){fig-align="center"}
-
-# Coding time
-
-- File systems
+- RStudio panes
+- Set up Terminal in RStudio
+- Navigation using Terminal and Files pane
 
 # Example file system
 
@@ -68,7 +66,99 @@ chalkboard: true
 
 ![](file-structure-example.png)
 
+# Syntax of a shell command
+
+![](shell_syntax.png){fig-align="center"}
+
+# Coding time
+
+- Synchronize working directories between Terminal, Files Pane, and R working directory
+
+# Coding time
+
+- Use an R project to simplify working directories
+- Copy `shell_lesson_data` to your R project 
+
+# Getting help
+
+```bash
+man ls
+```
+
+# Getting help
+
+```bash
+git --help
+```
+
+# Getting help
+
+![](getwd.png){fig-align="center"}
+
+# Getting help
+
+![](man_page.png){fig-align="center"}
+
+
+# Getting help
+
+![](stack_overflow.png){fig-align="center"}
+
+# Getting help
+
+![](gpt.png){fig-align="center"}
+
+# Beware of stochastic parrots
+
+-   LLMs don't _understand_, but are good at mimicry
+-   Use with care:
+    -   May be wrong
+    -   May be inconsistent
+
+# Beware of stochastic parrots
+
+-   Tools like ChatGPT pose ethical issues
+    -   Plagiarism
+    -   Labor conditions
+    -   Inputs may be sent to parent companies
+
+# Getting help: fellow humans
+
+![](ua-ds-slack.png){fig-align="center"}
+
+
+# Getting help: fellow humans
+
+![](drop-ins.png){fig-align="center"}
+
+# Takeaways
+
+- The shell is a command-line interface to the computer
+- The file system the shell sees is the *same* as your File Explorer tab
+- We can use the shell from the Terminal pane in RStudio
+- Find help from built-in manual pages, Google, (maybe) AI tools, or community
+
 # Homework for next time
 
 -   Read ["Excuse me, do you have a moment to talk about version control?"](https://peerj.com/preprints/3159/)
-- Create a diagram of your file system and note your most frequently used directories
+-   Create a diagram of your file system and note your most frequently used directories
+
+# Resources: Shell
+
+-   [Software Carpentry Unix Shell episode #1](https://swcarpentry.github.io/shell-novice/01-intro)
+-  [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
+-  [Software Carpentry Unix Shell episode #3](https://swcarpentry.github.io/shell-novice/03-create)
+
+# Resources: AI tools
+
+-   <https://ecoevo.social/@cboettig/110934209180569370>
+-   <https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html>
+-   <https://en.wikipedia.org/wiki/Stochastic_parrot>
+-   <https://dl.acm.org/doi/abs/10.1145/3442188.3445922>
+-   <https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0>
+
+# Resources: UA community
+
+- [UA Data Science Institute](https://datascience.arizona.edu/)
+- [UA Data Science Slack](https://jcoliver.github.io/uadatascience-slack/)
+- [CCT Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)

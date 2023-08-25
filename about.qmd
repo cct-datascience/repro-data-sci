@@ -1,25 +1,24 @@
 ---
 title: "Instructors"
+format: 
+  html:
+    anchor-sections: false
 ---
 
+::: columns
+::: {.column width="50%"}
 ## Eric R. Scott
 
-picture
+![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/large/public/images/people/eric_scott_lowres.jpg){fig-align="left" width="270"}
 
-bio
+### [{{< fa envelope >}}](mailto:ericrscott@arizona.edu "email") \| [{{< fa brands mastodon >}}](https://fosstodon.org/@LeafyEricScott "mastodon") \| [{{< fa brands github >}}](https://github.com/Aariq "github")
+:::
 
-email
-
+::: {.column width="50%"}
 ## Renata Diaz
 
-picture
+![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/large/public/images/people/rmd.png){width="281"}
 
-bio
-
-email
-
-## Getting Help
-
-Slack channel
-
-Drop-in hours
+### [{{< fa envelope >}}](mailto:renatadiaz@arizona.edu "email") \| [{{< fa brands mastodon >}}](https://ecoevo.social/@diaz_renm "mastodon") \| [{{< fa brands github >}}](https://github.com/diazrenata "github")
+:::
+:::
