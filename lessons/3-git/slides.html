@@ -457,38 +457,100 @@
 </section></section>
 <section id="coding-time" class="title-slide slide level1 center">
 <h1>Coding time</h1>
-<p><code>git config</code></p>
+<ul>
+<li>General syntax: <code>git</code> <code>verb</code> <code>options</code></li>
+<li>Set up text editor choice:</li>
+</ul>
+<pre><code>git config --global core.editor "vim" </code></pre>
+<ul>
+<li>Use the <code>--help</code> flag to see options</li>
+</ul>
 </section>
 
 <section id="coding-time-1" class="title-slide slide level1 center">
 <h1>Coding time</h1>
-<p>Create an RStudio project and initialize it as a git repository.</p>
-<p>Use git status to check the state of the repo.</p>
+<ul>
+<li>Create a new RStudio project</li>
+<li>Call it <code>pilot-analyses</code></li>
+<li>Use <code>git init</code> to initialize it as a git repository.</li>
+</ul>
 </section>
 
-<section>
 <section id="coding-time-2" class="title-slide slide level1 center">
 <h1>Coding time</h1>
-<p>Track modifications to a git repository.</p>
+<ul>
+<li>Introduce <code>git status</code></li>
+</ul>
 </section>
-<section id="saving-modifications-a-two-step-process" class="slide level2">
-<h2>Saving modifications: a two-step process</h2>
+
+<section id="saving-modifications-a-two-step-process" class="title-slide slide level1 center">
+<h1>Saving modifications: a two-step process</h1>
 
 <img data-src="git-simple.png" class="r-stretch"></section>
-<section id="adding-multiple-files-to-same-commit" class="slide level2">
-<h2>Adding multiple files to same commit</h2>
 
-<img data-src="git-multiple.png" class="r-stretch"></section></section>
 <section id="coding-time-3" class="title-slide slide level1 center">
 <h1>Coding time</h1>
-<p><code>.gitignore</code></p>
+<ul>
+<li>Introduce modifications to this repository</li>
+<li>Try <code>git status</code> again</li>
+</ul>
+</section>
+
+<section id="adding-multiple-files-to-same-commit" class="title-slide slide level1 center">
+<h1>Adding multiple files to same commit</h1>
+
+<img data-src="git-multiple.png" class="r-stretch"></section>
+
+<section id="coding-time-4" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<ul>
+<li>Modify-add-commit cycle</li>
+<li><code>git diff</code></li>
+<li><code>git restore</code> to reset saved changes to the last commit</li>
+<li><code>git reset HEAD\~</code> to (effectively) undo an add-commit cycle</li>
+</ul>
+</section>
+
+<section id="coding-time-5" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<ul>
+<li>Ignore files with <code>.gitignore</code></li>
+</ul>
+</section>
+
+<section id="takeaways" class="title-slide slide level1 center">
+<h1>Takeaways</h1>
+<ul>
+<li><code>git</code> handles keeping track of versions and changes</li>
+<li>The core <code>git</code> workflow is the modify-add-commit cycle</li>
+<li><code>git</code> can travel backwards in time</li>
+<li>Ignore files using <code>.gitignore</code></li>
+</ul>
 </section>
 
 <section id="homework" class="title-slide slide level1 center">
 <h1>Homework</h1>
 <ul>
 <li>Create a <a href="https://github.com">GitHub</a> account if you don’t have one.</li>
-<li>Optional: Identify an exisitng folder on your computer and turn it into a git repository.</li>
+<li>Optional: Identify an existing folder on your computer and turn it into a git repository.</li>
+</ul>
+</section>
+
+<section id="resources" class="title-slide slide level1 center">
+<h1>Resources</h1>
+<ul>
+<li>Friendly reminder of <a href="https://datascience.cct.arizona.edu/drop-in-hours">Drop-in Hours, 9-10 on Tuesdays</a>!</li>
+</ul>
+</section>
+
+<section id="resources-git" class="title-slide slide level1 center">
+<h1>Resources: Git</h1>
+<ul>
+<li><a href="https://swcarpentry.github.io/git-novice/02-setup">Software Carpentry Version Control with Git episode #2</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/03-create">Software Carpentry Version Control with Git episode #3</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/04-changes">Software Carpentry Version Control with Git episode #4</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/06-ignore">Software Carpentry Version Control with Git episode #6</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/05-history">Software Carpentry Version Control with Git episode #5</a></li>
 </ul>
 
 <div class="footer footer-default">

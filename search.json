@@ -4,14 +4,14 @@
     "href": "lessons/2-shell/notes.html",
     "title": "Using the Shell",
     "section": "",
-    "text": "Understand the concept of the shell and the anatomy of a shell command\nInteract with the shell using common commands (ls, pwd, cd)\nFind help via –help, man, and online help pages\nNavigate around their working directories using ls, cd\n(Optional) Create, copy, move, and delete files/directories using mkdir, nano, touch, mv, cp, rm."
+    "text": "Understand the what and why of the shell\nUse the shell to navigate your computer’s file system\nUse R projects to simplify file system navigation\nKnow your options for finding help"
   },
   {
     "objectID": "lessons/2-shell/notes.html#objectives",
     "href": "lessons/2-shell/notes.html#objectives",
     "title": "Using the Shell",
     "section": "",
-    "text": "Understand the concept of the shell and the anatomy of a shell command\nInteract with the shell using common commands (ls, pwd, cd)\nFind help via –help, man, and online help pages\nNavigate around their working directories using ls, cd\n(Optional) Create, copy, move, and delete files/directories using mkdir, nano, touch, mv, cp, rm."
+    "text": "Understand the what and why of the shell\nUse the shell to navigate your computer’s file system\nUse R projects to simplify file system navigation\nKnow your options for finding help"
   },
   {
     "objectID": "lessons/2-shell/notes.html#lesson-outline",
@@ -130,7 +130,7 @@
     "href": "lessons/3-git/notes.html#lesson-outline",
     "title": "Version control with git",
     "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview of last week\n\nAsk folks to share the diagram of their file system\nWarm-up with review question from the slide deck\n\nSlides/lecture: Intro to version control with git\n\nWhat is version control?\nWhy should I learn this? When will I need it?\n\nLive coding: SW Carpentry Git lesson 2\n\nhttps://swcarpentry.github.io/git-novice/02-setup\nSetting up git using git config\n\nMake sure participants use their GH email/intended GH email\n\n\nLive coding: SW Carpentry Git lesson 3\n\nhttps://swcarpentry.github.io/git-novice/03-create.html\nIntroduce the concept of a repository\nCreate a RStudio project using RStudio point-and-click interface. Call it pilot-analyses\nUse git init to initialize this project folder as a repository\nUse git status to check state of git repo\n\nLive coding: SW Carpentry Git lesson 4\n\nhttps://swcarpentry.github.io/git-novice/04-changes\nTracking changes to a Git repo (modify/add/commit).\nVisualize in slides\nCreate a blank R file (using RStudio point and click)\nMake comments/pseudocode changes.\ngit status\nGo through git add/commit cycle\nMake additional changes, use git diff\nShow git restore\ngit reset HEAD~\n\nLive coding: SW Carpentry Git lesson 6\n\nhttps://swcarpentry.github.io/git-novice/06-ignore\n.gitignore\n\n(Time permitting): SW Carpentry Git lesson 5\n\nhttps://swcarpentry.github.io/git-novice/05-history\nNavigating git history\n\nHomework:\n\nCreate a GitHub account if you don’t have one.\n(Optional) identify an existing folder and turn it into a repository."
+    "text": "Lesson outline\n\nReview of last week\n\nAsk folks to share the diagram of their file system\nWarm-up with review question from the slide deck\n\nSlides/lecture: Intro to version control with git\n\nWhat is version control?\nWhy should I learn this? When will I need it?\n\nLive coding: git config\n\nSW Carpentry Git lesson 2 https://swcarpentry.github.io/git-novice/02-setup\nSetting up git using git config\n\nMake sure participants use their GH email/intended GH email\ngit verb options\ngit config --global core.editor \"vim\"\ngit verb --help\n\n\nLive coding: git init\n\nSW Carpentry Git lesson 3 https://swcarpentry.github.io/git-novice/03-create.html\nIntroduce the concept of a repository\nCreate a RStudio project using RStudio point-and-click interface. Call it pilot-analyses\nUse git init to initialize this project folder as a repository\nUse git status to check state of git repo\n\nLive coding: Tracking changes\n\nSW Carpentry Git lesson 4 https://swcarpentry.github.io/git-novice/04-changes\nVisualize in slides\nCreate a blank R file (using RStudio point and click)\nMake comments/pseudocode changes.\ngit status\nGo through git add/commit cycle\nRepeat with additional changes, use git diff\nRepeat with multiple files\nUndo saved changes to a file using git restore\nUse git reset HEAD~ to undo the git add and git commit commands\n\nLive coding: .gitignore\n\nSW Carpentry Git lesson 6https://swcarpentry.github.io/git-novice/06-ignore\n.gitignore:\n\nDS_Store\nCreate a file and then ignore it.\n\n\n(Time permitting): SW Carpentry Git lesson 5\n\nhttps://swcarpentry.github.io/git-novice/05-history\nNavigating git history\n\nHomework:\n\nCreate a GitHub account if you don’t have one.\n(Optional) identify an existing folder and turn it into a repository."
   },
   {
     "objectID": "lessons/3-git/notes.html#installation-materials",
@@ -509,20 +509,6 @@
     "title": "Version Control With git",
     "section": "Setting up git (once per machine)",
     "text": "Setting up git (once per machine)\nWe installed git last week, so you should be ready to set it up!\n\n\nShell\n\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@arizona.edu\" \n# Use your GitHub associated email"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#saving-modifications-a-two-step-process",
-    "href": "lessons/3-git/slides.html#saving-modifications-a-two-step-process",
-    "title": "Version Control With git",
-    "section": "Saving modifications: a two-step process",
-    "text": "Saving modifications: a two-step process"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#adding-multiple-files-to-same-commit",
-    "href": "lessons/3-git/slides.html#adding-multiple-files-to-same-commit",
-    "title": "Version Control With git",
-    "section": "Adding multiple files to same commit",
-    "text": "Adding multiple files to same commit"
   },
   {
     "objectID": "lessons/5-github-collab/slides.html#review",
