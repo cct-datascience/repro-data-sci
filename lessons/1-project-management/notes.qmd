@@ -15,7 +15,7 @@ Learners will learn about and practice managing their projects using file struct
     -   Point out code of conduct
 -   Screen setup
 -   Don't save or load .RData!
--   Discuss general best practices for research compendia
+-   Discuss general best practices for research compendia (use [Carpentry lesson](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro))
     -   All files needed for a project in the same folder (ideally)
     -   Organize data, code, and outputs into different folders at a minimum
     -   Never edit raw data
@@ -43,6 +43,8 @@ Learners will learn about and practice managing their projects using file struct
 4.  [Software Carpentry Best Practices for Writing R Code](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R)
 5.  <https://r4ds.hadley.nz/workflow-style>
 
+```{=html}
+<!--
 ## Notes from before
 
 ### Modifications
@@ -66,3 +68,5 @@ Learners will learn about and practice managing their projects using file struct
 ## Homework
 
 Apply one or more of the organizing principles of a research compendium to an existing research project.
+-->
+```

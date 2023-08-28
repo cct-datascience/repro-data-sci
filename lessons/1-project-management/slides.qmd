@@ -60,6 +60,15 @@ Workshop series website:\
 
 ![](desk.jpg){fig-alt="Photo of a desk with a laptop on a laptop stand to the left and a larger monitor to the right in front of an external keyboard.  Laptop monitor has Zoom open and the larger monitor has RStudio open." fig-align="center"}
 
+## Creating a Research Compendium with R
+
+Learning Objectives:
+
+1.  Use RStudio projects to create self-contained reproducible projects
+2.  Use best practices for organizing files in a project
+3.  Use relative file paths to improve portability of projects
+4.  Structure R scripts so they are easier to understand
+
 ## Settings for Success
 
 ::: columns
@@ -97,14 +106,21 @@ A good project layout will ultimately make your life easier:
 -   It makes it easier to pick the project back up after a break.
 :::
 
-## Creating a Research Compendium with R
+## Research Compendium Best Practices
 
-Learning Objectives:
+::: incremental
+-   Treat data as read-only
 
-1.  Use RStudio projects to create self-contained reproducible projects
-2.  Use best practices for organizing files in a project
-3.  Use relative file paths to improve portability of projects
-4.  Structure R scripts so they are easier to understand
+-   Use scripts to "clean" and wrangle data
+
+-   Treat generated outputs as disposable
+
+-   Put data, code, and outputs in different folders
+:::
+
+# RStudio projects (live coding)
+
+# R code best practices (live coding)
 
 ## Takeaways
 
