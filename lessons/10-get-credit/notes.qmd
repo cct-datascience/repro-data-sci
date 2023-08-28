@@ -1,6 +1,7 @@
 ---
 title: "Getting Credit For Your Hard Work"
 format: html
+bibliography: references.bib
 ---
 
 ## Objective
@@ -9,12 +10,47 @@ Learn the wrap-up steps to publish/archive a research compendium with a DOI.
 Understand reproducible computational environment.
 Learn `renv` and discuss Docker (concept).
 
-## Installation & Materials
+## Lesson Outline
 
-### Review
+-   Why share code?
 
-### Modifications
+    -   Facilitate discussion
+    -   Show figure from @maitner
+    -   Higher citations
+    -   To "pay it forward" to other researchers
+    -   To demonstrate your skills
+    -   To facilitate error correction
 
-## Teaching Notes
+-   Getting credit for code
+
+    -   Code is not cited often, but partly because it's not made easy to cite
+
+-   CITATION.cff
+
+    -   Show CITATION.cff files for this repo and maybe one for a research compendium
+    -   Show "cite this" button on GitHub
+    -   Maybe mention `cffr::cff_validate()`
+
+-   Archiving
+
+    -   Most participants probably won't be ready to follow along with their own repos, but we will be there to help when they are ready
+    -   Demo archiving a repo with Zenodo using this repo
+    -   Add DOI badge to readme
+    -   Update CITATION.cff with DOI
+
+-   `renv`
+
+    -   Discuss why
+    -   Ask students to activate `renv` for a project and inspect files it creates
+    -   Explain how `renv` works, especially `renv::restore()` , `renv::status()` , and `renv::snapshot()`
+    -   Demo activating `renv` for this repo and make a second release to demo Zenodo versioning
+
+-   Docker (if time)
+
+    -   Conceptual overview of what it is
+
+    -   Discuss how tools like `renv` and Docker both help and hinder reproducibility
 
 ## Homework
+
+-   Prep for showcase session

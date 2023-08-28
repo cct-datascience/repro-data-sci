@@ -1,0 +1,152 @@
+---
+title: "Sharing Code & Getting Credit"
+format: revealjs
+chalkboard: true
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
+bibliography: references.bib
+---
+
+# Why share code?
+
+## Papers with open code are cited more
+
+![](maitner-et-al.png){fig-align="center"}
+
+::: aside
+Figure 2 from @maitner
+:::
+
+::: notes
+Figure 2: Predicted impacts of code-sharing on cumulative citations.
+Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed.
+Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code.
+Predictions are based on estimated model coe cients (Table 2)
+:::
+
+## Getting credit for your code
+
+Code is unfortunately not cited often, but you can help by making it **easier** to cite your code (in addition to making easy to reproduce!)
+
+-   Provide a CITATION file on GitHub
+
+-   Archive to get a digital object identifier (DOI)
+
+-   Include DOI and/or citation in your paper's Data/Code Availability Statement
+
+## CITATION.cff
+
+::: incremental
+-   Citation File Format are plain text files that are human- and machine-readable
+
+-   Adding a `CITATION.cff` file to your repo...
+
+    -   Puts a "cite this repository" button on GitHub
+
+    -   Helps code archive tools fill out metadata correctly when you archive your repo
+
+-   Can include a "preferred citation" if you'd like people to cite a published paper in addition/instead
+
+-   Create a CITATION.cff file with this [helper](https://citation-file-format.github.io/cff-initializer-javascript/#/)
+:::
+
+## Options for archiving {.smaller}
+
+<!--# table with zenodo, dryad, arizona one, figshare -->
+
+| Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
+|-------------|-------------|--------------|-------------|---------------------|
+| Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |
+| Dryad     | Yes             | No, but some publishers cover cost | No                  | Intended for data, not code. Partners with Zenodo |
+| Figshare  | Yes             | Yes                                | Yes                 | Can't choose your license                         |
+| UA ReDATA | Yes             | Yes (for UA researchers)           | No                  | University of Arizona Libraries                   |
+
+::: aside
+More detailed comparisons [here](https://www.agu.org/-/media/Files/Publications/Generalist-Data-Repository-Grid.pdf)
+:::
+
+# Zenodo Archiving Demo
+
+## Reproducible computational environments
+
+Congrats!
+Your code is reproducible!
+But what about ....
+
+-   in 3 years when an R package is updated with breaking changes?
+
+-   on a different operating system with different versions of system libraries?
+
+Capture the **computational environment** for ultimate reproducibility
+
+## Reproducible Environments With `renv`
+
+-   The [`renv` package](https://rstudio.github.io/renv/articles/renv.html) helps create reproducible environments by recording all the packages used in your project
+
+-   Discovers and records required packages and their versions in `renv.lock`
+
+-   Each project can have its own independent collection of R packages installed
+
+## Using `renv`
+
+::: callout-tip
+## Exercise
+
+Install `renv` and activate it for a project with `renv::init()`.
+Inspect the files that were created.
+:::
+
+-   To deactivate `renv`, run `renv::deactivate()`. To also remove all the files it created, run `renv::deactivate(clean = TRUE)` instead.
+
+## Limitations of `renv`
+
+-   Only tracks R packages [^1]
+
+-   Can't reproduce operating system or system libraries
+
+-   Sometimes quite annoying to use (but it's getting better!)
+
+## Reproducible Everything with Docker
+
+Docker containers...
+
+::: incremental
+-   Are isolated "virtual machines"
+
+-   Run Linux regardless of the host machine OS
+
+-   Can be built with specific versions of OS, system libraries, and R packages (using `renv`)
+
+-   Can be downloaded and run from the command line
+:::
+
+## Making a Docker Container
+
+Turning your research compendium into a Docker container is beyond the scope of this workshop, but it involves creating a **Dockerfile** with instructions on what to install and what code to run.
+
+``` docker
+# Base image https://hub.docker.com/u/rocker/
+FROM rocker/r-base:latest
+
+## create directories
+RUN mkdir -p /01_data
+RUN mkdir -p /02_code
+RUN mkdir -p /03_output
+
+## copy files
+COPY /02_code/install_packages.R /02_code/install_packages.R
+COPY /02_code/myScript.R /02_code/myScript.R
+
+## install R-packages
+RUN Rscript /02_code/install_packages.R
+```
+
+## Hold up, what *is* reproducibility again?
+
+`renv` and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code.
+If you use these tools:
+
+-   Provide instructions on how to troubleshoot or disable `renv` if it's giving folks trouble
+-   Provide code in a GitHub repo *in addition* to inside of a Docker container
+-   Provide instructions on how to run code in README
+
+[^1]: `renv` can also be set up to track [Python dependencies](https://rstudio.github.io/renv/articles/python.html)
