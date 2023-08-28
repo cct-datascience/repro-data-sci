@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -153,12 +172,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; Materials</a>
-  <ul class="collapse">
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
-  </ul></li>
-  <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching Notes</a></li>
+  <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson Outline</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/10-get-credit/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -187,25 +201,64 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="objective">Objective</h2>
 <p>Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn <code>renv</code> and discuss Docker (concept).</p>
 </section>
-<section id="installation-materials" class="level2">
-<h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; Materials</h2>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-</section>
-</section>
-<section id="teaching-notes" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-notes">Teaching Notes</h2>
+<section id="lesson-outline" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-outline">Lesson Outline</h2>
+<ul>
+<li><p>Why share code?</p>
+<ul>
+<li>Facilitate discussion</li>
+<li>Show figure from <span class="citation" data-cites="maitner">Maitner et al. (<a href="#ref-maitner" role="doc-biblioref">n.d.</a>)</span></li>
+<li>Higher citations</li>
+<li>To “pay it forward” to other researchers</li>
+<li>To demonstrate your skills</li>
+<li>To facilitate error correction</li>
+</ul></li>
+<li><p>Getting credit for code</p>
+<ul>
+<li>Code is not cited often, but partly because it’s not made easy to cite</li>
+</ul></li>
+<li><p>CITATION.cff</p>
+<ul>
+<li>Show CITATION.cff files for this repo and maybe one for a research compendium</li>
+<li>Show “cite this” button on GitHub</li>
+<li>Maybe mention <code>cffr::cff_validate()</code></li>
+</ul></li>
+<li><p>Archiving</p>
+<ul>
+<li>Most participants probably won’t be ready to follow along with their own repos, but we will be there to help when they are ready</li>
+<li>Demo archiving a repo with Zenodo using this repo</li>
+<li>Add DOI badge to readme</li>
+<li>Update CITATION.cff with DOI</li>
+</ul></li>
+<li><p><code>renv</code></p>
+<ul>
+<li>Discuss why</li>
+<li>Ask students to activate <code>renv</code> for a project and inspect files it creates</li>
+<li>Explain how <code>renv</code> works, especially <code>renv::restore()</code> , <code>renv::status()</code> , and <code>renv::snapshot()</code></li>
+<li>Demo activating <code>renv</code> for this repo and make a second release to demo Zenodo versioning</li>
+</ul></li>
+<li><p>Docker (if time)</p>
+<ul>
+<li><p>Conceptual overview of what it is</p></li>
+<li><p>Discuss how tools like <code>renv</code> and Docker both help and hinder reproducibility</p></li>
+</ul></li>
+</ul>
 </section>
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<ul>
+<li>Prep for showcase session</li>
+</ul>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-maitner" class="csl-entry" role="listitem">
+Maitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. n.d. <span>“Code Sharing Increases Citations, but Remains Uncommon.”</span> <a href="https://doi.org/10.21203/rs.3.rs-3222221/v1">https://doi.org/10.21203/rs.3.rs-3222221/v1</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
