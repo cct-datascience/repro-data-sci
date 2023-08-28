@@ -291,14 +291,21 @@
     "href": "lessons/10-get-credit/slides.html#making-a-docker-container",
     "title": "Sharing Code & Getting Credit",
     "section": "Making a Docker Container",
-    "text": "Making a Docker Container\nTurning your research compendium into a Docker container is beyond the scope of this workshop, but it involves creating a Dockerfile with instructions on what to install and what code to run.\n# Base image https://hub.docker.com/u/rocker/\nFROM rocker/r-base:latest\n\n## create directories\nRUN mkdir -p /01_data\nRUN mkdir -p /02_code\nRUN mkdir -p /03_output\n\n## copy files\nCOPY /02_code/install_packages.R /02_code/install_packages.R\nCOPY /02_code/myScript.R /02_code/myScript.R\n\n## install R-packages\nRUN Rscript /02_code/install_packages.R"
+    "text": "Making a Docker Container\nA Dockerfile holds instructions on what to install and what code to run. Actually creating a Docker container is beyond the scope of this workshop, but you can learn how!\n# Base image https://hub.docker.com/u/rocker/\nFROM rocker/r-base:latest\n\n## create directories\nRUN mkdir -p /01_data\nRUN mkdir -p /02_code\nRUN mkdir -p /03_output\n\n## copy files\nCOPY /02_code/install_packages.R /02_code/install_packages.R\nCOPY /02_code/myScript.R /02_code/myScript.R\n\n## install R-packages\nRUN Rscript /02_code/install_packages.R"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#hold-up-what-is-reproducibility-again",
     "href": "lessons/10-get-credit/slides.html#hold-up-what-is-reproducibility-again",
     "title": "Sharing Code & Getting Credit",
     "section": "Hold up, what is reproducibility again?",
-    "text": "Hold up, what is reproducibility again?\nrenv and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code. If you use these tools:\n\nProvide instructions on how to troubleshoot or disable renv if it’s giving folks trouble\nProvide code in a GitHub repo in addition to inside of a Docker container\nProvide instructions on how to run code in README\n\n\n\nReproduciblity & Data Science in R\n\n\n\nMaitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. n.d. “Code Sharing Increases Citations, but Remains Uncommon.” https://doi.org/10.21203/rs.3.rs-3222221/v1."
+    "text": "Hold up, what is reproducibility again?\nrenv and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code. If you use these tools:\n\nProvide instructions on how to run code in README\nProvide instructions on how to troubleshoot or disable renv if it’s giving folks trouble\nProvide code in a GitHub repo in addition to inside of a Docker container"
+  },
+  {
+    "objectID": "lessons/10-get-credit/slides.html#references",
+    "href": "lessons/10-get-credit/slides.html#references",
+    "title": "Sharing Code & Getting Credit",
+    "section": "References",
+    "text": "References\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\nMaitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. n.d. “Code Sharing Increases Citations, but Remains Uncommon.” https://doi.org/10.21203/rs.3.rs-3222221/v1."
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#review-homework",
@@ -385,6 +392,13 @@
     "text": "Screen Setup  \n\nDual monitors will be very helpful\nVirtual desktops (“Spaces” in macOS) also helpful\nLet us know if you do not have access to a second monitor"
   },
   {
+    "objectID": "lessons/1-project-management/slides.html#creating-a-research-compendium-with-r",
+    "href": "lessons/1-project-management/slides.html#creating-a-research-compendium-with-r",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Creating a Research Compendium with R",
+    "text": "Creating a Research Compendium with R\nLearning Objectives:\n\nUse RStudio projects to create self-contained reproducible projects\nUse best practices for organizing files in a project\nUse relative file paths to improve portability of projects\nStructure R scripts so they are easier to understand"
+  },
+  {
     "objectID": "lessons/1-project-management/slides.html#settings-for-success",
     "href": "lessons/1-project-management/slides.html#settings-for-success",
     "title": "Reproducibility & Data Science in R",
@@ -399,11 +413,11 @@
     "text": "Project Management\n\n\nThere are many reasons why we should ALWAYS avoid this:\n\nIt is really hard to tell which version of your data is the original and which is the modified;\nIt gets really messy because it mixes files with various extensions together;\nIt probably takes you a lot of time to actually find things, and relate the correct figures to the exact code that has been used to generate it;\n\nA good project layout will ultimately make your life easier:\n\nIt will help ensure the integrity of your data;\nIt makes it simpler to share your code with someone else (a lab-mate, collaborator, or supervisor);\nIt allows you to easily upload your code with your manuscript submission;\nIt makes it easier to pick the project back up after a break."
   },
   {
-    "objectID": "lessons/1-project-management/slides.html#creating-a-research-compendium-with-r",
-    "href": "lessons/1-project-management/slides.html#creating-a-research-compendium-with-r",
+    "objectID": "lessons/1-project-management/slides.html#research-compendium-best-practices",
+    "href": "lessons/1-project-management/slides.html#research-compendium-best-practices",
     "title": "Reproducibility & Data Science in R",
-    "section": "Creating a Research Compendium with R",
-    "text": "Creating a Research Compendium with R\nLearning Objectives:\n\nUse RStudio projects to create self-contained reproducible projects\nUse best practices for organizing files in a project\nUse relative file paths to improve portability of projects\nStructure R scripts so they are easier to understand"
+    "section": "Research Compendium Best Practices",
+    "text": "Research Compendium Best Practices\n\n\nTreat data as read-only\nUse scripts to “clean” and wrangle data\nTreat generated outputs as disposable\nPut data, code, and outputs in different folders"
   },
   {
     "objectID": "lessons/1-project-management/slides.html#takeaways",
@@ -466,7 +480,7 @@
     "href": "lessons/1-project-management/notes.html#lesson-outline",
     "title": "Project Management and Coding Best Practices",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nIntroductions\nDiscuss reproducibility\nGive tour of course website & syllabus\n\nPoint out code of conduct\n\nScreen setup\nDon’t save or load .RData!\nDiscuss general best practices for research compendia\n\nAll files needed for a project in the same folder (ideally)\nOrganize data, code, and outputs into different folders at a minimum\nNever edit raw data\nInclude documentation on what each file is/does in a README\n\nLive Coding: create an R project and add gapminder data to it\n\nShow file pane & connect to Windows Explorer / Finder\nShow how to make a file read-only\nDemo closing, opening, and switching projects\n\nLive Coding: R code best practices\n\nCreate 01-wrangle-data.R in R/\nHeader comment\nDon’t use setwd()—not needed with .Rproj. Use relative paths!\nKeyboard shortcut for adding sections + outline view and navigator at bottom of script panel\nLoad packages at top of script, even when not used until later\nRestart R and run from top often\nHow to break up code (e.g. save output of 01-wrangle-data.R into data_clean/, then read that in later)\n\nHomework:\n\nApply one or more of the organizing principles of a research compendium to an existing research project."
+    "text": "Lesson Outline\n\nIntroductions\nDiscuss reproducibility\nGive tour of course website & syllabus\n\nPoint out code of conduct\n\nScreen setup\nDon’t save or load .RData!\nDiscuss general best practices for research compendia (use Carpentry lesson)\n\nAll files needed for a project in the same folder (ideally)\nOrganize data, code, and outputs into different folders at a minimum\nNever edit raw data\nInclude documentation on what each file is/does in a README\n\nLive Coding: create an R project and add gapminder data to it\n\nShow file pane & connect to Windows Explorer / Finder\nShow how to make a file read-only\nDemo closing, opening, and switching projects\n\nLive Coding: R code best practices\n\nCreate 01-wrangle-data.R in R/\nHeader comment\nDon’t use setwd()—not needed with .Rproj. Use relative paths!\nKeyboard shortcut for adding sections + outline view and navigator at bottom of script panel\nLoad packages at top of script, even when not used until later\nRestart R and run from top often\nHow to break up code (e.g. save output of 01-wrangle-data.R into data_clean/, then read that in later)\n\nHomework:\n\nApply one or more of the organizing principles of a research compendium to an existing research project."
   },
   {
     "objectID": "lessons/1-project-management/notes.html#installation-materials",
@@ -474,27 +488,6 @@
     "title": "Project Management and Coding Best Practices",
     "section": "Installation & materials",
     "text": "Installation & materials\n\nSlides\nSoftware Carpentry Introduction to R and RStudio episode\nSoftware Carpentry Project Management with RStudio episode\nSoftware Carpentry Best Practices for Writing R Code\nhttps://r4ds.hadley.nz/workflow-style"
-  },
-  {
-    "objectID": "lessons/1-project-management/notes.html#notes-from-before",
-    "href": "lessons/1-project-management/notes.html#notes-from-before",
-    "title": "Project Management and Coding Best Practices",
-    "section": "Notes from before",
-    "text": "Notes from before\n\nModifications\n\nRStudio\n\nCan skip most of the Introduction to R and RStudio lesson, but may be helpful as a refresher.\nFocus on setting up RStudio for reproducibility—don’t save or restore workspace, restart R session often.\nShow command palette with \n\nProject management\n\nDo “Best practices for project organization” including yellow “Tip: Good Enough Practices for Scientific Computing” box\nThen “A possible solution” section about R projects\nInclude splitting scripts up into modular chunks to promote reproducibility and avoiding rerunning time-intensive data cleaning\n\nCoding best practices\n\nCondensed into a single slide"
-  },
-  {
-    "objectID": "lessons/1-project-management/notes.html#teaching-notes",
-    "href": "lessons/1-project-management/notes.html#teaching-notes",
-    "title": "Project Management and Coding Best Practices",
-    "section": "Teaching notes",
-    "text": "Teaching notes\n\nInclude how R projects promotes reproducibility, by being able to save scripts and close them or entire project\nWhen students download data, they will need to move it into the new project which helps mentally connect file pane of RStudio with filesystem of computer"
-  },
-  {
-    "objectID": "lessons/1-project-management/notes.html#homework",
-    "href": "lessons/1-project-management/notes.html#homework",
-    "title": "Project Management and Coding Best Practices",
-    "section": "Homework",
-    "text": "Homework\nApply one or more of the organizing principles of a research compendium to an existing research project."
   },
   {
     "objectID": "lessons/4-github-basics/notes.html",

@@ -443,7 +443,7 @@
           display:block!important;
       }</style></aside>
 <aside><div>
-<p>Figure 2 from <span class="citation" data-cites="maitner">Maitner et al. (<a href="#/hold-up-what-is-reproducibility-again" role="doc-biblioref" onclick="">n.d.</a>)</span></p>
+<p>Figure 2 from <span class="citation" data-cites="maitner">Maitner et al. (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p>
 </div></aside></section>
 <section id="getting-credit-for-your-code" class="slide level2">
 <h2>Getting credit for your code</h2>
@@ -475,11 +475,11 @@
 <!--# table with zenodo, dryad, arizona one, figshare -->
 <table>
 <colgroup>
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 18%">
-<col style="width: 17%">
-<col style="width: 28%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -588,7 +588,7 @@
 </section>
 <section id="making-a-docker-container" class="slide level2">
 <h2>Making a Docker Container</h2>
-<p>Turning your research compendium into a Docker container is beyond the scope of this workshop, but it involves creating a <strong>Dockerfile</strong> with instructions on what to install and what code to run.</p>
+<p>A <strong>Dockerfile</strong> holds instructions on what to install and what code to run. Actually creating a Docker container is beyond the scope of this workshop, but you can <a href="https://www.r-bloggers.com/2019/02/running-your-r-script-in-docker/">learn how</a>!</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource docker number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a># Base image https://hub.docker.com/u/rocker/</span>
 <span id="cb1-2"><a href="#cb1-2"></a>FROM rocker/r-base:latest</span>
 <span id="cb1-3"><a href="#cb1-3"></a></span>
@@ -604,14 +604,20 @@
 <span id="cb1-13"><a href="#cb1-13"></a>## install R-packages</span>
 <span id="cb1-14"><a href="#cb1-14"></a>RUN Rscript /02_code/install_packages.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="hold-up-what-is-reproducibility-again" class="slide level2 smaller scrollable">
+<section id="hold-up-what-is-reproducibility-again" class="slide level2">
 <h2>Hold up, what <em>is</em> reproducibility again?</h2>
 <p><code>renv</code> and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code. If you use these tools:</p>
 <ul>
+<li>Provide instructions on how to run code in README</li>
 <li>Provide instructions on how to troubleshoot or disable <code>renv</code> if it’s giving folks trouble</li>
 <li>Provide code in a GitHub repo <em>in addition</em> to inside of a Docker container</li>
-<li>Provide instructions on how to run code in README</li>
 </ul>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div class="refs">
+
+</div>
 
 <div class="footer footer-default">
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
