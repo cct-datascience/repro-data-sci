@@ -30,9 +30,11 @@ format: html
 -   Live coding: git init 
     -   SW Carpentry Git lesson 3 https://swcarpentry.github.io/git-novice/03-create.html
     -   Introduce the concept of a repository
-    -   Create a RStudio project using RStudio point-and-click interface. Call it `pilot-analyses`
-    -   Use git init to initialize this project folder as a repository
-    -   Use git status to check state of git repo
+    -   Go over 3 ways to init a git repo and when to use each
+    -   Break to all create a project + repo called pilot-analyses
+-   Live coding: git status
+    -   Use git status to check that git init worked
+    -   Talk about git status as a bridge to tracking changes.
 -   Live coding: Tracking changes
     -   SW Carpentry Git lesson 4 https://swcarpentry.github.io/git-novice/04-changes
     -   Visualize in slides
@@ -65,6 +67,8 @@ format: html
 5.  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
 6.  (optional) [Software Carpentry Version Control with Git episode #5](https://swcarpentry.github.io/git-novice/05-history)
 
+<!---
+ 
 ## Notes from before
 
 ### Review
@@ -92,3 +96,5 @@ Warm up with the review question in slide deck.
 
 Create a GitHub account if you don't already have one.
 For an extra challenge, identify an existing folder and turn into a repository.
+ 
+--->

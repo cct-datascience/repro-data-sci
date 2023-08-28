@@ -69,7 +69,8 @@ format: html
 5.  [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
 6.  [Software Carpentry Unix Shell episode #3](https://swcarpentry.github.io/shell-novice/03-create) (time permitting)
 
-## Past notes
+<!---
+ ## Past notes
 
 ### Review
 
@@ -108,3 +109,5 @@ Ask students to share any successes or stumbling blocks when re-organizing proje
 ### Homework
 
 Read <https://peerj.com/preprints/3159/>
+ 
+--->

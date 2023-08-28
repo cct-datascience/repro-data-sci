@@ -65,11 +65,61 @@ git config --global core.editor "vim"
 ```
 - Use the `--help` flag to see options
 
+# Creating a git repository
+
+- RStudio Wizard _when creating an R project_
+- `git init` in an _existing directory/R Project_
+- `usethis::use_git` in an _existing R Project_
+
+## RStudio New Project Wizard
+
+- *Before* you create the directory...
+- File > New R Project...
+
+## RStudio New Project Wizard
+
+![](/lessons/3-git/new_proj_with_git.png)
+
+
+## `git init`
+
+- Create a new directory (or R project) on your computer
+
+## `git init`
+
+![](/lessons/3-git/new_proj_no_git.png)
+
+## `git init`
+
+- Navigate to it on the command line
+- Run `git init` from the command line
+
+## `git init`
+
+![](/lessons/3-git/new_proj_git_init.png)
+
+## `usethis::use_git()`
+
+- Create a new R Project
+
+## `usethis::use_git()`
+
+![](/lessons/3-git/new_proj_no_git.png)
+
+## usethis::use_git()
+
+- Open the R Project
+- From inside the R project, run...
+
+## `usethis::use_git()`
+
+![](/lessons/3-git/new_proj_usegit.png)
+
 # Coding time
 
-- Create a new RStudio project
-- Call it `pilot-analyses`
-- Use `git init` to initialize it as a git repository.
+- Create a new R project and initialize it as a git repo. 
+- Use any of the 3 approaches we've just gone over.
+- Report back: how did it go?
 
 # Coding time
 
@@ -102,6 +152,7 @@ git config --global core.editor "vim"
 # Takeaways
 
 - `git` handles keeping track of versions and changes
+- Initialize a git repo 3 ways, depending on the current state of your project
 - The core `git` workflow is the modify-add-commit cycle
 - `git` can travel backwards in time
 - Ignore files using `.gitignore`
