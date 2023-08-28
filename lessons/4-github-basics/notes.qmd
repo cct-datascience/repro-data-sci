@@ -13,13 +13,13 @@ Learners will practice developing new code on branches.
 -   Review:
 
     -   Ways of creating a git repo and how to know if it worked
-    -   Homework
 
 -   Live Coding: `.gitignore`
 
     -   Explore `.gitignore` created by RStudio
     -   Software Carpentry [.gitignore lesson](https://swcarpentry.github.io/git-novice/06-ignore)
     -   Discuss what files to `.gitignore`: what is "non-diffable"?
+    -   Modify and make a commit
 
 -   What is GitHub and why use it?
     (slides)
@@ -56,7 +56,10 @@ Learners will practice developing new code on branches.
 ### Review
 
 If anyone turned a folder into a repository, share how that went.
-Ask students to navigate to previous repository, add new R file, and practice an add-commit cycle.
+
+```{=html}
+<!--
+## Previous notes
 
 ### Modifications
 
@@ -66,7 +69,8 @@ Ask students to navigate to previous repository, add new R file, and practice an
 -   Connect local git repo to GitHub with `usethis::use_github()`
 -   Create new repository entitled `repro-DS-workshop` on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized
 -   Show how checking out a branch literally changes the local files
-
+-->
+```
 ## Teaching notes
 
 -   Practice another add-commit cycle after creating the .gitignore

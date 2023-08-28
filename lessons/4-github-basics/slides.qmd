@@ -9,13 +9,15 @@ bibliography: references.bib
 
 ## Review & Homework
 
--   Ways to create a git repo
+::: incremental
+-   If you turned an existing project into a git repo, how did it go?
+
+-   Ways to create a git repo:
 
     -   run `git init` from the command line inside of project directory
     -   create a new RStudio project with "use git" checked
     -   run `usethis::use_git()` in the R console in a RStudio project
-
--   If you turned an existing project into a git repo, how did it go?
+:::
 
 ## Today's goals
 
@@ -24,13 +26,20 @@ bibliography: references.bib
 3.  Use `git push` and `git pull` to synchronize with GitHub
 4.  Use branches for new work
 
-## Ignoring files
+## Ignoring files {.smaller}
 
 -   If you created an RStudio project with git enabled, you should have a top-level `.gitignore`
 -   Use this file (or create one) to stop git/GitHub from tracking...
     -   large files that aren't plain text
     -   files with sensitive data
     -   unnecessary files
+
+::: callout-tip
+## Exercise
+
+Modify `.gitignore` to exclude all files ending in `.pdf` from git tracking.
+Make a commit for this change
+:::
 
 ## Sharing with GitHub
 
@@ -46,6 +55,8 @@ Figure 2 from [@bryan2018]
 -   GitHub has a central repo that allows you to synchronize and merge work from multiple sources.
 -   You can also access the repo through github.com web UI
 :::
+
+# Connect With GitHub (Live Coding)
 
 ## Resources
 
