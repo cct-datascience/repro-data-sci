@@ -467,12 +467,74 @@
 </ul>
 </section>
 
+<section>
+<section id="creating-a-git-repository" class="title-slide slide level1 center">
+<h1>Creating a git repository</h1>
+<ul>
+<li>RStudio Wizard <em>when creating an R project</em></li>
+<li><code>git init</code> in an <em>existing directory/R Project</em></li>
+<li><code>usethis::use_git</code> in an <em>existing R Project</em></li>
+</ul>
+</section>
+<section id="rstudio-new-project-wizard" class="slide level2">
+<h2>RStudio New Project Wizard</h2>
+<ul>
+<li><em>Before</em> you create the directory…</li>
+<li>File &gt; New R Project…</li>
+</ul>
+</section>
+<section id="rstudio-new-project-wizard-1" class="slide level2">
+<h2>RStudio New Project Wizard</h2>
+
+<img data-src="../../lessons/3-git/new_proj_with_git.png" class="r-stretch"></section>
+<section id="git-init" class="slide level2">
+<h2><code>git init</code></h2>
+<ul>
+<li>Create a new directory (or R project) on your computer</li>
+</ul>
+</section>
+<section id="git-init-1" class="slide level2">
+<h2><code>git init</code></h2>
+
+<img data-src="../../lessons/3-git/new_proj_no_git.png" class="r-stretch"></section>
+<section id="git-init-2" class="slide level2">
+<h2><code>git init</code></h2>
+<ul>
+<li>Navigate to it on the command line</li>
+<li>Run <code>git init</code> from the command line</li>
+</ul>
+</section>
+<section id="git-init-3" class="slide level2">
+<h2><code>git init</code></h2>
+
+<img data-src="../../lessons/3-git/new_proj_git_init.png" class="r-stretch"></section>
+<section id="usethisuse_git" class="slide level2">
+<h2><code>usethis::use_git()</code></h2>
+<ul>
+<li>Create a new R Project</li>
+</ul>
+</section>
+<section id="usethisuse_git-1" class="slide level2">
+<h2><code>usethis::use_git()</code></h2>
+
+<img data-src="../../lessons/3-git/new_proj_no_git.png" class="r-stretch"></section>
+<section id="usethisuse_git-2" class="slide level2">
+<h2>usethis::use_git()</h2>
+<ul>
+<li>Open the R Project</li>
+<li>From inside the R project, run…</li>
+</ul>
+</section>
+<section id="usethisuse_git-3" class="slide level2">
+<h2><code>usethis::use_git()</code></h2>
+
+<img data-src="../../lessons/3-git/new_proj_usegit.png" class="r-stretch"></section></section>
 <section id="coding-time-1" class="title-slide slide level1 center">
 <h1>Coding time</h1>
 <ul>
-<li>Create a new RStudio project</li>
-<li>Call it <code>pilot-analyses</code></li>
-<li>Use <code>git init</code> to initialize it as a git repository.</li>
+<li>Create a new R project and initialize it as a git repo.</li>
+<li>Use any of the 3 approaches we’ve just gone over.</li>
+<li>Report back: how did it go?</li>
 </ul>
 </section>
 
@@ -522,6 +584,7 @@
 <h1>Takeaways</h1>
 <ul>
 <li><code>git</code> handles keeping track of versions and changes</li>
+<li>Initialize a git repo 3 ways, depending on the current state of your project</li>
 <li>The core <code>git</code> workflow is the modify-add-commit cycle</li>
 <li><code>git</code> can travel backwards in time</li>
 <li>Ignore files using <code>.gitignore</code></li>

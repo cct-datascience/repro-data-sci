@@ -155,13 +155,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson outline</a></li>
   <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a></li>
-  <li><a href="#past-notes" id="toc-past-notes" class="nav-link" data-scroll-target="#past-notes">Past notes</a>
-  <ul class="collapse">
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
-  <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching notes</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/2-shell/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -281,63 +274,50 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://swcarpentry.github.io/shell-novice/02-filedir">Software Carpentry Unix Shell episode #2</a></li>
 <li><a href="https://swcarpentry.github.io/shell-novice/03-create">Software Carpentry Unix Shell episode #3</a> (time permitting)</li>
 </ol>
-</section>
-<section id="past-notes" class="level2">
-<h2 class="anchored" data-anchor-id="past-notes">Past notes</h2>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-<p>Ask students to share any successes or stumbling blocks when re-organizing projects or R code.</p>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-<ul>
-<li>Use terminal window within RStudio as command line interface
-<ul>
-<li>Start with a brief overview of RStudio panes</li>
-<li>Show terminal pane menu and “Go To Current Directory”</li>
-<li>Teach use of Files tab in RStudio</li>
-<li>Emphasize that Files tab is analogous to Finder (macOS), File Explorer (Windows)</li>
-</ul></li>
-<li>Skip all exercises, including “Nelle” example</li>
-<li>Mention Zsh, which is the default shell for recent versions of macOS and has <code>%</code> as the default prompt instead of <code>$</code>.</li>
-<li>At beginning of episode #2, explain file path using example from instructor’s file system</li>
-<li>Can also use example diagram for file system using instructor’s</li>
-</ul>
-</section>
-<section id="teaching-notes" class="level3">
-<h3 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h3>
-<ul>
-<li>Emphasize purposes for learning shell
-<ul>
-<li>Helpful for using git and GitHub</li>
-<li>Easier to deal with installation problems</li>
-<li>Understanding file structure and file paths</li>
-</ul></li>
-<li>Need to install git initially for Windows users to have shell commands
-<ul>
-<li>Separate into 2 breakout rooms to install Git for Windows and macOS</li>
-</ul></li>
-<li>macOS comes with Bash or Zsh for shell. Use time with mac users to check if they have git already
-<ul>
-<li>can check with <code>which git</code> or <code>git --version</code></li>
-<li><code>git --version</code> may in fact prompt macOS users to install xcode command line tools, which comes with git.</li>
-<li>Restart RStudio after installation</li>
-<li>For Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected</li>
-<li>For macOS, have them select Bash (for now at least)</li>
-</ul></li>
-<li>Download shell-lesson-data.zip to <code>Desktop/</code> location; this won’t be referenced in later lessons</li>
-<li>Unzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with <code>unzip</code>
-<ul>
-<li>Once unzipped, have everyone share absolute file path to location of file</li>
-</ul></li>
-</ul>
-</section>
-<section id="homework" class="level3">
-<h3 class="anchored" data-anchor-id="homework">Homework</h3>
-<p>Read <a href="https://peerj.com/preprints/3159/" class="uri">https://peerj.com/preprints/3159/</a></p>
+<!---
+ ## Past notes
+
+### Review
+
+Ask students to share any successes or stumbling blocks when re-organizing projects or R code.
+
+### Modifications
+
+-   Use terminal window within RStudio as command line interface
+    -   Start with a brief overview of RStudio panes
+    -   Show terminal pane menu and "Go To Current Directory"
+    -   Teach use of Files tab in RStudio
+    -   Emphasize that Files tab is analogous to Finder (macOS), File Explorer (Windows)
+-   Skip all exercises, including "Nelle" example
+-   Mention Zsh, which is the default shell for recent versions of macOS and has `%` as the default prompt instead of `$`.
+-   At beginning of episode #2, explain file path using example from instructor's file system
+-   Can also use example diagram for file system using instructor's
+
+### Teaching notes
+
+-   Emphasize purposes for learning shell
+    -   Helpful for using git and GitHub
+    -   Easier to deal with installation problems
+    -   Understanding file structure and file paths
+-   Need to install git initially for Windows users to have shell commands
+    -   Separate into 2 breakout rooms to install Git for Windows and macOS
+-   macOS comes with Bash or Zsh for shell. Use time with mac users to check if they have git already
+    -   can check with `which git` or `git --version`
+    -   `git --version` may in fact prompt macOS users to install xcode command line tools, which comes with git.
+    -   Restart RStudio after installation
+    -   For Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected
+    -   For macOS, have them select Bash (for now at least)
+-   Download shell-lesson-data.zip to `Desktop/` location; this won't be referenced in later lessons
+-   Unzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with `unzip`
+    -   Once unzipped, have everyone share absolute file path to location of file
+
+### Homework
+
+Read <https://peerj.com/preprints/3159/>
+ 
+--->
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
