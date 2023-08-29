@@ -718,7 +718,7 @@
     "href": "lessons/6-data-manipulation/notes.html#lesson-outline",
     "title": "Data manipulation",
     "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview from last week\nWarm-up: create a branch for today’s work\nSlides/discussion: using R for reproducible data analysis\n\nWhy use R?\nWhat is the tidyverse and why use it?\nInstall dplyr and tidyr\n\nLive coding: How R thinks about data\n\nData carpentry R ecology revamp episode #2\nData frames\nVectors and data types\nMissing data\n\nLive coding: dplyr and tidyr\n\nData carpentry R ecology revamp episode #3\nChaining lines together with the pipe\nSubsetting and filtering data\nAdding columns\nSplit-apply-combine\nReshaping\n\nLive coding: practice modify-add-commit cycle\nHomework: None"
+    "text": "Lesson outline\n\nReview from last week\nWarm-up: create a branch for today’s work\nSlides/discussion: using R for reproducible data analysis\n\nWhy use R?\nWhat is the tidyverse and why use it?\nInstall dplyr and tidyr\n\nLive coding: How R thinks about data\n\nData carpentry R ecology revamp episode #2\nData frames\nVectors and data types\nMissing data\n\nLive coding: dplyr and tidyr\n\nData carpentry R ecology revamp episode #3\nRecent DC + R lesson\nChaining lines together with the pipe\n\n%&gt;%, |&gt;\n\nSubsetting and filtering data\n\nincl. selection and pick https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html\n\nAdding columns\nSplit-apply-combine\nReshaping\n\nLive coding: advanced tidyverse topics\n\nOptions: across; dates; advanced joins; others?\n\nLive coding/discussion: getting help\n\nreprex\n\nLive coding: practice modify-add-commit cycle\nHomework: None"
   },
   {
     "objectID": "lessons/6-data-manipulation/notes.html#installation-materials",
@@ -726,13 +726,6 @@
     "title": "Data manipulation",
     "section": "Installation & materials",
     "text": "Installation & materials\n\nSlides\nInstall R packages ‘dplyr’, ‘tidyr’, ‘readr’\nData carpentry R ecology revamp episode #2\nData carpentry R ecology revamp episode #3"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/notes.html#notes-from-before",
-    "href": "lessons/6-data-manipulation/notes.html#notes-from-before",
-    "title": "Data manipulation",
-    "section": "Notes from before",
-    "text": "Notes from before\n\nModifications\n\nExplain data.frames and types of vectors, but skip over exercises on coercion and factors\nClarify difference between == and %in%, including that no warning or error given for == that induces vector recycling\nEnd with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository\n\n\n\nTeaching notes\n\nHave students install each package separately rather than as the tidyverse—can be important to know which functions come from which packages\n\n\n\nHomework\nNone"
   },
   {
     "objectID": "lessons/2-shell/notes.html",

@@ -155,12 +155,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
   <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson outline</a></li>
   <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a></li>
-  <li><a href="#notes-from-before" id="toc-notes-from-before" class="nav-link" data-scroll-target="#notes-from-before">Notes from before</a>
-  <ul class="collapse">
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
-  <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching notes</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/6-data-manipulation/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -217,11 +211,26 @@ ul.task-list li input[type="checkbox"] {
 <li>Live coding: dplyr and tidyr
 <ul>
 <li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
-<li>Chaining lines together with the pipe</li>
-<li>Subsetting and filtering data</li>
+<li><a href="https://datacarpentry.org/R-ecology-lesson/03-dplyr.html">Recent DC + R lesson</a></li>
+<li>Chaining lines together with the pipe
+<ul>
+<li><code>%&gt;%</code>, <code>|&gt;</code></li>
+</ul></li>
+<li>Subsetting and filtering data
+<ul>
+<li>incl.&nbsp;selection and <code>pick</code> https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html</li>
+</ul></li>
 <li>Adding columns</li>
 <li>Split-apply-combine</li>
 <li>Reshaping</li>
+</ul></li>
+<li>Live coding: advanced tidyverse topics
+<ul>
+<li>Options: across; dates; advanced joins; others?</li>
+</ul></li>
+<li>Live coding/discussion: getting help
+<ul>
+<li><code>reprex</code></li>
 </ul></li>
 <li>Live coding: practice modify-add-commit cycle</li>
 <li>Homework: None</li>
@@ -235,29 +244,22 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data">Data carpentry R ecology revamp episode #2</a></li>
 <li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
 </ol>
-</section>
-<section id="notes-from-before" class="level2">
-<h2 class="anchored" data-anchor-id="notes-from-before">Notes from before</h2>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-<ul>
-<li>Explain data.frames and types of vectors, but skip over exercises on coercion and factors</li>
-<li>Clarify difference between <code>==</code> and <code>%in%</code>, including that no warning or error given for <code>==</code> that induces vector recycling</li>
-<li>End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository</li>
-</ul>
-</section>
-<section id="teaching-notes" class="level3">
-<h3 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h3>
-<ul>
-<li>Have students install each package separately rather than as the tidyverse—can be important to know which functions come from which packages</li>
-</ul>
-</section>
-<section id="homework" class="level3">
-<h3 class="anchored" data-anchor-id="homework">Homework</h3>
-<p>None</p>
+<!-- ## Notes from before -->
+<!-- ### Modifications -->
+<!-- -   Explain data.frames and types of vectors, but skip over exercises on coercion and factors -->
+<!-- -   Clarify difference between `==` and `%in%`, including that no warning or error given for `==` that induces vector recycling -->
+<!-- -   End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository -->
+<!-- ### Teaching notes -->
+<!-- -   Have students install each package separately rather than as the tidyverse---can be important to know which functions come from which packages -->
+<!-- ### Homework -->
+<!-- None -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- Thoughts on things to add... -->
+<!-- -   create a consistent set of data files to share with everyone -->
+<!-- -   consider using the main-and-forks repo structure to give folks practice updating from upstream? -->
+<!-- -   share [this cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf) -->
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
