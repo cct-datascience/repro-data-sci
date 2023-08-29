@@ -28,11 +28,18 @@ format: html
     -   Missing data
 -   Live coding: dplyr and tidyr
     -   [Data carpentry R ecology revamp episode #3](https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data)
+    -   [Recent DC + R lesson](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html)
     -   Chaining lines together with the pipe
+        -   `%>%`, `|>`
     -   Subsetting and filtering data
+        -   incl. selection and `pick` https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html
     -   Adding columns
     -   Split-apply-combine
     -   Reshaping
+-   Live coding: advanced tidyverse topics
+    -   Options: across; dates; advanced joins; others?
+-   Live coding/discussion: getting help
+    -   `reprex`
 -   Live coding: practice modify-add-commit cycle
 -   Homework: None
 
@@ -43,18 +50,30 @@ format: html
 3.  [Data carpentry R ecology revamp episode #2](https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data)
 4.  [Data carpentry R ecology revamp episode #3](https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data)
 
-## Notes from before
+<!-- ## Notes from before -->
 
-### Modifications
+<!-- ### Modifications -->
 
--   Explain data.frames and types of vectors, but skip over exercises on coercion and factors
--   Clarify difference between `==` and `%in%`, including that no warning or error given for `==` that induces vector recycling
--   End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository
+<!-- -   Explain data.frames and types of vectors, but skip over exercises on coercion and factors -->
 
-### Teaching notes
+<!-- -   Clarify difference between `==` and `%in%`, including that no warning or error given for `==` that induces vector recycling -->
 
--   Have students install each package separately rather than as the tidyverse---can be important to know which functions come from which packages
+<!-- -   End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository -->
 
-### Homework
+<!-- ### Teaching notes -->
 
-None
+<!-- -   Have students install each package separately rather than as the tidyverse---can be important to know which functions come from which packages -->
+
+<!-- ### Homework -->
+
+<!-- None -->
+
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- Thoughts on things to add... -->
+
+<!-- -   create a consistent set of data files to share with everyone -->
+
+<!-- -   consider using the main-and-forks repo structure to give folks practice updating from upstream? -->
+
+<!-- -   share [this cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf) -->
