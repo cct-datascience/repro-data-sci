@@ -94,19 +94,17 @@ mean(penguins_data$bill_length_mm, na.rm = T)
 
 #### Data manipulation #### 
 
-##### Assignment and pipes #####
-
 ##### Subsetting and filtering data #####
 
-##### Adding columns (mutate, case_when) #####
+##### Assignment and pipes #####
+
+##### Adding columns (mutate) #####
 
 ##### Split-apply-combine #####
 
 ##### Reshaping #####
 
 #### Optional: advanced topics ####
-
-##### across ##### 
 
 ##### reprex #####
 

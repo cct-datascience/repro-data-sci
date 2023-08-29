@@ -1,7 +1,7 @@
 ---
 title: "Intermediate R: functions and control flow"
 subtitle: "Session 7"
-format: revealjs
+format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
