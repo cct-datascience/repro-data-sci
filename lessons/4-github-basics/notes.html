@@ -157,7 +157,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a>
   <ul class="collapse">
   <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
   </ul></li>
   <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching notes</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
@@ -194,13 +193,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Review:</p>
 <ul>
 <li>Ways of creating a git repo and how to know if it worked</li>
-<li>Homework</li>
 </ul></li>
 <li><p>Live Coding: <code>.gitignore</code></p>
 <ul>
 <li>Explore <code>.gitignore</code> created by RStudio</li>
 <li>Software Carpentry <a href="https://swcarpentry.github.io/git-novice/06-ignore">.gitignore lesson</a></li>
 <li>Discuss what files to <code>.gitignore</code>: what is “non-diffable”?</li>
+<li>Modify and make a commit</li>
 </ul></li>
 <li><p>What is GitHub and why use it? (slides)</p></li>
 <li><p>Live Coding: GitHub setup</p>
@@ -235,18 +234,19 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <section id="review" class="level3">
 <h3 class="anchored" data-anchor-id="review">Review</h3>
-<p>If anyone turned a folder into a repository, share how that went. Ask students to navigate to previous repository, add new R file, and practice an add-commit cycle.</p>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-<ul>
-<li>Provide a large .csv file, ask students to move into pilot-analyses repo within a data folder using cd and filepaths</li>
-<li>If RStudio project was initialized as a git repo, should already have <code>.gitignore</code>. View and explain and practice adding something.</li>
-<li>Go with HTTPS + PAT setup, not SSH, but still mention SSH.</li>
-<li>Connect local git repo to GitHub with <code>usethis::use_github()</code></li>
-<li>Create new repository entitled <code>repro-DS-workshop</code> on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized</li>
-<li>Show how checking out a branch literally changes the local files</li>
-</ul>
+<p>If anyone turned a folder into a repository, share how that went.</p>
+<!--
+## Previous notes
+
+### Modifications
+
+-   Provide a large .csv file, ask students to move into pilot-analyses repo within a data folder using cd and filepaths
+-   If RStudio project was initialized as a git repo, should already have `.gitignore`. View and explain and practice adding something.
+-   Go with HTTPS + PAT setup, not SSH, but still mention SSH.
+-   Connect local git repo to GitHub with `usethis::use_github()`
+-   Create new repository entitled `repro-DS-workshop` on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized
+-   Show how checking out a branch literally changes the local files
+-->
 </section>
 </section>
 <section id="teaching-notes" class="level2">

@@ -42,11 +42,11 @@
     "text": "Review\n\n\n\n\n\n\nWord Bank\n\n\nrepo | commit | remote | push | pull | add\n\n\n\n\n\nA collection of files tracked by git\nA snapshot of the state of a repository\ngit ___ is used to tell git to track a file\nFor example, a repo on GitHub\ngit ____ is used to synchronize changes on your computer with a remote"
   },
   {
-    "objectID": "lessons/5-github-collab/slides.html#homework",
-    "href": "lessons/5-github-collab/slides.html#homework",
+    "objectID": "lessons/5-github-collab/slides.html#review-1",
+    "href": "lessons/5-github-collab/slides.html#review-1",
     "title": "Collaborate With GitHub",
-    "section": "Homework",
-    "text": "Homework\nDid anyone add a repo to GitHub? What difficulties did you encounter?"
+    "section": "Review",
+    "text": "Review\nDid anyone add a repo to GitHub? What difficulties did you encounter?"
   },
   {
     "objectID": "lessons/5-github-collab/slides.html#collaborating-with-github",
@@ -312,7 +312,7 @@
     "href": "lessons/4-github-basics/slides.html#review-homework",
     "title": "GitHub",
     "section": "Review & Homework",
-    "text": "Review & Homework\n\nWays to create a git repo\n\nrun git init from the command line inside of project directory\ncreate a new RStudio project with “use git” checked\nrun usethis::use_git() in the R console in a RStudio project\n\nIf you turned an existing project into a git repo, how did it go?"
+    "text": "Review & Homework\n\n\nIf you turned an existing project into a git repo, how did it go?\nWays to create a git repo:\n\nrun git init from the command line inside of project directory\ncreate a new RStudio project with “use git” checked\nrun usethis::use_git() in the R console in a RStudio project"
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#todays-goals",
@@ -326,7 +326,7 @@
     "href": "lessons/4-github-basics/slides.html#ignoring-files",
     "title": "GitHub",
     "section": "Ignoring files",
-    "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore\nUse this file (or create one) to stop git/GitHub from tracking…\n\nlarge files that aren’t plain text\nfiles with sensitive data\nunnecessary files"
+    "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore\nUse this file (or create one) to stop git/GitHub from tracking…\n\nlarge files that aren’t plain text\nfiles with sensitive data\nunnecessary files\n\n\n\n\n\n\n\n\nExercise\n\n\nModify .gitignore to exclude all files ending in .pdf from git tracking. Make a commit for this change"
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#sharing-with-github",
@@ -508,14 +508,14 @@
     "href": "lessons/4-github-basics/notes.html#lesson-outline",
     "title": "Developing Code on Github",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\nHomework\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
+    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\nModify and make a commit\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
   },
   {
     "objectID": "lessons/4-github-basics/notes.html#installation-materials",
     "href": "lessons/4-github-basics/notes.html#installation-materials",
     "title": "Developing Code on Github",
     "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Version Control with Git episode #6\nGitHub authentication with PAT using Jenny Bryan’s Git book chapter 9 (follow usethis::git_sitrep())\nSoftware Carpentry Version Control with Git episode #7\nSoftware Carpentry branching add-on\n\n\nReview\nIf anyone turned a folder into a repository, share how that went. Ask students to navigate to previous repository, add new R file, and practice an add-commit cycle.\n\n\nModifications\n\nProvide a large .csv file, ask students to move into pilot-analyses repo within a data folder using cd and filepaths\nIf RStudio project was initialized as a git repo, should already have .gitignore. View and explain and practice adding something.\nGo with HTTPS + PAT setup, not SSH, but still mention SSH.\nConnect local git repo to GitHub with usethis::use_github()\nCreate new repository entitled repro-DS-workshop on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized\nShow how checking out a branch literally changes the local files"
+    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Version Control with Git episode #6\nGitHub authentication with PAT using Jenny Bryan’s Git book chapter 9 (follow usethis::git_sitrep())\nSoftware Carpentry Version Control with Git episode #7\nSoftware Carpentry branching add-on\n\n\nReview\nIf anyone turned a folder into a repository, share how that went."
   },
   {
     "objectID": "lessons/4-github-basics/notes.html#teaching-notes",
