@@ -54,7 +54,7 @@ Code is unfortunately not cited often, but you can help by making it **easier** 
 <!--# table with zenodo, dryad, arizona one, figshare -->
 
 | Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
-|-----------|-----------------|------------------------------------|---------------------|---------------------------------------------------|
+|-------------|-------------|--------------|-------------|---------------------|
 | Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |
 | Dryad     | Yes             | No, but some publishers cover cost | No                  | Intended for data, not code. Partners with Zenodo |
 | Figshare  | Yes             | Yes                                | Yes                 | Can't choose your license                         |
