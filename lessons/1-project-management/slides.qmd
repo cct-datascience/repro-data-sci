@@ -1,7 +1,8 @@
 ---
 title: "Reproducibility & Data Science in R"
 subtitle: "Session 1"
-# date: TODO
+date: "2023-09-05"
+date-format: long
 format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
