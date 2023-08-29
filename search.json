@@ -431,7 +431,7 @@
     "href": "lessons/1-project-management/slides.html#homework-optional",
     "title": "Reproducibility & Data Science in R",
     "section": "Homework (optional)",
-    "text": "Homework (optional)\nRe-organize an existing project into a research compendium with separate folders for raw data, cleaned data, data wrangling scripts, analysis scripts, and outputs\nOR\nOrganize one of your R scripts with sections and apply a consistent coding style (e.g. with Code &gt; Reformat Code or with the styler package)\n\n\nReproduciblity & Data Science in R"
+    "text": "Homework (optional)\nRe-organize an existing project into a research compendium\nOR\nApply a consistent coding style to one of your R scripts (e.g. with Code &gt; Reformat Code or with the styler package)\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "index.html",
