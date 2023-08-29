@@ -52,7 +52,7 @@ Including future you!
 Workshop series website:\
 <https://cct-datascience.github.io/repro-data-sci/>
 
-## Screen Setup {{< fa desktop >}} {{< fa laptop >}}
+## Screen Setup {{< fa desktop >}} {{< fa laptop >}} {.smaller}
 
 -   Dual monitors will be *very* helpful
 -   Virtual desktops ("Spaces" in macOS) also helpful
@@ -133,8 +133,8 @@ A good project layout will ultimately make your life easier:
 
 ## Homework (optional)
 
-Re-organize an existing project into a research compendium with separate folders for raw data, cleaned data, data wrangling scripts, analysis scripts, and outputs
+Re-organize an existing project into a research compendium
 
 OR
 
-Organize one of your R scripts with sections and apply a consistent coding style (e.g. with Code \> Reformat Code or with the `styler` package)
+Apply a consistent coding style to one of your R scripts (e.g. with Code \> Reformat Code or with the `styler` package)
