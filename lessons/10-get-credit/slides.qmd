@@ -1,6 +1,6 @@
 ---
 title: "Sharing Code & Getting Credit"
-format: revealjs
+format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
@@ -8,9 +8,9 @@ bibliography: references.bib
 
 # Why share code?
 
-## Papers with open code are cited more
+## Papers with open code are cited more {.smaller}
 
-![](maitner-et-al.png){fig-align="center"}
+![](maitner-et-al.png){fig-align="center" width="781"}
 
 ::: aside
 Figure 2 from @maitner

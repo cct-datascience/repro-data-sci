@@ -1,7 +1,7 @@
 ---
 title: "Collaborate With GitHub"
 subtitle: "Session 5"
-format: revealjs
+format: uaz-revealjs
 editor: visual
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
