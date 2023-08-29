@@ -228,7 +228,7 @@
     "href": "lessons/10-get-credit/slides.html#papers-with-open-code-are-cited-more",
     "title": "Sharing Code & Getting Credit",
     "section": "Papers with open code are cited more",
-    "text": "Papers with open code are cited more\n\n\n\n\n\n\n\nFigure 2: Predicted impacts of code-sharing on cumulative citations. Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed. Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code. Predictions are based on estimated model coe cients (Table 2)\n\n\nFigure 2 from Maitner et al. (n.d.)"
+    "text": "Papers with open code are cited more\n\n\n\n\n\n\n\nFigure 2: Predicted impacts of code-sharing on cumulative citations. Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed. Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code. Predictions are based on estimated model coe cients (Table 2)\n\n\nFigure 2 from Maitner et al. (2023)"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#getting-credit-for-your-code",
@@ -305,7 +305,7 @@
     "href": "lessons/10-get-credit/slides.html#references",
     "title": "Sharing Code & Getting Credit",
     "section": "References",
-    "text": "References\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\nMaitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. n.d. “Code Sharing Increases Citations, but Remains Uncommon.” https://doi.org/10.21203/rs.3.rs-3222221/v1."
+    "text": "References\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\nMaitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. 2023. “Code Sharing Increases Citations, but Remains Uncommon.” https://doi.org/10.21203/rs.3.rs-3222221/v1."
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#review-homework",
@@ -550,7 +550,7 @@
     "href": "lessons/10-get-credit/notes.html#lesson-outline",
     "title": "Getting Credit For Your Hard Work",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (n.d.)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nMost participants probably won’t be ready to follow along with their own repos, but we will be there to help when they are ready\nDemo archiving a repo with Zenodo using this repo\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates\nExplain how renv works, especially renv::restore() , renv::status() , and renv::snapshot()\nDemo activating renv for this repo and make a second release to demo Zenodo versioning\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
+    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (2023)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nMost participants probably won’t be ready to follow along with their own repos, but we will be there to help when they are ready\nDemo archiving a repo with Zenodo using this repo\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates\nExplain how renv works, especially renv::restore() , renv::status() , and renv::snapshot()\nDemo activating renv for this repo and make a second release to demo Zenodo versioning\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
   },
   {
     "objectID": "lessons/10-get-credit/notes.html#homework",
