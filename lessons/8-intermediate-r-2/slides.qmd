@@ -1,7 +1,7 @@
 ---
 title: "Intermediate R: iteration and mapping"
 subtitle: "Session 8"
-format: revealjs
+format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---

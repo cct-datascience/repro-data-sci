@@ -2,7 +2,7 @@
 title: "Shell and Filesystems"
 subtitle: "Session 2"
 # date: TODO
-format: revealjs
+format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
@@ -43,8 +43,9 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 -   Windows need to install GitBash (includes Bash shell and git, which we will use later)
 
 -   Breakout rooms
-    - Mac users go with Eric
-    - Windows users go with Renata
+
+    -   Mac users go with Eric
+    -   Windows users go with Renata
 
 # Data download
 
@@ -54,9 +55,9 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 
 # Coding time
 
-- RStudio panes
-- Set up Terminal in RStudio
-- Navigation using Terminal and Files pane
+-   RStudio panes
+-   Set up Terminal in RStudio
+-   Navigation using Terminal and Files pane
 
 # Example file system
 
@@ -72,22 +73,22 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 
 # Coding time
 
-- Synchronize working directories between Terminal, Files Pane, and R working directory
+-   Synchronize working directories between Terminal, Files Pane, and R working directory
 
 # Coding time
 
-- Use an R project to simplify working directories
-- Copy `shell_lesson_data` to your R project 
+-   Use an R project to simplify working directories
+-   Copy `shell_lesson_data` to your R project
 
 # Getting help
 
-```bash
+``` bash
 man ls
 ```
 
 # Getting help
 
-```bash
+``` bash
 git --help
 ```
 
@@ -99,7 +100,6 @@ git --help
 
 ![](man_page.png){fig-align="center"}
 
-
 # Getting help
 
 ![](stack_overflow.png){fig-align="center"}
@@ -110,7 +110,7 @@ git --help
 
 # Beware of stochastic parrots
 
--   LLMs don't _understand_, but are good at mimicry
+-   LLMs don't *understand*, but are good at mimicry
 -   Use with care:
     -   May be wrong
     -   May be inconsistent
@@ -126,17 +126,16 @@ git --help
 
 ![](ua-ds-slack.png){fig-align="center"}
 
-
 # Getting help: fellow humans
 
 ![](drop-ins.png){fig-align="center"}
 
 # Takeaways
 
-- The shell is a command-line interface to the computer
-- The file system the shell sees is the *same* as your File Explorer tab
-- We can use the shell from the Terminal pane in RStudio
-- Find help from built-in manual pages, Google, (maybe) AI tools, or community
+-   The shell is a command-line interface to the computer
+-   The file system the shell sees is the *same* as your File Explorer tab
+-   We can use the shell from the Terminal pane in RStudio
+-   Find help from built-in manual pages, Google, (maybe) AI tools, or community
 
 # Homework for next time
 
@@ -146,19 +145,19 @@ git --help
 # Resources: Shell
 
 -   [Software Carpentry Unix Shell episode #1](https://swcarpentry.github.io/shell-novice/01-intro)
--  [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
--  [Software Carpentry Unix Shell episode #3](https://swcarpentry.github.io/shell-novice/03-create)
+-   [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
+-   [Software Carpentry Unix Shell episode #3](https://swcarpentry.github.io/shell-novice/03-create)
 
 # Resources: AI tools
 
--   <https://ecoevo.social/@cboettig/110934209180569370>
+-   [https://ecoevo.social/\@cboettig/110934209180569370](https://ecoevo.social/@cboettig/110934209180569370){.uri}
 -   <https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html>
 -   <https://en.wikipedia.org/wiki/Stochastic_parrot>
 -   <https://dl.acm.org/doi/abs/10.1145/3442188.3445922>
--   <https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0>
+-   [https://medium.com/\@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0](https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0){.uri}
 
 # Resources: UA community
 
-- [UA Data Science Institute](https://datascience.arizona.edu/)
-- [UA Data Science Slack](https://jcoliver.github.io/uadatascience-slack/)
-- [CCT Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)
+-   [UA Data Science Institute](https://datascience.arizona.edu/)
+-   [UA Data Science Slack](https://jcoliver.github.io/uadatascience-slack/)
+-   [CCT Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)

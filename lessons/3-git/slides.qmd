@@ -1,7 +1,7 @@
 ---
 title: "Version Control With `git`"
 subtitle: "Session 3"
-format: revealjs
+format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
@@ -58,32 +58,33 @@ git config --global user.email "youremail@arizona.edu"
 
 # Coding time
 
-- General syntax: `git` `verb` `options`
-- Set up text editor choice: 
-```
+-   General syntax: `git` `verb` `options`
+-   Set up text editor choice:
+
+```         
 git config --global core.editor "vim" 
 ```
-- Use the `--help` flag to see options
+
+-   Use the `--help` flag to see options
 
 # Creating a git repository
 
-- RStudio Wizard _when creating an R project_
-- `git init` in an _existing directory/R Project_
-- `usethis::use_git` in an _existing R Project_
+-   RStudio Wizard *when creating an R project*
+-   `git init` in an *existing directory/R Project*
+-   `usethis::use_git` in an *existing R Project*
 
 ## RStudio New Project Wizard
 
-- *Before* you create the directory...
-- File > New R Project...
+-   *Before* you create the directory...
+-   File \> New R Project...
 
 ## RStudio New Project Wizard
 
 ![](/lessons/3-git/new_proj_with_git.png)
 
-
 ## `git init`
 
-- Create a new directory (or R project) on your computer
+-   Create a new directory (or R project) on your computer
 
 ## `git init`
 
@@ -91,8 +92,8 @@ git config --global core.editor "vim"
 
 ## `git init`
 
-- Navigate to it on the command line
-- Run `git init` from the command line
+-   Navigate to it on the command line
+-   Run `git init` from the command line
 
 ## `git init`
 
@@ -100,7 +101,7 @@ git config --global core.editor "vim"
 
 ## `usethis::use_git()`
 
-- Create a new R Project
+-   Create a new R Project
 
 ## `usethis::use_git()`
 
@@ -108,8 +109,8 @@ git config --global core.editor "vim"
 
 ## usethis::use_git()
 
-- Open the R Project
-- From inside the R project, run...
+-   Open the R Project
+-   From inside the R project, run...
 
 ## `usethis::use_git()`
 
@@ -117,13 +118,13 @@ git config --global core.editor "vim"
 
 # Coding time
 
-- Create a new R project and initialize it as a git repo. 
-- Use any of the 3 approaches we've just gone over.
-- Report back: how did it go?
+-   Create a new R project and initialize it as a git repo.
+-   Use any of the 3 approaches we've just gone over.
+-   Report back: how did it go?
 
 # Coding time
 
-- Introduce `git status`
+-   Introduce `git status`
 
 # Saving modifications: a two-step process
 
@@ -131,8 +132,8 @@ git config --global core.editor "vim"
 
 # Coding time
 
-- Introduce modifications to this repository
-- Try `git status` again
+-   Introduce modifications to this repository
+-   Try `git status` again
 
 # Adding multiple files to same commit
 
@@ -140,22 +141,22 @@ git config --global core.editor "vim"
 
 # Coding time
 
-- Modify-add-commit cycle
-- `git diff`
-- `git restore` to reset saved changes to the last commit
-- `git reset HEAD\~` to (effectively) undo an add-commit cycle
+-   Modify-add-commit cycle
+-   `git diff`
+-   `git restore` to reset saved changes to the last commit
+-   `git reset HEAD\~` to (effectively) undo an add-commit cycle
 
 # Coding time
 
-- Ignore files with `.gitignore`
+-   Ignore files with `.gitignore`
 
 # Takeaways
 
-- `git` handles keeping track of versions and changes
-- Initialize a git repo 3 ways, depending on the current state of your project
-- The core `git` workflow is the modify-add-commit cycle
-- `git` can travel backwards in time
-- Ignore files using `.gitignore`
+-   `git` handles keeping track of versions and changes
+-   Initialize a git repo 3 ways, depending on the current state of your project
+-   The core `git` workflow is the modify-add-commit cycle
+-   `git` can travel backwards in time
+-   Ignore files using `.gitignore`
 
 # Homework
 
@@ -164,12 +165,12 @@ git config --global core.editor "vim"
 
 # Resources
 
-- Friendly reminder of [Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)!
+-   Friendly reminder of [Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)!
 
 # Resources: Git
 
--  [Software Carpentry Version Control with Git episode #2](https://swcarpentry.github.io/git-novice/02-setup)
--  [Software Carpentry Version Control with Git episode #3](https://swcarpentry.github.io/git-novice/03-create)
--  [Software Carpentry Version Control with Git episode #4](https://swcarpentry.github.io/git-novice/04-changes)
--  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
--  [Software Carpentry Version Control with Git episode #5](https://swcarpentry.github.io/git-novice/05-history)
+-   [Software Carpentry Version Control with Git episode #2](https://swcarpentry.github.io/git-novice/02-setup)
+-   [Software Carpentry Version Control with Git episode #3](https://swcarpentry.github.io/git-novice/03-create)
+-   [Software Carpentry Version Control with Git episode #4](https://swcarpentry.github.io/git-novice/04-changes)
+-   [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
+-   [Software Carpentry Version Control with Git episode #5](https://swcarpentry.github.io/git-novice/05-history)

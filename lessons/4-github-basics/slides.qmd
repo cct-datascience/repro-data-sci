@@ -1,7 +1,7 @@
 ---
 title: "GitHub"
 subtitle: "Session 4"
-format: revealjs
+format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib

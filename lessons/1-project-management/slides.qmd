@@ -2,7 +2,7 @@
 title: "Reproducibility & Data Science in R"
 subtitle: "Session 1"
 # date: TODO
-format: revealjs
+format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
