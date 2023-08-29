@@ -24,7 +24,7 @@ repo \| commit \| remote \| push \| pull \| add
 5.  `git` *\_\_\_\_* is used to synchronize changes on your computer with a remote
 :::
 
-## Homework
+## Review
 
 Did anyone add a repo to GitHub?
 What difficulties did you encounter?
