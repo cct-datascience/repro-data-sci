@@ -2,6 +2,8 @@
 
 <!-- badges: start -->
 
+[![Quarto Publish](https://github.com/cct-datascience/repro-data-sci/actions/workflows/publish.yaml/badge.svg)](https://github.com/cct-datascience/repro-data-sci/actions/workflows/publish.yaml)
+
 <!-- badges: end -->
 
 This repo holds source code for the website for the [CCT Data Science](https://datascience.cct.arizona.edu/) Fall Reproducibility and Data Science in R workshop series.
