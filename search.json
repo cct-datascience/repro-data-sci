@@ -249,7 +249,7 @@
     "href": "lessons/10-get-credit/slides.html#options-for-archiving",
     "title": "Sharing Code & Getting Credit",
     "section": "Options for archiving",
-    "text": "Options for archiving\n\n\n\n\n\n\n\n\n\n\n\n\nService\nVersioned DOIs?\nFree?\nGitHub integration?\nNotes\n\n\n\n\nZenodo\nYes\nYes\nYes\nBacked by CERN, built with code and data in mind\n\n\nDryad\nYes\nNo, but some publishers cover cost\nNo\nIntended for data, not code. Partners with Zenodo\n\n\nFigshare\nYes\nYes\nYes\nCan’t choose your license\n\n\nUA ReDATA\nYes\nYes (for UA researchers)\nNo\nUniversity of Arizona Libraries\n\n\n\n\n\nMore detailed comparisons here"
+    "text": "Options for archiving\n\n\n\n\n\n\n\n\n\n\nService\nVersioned DOIs?\nFree?\nGitHub integration?\nNotes\n\n\n\n\nZenodo\nYes\nYes\nYes\nBacked by CERN, built with code and data in mind\n\n\nDryad\nYes\nNo, but some publishers cover cost\nNo\nIntended for data, not code. Partners with Zenodo\n\n\nFigshare\nYes\nYes\nYes\nCan’t choose your license\n\n\nUA ReDATA\nYes\nYes (for UA researchers)\nNo\nUniversity of Arizona Libraries\n\n\n\n\n\nMore detailed comparisons here"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#reproducible-computational-environments",
