@@ -153,13 +153,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; Materials</a>
-  <ul class="collapse">
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
-  </ul></li>
-  <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching Notes</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson Outline</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/9-markdown-quarto/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -187,20 +181,63 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="objective">Objective</h2>
 <p>Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto.</p>
 </section>
-<section id="installation-materials" class="level2">
-<h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; Materials</h2>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-</section>
-</section>
-<section id="teaching-notes" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-notes">Teaching Notes</h2>
-</section>
-<section id="homework" class="level2">
-<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<section id="lesson-outline" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-outline">Lesson Outline</h2>
+<ul>
+<li><p>What goes in a README?</p>
+<ul>
+<li>Project summary</li>
+<li>Project status (in progress, archived, just an idea?)</li>
+<li>How to give credit</li>
+<li>Structure of repo (what files do what?)</li>
+<li>How to reproduce results</li>
+</ul></li>
+<li><p>Markdown &amp; formatting a README.md</p>
+<ul>
+<li>Markdown is a markup language: plain text –&gt; formatted text</li>
+<li>Widely used (GitHub, websites, Slack, etc.)</li>
+<li>Show markdown cheat sheet</li>
+<li>Spaces matter, and don’t matter at the same time. Err on the side of too much space between elements</li>
+</ul></li>
+<li><p>Exercise: Spend a few minutes editing your README, commit, push to GitHub and observe</p></li>
+<li><p>Quarto: an open-source scientific and technical publishing system</p>
+<ul>
+<li>Allows combining markdown, code, and code output (tables, plots, etc)</li>
+<li>Wide variety of outputs: html, pdf, word, and more</li>
+<li>Use cases:
+<ul>
+<li>Notebook</li>
+<li>Share results with collaborators</li>
+<li>Presentations</li>
+<li>Reproducible manuscripts</li>
+</ul></li>
+</ul></li>
+<li><p>How does it work?</p>
+<ul>
+<li>qmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.</li>
+</ul></li>
+<li><p>Anatomy of a .Qmd</p>
+<ul>
+<li>Look familiar if you’ve used RMarkdown</li>
+<li>YAML header has metadata and settings</li>
+<li>Markdown body</li>
+<li>Code chunks with R, Python, Julia, or other code</li>
+</ul></li>
+<li><p>Create .Qmd and play</p></li>
+<li><p>Demo rendering in different formats</p></li>
+<li><p>Demo visual editor</p>
+<ul>
+<li><p>Switch back and forth</p></li>
+<li><p>Callouts</p></li>
+</ul></li>
+<li><p>Code chunk options</p>
+<ul>
+<li>Demo some common ones like <code>label</code>, <code>echo: false</code>, <code>fig-cap</code></li>
+</ul></li>
+<li><p>Citations and cross-refs</p></li>
+<li><p>Tease <a href="https://quarto.org/docs/extensions/listing-journals.html">journal articles</a> (check out AGU format example <a href="https://quarto-journals.github.io/agu/" class="uri">https://quarto-journals.github.io/agu/</a>)</p></li>
+<li><p>Point students toward <a href="https://quarto.org/docs/get-started/hello/rstudio.html">tutorial</a> and full <a href="https://quarto.org/docs/guide/">documentation</a></p></li>
+</ul>
 
 
 </section>
