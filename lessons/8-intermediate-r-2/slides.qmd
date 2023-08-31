@@ -1,7 +1,7 @@
 ---
 title: "Intermediate R: iteration and mapping"
 subtitle: "Session 8"
-date: "2023-10-03"
+date: "2023-09-28"
 date-format: long
 format: uaz-revealjs
 chalkboard: true

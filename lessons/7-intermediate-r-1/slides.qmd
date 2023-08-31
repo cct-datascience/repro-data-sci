@@ -1,6 +1,8 @@
 ---
 title: "Intermediate R: functions and control flow"
 subtitle: "Session 7"
+date: "2023-09-26"
+date-format: long
 format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"

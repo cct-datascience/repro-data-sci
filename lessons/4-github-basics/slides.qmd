@@ -1,6 +1,8 @@
 ---
 title: "GitHub"
 subtitle: "Session 4"
+date: "2023-09-14"
+date-format: long
 format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
