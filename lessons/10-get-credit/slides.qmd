@@ -54,8 +54,6 @@ Code is unfortunately not cited often, but you can help by making it **easier** 
 
 ## Options for archiving {.smaller}
 
-<!--# table with zenodo, dryad, arizona one, figshare -->
-
 | Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
 |--------------|--------------|--------------|--------------|----------------|
 | Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |

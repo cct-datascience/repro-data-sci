@@ -7,12 +7,62 @@ format: html
 
 Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto.
 
-## Installation & Materials
+## Lesson Outline
 
-### Review
+-   What goes in a README?
 
-### Modifications
+    -   Project summary
+    -   Project status (in progress, archived, just an idea?)
+    -   How to give credit
+    -   Structure of repo (what files do what?)
+    -   How to reproduce results
 
-## Teaching Notes
+-   Markdown & formatting a README.md
 
-## Homework
+    -   Markdown is a markup language: plain text --\> formatted text
+    -   Widely used (GitHub, websites, Slack, etc.)
+    -   Show markdown cheat sheet
+    -   Spaces matter, and don't matter at the same time. Err on the side of too much space between elements
+
+-   Exercise: Spend a few minutes editing your README, commit, push to GitHub and observe
+
+-   Quarto: an open-source scientific and technical publishing system
+
+    -   Allows combining markdown, code, and code output (tables, plots, etc)
+    -   Wide variety of outputs: html, pdf, word, and more
+    -   Use cases:
+        -   Notebook
+        -   Share results with collaborators
+        -   Presentations
+        -   Reproducible manuscripts
+
+-   How does it work?
+
+    -   qmd -\> knitr -\> md -\> pandoc -\> word, pdf, html, etc.
+
+-   Anatomy of a .Qmd
+
+    -   Look familiar if you've used RMarkdown
+    -   YAML header has metadata and settings
+    -   Markdown body
+    -   Code chunks with R, Python, Julia, or other code
+
+-   Create .Qmd and play
+
+-   Demo rendering in different formats
+
+-   Demo visual editor
+
+    -   Switch back and forth
+
+    -   Callouts
+
+-   Code chunk options
+
+    -   Demo some common ones like `label`, `echo: false`, `fig-cap`
+
+-   Citations and cross-refs
+
+-   Tease [journal articles](https://quarto.org/docs/extensions/listing-journals.html) (check out AGU format example <https://quarto-journals.github.io/agu/>)
+
+-   Point students toward [tutorial](https://quarto.org/docs/get-started/hello/rstudio.html) and full [documentation](https://quarto.org/docs/guide/)
