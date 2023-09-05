@@ -7,6 +7,7 @@ format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
+logo: "../../logo.png"
 ---
 
 # Why share code?
@@ -55,7 +56,7 @@ Code is unfortunately not cited often, but you can help by making it **easier** 
 ## Options for archiving {.smaller}
 
 | Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
-|--------------|--------------|--------------|--------------|----------------|
+|---------------|---------------|---------------|---------------|---------------|
 | Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |
 | Dryad     | Yes             | No, but some publishers cover cost | No                  | Intended for data, not code. Partners with Zenodo |
 | Figshare  | Yes             | Yes                                | Yes                 | Can't choose your license                         |

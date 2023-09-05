@@ -4,6 +4,7 @@ subtitle: "Session 9"
 format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
+logo: "../../logo.png"
 ---
 
 ## README

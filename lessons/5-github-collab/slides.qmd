@@ -7,6 +7,7 @@ format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
+logo: "../../logo.png"
 ---
 
 ## Review
