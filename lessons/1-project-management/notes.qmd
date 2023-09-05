@@ -31,6 +31,7 @@ Learners will learn about and practice managing their projects using file struct
     -   Keyboard shortcut for adding sections + outline view and navigator at bottom of script panel
     -   Load packages at top of script, even when not used until later
     -   Restart R and run from top often
+    -   Code styling with RStudio (ctl + shift + A)
     -   How to break up code (e.g. save output of `01-wrangle-data.R` into `data_clean/`, then read that in later)
 -   Homework:
     -   Apply one or more of the organizing principles of a research compendium to an existing research project.
