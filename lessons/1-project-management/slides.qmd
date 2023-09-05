@@ -126,12 +126,14 @@ A good project layout will ultimately make your life easier:
 
 ## Takeaways
 
+::: incremental
 -   Structure files in self-contained projects or "research compendia"
 -   Put data in a separate folder and never edit raw data!
 -   Avoid `setwd()` and `getwd()`---use relative paths and RStudio projects instead
 -   Naming things well is difficult but worth spending time on
 -   Use some consistent style in your code and organize scripts in sections
 -   Split long scripts into multiples and use `source()` to run them if needed'
+:::
 
 ## Homework (optional)
 
