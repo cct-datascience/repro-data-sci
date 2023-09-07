@@ -86,6 +86,7 @@ logo: "../../logo.png"
 # Getting help
 
 ``` bash
+ls --help
 man ls
 ```
 
