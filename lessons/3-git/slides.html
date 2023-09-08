@@ -400,13 +400,18 @@
 
   <p class="date">September 12, 2023</p>
 </section>
+<section id="review" class="title-slide slide level1 center">
+<h1>Review</h1>
+<p>What are your questions from last session?</p>
+</section>
+
 <section id="review-1" class="title-slide slide level1 center">
-<h1>Review 1</h1>
+<h1>Review</h1>
 <p>What stood out to you when (if) you diagrammed your file system?</p>
 </section>
 
 <section id="review-2" class="title-slide slide level1 smaller center">
-<h1>Review 2</h1>
+<h1>Review</h1>
 
 <img data-src="../../lessons/2-shell/file-structure-example.png" class="r-stretch"><p>If your current working directory is <code>Users/kristinariemer/Dropbox/Documents</code>, what command could be used to change directory into the local Documents folder?</p>
 </section>
@@ -442,11 +447,24 @@
 <ul>
 <li><p>Track development of research projects like a lab notebook</p></li>
 <li><p>Keep project in sync across computers including HPC</p></li>
-<li><p>Share and collaborate on projects in a sane way</p></li>
+<li><p>Share and collaborate on projects in a clear and manageable way</p></li>
 </ul>
 </section>
-<section id="setting-up-git-once-per-machine" class="slide level2">
-<h2>Setting up <code>git</code> (once per machine)</h2>
+<section id="git-and-github-for-version-control" class="slide level2">
+<h2>Git and GitHub for version control</h2>
+<ul>
+<li><p>Git: version control <em>on your computer</em>.</p></li>
+<li><p>GitHub: connects your local Git to the cloud.</p>
+<ul>
+<li><p>Project management</p></li>
+<li><p>Collaboration</p></li>
+<li><p>Visual interface</p></li>
+<li><p>Optional!</p></li>
+</ul></li>
+</ul>
+</section></section>
+<section id="coding-time-git-setup" class="title-slide slide level1 center">
+<h1>Coding time: Git Setup</h1>
 <p>We installed git last week, so you should be ready to set it up!</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
@@ -456,7 +474,8 @@
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"youremail@arizona.edu"</span> </span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="co"># Use your GitHub associated email</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section></section>
+</section>
+
 <section id="coding-time" class="title-slide slide level1 center">
 <h1>Coding time</h1>
 <ul>
@@ -469,9 +488,19 @@
 </ul>
 </section>
 
+<section id="git-repositories" class="title-slide slide level1 center">
+<h1>Git repositories</h1>
+<ul>
+<li>Git works with the unit of the <em>repository</em></li>
+<li>Repositories are folders</li>
+<li>Good practice: repositories == .Rprojects</li>
+</ul>
+</section>
+
 <section>
 <section id="creating-a-git-repository" class="title-slide slide level1 center">
 <h1>Creating a git repository</h1>
+<p>You have options:</p>
 <ul>
 <li>RStudio Wizard <em>when creating an R project</em></li>
 <li><code>git init</code> in an <em>existing directory/R Project</em></li>
@@ -547,11 +576,6 @@
 </ul>
 </section>
 
-<section id="saving-modifications-a-two-step-process" class="title-slide slide level1 center">
-<h1>Saving modifications: a two-step process</h1>
-
-<img data-src="git-simple.png" class="r-stretch"></section>
-
 <section id="coding-time-3" class="title-slide slide level1 center">
 <h1>Coding time</h1>
 <ul>
@@ -560,12 +584,25 @@
 </ul>
 </section>
 
+<section id="saving-modifications-a-two-step-process" class="title-slide slide level1 center">
+<h1>Saving modifications: a two-step process</h1>
+
+<img data-src="git-simple.png" class="r-stretch"></section>
+
+<section id="coding-time-4" class="title-slide slide level1 center">
+<h1>Coding time</h1>
+<ul>
+<li><code>git add</code></li>
+<li><code>git commit --m "foo"</code></li>
+</ul>
+</section>
+
 <section id="adding-multiple-files-to-same-commit" class="title-slide slide level1 center">
 <h1>Adding multiple files to same commit</h1>
 
 <img data-src="git-multiple.png" class="r-stretch"></section>
 
-<section id="coding-time-4" class="title-slide slide level1 center">
+<section id="coding-time-5" class="title-slide slide level1 center">
 <h1>Coding time</h1>
 <ul>
 <li>Modify-add-commit cycle</li>
@@ -575,7 +612,7 @@
 </ul>
 </section>
 
-<section id="coding-time-5" class="title-slide slide level1 center">
+<section id="coding-time-6" class="title-slide slide level1 center">
 <h1>Coding time</h1>
 <ul>
 <li>Ignore files with <code>.gitignore</code></li>

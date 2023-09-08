@@ -564,14 +564,14 @@
     "href": "lessons/3-git/slides.html#why-learn-version-control",
     "title": "Version Control With git",
     "section": "Why Learn Version Control?",
-    "text": "Why Learn Version Control?\n\nTrack development of research projects like a lab notebook\nKeep project in sync across computers including HPC\nShare and collaborate on projects in a sane way"
+    "text": "Why Learn Version Control?\n\nTrack development of research projects like a lab notebook\nKeep project in sync across computers including HPC\nShare and collaborate on projects in a clear and manageable way"
   },
   {
-    "objectID": "lessons/3-git/slides.html#setting-up-git-once-per-machine",
-    "href": "lessons/3-git/slides.html#setting-up-git-once-per-machine",
+    "objectID": "lessons/3-git/slides.html#git-and-github-for-version-control",
+    "href": "lessons/3-git/slides.html#git-and-github-for-version-control",
     "title": "Version Control With git",
-    "section": "Setting up git (once per machine)",
-    "text": "Setting up git (once per machine)\nWe installed git last week, so you should be ready to set it up!\n\n\nShell\n\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@arizona.edu\" \n# Use your GitHub associated email"
+    "section": "Git and GitHub for version control",
+    "text": "Git and GitHub for version control\n\nGit: version control on your computer.\nGitHub: connects your local Git to the cloud.\n\nProject management\nCollaboration\nVisual interface\nOptional!"
   },
   {
     "objectID": "lessons/3-git/slides.html#rstudio-new-project-wizard",
