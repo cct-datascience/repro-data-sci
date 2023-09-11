@@ -9,11 +9,15 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
-# Review 1
+# Review
+
+What are your questions from last session?
+
+# Review
 
 What stood out to you when (if) you diagrammed your file system?
 
-# Review 2 {.smaller}
+# Review {.smaller}
 
 ![](/lessons/2-shell/file-structure-example.png)
 
@@ -47,9 +51,23 @@ Semi-automated system for tracking changes with unlimited "undo"
 
 -   Keep project in sync across computers including HPC
 
--   Share and collaborate on projects in a sane way
+-   Share and collaborate on projects in a clear and manageable way
 
-## Setting up `git` (once per machine)
+## Git and GitHub for version control
+
+-   Git: version control *on your computer*.
+
+-   GitHub: connects your local Git to the cloud.
+
+    -   Project management
+
+    -   Collaboration
+
+    -   Visual interface
+
+    -   Optional!
+
+# Coding time: Git Setup
 
 We installed git last week, so you should be ready to set it up!
 
@@ -70,7 +88,15 @@ git config --global core.editor "vim"
 
 -   Use the `--help` flag to see options
 
+# Git repositories
+
+-   Git works with the unit of the *repository*
+-   Repositories are folders
+-   Good practice: repositories == .Rprojects
+
 # Creating a git repository
+
+You have options:
 
 -   RStudio Wizard *when creating an R project*
 -   `git init` in an *existing directory/R Project*
@@ -129,14 +155,19 @@ git config --global core.editor "vim"
 
 -   Introduce `git status`
 
+# Coding time
+
+-   Introduce modifications to this repository
+-   Try `git status` again
+
 # Saving modifications: a two-step process
 
 ![](git-simple.png)
 
 # Coding time
 
--   Introduce modifications to this repository
--   Try `git status` again
+-   `git add`
+-   `git commit --m "foo"`
 
 # Adding multiple files to same commit
 
@@ -164,6 +195,7 @@ git config --global core.editor "vim"
 # Homework
 
 -   Create a [GitHub](https://github.com) account if you don't have one.
+- Slack us your GitHub username!
 -   Optional: Identify an existing folder on your computer and turn it into a git repository.
 
 # Resources

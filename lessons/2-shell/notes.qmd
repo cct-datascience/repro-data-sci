@@ -48,7 +48,7 @@ format: html
     - Show that, upon opening, Terminal, getwd(), and file pane are all on the same page
 - Live coding: `cp` and `move`
     - Copy `shell_lesson_data` to the Rproject.
-    - Tell them we need `cp`, then use `man cp` to get the options
+    - Tell them we need `cp`, then use `cp --help` to get the options
     - Repeat using `ls` to explore contents of `shell_lesson_data` and mirror files pane
 -   Live coding/discussion: options for finding help
     - `--help` flag
