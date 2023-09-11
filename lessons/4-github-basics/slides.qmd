@@ -24,10 +24,14 @@ logo: "../../logo.png"
 
 ## Today's goals
 
-1.  Learn how to tell git to ignore files
-2.  Put a local repo on GitHub
-3.  Use `git push` and `git pull` to synchronize with GitHub
-4.  Use branches for new work
+1.  Practice using git with RStudio
+2.  Learn how to tell git to ignore files
+3.  Put a local repo on GitHub
+4.  Use `git push` and `git pull` to synchronize with GitHub
+
+## Working with git in RStudio (Live Coding)
+
+The most common git commands can be used with the RStudio GUI.
 
 ## Ignoring files {.smaller}
 
@@ -59,7 +63,16 @@ Figure 2 from [@bryan2018]
 -   You can also access the repo through github.com web UI
 :::
 
-# Connect With GitHub (Live Coding)
+## Connect With GitHub (Live Coding)
+
+-   Set up your computer to "talk" to GitHub
+-   Connect your local git repo to a remote GitHub repo with `use_github()`
+-   Explore the GitHub interface
+
+## Work With RStudio and GitHub (Live Coding)
+
+-   Push local changes to GitHub
+-   Pull GitHub changes to local
 
 ## Resources
 
@@ -69,7 +82,7 @@ Figure 2 from [@bryan2018]
 
 ## Homework
 
-Put a project repo on GitHub and share the link on Slack
+Put a project repo on GitHub (e.g. with `use_github()`) and share the link on Slack (if it can be made public)
 
 ## References
 

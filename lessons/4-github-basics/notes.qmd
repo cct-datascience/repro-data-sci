@@ -14,6 +14,10 @@ Learners will practice developing new code on branches.
 
     -   Ways of creating a git repo and how to know if it worked
 
+-   Live Coding: working with git in RStudio
+
+    -   Demo `add` `commit` cycle with git pane and git menu
+
 -   Live Coding: `.gitignore`
 
     -   Explore `.gitignore` created by RStudio
@@ -33,7 +37,7 @@ Learners will practice developing new code on branches.
 
     -   Local first: `usethis::use_github()`
     -   GitHub first: create new repo on GitHub and create new R Studio project from version control
-    -   Other ways are possible, but we're not going to cover them (unless someone has issues)
+    -   Other ways are possible, but we're not going to cover them this lesson (unless someone has issues)
 
 -   Live Coding: Push and Pull
 
