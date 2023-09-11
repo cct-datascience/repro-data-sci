@@ -263,7 +263,7 @@
     "href": "lessons/4-github-basics/notes.html#lesson-outline",
     "title": "Developing Code on Github",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\nModify and make a commit\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
+    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\n\nLive Coding: working with git in RStudio\n\nDemo add commit cycle with git pane and git menu\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\nModify and make a commit\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them this lesson (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
   },
   {
     "objectID": "lessons/4-github-basics/notes.html#installation-materials",
@@ -431,7 +431,14 @@
     "href": "lessons/4-github-basics/slides.html#todays-goals",
     "title": "GitHub",
     "section": "Today’s goals",
-    "text": "Today’s goals\n\nLearn how to tell git to ignore files\nPut a local repo on GitHub\nUse git push and git pull to synchronize with GitHub\nUse branches for new work"
+    "text": "Today’s goals\n\nPractice using git with RStudio\nLearn how to tell git to ignore files\nPut a local repo on GitHub\nUse git push and git pull to synchronize with GitHub"
+  },
+  {
+    "objectID": "lessons/4-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
+    "href": "lessons/4-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
+    "title": "GitHub",
+    "section": "Working with git in RStudio (Live Coding)",
+    "text": "Working with git in RStudio (Live Coding)\nThe most common git commands can be used with the RStudio GUI."
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#ignoring-files",
@@ -448,6 +455,20 @@
     "text": "Sharing with GitHub\n\n\n\n\n\n\n\n\nAll contributors have a local copy of the repo.\nYou might also have a copy in multiple places (on multiple computers, on university HPC).\nGitHub has a central repo that allows you to synchronize and merge work from multiple sources.\nYou can also access the repo through github.com web UI\n\n\n\nFigure 2 from (Bryan 2018)"
   },
   {
+    "objectID": "lessons/4-github-basics/slides.html#connect-with-github-live-coding",
+    "href": "lessons/4-github-basics/slides.html#connect-with-github-live-coding",
+    "title": "GitHub",
+    "section": "Connect With GitHub (Live Coding)",
+    "text": "Connect With GitHub (Live Coding)\n\nSet up your computer to “talk” to GitHub\nConnect your local git repo to a remote GitHub repo with use_github()\nExplore the GitHub interface"
+  },
+  {
+    "objectID": "lessons/4-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
+    "href": "lessons/4-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
+    "title": "GitHub",
+    "section": "Work With RStudio and GitHub (Live Coding)",
+    "text": "Work With RStudio and GitHub (Live Coding)\n\nPush local changes to GitHub\nPull GitHub changes to local"
+  },
+  {
     "objectID": "lessons/4-github-basics/slides.html#resources",
     "href": "lessons/4-github-basics/slides.html#resources",
     "title": "GitHub",
@@ -459,7 +480,7 @@
     "href": "lessons/4-github-basics/slides.html#homework",
     "title": "GitHub",
     "section": "Homework",
-    "text": "Homework\nPut a project repo on GitHub and share the link on Slack"
+    "text": "Homework\nPut a project repo on GitHub (e.g. with use_github()) and share the link on Slack (if it can be made public)"
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#references",
