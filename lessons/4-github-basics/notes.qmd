@@ -13,10 +13,11 @@ Learners will practice developing new code on branches.
 -   Review:
 
     -   Ways of creating a git repo and how to know if it worked
+    -   (live coding) turn demo project from lesson 1 into a git repo with `usethis::use_git()`
 
 -   Live Coding: working with git in RStudio
 
-    -   Demo `add` `commit` cycle with git pane and git menu
+    -   Demo `add` `commit` cycle with git pane **AND** git menu
 
 -   Live Coding: `.gitignore`
 

@@ -25,9 +25,10 @@ logo: "../../logo.png"
 ## Today's goals
 
 1.  Practice using git with RStudio
-2.  Learn how to tell git to ignore files
-3.  Put a local repo on GitHub
-4.  Use `git push` and `git pull` to synchronize with GitHub
+2.  Explore commit history
+3.  Learn how to tell git to ignore files
+4.  Put a local repo on GitHub
+5.  Use `git push` and `git pull` to synchronize with GitHub
 
 ## Working with git in RStudio (Live Coding)
 
@@ -37,9 +38,9 @@ The most common git commands can be used with the RStudio GUI.
 
 -   If you created an RStudio project with git enabled, you should have a top-level `.gitignore`
 -   Use this file (or create one) to stop git/GitHub from tracking...
-    -   large files that aren't plain text
+    -   large files, especially if not plain text
     -   files with sensitive data
-    -   unnecessary files
+    -   unnecessary files (e.g. `.DS_Store`)
 
 ::: callout-tip
 ## Exercise
@@ -65,7 +66,7 @@ Figure 2 from [@bryan2018]
 
 ## Connect With GitHub (Live Coding)
 
--   Set up your computer to "talk" to GitHub
+-   Set up your computer to "talk" to GitHub with steps in `git_sitrep()`
 -   Connect your local git repo to a remote GitHub repo with `use_github()`
 -   Explore the GitHub interface
 
@@ -82,7 +83,7 @@ Figure 2 from [@bryan2018]
 
 ## Homework
 
-Put a project repo on GitHub (e.g. with `use_github()`) and share the link on Slack (if it can be made public)
+Put a (real) project repo on GitHub (e.g. with `use_github()`) and share the link on Slack (if it can be made public)
 
 ## References
 
