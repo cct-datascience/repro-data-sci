@@ -51,11 +51,10 @@ logo: "../../logo.png"
 
 Let's install some packages:
 
-```{r, eval = F, echo = T}
+``` r
 install.packages("dplyr") # dataframe manipulation
 install.packages("tidyr") # "reshaping" data
 install.packages("palmerpenguins") # open teaching dataset
-
 ```
 
 ## Coding time
