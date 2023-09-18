@@ -1,0 +1,18 @@
+---
+title: "Getting help"
+format: html
+---
+
+[Slides](slides.qmd)
+
+## Objectives
+
+-   Know your options for finding help
+
+-   Live coding/discussion: options for finding help
+
+    -   `--help` flag
+    -   `man` pages
+    -   Manual pages: `?` in R, package websites
+    -   StackOverflow
+    -   ChatGPT

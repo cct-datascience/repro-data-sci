@@ -1,0 +1,76 @@
+---
+title: "Getting Help"
+format: uaz-revealjs
+chalkboard: true
+footer: "[Reproduciblity & Data Science in R](../../index.html)"
+logo: "../../logo.png"
+---
+
+# Getting help
+
+``` bash
+ls --help
+man ls
+```
+
+# Getting help
+
+``` bash
+git --help
+```
+
+# Getting help
+
+![](getwd.png){fig-align="center"}
+
+# Getting help
+
+![](man_page.png){fig-align="center"}
+
+# Getting help
+
+![](stack_overflow.png){fig-align="center"}
+
+# Getting help
+
+![](reprex.png){fig-align="center"}
+
+# Getting help
+
+![](gpt.png){fig-align="center"}
+
+# Beware of stochastic parrots
+
+-   LLMs don't *understand*, but are good at mimicry
+-   Use with care:
+    -   May be wrong
+    -   May be inconsistent
+
+# Beware of stochastic parrots
+
+-   Tools like ChatGPT pose ethical issues
+    -   Plagiarism
+    -   Labor conditions
+    -   Inputs may be sent to parent companies
+
+# Getting help: fellow humans
+
+![](ua-ds-slack.png){fig-align="center"}
+
+# Getting help: fellow humans
+
+![](drop-ins.png){fig-align="center"}
+
+# Resources: AI tools
+
+-   [https://ecoevo.social/\@cboettig/110934209180569370](https://ecoevo.social/@cboettig/110934209180569370){.uri}
+-   <https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html>
+-   <https://en.wikipedia.org/wiki/Stochastic_parrot>
+-   <https://dl.acm.org/doi/abs/10.1145/3442188.3445922>
+-   [https://medium.com/\@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0](https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0){.uri}
+
+# Resources: UA community
+
+-   [UA Data Science Institute](https://datascience.arizona.edu/)
+-   [UA Data Science Slack](https://jcoliver.github.io/uadatascience-slack/)
+-   [CCT Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)
