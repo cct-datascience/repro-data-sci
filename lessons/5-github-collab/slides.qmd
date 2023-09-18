@@ -3,7 +3,9 @@ title: "Collaborate With GitHub"
 subtitle: "Session 5"
 date: "2023-09-19"
 date-format: long
-format: uaz-revealjs
+format: 
+  uaz-revealjs:
+    theme: "fix-mermaid.scss"
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
@@ -49,7 +51,7 @@ Ask for a volunteer and give them permission to push to a repo
 
 ## Example repo
 
--   Everyone practice cloning this example repo as a new RStudio project: <https://github.com/Aariq/repro-workshop-demo>
+-   Everyone practice cloning this example repo as a new RStudio project: <https://github.com/cct-datascience/repro-workshop-demo> [^1]
 
 -   Need **one** volunteer to edit the README.md and practice commit + push
 
@@ -105,20 +107,20 @@ Each person works on a "branch"---an independent series of commits that can be m
 
 ```{mermaid}
 gitGraph
-       commit
-       commit
-       branch person_1
-       commit
-       commit
-       commit
-       checkout main
-       branch person_2
-       commit
-       commit
-       checkout main
-       merge person_1
-       merge person_2
-       commit
+   commit
+   commit
+   branch person_1
+   commit
+   commit
+   commit
+   checkout main
+   branch person_2
+   commit
+   commit
+   checkout main
+   merge person_1
+   merge person_2
+   commit
        
 ```
 
@@ -143,14 +145,27 @@ A request to merge changes into the main branch
 ::: columns
 ::: {.column width="40%"}
 What if you don't have permission to push to a GitHub repo but you want to contribute?
+\
+\
 Make a fork!
 
 ![](fork_btn.png){fig-align="center"}
 :::
 
 ::: {.column width="60%"}
-![](fork_diagram.png){fig-align="center" width="627"}
+![](fork-and-clone.jpg){fig-align="center" width="627"}
 :::
+:::
+
+::: notes
+Since you can't push to "upstream", you can make a connected copy on GitHub called a "fork"\
+\
+You can clone the fork and since you own it, you can push to it.
+
+On GitHub, you can sync upstream changes with your fork and you can make pull requests to integrate changes on your fork into upstream.
+
+That means you can contribute to *anything*!
+(as long as it is a public repo)
 :::
 
 ## Collaborating with Forks
@@ -162,6 +177,8 @@ To contribute to a repo you don't have push permission for:
 3.  Make **commits** (ideally on a **branch**)
 4.  Make a **pull request** to the upstream repo
 
+Learn more, including handy `usethis` shortcuts: <https://happygitwithr.com/fork-and-clone>
+
 ::: callout-tip
 ## Exercise
 
@@ -172,3 +189,5 @@ In pairs, practice this workflow to make a PR to our example repo
 
 ::: refs
 :::
+
+[^1]: [Read more about **GitHub organizations**](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations)
