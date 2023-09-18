@@ -480,10 +480,10 @@
 <section id="example-repo" class="slide level2">
 <h2>Example repo</h2>
 <ul>
-<li><p>Everyone practice cloning this example repo as a new RStudio project: <a href="https://github.com/Aariq/repro-workshop-demo" class="uri">https://github.com/Aariq/repro-workshop-demo</a></p></li>
+<li><p>Everyone practice cloning this example repo as a new RStudio project: <a href="https://github.com/cct-datascience/repro-workshop-demo" class="uri">https://github.com/cct-datascience/repro-workshop-demo</a> <sup>1</sup></p></li>
 <li><p>Need <strong>one</strong> volunteer to edit the README.md and practice commit + push</p></li>
 </ul>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">Read more about <strong>GitHub organizations</strong></a></p></li></ol></aside></section>
 <section id="dealing-with-conflicts" class="slide level2">
 <h2>Dealing with Conflicts</h2>
 <ul>
@@ -539,20 +539,20 @@
 <div>
 <div>
 <pre class="mermaid mermaid-js">gitGraph
-       commit
-       commit
-       branch person_1
-       commit
-       commit
-       commit
-       checkout main
-       branch person_2
-       commit
-       commit
-       checkout main
-       merge person_1
-       merge person_2
-       commit
+   commit
+   commit
+   branch person_1
+   commit
+   commit
+   commit
+   checkout main
+   branch person_2
+   commit
+   commit
+   checkout main
+   merge person_1
+   merge person_2
+   commit
        
 </pre>
 </div>
@@ -580,7 +580,9 @@
 <h2>Forks</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<p>What if you don’t have permission to push to a GitHub repo but you want to contribute? Make a fork!</p>
+<p>What if you don’t have permission to push to a GitHub repo but you want to contribute?<br>
+<br>
+Make a fork!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="fork_btn.png"></p>
@@ -589,11 +591,28 @@
 </div><div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="fork_diagram.png" width="627"></p>
+<p><img data-src="fork-and-clone.jpg" width="627"></p>
 </figure>
 </div>
 </div>
 </div>
+<aside class="notes">
+<p>Since you can’t push to “upstream”, you can make a connected copy on GitHub called a “fork”<br>
+<br>
+You can clone the fork and since you own it, you can push to it.</p>
+<p>On GitHub, you can sync upstream changes with your fork and you can make pull requests to integrate changes on your fork into upstream.</p>
+<p>That means you can contribute to <em>anything</em>! (as long as it is a public repo)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="collaborating-with-forks" class="slide level2">
 <h2>Collaborating with Forks</h2>
@@ -604,6 +623,7 @@
 <li>Make <strong>commits</strong> (ideally on a <strong>branch</strong>)</li>
 <li>Make a <strong>pull request</strong> to the upstream repo</li>
 </ol>
+<p>Learn more, including handy <code>usethis</code> shortcuts: <a href="https://happygitwithr.com/fork-and-clone" class="uri">https://happygitwithr.com/fork-and-clone</a></p>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -634,6 +654,7 @@ Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk about Ve
 </div>
 </div>
 </section>
+
     </div>
   </div>
 
