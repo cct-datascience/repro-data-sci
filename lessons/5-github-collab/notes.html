@@ -154,13 +154,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
   <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson Outline</a></li>
-  <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a>
-  <ul class="collapse">
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
-  </ul></li>
-  <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching notes</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/5-github-collab/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -199,9 +192,20 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Share a repo with everyone &amp; have everyone clone w/ RStudio</li>
 <li>Ask 1 (one) volunteer to make a change and practice commit + push</li>
-<li>Both instructor and volunteer make a change in the same file and push to main</li>
-<li>Should error for whoever pushes second</li>
-<li>Try following hints and pull, then set <code>git config pull.rebase false</code></li>
+<li>Instructor makes commit + push, volunteer pulls</li>
+</ul></li>
+<li><p>Live Coding: Merge conflict</p>
+<ul>
+<li>Instructor makes commit to README and pushes to GitHub</li>
+<li>Volunteer makes commit to the same line of README and pushes <strong>without pulling first</strong></li>
+<li>Should error for volunteer</li>
+</ul></li>
+<li><p>Slides: Resolving merge conflict</p></li>
+<li><p>Live Coding: Resolve merge conflict</p>
+<ul>
+<li>Try following the hints in the error and <code>pull</code></li>
+<li>New error about divergent branches</li>
+<li>Then have everyone set <code>git config pull.rebase false</code></li>
 </ul></li>
 <li><p>Working on branches (slides)</p></li>
 <li><p>Live Coding:</p>
@@ -214,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Pull Requests (slides)</p></li>
 <li><p>Live Coding:</p>
 <ul>
-<li>Have everyone make a PR to add their name</li>
+<li>Have everyone make a PR to add their name to the README</li>
 <li>Demo merging one or two &amp; ask volunteer to resolve any merge conflicts</li>
 </ul></li>
 <li><p>Forks (slides)</p>
@@ -232,40 +236,40 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Try using <code>usethis::pr_finish()</code> on a branch that was already merged on GitHub and take note of what it does</p></li>
 </ul></li>
 </ul>
-</section>
-<section id="installation-materials" class="level2">
-<h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h2>
-<ol type="1">
-<li><a href="https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit">Slides</a></li>
-<li>Workshop <a href="https://github.com/az-digitalag/data-sci-workshop">repository</a></li>
-<li><a href="https://swcarpentry.github.io/git-novice/08-collab">Software Carpentry Version Control with Git episode #8</a></li>
-</ol>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-<p>If anyone connected a local repository to GitHub, share how that went. Ask students to navigate to previous repository, amend an existing file, and practice an add-commit-push cycle.</p>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-<ul>
-<li>The only part of #8 that was taught was cloning a forked repository. Ask students to fork an instructor-created repository, then clone locally. This will be the repo for downstream files.</li>
-<li>Use <code>git remote add upstream xxxx</code> to connect repo to upstream. If time permits, demonstrate a pull request (PR).</li>
-<li>Share <a href="https://www.tomasbeuzen.com/post/git-fork-branch-pull/">diagram</a> of relationships between the remotes (upstream and origin) and local</li>
-<li>Demonstrate pull requests on GitHub</li>
-<li>Show how distinct units of work can be separately submitted via branches</li>
-</ul>
-</section>
-</section>
-<section id="teaching-notes" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h2>
-<ul>
-<li>Have students fork a <code>cct-datascience</code> repo as an example of a real research compendium</li>
-<li>Easy to check on learner progress by looking for who has and hasn’t forked repo</li>
-</ul>
-</section>
-<section id="homework" class="level2">
-<h2 class="anchored" data-anchor-id="homework">Homework</h2>
-<p>Skim the <strong>Analyses</strong> section of <a href="https://style.tidyverse.org">tidyverse R style guide</a>. What practice or guideline was new to you?</p>
-<p>Also, explore the upstream <code>cct-datascience</code> repo. What practices do you notices that are new or different from your own?</p>
+<!-- old notes
+
+## Installation & materials
+
+1.  [Slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit)
+2.  Workshop [repository](https://github.com/az-digitalag/data-sci-workshop)
+3.  [Software Carpentry Version Control with Git episode #8](https://swcarpentry.github.io/git-novice/08-collab)
+
+### Review
+
+If anyone connected a local repository to GitHub, share how that went.
+Ask students to navigate to previous repository, amend an existing file, and practice an add-commit-push cycle.
+
+### Modifications
+
+-   The only part of #8 that was taught was cloning a forked repository. Ask students to fork an instructor-created repository, then clone locally. This will be the repo for downstream files.
+-   Use `git remote add upstream xxxx` to connect repo to upstream. If time permits, demonstrate a pull request (PR).
+-   Share [diagram](https://www.tomasbeuzen.com/post/git-fork-branch-pull/) of relationships between the remotes (upstream and origin) and local
+-   Demonstrate pull requests on GitHub
+-   Show how distinct units of work can be separately submitted via branches
+
+## Teaching notes
+
+-   Have students fork a `cct-datascience` repo as an example of a real research compendium
+-   Easy to check on learner progress by looking for who has and hasn't forked repo
+
+## Homework
+
+Skim the **Analyses** section of [tidyverse R style guide](https://style.tidyverse.org).
+What practice or guideline was new to you?
+
+Also, explore the upstream `cct-datascience` repo.
+What practices do you notices that are new or different from your own?
+-->
 <!--# practice making a reprex and pasting into Slack? -->
 
 

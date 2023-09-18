@@ -238,6 +238,97 @@
     "text": "Learn more\n\nGetting started tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
+    "objectID": "lessons/6-data-manipulation/slides.html#review",
+    "href": "lessons/6-data-manipulation/slides.html#review",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Review",
+    "text": "Review"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#warm-up-create-a-branch-for-todays-work",
+    "href": "lessons/6-data-manipulation/slides.html#warm-up-create-a-branch-for-todays-work",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Warm-up: create a branch for today’s work",
+    "text": "Warm-up: create a branch for today’s work"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#learning-objectives",
+    "href": "lessons/6-data-manipulation/slides.html#learning-objectives",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nUnderstand the principles of “tidy data”\nUse tidyverse packages (dplyr and tidyr) to work with data in R.\nPractice tracking our work in git"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#what-is-tidy-data",
+    "href": "lessons/6-data-manipulation/slides.html#what-is-tidy-data",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "What is “tidy data”?",
+    "text": "What is “tidy data”?\nLowndes and Horst say it so beautifully."
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse",
+    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The tidyverse",
+    "text": "The tidyverse"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse-1",
+    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse-1",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The “tidyverse”",
+    "text": "The “tidyverse”\n\n✨ Common structure and syntax\n✨ Emphasize user readability\n✨ Friendly documentation\n✨ Updates rapidly"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse-2",
+    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse-2",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The “tidyverse”",
+    "text": "The “tidyverse”\n\n‼️ Extra installs over “base R”\n‼️ Very different syntax than “base R”\n‼️ Updates rapidly"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse-3",
+    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse-3",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The “tidyverse”",
+    "text": "The “tidyverse”\n\n🧭 Only install/load the functions/packages you need\n🧭 Be aware that others may be unfamiliar; comment your code well\n🧭 Keep track of your package versions\n🧭 Software developers, keep an eye on changes!"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#tidy-data-in-r",
+    "href": "lessons/6-data-manipulation/slides.html#tidy-data-in-r",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Tidy data in R",
+    "text": "Tidy data in R\nLet’s install some packages:\ninstall.packages(\"dplyr\") # dataframe manipulation\ninstall.packages(\"tidyr\") # \"reshaping\" data\ninstall.packages(\"palmerpenguins\") # open teaching dataset"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#coding-time",
+    "href": "lessons/6-data-manipulation/slides.html#coding-time",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time",
+    "text": "Coding time\nHow R understands data"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-1",
+    "href": "lessons/6-data-manipulation/slides.html#coding-time-1",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time",
+    "text": "Coding time\nData manipulation with dplyr and tidyr"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-2",
+    "href": "lessons/6-data-manipulation/slides.html#coding-time-2",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time",
+    "text": "Coding time\nPractice git modify-add-commit cycle"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#homework",
+    "href": "lessons/6-data-manipulation/slides.html#homework",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Homework",
+    "text": "Homework\nNone\n\n\n\nReproduciblity & Data Science in R"
+  },
+  {
     "objectID": "lessons/4-github-basics/slides.html#review-homework",
     "href": "lessons/4-github-basics/slides.html#review-homework",
     "title": "GitHub",
@@ -417,7 +508,7 @@
     "href": "lessons/5-github-collab/slides.html#example-repo",
     "title": "Collaborate With GitHub",
     "section": "Example repo",
-    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: \nNeed one volunteer to edit the README.md and practice commit + push"
+    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: https://github.com/Aariq/repro-workshop-demo\nNeed one volunteer to edit the README.md and practice commit + push"
   },
   {
     "objectID": "lessons/5-github-collab/slides.html#dealing-with-conflicts",
@@ -438,7 +529,7 @@
     "href": "lessons/5-github-collab/slides.html#merge-rebase-fast-forward",
     "title": "Collaborate With GitHub",
     "section": "Merge, rebase, fast-forward??",
-    "text": "Merge, rebase, fast-forward??\n\nThese are alternative ways to deal with conflicts—we won’t get into the deatils\nFor now, we recommend you stick with the “merge” option\n\n\nUse:\ngit config pull.rebase false\nOr, if you want to set this option for all future repos too\ngit config --global pull.rebase false"
+    "text": "Merge, rebase, fast-forward??\n\nThese are alternative ways to deal with conflicts—we won’t get into the details\nFor now, we recommend you stick with the “merge” option\n\n\nUse:\ngit config pull.rebase false\nOr, if you want to set this option for all future repos too\ngit config --global pull.rebase false"
   },
   {
     "objectID": "lessons/5-github-collab/slides.html#fixing-a-merge-conflict",
@@ -459,7 +550,7 @@
     "href": "lessons/5-github-collab/slides.html#working-on-a-branch",
     "title": "Collaborate With GitHub",
     "section": "Working on a Branch",
-    "text": "Working on a Branch\n\nMake a new branch with your name using RStudio’s Git pane\nCommit changes and push to your branch\nView changes on GitHub"
+    "text": "Working on a Branch\n\nMake a new branch using RStudio’s Git pane (for this demo, use your name)\nCommit changes and push to your branch\nView changes on GitHub"
   },
   {
     "objectID": "lessons/5-github-collab/slides.html#pull-requests",
@@ -606,28 +697,7 @@
     "href": "lessons/5-github-collab/notes.html#lesson-outline",
     "title": "Collaborating with GitHub",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nReview Homework:\n\nAnyone put a repo on GitHub? Any difficulties encountered?\n\nLive Coding: Collaborating with GitHub\n\nShare a repo with everyone & have everyone clone w/ RStudio\nAsk 1 (one) volunteer to make a change and practice commit + push\nBoth instructor and volunteer make a change in the same file and push to main\nShould error for whoever pushes second\nTry following hints and pull, then set git config pull.rebase false\n\nWorking on branches (slides)\nLive Coding:\n\nMake a branch with your name in RStudio\nAdd your name to README and commit\nSwitch between branches and see the file change in RStudio AND in File Explorer / Finder\nPush & see branches on GitHub\n\nPull Requests (slides)\nLive Coding:\n\nHave everyone make a PR to add their name\nDemo merging one or two & ask volunteer to resolve any merge conflicts\n\nForks (slides)\n\nDiscuss when you would work on a branch of a fork vs. working in a branch but on the same repo\n\nLive Coding:\n\nHave students create a fork of a second example repo and clone their fork\nIn pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub\n\nHomework:\n\nMaybe try cloning a repo that you don’t have permission to push to to see what happens\nTry using usethis::pr_finish() on a branch that was already merged on GitHub and take note of what it does"
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#installation-materials",
-    "href": "lessons/5-github-collab/notes.html#installation-materials",
-    "title": "Collaborating with GitHub",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nWorkshop repository\nSoftware Carpentry Version Control with Git episode #8\n\n\nReview\nIf anyone connected a local repository to GitHub, share how that went. Ask students to navigate to previous repository, amend an existing file, and practice an add-commit-push cycle.\n\n\nModifications\n\nThe only part of #8 that was taught was cloning a forked repository. Ask students to fork an instructor-created repository, then clone locally. This will be the repo for downstream files.\nUse git remote add upstream xxxx to connect repo to upstream. If time permits, demonstrate a pull request (PR).\nShare diagram of relationships between the remotes (upstream and origin) and local\nDemonstrate pull requests on GitHub\nShow how distinct units of work can be separately submitted via branches"
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#teaching-notes",
-    "href": "lessons/5-github-collab/notes.html#teaching-notes",
-    "title": "Collaborating with GitHub",
-    "section": "Teaching notes",
-    "text": "Teaching notes\n\nHave students fork a cct-datascience repo as an example of a real research compendium\nEasy to check on learner progress by looking for who has and hasn’t forked repo"
-  },
-  {
-    "objectID": "lessons/5-github-collab/notes.html#homework",
-    "href": "lessons/5-github-collab/notes.html#homework",
-    "title": "Collaborating with GitHub",
-    "section": "Homework",
-    "text": "Homework\nSkim the Analyses section of tidyverse R style guide. What practice or guideline was new to you?\nAlso, explore the upstream cct-datascience repo. What practices do you notices that are new or different from your own?"
+    "text": "Lesson Outline\n\nReview Homework:\n\nAnyone put a repo on GitHub? Any difficulties encountered?\n\nLive Coding: Collaborating with GitHub\n\nShare a repo with everyone & have everyone clone w/ RStudio\nAsk 1 (one) volunteer to make a change and practice commit + push\nInstructor makes commit + push, volunteer pulls\n\nLive Coding: Merge conflict\n\nInstructor makes commit to README and pushes to GitHub\nVolunteer makes commit to the same line of README and pushes without pulling first\nShould error for volunteer\n\nSlides: Resolving merge conflict\nLive Coding: Resolve merge conflict\n\nTry following the hints in the error and pull\nNew error about divergent branches\nThen have everyone set git config pull.rebase false\n\nWorking on branches (slides)\nLive Coding:\n\nMake a branch with your name in RStudio\nAdd your name to README and commit\nSwitch between branches and see the file change in RStudio AND in File Explorer / Finder\nPush & see branches on GitHub\n\nPull Requests (slides)\nLive Coding:\n\nHave everyone make a PR to add their name to the README\nDemo merging one or two & ask volunteer to resolve any merge conflicts\n\nForks (slides)\n\nDiscuss when you would work on a branch of a fork vs. working in a branch but on the same repo\n\nLive Coding:\n\nHave students create a fork of a second example repo and clone their fork\nIn pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub\n\nHomework:\n\nMaybe try cloning a repo that you don’t have permission to push to to see what happens\nTry using usethis::pr_finish() on a branch that was already merged on GitHub and take note of what it does"
   },
   {
     "objectID": "lessons/10-get-credit/notes.html",
