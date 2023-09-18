@@ -49,9 +49,9 @@ Ask for a volunteer and give them permission to push to a repo
 
 ## Example repo
 
--   Everyone practice cloning this example repo as a new RStudio project: <!--# TODO: add link -->
+-   Everyone practice cloning this example repo as a new RStudio project: <https://github.com/Aariq/repro-workshop-demo>
 
--   Need one volunteer to edit the README.md and practice commit + push
+-   Need **one** volunteer to edit the README.md and practice commit + push
 
 ## Dealing with Conflicts
 
@@ -67,7 +67,7 @@ Ask for a volunteer and give them permission to push to a repo
 
 ## Merge, rebase, fast-forward??
 
--   These are alternative ways to deal with conflicts---we won't get into the deatils
+-   These are alternative ways to deal with conflicts---we won't get into the details
 
 -   For now, we recommend you stick with the "merge" option
 
@@ -124,7 +124,7 @@ gitGraph
 
 ## Working on a Branch
 
--   Make a new branch with your name using RStudio's Git pane
+-   Make a new branch using RStudio's Git pane (for this demo, use your name)
 
 -   Commit changes and push to your branch
 

@@ -17,9 +17,21 @@ Learners will fork and clone a repository on GitHub and use branches to open pul
 
     -   Share a repo with everyone & have everyone clone w/ RStudio
     -   Ask 1 (one) volunteer to make a change and practice commit + push
-    -   Both instructor and volunteer make a change in the same file and push to main
-    -   Should error for whoever pushes second
-    -   Try following hints and pull, then set `git config pull.rebase false`
+    -   Instructor makes commit + push, volunteer pulls
+
+-   Live Coding: Merge conflict
+
+    -   Instructor makes commit to README and pushes to GitHub
+    -   Volunteer makes commit to the same line of README and pushes **without pulling first**
+    -   Should error for volunteer
+
+-   Slides: Resolving merge conflict
+
+-   Live Coding: Resolve merge conflict
+
+    -   Try following the hints in the error and `pull`
+    -   New error about divergent branches
+    -   Then have everyone set `git config pull.rebase false`
 
 -   Working on branches (slides)
 
@@ -34,7 +46,7 @@ Learners will fork and clone a repository on GitHub and use branches to open pul
 
 -   Live Coding:
 
-    -   Have everyone make a PR to add their name
+    -   Have everyone make a PR to add their name to the README
     -   Demo merging one or two & ask volunteer to resolve any merge conflicts
 
 -   Forks (slides)
@@ -51,6 +63,9 @@ Learners will fork and clone a repository on GitHub and use branches to open pul
     -   Maybe try cloning a repo that you don't have permission to push to to see what happens
 
     -   Try using `usethis::pr_finish()` on a branch that was already merged on GitHub and take note of what it does
+
+```{=html}
+<!-- old notes
 
 ## Installation & materials
 
@@ -83,5 +98,6 @@ What practice or guideline was new to you?
 
 Also, explore the upstream `cct-datascience` repo.
 What practices do you notices that are new or different from your own?
-
+-->
+```
 <!--# practice making a reprex and pasting into Slack? -->
