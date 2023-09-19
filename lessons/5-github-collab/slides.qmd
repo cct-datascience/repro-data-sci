@@ -144,8 +144,8 @@ A request to merge changes into the main branch
 
 ::: columns
 ::: {.column width="40%"}
-What if you don't have permission to push to a GitHub repo but you want to contribute?
-\
+What if you don't have permission to push to a GitHub repo but you want to contribute?\
+
 \
 Make a fork!
 
