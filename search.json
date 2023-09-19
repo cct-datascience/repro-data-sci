@@ -564,7 +564,7 @@
     "href": "lessons/5-github-collab/slides.html#forks",
     "title": "Collaborate With GitHub",
     "section": "Forks",
-    "text": "Forks\n\n\nWhat if you don’t have permission to push to a GitHub repo but you want to contribute?\n\nMake a fork!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSince you can’t push to “upstream”, you can make a connected copy on GitHub called a “fork”\n\nYou can clone the fork and since you own it, you can push to it.\nOn GitHub, you can sync upstream changes with your fork and you can make pull requests to integrate changes on your fork into upstream.\nThat means you can contribute to anything! (as long as it is a public repo)"
+    "text": "Forks\n\n\nWhat if you don’t have permission to push to a GitHub repo but you want to contribute?\n\n\nMake a fork!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSince you can’t push to “upstream”, you can make a connected copy on GitHub called a “fork”\n\nYou can clone the fork and since you own it, you can push to it.\nOn GitHub, you can sync upstream changes with your fork and you can make pull requests to integrate changes on your fork into upstream.\nThat means you can contribute to anything! (as long as it is a public repo)"
   },
   {
     "objectID": "lessons/5-github-collab/slides.html#collaborating-with-forks",
