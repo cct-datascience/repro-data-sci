@@ -6,75 +6,90 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
-# Getting help
+## Shell commands
 
 ``` bash
 ls --help
 man ls
 ```
 
-# Getting help
-
 ``` bash
 git --help
 ```
 
-# Getting help
+## In RStudio
 
 ![](getwd.png){fig-align="center"}
 
-# Getting help
+## Package Websites
 
 [![](man_page.png){fig-align="center"}](https://dplyr.tidyverse.org/)
 
-# Getting help
+::: notes
+Package websites often are the same exact content as help pages + vignettes, but easier to read and examples have already been rendered
+:::
+
+## Asking questions
+
+![](posit_community.png)
+
+## Asking questions
 
 [![](stack_overflow.png){fig-align="center"}](https://stackoverflow.com/)
 
-# Getting help
+## Minimal Reproducible Examples
 
 [![](reprex.png){fig-align="center"}](https://reprex.tidyverse.org/)
 
-# Getting help
+::: notes
+The `reprex` package helps you make reproducible examples and format them for pasting into GitHub, Slack, etc.
+:::
+
+## Reporting bugs (or is it just me?)
 
 ![](cran.png)
 
-# Getting help
+::: notes
+Pay attention when opening an issue on GitHub---sometimes they are only supposed to be used for bug reports or feature requests and will direct you elsewhere for asking for help
+:::
+
+## Asking AI (not recommended)
 
 ![](gpt.png){fig-align="center"}
 
-# Beware of stochastic parrots
+## Beware of stochastic parrots[^1] {.smaller}
 
 -   LLMs don't *understand*, but are good at mimicry
 -   Use with care:
-    -   May be wrong
+    -   [May be wrong](https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/)
     -   May be inconsistent
 
-# Beware of stochastic parrots
+. . .
 
--   Tools like ChatGPT pose ethical issues
-    -   Plagiarism
-    -   Labor conditions
+-   Tools like ChatGPT pose possible ethical issues
+    -   [Plagiarism](https://www.wired.com/story/chatgpt-college-university-plagiarism/)
+    -   [Labor conditions](https://mashable.com/article/chat-gpt-open-ai-workers-exploitation)
     -   Inputs may be sent to parent companies
 
-# Getting help: fellow humans
+## Getting help at UArizona
 
 ![](ua-ds-slack.png){fig-align="center"}
 
-# Getting help: fellow humans
+## Getting help at UArizona
 
-![](drop-ins.png){fig-align="center"}
+[![](drop-ins.png){fig-align="center"}](https://datascience.cct.arizona.edu/drop-in-hours)
 
-# Resources: AI tools
+## Resources: AI tools
 
 -   [https://ecoevo.social/\@cboettig/110934209180569370](https://ecoevo.social/@cboettig/110934209180569370){.uri}
 -   <https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html>
--   <https://en.wikipedia.org/wiki/Stochastic_parrot>
 -   <https://dl.acm.org/doi/abs/10.1145/3442188.3445922>
 -   [https://medium.com/\@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0](https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0){.uri}
 
-# Resources: UA community
+## Resources: UA community
 
 -   [UA Data Science Institute](https://datascience.arizona.edu/)
 -   [UA Data Science Slack](https://jcoliver.github.io/uadatascience-slack/)
 -   [CCT Drop-in Hours, 9-10 on Tuesdays](https://datascience.cct.arizona.edu/drop-in-hours)
+
+[^1]: <https://en.wikipedia.org/wiki/Stochastic_parrot>

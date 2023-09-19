@@ -9,10 +9,19 @@ format: html
 
 -   Know your options for finding help
 
--   Live coding/discussion: options for finding help
+-   Understand how to create a minimal reproducible example to get better help
 
-    -   `--help` flag
-    -   `man` pages
-    -   Manual pages: `?` in R, package websites
-    -   StackOverflow
-    -   ChatGPT
+## Live coding/discussion: options for finding help
+
+-   `--help` flag
+-   `man` pages
+-   `?` in R
+-   Package websites (found with google or through CRAN page)
+    -   These often are the same material as help files + vignettes, but easier to read and examples are rendered on web
+-   StackOverflow
+    -   People aren't always the friendliest, but making a reprex helps you get good answers
+-   Minimal reproducible examples with `reprex`
+    -   Demo RStudio addin
+-   ChatGPT
+    -   Not recommended for beginners!
+    -   Sometimes (\~50% by some estimates) gives the wrong answer, difficult to spot mistakes if you're a beginner
