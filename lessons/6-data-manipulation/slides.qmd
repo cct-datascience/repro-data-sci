@@ -11,7 +11,38 @@ logo: "../../logo.png"
 
 ## Review
 
-## Warm-up: create a branch for today's work
+::: callout-note
+## Informal poll:
+
+Do you collaborate with anyone who could or currently uses GitHub?
+:::
+
+## Review
+
+::: callout-note
+## Chat:
+
+What would you say to encourage them to start?
+:::
+
+## Review
+
+::: callout-note
+## Chat:
+
+How would you get set up?
+What would be your core workflow?
+:::
+
+## Warm-up
+
+Create a branch for today's work.
+
+::: callout-note
+Create this branch from a repo you own, *not* the demo from Tuesday!
+
+We might need to create a repo for R scripting for this workshop.
+:::
 
 ## Learning objectives
 
@@ -65,9 +96,23 @@ How R understands data
 
 Data manipulation with dplyr and tidyr
 
-## Coding time
+## Wrapping up
 
-Practice git modify-add-commit cycle
+Work through the steps to synchronize the changes you've made today with GitHub.
+
+## Wrapping up
+
+Work through the steps to synchronize the changes you've made today with GitHub.
+
+::: {.callout-tip collapse="true"}
+## Command-line instructions
+
+`git add <your script name>`
+
+`git commit`
+
+`git push`
+:::
 
 ## Homework
 

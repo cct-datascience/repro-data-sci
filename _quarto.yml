@@ -36,6 +36,8 @@ website:
             text: "9. Documentation & Literate Programming"
           - href: "lessons/10-get-credit/notes.qmd"
             text: "10. Getting Credit For Your Hard Work"
+          - href: "lessons/11-getting-help/notes.qmd"
+            text: "11. Getting Help"
 format:
   html:
     theme: 
