@@ -25,15 +25,19 @@ git --help
 
 # Getting help
 
-![](man_page.png){fig-align="center"}
+[![](man_page.png){fig-align="center"}](https://dplyr.tidyverse.org/)
 
 # Getting help
 
-![](stack_overflow.png){fig-align="center"}
+[![](stack_overflow.png){fig-align="center"}](https://stackoverflow.com/)
 
 # Getting help
 
-![](reprex.png){fig-align="center"}
+[![](reprex.png){fig-align="center"}](https://reprex.tidyverse.org/)
+
+# Getting help
+
+![](cran.png)
 
 # Getting help
 
