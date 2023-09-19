@@ -242,14 +242,28 @@
     "href": "lessons/6-data-manipulation/slides.html#review",
     "title": "Data manipulation with dplyr and tidyr",
     "section": "Review",
-    "text": "Review"
+    "text": "Review\n\n\n\n\n\n\nInformal poll:\n\n\nDo you collaborate with anyone who could or currently uses GitHub?"
   },
   {
-    "objectID": "lessons/6-data-manipulation/slides.html#warm-up-create-a-branch-for-todays-work",
-    "href": "lessons/6-data-manipulation/slides.html#warm-up-create-a-branch-for-todays-work",
+    "objectID": "lessons/6-data-manipulation/slides.html#review-1",
+    "href": "lessons/6-data-manipulation/slides.html#review-1",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "Warm-up: create a branch for today’s work",
-    "text": "Warm-up: create a branch for today’s work"
+    "section": "Review",
+    "text": "Review\n\n\n\n\n\n\nChat:\n\n\nWhat would you say to encourage them to start?"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#review-2",
+    "href": "lessons/6-data-manipulation/slides.html#review-2",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Review",
+    "text": "Review\n\n\n\n\n\n\nChat:\n\n\nHow would you get set up? What would be your core workflow?"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#warm-up",
+    "href": "lessons/6-data-manipulation/slides.html#warm-up",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Warm-up",
+    "text": "Warm-up\nCreate a branch for today’s work.\n\n\n\n\n\n\nNote\n\n\nCreate this branch from a repo you own, not the demo from Tuesday!\nWe might need to create a repo for R scripting for this workshop."
   },
   {
     "objectID": "lessons/6-data-manipulation/slides.html#learning-objectives",
@@ -315,11 +329,18 @@
     "text": "Coding time\nData manipulation with dplyr and tidyr"
   },
   {
-    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-2",
-    "href": "lessons/6-data-manipulation/slides.html#coding-time-2",
+    "objectID": "lessons/6-data-manipulation/slides.html#wrapping-up",
+    "href": "lessons/6-data-manipulation/slides.html#wrapping-up",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time",
-    "text": "Coding time\nPractice git modify-add-commit cycle"
+    "section": "Wrapping up",
+    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub."
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#wrapping-up-1",
+    "href": "lessons/6-data-manipulation/slides.html#wrapping-up-1",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Wrapping up",
+    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub.\n\n\n\n\n\n\nCommand-line instructions\n\n\ngit add &lt;your script name&gt;\ngit commit\ngit push"
   },
   {
     "objectID": "lessons/6-data-manipulation/slides.html#homework",
@@ -397,6 +418,97 @@
     "title": "GitHub",
     "section": "References",
     "text": "References\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#shell-commands",
+    "href": "lessons/11-getting-help/slides.html#shell-commands",
+    "title": "Getting Help",
+    "section": "Shell commands",
+    "text": "Shell commands\nls --help\nman ls\ngit --help"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#in-rstudio",
+    "href": "lessons/11-getting-help/slides.html#in-rstudio",
+    "title": "Getting Help",
+    "section": "In RStudio",
+    "text": "In RStudio"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#package-websites",
+    "href": "lessons/11-getting-help/slides.html#package-websites",
+    "title": "Getting Help",
+    "section": "Package Websites",
+    "text": "Package Websites\n\n\nPackage websites often are the same exact content as help pages + vignettes, but easier to read and examples have already been rendered"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#asking-questions",
+    "href": "lessons/11-getting-help/slides.html#asking-questions",
+    "title": "Getting Help",
+    "section": "Asking questions",
+    "text": "Asking questions"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#asking-questions-1",
+    "href": "lessons/11-getting-help/slides.html#asking-questions-1",
+    "title": "Getting Help",
+    "section": "Asking questions",
+    "text": "Asking questions"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#minimal-reproducible-examples",
+    "href": "lessons/11-getting-help/slides.html#minimal-reproducible-examples",
+    "title": "Getting Help",
+    "section": "Minimal Reproducible Examples",
+    "text": "Minimal Reproducible Examples\n\n\nThe reprex package helps you make reproducible examples and format them for pasting into GitHub, Slack, etc."
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#reporting-bugs-or-is-it-just-me",
+    "href": "lessons/11-getting-help/slides.html#reporting-bugs-or-is-it-just-me",
+    "title": "Getting Help",
+    "section": "Reporting bugs (or is it just me?)",
+    "text": "Reporting bugs (or is it just me?)\n\n\nPay attention when opening an issue on GitHub—sometimes they are only supposed to be used for bug reports or feature requests and will direct you elsewhere for asking for help"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#asking-ai-not-recommended",
+    "href": "lessons/11-getting-help/slides.html#asking-ai-not-recommended",
+    "title": "Getting Help",
+    "section": "Asking AI (not recommended)",
+    "text": "Asking AI (not recommended)"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#beware-of-stochastic-parrots1",
+    "href": "lessons/11-getting-help/slides.html#beware-of-stochastic-parrots1",
+    "title": "Getting Help",
+    "section": "Beware of stochastic parrots1",
+    "text": "Beware of stochastic parrots1\n\nLLMs don’t understand, but are good at mimicry\nUse with care:\n\nMay be wrong\nMay be inconsistent\n\n\n\n\nTools like ChatGPT pose possible ethical issues\n\nPlagiarism\nLabor conditions\nInputs may be sent to parent companies\n\n\n\nhttps://en.wikipedia.org/wiki/Stochastic_parrot"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#getting-help-at-uarizona",
+    "href": "lessons/11-getting-help/slides.html#getting-help-at-uarizona",
+    "title": "Getting Help",
+    "section": "Getting help at UArizona",
+    "text": "Getting help at UArizona"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#getting-help-at-uarizona-1",
+    "href": "lessons/11-getting-help/slides.html#getting-help-at-uarizona-1",
+    "title": "Getting Help",
+    "section": "Getting help at UArizona",
+    "text": "Getting help at UArizona"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#resources-ai-tools",
+    "href": "lessons/11-getting-help/slides.html#resources-ai-tools",
+    "title": "Getting Help",
+    "section": "Resources: AI tools",
+    "text": "Resources: AI tools\n\nhttps://ecoevo.social/@cboettig/110934209180569370\nhttps://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html\nhttps://dl.acm.org/doi/abs/10.1145/3442188.3445922\nhttps://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#resources-ua-community",
+    "href": "lessons/11-getting-help/slides.html#resources-ua-community",
+    "title": "Getting Help",
+    "section": "Resources: UA community",
+    "text": "Resources: UA community\n\nUA Data Science Institute\nUA Data Science Slack\nCCT Drop-in Hours, 9-10 on Tuesdays\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#papers-with-open-code-are-cited-more",
@@ -726,6 +838,27 @@
     "title": "Getting Credit For Your Hard Work",
     "section": "Homework",
     "text": "Homework\n\nPrep for showcase session"
+  },
+  {
+    "objectID": "lessons/11-getting-help/notes.html",
+    "href": "lessons/11-getting-help/notes.html",
+    "title": "Getting help",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "lessons/11-getting-help/notes.html#objectives",
+    "href": "lessons/11-getting-help/notes.html#objectives",
+    "title": "Getting help",
+    "section": "Objectives",
+    "text": "Objectives\n\nKnow your options for finding help\nUnderstand how to create a minimal reproducible example to get better help"
+  },
+  {
+    "objectID": "lessons/11-getting-help/notes.html#live-codingdiscussion-options-for-finding-help",
+    "href": "lessons/11-getting-help/notes.html#live-codingdiscussion-options-for-finding-help",
+    "title": "Getting help",
+    "section": "Live coding/discussion: options for finding help",
+    "text": "Live coding/discussion: options for finding help\n\n--help flag\nman pages\n? in R\nPackage websites (found with google or through CRAN page)\n\nThese often are the same material as help files + vignettes, but easier to read and examples are rendered on web\n\nStackOverflow\n\nPeople aren’t always the friendliest, but making a reprex helps you get good answers\n\nMinimal reproducible examples with reprex\n\nDemo RStudio addin\n\nChatGPT\n\nNot recommended for beginners!\nSometimes (~50% by some estimates) gives the wrong answer, difficult to spot mistakes if you’re a beginner"
   },
   {
     "objectID": "lessons/4-github-basics/notes.html",

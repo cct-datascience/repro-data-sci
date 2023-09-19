@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reproducibility &amp; Data Science in R - Intermediate R programming II</title>
+<title>Reproducibility &amp; Data Science in R - Getting help</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -156,23 +156,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a>
-  <ul class="collapse">
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
-  </ul></li>
-  <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching notes</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#live-codingdiscussion-options-for-finding-help" id="toc-live-codingdiscussion-options-for-finding-help" class="nav-link" data-scroll-target="#live-codingdiscussion-options-for-finding-help">Live coding/discussion: options for finding help</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/8-intermediate-r-2/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/11-getting-help/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Intermediate R programming II</h1>
+<h1 class="title">Getting help</h1>
 </div>
 
 
@@ -187,50 +181,38 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="objective" class="level2">
-<h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<p>Learners will learn how to make their R code more reproducible using for loops and the apply family of functions.</p>
-</section>
-<section id="installation-materials" class="level2">
-<h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h2>
-<ol type="1">
-<li><a href="https://docs.google.com/presentation/d/1SbLl55PzVloqdapmMiLlbRNFE1xTVZNqtZ9UFt-evxg/edit#slide=id.p">Slides</a></li>
-<li><a href="https://datacarpentry.org/semester-biology/materials/for-loops-R/">Data Carpentry for Biologists for loop lecture</a> <!--# switch to R4DS chapter on iteration? --></li>
-<li><a href="https://datacarpentry.org/semester-biology/materials/iteration-without-loops-R/">Data Carpentry for Biologists iteration without loops lecture</a>? <!--# switch to R4DS chapter? --></li>
-</ol>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-<p>Can share their plans for apply skills to their research. Lead optional discussion on when to use base R vs.&nbsp;tidyverse packages/functions.</p>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
+<p><a href="../../lessons/11-getting-help/slides.html">Slides</a></p>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>For for loops lecture:
-<ul>
-<li>At “Do Tasks 3-4…”, do “Basic For Loop” exercises #2 &amp; #3</li>
-<li>Skip sections “Looping over multiple values” and “Looping with functions”</li>
-<li>Stop at “Looping over files” due to zip download issues</li>
-</ul></li>
-<li>For apply lecture:
-<ul>
-<li>Do “Size Estimates With Maximum” exercise</li>
-<li>Do “Size Estimates Vectorized 2” exercise</li>
-<li>Stop after first section in “Other apply functions (optional)” section</li>
-</ul></li>
+<li><p>Know your options for finding help</p></li>
+<li><p>Understand how to create a minimal reproducible example to get better help</p></li>
 </ul>
 </section>
-</section>
-<section id="teaching-notes" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h2>
+<section id="live-codingdiscussion-options-for-finding-help" class="level2">
+<h2 class="anchored" data-anchor-id="live-codingdiscussion-options-for-finding-help">Live coding/discussion: options for finding help</h2>
 <ul>
-<li>Create new R script for these materials. Put script into <code>repro-DS-workshop</code> repo</li>
-<li>Emphasize using for loops using index or non-index methods. Index can be useful for reducing memory use and for storing results</li>
-<li>If time, demonstrate combining <code>if</code> and <code>for</code></li>
+<li><code>--help</code> flag</li>
+<li><code>man</code> pages</li>
+<li><code>?</code> in R</li>
+<li>Package websites (found with google or through CRAN page)
+<ul>
+<li>These often are the same material as help files + vignettes, but easier to read and examples are rendered on web</li>
+</ul></li>
+<li>StackOverflow
+<ul>
+<li>People aren’t always the friendliest, but making a reprex helps you get good answers</li>
+</ul></li>
+<li>Minimal reproducible examples with <code>reprex</code>
+<ul>
+<li>Demo RStudio addin</li>
+</ul></li>
+<li>ChatGPT
+<ul>
+<li>Not recommended for beginners!</li>
+<li>Sometimes (~50% by some estimates) gives the wrong answer, difficult to spot mistakes if you’re a beginner</li>
+</ul></li>
 </ul>
-</section>
-<section id="homework" class="level2">
-<h2 class="anchored" data-anchor-id="homework">Homework</h2>
-<p>Identify a script from a research project that could benefit from a for loop, apply, conditional, or function.</p>
 
 
 </section>
