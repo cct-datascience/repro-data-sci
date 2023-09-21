@@ -88,13 +88,46 @@ install.packages("tidyr") # "reshaping" data
 install.packages("palmerpenguins") # open teaching dataset
 ```
 
-## Coding time
+## Coding time: Data types in R
 
-How R understands data
+Key points:
 
-## Coding time
+-   Major data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.
+-   Common tabular formats are `data.frame` or `tibble`
+-   You can perform "vectorized" operations on whole vectors (or columns) at once.
+-   Missing data are handled as `NA`s.
 
-Data manipulation with dplyr and tidyr
+## Coding time: `dplyr`
+
+Core `dplyr` verbs:
+
+-   `select` pulls columns
+-   `filter` pulls rows based on values
+-   `mutate` adds or modifies a column
+-   `group_by` + `summarize` calculates group-wise summary statistics
+-   `*_join` functions combine data frames based on matching columns
+
+## A note on pipes
+
+-   Chain functions together into "paragraphs"
+-   `%>%`: older, included in `dplyr` (ultimately depends on `magrittr`)
+-   `|>`: included in base R as of 4.1.0
+
+## Coding time: `tidyr`
+
+Key `tidyr` manipulations:
+
+-   `pivot_longer` turns *columns names* into *row values*
+-   `pivot_wider` creates new columns based on the values of a given field.
+
+::: callout-note
+Data should be as long as is reasonable (but not longer)!
+:::
+
+## Coding time: finding the right function
+
+-   `?tidyr::pivot_wider` and index pages
+-   More ways of getting help: see the [Getting Help](../11-getting-help/slides.html) section!
 
 ## Wrapping up
 
@@ -116,4 +149,5 @@ Work through the steps to synchronize the changes you've made today with GitHub.
 
 ## Homework
 
-None
+-   Find a script you have used in one of your projects and translate it to use these verbs.
+    -   Bonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!
