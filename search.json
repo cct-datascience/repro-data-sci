@@ -315,18 +315,39 @@
     "text": "Tidy data in R\nLet’s install some packages:\ninstall.packages(\"dplyr\") # dataframe manipulation\ninstall.packages(\"tidyr\") # \"reshaping\" data\ninstall.packages(\"palmerpenguins\") # open teaching dataset"
   },
   {
-    "objectID": "lessons/6-data-manipulation/slides.html#coding-time",
-    "href": "lessons/6-data-manipulation/slides.html#coding-time",
+    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-data-types-in-r",
+    "href": "lessons/6-data-manipulation/slides.html#coding-time-data-types-in-r",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time",
-    "text": "Coding time\nHow R understands data"
+    "section": "Coding time: Data types in R",
+    "text": "Coding time: Data types in R\nKey points:\n\nMajor data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.\nCommon tabular formats are data.frame or tibble\nYou can perform “vectorized” operations on whole vectors (or columns) at once.\nMissing data are handled as NAs."
   },
   {
-    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-1",
-    "href": "lessons/6-data-manipulation/slides.html#coding-time-1",
+    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-dplyr",
+    "href": "lessons/6-data-manipulation/slides.html#coding-time-dplyr",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time",
-    "text": "Coding time\nData manipulation with dplyr and tidyr"
+    "section": "Coding time: dplyr",
+    "text": "Coding time: dplyr\nCore dplyr verbs:\n\nselect pulls columns\nfilter pulls rows based on values\nmutate adds or modifies a column\ngroup_by + summarize calculates group-wise summary statistics\n*_join functions combine data frames based on matching columns"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#a-note-on-pipes",
+    "href": "lessons/6-data-manipulation/slides.html#a-note-on-pipes",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "A note on pipes",
+    "text": "A note on pipes\n\nChain functions together into “paragraphs”\n%&gt;%: older, included in dplyr (ultimately depends on magrittr)\n|&gt;: included in base R as of 4.1.0"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-tidyr",
+    "href": "lessons/6-data-manipulation/slides.html#coding-time-tidyr",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time: tidyr",
+    "text": "Coding time: tidyr\nKey tidyr manipulations:\n\npivot_longer turns columns names into row values\npivot_wider creates new columns based on the values of a given field.\n\n\n\n\n\n\n\nNote\n\n\nData should be as long as is reasonable (but not longer)!"
+  },
+  {
+    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-finding-the-right-function",
+    "href": "lessons/6-data-manipulation/slides.html#coding-time-finding-the-right-function",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time: finding the right function",
+    "text": "Coding time: finding the right function\n\n?tidyr::pivot_wider and index pages\nMore ways of getting help: see the Getting Help section!"
   },
   {
     "objectID": "lessons/6-data-manipulation/slides.html#wrapping-up",
@@ -347,7 +368,7 @@
     "href": "lessons/6-data-manipulation/slides.html#homework",
     "title": "Data manipulation with dplyr and tidyr",
     "section": "Homework",
-    "text": "Homework\nNone\n\n\n\nReproduciblity & Data Science in R"
+    "text": "Homework\n\nFind a script you have used in one of your projects and translate it to use these verbs.\n\nBonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!\n\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#review-homework",

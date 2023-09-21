@@ -515,13 +515,62 @@
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">install.packages</span>(<span class="st">"tidyr"</span>) <span class="co"># "reshaping" data</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>) <span class="co"># open teaching dataset</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="coding-time" class="slide level2">
-<h2>Coding time</h2>
-<p>How R understands data</p>
+<section id="coding-time-data-types-in-r" class="slide level2">
+<h2>Coding time: Data types in R</h2>
+<p>Key points:</p>
+<ul>
+<li>Major data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.</li>
+<li>Common tabular formats are <code>data.frame</code> or <code>tibble</code></li>
+<li>You can perform “vectorized” operations on whole vectors (or columns) at once.</li>
+<li>Missing data are handled as <code>NA</code>s.</li>
+</ul>
 </section>
-<section id="coding-time-1" class="slide level2">
-<h2>Coding time</h2>
-<p>Data manipulation with dplyr and tidyr</p>
+<section id="coding-time-dplyr" class="slide level2">
+<h2>Coding time: <code>dplyr</code></h2>
+<p>Core <code>dplyr</code> verbs:</p>
+<ul>
+<li><code>select</code> pulls columns</li>
+<li><code>filter</code> pulls rows based on values</li>
+<li><code>mutate</code> adds or modifies a column</li>
+<li><code>group_by</code> + <code>summarize</code> calculates group-wise summary statistics</li>
+<li><code>*_join</code> functions combine data frames based on matching columns</li>
+</ul>
+</section>
+<section id="a-note-on-pipes" class="slide level2">
+<h2>A note on pipes</h2>
+<ul>
+<li>Chain functions together into “paragraphs”</li>
+<li><code>%&gt;%</code>: older, included in <code>dplyr</code> (ultimately depends on <code>magrittr</code>)</li>
+<li><code>|&gt;</code>: included in base R as of 4.1.0</li>
+</ul>
+</section>
+<section id="coding-time-tidyr" class="slide level2">
+<h2>Coding time: <code>tidyr</code></h2>
+<p>Key <code>tidyr</code> manipulations:</p>
+<ul>
+<li><code>pivot_longer</code> turns <em>columns names</em> into <em>row values</em></li>
+<li><code>pivot_wider</code> creates new columns based on the values of a given field.</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Data should be as long as is reasonable (but not longer)!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="coding-time-finding-the-right-function" class="slide level2">
+<h2>Coding time: finding the right function</h2>
+<ul>
+<li><code>?tidyr::pivot_wider</code> and index pages</li>
+<li>More ways of getting help: see the <a href="../11-getting-help/slides.html">Getting Help</a> section!</li>
+</ul>
 </section>
 <section id="wrapping-up" class="slide level2">
 <h2>Wrapping up</h2>
@@ -548,7 +597,12 @@
 </section>
 <section id="homework" class="slide level2">
 <h2>Homework</h2>
-<p>None</p>
+<ul>
+<li>Find a script you have used in one of your projects and translate it to use these verbs.
+<ul>
+<li>Bonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!</li>
+</ul></li>
+</ul>
 
 
 <img src="../../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
