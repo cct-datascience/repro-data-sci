@@ -4,12 +4,7 @@ island_dat <- read.csv("https://github.com/cct-datascience/repro-data-sci/raw/r-
 
 head(island_dat)
 
-# Write a cleaning/wrangling script using...
-# select, mutate, grouping...
-# also ends_with...
-
-# you can use ends_with to convert _mm values to centimeters
-
+# Write a cleaning/wrangling script...
 # first do a mutate to change just flipper length
 # then do mutate(ends_with = "mm")
 
@@ -62,3 +57,7 @@ write.csv(species_by_sex_crosstabs, "crosstabs_biscoe.csv")
 ## then break into 3 (or 4): read data; clean data; get species means; get crosstabs; save file.
 ## then write a script chaining them together
 ## then separate into functions.R and script.R
+
+## at this moment I'm unsure how to pivot from this to control flow...
+## maybe when we go to make the function, use if else to get URL and name the files?
+

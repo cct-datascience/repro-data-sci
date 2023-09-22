@@ -9,46 +9,51 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
-# Review
+## Review
 
 -   Were you able to find a section of your own code to update using `ifelse` or a function?
 
-# Review
+## Review
 
 -   What ideas do you have about possible showcase projects?
 -   What questions do you have about that?
 
-# Warm-up: create a new branch for today's work
+## Warm-up: create a new branch for today's work
 
-# Learning objectives
+## Learning objectives
 
 -   Understand how iterating can improve your code
 -   Iterate using `for` loops
--   Iterate using `apply` functions <!--# Or purrr -->
+-   Iterate using `purrr`
 
-# What do we mean by iteration?
+## What do we mean by iteration?
 
-# Iteration by hand
+## Iteration by hand
 
-(visual of copy-paste)
+```         
+my_first_site <- read.csv("data_first.csv")
+my_second_site <- read.csv("data_second.csv")
+my_third_site <- read.csv("data_third.csv")
+...
+```
 
-# Why use code to iterate?
+## Why use code to iterate?
 
 -   Less code: fewer bugs, easier to understand
 -   Easier to apply to new situations
 -   Faster to write, maybe faster to run
 
-# Iteration 3 (or more!) ways
+## Iteration 3 (or more!) ways
 
 -   For loops
--   Functions + `apply` or `map`
+-   Functions + `purrr::map`
 
-# Coding time
+## Coding time: For loops
 
 -   For loop
 -   For loop with different indices
 
-# For loops: pros and cons
+## For loops: pros and cons
 
 -   Pros
     -   Simple to write and read
@@ -57,28 +62,20 @@ logo: "../../logo.png"
     -   Still somewhat inefficient to write
     -   Still somewhat fragile
 
-# The `apply` family
+## `purrr::map`
 
--   Provide the function name and inputs to the `apply` functions
--   **applies** the function to a vector, list, or matrix of inputs
+-   Family of functions to "map" a function over a series of items
+-   (Often) faster and (often) easier to read and write than a for loop
 
-# Coding time
-
-`apply`
-
-# `purrr`
-
--   Similar to apply, but easier to read
-
-# Coding time
+## Coding time
 
 `purrr`
 
-# Coding time
+## Coding time
 
 Commit this week's work and create a new PR.
 
-# Homework
+## Homework
 
 -   Identify a section of your code that could be made more efficient using a for loop or iterating using a function
 -   Continue thinking about showcase projects.
