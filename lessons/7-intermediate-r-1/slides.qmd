@@ -1,5 +1,5 @@
 ---
-title: "Intermediate R: functions and control flow"
+title: "Intermediate R: Advanced data wrangling, functions, and control flow"
 subtitle: "Session 7"
 date: "2023-09-26"
 date-format: long
@@ -9,53 +9,55 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
-# Review
-
-# Warm-up: update working branch from upstream
-
 # Learning objectives
 
--   Understand how functions and `ifelse` logic can improve code
--   Write your own functions to automate procedures in R
--   Write `ifelse` statements to orchestrate control flow in R
--   Practice working collaboratively in GitHub
+-   Write a data wrangling script using tidy verbs
+-   Convert a tailor-made script to a function
+-   Use if-else logic to generalize functions
 
-# Part I: Functions
+# Part I: Data wrangling refresher
 
-# What are functions in R?
+## Picking up from last week
+
+-   Commit last week's work to GitHub and push
+-   Merge your work to main!
+-   Create a new branch for today's work and pull
+
+## Data wrangling objectives:
+
+-   Write a data wrangling script using the functions we covered last week
+    -   Use `mutate` to convert units of columns
+    -   Use `summarize` to calculate group-wise summary statistics
+    -   Use `pivot_wider` to create cross-tabs
+-   Use "tidy selection" helpers to reduce repetition in this workflow!
+
+# Part II: Functions
+
+## What are functions in R?
 
 -   We use pre-written functions constantly.
 -   Automated "recipes" for executing code
 -   Inputs ("arguments") and outputs
 
-# Why write our own functions?
+## Why write our own functions?
 
 -   Avoid repetition (+ mistakes)
 -   Enhance portability + reproducibility
 
-# Coding time
+## Writing a function objectives
 
-Writing a function
+-   Convert our data wrangling script into a function
+-   Break this function into smaller, human-readable functions
+-   Make this function flexible to apply to other data
 
-# Coding time
+# Part III: Conditionals
 
-Function scoping
+## What are conditionals?
 
-# Coding time
+-   `if` and `ifelse` statements
+-   Balance readability and flexibility in functions
 
-Arguments: defaults and naming
-
-# Part II: `ifelse`
-
-# `ifelse` logic
-
--   What does an `if` statement do?
-
-# Applications in our work
-
--   Can you think of an instance where you might want to use `ifelse` logic?
-
-# Conditionals in R
+## Conditionals in R
 
 -   `==` for "is equal to"
 -   `!=` for "not equal to:
@@ -65,34 +67,26 @@ Arguments: defaults and naming
 -   `%in%` for, is this value in a vector of possibilities
 -   ...and more!
 
-# Coding time
+## Conditionals objectives
 
-Practice with conditionals in R
+-   Add `ifelse` logic to our data wrangling function
 
-# Coding time
+## Finishing up
 
-Building if/else statements with conditionals
+-   Commit your changes and push
+-   Open a pull request.
 
-# Coding time
+## Homework
 
-Nesting conditionals
+-   None, except for...
 
-# Coding time
-
-Practice committing changes and creating a PR.
-
-# Homework
-
--   Identify a section of your code that could be turned into a function or benefit from conditionals. Try it!
--   Begin thinking about a "showcase project".
-
-# Showcase projects
+## Show and tell (Late October)
 
 -   An opportunity to apply workshop skills to your own work.
 -   You could apply different parts to different projects, or more integratively to one single project.
 -   Optional, but encouraged!
 
-# Some inspirations
+## Some inspirations
 
 -   Turn the project folder for one of your current research project into a git/GitHub repo and/or R project
 -   Modify an R script to use functions, conditionals, or best-practices for code formatting
