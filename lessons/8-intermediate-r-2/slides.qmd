@@ -1,5 +1,5 @@
 ---
-title: "Intermediate R: iteration and mapping"
+title: "Intermediate R II: Getting help, iteration, and mapping"
 subtitle: "Session 8"
 date: "2023-09-28"
 date-format: long
@@ -17,6 +17,12 @@ logo: "../../logo.png"
 
 -   What ideas do you have about possible showcase projects?
 -   What questions do you have about that?
+
+# Part I: Getting help
+
+-   See the [Getting Help](../11-getting-help/slides.html) section!
+
+# Part II: More R scripting
 
 ## Warm-up: create a new branch for today's work
 

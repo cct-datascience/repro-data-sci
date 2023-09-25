@@ -1,5 +1,5 @@
 ---
-title: "Intermediate R: Getting help, advanced data wrangling, and functions"
+title: "Intermediate R: Advanced data wrangling, functions, and control flow"
 subtitle: "Session 7"
 date: "2023-09-26"
 date-format: long
@@ -13,12 +13,9 @@ logo: "../../logo.png"
 
 -   Write a data wrangling script using tidy verbs
 -   Convert a tailor-made script to a function
+-   Use if-else logic to generalize functions
 
-# Part I: Getting help
-
--   See the [Getting Help](../11-getting-help/slides.html) section!
-
-# Part II: Hands-on data wrangling
+# Part I: Data wrangling refresher
 
 ## Picking up from last week
 
@@ -28,12 +25,13 @@ logo: "../../logo.png"
 
 ## Data wrangling objectives:
 
--   Use `mutate` to convert units of columns
--   Use `summarize` to calculate group-wise summary statistics
--   Use `pivot_wider` to create cross-tabs
+-   Write a data wrangling script using the functions we covered last week
+    -   Use `mutate` to convert units of columns
+    -   Use `summarize` to calculate group-wise summary statistics
+    -   Use `pivot_wider` to create cross-tabs
 -   Use "tidy selection" helpers to reduce repetition in this workflow!
 
-# Part III: Functions
+# Part II: Functions
 
 ## What are functions in R?
 
@@ -52,9 +50,12 @@ logo: "../../logo.png"
 -   Break this function into smaller, human-readable functions
 -   Make this function flexible to apply to other data
 
-## A note on conditionals
+# Part III: Conditionals
 
--   `if` and `ifelse` statements balance readability and flexibility in functions
+## What are conditionals?
+
+-   `if` and `ifelse` statements
+-   Balance readability and flexibility in functions
 
 ## Conditionals in R
 
@@ -66,10 +67,18 @@ logo: "../../logo.png"
 -   `%in%` for, is this value in a vector of possibilities
 -   ...and more!
 
+## Conditionals objectives
+
+-   Add `ifelse` logic to our data wrangling function
+
 ## Finishing up
 
 -   Commit your changes and push
 -   Open a pull request.
+
+## Homework
+
+-   None, except for...
 
 ## Show and tell (Late October)
 
