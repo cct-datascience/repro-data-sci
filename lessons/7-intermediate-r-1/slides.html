@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="dcterms.date" content="2023-09-26">
-  <title>Reproducibility &amp; Data Science in R - Intermediate R: functions and control flow</title>
+  <title>Reproducibility &amp; Data Science in R - Intermediate R: Advanced data wrangling, functions, and control flow</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Intermediate R: functions and control flow</h1>
+  <h1 class="title">Intermediate R: Advanced data wrangling, functions, and control flow</h1>
   <p class="subtitle">Session 7</p>
 
 <div class="quarto-title-authors">
@@ -335,84 +335,82 @@
 
   <p class="date">September 26, 2023</p>
 </section>
-<section id="review" class="title-slide slide level1 center">
-<h1>Review</h1>
-
-</section>
-
-<section id="warm-up-update-working-branch-from-upstream" class="title-slide slide level1 center">
-<h1>Warm-up: update working branch from upstream</h1>
-
-</section>
-
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning objectives</h1>
 <ul>
-<li>Understand how functions and <code>ifelse</code> logic can improve code</li>
-<li>Write your own functions to automate procedures in R</li>
-<li>Write <code>ifelse</code> statements to orchestrate control flow in R</li>
-<li>Practice working collaboratively in GitHub</li>
+<li>Write a data wrangling script using tidy verbs</li>
+<li>Convert a tailor-made script to a function</li>
+<li>Use if-else logic to generalize functions</li>
 </ul>
 </section>
 
-<section id="part-i-functions" class="title-slide slide level1 center">
-<h1>Part I: Functions</h1>
+<section>
+<section id="part-i-data-wrangling-refresher" class="title-slide slide level1 center">
+<h1>Part I: Data wrangling refresher</h1>
 
 </section>
+<section id="picking-up-from-last-week" class="slide level2">
+<h2>Picking up from last week</h2>
+<ul>
+<li>Commit last week’s work to GitHub and push</li>
+<li>Merge your work to main!</li>
+<li>Create a new branch for today’s work and pull</li>
+</ul>
+</section>
+<section id="data-wrangling-objectives" class="slide level2">
+<h2>Data wrangling objectives:</h2>
+<ul>
+<li>Write a data wrangling script using the functions we covered last week
+<ul>
+<li>Use <code>mutate</code> to convert units of columns</li>
+<li>Use <code>summarize</code> to calculate group-wise summary statistics</li>
+<li>Use <code>pivot_wider</code> to create cross-tabs</li>
+</ul></li>
+<li>Use “tidy selection” helpers to reduce repetition in this workflow!</li>
+</ul>
+</section></section>
+<section>
+<section id="part-ii-functions" class="title-slide slide level1 center">
+<h1>Part II: Functions</h1>
 
-<section id="what-are-functions-in-r" class="title-slide slide level1 center">
-<h1>What are functions in R?</h1>
+</section>
+<section id="what-are-functions-in-r" class="slide level2">
+<h2>What are functions in R?</h2>
 <ul>
 <li>We use pre-written functions constantly.</li>
 <li>Automated “recipes” for executing code</li>
 <li>Inputs (“arguments”) and outputs</li>
 </ul>
 </section>
-
-<section id="why-write-our-own-functions" class="title-slide slide level1 center">
-<h1>Why write our own functions?</h1>
+<section id="why-write-our-own-functions" class="slide level2">
+<h2>Why write our own functions?</h2>
 <ul>
 <li>Avoid repetition (+ mistakes)</li>
 <li>Enhance portability + reproducibility</li>
 </ul>
 </section>
-
-<section id="coding-time" class="title-slide slide level1 center">
-<h1>Coding time</h1>
-<p>Writing a function</p>
-</section>
-
-<section id="coding-time-1" class="title-slide slide level1 center">
-<h1>Coding time</h1>
-<p>Function scoping</p>
-</section>
-
-<section id="coding-time-2" class="title-slide slide level1 center">
-<h1>Coding time</h1>
-<p>Arguments: defaults and naming</p>
-</section>
-
-<section id="part-ii-ifelse" class="title-slide slide level1 center">
-<h1>Part II: <code>ifelse</code></h1>
-
-</section>
-
-<section id="ifelse-logic" class="title-slide slide level1 center">
-<h1><code>ifelse</code> logic</h1>
+<section id="writing-a-function-objectives" class="slide level2">
+<h2>Writing a function objectives</h2>
 <ul>
-<li>What does an <code>if</code> statement do?</li>
+<li>Convert our data wrangling script into a function</li>
+<li>Break this function into smaller, human-readable functions</li>
+<li>Make this function flexible to apply to other data</li>
+</ul>
+</section></section>
+<section>
+<section id="part-iii-conditionals" class="title-slide slide level1 center">
+<h1>Part III: Conditionals</h1>
+
+</section>
+<section id="what-are-conditionals" class="slide level2">
+<h2>What are conditionals?</h2>
+<ul>
+<li><code>if</code> and <code>ifelse</code> statements</li>
+<li>Balance readability and flexibility in functions</li>
 </ul>
 </section>
-
-<section id="applications-in-our-work" class="title-slide slide level1 center">
-<h1>Applications in our work</h1>
-<ul>
-<li>Can you think of an instance where you might want to use <code>ifelse</code> logic?</li>
-</ul>
-</section>
-
-<section id="conditionals-in-r" class="title-slide slide level1 center">
-<h1>Conditionals in R</h1>
+<section id="conditionals-in-r" class="slide level2">
+<h2>Conditionals in R</h2>
 <ul>
 <li><code>==</code> for “is equal to”</li>
 <li><code>!=</code> for “not equal to:</li>
@@ -423,46 +421,35 @@
 <li>…and more!</li>
 </ul>
 </section>
-
-<section id="coding-time-3" class="title-slide slide level1 center">
-<h1>Coding time</h1>
-<p>Practice with conditionals in R</p>
-</section>
-
-<section id="coding-time-4" class="title-slide slide level1 center">
-<h1>Coding time</h1>
-<p>Building if/else statements with conditionals</p>
-</section>
-
-<section id="coding-time-5" class="title-slide slide level1 center">
-<h1>Coding time</h1>
-<p>Nesting conditionals</p>
-</section>
-
-<section id="coding-time-6" class="title-slide slide level1 center">
-<h1>Coding time</h1>
-<p>Practice committing changes and creating a PR.</p>
-</section>
-
-<section id="homework" class="title-slide slide level1 center">
-<h1>Homework</h1>
+<section id="conditionals-objectives" class="slide level2">
+<h2>Conditionals objectives</h2>
 <ul>
-<li>Identify a section of your code that could be turned into a function or benefit from conditionals. Try it!</li>
-<li>Begin thinking about a “showcase project”.</li>
+<li>Add <code>ifelse</code> logic to our data wrangling function</li>
 </ul>
 </section>
-
-<section id="showcase-projects" class="title-slide slide level1 center">
-<h1>Showcase projects</h1>
+<section id="finishing-up" class="slide level2">
+<h2>Finishing up</h2>
+<ul>
+<li>Commit your changes and push</li>
+<li>Open a pull request.</li>
+</ul>
+</section>
+<section id="homework" class="slide level2">
+<h2>Homework</h2>
+<ul>
+<li>None, except for…</li>
+</ul>
+</section>
+<section id="show-and-tell-late-october" class="slide level2">
+<h2>Show and tell (Late October)</h2>
 <ul>
 <li>An opportunity to apply workshop skills to your own work.</li>
 <li>You could apply different parts to different projects, or more integratively to one single project.</li>
 <li>Optional, but encouraged!</li>
 </ul>
 </section>
-
-<section id="some-inspirations" class="title-slide slide level1 center">
-<h1>Some inspirations</h1>
+<section id="some-inspirations" class="slide level2">
+<h2>Some inspirations</h2>
 <ul>
 <li>Turn the project folder for one of your current research project into a git/GitHub repo and/or R project</li>
 <li>Modify an R script to use functions, conditionals, or best-practices for code formatting</li>
@@ -473,7 +460,7 @@
 <img src="../../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

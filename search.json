@@ -371,6 +371,90 @@
     "text": "Homework\n\nFind a script you have used in one of your projects and translate it to use these verbs.\n\nBonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!\n\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#picking-up-from-last-week",
+    "href": "lessons/7-intermediate-r-1/slides.html#picking-up-from-last-week",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Picking up from last week",
+    "text": "Picking up from last week\n\nCommit last week’s work to GitHub and push\nMerge your work to main!\nCreate a new branch for today’s work and pull"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#data-wrangling-objectives",
+    "href": "lessons/7-intermediate-r-1/slides.html#data-wrangling-objectives",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Data wrangling objectives:",
+    "text": "Data wrangling objectives:\n\nWrite a data wrangling script using the functions we covered last week\n\nUse mutate to convert units of columns\nUse summarize to calculate group-wise summary statistics\nUse pivot_wider to create cross-tabs\n\nUse “tidy selection” helpers to reduce repetition in this workflow!"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#what-are-functions-in-r",
+    "href": "lessons/7-intermediate-r-1/slides.html#what-are-functions-in-r",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "What are functions in R?",
+    "text": "What are functions in R?\n\nWe use pre-written functions constantly.\nAutomated “recipes” for executing code\nInputs (“arguments”) and outputs"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#why-write-our-own-functions",
+    "href": "lessons/7-intermediate-r-1/slides.html#why-write-our-own-functions",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Why write our own functions?",
+    "text": "Why write our own functions?\n\nAvoid repetition (+ mistakes)\nEnhance portability + reproducibility"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#writing-a-function-objectives",
+    "href": "lessons/7-intermediate-r-1/slides.html#writing-a-function-objectives",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Writing a function objectives",
+    "text": "Writing a function objectives\n\nConvert our data wrangling script into a function\nBreak this function into smaller, human-readable functions\nMake this function flexible to apply to other data"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#what-are-conditionals",
+    "href": "lessons/7-intermediate-r-1/slides.html#what-are-conditionals",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "What are conditionals?",
+    "text": "What are conditionals?\n\nif and ifelse statements\nBalance readability and flexibility in functions"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#conditionals-in-r",
+    "href": "lessons/7-intermediate-r-1/slides.html#conditionals-in-r",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Conditionals in R",
+    "text": "Conditionals in R\n\n== for “is equal to”\n!= for “not equal to:\n&lt;, &gt; for less than/greater than\n&lt;=, &gt;= for less than or equal to/greater than or equal to\nis.na() for is it NA?\n%in% for, is this value in a vector of possibilities\n…and more!"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#conditionals-objectives",
+    "href": "lessons/7-intermediate-r-1/slides.html#conditionals-objectives",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Conditionals objectives",
+    "text": "Conditionals objectives\n\nAdd ifelse logic to our data wrangling function"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#finishing-up",
+    "href": "lessons/7-intermediate-r-1/slides.html#finishing-up",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Finishing up",
+    "text": "Finishing up\n\nCommit your changes and push\nOpen a pull request."
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#homework",
+    "href": "lessons/7-intermediate-r-1/slides.html#homework",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Homework",
+    "text": "Homework\n\nNone, except for…"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#show-and-tell-late-october",
+    "href": "lessons/7-intermediate-r-1/slides.html#show-and-tell-late-october",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Show and tell (Late October)",
+    "text": "Show and tell (Late October)\n\nAn opportunity to apply workshop skills to your own work.\nYou could apply different parts to different projects, or more integratively to one single project.\nOptional, but encouraged!"
+  },
+  {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#some-inspirations",
+    "href": "lessons/7-intermediate-r-1/slides.html#some-inspirations",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Some inspirations",
+    "text": "Some inspirations\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, conditionals, or best-practices for code formatting\nImprove directory organization for project or your entire computer!\n\n\n\n\nReproduciblity & Data Science in R"
+  },
+  {
     "objectID": "lessons/4-github-basics/slides.html#review-homework",
     "href": "lessons/4-github-basics/slides.html#review-homework",
     "title": "GitHub",
@@ -712,6 +796,104 @@
     "title": "Collaborate With GitHub",
     "section": "References",
     "text": "References\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#review",
+    "href": "lessons/8-intermediate-r-2/slides.html#review",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Review",
+    "text": "Review\n\nWere you able to find a section of your own code to update using ifelse or a function?"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#review-1",
+    "href": "lessons/8-intermediate-r-2/slides.html#review-1",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Review",
+    "text": "Review\n\nWhat ideas do you have about possible showcase projects?\nWhat questions do you have about that?"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#warm-up-create-a-new-branch-for-todays-work",
+    "href": "lessons/8-intermediate-r-2/slides.html#warm-up-create-a-new-branch-for-todays-work",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Warm-up: create a new branch for today’s work",
+    "text": "Warm-up: create a new branch for today’s work"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#learning-objectives",
+    "href": "lessons/8-intermediate-r-2/slides.html#learning-objectives",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nUnderstand how iterating can improve your code\nIterate using for loops\nIterate using purrr"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#what-do-we-mean-by-iteration",
+    "href": "lessons/8-intermediate-r-2/slides.html#what-do-we-mean-by-iteration",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "What do we mean by iteration?",
+    "text": "What do we mean by iteration?"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#iteration-by-hand",
+    "href": "lessons/8-intermediate-r-2/slides.html#iteration-by-hand",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Iteration by hand",
+    "text": "Iteration by hand\nmy_first_site &lt;- read.csv(\"data_first.csv\")\nmy_second_site &lt;- read.csv(\"data_second.csv\")\nmy_third_site &lt;- read.csv(\"data_third.csv\")\n..."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#why-use-code-to-iterate",
+    "href": "lessons/8-intermediate-r-2/slides.html#why-use-code-to-iterate",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Why use code to iterate?",
+    "text": "Why use code to iterate?\n\nLess code: fewer bugs, easier to understand\nEasier to apply to new situations\nFaster to write, maybe faster to run"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#iteration-3-or-more-ways",
+    "href": "lessons/8-intermediate-r-2/slides.html#iteration-3-or-more-ways",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Iteration 3 (or more!) ways",
+    "text": "Iteration 3 (or more!) ways\n\nFor loops\nFunctions + purrr::map"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#coding-time-for-loops",
+    "href": "lessons/8-intermediate-r-2/slides.html#coding-time-for-loops",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Coding time: For loops",
+    "text": "Coding time: For loops\n\nFor loop\nFor loop with different indices"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#for-loops-pros-and-cons",
+    "href": "lessons/8-intermediate-r-2/slides.html#for-loops-pros-and-cons",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "For loops: pros and cons",
+    "text": "For loops: pros and cons\n\nPros\n\nSimple to write and read\n\nCons\n\nCan be slow\nStill somewhat inefficient to write\nStill somewhat fragile"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#purrrmap",
+    "href": "lessons/8-intermediate-r-2/slides.html#purrrmap",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "purrr::map",
+    "text": "purrr::map\n\nFamily of functions to “map” a function over a series of items\n(Often) faster and (often) easier to read and write than a for loop"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#coding-time",
+    "href": "lessons/8-intermediate-r-2/slides.html#coding-time",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Coding time",
+    "text": "Coding time\npurrr"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#coding-time-1",
+    "href": "lessons/8-intermediate-r-2/slides.html#coding-time-1",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Coding time",
+    "text": "Coding time\nCommit this week’s work and create a new PR."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-2/slides.html#homework",
+    "href": "lessons/8-intermediate-r-2/slides.html#homework",
+    "title": "Intermediate R II: Getting help, iteration, and mapping",
+    "section": "Homework",
+    "text": "Homework\n\nIdentify a section of your code that could be made more efficient using a for loop or iterating using a function\nContinue thinking about showcase projects.\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "index.html",
