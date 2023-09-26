@@ -406,6 +406,13 @@
     "text": "Writing a function objectives\n\nConvert our data wrangling script into a function\nBreak this function into smaller, human-readable functions\nMake this function flexible to apply to other data"
   },
   {
+    "objectID": "lessons/7-intermediate-r-1/slides.html#anatomy-of-a-function",
+    "href": "lessons/7-intermediate-r-1/slides.html#anatomy-of-a-function",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Anatomy of a function",
+    "text": "Anatomy of a function\n# Defining a function\n# a_function will be the name of the function\n# arguments go within the ()\n# code goes in the curly braces\n\na_function &lt;- function(an_argument) {\n  # code to execute goes here\n  \n  # whatever is inside return() comes out of the funciton\n  return(final_output) \n}\n\n# Run the code to create the function\n# Then you can use it:\n# a_function(&lt;some_input&gt;)\n#"
+  },
+  {
     "objectID": "lessons/7-intermediate-r-1/slides.html#what-are-conditionals",
     "href": "lessons/7-intermediate-r-1/slides.html#what-are-conditionals",
     "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
