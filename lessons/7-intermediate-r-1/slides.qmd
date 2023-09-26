@@ -50,6 +50,27 @@ logo: "../../logo.png"
 -   Break this function into smaller, human-readable functions
 -   Make this function flexible to apply to other data
 
+## Anatomy of a function
+
+``` r
+# Defining a function
+# a_function will be the name of the function
+# arguments go within the ()
+# code goes in the curly braces
+
+a_function <- function(an_argument) {
+  # code to execute goes here
+  
+  # whatever is inside return() comes out of the funciton
+  return(final_output) 
+}
+
+# Run the code to create the function
+# Then you can use it:
+# a_function(<some_input>)
+# 
+```
+
 # Part III: Conditionals
 
 ## What are conditionals?
