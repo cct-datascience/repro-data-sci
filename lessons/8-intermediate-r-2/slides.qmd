@@ -1,5 +1,5 @@
 ---
-title: "Intermediate R II: Getting help, iteration, and mapping"
+title: "Intermediate R II: Functions cont'd, iteration, and getting help"
 subtitle: "Session 8"
 date: "2023-09-28"
 date-format: long
@@ -9,38 +9,43 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
-## Review
+# Before we jump in...
 
--   Were you able to find a section of your own code to update using `ifelse` or a function?
+## Show and tell (Late October)
 
-## Review
+-   An opportunity to apply workshop skills to your own work.
+-   You could apply different parts to different projects, or more integratively to one single project.
+-   Optional, but encouraged!
 
--   What ideas do you have about possible showcase projects?
--   What questions do you have about that?
+## Some inspirations
 
-# Part I: Getting help
+-   Turn the project folder for one of your current research project into a git/GitHub repo and/or R project
+-   Modify an R script to use functions, conditionals, or best-practices for code formatting
+-   Improve directory organization for project or your entire computer!
 
--   See the [Getting Help](../11-getting-help/slides.html) section!
+# Today's objectives
 
-# Part II: More R scripting
+-   Modify our data cleaning function to apply to different islands
+-   Use iteration to apply this function to each island
+-   Organize our workflow into "functions" and "running" scripts
+-   Learn how to get help with more advanced topics
 
-## Warm-up: create a new branch for today's work
+# Part I: Generalizing a function
 
-## Learning objectives
+-   Open up your Rproject from Tuesday
+-   Coding objectives:
+    -   Make sure the function we wrote works
+    -   Apply this function to different islands by swapping URLS
+    -   Add "ifelse" logic to avoid having to re-type the URL every time
 
--   Understand how iterating can improve your code
--   Iterate using `for` loops
--   Iterate using `purrr`
-
-## What do we mean by iteration?
+# Part II: Iteration
 
 ## Iteration by hand
 
-```         
+``` r
 my_first_site <- read.csv("data_first.csv")
 my_second_site <- read.csv("data_second.csv")
 my_third_site <- read.csv("data_third.csv")
-...
 ```
 
 ## Why use code to iterate?
@@ -49,39 +54,28 @@ my_third_site <- read.csv("data_third.csv")
 -   Easier to apply to new situations
 -   Faster to write, maybe faster to run
 
-## Iteration 3 (or more!) ways
+## Iteration using for loops
 
--   For loops
--   Functions + `purrr::map`
+-   Coding objectives:
+    -   Write a for loop to apply our cleaning function to each island
+    -   Store the results in a list
+    -   Convert this list back to a dataframe
 
-## Coding time: For loops
+## Iteration using purrr::map
 
--   For loop
--   For loop with different indices
+-   Coding objectives:
+    -   Use `purrr::map` as an alternative to a for loop
+    -   Demonstrate `purrr` applied to more complex workflows
 
-## For loops: pros and cons
+# Part III: Getting help
 
--   Pros
-    -   Simple to write and read
--   Cons
-    -   Can be slow
-    -   Still somewhat inefficient to write
-    -   Still somewhat fragile
+-   See the [Getting Help](../11-getting-help/slides.html) section!
 
-## `purrr::map`
-
--   Family of functions to "map" a function over a series of items
--   (Often) faster and (often) easier to read and write than a for loop
-
-## Coding time
-
-`purrr`
-
-## Coding time
+# Wrap-up
 
 Commit this week's work and create a new PR.
 
 ## Homework
 
 -   Identify a section of your code that could be made more efficient using a for loop or iterating using a function
--   Continue thinking about showcase projects.
+-   Start thinking about show-and-tell opportunities!
