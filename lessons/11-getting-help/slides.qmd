@@ -21,25 +21,25 @@ git --help
 
 ![](getwd.png){fig-align="center"}
 
-## Package Websites
+## Package Websites {.nostretch}
 
-[![](man_page.png){fig-align="center"}](https://dplyr.tidyverse.org/)
+[![](man_page.png){fig-align="center" width="640"}](https://dplyr.tidyverse.org/)
 
 ::: notes
 Package websites often are the same exact content as help pages + vignettes, but easier to read and examples have already been rendered
 :::
 
-## Asking questions
+## Asking questions {.nostretch}
 
-![](posit_community.png)
+[![](posit_community.png)](https://community.rstudio.com/)
 
-## Asking questions
+## Asking questions {.nostretch}
 
-[![](stack_overflow.png){fig-align="center"}](https://stackoverflow.com/)
+[![](stack_overflow.png){fig-align="center" width="469"}](https://stackoverflow.com/)
 
-## Minimal Reproducible Examples
+## Minimal Reproducible Examples {.nostretch}
 
-[![](reprex.png){fig-align="center"}](https://reprex.tidyverse.org/)
+[![](reprex.png){fig-align="center" width="620"}](https://reprex.tidyverse.org/)
 
 ::: notes
 The `reprex` package helps you make reproducible examples and format them for pasting into GitHub, Slack, etc.
@@ -75,7 +75,7 @@ Pay attention when opening an issue on GitHub---sometimes they are only supposed
 
 ![](ua-ds-slack.png){fig-align="center"}
 
-## Getting help at UArizona
+## Getting help at UArizona {.nostretch}
 
 [![](drop-ins.png){fig-align="center"}](https://datascience.cct.arizona.edu/drop-in-hours)
 
