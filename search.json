@@ -452,7 +452,7 @@
     "href": "lessons/11-getting-help/slides.html#package-websites",
     "title": "Getting Help",
     "section": "Package Websites",
-    "text": "Package Websites\n\n\nPackage websites often are the same exact content as help pages + vignettes, but easier to read and examples have already been rendered"
+    "text": "Package Websites\n\n\n\n\n\n\nPackage websites often are the same exact content as help pages + vignettes, but easier to read and examples have already been rendered"
   },
   {
     "objectID": "lessons/11-getting-help/slides.html#asking-questions",
@@ -473,7 +473,7 @@
     "href": "lessons/11-getting-help/slides.html#minimal-reproducible-examples",
     "title": "Getting Help",
     "section": "Minimal Reproducible Examples",
-    "text": "Minimal Reproducible Examples\n\n\nThe reprex package helps you make reproducible examples and format them for pasting into GitHub, Slack, etc."
+    "text": "Minimal Reproducible Examples\n\n\n\n\n\n\nThe reprex package helps you make reproducible examples and format them for pasting into GitHub, Slack, etc."
   },
   {
     "objectID": "lessons/11-getting-help/slides.html#reporting-bugs-or-is-it-just-me",
