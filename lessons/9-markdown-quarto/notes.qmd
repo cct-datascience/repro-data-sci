@@ -17,6 +17,14 @@ Understand how to write a README.md using markdown basics and introduce the conc
     -   Structure of repo (what files do what?)
     -   How to reproduce results
 
+-   Example READMEs:
+
+    -   <https://github.com/Aariq/BACE-legacy-effects>
+
+    -   <https://github.com/ecohealthalliance/amr-analysis>
+
+    -   <https://github.com/atredennick/size-environment>
+
 -   Markdown & formatting a README.md
 
     -   Markdown is a markup language: plain text --\> formatted text

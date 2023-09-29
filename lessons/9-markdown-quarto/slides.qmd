@@ -23,6 +23,14 @@ logo: "../../logo.png"
 -   Instructions on how to reproduce results
 :::
 
+## Example READMEs for research compendia
+
+-   <https://github.com/Aariq/BACE-legacy-effects>
+
+-   <https://github.com/ecohealthalliance/amr-analysis>
+
+-   <https://github.com/atredennick/size-environment>
+
 ## Markdown
 
 Markdown is a "markup language" that let's you write plain text to indicate formatting.
@@ -43,9 +51,9 @@ Check **Help \> Markdown quick reference** in RStudio
 ## README.md
 
 ::: callout-tip
-## Exercise
+## Exercise (\~5 min)
 
-Edit README.md using some of the markdown tips from the RStudio markdown quick reference
+Edit a README.md using some of the markdown tips from the RStudio markdown quick reference
 :::
 
 ## Common markdown pitfalls
@@ -118,6 +126,7 @@ You need two line breaks for that!
 -   Reproducible manuscripts
 
 -   ...and more!
+    [^1]
 :::
 
 ## How does Quarto work?
@@ -180,3 +189,7 @@ It includes all the features of RMarkdown and more.
 -   Quarto for Academics [talk](https://www.youtube.com/watch?v=EbAAmrB0luA&ab_channel=PositPBC)
 
 -   Full Quarto [guide](https://quarto.org/docs/guide/) and [reference](https://quarto.org/docs/reference/) (searchable!)
+
+-   [Quarto Manuscripts](https://quarto.org/docs/manuscripts/) (upcoming feature)
+
+[^1]: These slides and the workshop series website were made entirely with Quarto, for example!
