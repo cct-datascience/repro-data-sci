@@ -126,7 +126,6 @@ You need two line breaks for that!
 -   Reproducible manuscripts
 
 -   ...and more!
-    [^1]
 :::
 
 ## How does Quarto work?
@@ -191,5 +190,3 @@ It includes all the features of RMarkdown and more.
 -   Full Quarto [guide](https://quarto.org/docs/guide/) and [reference](https://quarto.org/docs/reference/) (searchable!)
 
 -   [Quarto Manuscripts](https://quarto.org/docs/manuscripts/) (upcoming feature)
-
-[^1]: These slides and the workshop series website were made entirely with Quarto, for example!
