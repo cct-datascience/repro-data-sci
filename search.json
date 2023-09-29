@@ -648,7 +648,7 @@
     "href": "lessons/9-markdown-quarto/slides.html#what-is-quarto",
     "title": "Documentation & Literate Programming",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\n“An open-source scientific and technical publishing system”\n\n\nMix markdown, code, and the output of code\nProduce beautifully formatted documents in a variety of formats (html, Word, pdf, etc.)\nData analysis notebook\nPresentations for collaborators\nReproducible manuscripts\n…and more! 1\n\n\nThese slides and the workshop series website were made entirely with Quarto, for example!"
+    "text": "What is Quarto?\n“An open-source scientific and technical publishing system”\n\n\nMix markdown, code, and the output of code\nProduce beautifully formatted documents in a variety of formats (html, Word, pdf, etc.)\nData analysis notebook\nPresentations for collaborators\nReproducible manuscripts\n…and more!"
   },
   {
     "objectID": "lessons/9-markdown-quarto/slides.html#how-does-quarto-work",
