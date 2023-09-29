@@ -609,6 +609,13 @@
     "text": "README\nREADME.md is the landing page for your GitHub repo, and the first place to look for help understanding it.\n\n\nBrief project summary\nProject status (just an experiment, WIP, archived?)\nHow to give credit (e.g. if it is associated with a published paper)\nStructure of repo (which files do what?)\nInstructions on how to reproduce results"
   },
   {
+    "objectID": "lessons/9-markdown-quarto/slides.html#example-readmes-for-research-compendia",
+    "href": "lessons/9-markdown-quarto/slides.html#example-readmes-for-research-compendia",
+    "title": "Documentation & Literate Programming",
+    "section": "Example READMEs for research compendia",
+    "text": "Example READMEs for research compendia\n\nhttps://github.com/Aariq/BACE-legacy-effects\nhttps://github.com/ecohealthalliance/amr-analysis\nhttps://github.com/atredennick/size-environment"
+  },
+  {
     "objectID": "lessons/9-markdown-quarto/slides.html#markdown",
     "href": "lessons/9-markdown-quarto/slides.html#markdown",
     "title": "Documentation & Literate Programming",
@@ -620,7 +627,7 @@
     "href": "lessons/9-markdown-quarto/slides.html#readme.md",
     "title": "Documentation & Literate Programming",
     "section": "README.md",
-    "text": "README.md\n\n\n\n\n\n\nExercise\n\n\nEdit README.md using some of the markdown tips from the RStudio markdown quick reference"
+    "text": "README.md\n\n\n\n\n\n\nExercise (~5 min)\n\n\nEdit a README.md using some of the markdown tips from the RStudio markdown quick reference"
   },
   {
     "objectID": "lessons/9-markdown-quarto/slides.html#common-markdown-pitfalls",
@@ -641,7 +648,7 @@
     "href": "lessons/9-markdown-quarto/slides.html#what-is-quarto",
     "title": "Documentation & Literate Programming",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\n“An open-source scientific and technical publishing system”\n\n\nMix markdown, code, and the output of code\nProduce beautifully formatted documents in a variety of formats (html, Word, pdf, etc.)\nData analysis notebook\nPresentations for collaborators\nReproducible manuscripts\n…and more!"
+    "text": "What is Quarto?\n“An open-source scientific and technical publishing system”\n\n\nMix markdown, code, and the output of code\nProduce beautifully formatted documents in a variety of formats (html, Word, pdf, etc.)\nData analysis notebook\nPresentations for collaborators\nReproducible manuscripts\n…and more! 1\n\n\nThese slides and the workshop series website were made entirely with Quarto, for example!"
   },
   {
     "objectID": "lessons/9-markdown-quarto/slides.html#how-does-quarto-work",
@@ -669,7 +676,7 @@
     "href": "lessons/9-markdown-quarto/slides.html#learn-more",
     "title": "Documentation & Literate Programming",
     "section": "Learn more",
-    "text": "Learn more\n\nGetting started tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\n\n\n\n\nReproduciblity & Data Science in R"
+    "text": "Learn more\n\nGetting started tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\nQuarto Manuscripts (upcoming feature)\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/3-git/slides.html#section",
@@ -942,7 +949,7 @@
     "href": "lessons/9-markdown-quarto/notes.html#lesson-outline",
     "title": "Documentation and Literate Programming",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nWhat goes in a README?\n\nProject summary\nProject status (in progress, archived, just an idea?)\nHow to give credit\nStructure of repo (what files do what?)\nHow to reproduce results\n\nMarkdown & formatting a README.md\n\nMarkdown is a markup language: plain text –&gt; formatted text\nWidely used (GitHub, websites, Slack, etc.)\nShow markdown cheat sheet\nSpaces matter, and don’t matter at the same time. Err on the side of too much space between elements\n\nExercise: Spend a few minutes editing your README, commit, push to GitHub and observe\nQuarto: an open-source scientific and technical publishing system\n\nAllows combining markdown, code, and code output (tables, plots, etc)\nWide variety of outputs: html, pdf, word, and more\nUse cases:\n\nNotebook\nShare results with collaborators\nPresentations\nReproducible manuscripts\n\n\nHow does it work?\n\nqmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.\n\nAnatomy of a .Qmd\n\nLook familiar if you’ve used RMarkdown\nYAML header has metadata and settings\nMarkdown body\nCode chunks with R, Python, Julia, or other code\n\nCreate .Qmd and play\nDemo rendering in different formats\nDemo visual editor\n\nSwitch back and forth\nCallouts\n\nCode chunk options\n\nDemo some common ones like label, echo: false, fig-cap\n\nCitations and cross-refs\nTease journal articles (check out AGU format example https://quarto-journals.github.io/agu/)\nPoint students toward tutorial and full documentation"
+    "text": "Lesson Outline\n\nWhat goes in a README?\n\nProject summary\nProject status (in progress, archived, just an idea?)\nHow to give credit\nStructure of repo (what files do what?)\nHow to reproduce results\n\nExample READMEs:\n\nhttps://github.com/Aariq/BACE-legacy-effects\nhttps://github.com/ecohealthalliance/amr-analysis\nhttps://github.com/atredennick/size-environment\n\nMarkdown & formatting a README.md\n\nMarkdown is a markup language: plain text –&gt; formatted text\nWidely used (GitHub, websites, Slack, etc.)\nShow markdown cheat sheet\nSpaces matter, and don’t matter at the same time. Err on the side of too much space between elements\n\nExercise: Spend a few minutes editing your README, commit, push to GitHub and observe\nQuarto: an open-source scientific and technical publishing system\n\nAllows combining markdown, code, and code output (tables, plots, etc)\nWide variety of outputs: html, pdf, word, and more\nUse cases:\n\nNotebook\nShare results with collaborators\nPresentations\nReproducible manuscripts\n\n\nHow does it work?\n\nqmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.\n\nAnatomy of a .Qmd\n\nLook familiar if you’ve used RMarkdown\nYAML header has metadata and settings\nMarkdown body\nCode chunks with R, Python, Julia, or other code\n\nCreate .Qmd and play\nDemo rendering in different formats\nDemo visual editor\n\nSwitch back and forth\nCallouts\n\nCode chunk options\n\nDemo some common ones like label, echo: false, fig-cap\n\nCitations and cross-refs\nTease journal articles (check out AGU format example https://quarto-journals.github.io/agu/)\nPoint students toward tutorial and full documentation"
   },
   {
     "objectID": "lessons/1-project-management/notes.html",
