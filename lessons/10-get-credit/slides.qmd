@@ -29,7 +29,7 @@ Predictions are based on estimated model coe cients (Table 2)
 
 ## Getting credit for your code
 
-Code is unfortunately not cited often, but you can help by making it **easier** to cite your code (in addition to making easy to reproduce!)
+Make it **easier** for people to cite your code
 
 -   Provide a CITATION file on GitHub
 
@@ -40,7 +40,7 @@ Code is unfortunately not cited often, but you can help by making it **easier** 
 ## CITATION.cff
 
 ::: incremental
--   Citation File Format are plain text files that are human- and machine-readable
+-   Citation File Format are plain text files written in YAML
 
 -   Adding a `CITATION.cff` file to your repo...
 
@@ -48,15 +48,15 @@ Code is unfortunately not cited often, but you can help by making it **easier** 
 
     -   Helps code archive tools fill out metadata correctly when you archive your repo
 
--   Can include a "preferred citation" if you'd like people to cite a published paper in addition/instead
-
 -   Create a CITATION.cff file with this [helper](https://citation-file-format.github.io/cff-initializer-javascript/#/)
+
+-   See example [here](https://github.com/cct-datascience/repro-data-sci/blob/main/CITATION.cff)
 :::
 
 ## Options for archiving {.smaller}
 
 | Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
-|---------------|---------------|---------------|---------------|---------------|
+|-------------|-------------|--------------|-------------|---------------------|
 | Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |
 | Dryad     | Yes             | No, but some publishers cover cost | No                  | Intended for data, not code. Partners with Zenodo |
 | Figshare  | Yes             | Yes                                | Yes                 | Can't choose your license                         |
@@ -74,19 +74,23 @@ Congrats!
 Your code is reproducible!
 But what about ....
 
+::: incremental
 -   in 3 years when an R package is updated with breaking changes?
 
 -   on a different operating system with different versions of system libraries?
+:::
+
+. . .
 
 Capture the **computational environment** for ultimate reproducibility
 
 ## Reproducible Environments With `renv`
 
--   The [`renv` package](https://rstudio.github.io/renv/articles/renv.html) helps create reproducible environments by recording all the packages used in your project
+-   The [`renv` package](https://rstudio.github.io/renv/articles/renv.html) records R packages and their versions used in your project
 
--   Discovers and records required packages and their versions in `renv.lock`
+-   Projects are isolated with their own set of packages
 
--   Each project can have its own independent collection of R packages installed
+-   Can restore exact versions of packages recorded
 
 ## Using `renv`
 
@@ -97,7 +101,14 @@ Install `renv` and activate it for a project with `renv::init()`.
 Inspect the files that were created.
 :::
 
--   To deactivate `renv`, run `renv::deactivate()`. To also remove all the files it created, run `renv::deactivate(clean = TRUE)` instead.
+. . .
+
+::: callout-tip
+## If you change your mind \...
+
+To deactivate `renv`, run `renv::deactivate()`.
+To also remove all the files it created, run `renv::deactivate(clean = TRUE)` instead.
+:::
 
 ## Limitations of `renv`
 
@@ -145,12 +156,23 @@ RUN Rscript /02_code/install_packages.R
 
 ## Hold up, what *is* reproducibility again?
 
-`renv` and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code.
+There is a reproducibility **tradeoff** for using `renv` and Docker---robust computational reproducibility **but** harder for novices to reproduce
+
+. . .
+
 If you use these tools:
 
 -   Provide instructions on how to run code in README
 -   Provide instructions on how to troubleshoot or disable `renv` if it's giving folks trouble
 -   Provide code in a GitHub repo *in addition* to inside of a Docker container
+
+## Drop-in Session & Showcase
+
+-   Next week (10/10, 10/12): No workshops!
+
+-   Tuesday 10/17: Drop-in help session
+
+-   Tuesday 10/24: Reproducibility show & tell
 
 ## References
 

@@ -190,3 +190,13 @@ It includes all the features of RMarkdown and more.
 -   Full Quarto [guide](https://quarto.org/docs/guide/) and [reference](https://quarto.org/docs/reference/) (searchable!)
 
 -   [Quarto Manuscripts](https://quarto.org/docs/manuscripts/) (upcoming feature)
+
+## Drop-in Session & Showcase
+
+-   This Thursday (10/5): Getting Credit For Your Work
+
+-   Next week (10/10, 10/12): No workshops!
+
+-   Tuesday 10/17: Drop-in help session
+
+-   Tuesday 10/24: Reproducibility show & tell

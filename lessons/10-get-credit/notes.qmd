@@ -29,6 +29,7 @@ Learn `renv` and discuss Docker (concept).
 
     -   Show CITATION.cff files for this repo and maybe one for a research compendium
     -   Show "cite this" button on GitHub
+    -   Show CITATION.cff creation tool [CFFINIT](https://citation-file-format.github.io/cff-initializer-javascript/#/)
     -   Maybe mention `cffr::cff_validate()`
 
 -   Archiving
@@ -41,9 +42,11 @@ Learn `renv` and discuss Docker (concept).
 -   `renv`
 
     -   Discuss why
-    -   Ask students to activate `renv` for a project and inspect files it creates
-    -   Explain how `renv` works, especially `renv::restore()` , `renv::status()` , and `renv::snapshot()`
-    -   Demo activating `renv` for this repo and make a second release to demo Zenodo versioning
+    -   Ask students to activate `renv` for a project and inspect files it creates (have co-instructor share screen)
+    -   Explain how `renv` works, especially `renv::status()` , and `renv::snapshot()`
+    -   Clone co-instructor's repo with `renv` files
+        -   Show that no packages are available initially (project is isolated)
+        -   run `renv::restore()`
 
 -   Docker (if time)
 
