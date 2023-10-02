@@ -225,6 +225,7 @@ div.csl-indent {
 <ul>
 <li>Show CITATION.cff files for this repo and maybe one for a research compendium</li>
 <li>Show “cite this” button on GitHub</li>
+<li>Show CITATION.cff creation tool <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">CFFINIT</a></li>
 <li>Maybe mention <code>cffr::cff_validate()</code></li>
 </ul></li>
 <li><p>Archiving</p>
@@ -237,9 +238,13 @@ div.csl-indent {
 <li><p><code>renv</code></p>
 <ul>
 <li>Discuss why</li>
-<li>Ask students to activate <code>renv</code> for a project and inspect files it creates</li>
-<li>Explain how <code>renv</code> works, especially <code>renv::restore()</code> , <code>renv::status()</code> , and <code>renv::snapshot()</code></li>
-<li>Demo activating <code>renv</code> for this repo and make a second release to demo Zenodo versioning</li>
+<li>Ask students to activate <code>renv</code> for a project and inspect files it creates (have co-instructor share screen)</li>
+<li>Explain how <code>renv</code> works, especially <code>renv::status()</code> , and <code>renv::snapshot()</code></li>
+<li>Clone co-instructor’s repo with <code>renv</code> files
+<ul>
+<li>Show that no packages are available initially (project is isolated)</li>
+<li>run <code>renv::restore()</code></li>
+</ul></li>
 </ul></li>
 <li><p>Docker (if time)</p>
 <ul>

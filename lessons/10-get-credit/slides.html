@@ -450,7 +450,7 @@
 </div></aside></section>
 <section id="getting-credit-for-your-code" class="slide level2">
 <h2>Getting credit for your code</h2>
-<p>Code is unfortunately not cited often, but you can help by making it <strong>easier</strong> to cite your code (in addition to making easy to reproduce!)</p>
+<p>Make it <strong>easier</strong> for people to cite your code</p>
 <ul>
 <li><p>Provide a CITATION file on GitHub</p></li>
 <li><p>Archive to get a digital object identifier (DOI)</p></li>
@@ -461,14 +461,14 @@
 <h2>CITATION.cff</h2>
 <div>
 <ul>
-<li class="fragment"><p>Citation File Format are plain text files that are human- and machine-readable</p></li>
+<li class="fragment"><p>Citation File Format are plain text files written in YAML</p></li>
 <li class="fragment"><p>Adding a <code>CITATION.cff</code> file to your repo…</p>
 <ul>
 <li class="fragment"><p>Puts a “cite this repository” button on GitHub</p></li>
 <li class="fragment"><p>Helps code archive tools fill out metadata correctly when you archive your repo</p></li>
 </ul></li>
-<li class="fragment"><p>Can include a “preferred citation” if you’d like people to cite a published paper in addition/instead</p></li>
 <li class="fragment"><p>Create a CITATION.cff file with this <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">helper</a></p></li>
+<li class="fragment"><p>See example <a href="https://github.com/cct-datascience/repro-data-sci/blob/main/CITATION.cff">here</a></p></li>
 </ul>
 </div>
 </section>
@@ -476,11 +476,11 @@
 <h2>Options for archiving</h2>
 <table>
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 18%">
+<col style="width: 17%">
+<col style="width: 28%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -534,18 +534,22 @@
 <section id="reproducible-computational-environments" class="slide level2">
 <h2>Reproducible computational environments</h2>
 <p>Congrats! Your code is reproducible! But what about ….</p>
+<div>
 <ul>
-<li><p>in 3 years when an R package is updated with breaking changes?</p></li>
-<li><p>on a different operating system with different versions of system libraries?</p></li>
+<li class="fragment"><p>in 3 years when an R package is updated with breaking changes?</p></li>
+<li class="fragment"><p>on a different operating system with different versions of system libraries?</p></li>
 </ul>
+</div>
+<div class="fragment">
 <p>Capture the <strong>computational environment</strong> for ultimate reproducibility</p>
+</div>
 </section>
 <section id="reproducible-environments-with-renv" class="slide level2">
 <h2>Reproducible Environments With <code>renv</code></h2>
 <ul>
-<li><p>The <a href="https://rstudio.github.io/renv/articles/renv.html"><code>renv</code> package</a> helps create reproducible environments by recording all the packages used in your project</p></li>
-<li><p>Discovers and records required packages and their versions in <code>renv.lock</code></p></li>
-<li><p>Each project can have its own independent collection of R packages installed</p></li>
+<li><p>The <a href="https://rstudio.github.io/renv/articles/renv.html"><code>renv</code> package</a> records R packages and their versions used in your project</p></li>
+<li><p>Projects are isolated with their own set of packages</p></li>
+<li><p>Can restore exact versions of packages recorded</p></li>
 </ul>
 </section>
 <section id="using-renv" class="slide level2">
@@ -563,9 +567,21 @@
 </div>
 </div>
 </div>
-<ul>
-<li>To deactivate <code>renv</code>, run <code>renv::deactivate()</code>. To also remove all the files it created, run <code>renv::deactivate(clean = TRUE)</code> instead.</li>
-</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>If you change your mind ...</strong></p>
+</div>
+<div class="callout-content">
+<p>To deactivate <code>renv</code>, run <code>renv::deactivate()</code>. To also remove all the files it created, run <code>renv::deactivate(clean = TRUE)</code> instead.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="limitations-of-renv" class="slide level2">
 <h2>Limitations of <code>renv</code></h2>
@@ -607,11 +623,22 @@
 </section>
 <section id="hold-up-what-is-reproducibility-again" class="slide level2">
 <h2>Hold up, what <em>is</em> reproducibility again?</h2>
-<p><code>renv</code> and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code. If you use these tools:</p>
+<p>There is a reproducibility <strong>tradeoff</strong> for using <code>renv</code> and Docker—robust computational reproducibility <strong>but</strong> harder for novices to reproduce</p>
+<div class="fragment">
+<p>If you use these tools:</p>
 <ul>
 <li>Provide instructions on how to run code in README</li>
 <li>Provide instructions on how to troubleshoot or disable <code>renv</code> if it’s giving folks trouble</li>
 <li>Provide code in a GitHub repo <em>in addition</em> to inside of a Docker container</li>
+</ul>
+</div>
+</section>
+<section id="drop-in-session-showcase" class="slide level2">
+<h2>Drop-in Session &amp; Showcase</h2>
+<ul>
+<li><p>Next week (10/10, 10/12): No workshops!</p></li>
+<li><p>Tuesday 10/17: Drop-in help session</p></li>
+<li><p>Tuesday 10/24: Reproducibility show &amp; tell</p></li>
 </ul>
 </section>
 <section id="references" class="slide level2 smaller scrollable">

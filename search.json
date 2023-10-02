@@ -242,14 +242,14 @@
     "href": "lessons/10-get-credit/slides.html#getting-credit-for-your-code",
     "title": "Sharing Code & Getting Credit",
     "section": "Getting credit for your code",
-    "text": "Getting credit for your code\nCode is unfortunately not cited often, but you can help by making it easier to cite your code (in addition to making easy to reproduce!)\n\nProvide a CITATION file on GitHub\nArchive to get a digital object identifier (DOI)\nInclude DOI and/or citation in your paper’s Data/Code Availability Statement"
+    "text": "Getting credit for your code\nMake it easier for people to cite your code\n\nProvide a CITATION file on GitHub\nArchive to get a digital object identifier (DOI)\nInclude DOI and/or citation in your paper’s Data/Code Availability Statement"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#citation.cff",
     "href": "lessons/10-get-credit/slides.html#citation.cff",
     "title": "Sharing Code & Getting Credit",
     "section": "CITATION.cff",
-    "text": "CITATION.cff\n\n\nCitation File Format are plain text files that are human- and machine-readable\nAdding a CITATION.cff file to your repo…\n\nPuts a “cite this repository” button on GitHub\nHelps code archive tools fill out metadata correctly when you archive your repo\n\nCan include a “preferred citation” if you’d like people to cite a published paper in addition/instead\nCreate a CITATION.cff file with this helper"
+    "text": "CITATION.cff\n\n\nCitation File Format are plain text files written in YAML\nAdding a CITATION.cff file to your repo…\n\nPuts a “cite this repository” button on GitHub\nHelps code archive tools fill out metadata correctly when you archive your repo\n\nCreate a CITATION.cff file with this helper\nSee example here"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#options-for-archiving",
@@ -263,21 +263,21 @@
     "href": "lessons/10-get-credit/slides.html#reproducible-computational-environments",
     "title": "Sharing Code & Getting Credit",
     "section": "Reproducible computational environments",
-    "text": "Reproducible computational environments\nCongrats! Your code is reproducible! But what about ….\n\nin 3 years when an R package is updated with breaking changes?\non a different operating system with different versions of system libraries?\n\nCapture the computational environment for ultimate reproducibility"
+    "text": "Reproducible computational environments\nCongrats! Your code is reproducible! But what about ….\n\n\nin 3 years when an R package is updated with breaking changes?\non a different operating system with different versions of system libraries?\n\n\n\nCapture the computational environment for ultimate reproducibility"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#reproducible-environments-with-renv",
     "href": "lessons/10-get-credit/slides.html#reproducible-environments-with-renv",
     "title": "Sharing Code & Getting Credit",
     "section": "Reproducible Environments With renv",
-    "text": "Reproducible Environments With renv\n\nThe renv package helps create reproducible environments by recording all the packages used in your project\nDiscovers and records required packages and their versions in renv.lock\nEach project can have its own independent collection of R packages installed"
+    "text": "Reproducible Environments With renv\n\nThe renv package records R packages and their versions used in your project\nProjects are isolated with their own set of packages\nCan restore exact versions of packages recorded"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#using-renv",
     "href": "lessons/10-get-credit/slides.html#using-renv",
     "title": "Sharing Code & Getting Credit",
     "section": "Using renv",
-    "text": "Using renv\n\n\n\n\n\n\nExercise\n\n\nInstall renv and activate it for a project with renv::init(). Inspect the files that were created.\n\n\n\n\nTo deactivate renv, run renv::deactivate(). To also remove all the files it created, run renv::deactivate(clean = TRUE) instead."
+    "text": "Using renv\n\n\n\n\n\n\nExercise\n\n\nInstall renv and activate it for a project with renv::init(). Inspect the files that were created.\n\n\n\n\n\n\n\n\n\n\nIf you change your mind ...\n\n\nTo deactivate renv, run renv::deactivate(). To also remove all the files it created, run renv::deactivate(clean = TRUE) instead."
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#limitations-of-renv",
@@ -305,7 +305,14 @@
     "href": "lessons/10-get-credit/slides.html#hold-up-what-is-reproducibility-again",
     "title": "Sharing Code & Getting Credit",
     "section": "Hold up, what is reproducibility again?",
-    "text": "Hold up, what is reproducibility again?\nrenv and Docker improve the numerical reproducibility, but add extra barriers to actually running and understanding the code. If you use these tools:\n\nProvide instructions on how to run code in README\nProvide instructions on how to troubleshoot or disable renv if it’s giving folks trouble\nProvide code in a GitHub repo in addition to inside of a Docker container"
+    "text": "Hold up, what is reproducibility again?\nThere is a reproducibility tradeoff for using renv and Docker—robust computational reproducibility but harder for novices to reproduce\n\nIf you use these tools:\n\nProvide instructions on how to run code in README\nProvide instructions on how to troubleshoot or disable renv if it’s giving folks trouble\nProvide code in a GitHub repo in addition to inside of a Docker container"
+  },
+  {
+    "objectID": "lessons/10-get-credit/slides.html#drop-in-session-showcase",
+    "href": "lessons/10-get-credit/slides.html#drop-in-session-showcase",
+    "title": "Sharing Code & Getting Credit",
+    "section": "Drop-in Session & Showcase",
+    "text": "Drop-in Session & Showcase\n\nNext week (10/10, 10/12): No workshops!\nTuesday 10/17: Drop-in help session\nTuesday 10/24: Reproducibility show & tell"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#references",
@@ -676,7 +683,14 @@
     "href": "lessons/9-markdown-quarto/slides.html#learn-more",
     "title": "Documentation & Literate Programming",
     "section": "Learn more",
-    "text": "Learn more\n\nGetting started tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\nQuarto Manuscripts (upcoming feature)\n\n\n\n\nReproduciblity & Data Science in R"
+    "text": "Learn more\n\nGetting started tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\nQuarto Manuscripts (upcoming feature)"
+  },
+  {
+    "objectID": "lessons/9-markdown-quarto/slides.html#drop-in-session-showcase",
+    "href": "lessons/9-markdown-quarto/slides.html#drop-in-session-showcase",
+    "title": "Documentation & Literate Programming",
+    "section": "Drop-in Session & Showcase",
+    "text": "Drop-in Session & Showcase\n\nThis Thursday (10/5): Getting Credit For Your Work\nNext week (10/10, 10/12): No workshops!\nTuesday 10/17: Drop-in help session\nTuesday 10/24: Reproducibility show & tell\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/3-git/slides.html#section",
@@ -1096,7 +1110,7 @@
     "href": "lessons/10-get-credit/notes.html#lesson-outline",
     "title": "Getting Credit For Your Hard Work",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (2023)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nMost participants probably won’t be ready to follow along with their own repos, but we will be there to help when they are ready\nDemo archiving a repo with Zenodo using this repo\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates\nExplain how renv works, especially renv::restore() , renv::status() , and renv::snapshot()\nDemo activating renv for this repo and make a second release to demo Zenodo versioning\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
+    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (2023)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nShow CITATION.cff creation tool CFFINIT\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nMost participants probably won’t be ready to follow along with their own repos, but we will be there to help when they are ready\nDemo archiving a repo with Zenodo using this repo\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates (have co-instructor share screen)\nExplain how renv works, especially renv::status() , and renv::snapshot()\nClone co-instructor’s repo with renv files\n\nShow that no packages are available initially (project is isolated)\nrun renv::restore()\n\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
   },
   {
     "objectID": "lessons/10-get-credit/notes.html#homework",
