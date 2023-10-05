@@ -305,7 +305,7 @@
     "href": "lessons/10-get-credit/slides.html#hold-up-what-is-reproducibility-again",
     "title": "Sharing Code & Getting Credit",
     "section": "Hold up, what is reproducibility again?",
-    "text": "Hold up, what is reproducibility again?\nThere is a reproducibility tradeoff for using renv and Docker—robust computational reproducibility but harder for novices to reproduce\n\nIf you use these tools:\n\nProvide instructions on how to run code in README\nProvide instructions on how to troubleshoot or disable renv if it’s giving folks trouble\nProvide code in a GitHub repo in addition to inside of a Docker container"
+    "text": "Hold up, what is reproducibility again?\nThere is a reproducibility tradeoff for using renv and Docker—robust computational reproducibility but harder for novices to reproduce\n\nIf you use these tools, provide:\n\nInstructions on how to run code\nWhere to go for help troubleshooting\nWays to access your code without extra layers"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#drop-in-session-showcase",
