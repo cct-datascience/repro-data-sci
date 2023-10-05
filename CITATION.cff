@@ -34,4 +34,5 @@ authors:
     orcid: 'https://orcid.org/0000-0003-3802-3331'
 repository-code: 'https://github.com/cct-datascience/repro-data-sci'
 url: 'https://cct-datascience.github.io/repro-data-sci/'
+doi: '10.5281/zenodo.8411612'
 license: CC-BY-4.0
