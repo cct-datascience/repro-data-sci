@@ -56,7 +56,7 @@ Make it **easier** for people to cite your code
 ## Options for archiving {.smaller}
 
 | Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
-|-------------|-------------|--------------|-------------|---------------------|
+|--------------|--------------|--------------|--------------|----------------|
 | Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |
 | Dryad     | Yes             | No, but some publishers cover cost | No                  | Intended for data, not code. Partners with Zenodo |
 | Figshare  | Yes             | Yes                                | Yes                 | Can't choose your license                         |
@@ -160,11 +160,11 @@ There is a reproducibility **tradeoff** for using `renv` and Docker---robust com
 
 . . .
 
-If you use these tools:
+If you use these tools, provide:
 
--   Provide instructions on how to run code in README
--   Provide instructions on how to troubleshoot or disable `renv` if it's giving folks trouble
--   Provide code in a GitHub repo *in addition* to inside of a Docker container
+-   Instructions on how to run code
+-   Where to go for help troubleshooting
+-   Ways to access your code *without* extra layers
 
 ## Drop-in Session & Showcase
 
