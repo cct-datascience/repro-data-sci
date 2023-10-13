@@ -2,8 +2,7 @@
 
 <!-- badges: start -->
 
-[![Quarto Publish](https://github.com/cct-datascience/repro-data-sci/actions/workflows/publish.yaml/badge.svg)](https://github.com/cct-datascience/repro-data-sci/actions/workflows/publish.yaml)
-[![DOI](https://zenodo.org/badge/676611306.svg)](https://zenodo.org/badge/latestdoi/676611306)
+[![Quarto Publish](https://github.com/cct-datascience/repro-data-sci/actions/workflows/publish.yaml/badge.svg)](https://github.com/cct-datascience/repro-data-sci/actions/workflows/publish.yaml) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8411612.svg)](https://doi.org/10.5281/zenodo.8411612)
 
 <!-- badges: end -->
 
