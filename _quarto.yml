@@ -50,3 +50,13 @@ editor:
     wrap: sentence
     canonical: true
 
+citation: 
+  type: webpage
+  container-title: "Reproducibility & Data Science in R"
+  author: 
+    - Eric Scott
+    - Renata Diaz
+    - Jessica Guo
+    - Kristina Riemer
+  issued: 2023
+  doi: 10.5281/zenodo.8411612
