@@ -26,6 +26,7 @@ They overwhelmingly chose #3
     -   *maybe* try to reproduce it
 -   Mention that `targets` can be configured to work on UA HPC to run individual targets as SLURM jobs or multiple cores with Open on Demand.
     -   Open on Demand example: <https://github.com/cct-datascience/targets-uahpc>
+-   Direct people to `targets` [manual](https://books.ropensci.org/targets/) and [discussions](https://github.com/ropensci/targets/discussions)
 
 ## Executing R code in the shell / shell code in R
 
