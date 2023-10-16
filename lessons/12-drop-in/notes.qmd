@@ -11,7 +11,7 @@ We asked learners to vote on the following topics for a mini-lesson for the last
 
 They overwhelmingly chose #3
 
-# Targets
+## Targets
 
 -   Show slides from [part 1](https://viz.datascience.arizona.edu/targets-slides/slides.html#/part-1-context) of previous targets workshop
 -   Demonstrate `tar_visnetwork()`, `tar_make()`, `tar_read()` and what happens when you invalidate a target using demo repo: <https://github.com/cct-datascience/targets-demo/tree/with-targets>
@@ -19,3 +19,9 @@ They overwhelmingly chose #3
     -   *maybe* try to reproduce it
 -   Mention that `targets` can be configured to work on UA HPC to run individual targets as SLURM jobs or multiple cores with Open on Demand.
     -   Open on Demand example: <https://github.com/cct-datascience/targets-uahpc>
+
+## Executing R code in the shell / shell code in R
+
+-   `Rscript -e script.R` ?
+
+-   `system2()` ?
