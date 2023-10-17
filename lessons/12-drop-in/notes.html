@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reproducibility &amp; Data Science in R - Data manipulation</title>
+<title>Reproducibility &amp; Data Science in R - Drop-in / Q&amp;A</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -160,18 +160,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson outline</a></li>
-  <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a></li>
+  <li><a href="#targets" id="toc-targets" class="nav-link active" data-scroll-target="#targets">Targets</a></li>
+  <li><a href="#executing-r-code-in-the-shell-shell-code-in-r" id="toc-executing-r-code-in-the-shell-shell-code-in-r" class="nav-link" data-scroll-target="#executing-r-code-in-the-shell-shell-code-in-r">Executing R code in the shell / shell code in R</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/6-data-manipulation/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/12-drop-in/notes.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data manipulation</h1>
+<h1 class="title">Drop-in / Q&amp;A</h1>
 </div>
 
 
@@ -186,86 +185,51 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="objective" class="level2">
-<h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<ul>
-<li>Use git branches in the “real world”</li>
-<li>Reproducibly clean, summarize, and organize dataframes using tidyverse packages</li>
-<li>Understand how R stores different data types (data frames, vector types, missing data)</li>
-<li>Know what the tidyverse is, how it differs from base R, and the philosophy behind using it here.</li>
-<li>Use the pipe to chain operations together</li>
-<li>Use dplyr functions to subset data (select, filter; logic and select fxns including where, ==, %in%, !) and manipulate data (mutate; lubridate; split-apply-combine)</li>
-<li>Use tidyr functions to reshape data (pivot_wider and pivot_longer)</li>
-</ul>
-</section>
-<section id="lesson-outline" class="level2">
-<h2 class="anchored" data-anchor-id="lesson-outline">Lesson outline</h2>
-<ul>
-<li>Review from last week</li>
-<li>Warm-up: create a branch for today’s work</li>
-<li>Slides/discussion: using R for reproducible data analysis
-<ul>
-<li>Why use R?</li>
-<li>What is the tidyverse and why use it?</li>
-<li>Install dplyr and tidyr</li>
-</ul></li>
-<li>Live coding: How R thinks about data
-<ul>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data">Data carpentry R ecology revamp episode #2</a></li>
-<li>Data frames</li>
-<li>Vectors and data types</li>
-<li>Missing data</li>
-</ul></li>
-<li>Live coding: dplyr and tidyr
-<ul>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
-<li><a href="https://datacarpentry.org/R-ecology-lesson/03-dplyr.html">Recent DC + R lesson</a></li>
-<li>Chaining lines together with the pipe
-<ul>
-<li><code>%&gt;%</code>, <code>|&gt;</code></li>
-</ul></li>
-<li>Subsetting and filtering data
-<ul>
-<li>incl.&nbsp;selection and <code>pick</code> https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html</li>
-</ul></li>
-<li>Adding columns</li>
-<li>Split-apply-combine</li>
-<li>Reshaping</li>
-</ul></li>
-<li>Live coding: advanced tidyverse topics
-<ul>
-<li>Options: across; dates; advanced joins; others?</li>
-</ul></li>
-<li>Live coding/discussion: getting help
-<ul>
-<li><code>reprex</code></li>
-</ul></li>
-<li>Live coding: practice modify-add-commit cycle</li>
-<li>Homework: None</li>
-</ul>
-</section>
-<section id="installation-materials" class="level2">
-<h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h2>
+<p>We asked learners to vote on the following topics for a mini-lesson for the last session before the show-and-tell session:</p>
 <ol type="1">
-<li><a href="https://docs.google.com/presentation/d/1YoVpsCq6MWv6TYiBil79b4X_qGRUiviYmjZPBEz7WqE/edit#slide=id.p">Slides</a></li>
-<li>Install R packages ‘dplyr’, ‘tidyr’, ‘readr’</li>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data">Data carpentry R ecology revamp episode #2</a></li>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
+<li>working with dates and times in R</li>
+<li>working with strings and factors in R</li>
+<li>packaging complicated workflows (analyses that include multiple scripts, more than just R code, etc.)</li>
+<li>I would like the entire time for a question/answer session</li>
 </ol>
-<!-- ## Notes from before -->
-<!-- ### Modifications -->
-<!-- -   Explain data.frames and types of vectors, but skip over exercises on coercion and factors -->
-<!-- -   Clarify difference between `==` and `%in%`, including that no warning or error given for `==` that induces vector recycling -->
-<!-- -   End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository -->
-<!-- ### Teaching notes -->
-<!-- -   Have students install each package separately rather than as the tidyverse---can be important to know which functions come from which packages -->
-<!-- ### Homework -->
-<!-- None -->
-<!-- ------------------------------------------------------------------------ -->
-<!-- Thoughts on things to add... -->
-<!-- -   create a consistent set of data files to share with everyone -->
-<!-- -   consider using the main-and-forks repo structure to give folks practice updating from upstream? -->
-<!-- -   share [this cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf) -->
+<p>They overwhelmingly chose #3</p>
+<section id="targets" class="level2">
+<h2 class="anchored" data-anchor-id="targets">Targets</h2>
+<ul>
+<li>Show slides from <a href="https://viz.datascience.arizona.edu/targets-slides/slides.html#/part-1-context">part 1</a> of previous targets workshop</li>
+<li>Demo repo (<code>targets</code> version on a branch): <a href="https://github.com/cct-datascience/targets-demo/tree/with-targets" class="uri">https://github.com/cct-datascience/targets-demo/tree/with-targets</a>
+<ul>
+<li>Explore files
+<ul>
+<li><code>R/</code></li>
+<li><code>_targets.R</code></li>
+</ul></li>
+<li>Demonstrate <code>tar_visnetwork()</code>, <code>tar_make()</code>, <code>tar_read()</code>
+<ul>
+<li>Investigate <code>_targets/</code></li>
+</ul></li>
+<li>Demonstrating invalidating a target by adding <code>species</code> to the model fit by <code>lm()</code> in one of the functions in <code>fit_models.R</code>.
+<ul>
+<li>re-run <code>tar_visnetwork()</code> and <code>tar_make()</code></li>
+</ul></li>
+</ul></li>
+<li>Explore a medium complexity <code>targets</code> project on GitHub: <a href="https://github.com/ecohealthalliance/mpx-diagnosis" class="uri">https://github.com/ecohealthalliance/mpx-diagnosis</a>
+<ul>
+<li><em>maybe</em> try to reproduce it</li>
+</ul></li>
+<li>Mention that <code>targets</code> can be configured to work on UA HPC to run individual targets as SLURM jobs or multiple cores with Open on Demand.
+<ul>
+<li>Open on Demand example: <a href="https://github.com/cct-datascience/targets-uahpc" class="uri">https://github.com/cct-datascience/targets-uahpc</a></li>
+</ul></li>
+<li>Direct people to <code>targets</code> <a href="https://books.ropensci.org/targets/">manual</a> and <a href="https://github.com/ropensci/targets/discussions">discussions</a></li>
+</ul>
+</section>
+<section id="executing-r-code-in-the-shell-shell-code-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="executing-r-code-in-the-shell-shell-code-in-r">Executing R code in the shell / shell code in R</h2>
+<ul>
+<li><p><code>Rscript -e script.R</code> ?</p></li>
+<li><p><code>system2()</code> ?</p></li>
+</ul>
 
 
 </section>
