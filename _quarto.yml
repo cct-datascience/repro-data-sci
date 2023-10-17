@@ -38,6 +38,8 @@ website:
             text: "10. Getting Credit For Your Hard Work"
           - href: "lessons/11-getting-help/notes.qmd"
             text: "11. Getting Help"
+          - href: "lessons/12-drop-in/notes.qmd"
+            text: "12. Q&A session / managing complicated worflows"
 format:
   html:
     theme: 

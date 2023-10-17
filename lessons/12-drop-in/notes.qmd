@@ -1,0 +1,35 @@
+---
+title: "Drop-in / Q&A"
+---
+
+We asked learners to vote on the following topics for a mini-lesson for the last session before the show-and-tell session:
+
+1.  working with dates and times in R
+2.  working with strings and factors in R
+3.  packaging complicated workflows (analyses that include multiple scripts, more than just R code, etc.)
+4.  I would like the entire time for a question/answer session
+
+They overwhelmingly chose #3
+
+## Targets
+
+-   Show slides from [part 1](https://viz.datascience.arizona.edu/targets-slides/slides.html#/part-1-context) of previous targets workshop
+-   Demo repo (`targets` version on a branch): <https://github.com/cct-datascience/targets-demo/tree/with-targets>
+    -   Explore files
+        -   `R/`
+        -   `_targets.R`
+    -   Demonstrate `tar_visnetwork()`, `tar_make()`, `tar_read()`
+        -   Investigate `_targets/`
+    -   Demonstrating invalidating a target by adding `species` to the model fit by `lm()` in one of the functions in `fit_models.R`.
+        -   re-run `tar_visnetwork()` and `tar_make()`
+-   Explore a medium complexity `targets` project on GitHub: <https://github.com/ecohealthalliance/mpx-diagnosis>
+    -   *maybe* try to reproduce it
+-   Mention that `targets` can be configured to work on UA HPC to run individual targets as SLURM jobs or multiple cores with Open on Demand.
+    -   Open on Demand example: <https://github.com/cct-datascience/targets-uahpc>
+-   Direct people to `targets` [manual](https://books.ropensci.org/targets/) and [discussions](https://github.com/ropensci/targets/discussions)
+
+## Executing R code in the shell / shell code in R
+
+-   `Rscript -e script.R` ?
+
+-   `system2()` ?
