@@ -2,28 +2,28 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Reproduciblity and Data Science in R",
+    "title": "Reproducibility and Data Science in R",
     "section": "",
     "text": "Welcome to the syllabus for the CCT Data Science fall workshop series: Reproducibility and Data Science in R. If you didn’t register for the course this year, sign up for our mailing list to be notified when enrollment opens for next year’s iteration and to be notified of our other monthly workshops."
   },
   {
     "objectID": "index.html#schedule-tentative",
     "href": "index.html#schedule-tentative",
-    "title": "Reproduciblity and Data Science in R",
+    "title": "Reproducibility and Data Science in R",
     "section": "Schedule (tentative)",
     "text": "Schedule (tentative)\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)\n\n\n\n\n\n\n\n  \n    \n    \n    \n    \n    \n  \n  \n    \n    \n      Lesson\n      Date\n      Theme\n      Topic\n      Links\n    \n  \n  \n    1\nTue, 9/5\nManage & Organize\nProject managment and coding best practices\n\nslides\n\n\n    2\nThu, 9/7\nShare & Collaborate\nUsing shell commands\n\nslides\n\n\n    3\nTue, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n    4\nThu, 9/14\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n    5\nTue, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n    6\nThu, 9/21\nTidy & Wrangle\nData Manipulation\n\nslides\n\n\n    7\nTue, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n    8\nThu, 9/28\nRepeat & Reproduce\nIntermediate R programming II\n\nslides\n\n\n    9\nTue, 10/3\nDocument & Publish\nDocumentation and literate programming\n\nslides\ngetting help\n\n\n    10\nThu, 10/5\nDocument & Publish\nGetting credit for your hard work\n\nslides\n\n\n    —\nTue, 10/17\nHelp\nDrop-in help session\n—\n    —\nTue, 10/24\nShow & Tell\nAn opportunity for you to show off what you've learned\n—"
   },
   {
     "objectID": "index.html#code-of-conduct",
     "href": "index.html#code-of-conduct",
-    "title": "Reproduciblity and Data Science in R",
+    "title": "Reproducibility and Data Science in R",
     "section": "Code of Conduct",
     "text": "Code of Conduct\n\nOur group’s mission is to enable scientists. This means treating people with respect and responding in a polite and helpful way.\nOur group is committed to ensuring a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\nExamples of unacceptable behavior by members, collaborators, and contributors include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.\n\nRead our full code of conduct and please report any violations or concerns to the course instructors or to Kristina Riemer (kristinariemer@arizona.edu)."
   },
   {
     "objectID": "index.html#helpful-reads",
     "href": "index.html#helpful-reads",
-    "title": "Reproduciblity and Data Science in R",
+    "title": "Reproducibility and Data Science in R",
     "section": "Helpful Reads",
     "text": "Helpful Reads\nThis workshop series doesn’t have anything like “required reading”, but we think these books and websites are good companions.\nData analysis in R:\n\nR for Data Science (2e)\nBuilding reproducible analytical pipelines with R \n\nBest practices for reproducibility:\n\nGood enough practices in scientific computing\nData organization in spreadsheets\nA beginner’s guide to conducting reproducible research\nThe Turing Way: Guide for Reproducible Research\n\nVersion control:\n\nExcuse me, do you have a moment to talk about version control?\nHappy Git and GitHub for the useR"
   },
@@ -767,7 +767,7 @@
     "href": "lessons/12-drop-in/notes.html#executing-r-code-in-the-shell-shell-code-in-r",
     "title": "Drop-in / Q&A",
     "section": "Executing R code in the shell / shell code in R",
-    "text": "Executing R code in the shell / shell code in R\n\nRscript -e script.R ?\nsystem2() ?"
+    "text": "Executing R code in the shell / shell code in R\n\nExample of running R and Python scripts from bash:\nRscript 01-save_penguins.R\nbash 02-rename_penguins.sh\npython 03-print_penguins.py\nExample of multi-lingual quarto doc"
   },
   {
     "objectID": "lessons/4-github-basics/slides.html#review-homework",
