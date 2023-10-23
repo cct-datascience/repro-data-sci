@@ -1,5 +1,5 @@
 ---
-title: Reproduciblity and Data Science in R
+title: Reproducibility and Data Science in R
 subtitle: "Fall 2023"
 format: html
 citation:
