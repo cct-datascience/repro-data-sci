@@ -2,6 +2,8 @@
 title: Reproduciblity and Data Science in R
 subtitle: "Fall 2023"
 format: html
+citation:
+  title: Syllabus
 ---
 
 Welcome to the syllabus for the CCT Data Science fall workshop series: **Reproducibility and Data Science in R.** If you didn't register for the course this year, sign up for our [mailing list](https://datascience.cct.arizona.edu/contact) to be notified when enrollment opens for next year's iteration and to be notified of our other monthly workshops.
