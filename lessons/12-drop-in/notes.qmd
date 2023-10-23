@@ -30,6 +30,12 @@ They overwhelmingly chose #3
 
 ## Executing R code in the shell / shell code in R
 
--   `Rscript -e script.R` ?
+-   Example of running R and Python scripts from bash:
 
--   `system2()` ?
+    ``` bash
+    Rscript 01-save_penguins.R
+    bash 02-rename_penguins.sh
+    python 03-print_penguins.py
+    ```
+
+-   Example of multi-lingual quarto doc
