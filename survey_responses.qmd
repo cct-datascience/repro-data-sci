@@ -14,9 +14,6 @@ This script will need modification if the questions in the survey are modified!
 #| include: false
 library(googlesheets4)
 library(tidyverse)
-library(patchwork)
-library(tm)
-library(wordcloud2)
 ```
 
 ```{r read}
