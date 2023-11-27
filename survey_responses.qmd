@@ -9,17 +9,17 @@ library(tidyverse)
 
 ```{r}
 id <- "17qYb67tSPDO_1hqlBJ-B563DvuB2PFoxBFVA9MRcU5E"
-responses_raw <- read_sheet(id, sheet = 3)
+responses_raw <- read_sheet(id, sheet = 1, col_types = "c")
 ```
 
 ```{r}
 questions <- colnames(responses_raw)
-questions
+# questions
 
 colnames(responses_raw) <-
   questions |> 
   str_replace("Timestamp", "datetime") |> 
-  str_replace("Which workshop series did you attend?", "year") |> 
+  str_replace("Which workshop series did you attend\\?", "year") |> 
   str_replace("How many sessions did you attend synchronously\\?", "num_sync") |> 
   str_replace("How many sessions did you attend asynchronously\\?", "num_async") |> 
   str_replace("Please enter a unique identifier as follows: Number of siblings \\(as numeric\\) \\+ First two letters of the city you were born in \\(lowercase\\) \\+ First three letters of your current street \\(lowercase\\)\\.", "id") |> 
@@ -43,11 +43,14 @@ colnames(responses_raw) <-
   str_replace("\\[Combine descriptive text and R code using Quarto\\]", "quarto") |> 
   str_replace("Which of the following tools that we covered during the workshop have you already incorporated into your research that you were not using prior to the workshop\\?", "use_already") |> 
   str_replace("Which of the following tools that we covered during the workshop do you plan to incorporate into your research within six months after the last workshop session\\?", "use_planned") |> 
+  str_replace("If you selected any of the options in the previous question, please give one concrete example of how you will implement one of these tools in your research\\.", "use_example") |> 
   str_replace("Please share one suggestion you have for improving this workshop series\\.", "suggestion") |> 
   str_replace("What topics would you like to see included in future workshops\\?", "future_topics")
 ```
 
 ```{r}
-responses_raw |> 
-  mutate(across(starts_with("pre_"), \(x) map_dbl(x)))
+responses <- responses_raw |> 
+  mutate(department = if_else(department == "Other", department_other, department)) |> 
+  select(-department_other) |> 
+  mutate(across(c(year, starts_with("num_"), starts_with("pre_"), starts_with("post_")), parse_number))
 ```
