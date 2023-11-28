@@ -40,6 +40,8 @@ website:
             text: "11. Getting Help"
           - href: "lessons/12-drop-in/notes.qmd"
             text: "12. Q&A session / managing complicated worflows"
+          - href: "survey_responses.qmd"
+            text: "Post-Workshop Survey Responses"
 format:
   html:
     theme: 
