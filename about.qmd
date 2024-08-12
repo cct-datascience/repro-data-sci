@@ -9,7 +9,7 @@ format:
 ::: {.column width="50%"}
 ## Eric R. Scott
 
-![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_medium/public/2023-11/eric_scott_lowres.jpeg){fig-align="left" width="730"}
+![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_medium/public/2023-11/eric_scott_lowres.jpeg){fig-align="left" width="375"}
 
 ### [{{< fa envelope >}}](mailto:ericrscott@arizona.edu "email") \| [{{< fa brands mastodon >}}](https://fosstodon.org/@LeafyEricScott "mastodon") \| [{{< fa brands github >}}](https://github.com/Aariq "github")
 :::
@@ -17,7 +17,7 @@ format:
 ::: {.column width="50%"}
 ## Renata Diaz
 
-![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_medium/public/2023-11/rmd.png)
+![](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_medium/public/2023-11/rmd.png){width="391"}
 
 ### [{{< fa envelope >}}](mailto:renatadiaz@arizona.edu "email") \| [{{< fa brands mastodon >}}](https://ecoevo.social/@diaz_renm "mastodon") \| [{{< fa brands github >}}](https://github.com/diazrenata "github")
 :::
