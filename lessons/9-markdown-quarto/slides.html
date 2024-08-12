@@ -8,9 +8,9 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.56">
 
-  <title>Reproducibility &amp; Data Science in R - Documentation &amp; Literate Programming</title>
+  <title>Reproducibility &amp; Data Science in R – Documentation &amp; Literate Programming</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -41,7 +41,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -222,7 +222,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -450,29 +451,29 @@
 <section id="common-markdown-pitfalls" class="slide level2">
 <h2>Common markdown pitfalls</h2>
 <p>Spaces between elements matter! How would you fix each of these?</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a>###Heading 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>###Heading 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>###Heading 3</p>
 <div class="fragment">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="an">Colors:</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="ss">- </span>red</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="ss">- </span>green</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="an">Colors:</span></span>
+<span id="cb2-2"><a></a><span class="ss">- </span>red</span>
+<span id="cb2-3"><a></a><span class="ss">- </span>green</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Colors: - red - green</p>
 </div>
 <div class="fragment">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a>1.Number one</span>
-<span id="cb3-2"><a href="#cb3-2"></a>2.Number two</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a>1.Number one</span>
+<span id="cb3-2"><a></a>2.Number two</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>1.Number one 2.Number two</p>
 </div>
 </section>
 <section id="common-markdown-pitfalls-1" class="slide level2">
 <h2>Common markdown pitfalls</h2>
 <p>Spaces within elements don’t matter!</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a>This     sentence still  gets    rendered  correctly!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a>This     sentence still  gets    rendered  correctly!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This sentence still gets rendered correctly!</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a>Single line breaks don't separate paragraphs.</span>
-<span id="cb5-2"><a href="#cb5-2"></a>See?</span>
-<span id="cb5-3"><a href="#cb5-3"></a></span>
-<span id="cb5-4"><a href="#cb5-4"></a>You need two line breaks for that!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a>Single line breaks don't separate paragraphs.</span>
+<span id="cb5-2"><a></a>See?</span>
+<span id="cb5-3"><a></a></span>
+<span id="cb5-4"><a></a>You need two line breaks for that!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Single line breaks don’t separate paragraphs. See?</p>
 <p>You need two line breaks for that!</p>
 </section>
@@ -501,7 +502,7 @@
 <li>Command line tool, not an R package, but works well with RStudio</li>
 </ul>
 
-<img data-src="rstudio-qmd-how-it-works.png" class="r-stretch quarto-figure-center"><aside class="notes">
+<img data-src="rstudio-qmd-how-it-works.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>knitr or jupyter are used to convert code chunks into markdown, pandoc converts markdown into output</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -521,29 +522,29 @@
 <div class="code-with-filename-file">
 <pre><strong>myreport.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb6" data-code-line-numbers="|1-7|9-15|10-11|17-19|21-23|"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">---</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="an">title:</span><span class="co"> "My Report"</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="an">author:</span><span class="co"> "Eric Scott"</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="co">  html:</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="co">    toc: true</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a><span class="co">---</span></span>
-<span id="cb6-8"><a href="#cb6-8"></a></span>
-<span id="cb6-9"><a href="#cb6-9"></a><span class="in">```{r}</span></span>
-<span id="cb6-10"><a href="#cb6-10"></a><span class="co">#| label: load-packages</span></span>
-<span id="cb6-11"><a href="#cb6-11"></a><span class="co">#| include: false</span></span>
-<span id="cb6-12"><a href="#cb6-12"></a></span>
-<span id="cb6-13"><a href="#cb6-13"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb6-14"><a href="#cb6-14"></a><span class="fu">library</span>(gapminder)</span>
-<span id="cb6-15"><a href="#cb6-15"></a><span class="in">```</span></span>
-<span id="cb6-16"><a href="#cb6-16"></a></span>
-<span id="cb6-17"><a href="#cb6-17"></a><span class="fu">## Data</span></span>
-<span id="cb6-18"><a href="#cb6-18"></a></span>
-<span id="cb6-19"><a href="#cb6-19"></a>My data source is the <span class="co">[</span><span class="ot">gapminder</span><span class="co">](https://www.gapminder.org/)</span> dataset.</span>
-<span id="cb6-20"><a href="#cb6-20"></a></span>
-<span id="cb6-21"><a href="#cb6-21"></a><span class="in">```{r}</span></span>
-<span id="cb6-22"><a href="#cb6-22"></a><span class="fu">head</span>(gapminder)</span>
-<span id="cb6-23"><a href="#cb6-23"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6" data-filename="myreport.qmd" data-code-line-numbers="|1-7|9-15|10-11|17-19|21-23|"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="co">---</span></span>
+<span id="cb6-2"><a></a><span class="an">title:</span><span class="co"> "My Report"</span></span>
+<span id="cb6-3"><a></a><span class="an">author:</span><span class="co"> "Eric Scott"</span></span>
+<span id="cb6-4"><a></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb6-5"><a></a><span class="co">  html:</span></span>
+<span id="cb6-6"><a></a><span class="co">    toc: true</span></span>
+<span id="cb6-7"><a></a><span class="co">---</span></span>
+<span id="cb6-8"><a></a></span>
+<span id="cb6-9"><a></a><span class="in">```{r}</span></span>
+<span id="cb6-10"><a></a><span class="in">#| label: load-packages</span></span>
+<span id="cb6-11"><a></a><span class="in">#| include: false</span></span>
+<span id="cb6-12"><a></a></span>
+<span id="cb6-13"><a></a><span class="in">library(tidyverse)</span></span>
+<span id="cb6-14"><a></a><span class="in">library(gapminder)</span></span>
+<span id="cb6-15"><a></a><span class="in">```</span></span>
+<span id="cb6-16"><a></a></span>
+<span id="cb6-17"><a></a><span class="fu">## Data</span></span>
+<span id="cb6-18"><a></a></span>
+<span id="cb6-19"><a></a>My data source is the <span class="co">[</span><span class="ot">gapminder</span><span class="co">](https://www.gapminder.org/)</span> dataset.</span>
+<span id="cb6-20"><a></a></span>
+<span id="cb6-21"><a></a><span class="in">```{r}</span></span>
+<span id="cb6-22"><a></a><span class="in">head(gapminder)</span></span>
+<span id="cb6-23"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <aside class="notes">
 <p>If this looks familiar to RMarkdown users, that’s because Quarto was built on lessons learned from developing RMarkdown. It includes all the features of RMarkdown and more.</p>
@@ -586,9 +587,11 @@
 <li><p>Tuesday 10/24: Reproducibility show &amp; tell</p></li>
 </ul>
 
-
-<img src="../../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="../../logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
+</div>
 </div>
 </section></section>
     </div>
@@ -618,7 +621,6 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -836,18 +838,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -879,11 +870,50 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/cct-datascience\.github\.io\/repro-data-sci\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -893,8 +923,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -908,7 +947,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

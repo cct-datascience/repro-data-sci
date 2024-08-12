@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="dcterms.date" content="2023-09-05">
   <title>Reproducibility &amp; Data Science in R</title>
@@ -160,7 +160,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -348,8 +349,13 @@
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-
-<img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg" class="r-stretch quarto-figure-center"><p class="caption">By The Turing Way Community</p></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions"><img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg" alt="By The Turing Way Community"></a></p>
+<figcaption>By The Turing Way Community</figcaption>
+</figure>
+</div>
+</section>
 <section id="the-whole-picture" class="slide level2">
 <h2>The Whole Picture</h2>
 <div class="callout callout-note callout-titled callout-style-default">
@@ -387,7 +393,7 @@
 <p>Workshop series website:<br>
 <a href="https://cct-datascience.github.io/repro-data-sci/" class="uri">https://cct-datascience.github.io/repro-data-sci/</a></p>
 </section>
-<section id="screen-setup-fa-desktop-fa-laptop" class="slide level2 smaller">
+<section id="screen-setup" class="slide level2 smaller">
 <h2>Screen Setup <i class="fa-solid fa-desktop" aria-label="desktop"></i> <i class="fa-solid fa-laptop" aria-label="laptop"></i></h2>
 <ul>
 <li>Dual monitors will be <em>very</em> helpful</li>
@@ -395,7 +401,7 @@
 <li>Let us know if you do not have access to a second monitor</li>
 </ul>
 
-<img data-src="desk.jpg" alt="Photo of a desk with a laptop on a laptop stand to the left and a larger monitor to the right in front of an external keyboard.  Laptop monitor has Zoom open and the larger monitor has RStudio open." class="r-stretch quarto-figure-center"></section>
+<img data-src="desk.jpg" class="quarto-figure quarto-figure-center r-stretch" alt="Photo of a desk with a laptop on a laptop stand to the left and a larger monitor to the right in front of an external keyboard.  Laptop monitor has Zoom open and the larger monitor has RStudio open."></section>
 <section id="creating-a-research-compendium-with-r" class="slide level2">
 <h2>Creating a Research Compendium with R</h2>
 <p>Learning Objectives:</p>
@@ -412,7 +418,7 @@
 <div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-left">
 <figure>
-<p><img data-src="rstudio-settings.png" alt="image of RStudio global settings pane with the &quot;Workspace&quot; and &quot;History&quot; sections highlighted.  None of the boxes are checked and the dropdown for &quot;Save workspace to .RData on exit&quot; is set to &quot;never&quot;"></p>
+<p><img data-src="rstudio-settings.png" class="quarto-figure quarto-figure-left" alt="image of RStudio global settings pane with the &quot;Workspace&quot; and &quot;History&quot; sections highlighted.  None of the boxes are checked and the dropdown for &quot;Save workspace to .RData on exit&quot; is set to &quot;never&quot;"></p>
 </figure>
 </div>
 </div><div class="column" style="width:40%;">
@@ -423,8 +429,7 @@
 <li class="fragment"><p>If long-running code is a concern, there are better solutions</p></li>
 </ul>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="project-management" class="slide level2">
 <h2>Project Management</h2>
@@ -495,9 +500,11 @@
 <p>OR</p>
 <p>Apply a consistent coding style to one of your R scripts (e.g.&nbsp;with Code &gt; Reformat Code or with the <code>styler</code> package)</p>
 
-
-<img src="../../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="../../logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
+</div>
 </div>
 </section></section>
     </div>
@@ -527,7 +534,6 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -745,18 +751,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -788,11 +783,50 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/cct-datascience\.github\.io\/repro-data-sci\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -802,8 +836,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -817,7 +860,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
