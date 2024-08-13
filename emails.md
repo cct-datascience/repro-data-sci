@@ -22,8 +22,8 @@ These are some example template emails that can be used for communicating with a
 > Dear applicant,
 >
 > Thank you for applying to our Fall Reproducibility and Data Science in R workshop series.
-> After careful review of all applicants, unfortunately your application has not been selected for participation this year.
-> We received many applications and unfortunately we were not able to accept everyone—a difficult decision for us.
+> We received a large number of applications this year, and, unfortunately, your application was not selected for participation in this year's workshop. 
+> 
 > We encourage you to apply again next year (and remind us that you applied previously when you do) and to continue to reach out to us with data science and reproducibility questions via email, our weekly [drop-in hours](https://datascience.cct.arizona.edu/drop-in-hours), and in the UA Data Science [Slack group](https://jcoliver.github.io/uadatascience-slack/).
 >
 > If you’re up for doing some self-study in lieu of attending the workshop series this Fall, here are some suggested places to get started:
