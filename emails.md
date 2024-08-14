@@ -9,11 +9,8 @@ These are some example template emails that can be used for communicating with a
 > The short course will meet every Tuesday and Thursday from 11am to 1pm from \<start\> through \<end\> ending with a reproducibility colloquium on \<date\> to allow you to showcase what you’ve learned.
 > **Please let us know if you can no longer commit to attending most sessions** by \<final deadline\> so we can open up spaces for additional applicants.
 >
-> Keep an eye out for a follow up email in the next couple of weeks with more
-> details including an invite to our Slack channel.
-> We are looking forward
-> to meeting you all, and in the meantime, please don’t hesitate to reach
-> out with any questions you might have.
+> Keep an eye out for a follow up email in the next couple of weeks with more details including an invite to our Slack channel.
+> We are looking forward to meeting you all, and in the meantime, please don’t hesitate to reach out with any questions you might have.
 
 ## Not accepted
 
