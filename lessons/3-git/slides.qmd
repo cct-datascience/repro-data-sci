@@ -195,7 +195,7 @@ You have options:
 # Homework
 
 -   Create a [GitHub](https://github.com) account if you don't have one.
-- Slack us your GitHub username!
+-   Slack us your GitHub username!
 -   Optional: Identify an existing folder on your computer and turn it into a git repository.
 
 # Resources

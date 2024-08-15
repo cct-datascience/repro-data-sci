@@ -1,6 +1,6 @@
 ---
 title: Reproducibility and Data Science in R
-subtitle: "Fall 2023"
+subtitle: "Fall 2024"
 format: html
 citation:
   title: Syllabus
@@ -66,6 +66,7 @@ Best practices for reproducibility:
 -   [Data organization in spreadsheets](https://doi.org/10.1080/00031305.2017.1375989)
 -   [A beginner's guide to conducting reproducible research](https://doi.org/10.1002/bes2.1801)
 -   [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research)
+-   [6 Steps Toward Reproducible Research](https://zenodo.org/records/12744715)
 
 Version control:
 
