@@ -5,7 +5,7 @@ These are some example template emails that can be used for communicating with a
 > Subject: "Reproducibility and Data Science in R Workshop Series"
 >
 > Congratulations!
-> You have been accepted into the **Reproducibility and Data Science in R** [Fall workshop series](https://datascience.cct.arizona.edu/events/203-fall-2023-workshop-series-reproducibility-and-data-science-r).
+> You have been accepted into the **Reproducibility and Data Science in R** Fall workshop series.
 > The short course will meet every Tuesday and Thursday from 11am to 1pm from \<start\> through \<end\> ending with a reproducibility colloquium on \<date\> to allow you to showcase what you’ve learned.
 > **Please let us know if you can no longer commit to attending most sessions** by \<final deadline\> so we can open up spaces for additional applicants.
 >
@@ -19,8 +19,8 @@ These are some example template emails that can be used for communicating with a
 > Dear applicant,
 >
 > Thank you for applying to our Fall Reproducibility and Data Science in R workshop series.
-> We received a large number of applications this year, and, unfortunately, your application was not selected for participation in this year's workshop. 
-> 
+> We received a large number of applications this year, and, unfortunately, your application was not selected for participation in this year's workshop.
+>
 > We encourage you to apply again next year (and remind us that you applied previously when you do) and to continue to reach out to us with data science and reproducibility questions via email, our weekly [drop-in hours](https://datascience.cct.arizona.edu/drop-in-hours), and in the UA Data Science [Slack group](https://jcoliver.github.io/uadatascience-slack/).
 >
 > If you’re up for doing some self-study in lieu of attending the workshop series this Fall, here are some suggested places to get started:
