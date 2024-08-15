@@ -665,6 +665,34 @@
     "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
   },
   {
+    "objectID": "emails.html",
+    "href": "emails.html",
+    "title": "Reproducibility & Data Science in R",
+    "section": "",
+    "text": "These are some example template emails that can be used for communicating with applicants:"
+  },
+  {
+    "objectID": "emails.html#accepted",
+    "href": "emails.html#accepted",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Accepted",
+    "text": "Accepted\n\nSubject: “Reproducibility and Data Science in R Workshop Series”\nCongratulations! You have been accepted into the Reproducibility and Data Science in R Fall workshop series. The short course will meet every Tuesday and Thursday from 11am to 1pm from &lt;start&gt; through &lt;end&gt; ending with a reproducibility colloquium on &lt;date&gt; to allow you to showcase what you’ve learned. Please let us know if you can no longer commit to attending most sessions by &lt;final deadline&gt; so we can open up spaces for additional applicants.\nKeep an eye out for a follow up email in the next couple of weeks with more details including an invite to our Slack channel. We are looking forward to meeting you all, and in the meantime, please don’t hesitate to reach out with any questions you might have."
+  },
+  {
+    "objectID": "emails.html#not-accepted",
+    "href": "emails.html#not-accepted",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Not accepted",
+    "text": "Not accepted\n\nSubject: “Reproducibility and Data Science in R Workshop Series”\nDear applicant,\nThank you for applying to our Fall Reproducibility and Data Science in R workshop series. We received a large number of applications this year, and, unfortunately, your application was not selected for participation in this year’s workshop.\nWe encourage you to apply again next year (and remind us that you applied previously when you do) and to continue to reach out to us with data science and reproducibility questions via email, our weekly drop-in hours, and in the UA Data Science Slack group.\nIf you’re up for doing some self-study in lieu of attending the workshop series this Fall, here are some suggested places to get started:\n\nExcuse me, do you have a moment to talk about version control? (https://peerj.com/preprints/3159v2/)\n6 Steps Towards Reproducible Research (https://zenodo.org/records/12744715)\nHappy Git and GitHub for the useR (https://happygitwithr.com/)\nR for Data Science (2e) (https://r4ds.hadley.nz/)\nOur previous workshops on YouTube (https://www.youtube.com/@cctdatascience2556)\nInstructor notes and slides for the workshop series (https://cct-datascience.github.io/repro-data-sci/)"
+  },
+  {
+    "objectID": "emails.html#follow-up-for-accepted-learners",
+    "href": "emails.html#follow-up-for-accepted-learners",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Follow up for accepted learners",
+    "text": "Follow up for accepted learners\n\nThe start of the Reproducibility and Data Science in R workshop series is about a week away!  We have a website for the series here (work in progress) with a schedule, a code of conduct, and contact information for us.\nWe’ll use Slack extensively for communication throughout this course, so we ask that you join our private Slack channel before next week and introduce yourself. We just sent out invites, so please let us know if you haven’t gotten one!\nWe’ll be meeting on Zoom at the same link every session: &lt;Zoom link&gt;\nThis link is pinned to the top of our Slack channel as well.\nBefore the first session, we also ask that you make sure your versions of R and RStudio are updated. Get the most recent version of R here: https://cran.r-project.org/. Get the most recent version of RStudio here: https://posit.co/download/rstudio-desktop/. Also, having two monitors (e.g. a laptop and an external monitor) is helpful for this course, although not required.\nLooking forward to meeting you all at our first session at 11am on &lt;date&gt;!\n\n\n- Eric & Renata"
+  },
+  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "Reproducibility & Data Science in R",
