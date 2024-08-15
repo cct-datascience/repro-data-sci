@@ -35,6 +35,8 @@ These are some example template emails that can be used for communicating with a
 > -   R for Data Science (2e) (<https://r4ds.hadley.nz/>)
 >
 > -   Our previous workshops on YouTube ([https://www.youtube.com/\@cctdatascience2556](https://www.youtube.com/@cctdatascience2556))
+>
+> -   Instructor notes and slides for the workshop series (<https://cct-datascience.github.io/repro-data-sci/>)
 
 ## Follow up for accepted learners
 
