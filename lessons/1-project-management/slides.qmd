@@ -1,7 +1,7 @@
 ---
 title: "Reproducibility & Data Science in R"
 subtitle: "Session 1"
-date: "2023-09-05"
+date: "2024-09-03"
 date-format: long
 format: uaz-revealjs
 chalkboard: true
@@ -32,9 +32,8 @@ I want my work to be reproducible because...
 ::: callout-note
 ## A (usually fiction) story:
 
-You read a great paper and think "I bet I could apply their analysis methods to my work!" You click a DOI link in their Data Availability section that they definitely have.
-It opens to a web page where you can download a folder with R code, data, and documentation about the code and data.
-The page also has detailed information about how to cite the code and data.
+You read a paper and think "I bet I could apply their analysis methods to my work!" You click a DOI link in their Data Availability section.
+It opens to a web page where you can download a folder with R code, data, and documentation.
 You open the folder in R Studio and you are prompted to install all the packages you need to run the code.
 You open the analysis code script and hit "run".
 All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper.
@@ -43,7 +42,7 @@ You scroll through the well-formatted R code and understand from the authors' co
 
 . . .
 
-We want to help you make this story a reality for someone else!
+We want to help you make this story a reality for someone!
 
 ::: notes
 Including future you!
@@ -54,6 +53,21 @@ Including future you!
 Workshop series website:\
 <https://cct-datascience.github.io/repro-data-sci/>
 
+## Reproducibility Colloquium
+
+Format: short talks on one or two ways you've improved a project
+
+***Your task for this week:***
+
+-   Pick a *real* project to give a "reproducibility renovation" over the next 5 weeks
+
+-   Every week, you'll make improvements and document your progress for your talk
+
+::: notes
+Take before and after screenshots!
+Keep track of every time you thank your past self!
+:::
+
 ## Screen Setup {{< fa desktop >}} {{< fa laptop >}} {.smaller}
 
 -   Dual monitors will be *very* helpful
@@ -62,14 +76,70 @@ Workshop series website:\
 
 ![](desk.jpg){fig-alt="Photo of a desk with a laptop on a laptop stand to the left and a larger monitor to the right in front of an external keyboard.  Laptop monitor has Zoom open and the larger monitor has RStudio open." fig-align="center"}
 
-## Creating a Research Compendium with R
+# Creating a Research Compendium
 
-Learning Objectives:
+## Learning Objectives
 
-1.  Use RStudio projects to create self-contained reproducible projects
-2.  Use best practices for organizing files in a project
-3.  Use relative file paths to improve portability of projects
-4.  Structure R scripts so they are easier to understand
+1.  Understand the benefits of organizing a project as a research compendium
+2.  Use RStudio projects to create self-contained reproducible projects
+3.  Use best practices for organizing files in a project
+4.  **Create a "toy" research compendium you can use throughout this series**
+
+::: notes
+Clarify that learners will have 1) their *real* project that they are improving and taking notes on for the reproducibility colloquium **and** 2) a *toy* project that they'll come back to every tuesday and thursday
+:::
+
+## 
+
+> A research compendium is a collection of all digital parts of a research project including data, code, texts (protocols, reports, questionnaires, meta data).
+> The collection is created in such a way that reproducing all results is straightforward.
+>
+> — [The Turing Way](https://book.the-turing-way.org/reproducible-research/compendia)
+
+## Research Compendium Best Practices
+
+::: incremental
+-   Treat raw data as read-only
+
+-   Use scripts to "clean" and wrangle data
+
+-   Treat generated outputs as disposable
+
+-   Put data, code, and outputs in different folders
+:::
+
+## Basic compendium structure {.smaller}
+
+::: columns
+::: {.column width="40%"}
+![](compendium-basic.png){width="398"}
+:::
+
+::: {.column width="60%"}
+::: incremental
+-   Short machine and human readable name
+-   Separate folders for "raw" and "clean" data
+-   `gdd-thresholds.Rproj` file is created by RStudio
+-   `R/` folder contains all code to reproduce analysis. Could be named `scripts/` or something else
+-   R scripts are numbered with two digits so alphabetic sorting = numeric sorting
+-   README.md is a markdown (plain text) document (we'll get to README's later)
+:::
+:::
+:::
+
+## RStudio projects
+
+-   Never worry about `setwd()` or `getwd()` again! Your compendium is *always* your working directory.
+-   Switch between many active projects. RStudio remembers where you left off.
+
+DEMO: create a new RStudio Project
+
+## Build your (toy) research compendium
+
+Using the RStudio file pane
+
+-   Create folders for `data/`, `R/`, `output/` and `notes/`
+-   Create a blank file called `README.md`
 
 ## Settings for Success
 
@@ -89,40 +159,13 @@ Learning Objectives:
 :::
 :::
 
-## Project Management
+# Getting Help
 
-![](https://swcarpentry.github.io/r-novice-gapminder/fig/bad_layout.png)
+## Getting Help
 
-::: notes
-There are many reasons why we should *ALWAYS* avoid this:
+## Getting Help—a note on genAI
 
-1.  It is really hard to tell which version of your data is the original and which is the modified;
-2.  It gets really messy because it mixes files with various extensions together;
-3.  It probably takes you a lot of time to actually find things, and relate the correct figures to the exact code that has been used to generate it;
-
-A good project layout will ultimately make your life easier:
-
--   It will help ensure the integrity of your data;
--   It makes it simpler to share your code with someone else (a lab-mate, collaborator, or supervisor);
--   It allows you to easily upload your code with your manuscript submission;
--   It makes it easier to pick the project back up after a break.
-:::
-
-## Research Compendium Best Practices
-
-::: incremental
--   Treat data as read-only
-
--   Use scripts to "clean" and wrangle data
-
--   Treat generated outputs as disposable
-
--   Put data, code, and outputs in different folders
-:::
-
-# RStudio projects (live coding)
-
-# R code best practices (live coding)
+-   maybe don't do it
 
 ## Takeaways
 
@@ -135,10 +178,8 @@ A good project layout will ultimately make your life easier:
 -   Split long scripts into multiples and use `source()` to run them if needed'
 :::
 
-## Homework (optional)
+## Your Tasks
 
-Re-organize an existing project into a research compendium
-
-OR
-
-Apply a consistent coding style to one of your R scripts (e.g. with Code \> Reformat Code or with the `styler` package)
+-   Choose a project you will focus on for your "reproducibility renovation"
+-   Does your project follow the file naming and organizations strategies we discussed?
+-   If not, re-organize and re-name to improve it.
