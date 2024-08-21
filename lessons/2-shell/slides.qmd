@@ -1,7 +1,7 @@
 ---
-title: "Shell and Filesystems"
+title: "File systems and the command line"
 subtitle: "Session 2"
-date: "2023-09-07"
+date: "2024-09-04"
 date-format: long
 format: uaz-revealjs
 chalkboard: true
@@ -9,37 +9,56 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
-# Review of last session
+## Review of last session
 
 -   What questions do you have?
 -   What happened as you were trying to re-organize projects or R code?
     -   Victories?
     -   Stumbling blocks?
 
-# Learning objectives
+## Learning objectives
 
--   Understand the what and why of the shell
--   Use the shell to navigate your computer's file system
--   Use R projects to simplify file system navigation
+-   Understand your computer's *file system*
+-   Understand the what and why of the shell command-line interface
+-   Use the CLI to navigate your computer's file system
 -   Know your options for finding help
 
-# What is the shell?
+## How well do you know your file system?
+
+## Example file system
+
+![](file-path-example.png)
+
+## Example file system
+
+![](file-structure-example.png)
+
+## How do you navigate your file system?
+
+-   Searching
+-   Point and click
+-   "Go to path"
+
+## How do we navigate the file system *programmatically*?
+
+-   A script can't point and click!
+-   We need a system for moving around our file system through written commands.
+
+## What is the shell?
 
 -   Command-line interface, in contrast to a GUI
+-   Useful for navigating the file system
+-   ...and for automating large tasks (e.g. renaming, moving files)
+-   ...*and* for running programs that may not have a GUI
+-   ...**and** for interfacing with remote computers (e.g. the HPC)
 
-# Why learn the shell?
-
--   Be able to work with tools that don't have a GUI
--   Batch large tasks (e.g. renaming files)
--   Interact with remote computers like the University HPC
-
-# Shell in this workshop
+## Shell in this workshop
 
 -   git/GitHub (next 2 lessons)
 -   Navigating your file system
 -   Quarto (lesson 9)
 
-# Let's get set up!
+## Let's get set up!
 
 -   macOS comes with a shell (usually Bash or Zsh) built-in
 
@@ -47,112 +66,104 @@ logo: "../../logo.png"
 
 -   Breakout rooms
 
-    -   Mac users go with Kristina
+    -   Mac users go with Eric
     -   Windows users go with Renata
 
-# Data download
+## Data download
 
 -   Download `shell-lesson-data.zip`
     -   Instructions here: <https://swcarpentry.github.io/shell-novice/index.html#download-files>
 -   Save it to your Desktop and unzip it.
 
-# Coding time
+## Coding time
 
 -   RStudio panes
 -   Set up Terminal in RStudio
 -   Navigation using Terminal and Files pane
 
-# Example file system
-
-![](file-path-example.png)
-
-# Example file system
-
-![](file-structure-example.png)
-
-# Syntax of a shell command
+## Syntax of a shell command
 
 ![](shell_syntax.png){fig-align="center"}
 
-# Coding time
+## Coding time
 
 -   Synchronize working directories between Terminal, Files Pane, and R working directory
 
-# Coding time
+## Coding time
 
 -   Use an R project to simplify working directories
 -   Copy `shell_lesson_data` to your R project
 
-# Getting help
+## Getting help
 
 ``` bash
 ls --help
 man ls
 ```
 
-# Getting help
+## Getting help
 
 ``` bash
 git --help
 ```
 
-# Getting help
+## Getting help
 
 ![](getwd.png){fig-align="center"}
 
-# Getting help
+## Getting help
 
 ![](man_page.png){fig-align="center"}
 
-# Getting help
+## Getting help
 
 ![](stack_overflow.png){fig-align="center"}
 
-# Getting help
+## Getting help
 
 ![](gpt.png){fig-align="center"}
 
-# Beware of stochastic parrots
+## Beware of stochastic parrots
 
 -   LLMs don't *understand*, but are good at mimicry
 -   Use with care:
     -   May be wrong
     -   May be inconsistent
 
-# Beware of stochastic parrots
+## Beware of stochastic parrots
 
 -   Tools like ChatGPT pose ethical issues
     -   Plagiarism
     -   Labor conditions
     -   Inputs may be sent to parent companies
 
-# Getting help: fellow humans
+## Getting help: fellow humans
 
 ![](ua-ds-slack.png){fig-align="center"}
 
-# Getting help: fellow humans
+## Getting help: fellow humans
 
 ![](drop-ins.png){fig-align="center"}
 
-# Takeaways
+## Takeaways
 
 -   The shell is a command-line interface to the computer
 -   The file system the shell sees is the *same* as your File Explorer tab
 -   We can use the shell from the Terminal pane in RStudio
 -   Find help from built-in manual pages, Google, (maybe) AI tools, or community
 
-# Homework for next time
+## Homework for next time
 
 -   Read ["Excuse me, do you have a moment to talk about version control?"](https://peerj.com/preprints/3159/)
 -   Create a diagram of your file system and note your most frequently used directories
 
-# Resources: Shell
+## Resources: Shell
 
 -   [Software Carpentry Unix Shell episode #1](https://swcarpentry.github.io/shell-novice/01-intro)
 -   [Software Carpentry Unix Shell episode #2](https://swcarpentry.github.io/shell-novice/02-filedir)
 -   [Software Carpentry Unix Shell episode #3](https://swcarpentry.github.io/shell-novice/03-create)
 
-# Resources: AI tools
+## Resources: AI tools
 
 -   [https://ecoevo.social/\@cboettig/110934209180569370](https://ecoevo.social/@cboettig/110934209180569370){.uri}
 -   <https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html>
@@ -160,7 +171,7 @@ git --help
 -   <https://dl.acm.org/doi/abs/10.1145/3442188.3445922>
 -   [https://medium.com/\@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0](https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0){.uri}
 
-# Resources: UA community
+## Resources: UA community
 
 -   [UA Data Science Institute](https://datascience.arizona.edu/)
 -   [UA Data Science Slack](https://jcoliver.github.io/uadatascience-slack/)
