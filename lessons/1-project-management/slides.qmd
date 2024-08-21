@@ -7,6 +7,7 @@ format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
+bibliography: references.bib
 ---
 
 ## What is Reproducibility & Why?
@@ -163,9 +164,29 @@ Using the RStudio file pane
 
 ## Getting Help
 
-## Getting Help—a note on genAI
+Every week, we'll try to point you to places to look for help when you're stuck
 
--   maybe don't do it
+Our Slack channel is a great place to start!
+
+For help with the RStudio IDE, the [Posit Community](https://forum.posit.co/) forum is a good place to start
+
+## A note on AI
+
+-   There are an abundance of AI tools that can generate code, explain code, or suggest code improvements
+
+-   Generative AI has been described as "hallucinating", "a stochastic parrot"[^1], and even a "bullshit machine"
+    [^2]
+
+-   It has been argued that this propensity to make things up is "a feature, not a bug"
+
+## A note on AI
+
+-   Beginners have difficulty spotting mistakes in AI generated code solutions[^3]
+
+-   Struggling and frustration are important parts of learning—short circuiting these steps does you a disservice in the long run
+
+-   AI presents a host of ethical[^4], environmental[^5], and legal issues to conside
+    r
 
 ## Takeaways
 
@@ -183,3 +204,13 @@ Using the RStudio file pane
 -   Choose a project you will focus on for your "reproducibility renovation"
 -   Does your project follow the file naming and organizations strategies we discussed?
 -   If not, re-organize and re-name to improve it.
+
+[^1]: <https://en.wikipedia.org/wiki/Stochastic_parrot>
+
+[^2]: @hicks2024
+
+[^3]: <https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/>
+
+[^4]: <https://mashable.com/article/chat-gpt-open-ai-workers-exploitation>
+
+[^5]: <https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/>
