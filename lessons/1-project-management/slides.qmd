@@ -156,7 +156,7 @@ Ideally, *everything related to that project*
 :::
 :::
 
-## RStudio projects
+## RStudio projects <!--# Should we wait on this? -->
 
 -   Never worry about `setwd()` or `getwd()` again! Your compendium is *always* your working directory.
 -   Switch between many active projects. RStudio remembers where you left off.
@@ -171,7 +171,7 @@ Using the RStudio file pane OR Finder (macOS) / File Explorer (Windows)
 -   Download the [gapminder dataset](https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv) and place it in your `data/` folder
 -   Create a text file called `README.md`
 
-## Settings for Success
+## Settings for Success <!--# Should we wait on this? -->
 
 ::: columns
 ::: {.column width="60%"}
@@ -187,6 +187,22 @@ Using the RStudio file pane OR Finder (macOS) / File Explorer (Windows)
 -   If long-running code is a concern, there are better solutions
 :::
 :::
+:::
+
+## README
+
+A README is a plain text (often .md[^1] or .txt) document in your research compendium that describes:
+
+::: incremental
+-   What the project is
+
+-   Who is involved
+
+-   What it contains (descriptions of folders & files)
+
+-   How people are allowed to use your code and data
+
+-   How to reproduce the analysis or contribute to it
 :::
 
 # Getting Help
@@ -209,18 +225,18 @@ Resources:
 
 -   Generative AI / large language models (LLMs) can generate code, explain code, or suggest code improvements
 
--   GenAI/LLMs have been described as "hallucinating", "stochastic parrots"[^1], and even "bullshit machines"
-    [^2]
+-   GenAI/LLMs have been described as "hallucinating", "stochastic parrots"[^2], and even "bullshit machines"
+    [^3]
 
 -   Making things up is fundamental feature of GenAI and will likely always be a problem
 
 ## A note on AI
 
--   Beginners have difficulty spotting mistakes in AI generated code solutions[^3]
+-   Beginners have difficulty spotting mistakes in AI generated code solutions[^4]
 
 -   Struggling and frustration are important parts of learning—short circuiting these steps does you a disservice in the long run
 
--   AI presents a host of ethical[^4], environmental[^5], and legal issues to conside
+-   AI presents a host of ethical[^5], environmental[^6], and legal issues to conside
     r
 
 ## Takeaways
@@ -236,16 +252,19 @@ Resources:
 
 -   Choose a project you will focus on for your "reproducibility renovation"
 -   Does your project follow the file naming and organizations strategies we discussed?
--   If not, re-organize and re-name to improve it.
+-   If not, re-organize and re-name to improve it
+-   Create or improve a README for your project
 
 ## References
 
-[^1]: <https://en.wikipedia.org/wiki/Stochastic_parrot>
+[^1]: We will talk more about .md files (markdown) on Thursday
 
-[^2]: @hicks2024
+[^2]: <https://en.wikipedia.org/wiki/Stochastic_parrot>
 
-[^3]: <https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/>
+[^3]: @hicks2024
 
-[^4]: <https://mashable.com/article/chat-gpt-open-ai-workers-exploitation>
+[^4]: <https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/>
 
-[^5]: <https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/>
+[^5]: <https://mashable.com/article/chat-gpt-open-ai-workers-exploitation>
+
+[^6]: <https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/>
