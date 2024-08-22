@@ -97,6 +97,10 @@ Clarify that learners will have 1) their *real* project that they are improving 
 >
 > — [The Turing Way](https://book.the-turing-way.org/reproducible-research/compendia)
 
+. . .
+
+("project" could be a single manuscript or multiple manuscripts that use the same data or code—that's up to you to decide)
+
 ## Research Compendium Best Practices
 
 ::: incremental
@@ -107,6 +111,30 @@ Clarify that learners will have 1) their *real* project that they are improving 
 -   Treat generated outputs as disposable
 
 -   Put data, code, and outputs in different folders
+:::
+
+::: notes
+A couple reasons to use scripts over, say, Excel: the cleaning steps are the code; avoid introducing errors by opening things in Excel with it's eager auto-formatting.
+:::
+
+## What goes in a compendium?
+
+Ideally, *everything related to that project*
+
+::: columns
+::: {.column width="50%"}
+-   Data
+-   Code
+-   Lab notebook
+-   Notes about analyses
+:::
+
+::: {.column width="50%"}
+-   Outputs
+-   Documentation / metadata
+-   Reports / presentations
+-   Manuscripts
+:::
 :::
 
 ## Basic compendium structure {.smaller}
@@ -137,10 +165,11 @@ DEMO: create a new RStudio Project
 
 ## Build your (toy) research compendium
 
-Using the RStudio file pane
+Using the RStudio file pane OR Finder (macOS) / File Explorer (Windows)
 
 -   Create folders for `data/`, `R/`, `output/` and `notes/`
--   Create a blank file called `README.md`
+-   Download the [gapminder dataset](https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv) and place it in your `data/` folder
+-   Create a text file called `README.md`
 
 ## Settings for Success
 
@@ -164,20 +193,26 @@ Using the RStudio file pane
 
 ## Getting Help
 
-Every week, we'll try to point you to places to look for help when you're stuck
+Every week, we'll try to point you to places to look for help when you're stuck or to dive more deeply into the topics covered.
 
-Our Slack channel is a great place to start!
+Asking a question in our Slack channel is always great place to start!
 
-For help with the RStudio IDE, the [Posit Community](https://forum.posit.co/) forum is a good place to start
+Resources:
+
+-   RStudio IDE: [Posit Community](https://forum.posit.co/) Forum
+
+-   Research Compendia: [The Turing Way](https://book.the-turing-way.org/reproducible-research/compendia)
+
+-   The whole picture: @wilson2017, @seibold2024
 
 ## A note on AI
 
--   There are an abundance of AI tools that can generate code, explain code, or suggest code improvements
+-   Generative AI / large language models (LLMs) can generate code, explain code, or suggest code improvements
 
--   Generative AI has been described as "hallucinating", "a stochastic parrot"[^1], and even a "bullshit machine"
+-   GenAI/LLMs have been described as "hallucinating", "stochastic parrots"[^1], and even "bullshit machines"
     [^2]
 
--   It has been argued that this propensity to make things up is "a feature, not a bug"
+-   Making things up is fundamental feature of GenAI and will likely always be a problem
 
 ## A note on AI
 
@@ -195,8 +230,6 @@ For help with the RStudio IDE, the [Posit Community](https://forum.posit.co/) fo
 -   Put data in a separate folder and never edit raw data!
 -   Avoid `setwd()` and `getwd()`---use relative paths and RStudio projects instead
 -   Naming things well is difficult but worth spending time on
--   Use some consistent style in your code and organize scripts in sections
--   Split long scripts into multiples and use `source()` to run them if needed'
 :::
 
 ## Your Tasks
@@ -204,6 +237,8 @@ For help with the RStudio IDE, the [Posit Community](https://forum.posit.co/) fo
 -   Choose a project you will focus on for your "reproducibility renovation"
 -   Does your project follow the file naming and organizations strategies we discussed?
 -   If not, re-organize and re-name to improve it.
+
+## References
 
 [^1]: <https://en.wikipedia.org/wiki/Stochastic_parrot>
 
