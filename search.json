@@ -361,7 +361,7 @@
     "href": "lessons/3-git/slides.html#git-and-github-for-version-control",
     "title": "Version Control With git",
     "section": "Git and GitHub for version control",
-    "text": "Git and GitHub for version control\n\nGit: version control on your computer.\nGitHub: connects your local Git to the cloud.\n\nProject management\nCollaboration\nVisual interface\nOptional!"
+    "text": "Git and GitHub for version control\n\nGit: version control on your computer.\nGitHub: connects your local Git to the cloud.\n\nProject management\nCollaboration\nVisual interface\nOptional, but we will be using it!"
   },
   {
     "objectID": "lessons/3-git/slides.html#rstudio-new-project-wizard",
