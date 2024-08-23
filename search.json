@@ -149,28 +149,28 @@
   {
     "objectID": "lessons/1-project-management/notes.html",
     "href": "lessons/1-project-management/notes.html",
-    "title": "Project Management and Coding Best Practices",
+    "title": "Project Management and Documentation",
     "section": "",
     "text": "Learners will learn about and practice managing their projects using file structure and RStudio projects, and about current best practices and style guides for R coding."
   },
   {
     "objectID": "lessons/1-project-management/notes.html#objective",
     "href": "lessons/1-project-management/notes.html#objective",
-    "title": "Project Management and Coding Best Practices",
+    "title": "Project Management and Documentation",
     "section": "",
     "text": "Learners will learn about and practice managing their projects using file structure and RStudio projects, and about current best practices and style guides for R coding."
   },
   {
     "objectID": "lessons/1-project-management/notes.html#lesson-outline",
     "href": "lessons/1-project-management/notes.html#lesson-outline",
-    "title": "Project Management and Coding Best Practices",
+    "title": "Project Management and Documentation",
     "section": "Lesson Outline",
     "text": "Lesson Outline\n\nIntroductions\nDiscuss reproducibility\nGive tour of course website & syllabus\n\nPoint out code of conduct\n\nScreen setup\nDon’t save or load .RData!\nDiscuss general best practices for research compendia (use Carpentry lesson??)\n\nAll files needed for a project in the same folder (ideally)\nOrganize data, code, and outputs into different folders at a minimum\nNever edit raw data\nInclude documentation on what each file is/does in a README\n\nLive Coding: create an R project and add gapminder data to it\n\nShow file pane & connect to Windows Explorer / Finder\nShow how to make a file read-only\nDemo closing, opening, and switching projects\n\nHomework:\n\nApply one or more of the organizing principles of a research compendium to an existing research project."
   },
   {
     "objectID": "lessons/1-project-management/notes.html#installation-materials",
     "href": "lessons/1-project-management/notes.html#installation-materials",
-    "title": "Project Management and Coding Best Practices",
+    "title": "Project Management and Documentation",
     "section": "Installation & materials",
     "text": "Installation & materials\n\nSlides\nSoftware Carpentry Introduction to R and RStudio episode\nSoftware Carpentry Project Management with RStudio episode"
   },
