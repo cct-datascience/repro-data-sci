@@ -60,7 +60,7 @@ logo: "../../logo.png"
 
 ## Let's get set up!
 
--   macOS comes with a shell (usually Bash or Zsh) built-in
+-   macOS comes with a shell (usually Bash or zsh) built-in
 
 -   Windows need to install GitBash (includes Bash shell and git, which we will use later)
 
@@ -129,6 +129,22 @@ git --help
 -   The file system the shell sees is the *same* as your File Explorer tab
 -   We can use the shell from the Terminal pane in RStudio
 -   Find help from built-in manual pages, Google, (maybe) AI tools, or community
+
+# Break
+
+## Reproducibility colloquim check-in
+
+-   Breakout rooms of 3-4
+
+## Check-in questions {.smaller}
+
+-   What project are you going to be focusing on for the reproducibility colloquim?
+-   In which areas do you think it will benefit the most from a makeover?
+    -   Project organization
+    -   Collaboration practices (git, github)
+    -   Code efficiency and robustness (functions, iteration)
+    -   Documentation
+-   What kinds of support will help you make those improvements?
 
 ## Homework for next time
 
