@@ -3,7 +3,9 @@ title: "Reproducibility & Data Science in R"
 subtitle: "Session 1"
 date: "2024-09-03"
 date-format: long
-format: uaz-revealjs
+format: 
+  uaz-revealjs:
+    reference-location: document
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
@@ -241,8 +243,7 @@ Resources:
 
 -   Generative AI / large language models (LLMs) can generate code, explain code, or suggest code improvements
 
--   GenAI/LLMs have been described as "hallucinating", "stochastic parrots"[^1], and even "bullshit machines"
-    [^2]
+-   GenAI/LLMs have been described as "hallucinating", "[stochastic parrots](https://en.wikipedia.org/wiki/Stochastic_parrot)", and even "bullshit machines" [@hicks2024]
 
 -   Making things up is fundamental feature of GenAI and will likely always be a problem
 
@@ -252,12 +253,11 @@ Skip if short on time
 
 ## A note on AI
 
--   Beginners have difficulty spotting mistakes in AI generated code solutions[^3]
+-   Beginners have difficulty spotting mistakes in AI generated code solutions [@kabir2024]
 
 -   Struggling and frustration are important parts of learning—short circuiting these steps does you a disservice in the long run
 
--   AI presents a host of ethical[^4], environmental[^5], and legal issues (e.g. plagiarism) to conside
-    r
+-   AI presents a host of [ethical](https://mashable.com/article/chat-gpt-open-ai-workers-exploitation), [environmental](https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/), and [copyright](https://www.theregister.com/2024/01/08/midjourney_openai_copyright/) issues to consider
 
 ::: notes
 Skip if short on time
@@ -268,8 +268,9 @@ Skip if short on time
 ::: incremental
 -   Structure files in self-contained projects or "research compendia"
 -   Put data in a separate folder and never edit raw data!
--   Avoid `setwd()` and `getwd()`---use relative paths and RStudio projects instead
 -   Naming things well is difficult but worth spending time on
+-   Use RStudio projects with one project per compendium
+-   Include a README file in each compendium
 :::
 
 ## Your Tasks
@@ -280,13 +281,3 @@ Skip if short on time
 -   Create or improve a README for your project
 
 ## References
-
-[^1]: <https://en.wikipedia.org/wiki/Stochastic_parrot>
-
-[^2]: @hicks2024
-
-[^3]: <https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/>
-
-[^4]: <https://mashable.com/article/chat-gpt-open-ai-workers-exploitation>
-
-[^5]: <https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/>
