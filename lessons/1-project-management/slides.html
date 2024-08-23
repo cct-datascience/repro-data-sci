@@ -12,7 +12,7 @@
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <meta name="dcterms.date" content="2023-09-05">
+  <meta name="dcterms.date" content="2024-09-03">
   <title>Reproducibility &amp; Data Science in R</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -31,7 +31,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -336,7 +356,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">September 5, 2023</p>
+  <p class="date">September 3, 2024</p>
 </section>
 <section id="what-is-reproducibility-why" class="slide level2">
 <h2>What is Reproducibility &amp; Why?</h2>
@@ -364,15 +384,15 @@
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>A (usually fiction) story:</strong></p>
+<p><strong>A (usually fictional) story:</strong></p>
 </div>
 <div class="callout-content">
-<p>You read a great paper and think “I bet I could apply their analysis methods to my work!” You click a DOI link in their Data Availability section that they definitely have. It opens to a web page where you can download a folder with R code, data, and documentation about the code and data. The page also has detailed information about how to cite the code and data. You open the folder in R Studio and you are prompted to install all the packages you need to run the code. You open the analysis code script and hit “run”. All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper. You scroll through the well-formatted R code and understand from the authors’ comments exactly what the code does and how to adapt it to your work.</p>
+<p>You read a paper and think “I bet I could apply their analysis methods to my work!” You click a DOI link in their Data Availability section. It opens to a web page where you can download a folder with R code, data, and documentation. You open the folder in R Studio and you are prompted to install all the packages you need to run the code. You open the analysis code script and hit “run”. All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper. You scroll through the well-formatted R code and understand from the authors’ comments exactly what the code does and how to adapt it to your work.</p>
 </div>
 </div>
 </div>
 <div class="fragment">
-<p>We want to help you make this story a reality for someone else!</p>
+<p>We want to help you make this story a reality for someone!</p>
 <aside class="notes">
 <p>Including future you!</p>
 <style type="text/css">
@@ -393,6 +413,28 @@
 <p>Workshop series website:<br>
 <a href="https://cct-datascience.github.io/repro-data-sci/" class="uri">https://cct-datascience.github.io/repro-data-sci/</a></p>
 </section>
+<section id="reproducibility-colloquium" class="slide level2">
+<h2>Reproducibility Colloquium</h2>
+<p>Format: short talks on one or two ways you’ve improved a project</p>
+<p><strong><em>Your task for this week:</em></strong></p>
+<ul>
+<li><p>Pick a <em>real</em> project to give a “reproducibility renovation” over the next 5 weeks</p></li>
+<li><p>Every week, you’ll make improvements and document your progress for your talk</p></li>
+</ul>
+<aside class="notes">
+<p>Take before and after screenshots! Keep track of every time you thank your past self!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="screen-setup" class="slide level2 smaller">
 <h2>Screen Setup <i class="fa-solid fa-desktop" aria-label="desktop"></i> <i class="fa-solid fa-laptop" aria-label="laptop"></i></h2>
 <ul>
@@ -402,15 +444,125 @@
 </ul>
 
 <img data-src="desk.jpg" class="quarto-figure quarto-figure-center r-stretch" alt="Photo of a desk with a laptop on a laptop stand to the left and a larger monitor to the right in front of an external keyboard.  Laptop monitor has Zoom open and the larger monitor has RStudio open."></section>
-<section id="creating-a-research-compendium-with-r" class="slide level2">
-<h2>Creating a Research Compendium with R</h2>
-<p>Learning Objectives:</p>
+<section>
+<section id="creating-a-research-compendium" class="title-slide slide level1 center">
+<h1>Creating a Research Compendium</h1>
+
+</section>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
 <ol type="1">
+<li>Understand the benefits of organizing a project as a research compendium</li>
 <li>Use RStudio projects to create self-contained reproducible projects</li>
 <li>Use best practices for organizing files in a project</li>
-<li>Use relative file paths to improve portability of projects</li>
-<li>Structure R scripts so they are easier to understand</li>
+<li><strong>Create a “toy” research compendium you can use throughout this series</strong></li>
 </ol>
+<aside class="notes">
+<p>Clarify that learners will have 1) their <em>real</em> project that they are improving and taking notes on for the reproducibility colloquium <strong>and</strong> 2) a <em>toy</em> project that they’ll come back to every Tuesday and Thursday</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>A research compendium is a collection of all digital parts of a research project including data, code, texts (protocols, reports, questionnaires, meta data). The collection is created in such a way that reproducing all results is straightforward.</p>
+<p>— <a href="https://book.the-turing-way.org/reproducible-research/compendia">The Turing Way</a></p>
+</blockquote>
+<div class="fragment">
+<p>(“project” could be a single manuscript or multiple manuscripts that use the same data or code—that’s up to you to decide)</p>
+</div>
+</section>
+<section id="research-compendium-best-practices" class="slide level2">
+<h2>Research Compendium Best Practices</h2>
+<div>
+<ul>
+<li class="fragment"><p>Treat raw data as read-only</p></li>
+<li class="fragment"><p>Use scripts to “clean” and wrangle data</p></li>
+<li class="fragment"><p>Treat generated outputs as disposable</p></li>
+<li class="fragment"><p>Put data, code, and outputs in different folders</p></li>
+</ul>
+</div>
+<aside class="notes">
+<p>A couple reasons to use scripts over, say, Excel: the cleaning steps are the code; avoid introducing errors by opening things in Excel with it’s eager auto-formatting.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-goes-in-a-compendium" class="slide level2">
+<h2>What goes in a compendium?</h2>
+<p>Ideally, <em>everything related to that project</em></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data</li>
+<li>Code</li>
+<li>Lab notebook</li>
+<li>Notes about analyses</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Outputs</li>
+<li>Documentation / metadata</li>
+<li>Reports / presentations</li>
+<li>Manuscripts</li>
+</ul>
+</div></div>
+</section>
+<section id="basic-compendium-structure" class="slide level2 smaller">
+<h2>Basic compendium structure</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="compendium-basic.png" width="398"></p>
+</div><div class="column" style="width:60%;">
+<div>
+<ul>
+<li class="fragment">Short machine and human readable name</li>
+<li class="fragment">Separate folders for “raw” and “clean” data</li>
+<li class="fragment"><code>gdd-thresholds.Rproj</code> file is created by RStudio</li>
+<li class="fragment"><code>R/</code> folder contains all code to reproduce analysis. Could be named <code>scripts/</code> or something else</li>
+<li class="fragment">R scripts are numbered with two digits so alphabetic sorting = numeric sorting</li>
+<li class="fragment">README.md is a markdown (plain text) document (we’ll get to README’s later)</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="rstudio-projects" class="slide level2">
+<h2>RStudio projects</h2>
+<ul>
+<li>Never worry about <code>setwd()</code> or <code>getwd()</code> again! Your compendium is <em>always</em> your working directory.</li>
+<li>Switch between many active projects. RStudio remembers where you left off.</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Don’t worry if you don’t know what a <strong>working directory</strong> is, Renata will talk more about it next week!</p>
+</div>
+</div>
+</div>
+<p>DEMO: create a new RStudio Project</p>
 </section>
 <section id="settings-for-success" class="slide level2">
 <h2>Settings for Success</h2>
@@ -425,29 +577,80 @@
 <div>
 <ul>
 <li class="fragment"><p>Fresh start ensures reproducibility</p></li>
-<li class="fragment"><p>Use Session &gt; Restart R to check reproducibility</p></li>
-<li class="fragment"><p>If long-running code is a concern, there are better solutions</p></li>
+<li class="fragment"><p>If your analysis relies on saving your environment in .RData, there are better solutions</p></li>
 </ul>
 </div>
 </div></div>
 </section>
-<section id="project-management" class="slide level2">
-<h2>Project Management</h2>
-
-<img data-src="https://swcarpentry.github.io/r-novice-gapminder/fig/bad_layout.png" class="r-stretch"><aside class="notes">
-<p>There are many reasons why we should <em>ALWAYS</em> avoid this:</p>
-<ol type="1">
-<li>It is really hard to tell which version of your data is the original and which is the modified;</li>
-<li>It gets really messy because it mixes files with various extensions together;</li>
-<li>It probably takes you a lot of time to actually find things, and relate the correct figures to the exact code that has been used to generate it;</li>
-</ol>
-<p>A good project layout will ultimately make your life easier:</p>
+<section id="build-your-toy-research-compendium" class="slide level2">
+<h2>Build your (toy) research compendium</h2>
+<p>Using the RStudio file pane OR Finder (macOS) / File Explorer (Windows)</p>
 <ul>
-<li>It will help ensure the integrity of your data;</li>
-<li>It makes it simpler to share your code with someone else (a lab-mate, collaborator, or supervisor);</li>
-<li>It allows you to easily upload your code with your manuscript submission;</li>
-<li>It makes it easier to pick the project back up after a break.</li>
+<li>Create folders for <code>data/</code>, <code>R/</code>, <code>output/</code> and <code>notes/</code></li>
+<li>Download the <a href="https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv">gapminder dataset</a> and place it in your <code>data/</code> folder</li>
+<li>Create a text file called <code>README.md</code></li>
 </ul>
+</section>
+<section id="readme" class="slide level2">
+<h2>README</h2>
+<p>A README is a plain text document in your research compendium that contains:</p>
+<div>
+<ul>
+<li class="fragment"><p>Brief project summary</p></li>
+<li class="fragment"><p>Project status (e.g.&nbsp;work-in-progress, published)</p></li>
+<li class="fragment"><p>Who is involved</p></li>
+<li class="fragment"><p>If re-use is allowed and how to give credit</p></li>
+<li class="fragment"><p>Structure of repo (which files do what?)</p></li>
+<li class="fragment"><p>Instructions on how to reproduce results</p></li>
+</ul>
+</div>
+</section>
+<section id="example-readmes-for-research-compendia" class="slide level2">
+<h2>Example READMEs for research compendia</h2>
+<ul>
+<li><p><a href="https://github.com/Aariq/BACE-legacy-effects" class="uri">https://github.com/Aariq/BACE-legacy-effects</a></p></li>
+<li><p><a href="https://github.com/ecohealthalliance/amphibian_trade" class="uri">https://github.com/ecohealthalliance/amphibian_trade</a></p></li>
+<li><p><a href="https://github.com/atredennick/size-environment" class="uri">https://github.com/atredennick/size-environment</a></p></li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>We will revisit how to make a README formatted for GitHub in week 3</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="getting-help" class="title-slide slide level1 center">
+<h1>Getting Help</h1>
+
+</section>
+<section id="getting-help-1" class="slide level2">
+<h2>Getting Help</h2>
+<p>Every week, we’ll try to point you to places to look for help when you’re stuck or to dive more deeply into the topics covered.</p>
+<p>Asking a question in our Slack channel is always great place to start!</p>
+<p>Resources:</p>
+<ul>
+<li><p>RStudio IDE: <a href="https://forum.posit.co/">Posit Community</a> Forum</p></li>
+<li><p>Research Compendia: <a href="https://book.the-turing-way.org/reproducible-research/compendia">The Turing Way</a></p></li>
+<li><p>The whole picture: <span class="citation" data-cites="wilson2017">Wilson et al. (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span>, <span class="citation" data-cites="seibold2024">Seibold (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p></li>
+</ul>
+</section>
+<section id="a-note-on-ai" class="slide level2">
+<h2>A note on AI</h2>
+<ul>
+<li><p>Generative AI / large language models (LLMs) can generate code, explain code, or suggest code improvements</p></li>
+<li><p>GenAI/LLMs have been described as “hallucinating”, “<a href="https://en.wikipedia.org/wiki/Stochastic_parrot">stochastic parrots</a>”, and even “bullshit machines” <span class="citation" data-cites="hicks2024">(<a href="#/references" role="doc-biblioref" onclick="">Hicks, Humphries, and Slater 2024</a>)</span></p></li>
+<li><p>Making things up is fundamental feature of GenAI and will likely always be a problem</p></li>
+</ul>
+<aside class="notes">
+<p>Skip if short on time</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -460,26 +663,26 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="research-compendium-best-practices" class="slide level2">
-<h2>Research Compendium Best Practices</h2>
-<div>
+<section id="a-note-on-ai-1" class="slide level2">
+<h2>A note on AI</h2>
 <ul>
-<li class="fragment"><p>Treat data as read-only</p></li>
-<li class="fragment"><p>Use scripts to “clean” and wrangle data</p></li>
-<li class="fragment"><p>Treat generated outputs as disposable</p></li>
-<li class="fragment"><p>Put data, code, and outputs in different folders</p></li>
+<li><p>Beginners have difficulty spotting mistakes in AI generated code solutions <span class="citation" data-cites="kabir2024">(<a href="#/references" role="doc-biblioref" onclick="">Kabir et al. 2024</a>)</span></p></li>
+<li><p>Struggling and frustration are important parts of learning—short circuiting these steps does you a disservice in the long run</p></li>
+<li><p>AI presents a host of <a href="https://mashable.com/article/chat-gpt-open-ai-workers-exploitation">ethical</a>, <a href="https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/">environmental</a>, and <a href="https://www.theregister.com/2024/01/08/midjourney_openai_copyright/">copyright</a> issues to consider</p></li>
 </ul>
-</div>
-</section>
-<section id="rstudio-projects-live-coding" class="title-slide slide level1 center">
-<h1>RStudio projects (live coding)</h1>
-
-</section>
-
-<section>
-<section id="r-code-best-practices-live-coding" class="title-slide slide level1 center">
-<h1>R code best practices (live coding)</h1>
-
+<aside class="notes">
+<p>Skip if short on time</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="takeaways" class="slide level2">
 <h2>Takeaways</h2>
@@ -487,23 +690,42 @@
 <ul>
 <li class="fragment">Structure files in self-contained projects or “research compendia”</li>
 <li class="fragment">Put data in a separate folder and never edit raw data!</li>
-<li class="fragment">Avoid <code>setwd()</code> and <code>getwd()</code>—use relative paths and RStudio projects instead</li>
 <li class="fragment">Naming things well is difficult but worth spending time on</li>
-<li class="fragment">Use some consistent style in your code and organize scripts in sections</li>
-<li class="fragment">Split long scripts into multiples and use <code>source()</code> to run them if needed’</li>
+<li class="fragment">Use RStudio projects with one project per compendium</li>
+<li class="fragment">Include a README file in each compendium</li>
 </ul>
 </div>
 </section>
-<section id="homework-optional" class="slide level2">
-<h2>Homework (optional)</h2>
-<p>Re-organize an existing project into a research compendium</p>
-<p>OR</p>
-<p>Apply a consistent coding style to one of your R scripts (e.g.&nbsp;with Code &gt; Reformat Code or with the <code>styler</code> package)</p>
+<section id="your-tasks" class="slide level2">
+<h2>Your Tasks</h2>
+<ul>
+<li>Choose a project you will focus on for your “reproducibility renovation”</li>
+<li>Does your project follow the file naming and organizations strategies we discussed?</li>
+<li>If not, re-organize and re-name to improve it</li>
+<li>Create or improve a README for your project</li>
+</ul>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
 
 <div class="quarto-auto-generated-content">
 <p><img src="../../logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-hicks2024" class="csl-entry" role="listitem">
+Hicks, Michael Townsen, James Humphries, and Joe Slater. 2024. <span>“ChatGPT Is Bullshit.”</span> <em>Ethics and Information Technology</em> 26 (2): 38. <a href="https://doi.org/10.1007/s10676-024-09775-5">https://doi.org/10.1007/s10676-024-09775-5</a>.
+</div>
+<div id="ref-kabir2024" class="csl-entry" role="listitem">
+Kabir, Samia, David N. Udo-Imeh, Bonan Kou, and Tianyi Zhang. 2024. <span>“Is Stack Overflow Obsolete? An Empirical Study of the Characteristics of ChatGPT Answers to Stack Overflow Questions.”</span> In, 117. CHI ’24. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3613904.3642596">https://doi.org/10.1145/3613904.3642596</a>.
+</div>
+<div id="ref-seibold2024" class="csl-entry" role="listitem">
+Seibold, Heidi. 2024. <em>6 Steps Towards Reproducible Research</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.12744715">https://doi.org/10.5281/zenodo.12744715</a>.
+</div>
+<div id="ref-wilson2017" class="csl-entry" role="listitem">
+Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. <span>“Good Enough Practices in Scientific Computing.”</span> Edited by Francis Ouellette. <em>PLoS Computational Biology</em> 13 (6): e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a>.
 </div>
 </div>
 </section></section>

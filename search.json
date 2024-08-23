@@ -165,14 +165,14 @@
     "href": "lessons/1-project-management/notes.html#lesson-outline",
     "title": "Project Management and Coding Best Practices",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nIntroductions\nDiscuss reproducibility\nGive tour of course website & syllabus\n\nPoint out code of conduct\n\nScreen setup\nDon’t save or load .RData!\nDiscuss general best practices for research compendia (use Carpentry lesson)\n\nAll files needed for a project in the same folder (ideally)\nOrganize data, code, and outputs into different folders at a minimum\nNever edit raw data\nInclude documentation on what each file is/does in a README\n\nLive Coding: create an R project and add gapminder data to it\n\nShow file pane & connect to Windows Explorer / Finder\nShow how to make a file read-only\nDemo closing, opening, and switching projects\n\nLive Coding: R code best practices\n\nCreate 01-wrangle-data.R in R/\nHeader comment\nDon’t use setwd()—not needed with .Rproj. Use relative paths!\nKeyboard shortcut for adding sections + outline view and navigator at bottom of script panel\nLoad packages at top of script, even when not used until later\nRestart R and run from top often\nCode styling with RStudio (ctl + shift + A)\nHow to break up code (e.g. save output of 01-wrangle-data.R into data_clean/, then read that in later)\n\nHomework:\n\nApply one or more of the organizing principles of a research compendium to an existing research project."
+    "text": "Lesson Outline\n\nIntroductions\nDiscuss reproducibility\nGive tour of course website & syllabus\n\nPoint out code of conduct\n\nScreen setup\nDon’t save or load .RData!\nDiscuss general best practices for research compendia (use Carpentry lesson??)\n\nAll files needed for a project in the same folder (ideally)\nOrganize data, code, and outputs into different folders at a minimum\nNever edit raw data\nInclude documentation on what each file is/does in a README\n\nLive Coding: create an R project and add gapminder data to it\n\nShow file pane & connect to Windows Explorer / Finder\nShow how to make a file read-only\nDemo closing, opening, and switching projects\n\nHomework:\n\nApply one or more of the organizing principles of a research compendium to an existing research project."
   },
   {
     "objectID": "lessons/1-project-management/notes.html#installation-materials",
     "href": "lessons/1-project-management/notes.html#installation-materials",
     "title": "Project Management and Coding Best Practices",
     "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Introduction to R and RStudio episode\nSoftware Carpentry Project Management with RStudio episode\nSoftware Carpentry Best Practices for Writing R Code\nhttps://r4ds.hadley.nz/workflow-style"
+    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Introduction to R and RStudio episode\nSoftware Carpentry Project Management with RStudio episode"
   },
   {
     "objectID": "lessons/10-get-credit/notes.html",
@@ -921,7 +921,7 @@
     "href": "lessons/1-project-management/slides.html#the-whole-picture",
     "title": "Reproducibility & Data Science in R",
     "section": "The Whole Picture",
-    "text": "The Whole Picture\n\n\n\n\n\n\nA (usually fiction) story:\n\n\nYou read a great paper and think “I bet I could apply their analysis methods to my work!” You click a DOI link in their Data Availability section that they definitely have. It opens to a web page where you can download a folder with R code, data, and documentation about the code and data. The page also has detailed information about how to cite the code and data. You open the folder in R Studio and you are prompted to install all the packages you need to run the code. You open the analysis code script and hit “run”. All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper. You scroll through the well-formatted R code and understand from the authors’ comments exactly what the code does and how to adapt it to your work.\n\n\n\n\nWe want to help you make this story a reality for someone else!\n\nIncluding future you!"
+    "text": "The Whole Picture\n\n\n\n\n\n\nA (usually fictional) story:\n\n\nYou read a paper and think “I bet I could apply their analysis methods to my work!” You click a DOI link in their Data Availability section. It opens to a web page where you can download a folder with R code, data, and documentation. You open the folder in R Studio and you are prompted to install all the packages you need to run the code. You open the analysis code script and hit “run”. All the code runs perfectly with no errors, creating all the figures, tables, and statistics used in the paper. You scroll through the well-formatted R code and understand from the authors’ comments exactly what the code does and how to adapt it to your work.\n\n\n\n\nWe want to help you make this story a reality for someone!\n\nIncluding future you!"
   },
   {
     "objectID": "lessons/1-project-management/slides.html#syllabus-workshop-materials",
@@ -931,6 +931,13 @@
     "text": "Syllabus & Workshop Materials\nWorkshop series website:\nhttps://cct-datascience.github.io/repro-data-sci/"
   },
   {
+    "objectID": "lessons/1-project-management/slides.html#reproducibility-colloquium",
+    "href": "lessons/1-project-management/slides.html#reproducibility-colloquium",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Reproducibility Colloquium",
+    "text": "Reproducibility Colloquium\nFormat: short talks on one or two ways you’ve improved a project\nYour task for this week:\n\nPick a real project to give a “reproducibility renovation” over the next 5 weeks\nEvery week, you’ll make improvements and document your progress for your talk\n\n\nTake before and after screenshots! Keep track of every time you thank your past self!"
+  },
+  {
     "objectID": "lessons/1-project-management/slides.html#screen-setup",
     "href": "lessons/1-project-management/slides.html#screen-setup",
     "title": "Reproducibility & Data Science in R",
@@ -938,46 +945,116 @@
     "text": "Screen Setup  \n\nDual monitors will be very helpful\nVirtual desktops (“Spaces” in macOS) also helpful\nLet us know if you do not have access to a second monitor"
   },
   {
-    "objectID": "lessons/1-project-management/slides.html#creating-a-research-compendium-with-r",
-    "href": "lessons/1-project-management/slides.html#creating-a-research-compendium-with-r",
+    "objectID": "lessons/1-project-management/slides.html#learning-objectives",
+    "href": "lessons/1-project-management/slides.html#learning-objectives",
     "title": "Reproducibility & Data Science in R",
-    "section": "Creating a Research Compendium with R",
-    "text": "Creating a Research Compendium with R\nLearning Objectives:\n\nUse RStudio projects to create self-contained reproducible projects\nUse best practices for organizing files in a project\nUse relative file paths to improve portability of projects\nStructure R scripts so they are easier to understand"
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nUnderstand the benefits of organizing a project as a research compendium\nUse RStudio projects to create self-contained reproducible projects\nUse best practices for organizing files in a project\nCreate a “toy” research compendium you can use throughout this series\n\n\nClarify that learners will have 1) their real project that they are improving and taking notes on for the reproducibility colloquium and 2) a toy project that they’ll come back to every Tuesday and Thursday"
   },
   {
-    "objectID": "lessons/1-project-management/slides.html#settings-for-success",
-    "href": "lessons/1-project-management/slides.html#settings-for-success",
+    "objectID": "lessons/1-project-management/slides.html#section-1",
+    "href": "lessons/1-project-management/slides.html#section-1",
     "title": "Reproducibility & Data Science in R",
-    "section": "Settings for Success",
-    "text": "Settings for Success\n\n\n\n\n\n\n\n\n\n\nFresh start ensures reproducibility\nUse Session &gt; Restart R to check reproducibility\nIf long-running code is a concern, there are better solutions"
-  },
-  {
-    "objectID": "lessons/1-project-management/slides.html#project-management",
-    "href": "lessons/1-project-management/slides.html#project-management",
-    "title": "Reproducibility & Data Science in R",
-    "section": "Project Management",
-    "text": "Project Management\n\n\nThere are many reasons why we should ALWAYS avoid this:\n\nIt is really hard to tell which version of your data is the original and which is the modified;\nIt gets really messy because it mixes files with various extensions together;\nIt probably takes you a lot of time to actually find things, and relate the correct figures to the exact code that has been used to generate it;\n\nA good project layout will ultimately make your life easier:\n\nIt will help ensure the integrity of your data;\nIt makes it simpler to share your code with someone else (a lab-mate, collaborator, or supervisor);\nIt allows you to easily upload your code with your manuscript submission;\nIt makes it easier to pick the project back up after a break."
+    "section": "",
+    "text": "A research compendium is a collection of all digital parts of a research project including data, code, texts (protocols, reports, questionnaires, meta data). The collection is created in such a way that reproducing all results is straightforward.\n— The Turing Way\n\n\n(“project” could be a single manuscript or multiple manuscripts that use the same data or code—that’s up to you to decide)"
   },
   {
     "objectID": "lessons/1-project-management/slides.html#research-compendium-best-practices",
     "href": "lessons/1-project-management/slides.html#research-compendium-best-practices",
     "title": "Reproducibility & Data Science in R",
     "section": "Research Compendium Best Practices",
-    "text": "Research Compendium Best Practices\n\n\nTreat data as read-only\nUse scripts to “clean” and wrangle data\nTreat generated outputs as disposable\nPut data, code, and outputs in different folders"
+    "text": "Research Compendium Best Practices\n\n\nTreat raw data as read-only\nUse scripts to “clean” and wrangle data\nTreat generated outputs as disposable\nPut data, code, and outputs in different folders\n\n\n\nA couple reasons to use scripts over, say, Excel: the cleaning steps are the code; avoid introducing errors by opening things in Excel with it’s eager auto-formatting."
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#what-goes-in-a-compendium",
+    "href": "lessons/1-project-management/slides.html#what-goes-in-a-compendium",
+    "title": "Reproducibility & Data Science in R",
+    "section": "What goes in a compendium?",
+    "text": "What goes in a compendium?\nIdeally, everything related to that project\n\n\n\nData\nCode\nLab notebook\nNotes about analyses\n\n\n\nOutputs\nDocumentation / metadata\nReports / presentations\nManuscripts"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#basic-compendium-structure",
+    "href": "lessons/1-project-management/slides.html#basic-compendium-structure",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Basic compendium structure",
+    "text": "Basic compendium structure\n\n\n\n\n\n\nShort machine and human readable name\nSeparate folders for “raw” and “clean” data\ngdd-thresholds.Rproj file is created by RStudio\nR/ folder contains all code to reproduce analysis. Could be named scripts/ or something else\nR scripts are numbered with two digits so alphabetic sorting = numeric sorting\nREADME.md is a markdown (plain text) document (we’ll get to README’s later)"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#rstudio-projects",
+    "href": "lessons/1-project-management/slides.html#rstudio-projects",
+    "title": "Reproducibility & Data Science in R",
+    "section": "RStudio projects",
+    "text": "RStudio projects\n\nNever worry about setwd() or getwd() again! Your compendium is always your working directory.\nSwitch between many active projects. RStudio remembers where you left off.\n\n\n\n\n\n\n\nTip\n\n\nDon’t worry if you don’t know what a working directory is, Renata will talk more about it next week!\n\n\n\nDEMO: create a new RStudio Project"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#settings-for-success",
+    "href": "lessons/1-project-management/slides.html#settings-for-success",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Settings for Success",
+    "text": "Settings for Success\n\n\n\n\n\n\n\n\n\n\nFresh start ensures reproducibility\nIf your analysis relies on saving your environment in .RData, there are better solutions"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#build-your-toy-research-compendium",
+    "href": "lessons/1-project-management/slides.html#build-your-toy-research-compendium",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Build your (toy) research compendium",
+    "text": "Build your (toy) research compendium\nUsing the RStudio file pane OR Finder (macOS) / File Explorer (Windows)\n\nCreate folders for data/, R/, output/ and notes/\nDownload the gapminder dataset and place it in your data/ folder\nCreate a text file called README.md"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#readme",
+    "href": "lessons/1-project-management/slides.html#readme",
+    "title": "Reproducibility & Data Science in R",
+    "section": "README",
+    "text": "README\nA README is a plain text document in your research compendium that contains:\n\n\nBrief project summary\nProject status (e.g. work-in-progress, published)\nWho is involved\nIf re-use is allowed and how to give credit\nStructure of repo (which files do what?)\nInstructions on how to reproduce results"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#example-readmes-for-research-compendia",
+    "href": "lessons/1-project-management/slides.html#example-readmes-for-research-compendia",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Example READMEs for research compendia",
+    "text": "Example READMEs for research compendia\n\nhttps://github.com/Aariq/BACE-legacy-effects\nhttps://github.com/ecohealthalliance/amphibian_trade\nhttps://github.com/atredennick/size-environment\n\n\n\n\n\n\n\nNote\n\n\nWe will revisit how to make a README formatted for GitHub in week 3"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#getting-help-1",
+    "href": "lessons/1-project-management/slides.html#getting-help-1",
+    "title": "Reproducibility & Data Science in R",
+    "section": "Getting Help",
+    "text": "Getting Help\nEvery week, we’ll try to point you to places to look for help when you’re stuck or to dive more deeply into the topics covered.\nAsking a question in our Slack channel is always great place to start!\nResources:\n\nRStudio IDE: Posit Community Forum\nResearch Compendia: The Turing Way\nThe whole picture: Wilson et al. (2017), Seibold (2024)"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#a-note-on-ai",
+    "href": "lessons/1-project-management/slides.html#a-note-on-ai",
+    "title": "Reproducibility & Data Science in R",
+    "section": "A note on AI",
+    "text": "A note on AI\n\nGenerative AI / large language models (LLMs) can generate code, explain code, or suggest code improvements\nGenAI/LLMs have been described as “hallucinating”, “stochastic parrots”, and even “bullshit machines” (Hicks, Humphries, and Slater 2024)\nMaking things up is fundamental feature of GenAI and will likely always be a problem\n\n\nSkip if short on time"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#a-note-on-ai-1",
+    "href": "lessons/1-project-management/slides.html#a-note-on-ai-1",
+    "title": "Reproducibility & Data Science in R",
+    "section": "A note on AI",
+    "text": "A note on AI\n\nBeginners have difficulty spotting mistakes in AI generated code solutions (Kabir et al. 2024)\nStruggling and frustration are important parts of learning—short circuiting these steps does you a disservice in the long run\nAI presents a host of ethical, environmental, and copyright issues to consider\n\n\nSkip if short on time"
   },
   {
     "objectID": "lessons/1-project-management/slides.html#takeaways",
     "href": "lessons/1-project-management/slides.html#takeaways",
     "title": "Reproducibility & Data Science in R",
     "section": "Takeaways",
-    "text": "Takeaways\n\n\nStructure files in self-contained projects or “research compendia”\nPut data in a separate folder and never edit raw data!\nAvoid setwd() and getwd()—use relative paths and RStudio projects instead\nNaming things well is difficult but worth spending time on\nUse some consistent style in your code and organize scripts in sections\nSplit long scripts into multiples and use source() to run them if needed’"
+    "text": "Takeaways\n\n\nStructure files in self-contained projects or “research compendia”\nPut data in a separate folder and never edit raw data!\nNaming things well is difficult but worth spending time on\nUse RStudio projects with one project per compendium\nInclude a README file in each compendium"
   },
   {
-    "objectID": "lessons/1-project-management/slides.html#homework-optional",
-    "href": "lessons/1-project-management/slides.html#homework-optional",
+    "objectID": "lessons/1-project-management/slides.html#your-tasks",
+    "href": "lessons/1-project-management/slides.html#your-tasks",
     "title": "Reproducibility & Data Science in R",
-    "section": "Homework (optional)",
-    "text": "Homework (optional)\nRe-organize an existing project into a research compendium\nOR\nApply a consistent coding style to one of your R scripts (e.g. with Code &gt; Reformat Code or with the styler package)\n\n\n\n\nReproduciblity & Data Science in R"
+    "section": "Your Tasks",
+    "text": "Your Tasks\n\nChoose a project you will focus on for your “reproducibility renovation”\nDoes your project follow the file naming and organizations strategies we discussed?\nIf not, re-organize and re-name to improve it\nCreate or improve a README for your project"
+  },
+  {
+    "objectID": "lessons/1-project-management/slides.html#references",
+    "href": "lessons/1-project-management/slides.html#references",
+    "title": "Reproducibility & Data Science in R",
+    "section": "References",
+    "text": "References\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nHicks, Michael Townsen, James Humphries, and Joe Slater. 2024. “ChatGPT Is Bullshit.” Ethics and Information Technology 26 (2): 38. https://doi.org/10.1007/s10676-024-09775-5.\n\n\nKabir, Samia, David N. Udo-Imeh, Bonan Kou, and Tianyi Zhang. 2024. “Is Stack Overflow Obsolete? An Empirical Study of the Characteristics of ChatGPT Answers to Stack Overflow Questions.” In, 117. CHI ’24. New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/3613904.3642596.\n\n\nSeibold, Heidi. 2024. 6 Steps Towards Reproducible Research. Zenodo. https://doi.org/10.5281/zenodo.12744715.\n\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” Edited by Francis Ouellette. PLoS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
   },
   {
     "objectID": "lessons/9-markdown-quarto/slides.html#readme",
