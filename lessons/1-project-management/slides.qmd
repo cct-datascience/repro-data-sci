@@ -31,7 +31,7 @@ I want my work to be reproducible because...
 ## The Whole Picture
 
 ::: callout-note
-## A (usually fiction) story:
+## A (usually fictional) story:
 
 You read a paper and think "I bet I could apply their analysis methods to my work!" You click a DOI link in their Data Availability section.
 It opens to a web page where you can download a folder with R code, data, and documentation.
