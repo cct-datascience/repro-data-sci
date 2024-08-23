@@ -1,5 +1,5 @@
 ---
-title: "Project Management and Coding Best Practices"
+title: "Project Management and Documentation"
 format: html
 ---
 
