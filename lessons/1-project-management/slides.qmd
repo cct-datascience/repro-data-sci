@@ -87,7 +87,7 @@ Keep track of every time you thank your past self!
 4.  **Create a "toy" research compendium you can use throughout this series**
 
 ::: notes
-Clarify that learners will have 1) their *real* project that they are improving and taking notes on for the reproducibility colloquium **and** 2) a *toy* project that they'll come back to every tuesday and thursday
+Clarify that learners will have 1) their *real* project that they are improving and taking notes on for the reproducibility colloquium **and** 2) a *toy* project that they'll come back to every Tuesday and Thursday
 :::
 
 ## 
@@ -156,22 +156,18 @@ Ideally, *everything related to that project*
 :::
 :::
 
-## RStudio projects <!--# Should we wait on this? -->
+## RStudio projects
 
 -   Never worry about `setwd()` or `getwd()` again! Your compendium is *always* your working directory.
 -   Switch between many active projects. RStudio remembers where you left off.
 
+::: callout-tip
+Don't worry if you don't know what a **working directory** is, Renata will talk more about it next week!
+:::
+
 DEMO: create a new RStudio Project
 
-## Build your (toy) research compendium
-
-Using the RStudio file pane OR Finder (macOS) / File Explorer (Windows)
-
--   Create folders for `data/`, `R/`, `output/` and `notes/`
--   Download the [gapminder dataset](https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv) and place it in your `data/` folder
--   Create a text file called `README.md`
-
-## Settings for Success <!--# Should we wait on this? -->
+## Settings for Success
 
 ::: columns
 ::: {.column width="60%"}
@@ -182,27 +178,47 @@ Using the RStudio file pane OR Finder (macOS) / File Explorer (Windows)
 ::: incremental
 -   Fresh start ensures reproducibility
 
--   Use Session \> Restart R to check reproducibility
+-   If your analysis relies on saving your environment in .RData, there are better solutions
+:::
+:::
+:::
 
--   If long-running code is a concern, there are better solutions
-:::
-:::
-:::
+## Build your (toy) research compendium
+
+Using the RStudio file pane OR Finder (macOS) / File Explorer (Windows)
+
+-   Create folders for `data/`, `R/`, `output/` and `notes/`
+-   Download the [gapminder dataset](https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv) and place it in your `data/` folder
+-   Create a text file called `README.md`
 
 ## README
 
-A README is a plain text (often .md[^1] or .txt) document in your research compendium that describes:
+A README is a plain text document in your research compendium that contains:
 
 ::: incremental
--   What the project is
+-   Brief project summary
+
+-   Project status (e.g. work-in-progress, published)
 
 -   Who is involved
 
--   What it contains (descriptions of folders & files)
+-   If re-use is allowed and how to give credit
 
--   How people are allowed to use your code and data
+-   Structure of repo (which files do what?)
 
--   How to reproduce the analysis or contribute to it
+-   Instructions on how to reproduce results
+:::
+
+## Example READMEs for research compendia
+
+-   <https://github.com/Aariq/BACE-legacy-effects>
+
+-   <https://github.com/ecohealthalliance/amphibian_trade>
+
+-   <https://github.com/atredennick/size-environment>
+
+::: callout-note
+We will revisit how to make a README formatted for GitHub in week 3
 :::
 
 # Getting Help
@@ -225,19 +241,27 @@ Resources:
 
 -   Generative AI / large language models (LLMs) can generate code, explain code, or suggest code improvements
 
--   GenAI/LLMs have been described as "hallucinating", "stochastic parrots"[^2], and even "bullshit machines"
-    [^3]
+-   GenAI/LLMs have been described as "hallucinating", "stochastic parrots"[^1], and even "bullshit machines"
+    [^2]
 
 -   Making things up is fundamental feature of GenAI and will likely always be a problem
 
+::: notes
+Skip if short on time
+:::
+
 ## A note on AI
 
--   Beginners have difficulty spotting mistakes in AI generated code solutions[^4]
+-   Beginners have difficulty spotting mistakes in AI generated code solutions[^3]
 
 -   Struggling and frustration are important parts of learning—short circuiting these steps does you a disservice in the long run
 
--   AI presents a host of ethical[^5], environmental[^6], and legal issues to conside
+-   AI presents a host of ethical[^4], environmental[^5], and legal issues (e.g. plagiarism) to conside
     r
+
+::: notes
+Skip if short on time
+:::
 
 ## Takeaways
 
@@ -257,14 +281,12 @@ Resources:
 
 ## References
 
-[^1]: We will talk more about .md files (markdown) on Thursday
+[^1]: <https://en.wikipedia.org/wiki/Stochastic_parrot>
 
-[^2]: <https://en.wikipedia.org/wiki/Stochastic_parrot>
+[^2]: @hicks2024
 
-[^3]: @hicks2024
+[^3]: <https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/>
 
-[^4]: <https://www.theregister.com/2023/08/07/chatgpt_stack_overflow_ai/>
+[^4]: <https://mashable.com/article/chat-gpt-open-ai-workers-exploitation>
 
-[^5]: <https://mashable.com/article/chat-gpt-open-ai-workers-exploitation>
-
-[^6]: <https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/>
+[^5]: <https://www.technologyreview.com/2023/12/05/1084417/ais-carbon-footprint-is-bigger-than-you-think/>
