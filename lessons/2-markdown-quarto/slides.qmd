@@ -1,114 +1,19 @@
 ---
 title: "Documentation & Literate Programming"
 subtitle: "Session 2"
-format: uaz-revealjs
+format: 
+  uaz-revealjs:
+    link-external-newwindow: true
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
-## README
+## Literate Programming
 
-`README.md` is the landing page for your GitHub repo, and the first place to look for help understanding it.
+<!--# what is it and when to use it -->
 
-::: incremental
--   Brief project summary
-
--   Project status (just an experiment, WIP, archived?)
-
--   How to give credit (e.g. if it is associated with a published paper)
-
--   Structure of repo (which files do what?)
-
--   Instructions on how to reproduce results
-:::
-
-## Example READMEs for research compendia
-
--   <https://github.com/Aariq/BACE-legacy-effects>
-
--   <https://github.com/ecohealthalliance/amr-analysis>
-
--   <https://github.com/atredennick/size-environment>
-
-## Markdown
-
-Markdown is a "markup language" that let's you write plain text to indicate formatting.
-For example:
-
--   `**bold text**` becomes **bold text**
-
--   `~~strikethrough~~` becomes ~~strikethrough~~
-
--   `$E = mc^2$` becomes $E = mc^2$
-
--   `[link](https://www.google.com)` becomes [link](https://www.google.com)
-
--   `` `code()` `` becomes `code()`
-
-Check **Help \> Markdown quick reference** in RStudio
-
-## README.md
-
-::: callout-tip
-## Exercise (\~5 min)
-
-Edit a README.md using some of the markdown tips from the RStudio markdown quick reference
-:::
-
-## Common markdown pitfalls
-
-Spaces between elements matter!
-How would you fix each of these?
-
-``` markdown
-###Heading 3
-```
-
-###Heading 3
-
-. . .
-
-``` markdown
-Colors:
-- red
-- green
-```
-
-Colors: - red - green
-
-. . .
-
-``` markdown
-1.Number one
-2.Number two
-```
-
-1.Number one 2.Number two
-
-## Common markdown pitfalls
-
-Spaces within elements don't matter!
-
-``` markdown
-This     sentence still  gets    rendered  correctly!
-```
-
-This sentence still gets rendered correctly!
-
-``` markdown
-Single line breaks don't separate paragraphs.
-See?
-
-You need two line breaks for that!
-```
-
-Single line breaks don't separate paragraphs.
-See?
-
-You need two line breaks for that!
-
-# Quarto
+# {{< iconify simple-icons:quarto >}} Quarto
 
 ## What is Quarto?
 
@@ -171,6 +76,83 @@ If this looks familiar to RMarkdown users, that's because Quarto was built on le
 It includes all the features of RMarkdown and more.
 :::
 
+## YAML
+
+<!--# TODO: brief explanation of YAML -->
+
+## Code
+
+<!--# Examples of code chunks & output?  E.g. a plot or a table? -->
+
+## Markdown
+
+Markdown is a "markup language" that let's you write plain text to indicate formatting.
+For example:
+
+-   `**bold text**` becomes **bold text**
+
+-   `~~strikethrough~~` becomes ~~strikethrough~~
+
+-   `$E = mc^2$` becomes $E = mc^2$
+
+-   `[link](https://www.google.com)` becomes [link](https://www.google.com)
+
+-   `` `code()` `` becomes `code()`
+
+Check **Help \> Markdown quick reference** in RStudio
+
+## Common markdown pitfalls
+
+Spaces between elements matter!
+How would you fix each of these?
+
+``` markdown
+###Heading 3
+```
+
+###Heading 3
+
+. . .
+
+``` markdown
+Colors:
+- red
+- green
+```
+
+Colors: - red - green
+
+. . .
+
+``` markdown
+1.Number one
+2.Number two
+```
+
+1.Number one 2.Number two
+
+## Common markdown pitfalls
+
+Spaces within elements don't matter!
+
+``` markdown
+This     sentence still  gets    rendered  correctly!
+```
+
+This sentence still gets rendered correctly!
+
+``` markdown
+Single line breaks don't separate paragraphs.
+See?
+
+You need two line breaks for that!
+```
+
+Single line breaks don't separate paragraphs.
+See?
+
+You need two line breaks for that!
+
 ## Our turn
 
 -   Create a new Quarto Document
@@ -191,12 +173,8 @@ It includes all the features of RMarkdown and more.
 
 -   [Quarto Manuscripts](https://quarto.org/docs/manuscripts/) (upcoming feature)
 
-## Drop-in Session & Showcase
+## Your tasks
 
--   This Thursday (10/5): Getting Credit For Your Work
+-   Use Quarto to create a report for your compendium
 
--   Next week (10/10, 10/12): No workshops!
-
--   Tuesday 10/17: Drop-in help session
-
--   Tuesday 10/24: Reproducibility show & tell
+-   Try converting a R script with a lot of comments into a Quarto document instead
