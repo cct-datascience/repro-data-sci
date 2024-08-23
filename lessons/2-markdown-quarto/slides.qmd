@@ -1,6 +1,6 @@
 ---
 title: "Documentation & Literate Programming"
-subtitle: "Session 9"
+subtitle: "Session 2"
 format: uaz-revealjs
 chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
