@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Intermediate R programming II – Reproducibility &amp; Data Science in R</title>
+<title>Developing Code on Github – Reproducibility &amp; Data Science in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,36 +106,36 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">1. Project Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/2-shell/notes.html">
- <span class="dropdown-text">2. Shell Commands</span></a>
+    <a class="dropdown-item" href="../../lessons/2-markdown-quarto/notes.html">
+ <span class="dropdown-text">2. Documentation &amp; Literate Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/3-git/notes.html">
- <span class="dropdown-text">3. Version Control With Git</span></a>
+    <a class="dropdown-item" href="../../lessons/3-shell/notes.html">
+ <span class="dropdown-text">3. Shell Commands</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/4-github-basics/notes.html">
- <span class="dropdown-text">4. Developing Code on GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/4-git/notes.html">
+ <span class="dropdown-text">4. Version Control With Git</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/5-github-collab/notes.html">
- <span class="dropdown-text">5. Collaborating with GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/5-github-basics/notes.html">
+ <span class="dropdown-text">5. Developing Code on GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/6-data-manipulation/notes.html">
- <span class="dropdown-text">6. Data Manipulation</span></a>
+    <a class="dropdown-item" href="../../lessons/6-github-collab/notes.html">
+ <span class="dropdown-text">6. Collaborating with GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/7-intermediate-r-1/notes.html">
- <span class="dropdown-text">7. Intermediate R I</span></a>
+    <a class="dropdown-item" href="../../lessons/7-data-manipulation/notes.html">
+ <span class="dropdown-text">7. Data Manipulation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/8-intermediate-r-2/notes.html">
- <span class="dropdown-text">8. Intermediate R II</span></a>
+    <a class="dropdown-item" href="../../lessons/8-intermediate-r-1/notes.html">
+ <span class="dropdown-text">8. Intermediate R I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/9-markdown-quarto/notes.html">
- <span class="dropdown-text">9. Documentation &amp; Literate Programming</span></a>
+    <a class="dropdown-item" href="../../lessons/9-intermediate-r-2/notes.html">
+ <span class="dropdown-text">9. Intermediate R II</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../lessons/10-get-credit/notes.html">
@@ -172,22 +172,22 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson Outline</a></li>
   <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a>
   <ul class="collapse">
   <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
   </ul></li>
   <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching notes</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/8-intermediate-r-2/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/5-github-basics/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Intermediate R programming II</h1>
+<h1 class="title">Developing Code on Github</h1>
 </div>
 
 
@@ -206,48 +206,85 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="objective" class="level2">
 <h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<p>Learners will learn how to make their R code more reproducible using for loops and the apply family of functions.</p>
+<p>Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches.</p>
+</section>
+<section id="lesson-outline" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-outline">Lesson Outline</h2>
+<ul>
+<li><p>Review:</p>
+<ul>
+<li>Ways of creating a git repo and how to know if it worked</li>
+<li>(live coding) turn demo project from lesson 1 into a git repo with <code>usethis::use_git()</code></li>
+</ul></li>
+<li><p>Live Coding: working with git in RStudio</p>
+<ul>
+<li>Demo <code>add</code> <code>commit</code> cycle with git pane <strong>AND</strong> git menu</li>
+</ul></li>
+<li><p>Live Coding: <code>.gitignore</code></p>
+<ul>
+<li>Explore <code>.gitignore</code> created by RStudio</li>
+<li>Software Carpentry <a href="https://swcarpentry.github.io/git-novice/06-ignore">.gitignore lesson</a></li>
+<li>Discuss what files to <code>.gitignore</code>: what is “non-diffable”?</li>
+<li>Modify and make a commit</li>
+</ul></li>
+<li><p>What is GitHub and why use it? (slides)</p></li>
+<li><p>Live Coding: GitHub setup</p>
+<ul>
+<li>Go through checklist of <code>usethis::git_sitrep()</code> with student sharing screen</li>
+<li><strong>Don’t have student share screen with PAT generation! Switch to your screen!</strong></li>
+</ul></li>
+<li><p>Live Coding: Putting your code on GitHub</p>
+<ul>
+<li>Local first: <code>usethis::use_github()</code></li>
+<li>GitHub first: create new repo on GitHub and create new R Studio project from version control</li>
+<li>Other ways are possible, but we’re not going to cover them this lesson (unless someone has issues)</li>
+</ul></li>
+<li><p>Live Coding: Push and Pull</p>
+<ul>
+<li>Make changes in RStudio, push</li>
+<li>Make changes on GitHub, pull</li>
+<li>Have Renata make changes, push, then pull</li>
+</ul></li>
+<li><p>Next time: How to work together on GitHub more <em>safely</em></p></li>
+<li><p>Homework: Put a personal repository on GitHub.</p></li>
+</ul>
 </section>
 <section id="installation-materials" class="level2">
 <h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h2>
 <ol type="1">
-<li><a href="https://docs.google.com/presentation/d/1SbLl55PzVloqdapmMiLlbRNFE1xTVZNqtZ9UFt-evxg/edit#slide=id.p">Slides</a></li>
-<li><a href="https://datacarpentry.org/semester-biology/materials/for-loops-R/">Data Carpentry for Biologists for loop lecture</a> <!--# switch to R4DS chapter on iteration? --></li>
-<li><a href="https://datacarpentry.org/semester-biology/materials/iteration-without-loops-R/">Data Carpentry for Biologists iteration without loops lecture</a>? <!--# switch to R4DS chapter? --></li>
+<li><a href="../../lessons/5-github-basics/slides.html">Slides</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/06-ignore">Software Carpentry Version Control with Git episode #6</a></li>
+<li>GitHub authentication with PAT using <a href="https://happygitwithr.com/https-pat.html">Jenny Bryan’s Git book chapter 9</a> (follow <code>usethis::git_sitrep()</code>)</li>
+<li><a href="https://swcarpentry.github.io/git-novice/07-github">Software Carpentry Version Control with Git episode #7</a></li>
+<li><a href="http://erdavenport.github.io/git-lessons/10-branching">Software Carpentry branching add-on</a></li>
 </ol>
 <section id="review" class="level3">
 <h3 class="anchored" data-anchor-id="review">Review</h3>
-<p>Can share their plans for apply skills to their research. Lead optional discussion on when to use base R vs.&nbsp;tidyverse packages/functions.</p>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-<ul>
-<li>For for loops lecture:
-<ul>
-<li>At “Do Tasks 3-4…”, do “Basic For Loop” exercises #2 &amp; #3</li>
-<li>Skip sections “Looping over multiple values” and “Looping with functions”</li>
-<li>Stop at “Looping over files” due to zip download issues</li>
-</ul></li>
-<li>For apply lecture:
-<ul>
-<li>Do “Size Estimates With Maximum” exercise</li>
-<li>Do “Size Estimates Vectorized 2” exercise</li>
-<li>Stop after first section in “Other apply functions (optional)” section</li>
-</ul></li>
-</ul>
+<p>If anyone turned a folder into a repository, share how that went.</p>
+<!--
+## Previous notes
+
+### Modifications
+
+-   Provide a large .csv file, ask students to move into pilot-analyses repo within a data folder using cd and filepaths
+-   If RStudio project was initialized as a git repo, should already have `.gitignore`. View and explain and practice adding something.
+-   Go with HTTPS + PAT setup, not SSH, but still mention SSH.
+-   Connect local git repo to GitHub with `usethis::use_github()`
+-   Create new repository entitled `repro-DS-workshop` on GitHub; can include README, license, and .gitignore. Clone locally to wherever course materials are organized
+-   Show how checking out a branch literally changes the local files
+-->
 </section>
 </section>
 <section id="teaching-notes" class="level2">
 <h2 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h2>
 <ul>
-<li>Create new R script for these materials. Put script into <code>repro-DS-workshop</code> repo</li>
-<li>Emphasize using for loops using index or non-index methods. Index can be useful for reducing memory use and for storing results</li>
-<li>If time, demonstrate combining <code>if</code> and <code>for</code></li>
+<li>Practice another add-commit cycle after creating the .gitignore</li>
+<li>Introduce the add-commit-push cycle</li>
 </ul>
 </section>
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
-<p>Identify a script from a research project that could benefit from a for loop, apply, conditional, or function.</p>
+<p>Connect a personal repository to GitHub. Practice <code>usethis::use_git()</code> and <code>usethis::use_github()</code>.</p>
 
 
 </section>
@@ -255,15 +292,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scott2024,
   author = {Scott, Eric and Diaz, Renata and Guo, Jessica and Riemer,
     Kristina},
-  title = {Intermediate {R} Programming {II}},
+  title = {Developing {Code} on {Github}},
   date = {2024},
-  url = {https://cct-datascience.github.io/repro-data-sci/lessons/8-intermediate-r-2/notes.html},
+  url = {https://cct-datascience.github.io/repro-data-sci/lessons/5-github-basics/notes.html},
   doi = {10.5281/zenodo.8411612},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-scott2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Scott, Eric, Renata Diaz, Jessica Guo, and Kristina Riemer. 2024.
-<span>“Intermediate R Programming II.”</span> Reproducibility &amp; Data
+<span>“Developing Code on Github.”</span> Reproducibility &amp; Data
 Science in R. 2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -691,4 +728,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/8-intermediate-r-2/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/5-github-basics/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

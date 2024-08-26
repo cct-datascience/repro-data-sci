@@ -7,7 +7,8 @@
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
   <title>Reproducibility &amp; Data Science in R – Documentation &amp; Literate Programming</title>
@@ -393,93 +394,34 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Documentation &amp; Literate Programming</h1>
-  <p class="subtitle">Session 9</p>
+  <p class="subtitle">Session 2</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="readme" class="slide level2">
-<h2>README</h2>
-<p><code>README.md</code> is the landing page for your GitHub repo, and the first place to look for help understanding it.</p>
-<div>
+<section id="review-of-last-lesson" class="slide level2">
+<h2>Review of last lesson</h2>
 <ul>
-<li class="fragment"><p>Brief project summary</p></li>
-<li class="fragment"><p>Project status (just an experiment, WIP, archived?)</p></li>
-<li class="fragment"><p>How to give credit (e.g.&nbsp;if it is associated with a published paper)</p></li>
-<li class="fragment"><p>Structure of repo (which files do what?)</p></li>
-<li class="fragment"><p>Instructions on how to reproduce results</p></li>
-</ul>
-</div>
-</section>
-<section id="example-readmes-for-research-compendia" class="slide level2">
-<h2>Example READMEs for research compendia</h2>
+<li>What questions do you have?</li>
+<li>What happened as you were trying to organize a research compendium?
 <ul>
-<li><p><a href="https://github.com/Aariq/BACE-legacy-effects" class="uri">https://github.com/Aariq/BACE-legacy-effects</a></p></li>
-<li><p><a href="https://github.com/ecohealthalliance/amr-analysis" class="uri">https://github.com/ecohealthalliance/amr-analysis</a></p></li>
-<li><p><a href="https://github.com/atredennick/size-environment" class="uri">https://github.com/atredennick/size-environment</a></p></li>
+<li>Victories?</li>
+<li>Stumbling blocks?</li>
+</ul></li>
 </ul>
 </section>
-<section id="markdown" class="slide level2">
-<h2>Markdown</h2>
-<p>Markdown is a “markup language” that let’s you write plain text to indicate formatting. For example:</p>
+<section id="literate-programming" class="slide level2">
+<h2>Literate Programming</h2>
 <ul>
-<li><p><code>**bold text**</code> becomes <strong>bold text</strong></p></li>
-<li><p><code>~~strikethrough~~</code> becomes <del>strikethrough</del></p></li>
-<li><p><code>$E = mc^2$</code> becomes <span class="math inline">\(E = mc^2\)</span></p></li>
-<li><p><code>[link](https://www.google.com)</code> becomes <a href="https://www.google.com">link</a></p></li>
-<li><p><code>`code()`</code> becomes <code>code()</code></p></li>
+<li><p>Code is interwoven with human-language notes, comments, and documentation.</p></li>
+<li><p>Some kind of “engine” handles executing the code and weaving together prose, code, and results.</p></li>
+<li><p>Allows for extended comments on code and reproducible reports and manuscripts</p></li>
 </ul>
-<p>Check <strong>Help &gt; Markdown quick reference</strong> in RStudio</p>
-</section>
-<section id="readme.md" class="slide level2">
-<h2>README.md</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Exercise (~5 min)</strong></p>
-</div>
-<div class="callout-content">
-<p>Edit a README.md using some of the markdown tips from the RStudio markdown quick reference</p>
-</div>
-</div>
-</div>
-</section>
-<section id="common-markdown-pitfalls" class="slide level2">
-<h2>Common markdown pitfalls</h2>
-<p>Spaces between elements matter! How would you fix each of these?</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>###Heading 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>###Heading 3</p>
-<div class="fragment">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="an">Colors:</span></span>
-<span id="cb2-2"><a></a><span class="ss">- </span>red</span>
-<span id="cb2-3"><a></a><span class="ss">- </span>green</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Colors: - red - green</p>
-</div>
-<div class="fragment">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a>1.Number one</span>
-<span id="cb3-2"><a></a>2.Number two</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>1.Number one 2.Number two</p>
-</div>
-</section>
-<section id="common-markdown-pitfalls-1" class="slide level2">
-<h2>Common markdown pitfalls</h2>
-<p>Spaces within elements don’t matter!</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a>This     sentence still  gets    rendered  correctly!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This sentence still gets rendered correctly!</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a>Single line breaks don't separate paragraphs.</span>
-<span id="cb5-2"><a></a>See?</span>
-<span id="cb5-3"><a></a></span>
-<span id="cb5-4"><a></a>You need two line breaks for that!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Single line breaks don’t separate paragraphs. See?</p>
-<p>You need two line breaks for that!</p>
 </section>
 <section>
 <section id="quarto" class="title-slide slide level1 center">
-<h1>Quarto</h1>
+<h1><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon> Quarto</h1>
 
 </section>
 <section id="what-is-quarto" class="slide level2">
@@ -522,29 +464,29 @@
 <div class="code-with-filename-file">
 <pre><strong>myreport.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb6" data-filename="myreport.qmd" data-code-line-numbers="|1-7|9-15|10-11|17-19|21-23|"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="co">---</span></span>
-<span id="cb6-2"><a></a><span class="an">title:</span><span class="co"> "My Report"</span></span>
-<span id="cb6-3"><a></a><span class="an">author:</span><span class="co"> "Eric Scott"</span></span>
-<span id="cb6-4"><a></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb6-5"><a></a><span class="co">  html:</span></span>
-<span id="cb6-6"><a></a><span class="co">    toc: true</span></span>
-<span id="cb6-7"><a></a><span class="co">---</span></span>
-<span id="cb6-8"><a></a></span>
-<span id="cb6-9"><a></a><span class="in">```{r}</span></span>
-<span id="cb6-10"><a></a><span class="in">#| label: load-packages</span></span>
-<span id="cb6-11"><a></a><span class="in">#| include: false</span></span>
-<span id="cb6-12"><a></a></span>
-<span id="cb6-13"><a></a><span class="in">library(tidyverse)</span></span>
-<span id="cb6-14"><a></a><span class="in">library(gapminder)</span></span>
-<span id="cb6-15"><a></a><span class="in">```</span></span>
-<span id="cb6-16"><a></a></span>
-<span id="cb6-17"><a></a><span class="fu">## Data</span></span>
-<span id="cb6-18"><a></a></span>
-<span id="cb6-19"><a></a>My data source is the <span class="co">[</span><span class="ot">gapminder</span><span class="co">](https://www.gapminder.org/)</span> dataset.</span>
-<span id="cb6-20"><a></a></span>
-<span id="cb6-21"><a></a><span class="in">```{r}</span></span>
-<span id="cb6-22"><a></a><span class="in">head(gapminder)</span></span>
-<span id="cb6-23"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-filename="myreport.qmd" data-code-line-numbers="|1-7|9-15|10-11|17-19|21-23|"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
+<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> "My Report"</span></span>
+<span id="cb1-3"><a></a><span class="an">author:</span><span class="co"> "Eric Scott"</span></span>
+<span id="cb1-4"><a></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb1-5"><a></a><span class="co">  html:</span></span>
+<span id="cb1-6"><a></a><span class="co">    toc: true</span></span>
+<span id="cb1-7"><a></a><span class="co">---</span></span>
+<span id="cb1-8"><a></a></span>
+<span id="cb1-9"><a></a><span class="in">```{r}</span></span>
+<span id="cb1-10"><a></a><span class="in">#| label: load-packages</span></span>
+<span id="cb1-11"><a></a><span class="in">#| include: false</span></span>
+<span id="cb1-12"><a></a></span>
+<span id="cb1-13"><a></a><span class="in">library(tidyverse)</span></span>
+<span id="cb1-14"><a></a><span class="in">library(gapminder)</span></span>
+<span id="cb1-15"><a></a><span class="in">```</span></span>
+<span id="cb1-16"><a></a></span>
+<span id="cb1-17"><a></a><span class="fu">## Data</span></span>
+<span id="cb1-18"><a></a></span>
+<span id="cb1-19"><a></a>My data source is the <span class="co">[</span><span class="ot">gapminder</span><span class="co">](https://www.gapminder.org/)</span> dataset.</span>
+<span id="cb1-20"><a></a></span>
+<span id="cb1-21"><a></a><span class="in">```{r}</span></span>
+<span id="cb1-22"><a></a><span class="in">head(gapminder)</span></span>
+<span id="cb1-23"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <aside class="notes">
 <p>If this looks familiar to RMarkdown users, that’s because Quarto was built on lessons learned from developing RMarkdown. It includes all the features of RMarkdown and more.</p>
@@ -560,6 +502,64 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="yaml" class="slide level2">
+<h2>YAML</h2>
+<p>“Yet another markup language”</p>
+<ul>
+<li><p>Commonly used for configuration files</p></li>
+<li><p><code>key: value</code> pairs</p></li>
+<li><p>Nesting indicated by indentation with 2 spaces</p></li>
+</ul>
+</section>
+<section id="code" class="slide level2">
+<h2>Code</h2>
+<ul>
+<li><p>Code chunks can be R, Python, or other languages</p></li>
+<li><p>If R, code is executed by <code>knitr</code> engine, otherwise by <code>jupyter</code></p></li>
+<li><p>Chunk options as YAML (<code>#| key: value</code>) modify execution behavior or output formatting</p></li>
+</ul>
+</section>
+<section id="markdown" class="slide level2">
+<h2>Markdown</h2>
+<p>Markdown is a “markup language” that let’s you write plain text to indicate formatting. For example:</p>
+<ul>
+<li><p><code>**bold text**</code> becomes <strong>bold text</strong></p></li>
+<li><p><code>~~strikethrough~~</code> becomes <del>strikethrough</del></p></li>
+<li><p><code>$E = mc^2$</code> becomes <span class="math inline">\(E = mc^2\)</span></p></li>
+<li><p><code>[link](https://www.google.com)</code> becomes <a href="https://www.google.com">link</a></p></li>
+<li><p><code>`code()`</code> becomes <code>code()</code></p></li>
+</ul>
+<p>Check <strong>Help &gt; Markdown quick reference</strong> in RStudio</p>
+</section>
+<section id="common-markdown-pitfalls" class="slide level2">
+<h2>Common markdown pitfalls</h2>
+<p>Spaces between elements matter! How would you fix each of these?</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a>###Heading 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>###Heading 3</p>
+<div class="fragment">
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="an">Colors:</span></span>
+<span id="cb3-2"><a></a><span class="ss">- </span>red</span>
+<span id="cb3-3"><a></a><span class="ss">- </span>green</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Colors: - red - green</p>
+</div>
+<div class="fragment">
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a>1.Number one</span>
+<span id="cb4-2"><a></a>2.Number two</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>1.Number one 2.Number two</p>
+</div>
+</section>
+<section id="common-markdown-pitfalls-1" class="slide level2">
+<h2>Common markdown pitfalls</h2>
+<p>Spaces within elements don’t matter!</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a>This     sentence still  gets    rendered  correctly!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This sentence still gets rendered correctly!</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a>Single line breaks don't separate paragraphs.</span>
+<span id="cb6-2"><a></a>See?</span>
+<span id="cb6-3"><a></a></span>
+<span id="cb6-4"><a></a>You need two line breaks for that!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Single line breaks don’t separate paragraphs. See?</p>
+<p>You need two line breaks for that!</p>
+</section>
 <section id="our-turn" class="slide level2">
 <h2>Our turn</h2>
 <ul>
@@ -569,22 +569,20 @@
 <li><p>Add citations and cross-references</p></li>
 </ul>
 </section>
-<section id="learn-more" class="slide level2">
-<h2>Learn more</h2>
+<section id="learning-more-getting-help" class="slide level2">
+<h2>Learning More &amp; Getting Help</h2>
 <ul>
-<li><p>Getting started <a href="https://quarto.org/docs/get-started/hello/rstudio.html">tutorial</a></p></li>
+<li><p>Getting started with Quarto <a href="https://quarto.org/docs/get-started/hello/rstudio.html">tutorial</a></p></li>
 <li><p>Quarto for Academics <a href="https://www.youtube.com/watch?v=EbAAmrB0luA&amp;ab_channel=PositPBC">talk</a></p></li>
 <li><p>Full Quarto <a href="https://quarto.org/docs/guide/">guide</a> and <a href="https://quarto.org/docs/reference/">reference</a> (searchable!)</p></li>
-<li><p><a href="https://quarto.org/docs/manuscripts/">Quarto Manuscripts</a> (upcoming feature)</p></li>
+<li><p>#quarto channel in UA Data Science Slack</p></li>
 </ul>
 </section>
-<section id="drop-in-session-showcase" class="slide level2">
-<h2>Drop-in Session &amp; Showcase</h2>
+<section id="your-tasks" class="slide level2">
+<h2>Your tasks</h2>
 <ul>
-<li><p>This Thursday (10/5): Getting Credit For Your Work</p></li>
-<li><p>Next week (10/10, 10/12): No workshops!</p></li>
-<li><p>Tuesday 10/17: Drop-in help session</p></li>
-<li><p>Tuesday 10/24: Reproducibility show &amp; tell</p></li>
+<li><p>Use Quarto to create a report for your compendium</p></li>
+<li><p>Try converting a R script with a lot of comments into a Quarto document instead</p></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
@@ -909,6 +907,11 @@
             if (link.dataset.originalHref !== undefined) {
               link.href = link.dataset.originalHref;
             }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
           }
         }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

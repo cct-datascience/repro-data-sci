@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data manipulation – Reproducibility &amp; Data Science in R</title>
+<title>Using the Shell – Reproducibility &amp; Data Science in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,36 +106,36 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">1. Project Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/2-shell/notes.html">
- <span class="dropdown-text">2. Shell Commands</span></a>
+    <a class="dropdown-item" href="../../lessons/2-markdown-quarto/notes.html">
+ <span class="dropdown-text">2. Documentation &amp; Literate Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/3-git/notes.html">
- <span class="dropdown-text">3. Version Control With Git</span></a>
+    <a class="dropdown-item" href="../../lessons/3-shell/notes.html">
+ <span class="dropdown-text">3. Shell Commands</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/4-github-basics/notes.html">
- <span class="dropdown-text">4. Developing Code on GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/4-git/notes.html">
+ <span class="dropdown-text">4. Version Control With Git</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/5-github-collab/notes.html">
- <span class="dropdown-text">5. Collaborating with GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/5-github-basics/notes.html">
+ <span class="dropdown-text">5. Developing Code on GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/6-data-manipulation/notes.html">
- <span class="dropdown-text">6. Data Manipulation</span></a>
+    <a class="dropdown-item" href="../../lessons/6-github-collab/notes.html">
+ <span class="dropdown-text">6. Collaborating with GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/7-intermediate-r-1/notes.html">
- <span class="dropdown-text">7. Intermediate R I</span></a>
+    <a class="dropdown-item" href="../../lessons/7-data-manipulation/notes.html">
+ <span class="dropdown-text">7. Data Manipulation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/8-intermediate-r-2/notes.html">
- <span class="dropdown-text">8. Intermediate R II</span></a>
+    <a class="dropdown-item" href="../../lessons/8-intermediate-r-1/notes.html">
+ <span class="dropdown-text">8. Intermediate R I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/9-markdown-quarto/notes.html">
- <span class="dropdown-text">9. Documentation &amp; Literate Programming</span></a>
+    <a class="dropdown-item" href="../../lessons/9-intermediate-r-2/notes.html">
+ <span class="dropdown-text">9. Intermediate R II</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../lessons/10-get-credit/notes.html">
@@ -171,18 +171,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson outline</a></li>
   <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/6-data-manipulation/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/3-shell/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data manipulation</h1>
+<h1 class="title">Using the Shell</h1>
 </div>
 
 
@@ -199,86 +199,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="objective" class="level2">
-<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li>Use git branches in the “real world”</li>
-<li>Reproducibly clean, summarize, and organize dataframes using tidyverse packages</li>
-<li>Understand how R stores different data types (data frames, vector types, missing data)</li>
-<li>Know what the tidyverse is, how it differs from base R, and the philosophy behind using it here.</li>
-<li>Use the pipe to chain operations together</li>
-<li>Use dplyr functions to subset data (select, filter; logic and select fxns including where, ==, %in%, !) and manipulate data (mutate; lubridate; split-apply-combine)</li>
-<li>Use tidyr functions to reshape data (pivot_wider and pivot_longer)</li>
+<li>Understand the what and why of the shell</li>
+<li>Use the shell to navigate your computer’s file system</li>
+<li>Use R projects to simplify file system navigation</li>
+<li>Know your options for finding help</li>
 </ul>
 </section>
 <section id="lesson-outline" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-outline">Lesson outline</h2>
 <ul>
-<li>Review from last week</li>
-<li>Warm-up: create a branch for today’s work</li>
-<li>Slides/discussion: using R for reproducible data analysis
+<li>Review of last week
 <ul>
-<li>Why use R?</li>
-<li>What is the tidyverse and why use it?</li>
-<li>Install dplyr and tidyr</li>
+<li>What happened as you were trying to re-organize projects or R code? Victories? Stumbling blocks?</li>
 </ul></li>
-<li>Live coding: How R thinks about data
+<li>Slides: Intro to the shell
 <ul>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data">Data carpentry R ecology revamp episode #2</a></li>
-<li>Data frames</li>
-<li>Vectors and data types</li>
-<li>Missing data</li>
+<li>What is the shell?</li>
+<li>What does the shell let us do?</li>
+<li>Why would we want to learn how to use the shell?</li>
 </ul></li>
-<li>Live coding: dplyr and tidyr
+<li>Breakout rooms: Shell installation
 <ul>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
-<li><a href="https://datacarpentry.org/R-ecology-lesson/03-dplyr.html">Recent DC + R lesson</a></li>
-<li>Chaining lines together with the pipe
+<li>Instructor notes include links to git installation for both Mac and Windows.</li>
+<li>Split into 2 breakout rooms to install on different OS’s.</li>
+</ul></li>
+<li>Break to all download shell-lesson-data
 <ul>
-<li><code>%&gt;%</code>, <code>|&gt;</code></li>
+<li>Link</li>
+<li>Put it on your Desktop</li>
+<li>Unzip using point-and-click</li>
 </ul></li>
-<li>Subsetting and filtering data
+<li>Live coding: Setup RStudio
 <ul>
-<li>incl.&nbsp;selection and <code>pick</code> https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html</li>
+<li>Open RStudio</li>
+<li>Tour panes: files and terminal</li>
+<li>Set up terminal pane to use bash</li>
 </ul></li>
-<li>Adding columns</li>
-<li>Split-apply-combine</li>
-<li>Reshaping</li>
-</ul></li>
-<li>Live coding: advanced tidyverse topics
+<li>Live coding: Navigating filesystems in files pane
 <ul>
-<li>Options: across; dates; advanced joins; others?</li>
+<li>Use file pane to navigate to shell-lesson-data</li>
 </ul></li>
-<li>Live coding/discussion: getting help
+<li>Live coding: Navigate to shell-lesson-data in Terminal
 <ul>
-<li><code>reprex</code></li>
+<li>Identify the prompt and note that it is different in zsh (%)</li>
+<li><code>pwd</code></li>
+<li><code>cd</code></li>
+<li><code>ls</code>
+<ul>
+<li>Use <code>ls</code> flags to explain anatomy of a shell command</li>
+<li>Show <code>man ls</code> to show flag options for the <code>ls</code> command</li>
 </ul></li>
-<li>Live coding: practice modify-add-commit cycle</li>
-<li>Homework: None</li>
+</ul></li>
+<li>Live coding: Synchronizing file panes
+<ul>
+<li>Show “Go to current directory” to bring Terminal to files pane</li>
+<li>Show “New terminal here” to create a terminal in files pane</li>
+<li>Show that Rstudio’s working directory is not automatically wherever either Terminal or the file pane is</li>
+</ul></li>
+<li>Live coding: using Rprojects to simplify filesystems
+<ul>
+<li>Create an R project</li>
+<li>Show that, upon opening, Terminal, getwd(), and file pane are all on the same page</li>
+</ul></li>
+<li>Live coding: <code>cp</code> and <code>move</code>
+<ul>
+<li>Copy <code>shell_lesson_data</code> to the Rproject.</li>
+<li>Tell them we need <code>cp</code>, then use <code>cp --help</code> to get the options</li>
+<li>Repeat using <code>ls</code> to explore contents of <code>shell_lesson_data</code> and mirror files pane</li>
+</ul></li>
+<li>Live coding/discussion: options for finding help
+<ul>
+<li><code>--help</code> flag</li>
+<li><code>man</code> pages</li>
+<li>Manual pages: <code>?</code> in R, package websites</li>
+<li>StackOverflow</li>
+<li>ChatGPT</li>
+</ul></li>
+<li>Homework for next session
+<ul>
+<li>Read <a href="https://peerj.com/preprints/3159/" class="uri">https://peerj.com/preprints/3159/</a> git (Version control prep)</li>
+<li>Create a diagram of your file system and note your most frequently used directories</li>
+</ul></li>
 </ul>
 </section>
 <section id="installation-materials" class="level2">
 <h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h2>
 <ol type="1">
-<li><a href="https://docs.google.com/presentation/d/1YoVpsCq6MWv6TYiBil79b4X_qGRUiviYmjZPBEz7WqE/edit#slide=id.p">Slides</a></li>
-<li>Install R packages ‘dplyr’, ‘tidyr’, ‘readr’</li>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data">Data carpentry R ecology revamp episode #2</a></li>
-<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
+<li><a href="../../lessons/3-shell/slides.html">Slides</a></li>
+<li><a href="https://git-scm.com/download/mac">macOS git installation</a></li>
+<li><a href="https://git-scm.com/download/win">Windows git installation</a> (detailed step-by-step <a href="https://carpentries.github.io/workshop-template/#setup">here</a>)</li>
+<li><a href="https://swcarpentry.github.io/shell-novice/01-intro">Software Carpentry Unix Shell episode #1</a></li>
+<li><a href="https://swcarpentry.github.io/shell-novice/02-filedir">Software Carpentry Unix Shell episode #2</a></li>
+<li><a href="https://swcarpentry.github.io/shell-novice/03-create">Software Carpentry Unix Shell episode #3</a> (time permitting)</li>
 </ol>
-<!-- ## Notes from before -->
-<!-- ### Modifications -->
-<!-- -   Explain data.frames and types of vectors, but skip over exercises on coercion and factors -->
-<!-- -   Clarify difference between `==` and `%in%`, including that no warning or error given for `==` that induces vector recycling -->
-<!-- -   End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository -->
-<!-- ### Teaching notes -->
-<!-- -   Have students install each package separately rather than as the tidyverse---can be important to know which functions come from which packages -->
-<!-- ### Homework -->
-<!-- None -->
-<!-- ------------------------------------------------------------------------ -->
-<!-- Thoughts on things to add... -->
-<!-- -   create a consistent set of data files to share with everyone -->
-<!-- -   consider using the main-and-forks repo structure to give folks practice updating from upstream? -->
-<!-- -   share [this cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf) -->
+<!---
+ ## Past notes
+
+### Review
+
+Ask students to share any successes or stumbling blocks when re-organizing projects or R code.
+
+### Modifications
+
+-   Use terminal window within RStudio as command line interface
+    -   Start with a brief overview of RStudio panes
+    -   Show terminal pane menu and "Go To Current Directory"
+    -   Teach use of Files tab in RStudio
+    -   Emphasize that Files tab is analogous to Finder (macOS), File Explorer (Windows)
+-   Skip all exercises, including "Nelle" example
+-   Mention Zsh, which is the default shell for recent versions of macOS and has `%` as the default prompt instead of `$`.
+-   At beginning of episode #2, explain file path using example from instructor's file system
+-   Can also use example diagram for file system using instructor's
+
+### Teaching notes
+
+-   Emphasize purposes for learning shell
+    -   Helpful for using git and GitHub
+    -   Easier to deal with installation problems
+    -   Understanding file structure and file paths
+-   Need to install git initially for Windows users to have shell commands
+    -   Separate into 2 breakout rooms to install Git for Windows and macOS
+-   macOS comes with Bash or Zsh for shell. Use time with mac users to check if they have git already
+    -   can check with `which git` or `git --version`
+    -   `git --version` may in fact prompt macOS users to install xcode command line tools, which comes with git.
+    -   Restart RStudio after installation
+    -   For Windows, open RStudio Tools/Global Options/Terminal and make sure GitBash is selected
+    -   For macOS, have them select Bash (for now at least)
+-   Download shell-lesson-data.zip to `Desktop/` location; this won't be referenced in later lessons
+-   Unzipping shell-lesson-data.zip through point-and-click in the RStudio Files tab does not work consistently across machines; recommend unzipping on the command line with `unzip`
+    -   Once unzipped, have everyone share absolute file path to location of file
+
+### Homework
+
+Read <https://peerj.com/preprints/3159/>
+ 
+--->
 
 
 </section>
@@ -286,16 +344,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scott2024,
   author = {Scott, Eric and Diaz, Renata and Guo, Jessica and Riemer,
     Kristina},
-  title = {Data Manipulation},
+  title = {Using the {Shell}},
   date = {2024},
-  url = {https://cct-datascience.github.io/repro-data-sci/lessons/6-data-manipulation/notes.html},
+  url = {https://cct-datascience.github.io/repro-data-sci/lessons/3-shell/notes.html},
   doi = {10.5281/zenodo.8411612},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-scott2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Scott, Eric, Renata Diaz, Jessica Guo, and Kristina Riemer. 2024.
-<span>“Data Manipulation.”</span> Reproducibility &amp; Data Science in
-R. 2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
+<span>“Using the Shell.”</span> Reproducibility &amp; Data Science in R.
+2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -722,4 +780,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/6-data-manipulation/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/3-shell/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

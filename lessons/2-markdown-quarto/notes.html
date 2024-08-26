@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Collaborating with GitHub – Reproducibility &amp; Data Science in R</title>
+<title>Documentation and Literate Programming – Reproducibility &amp; Data Science in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,6 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="../../site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,36 +108,36 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">1. Project Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/2-shell/notes.html">
- <span class="dropdown-text">2. Shell Commands</span></a>
+    <a class="dropdown-item" href="../../lessons/2-markdown-quarto/notes.html">
+ <span class="dropdown-text">2. Documentation &amp; Literate Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/3-git/notes.html">
- <span class="dropdown-text">3. Version Control With Git</span></a>
+    <a class="dropdown-item" href="../../lessons/3-shell/notes.html">
+ <span class="dropdown-text">3. Shell Commands</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/4-github-basics/notes.html">
- <span class="dropdown-text">4. Developing Code on GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/4-git/notes.html">
+ <span class="dropdown-text">4. Version Control With Git</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/5-github-collab/notes.html">
- <span class="dropdown-text">5. Collaborating with GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/5-github-basics/notes.html">
+ <span class="dropdown-text">5. Developing Code on GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/6-data-manipulation/notes.html">
- <span class="dropdown-text">6. Data Manipulation</span></a>
+    <a class="dropdown-item" href="../../lessons/6-github-collab/notes.html">
+ <span class="dropdown-text">6. Collaborating with GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/7-intermediate-r-1/notes.html">
- <span class="dropdown-text">7. Intermediate R I</span></a>
+    <a class="dropdown-item" href="../../lessons/7-data-manipulation/notes.html">
+ <span class="dropdown-text">7. Data Manipulation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/8-intermediate-r-2/notes.html">
- <span class="dropdown-text">8. Intermediate R II</span></a>
+    <a class="dropdown-item" href="../../lessons/8-intermediate-r-1/notes.html">
+ <span class="dropdown-text">8. Intermediate R I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/9-markdown-quarto/notes.html">
- <span class="dropdown-text">9. Documentation &amp; Literate Programming</span></a>
+    <a class="dropdown-item" href="../../lessons/9-intermediate-r-2/notes.html">
+ <span class="dropdown-text">9. Intermediate R II</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../lessons/10-get-credit/notes.html">
@@ -174,14 +176,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
   <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson Outline</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/5-github-collab/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/2-markdown-quarto/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Collaborating with GitHub</h1>
+<h1 class="title">Documentation and Literate Programming</h1>
 </div>
 
 
@@ -200,98 +202,53 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="objective" class="level2">
 <h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<p>Learners will fork and clone a repository on GitHub and use branches to open pull requests.</p>
+<p>Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto.</p>
 </section>
 <section id="lesson-outline" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-outline">Lesson Outline</h2>
 <ul>
-<li><p>Review Homework:</p>
+<li><p>Quarto: an open-source scientific and technical publishing system</p>
 <ul>
-<li>Anyone put a repo on GitHub? Any difficulties encountered?</li>
-</ul></li>
-<li><p>Live Coding: Collaborating with GitHub</p>
+<li>Allows combining markdown, code, and code output (tables, plots, etc)</li>
+<li>Wide variety of outputs: html, pdf, word, and more</li>
+<li>Use cases:
 <ul>
-<li>Share a repo with everyone &amp; have everyone clone w/ RStudio</li>
-<li>Ask 1 (one) volunteer to make a change and practice commit + push</li>
-<li>Instructor makes commit + push, volunteer pulls</li>
+<li>Notebook</li>
+<li>Share results with collaborators</li>
+<li>Presentations</li>
+<li>Reproducible manuscripts</li>
 </ul></li>
-<li><p>Live Coding: Merge conflict</p>
+</ul></li>
+<li><p>How does it work?</p>
 <ul>
-<li>Instructor makes commit to README and pushes to GitHub</li>
-<li>Volunteer makes commit to the same line of README and pushes <strong>without pulling first</strong></li>
-<li>Should error for volunteer</li>
+<li>qmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.</li>
 </ul></li>
-<li><p>Slides: Resolving merge conflict</p></li>
-<li><p>Live Coding: Resolve merge conflict</p>
+<li><p>Anatomy of a .Qmd</p>
 <ul>
-<li>Try following the hints in the error and <code>pull</code></li>
-<li>New error about divergent branches</li>
-<li>Then have everyone set <code>git config pull.rebase false</code></li>
+<li>Look familiar if you’ve used RMarkdown</li>
+<li>YAML header has metadata and settings</li>
+<li>Markdown body</li>
+<li>Code chunks with R, Python, Julia, or other code</li>
 </ul></li>
-<li><p>Working on branches (slides)</p></li>
-<li><p>Live Coding:</p>
+<li><p>Create .Qmd and play</p></li>
+<li><p>Demo visual editor</p>
 <ul>
-<li>Make a branch with your name in RStudio</li>
-<li>Add your name to README and commit</li>
-<li>Switch between branches and see the file change in RStudio AND in File Explorer / Finder</li>
-<li>Push &amp; see branches on GitHub</li>
+<li><p>Switch back and forth</p></li>
+<li><p>“Add anything” menu with <kbd aria-hidden="true">cmd-/</kbd><span class="visually-hidden">cmd-/</span></p></li>
 </ul></li>
-<li><p>Pull Requests (slides)</p></li>
-<li><p>Live Coding:</p>
+<li><p>Running code in code chunks</p></li>
+<li><p>Code chunk options</p>
 <ul>
-<li>Have everyone make a PR to add their name to the README</li>
-<li>Demo merging one or two &amp; ask volunteer to resolve any merge conflicts</li>
+<li>Demo some common ones like <code>label</code>, <code>echo: false</code>, <code>fig-cap</code></li>
 </ul></li>
-<li><p>Forks (slides)</p>
-<ul>
-<li>Discuss when you would work on a branch of a fork vs.&nbsp;working in a branch but on the same repo</li>
-</ul></li>
-<li><p>Live Coding:</p>
-<ul>
-<li>Have students create a fork of a second example repo and clone their fork</li>
-<li>In pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub</li>
-</ul></li>
-<li><p>Homework:</p>
-<ul>
-<li><p>Maybe try cloning a repo that you don’t have permission to push to to see what happens</p></li>
-<li><p>Try using <code>usethis::pr_finish()</code> on a branch that was already merged on GitHub and take note of what it does</p></li>
-</ul></li>
+<li><p>Sections (and TOC)</p></li>
+<li><p>Equations</p></li>
+<li><p>Citations</p></li>
+<li><p>Cross refs</p></li>
+<li><p>Callouts</p></li>
+<li><p>Mention <a href="https://quarto.org/docs/extensions/listing-journals.html">journal articles</a> (check out AGU format example <a href="https://quarto-journals.github.io/agu/" class="uri">https://quarto-journals.github.io/agu/</a>)</p></li>
+<li><p>Point students toward <a href="https://quarto.org/docs/get-started/hello/rstudio.html">tutorial</a> and full <a href="https://quarto.org/docs/guide/">documentation</a></p></li>
 </ul>
-<!-- old notes
-
-## Installation & materials
-
-1.  [Slides](https://docs.google.com/presentation/d/1oKZ2VK50_CW90Um_iOJ8D6KEPgvapqYvXBFMlx0_aiw/edit)
-2.  Workshop [repository](https://github.com/az-digitalag/data-sci-workshop)
-3.  [Software Carpentry Version Control with Git episode #8](https://swcarpentry.github.io/git-novice/08-collab)
-
-### Review
-
-If anyone connected a local repository to GitHub, share how that went.
-Ask students to navigate to previous repository, amend an existing file, and practice an add-commit-push cycle.
-
-### Modifications
-
--   The only part of #8 that was taught was cloning a forked repository. Ask students to fork an instructor-created repository, then clone locally. This will be the repo for downstream files.
--   Use `git remote add upstream xxxx` to connect repo to upstream. If time permits, demonstrate a pull request (PR).
--   Share [diagram](https://www.tomasbeuzen.com/post/git-fork-branch-pull/) of relationships between the remotes (upstream and origin) and local
--   Demonstrate pull requests on GitHub
--   Show how distinct units of work can be separately submitted via branches
-
-## Teaching notes
-
--   Have students fork a `cct-datascience` repo as an example of a real research compendium
--   Easy to check on learner progress by looking for who has and hasn't forked repo
-
-## Homework
-
-Skim the **Analyses** section of [tidyverse R style guide](https://style.tidyverse.org).
-What practice or guideline was new to you?
-
-Also, explore the upstream `cct-datascience` repo.
-What practices do you notices that are new or different from your own?
--->
-<!--# practice making a reprex and pasting into Slack? -->
 
 
 </section>
@@ -299,16 +256,16 @@ What practices do you notices that are new or different from your own?
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scott2024,
   author = {Scott, Eric and Diaz, Renata and Guo, Jessica and Riemer,
     Kristina},
-  title = {Collaborating with {GitHub}},
+  title = {Documentation and {Literate} {Programming}},
   date = {2024},
-  url = {https://cct-datascience.github.io/repro-data-sci/lessons/5-github-collab/notes.html},
+  url = {https://cct-datascience.github.io/repro-data-sci/lessons/2-markdown-quarto/notes.html},
   doi = {10.5281/zenodo.8411612},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-scott2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Scott, Eric, Renata Diaz, Jessica Guo, and Kristina Riemer. 2024.
-<span>“Collaborating with GitHub.”</span> Reproducibility &amp; Data
-Science in R. 2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
+<span>“Documentation and Literate Programming.”</span> Reproducibility
+&amp; Data Science in R. 2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -735,4 +692,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/5-github-collab/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/2-markdown-quarto/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

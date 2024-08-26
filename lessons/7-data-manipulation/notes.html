@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Intermediate R programming I – Reproducibility &amp; Data Science in R</title>
+<title>Data manipulation – Reproducibility &amp; Data Science in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,36 +106,36 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">1. Project Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/2-shell/notes.html">
- <span class="dropdown-text">2. Shell Commands</span></a>
+    <a class="dropdown-item" href="../../lessons/2-markdown-quarto/notes.html">
+ <span class="dropdown-text">2. Documentation &amp; Literate Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/3-git/notes.html">
- <span class="dropdown-text">3. Version Control With Git</span></a>
+    <a class="dropdown-item" href="../../lessons/3-shell/notes.html">
+ <span class="dropdown-text">3. Shell Commands</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/4-github-basics/notes.html">
- <span class="dropdown-text">4. Developing Code on GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/4-git/notes.html">
+ <span class="dropdown-text">4. Version Control With Git</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/5-github-collab/notes.html">
- <span class="dropdown-text">5. Collaborating with GitHub</span></a>
+    <a class="dropdown-item" href="../../lessons/5-github-basics/notes.html">
+ <span class="dropdown-text">5. Developing Code on GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/6-data-manipulation/notes.html">
- <span class="dropdown-text">6. Data Manipulation</span></a>
+    <a class="dropdown-item" href="../../lessons/6-github-collab/notes.html">
+ <span class="dropdown-text">6. Collaborating with GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/7-intermediate-r-1/notes.html">
- <span class="dropdown-text">7. Intermediate R I</span></a>
+    <a class="dropdown-item" href="../../lessons/7-data-manipulation/notes.html">
+ <span class="dropdown-text">7. Data Manipulation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/8-intermediate-r-2/notes.html">
- <span class="dropdown-text">8. Intermediate R II</span></a>
+    <a class="dropdown-item" href="../../lessons/8-intermediate-r-1/notes.html">
+ <span class="dropdown-text">8. Intermediate R I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../lessons/9-markdown-quarto/notes.html">
- <span class="dropdown-text">9. Documentation &amp; Literate Programming</span></a>
+    <a class="dropdown-item" href="../../lessons/9-intermediate-r-2/notes.html">
+ <span class="dropdown-text">9. Intermediate R II</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../lessons/10-get-credit/notes.html">
@@ -174,22 +174,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
   <li><a href="#lesson-outline" id="toc-lesson-outline" class="nav-link" data-scroll-target="#lesson-outline">Lesson outline</a></li>
   <li><a href="#installation-materials" id="toc-installation-materials" class="nav-link" data-scroll-target="#installation-materials">Installation &amp; materials</a></li>
-  <li><a href="#notes-from-before" id="toc-notes-from-before" class="nav-link" data-scroll-target="#notes-from-before">Notes from before</a>
-  <ul class="collapse">
-  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
-  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
-  <li><a href="#teaching-notes" id="toc-teaching-notes" class="nav-link" data-scroll-target="#teaching-notes">Teaching notes</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/7-intermediate-r-1/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/7-data-manipulation/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Intermediate R programming I</h1>
+<h1 class="title">Data manipulation</h1>
 </div>
 
 
@@ -209,117 +202,100 @@ ul.task-list li input[type="checkbox"] {
 <section id="objective" class="level2">
 <h2 class="anchored" data-anchor-id="objective">Objective</h2>
 <ul>
-<li>Understand the utility of writing your own functions and managing control flow.</li>
-<li>Write functions and if/else statements to improve code readability and reusability</li>
-<li>Create pull requests updating a git repo with new code.</li>
+<li>Use git branches in the “real world”</li>
+<li>Reproducibly clean, summarize, and organize dataframes using tidyverse packages</li>
+<li>Understand how R stores different data types (data frames, vector types, missing data)</li>
+<li>Know what the tidyverse is, how it differs from base R, and the philosophy behind using it here.</li>
+<li>Use the pipe to chain operations together</li>
+<li>Use dplyr functions to subset data (select, filter; logic and select fxns including where, ==, %in%, !) and manipulate data (mutate; lubridate; split-apply-combine)</li>
+<li>Use tidyr functions to reshape data (pivot_wider and pivot_longer)</li>
 </ul>
 </section>
 <section id="lesson-outline" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-outline">Lesson outline</h2>
 <ul>
-<li>Review from last session</li>
-<li>Warm-up
+<li>Review from last week</li>
+<li>Warm-up: create a branch for today’s work</li>
+<li>Slides/discussion: using R for reproducible data analysis
 <ul>
-<li>Update working branch from upstream</li>
+<li>Why use R?</li>
+<li>What is the tidyverse and why use it?</li>
+<li>Install dplyr and tidyr</li>
 </ul></li>
-<li>Slides/lecture: Why write functions?
+<li>Live coding: How R thinks about data
 <ul>
-<li>Base on DC semester biology lesson</li>
-<li>Understandable and reusable code
+<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data">Data carpentry R ecology revamp episode #2</a></li>
+<li>Data frames</li>
+<li>Vectors and data types</li>
+<li>Missing data</li>
+</ul></li>
+<li>Live coding: dplyr and tidyr
 <ul>
-<li>Human-understandable chunks</li>
-<li>Designed to be reused</li>
-</ul></li>
-</ul></li>
-<li>Live-coding: functions
+<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
+<li><a href="https://datacarpentry.org/R-ecology-lesson/03-dplyr.html">Recent DC + R lesson</a></li>
+<li>Chaining lines together with the pipe
 <ul>
-<li>Function basics from DC semester lesson</li>
-<li>Create new R script for functions content, and another new R script for control flow (<code>ifelse</code> and <code>for</code> loops) content. Put both scripts into <code>repro-DS-workshop</code> repo</li>
-<li>Discuss ordering of an R script</li>
+<li><code>%&gt;%</code>, <code>|&gt;</code></li>
 </ul></li>
-<li>Slides/lecture: control flow
+<li>Subsetting and filtering data
 <ul>
-<li>Examples of use of if/else statements (find some real-world examples)</li>
-<li>DC semester on conditionals</li>
-<li>Review conditional logic</li>
-<li>Conditionals outside functions</li>
-<li>Conditionals inside functions</li>
+<li>incl.&nbsp;selection and <code>pick</code> https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html</li>
 </ul></li>
-<li>Live-coding: practice commit + PR</li>
-<li>Discussion: application to own work + showcase</li>
-<li>Homework:
+<li>Adding columns</li>
+<li>Split-apply-combine</li>
+<li>Reshaping</li>
+</ul></li>
+<li>Live coding: advanced tidyverse topics
 <ul>
-<li>Create a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:
+<li>Options: across; dates; advanced joins; others?</li>
+</ul></li>
+<li>Live coding/discussion: getting help
 <ul>
-<li>Turn the project folder for one of your current research project into a git/GitHub repo and/or R project</li>
-<li>Modify an R script to use functions, if/for loops, or format code according to best practices</li>
-<li>Improve file and folder organization for project or your entire computer!</li>
+<li><code>reprex</code></li>
 </ul></li>
-<li>Find a section of own code to turn into a function</li>
-</ul></li>
+<li>Live coding: practice modify-add-commit cycle</li>
+<li>Homework: None</li>
 </ul>
 </section>
 <section id="installation-materials" class="level2">
 <h2 class="anchored" data-anchor-id="installation-materials">Installation &amp; materials</h2>
 <ol type="1">
-<li><a href="https://docs.google.com/presentation/d/1C9CFoqAr4Hmm_MqIZvos6grESpzauT5_xMyS0qgcmjk/edit">Slides</a></li>
-<li><a href="https://datacarpentry.org/semester-biology/materials/functions-R/">Data Carpentry for Biologists functions lecture</a></li>
-<li><a href="https://datacarpentry.org/semester-biology/materials/conditionals-R/">Data Carpentry for Biologists conditionals lecture</a></li>
+<li><a href="https://docs.google.com/presentation/d/1YoVpsCq6MWv6TYiBil79b4X_qGRUiviYmjZPBEz7WqE/edit#slide=id.p">Slides</a></li>
+<li>Install R packages ‘dplyr’, ‘tidyr’, ‘readr’</li>
+<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/02-how-r-thinks-about-data">Data carpentry R ecology revamp episode #2</a></li>
+<li><a href="https://www.michaelc-m.com/Rewrite-R-ecology-lesson/03-working-with-data">Data carpentry R ecology revamp episode #3</a></li>
 </ol>
-</section>
-<section id="notes-from-before" class="level2">
-<h2 class="anchored" data-anchor-id="notes-from-before">Notes from before</h2>
-<section id="review" class="level3">
-<h3 class="anchored" data-anchor-id="review">Review</h3>
-<p>Ask to share cleaning up of example script, their own script, or their research project folder from lesson 5.</p>
-</section>
-<section id="modifications" class="level3">
-<h3 class="anchored" data-anchor-id="modifications">Modifications</h3>
-<ul>
-<li>For functions lecture, had them do only the “Use and Modify” exercise</li>
-<li>From conditionals lecture, only did “if statements” section</li>
-<li>From latter, only did “Basic If Statements” #2 exercise</li>
-<li>Added on brief explanation of <code>ifelse</code>, using the example of <code>ifelse(length == 5, "correct", "incorrect")</code></li>
-<li>Mention <code>case_when</code> from dplyr for more complicated if &amp; else steps</li>
-</ul>
-</section>
-<section id="teaching-notes" class="level3">
-<h3 class="anchored" data-anchor-id="teaching-notes">Teaching notes</h3>
-<ul>
-<li>Before doing functions and conditions, demonstrate updating local <code>cct-organization</code> repo from upstream after adding a commit to the upstream</li>
-<li>Create new R script for functions content, and another new R script for control flow (<code>ifelse</code> and <code>for</code> loops) content. Put both scripts into <code>repro-DS-workshop</code> repo</li>
-<li>Mention functions are often used with for loops or apply statements</li>
-<li>After functions, mention consistent order of sections in scripts; example is libraries, read in data, functions, executing functions</li>
-<li>Include real world examples of <code>if</code> and <code>ifelse</code> statements to motivate their use, especially for checking if files already exist</li>
-<li>Demonstrate making a new branch and opening up a pull request in their <code>repro-DS-workshop</code> repo at the end of each set of material; can merge pull request</li>
-</ul>
-</section>
-<section id="homework" class="level3">
-<h3 class="anchored" data-anchor-id="homework">Homework</h3>
-<p>Create a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:</p>
-<ul>
-<li>Turn the project folder for one of your current research project into a git/GitHub repo and/or R project</li>
-<li>Modify an R script to use functions, if/for loops, or format code according to best practices</li>
-<li>Improve file and folder organization for project or your entire computer!</li>
-</ul>
+<!-- ## Notes from before -->
+<!-- ### Modifications -->
+<!-- -   Explain data.frames and types of vectors, but skip over exercises on coercion and factors -->
+<!-- -   Clarify difference between `==` and `%in%`, including that no warning or error given for `==` that induces vector recycling -->
+<!-- -   End with saving script and doing an add-commit-push cycle to sync local repository with GitHub repository -->
+<!-- ### Teaching notes -->
+<!-- -   Have students install each package separately rather than as the tidyverse---can be important to know which functions come from which packages -->
+<!-- ### Homework -->
+<!-- None -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- Thoughts on things to add... -->
+<!-- -   create a consistent set of data files to share with everyone -->
+<!-- -   consider using the main-and-forks repo structure to give folks practice updating from upstream? -->
+<!-- -   share [this cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf) -->
 
 
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scott2024,
   author = {Scott, Eric and Diaz, Renata and Guo, Jessica and Riemer,
     Kristina},
-  title = {Intermediate {R} Programming {I}},
+  title = {Data Manipulation},
   date = {2024},
-  url = {https://cct-datascience.github.io/repro-data-sci/lessons/7-intermediate-r-1/notes.html},
+  url = {https://cct-datascience.github.io/repro-data-sci/lessons/7-data-manipulation/notes.html},
   doi = {10.5281/zenodo.8411612},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-scott2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Scott, Eric, Renata Diaz, Jessica Guo, and Kristina Riemer. 2024.
-<span>“Intermediate R Programming I.”</span> Reproducibility &amp; Data
-Science in R. 2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
+<span>“Data Manipulation.”</span> Reproducibility &amp; Data Science in
+R. 2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -746,4 +722,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/7-intermediate-r-1/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/lessons/7-data-manipulation/notes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -11,7 +11,7 @@
     "href": "index.html#schedule-tentative",
     "title": "Reproducibility and Data Science in R",
     "section": "Schedule (tentative)",
-    "text": "Schedule (tentative)\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n—\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n—\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n—\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n—\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n—\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n—\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n—\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
+    "text": "Schedule (tentative)\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n—\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n—\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n—\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n—\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n—\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n—\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
   },
   {
     "objectID": "index.html#code-of-conduct",
@@ -28,78 +28,162 @@
     "text": "Helpful Reads\nThis workshop series doesn’t have anything like “required reading”, but we think these books and websites are good companions.\nData analysis in R:\n\nR for Data Science (2e)\nBuilding reproducible analytical pipelines with R \n\nBest practices for reproducibility:\n\nGood enough practices in scientific computing\nData organization in spreadsheets\nA beginner’s guide to conducting reproducible research\nThe Turing Way: Guide for Reproducible Research\n6 Steps Toward Reproducible Research\n\nVersion control:\n\nExcuse me, do you have a moment to talk about version control?\nHappy Git and GitHub for the useR"
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html",
-    "href": "lessons/4-github-basics/notes.html",
+    "objectID": "lessons/6-github-collab/notes.html",
+    "href": "lessons/6-github-collab/notes.html",
+    "title": "Collaborating with GitHub",
+    "section": "",
+    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
+  },
+  {
+    "objectID": "lessons/6-github-collab/notes.html#objective",
+    "href": "lessons/6-github-collab/notes.html#objective",
+    "title": "Collaborating with GitHub",
+    "section": "",
+    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
+  },
+  {
+    "objectID": "lessons/6-github-collab/notes.html#lesson-outline",
+    "href": "lessons/6-github-collab/notes.html#lesson-outline",
+    "title": "Collaborating with GitHub",
+    "section": "Lesson Outline",
+    "text": "Lesson Outline\n\nReview Homework:\n\nAnyone put a repo on GitHub? Any difficulties encountered?\n\nLive Coding: Collaborating with GitHub\n\nShare a repo with everyone & have everyone clone w/ RStudio\nAsk 1 (one) volunteer to make a change and practice commit + push\nInstructor makes commit + push, volunteer pulls\n\nLive Coding: Merge conflict\n\nInstructor makes commit to README and pushes to GitHub\nVolunteer makes commit to the same line of README and pushes without pulling first\nShould error for volunteer\n\nSlides: Resolving merge conflict\nLive Coding: Resolve merge conflict\n\nTry following the hints in the error and pull\nNew error about divergent branches\nThen have everyone set git config pull.rebase false\n\nWorking on branches (slides)\nLive Coding:\n\nMake a branch with your name in RStudio\nAdd your name to README and commit\nSwitch between branches and see the file change in RStudio AND in File Explorer / Finder\nPush & see branches on GitHub\n\nPull Requests (slides)\nLive Coding:\n\nHave everyone make a PR to add their name to the README\nDemo merging one or two & ask volunteer to resolve any merge conflicts\n\nForks (slides)\n\nDiscuss when you would work on a branch of a fork vs. working in a branch but on the same repo\n\nLive Coding:\n\nHave students create a fork of a second example repo and clone their fork\nIn pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub\n\nHomework:\n\nMaybe try cloning a repo that you don’t have permission to push to to see what happens\nTry using usethis::pr_finish() on a branch that was already merged on GitHub and take note of what it does"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/notes.html",
+    "href": "lessons/8-intermediate-r-1/notes.html",
+    "title": "Intermediate R programming I",
+    "section": "",
+    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/notes.html#objective",
+    "href": "lessons/8-intermediate-r-1/notes.html#objective",
+    "title": "Intermediate R programming I",
+    "section": "",
+    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/notes.html#lesson-outline",
+    "href": "lessons/8-intermediate-r-1/notes.html#lesson-outline",
+    "title": "Intermediate R programming I",
+    "section": "Lesson outline",
+    "text": "Lesson outline\n\nReview from last session\nWarm-up\n\nUpdate working branch from upstream\n\nSlides/lecture: Why write functions?\n\nBase on DC semester biology lesson\nUnderstandable and reusable code\n\nHuman-understandable chunks\nDesigned to be reused\n\n\nLive-coding: functions\n\nFunction basics from DC semester lesson\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nDiscuss ordering of an R script\n\nSlides/lecture: control flow\n\nExamples of use of if/else statements (find some real-world examples)\nDC semester on conditionals\nReview conditional logic\nConditionals outside functions\nConditionals inside functions\n\nLive-coding: practice commit + PR\nDiscussion: application to own work + showcase\nHomework:\n\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!\n\nFind a section of own code to turn into a function"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/notes.html#installation-materials",
+    "href": "lessons/8-intermediate-r-1/notes.html#installation-materials",
+    "title": "Intermediate R programming I",
+    "section": "Installation & materials",
+    "text": "Installation & materials\n\nSlides\nData Carpentry for Biologists functions lecture\nData Carpentry for Biologists conditionals lecture"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/notes.html#notes-from-before",
+    "href": "lessons/8-intermediate-r-1/notes.html#notes-from-before",
+    "title": "Intermediate R programming I",
+    "section": "Notes from before",
+    "text": "Notes from before\n\nReview\nAsk to share cleaning up of example script, their own script, or their research project folder from lesson 5.\n\n\nModifications\n\nFor functions lecture, had them do only the “Use and Modify” exercise\nFrom conditionals lecture, only did “if statements” section\nFrom latter, only did “Basic If Statements” #2 exercise\nAdded on brief explanation of ifelse, using the example of ifelse(length == 5, \"correct\", \"incorrect\")\nMention case_when from dplyr for more complicated if & else steps\n\n\n\nTeaching notes\n\nBefore doing functions and conditions, demonstrate updating local cct-organization repo from upstream after adding a commit to the upstream\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nMention functions are often used with for loops or apply statements\nAfter functions, mention consistent order of sections in scripts; example is libraries, read in data, functions, executing functions\nInclude real world examples of if and ifelse statements to motivate their use, especially for checking if files already exist\nDemonstrate making a new branch and opening up a pull request in their repro-DS-workshop repo at the end of each set of material; can merge pull request\n\n\n\nHomework\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!"
+  },
+  {
+    "objectID": "lessons/5-github-basics/notes.html",
+    "href": "lessons/5-github-basics/notes.html",
     "title": "Developing Code on Github",
     "section": "",
     "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#objective",
-    "href": "lessons/4-github-basics/notes.html#objective",
+    "objectID": "lessons/5-github-basics/notes.html#objective",
+    "href": "lessons/5-github-basics/notes.html#objective",
     "title": "Developing Code on Github",
     "section": "",
     "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#lesson-outline",
-    "href": "lessons/4-github-basics/notes.html#lesson-outline",
+    "objectID": "lessons/5-github-basics/notes.html#lesson-outline",
+    "href": "lessons/5-github-basics/notes.html#lesson-outline",
     "title": "Developing Code on Github",
     "section": "Lesson Outline",
     "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\n(live coding) turn demo project from lesson 1 into a git repo with usethis::use_git()\n\nLive Coding: working with git in RStudio\n\nDemo add commit cycle with git pane AND git menu\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\nModify and make a commit\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them this lesson (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#installation-materials",
-    "href": "lessons/4-github-basics/notes.html#installation-materials",
+    "objectID": "lessons/5-github-basics/notes.html#installation-materials",
+    "href": "lessons/5-github-basics/notes.html#installation-materials",
     "title": "Developing Code on Github",
     "section": "Installation & materials",
     "text": "Installation & materials\n\nSlides\nSoftware Carpentry Version Control with Git episode #6\nGitHub authentication with PAT using Jenny Bryan’s Git book chapter 9 (follow usethis::git_sitrep())\nSoftware Carpentry Version Control with Git episode #7\nSoftware Carpentry branching add-on\n\n\nReview\nIf anyone turned a folder into a repository, share how that went."
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#teaching-notes",
-    "href": "lessons/4-github-basics/notes.html#teaching-notes",
+    "objectID": "lessons/5-github-basics/notes.html#teaching-notes",
+    "href": "lessons/5-github-basics/notes.html#teaching-notes",
     "title": "Developing Code on Github",
     "section": "Teaching notes",
     "text": "Teaching notes\n\nPractice another add-commit cycle after creating the .gitignore\nIntroduce the add-commit-push cycle"
   },
   {
-    "objectID": "lessons/4-github-basics/notes.html#homework",
-    "href": "lessons/4-github-basics/notes.html#homework",
+    "objectID": "lessons/5-github-basics/notes.html#homework",
+    "href": "lessons/5-github-basics/notes.html#homework",
     "title": "Developing Code on Github",
     "section": "Homework",
     "text": "Homework\nConnect a personal repository to GitHub. Practice usethis::use_git() and usethis::use_github()."
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/notes.html",
-    "href": "lessons/8-intermediate-r-2/notes.html",
+    "objectID": "lessons/7-data-manipulation/notes.html",
+    "href": "lessons/7-data-manipulation/notes.html",
+    "title": "Data manipulation",
+    "section": "",
+    "text": "Use git branches in the “real world”\nReproducibly clean, summarize, and organize dataframes using tidyverse packages\nUnderstand how R stores different data types (data frames, vector types, missing data)\nKnow what the tidyverse is, how it differs from base R, and the philosophy behind using it here.\nUse the pipe to chain operations together\nUse dplyr functions to subset data (select, filter; logic and select fxns including where, ==, %in%, !) and manipulate data (mutate; lubridate; split-apply-combine)\nUse tidyr functions to reshape data (pivot_wider and pivot_longer)"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/notes.html#objective",
+    "href": "lessons/7-data-manipulation/notes.html#objective",
+    "title": "Data manipulation",
+    "section": "",
+    "text": "Use git branches in the “real world”\nReproducibly clean, summarize, and organize dataframes using tidyverse packages\nUnderstand how R stores different data types (data frames, vector types, missing data)\nKnow what the tidyverse is, how it differs from base R, and the philosophy behind using it here.\nUse the pipe to chain operations together\nUse dplyr functions to subset data (select, filter; logic and select fxns including where, ==, %in%, !) and manipulate data (mutate; lubridate; split-apply-combine)\nUse tidyr functions to reshape data (pivot_wider and pivot_longer)"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/notes.html#lesson-outline",
+    "href": "lessons/7-data-manipulation/notes.html#lesson-outline",
+    "title": "Data manipulation",
+    "section": "Lesson outline",
+    "text": "Lesson outline\n\nReview from last week\nWarm-up: create a branch for today’s work\nSlides/discussion: using R for reproducible data analysis\n\nWhy use R?\nWhat is the tidyverse and why use it?\nInstall dplyr and tidyr\n\nLive coding: How R thinks about data\n\nData carpentry R ecology revamp episode #2\nData frames\nVectors and data types\nMissing data\n\nLive coding: dplyr and tidyr\n\nData carpentry R ecology revamp episode #3\nRecent DC + R lesson\nChaining lines together with the pipe\n\n%&gt;%, |&gt;\n\nSubsetting and filtering data\n\nincl. selection and pick https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html\n\nAdding columns\nSplit-apply-combine\nReshaping\n\nLive coding: advanced tidyverse topics\n\nOptions: across; dates; advanced joins; others?\n\nLive coding/discussion: getting help\n\nreprex\n\nLive coding: practice modify-add-commit cycle\nHomework: None"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/notes.html#installation-materials",
+    "href": "lessons/7-data-manipulation/notes.html#installation-materials",
+    "title": "Data manipulation",
+    "section": "Installation & materials",
+    "text": "Installation & materials\n\nSlides\nInstall R packages ‘dplyr’, ‘tidyr’, ‘readr’\nData carpentry R ecology revamp episode #2\nData carpentry R ecology revamp episode #3"
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/notes.html",
+    "href": "lessons/9-intermediate-r-2/notes.html",
     "title": "Intermediate R programming II",
     "section": "",
     "text": "Learners will learn how to make their R code more reproducible using for loops and the apply family of functions."
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#objective",
-    "href": "lessons/8-intermediate-r-2/notes.html#objective",
+    "objectID": "lessons/9-intermediate-r-2/notes.html#objective",
+    "href": "lessons/9-intermediate-r-2/notes.html#objective",
     "title": "Intermediate R programming II",
     "section": "",
     "text": "Learners will learn how to make their R code more reproducible using for loops and the apply family of functions."
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#installation-materials",
-    "href": "lessons/8-intermediate-r-2/notes.html#installation-materials",
+    "objectID": "lessons/9-intermediate-r-2/notes.html#installation-materials",
+    "href": "lessons/9-intermediate-r-2/notes.html#installation-materials",
     "title": "Intermediate R programming II",
     "section": "Installation & materials",
     "text": "Installation & materials\n\nSlides\nData Carpentry for Biologists for loop lecture \nData Carpentry for Biologists iteration without loops lecture? \n\n\nReview\nCan share their plans for apply skills to their research. Lead optional discussion on when to use base R vs. tidyverse packages/functions.\n\n\nModifications\n\nFor for loops lecture:\n\nAt “Do Tasks 3-4…”, do “Basic For Loop” exercises #2 & #3\nSkip sections “Looping over multiple values” and “Looping with functions”\nStop at “Looping over files” due to zip download issues\n\nFor apply lecture:\n\nDo “Size Estimates With Maximum” exercise\nDo “Size Estimates Vectorized 2” exercise\nStop after first section in “Other apply functions (optional)” section"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#teaching-notes",
-    "href": "lessons/8-intermediate-r-2/notes.html#teaching-notes",
+    "objectID": "lessons/9-intermediate-r-2/notes.html#teaching-notes",
+    "href": "lessons/9-intermediate-r-2/notes.html#teaching-notes",
     "title": "Intermediate R programming II",
     "section": "Teaching notes",
     "text": "Teaching notes\n\nCreate new R script for these materials. Put script into repro-DS-workshop repo\nEmphasize using for loops using index or non-index methods. Index can be useful for reducing memory use and for storing results\nIf time, demonstrate combining if and for"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/notes.html#homework",
-    "href": "lessons/8-intermediate-r-2/notes.html#homework",
+    "objectID": "lessons/9-intermediate-r-2/notes.html#homework",
+    "href": "lessons/9-intermediate-r-2/notes.html#homework",
     "title": "Intermediate R programming II",
     "section": "Homework",
     "text": "Homework\nIdentify a script from a research project that could benefit from a for loop, apply, conditional, or function."
@@ -126,25 +210,32 @@
     "text": "Live coding/discussion: options for finding help\n\n--help flag\nman pages\n? in R\nPackage websites (found with google or through CRAN page)\n\nThese often are the same material as help files + vignettes, but easier to read and examples are rendered on web\n\nStackOverflow\n\nPeople aren’t always the friendliest, but making a reprex helps you get good answers\n\nMinimal reproducible examples with reprex\n\nDemo RStudio addin\n\nChatGPT\n\nNot recommended for beginners!\nSometimes (~50% by some estimates) gives the wrong answer, difficult to spot mistakes if you’re a beginner"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/notes.html",
-    "href": "lessons/9-markdown-quarto/notes.html",
-    "title": "Documentation and Literate Programming",
+    "objectID": "lessons/4-git/notes.html",
+    "href": "lessons/4-git/notes.html",
+    "title": "Version control with git",
     "section": "",
-    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
+    "text": "Understand the concept and motivation of version control\nSet up git on their machine (email address linked to their GH account; --global config)\nUnderstand that repos == folders =can= .Rproj.\nInitialize a git repo associated with an RStudio project called pilot-analyses.\nUnderstand the modify-add-commit progression. Apply this by making modifications to some R code and then committing it to the pilot-analyses repo (git commands: status, log, diff, add, commit)\nUse .gitignore to selectively exclude files from git."
   },
   {
-    "objectID": "lessons/9-markdown-quarto/notes.html#objective",
-    "href": "lessons/9-markdown-quarto/notes.html#objective",
-    "title": "Documentation and Literate Programming",
+    "objectID": "lessons/4-git/notes.html#objective",
+    "href": "lessons/4-git/notes.html#objective",
+    "title": "Version control with git",
     "section": "",
-    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
+    "text": "Understand the concept and motivation of version control\nSet up git on their machine (email address linked to their GH account; --global config)\nUnderstand that repos == folders =can= .Rproj.\nInitialize a git repo associated with an RStudio project called pilot-analyses.\nUnderstand the modify-add-commit progression. Apply this by making modifications to some R code and then committing it to the pilot-analyses repo (git commands: status, log, diff, add, commit)\nUse .gitignore to selectively exclude files from git."
   },
   {
-    "objectID": "lessons/9-markdown-quarto/notes.html#lesson-outline",
-    "href": "lessons/9-markdown-quarto/notes.html#lesson-outline",
-    "title": "Documentation and Literate Programming",
-    "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nWhat goes in a README?\n\nProject summary\nProject status (in progress, archived, just an idea?)\nHow to give credit\nStructure of repo (what files do what?)\nHow to reproduce results\n\nExample READMEs:\n\nhttps://github.com/Aariq/BACE-legacy-effects\nhttps://github.com/ecohealthalliance/amr-analysis\nhttps://github.com/atredennick/size-environment\n\nMarkdown & formatting a README.md\n\nMarkdown is a markup language: plain text –&gt; formatted text\nWidely used (GitHub, websites, Slack, etc.)\nShow markdown cheat sheet\nSpaces matter, and don’t matter at the same time. Err on the side of too much space between elements\n\nExercise: Spend a few minutes editing your README, commit, push to GitHub and observe\nQuarto: an open-source scientific and technical publishing system\n\nAllows combining markdown, code, and code output (tables, plots, etc)\nWide variety of outputs: html, pdf, word, and more\nUse cases:\n\nNotebook\nShare results with collaborators\nPresentations\nReproducible manuscripts\n\n\nHow does it work?\n\nqmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.\n\nAnatomy of a .Qmd\n\nLook familiar if you’ve used RMarkdown\nYAML header has metadata and settings\nMarkdown body\nCode chunks with R, Python, Julia, or other code\n\nCreate .Qmd and play\nDemo rendering in different formats\nDemo visual editor\n\nSwitch back and forth\nCallouts\n\nCode chunk options\n\nDemo some common ones like label, echo: false, fig-cap\n\nCitations and cross-refs\nTease journal articles (check out AGU format example https://quarto-journals.github.io/agu/)\nPoint students toward tutorial and full documentation"
+    "objectID": "lessons/4-git/notes.html#lesson-outline",
+    "href": "lessons/4-git/notes.html#lesson-outline",
+    "title": "Version control with git",
+    "section": "Lesson outline",
+    "text": "Lesson outline\n\nReview of last week\n\nAsk folks to share the diagram of their file system\nWarm-up with review question from the slide deck\n\nSlides/lecture: Intro to version control with git\n\nWhat is version control?\nWhy should I learn this? When will I need it?\n\nLive coding: git config\n\nSW Carpentry Git lesson 2 https://swcarpentry.github.io/git-novice/02-setup\nSetting up git using git config\n\nMake sure participants use their GH email/intended GH email\ngit verb options\ngit config --global core.editor \"vim\"\ngit verb --help\n\n\nLive coding: git init\n\nSW Carpentry Git lesson 3 https://swcarpentry.github.io/git-novice/03-create.html\nIntroduce the concept of a repository\nGo over 3 ways to init a git repo and when to use each\nBreak to all create a project + repo called pilot-analyses\n\nLive coding: git status\n\nUse git status to check that git init worked\nTalk about git status as a bridge to tracking changes.\n\nLive coding: Tracking changes\n\nSW Carpentry Git lesson 4 https://swcarpentry.github.io/git-novice/04-changes\nVisualize in slides\nCreate a blank R file (using RStudio point and click)\nMake comments/pseudocode changes.\ngit status\nGo through git add/commit cycle\nRepeat with additional changes, use git diff\nRepeat with multiple files\nUndo saved changes to a file using git restore\nUse git reset HEAD~ to undo the git add and git commit commands\n\nLive coding: .gitignore\n\nSW Carpentry Git lesson 6https://swcarpentry.github.io/git-novice/06-ignore\n.gitignore:\n\nDS_Store\nCreate a file and then ignore it.\n\n\n(Time permitting): SW Carpentry Git lesson 5\n\nhttps://swcarpentry.github.io/git-novice/05-history\nNavigating git history\n\nHomework:\n\nCreate a GitHub account if you don’t have one.\n(Optional) identify an existing folder and turn it into a repository."
+  },
+  {
+    "objectID": "lessons/4-git/notes.html#installation-materials",
+    "href": "lessons/4-git/notes.html#installation-materials",
+    "title": "Version control with git",
+    "section": "Installation & materials",
+    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Version Control with Git episode #2\nSoftware Carpentry Version Control with Git episode #3\nSoftware Carpentry Version Control with Git episode #4\nSoftware Carpentry Version Control with Git episode #6\n(optional) Software Carpentry Version Control with Git episode #5"
   },
   {
     "objectID": "lessons/1-project-management/notes.html",
@@ -165,7 +256,7 @@
     "href": "lessons/1-project-management/notes.html#lesson-outline",
     "title": "Project Management and Documentation",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nIntroductions\nDiscuss reproducibility\nGive tour of course website & syllabus\n\nPoint out code of conduct\n\nScreen setup\nDon’t save or load .RData!\nDiscuss general best practices for research compendia (use Carpentry lesson??)\n\nAll files needed for a project in the same folder (ideally)\nOrganize data, code, and outputs into different folders at a minimum\nNever edit raw data\nInclude documentation on what each file is/does in a README\n\nLive Coding: create an R project and add gapminder data to it\n\nShow file pane & connect to Windows Explorer / Finder\nShow how to make a file read-only\nDemo closing, opening, and switching projects\n\nHomework:\n\nApply one or more of the organizing principles of a research compendium to an existing research project."
+    "text": "Lesson Outline\n\nIntroductions\nDiscuss reproducibility\nGive tour of course website & syllabus\n\nPoint out code of conduct\n\nScreen setup\nDon’t save or load .RData!\nDiscuss general best practices for research compendia (use Carpentry lesson??)\n\nAll files needed for a project in the same folder (ideally)\nOrganize data, code, and outputs into different folders at a minimum\nNever edit raw data\nInclude documentation on what each file is/does in a README\n\nProject summary\nProject status (in progress, archived, just an idea?)\nHow to give credit\nStructure of repo (what files do what?)\nHow to reproduce results\nExample READMEs:\n\nhttps://github.com/Aariq/BACE-legacy-effects\nhttps://github.com/ecohealthalliance/amr-analysis\nhttps://github.com/atredennick/size-environment\n\n\n\nLive Coding: create an R project and add gapminder data to it\n\nShow file pane & connect to Windows Explorer / Finder\nShow how to make a file read-only\nDemo closing, opening, and switching projects\n\nHomework:\n\nApply one or more of the organizing principles of a research compendium to an existing research project."
   },
   {
     "objectID": "lessons/1-project-management/notes.html#installation-materials",
@@ -173,6 +264,34 @@
     "title": "Project Management and Documentation",
     "section": "Installation & materials",
     "text": "Installation & materials\n\nSlides\nSoftware Carpentry Introduction to R and RStudio episode\nSoftware Carpentry Project Management with RStudio episode"
+  },
+  {
+    "objectID": "lessons/3-shell/notes.html",
+    "href": "lessons/3-shell/notes.html",
+    "title": "Using the Shell",
+    "section": "",
+    "text": "Understand the what and why of the shell\nUse the shell to navigate your computer’s file system\nUse R projects to simplify file system navigation\nKnow your options for finding help"
+  },
+  {
+    "objectID": "lessons/3-shell/notes.html#objectives",
+    "href": "lessons/3-shell/notes.html#objectives",
+    "title": "Using the Shell",
+    "section": "",
+    "text": "Understand the what and why of the shell\nUse the shell to navigate your computer’s file system\nUse R projects to simplify file system navigation\nKnow your options for finding help"
+  },
+  {
+    "objectID": "lessons/3-shell/notes.html#lesson-outline",
+    "href": "lessons/3-shell/notes.html#lesson-outline",
+    "title": "Using the Shell",
+    "section": "Lesson outline",
+    "text": "Lesson outline\n\nReview of last week\n\nWhat happened as you were trying to re-organize projects or R code? Victories? Stumbling blocks?\n\nSlides: Intro to the shell\n\nWhat is the shell?\nWhat does the shell let us do?\nWhy would we want to learn how to use the shell?\n\nBreakout rooms: Shell installation\n\nInstructor notes include links to git installation for both Mac and Windows.\nSplit into 2 breakout rooms to install on different OS’s.\n\nBreak to all download shell-lesson-data\n\nLink\nPut it on your Desktop\nUnzip using point-and-click\n\nLive coding: Setup RStudio\n\nOpen RStudio\nTour panes: files and terminal\nSet up terminal pane to use bash\n\nLive coding: Navigating filesystems in files pane\n\nUse file pane to navigate to shell-lesson-data\n\nLive coding: Navigate to shell-lesson-data in Terminal\n\nIdentify the prompt and note that it is different in zsh (%)\npwd\ncd\nls\n\nUse ls flags to explain anatomy of a shell command\nShow man ls to show flag options for the ls command\n\n\nLive coding: Synchronizing file panes\n\nShow “Go to current directory” to bring Terminal to files pane\nShow “New terminal here” to create a terminal in files pane\nShow that Rstudio’s working directory is not automatically wherever either Terminal or the file pane is\n\nLive coding: using Rprojects to simplify filesystems\n\nCreate an R project\nShow that, upon opening, Terminal, getwd(), and file pane are all on the same page\n\nLive coding: cp and move\n\nCopy shell_lesson_data to the Rproject.\nTell them we need cp, then use cp --help to get the options\nRepeat using ls to explore contents of shell_lesson_data and mirror files pane\n\nLive coding/discussion: options for finding help\n\n--help flag\nman pages\nManual pages: ? in R, package websites\nStackOverflow\nChatGPT\n\nHomework for next session\n\nRead https://peerj.com/preprints/3159/ git (Version control prep)\nCreate a diagram of your file system and note your most frequently used directories"
+  },
+  {
+    "objectID": "lessons/3-shell/notes.html#installation-materials",
+    "href": "lessons/3-shell/notes.html#installation-materials",
+    "title": "Using the Shell",
+    "section": "Installation & materials",
+    "text": "Installation & materials\n\nSlides\nmacOS git installation\nWindows git installation (detailed step-by-step here)\nSoftware Carpentry Unix Shell episode #1\nSoftware Carpentry Unix Shell episode #2\nSoftware Carpentry Unix Shell episode #3 (time permitting)"
   },
   {
     "objectID": "lessons/10-get-credit/notes.html",
@@ -203,34 +322,6 @@
     "text": "Homework\n\nPrep for showcase session"
   },
   {
-    "objectID": "lessons/2-shell/notes.html",
-    "href": "lessons/2-shell/notes.html",
-    "title": "Using the Shell",
-    "section": "",
-    "text": "Understand the what and why of the shell\nUse the shell to navigate your computer’s file system\nUse R projects to simplify file system navigation\nKnow your options for finding help"
-  },
-  {
-    "objectID": "lessons/2-shell/notes.html#objectives",
-    "href": "lessons/2-shell/notes.html#objectives",
-    "title": "Using the Shell",
-    "section": "",
-    "text": "Understand the what and why of the shell\nUse the shell to navigate your computer’s file system\nUse R projects to simplify file system navigation\nKnow your options for finding help"
-  },
-  {
-    "objectID": "lessons/2-shell/notes.html#lesson-outline",
-    "href": "lessons/2-shell/notes.html#lesson-outline",
-    "title": "Using the Shell",
-    "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview of last week\n\nWhat happened as you were trying to re-organize projects or R code? Victories? Stumbling blocks?\n\nSlides: Intro to the shell\n\nWhat is the shell?\nWhat does the shell let us do?\nWhy would we want to learn how to use the shell?\n\nBreakout rooms: Shell installation\n\nInstructor notes include links to git installation for both Mac and Windows.\nSplit into 2 breakout rooms to install on different OS’s.\n\nBreak to all download shell-lesson-data\n\nLink\nPut it on your Desktop\nUnzip using point-and-click\n\nLive coding: Setup RStudio\n\nOpen RStudio\nTour panes: files and terminal\nSet up terminal pane to use bash\n\nLive coding: Navigating filesystems in files pane\n\nUse file pane to navigate to shell-lesson-data\n\nLive coding: Navigate to shell-lesson-data in Terminal\n\nIdentify the prompt and note that it is different in zsh (%)\npwd\ncd\nls\n\nUse ls flags to explain anatomy of a shell command\nShow man ls to show flag options for the ls command\n\n\nLive coding: Synchronizing file panes\n\nShow “Go to current directory” to bring Terminal to files pane\nShow “New terminal here” to create a terminal in files pane\nShow that Rstudio’s working directory is not automatically wherever either Terminal or the file pane is\n\nLive coding: using Rprojects to simplify filesystems\n\nCreate an R project\nShow that, upon opening, Terminal, getwd(), and file pane are all on the same page\n\nLive coding: cp and move\n\nCopy shell_lesson_data to the Rproject.\nTell them we need cp, then use cp --help to get the options\nRepeat using ls to explore contents of shell_lesson_data and mirror files pane\n\nLive coding/discussion: options for finding help\n\n--help flag\nman pages\nManual pages: ? in R, package websites\nStackOverflow\nChatGPT\n\nHomework for next session\n\nRead https://peerj.com/preprints/3159/ git (Version control prep)\nCreate a diagram of your file system and note your most frequently used directories"
-  },
-  {
-    "objectID": "lessons/2-shell/notes.html#installation-materials",
-    "href": "lessons/2-shell/notes.html#installation-materials",
-    "title": "Using the Shell",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nmacOS git installation\nWindows git installation (detailed step-by-step here)\nSoftware Carpentry Unix Shell episode #1\nSoftware Carpentry Unix Shell episode #2\nSoftware Carpentry Unix Shell episode #3 (time permitting)"
-  },
-  {
     "objectID": "lessons/12-drop-in/notes.html",
     "href": "lessons/12-drop-in/notes.html",
     "title": "Drop-in / Q&A",
@@ -252,417 +343,95 @@
     "text": "Executing R code in the shell / shell code in R\n\nExample of running R and Python scripts from bash:\nRscript 01-save_penguins.R\nbash 02-rename_penguins.sh\npython 03-print_penguins.py\nExample of multi-lingual quarto doc"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#picking-up-from-last-week",
-    "href": "lessons/7-intermediate-r-1/slides.html#picking-up-from-last-week",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Picking up from last week",
-    "text": "Picking up from last week\n\nCommit last week’s work to GitHub and push\nMerge your work to main!\nCreate a new branch for today’s work and pull"
+    "objectID": "lessons/2-markdown-quarto/slides.html#review-of-last-lesson",
+    "href": "lessons/2-markdown-quarto/slides.html#review-of-last-lesson",
+    "title": "Documentation & Literate Programming",
+    "section": "Review of last lesson",
+    "text": "Review of last lesson\n\nWhat questions do you have?\nWhat happened as you were trying to organize a research compendium?\n\nVictories?\nStumbling blocks?"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#data-wrangling-objectives",
-    "href": "lessons/7-intermediate-r-1/slides.html#data-wrangling-objectives",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Data wrangling objectives:",
-    "text": "Data wrangling objectives:\n\nWrite a data wrangling script using the functions we covered last week\n\nUse mutate to convert units of columns\nUse summarize to calculate group-wise summary statistics\nUse pivot_wider to create cross-tabs\n\nUse “tidy selection” helpers to reduce repetition in this workflow!"
+    "objectID": "lessons/2-markdown-quarto/slides.html#literate-programming",
+    "href": "lessons/2-markdown-quarto/slides.html#literate-programming",
+    "title": "Documentation & Literate Programming",
+    "section": "Literate Programming",
+    "text": "Literate Programming\n\nCode is interwoven with human-language notes, comments, and documentation.\nSome kind of “engine” handles executing the code and weaving together prose, code, and results.\nAllows for extended comments on code and reproducible reports and manuscripts"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#what-are-functions-in-r",
-    "href": "lessons/7-intermediate-r-1/slides.html#what-are-functions-in-r",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "What are functions in R?",
-    "text": "What are functions in R?\n\nWe use pre-written functions constantly.\nAutomated “recipes” for executing code\nInputs (“arguments”) and outputs"
+    "objectID": "lessons/2-markdown-quarto/slides.html#what-is-quarto",
+    "href": "lessons/2-markdown-quarto/slides.html#what-is-quarto",
+    "title": "Documentation & Literate Programming",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\n“An open-source scientific and technical publishing system”\n\n\nMix markdown, code, and the output of code\nProduce beautifully formatted documents in a variety of formats (html, Word, pdf, etc.)\nData analysis notebook\nPresentations for collaborators\nReproducible manuscripts\n…and more!"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#why-write-our-own-functions",
-    "href": "lessons/7-intermediate-r-1/slides.html#why-write-our-own-functions",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Why write our own functions?",
-    "text": "Why write our own functions?\n\nAvoid repetition (+ mistakes)\nEnhance portability + reproducibility"
+    "objectID": "lessons/2-markdown-quarto/slides.html#how-does-quarto-work",
+    "href": "lessons/2-markdown-quarto/slides.html#how-does-quarto-work",
+    "title": "Documentation & Literate Programming",
+    "section": "How does Quarto work?",
+    "text": "How does Quarto work?\n\nCommand line tool, not an R package, but works well with RStudio\n\n\n\nknitr or jupyter are used to convert code chunks into markdown, pandoc converts markdown into output"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#writing-a-function-objectives",
-    "href": "lessons/7-intermediate-r-1/slides.html#writing-a-function-objectives",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Writing a function objectives",
-    "text": "Writing a function objectives\n\nConvert our data wrangling script into a function\nBreak this function into smaller, human-readable functions\nMake this function flexible to apply to other data"
+    "objectID": "lessons/2-markdown-quarto/slides.html#anatomy-of-a-.qmd-file",
+    "href": "lessons/2-markdown-quarto/slides.html#anatomy-of-a-.qmd-file",
+    "title": "Documentation & Literate Programming",
+    "section": "Anatomy of a .Qmd file",
+    "text": "Anatomy of a .Qmd file\n\n\nmyreport.qmd\n\n---\ntitle: \"My Report\"\nauthor: \"Eric Scott\"\nformat: \n  html:\n    toc: true\n---\n\n```{r}\n#| label: load-packages\n#| include: false\n\nlibrary(tidyverse)\nlibrary(gapminder)\n```\n\n## Data\n\nMy data source is the [gapminder](https://www.gapminder.org/) dataset.\n\n```{r}\nhead(gapminder)\n```\n\n\nIf this looks familiar to RMarkdown users, that’s because Quarto was built on lessons learned from developing RMarkdown. It includes all the features of RMarkdown and more."
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#anatomy-of-a-function",
-    "href": "lessons/7-intermediate-r-1/slides.html#anatomy-of-a-function",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Anatomy of a function",
-    "text": "Anatomy of a function\n# Defining a function\n# a_function will be the name of the function\n# arguments go within the ()\n# code goes in the curly braces\n\na_function &lt;- function(an_argument) {\n  # code to execute goes here\n  \n  # whatever is inside return() comes out of the funciton\n  return(final_output) \n}\n\n# Run the code to create the function\n# Then you can use it:\n# a_function(&lt;some_input&gt;)\n#"
+    "objectID": "lessons/2-markdown-quarto/slides.html#yaml",
+    "href": "lessons/2-markdown-quarto/slides.html#yaml",
+    "title": "Documentation & Literate Programming",
+    "section": "YAML",
+    "text": "YAML\n“Yet another markup language”\n\nCommonly used for configuration files\nkey: value pairs\nNesting indicated by indentation with 2 spaces"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#what-are-conditionals",
-    "href": "lessons/7-intermediate-r-1/slides.html#what-are-conditionals",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "What are conditionals?",
-    "text": "What are conditionals?\n\nif and ifelse statements\nBalance readability and flexibility in functions"
+    "objectID": "lessons/2-markdown-quarto/slides.html#code",
+    "href": "lessons/2-markdown-quarto/slides.html#code",
+    "title": "Documentation & Literate Programming",
+    "section": "Code",
+    "text": "Code\n\nCode chunks can be R, Python, or other languages\nIf R, code is executed by knitr engine, otherwise by jupyter\nChunk options as YAML (#| key: value) modify execution behavior or output formatting"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#conditionals-in-r",
-    "href": "lessons/7-intermediate-r-1/slides.html#conditionals-in-r",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Conditionals in R",
-    "text": "Conditionals in R\n\n== for “is equal to”\n!= for “not equal to:\n&lt;, &gt; for less than/greater than\n&lt;=, &gt;= for less than or equal to/greater than or equal to\nis.na() for is it NA?\n%in% for, is this value in a vector of possibilities\n…and more!"
+    "objectID": "lessons/2-markdown-quarto/slides.html#markdown",
+    "href": "lessons/2-markdown-quarto/slides.html#markdown",
+    "title": "Documentation & Literate Programming",
+    "section": "Markdown",
+    "text": "Markdown\nMarkdown is a “markup language” that let’s you write plain text to indicate formatting. For example:\n\n**bold text** becomes bold text\n~~strikethrough~~ becomes strikethrough\n$E = mc^2$ becomes \\(E = mc^2\\)\n[link](https://www.google.com) becomes link\n`code()` becomes code()\n\nCheck Help &gt; Markdown quick reference in RStudio"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#conditionals-objectives",
-    "href": "lessons/7-intermediate-r-1/slides.html#conditionals-objectives",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Conditionals objectives",
-    "text": "Conditionals objectives\n\nAdd ifelse logic to our data wrangling function"
+    "objectID": "lessons/2-markdown-quarto/slides.html#common-markdown-pitfalls",
+    "href": "lessons/2-markdown-quarto/slides.html#common-markdown-pitfalls",
+    "title": "Documentation & Literate Programming",
+    "section": "Common markdown pitfalls",
+    "text": "Common markdown pitfalls\nSpaces between elements matter! How would you fix each of these?\n###Heading 3\n###Heading 3\n\nColors:\n- red\n- green\nColors: - red - green\n\n\n1.Number one\n2.Number two\n1.Number one 2.Number two"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#finishing-up",
-    "href": "lessons/7-intermediate-r-1/slides.html#finishing-up",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Finishing up",
-    "text": "Finishing up\n\nCommit your changes and push\nOpen a pull request."
+    "objectID": "lessons/2-markdown-quarto/slides.html#common-markdown-pitfalls-1",
+    "href": "lessons/2-markdown-quarto/slides.html#common-markdown-pitfalls-1",
+    "title": "Documentation & Literate Programming",
+    "section": "Common markdown pitfalls",
+    "text": "Common markdown pitfalls\nSpaces within elements don’t matter!\nThis     sentence still  gets    rendered  correctly!\nThis sentence still gets rendered correctly!\nSingle line breaks don't separate paragraphs.\nSee?\n\nYou need two line breaks for that!\nSingle line breaks don’t separate paragraphs. See?\nYou need two line breaks for that!"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#homework",
-    "href": "lessons/7-intermediate-r-1/slides.html#homework",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Homework",
-    "text": "Homework\n\nNone, except for…"
+    "objectID": "lessons/2-markdown-quarto/slides.html#our-turn",
+    "href": "lessons/2-markdown-quarto/slides.html#our-turn",
+    "title": "Documentation & Literate Programming",
+    "section": "Our turn",
+    "text": "Our turn\n\nCreate a new Quarto Document\nPractice editing and rendering\nExplore the Visual editor mode\nAdd citations and cross-references"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#show-and-tell-late-october",
-    "href": "lessons/7-intermediate-r-1/slides.html#show-and-tell-late-october",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Show and tell (Late October)",
-    "text": "Show and tell (Late October)\n\nAn opportunity to apply workshop skills to your own work.\nYou could apply different parts to different projects, or more integratively to one single project.\nOptional, but encouraged!"
+    "objectID": "lessons/2-markdown-quarto/slides.html#learning-more-getting-help",
+    "href": "lessons/2-markdown-quarto/slides.html#learning-more-getting-help",
+    "title": "Documentation & Literate Programming",
+    "section": "Learning More & Getting Help",
+    "text": "Learning More & Getting Help\n\nGetting started with Quarto tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\n#quarto channel in UA Data Science Slack"
   },
   {
-    "objectID": "lessons/7-intermediate-r-1/slides.html#some-inspirations",
-    "href": "lessons/7-intermediate-r-1/slides.html#some-inspirations",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Some inspirations",
-    "text": "Some inspirations\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, conditionals, or best-practices for code formatting\nImprove directory organization for project or your entire computer!\n\n\n\n\n\nReproduciblity & Data Science in R"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#section",
-    "href": "lessons/3-git/slides.html#section",
-    "title": "Version Control With git",
-    "section": "",
-    "text": "Version Control\nSemi-automated system for tracking changes with unlimited “undo”"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#why-learn-version-control",
-    "href": "lessons/3-git/slides.html#why-learn-version-control",
-    "title": "Version Control With git",
-    "section": "Why Learn Version Control?",
-    "text": "Why Learn Version Control?\n\nTrack development of research projects like a lab notebook\nKeep project in sync across computers including HPC\nShare and collaborate on projects in a clear and manageable way"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#git-and-github-for-version-control",
-    "href": "lessons/3-git/slides.html#git-and-github-for-version-control",
-    "title": "Version Control With git",
-    "section": "Git and GitHub for version control",
-    "text": "Git and GitHub for version control\n\nGit: version control on your computer.\nGitHub: connects your local Git to the cloud.\n\nProject management\nCollaboration\nVisual interface\nOptional, but we will be using it!"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#rstudio-new-project-wizard",
-    "href": "lessons/3-git/slides.html#rstudio-new-project-wizard",
-    "title": "Version Control With git",
-    "section": "RStudio New Project Wizard",
-    "text": "RStudio New Project Wizard\n\nBefore you create the directory…\nFile &gt; New R Project…"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#rstudio-new-project-wizard-1",
-    "href": "lessons/3-git/slides.html#rstudio-new-project-wizard-1",
-    "title": "Version Control With git",
-    "section": "RStudio New Project Wizard",
-    "text": "RStudio New Project Wizard"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#git-init",
-    "href": "lessons/3-git/slides.html#git-init",
-    "title": "Version Control With git",
-    "section": "git init",
-    "text": "git init\n\nCreate a new directory (or R project) on your computer"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#git-init-1",
-    "href": "lessons/3-git/slides.html#git-init-1",
-    "title": "Version Control With git",
-    "section": "git init",
-    "text": "git init"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#git-init-2",
-    "href": "lessons/3-git/slides.html#git-init-2",
-    "title": "Version Control With git",
-    "section": "git init",
-    "text": "git init\n\nNavigate to it on the command line\nRun git init from the command line"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#git-init-3",
-    "href": "lessons/3-git/slides.html#git-init-3",
-    "title": "Version Control With git",
-    "section": "git init",
-    "text": "git init"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#usethisuse_git",
-    "href": "lessons/3-git/slides.html#usethisuse_git",
-    "title": "Version Control With git",
-    "section": "usethis::use_git()",
-    "text": "usethis::use_git()\n\nCreate a new R Project"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#usethisuse_git-1",
-    "href": "lessons/3-git/slides.html#usethisuse_git-1",
-    "title": "Version Control With git",
-    "section": "usethis::use_git()",
-    "text": "usethis::use_git()"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#usethisuse_git-2",
-    "href": "lessons/3-git/slides.html#usethisuse_git-2",
-    "title": "Version Control With git",
-    "section": "usethis::use_git()",
-    "text": "usethis::use_git()\n\nOpen the R Project\nFrom inside the R project, run…"
-  },
-  {
-    "objectID": "lessons/3-git/slides.html#usethisuse_git-3",
-    "href": "lessons/3-git/slides.html#usethisuse_git-3",
-    "title": "Version Control With git",
-    "section": "usethis::use_git()",
-    "text": "usethis::use_git()"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#review",
-    "href": "lessons/6-data-manipulation/slides.html#review",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Review",
-    "text": "Review\n\n\n\n\n\n\nInformal poll:\n\n\nDo you collaborate with anyone who could or currently uses GitHub?"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#review-1",
-    "href": "lessons/6-data-manipulation/slides.html#review-1",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Review",
-    "text": "Review\n\n\n\n\n\n\nChat:\n\n\nWhat would you say to encourage them to start?"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#review-2",
-    "href": "lessons/6-data-manipulation/slides.html#review-2",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Review",
-    "text": "Review\n\n\n\n\n\n\nChat:\n\n\nHow would you get set up? What would be your core workflow?"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#warm-up",
-    "href": "lessons/6-data-manipulation/slides.html#warm-up",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Warm-up",
-    "text": "Warm-up\nCreate a branch for today’s work.\n\n\n\n\n\n\nNote\n\n\nCreate this branch from a repo you own, not the demo from Tuesday!\nWe might need to create a repo for R scripting for this workshop."
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#learning-objectives",
-    "href": "lessons/6-data-manipulation/slides.html#learning-objectives",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Learning objectives",
-    "text": "Learning objectives\n\nUnderstand the principles of “tidy data”\nUse tidyverse packages (dplyr and tidyr) to work with data in R.\nPractice tracking our work in git"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#what-is-tidy-data",
-    "href": "lessons/6-data-manipulation/slides.html#what-is-tidy-data",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "What is “tidy data”?",
-    "text": "What is “tidy data”?\nLowndes and Horst say it so beautifully."
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse",
-    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "The tidyverse",
-    "text": "The tidyverse"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse-1",
-    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse-1",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "The “tidyverse”",
-    "text": "The “tidyverse”\n\n✨ Common structure and syntax\n✨ Emphasize user readability\n✨ Friendly documentation\n✨ Updates rapidly"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse-2",
-    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse-2",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "The “tidyverse”",
-    "text": "The “tidyverse”\n\n‼️ Extra installs over “base R”\n‼️ Very different syntax than “base R”\n‼️ Updates rapidly"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#the-tidyverse-3",
-    "href": "lessons/6-data-manipulation/slides.html#the-tidyverse-3",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "The “tidyverse”",
-    "text": "The “tidyverse”\n\n🧭 Only install/load the functions/packages you need\n🧭 Be aware that others may be unfamiliar; comment your code well\n🧭 Keep track of your package versions\n🧭 Software developers, keep an eye on changes!"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#tidy-data-in-r",
-    "href": "lessons/6-data-manipulation/slides.html#tidy-data-in-r",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Tidy data in R",
-    "text": "Tidy data in R\nLet’s install some packages:\ninstall.packages(\"dplyr\") # dataframe manipulation\ninstall.packages(\"tidyr\") # \"reshaping\" data\ninstall.packages(\"palmerpenguins\") # open teaching dataset"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-data-types-in-r",
-    "href": "lessons/6-data-manipulation/slides.html#coding-time-data-types-in-r",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time: Data types in R",
-    "text": "Coding time: Data types in R\nKey points:\n\nMajor data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.\nCommon tabular formats are data.frame or tibble\nYou can perform “vectorized” operations on whole vectors (or columns) at once.\nMissing data are handled as NAs."
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-dplyr",
-    "href": "lessons/6-data-manipulation/slides.html#coding-time-dplyr",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time: dplyr",
-    "text": "Coding time: dplyr\nCore dplyr verbs:\n\nselect pulls columns\nfilter pulls rows based on values\nmutate adds or modifies a column\ngroup_by + summarize calculates group-wise summary statistics\n*_join functions combine data frames based on matching columns"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#a-note-on-pipes",
-    "href": "lessons/6-data-manipulation/slides.html#a-note-on-pipes",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "A note on pipes",
-    "text": "A note on pipes\n\nChain functions together into “paragraphs”\n%&gt;%: older, included in dplyr (ultimately depends on magrittr)\n|&gt;: included in base R as of 4.1.0"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-tidyr",
-    "href": "lessons/6-data-manipulation/slides.html#coding-time-tidyr",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time: tidyr",
-    "text": "Coding time: tidyr\nKey tidyr manipulations:\n\npivot_longer turns columns names into row values\npivot_wider creates new columns based on the values of a given field.\n\n\n\n\n\n\n\nNote\n\n\nData should be as long as is reasonable (but not longer)!"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#coding-time-finding-the-right-function",
-    "href": "lessons/6-data-manipulation/slides.html#coding-time-finding-the-right-function",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time: finding the right function",
-    "text": "Coding time: finding the right function\n\n?tidyr::pivot_wider and index pages\nMore ways of getting help: see the Getting Help section!"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#wrapping-up",
-    "href": "lessons/6-data-manipulation/slides.html#wrapping-up",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Wrapping up",
-    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub."
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#wrapping-up-1",
-    "href": "lessons/6-data-manipulation/slides.html#wrapping-up-1",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Wrapping up",
-    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub.\n\n\n\n\n\n\nCommand-line instructions\n\n\ngit add &lt;your script name&gt;\ngit commit\ngit push"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/slides.html#homework",
-    "href": "lessons/6-data-manipulation/slides.html#homework",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Homework",
-    "text": "Homework\n\nFind a script you have used in one of your projects and translate it to use these verbs.\n\nBonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!\n\n\n\n\n\n\nReproduciblity & Data Science in R"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#review",
-    "href": "lessons/5-github-collab/slides.html#review",
-    "title": "Collaborate With GitHub",
-    "section": "Review",
-    "text": "Review\n\n\n\n\n\n\nWord Bank\n\n\nrepo | commit | remote | push | pull | add\n\n\n\n\n\nA collection of files tracked by git\nA snapshot of the state of a repository\ngit ___ is used to tell git to track a file\nFor example, a repo on GitHub\ngit ____ is used to synchronize changes on your computer with a remote"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#review-1",
-    "href": "lessons/5-github-collab/slides.html#review-1",
-    "title": "Collaborate With GitHub",
-    "section": "Review",
-    "text": "Review\nDid anyone add a repo to GitHub? What difficulties did you encounter?"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#collaborating-with-github",
-    "href": "lessons/5-github-collab/slides.html#collaborating-with-github",
-    "title": "Collaborate With GitHub",
-    "section": "Collaborating with GitHub",
-    "text": "Collaborating with GitHub\n\n\n\n\n\n\n\nA GitHub repo can be used to coordinate collaboration\nIf two people have permissions, both can push changes to the repo\nAsk for a volunteer and give them permission to push to a repo\n\n\nFigure 2 from (Bryan 2018)"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#example-repo",
-    "href": "lessons/5-github-collab/slides.html#example-repo",
-    "title": "Collaborate With GitHub",
-    "section": "Example repo",
-    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: https://github.com/cct-datascience/repro-workshop-demo 1\nNeed one volunteer to edit the README.md and practice commit + push\n\nRead more about GitHub organizations"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#dealing-with-conflicts",
-    "href": "lessons/5-github-collab/slides.html#dealing-with-conflicts",
-    "title": "Collaborate With GitHub",
-    "section": "Dealing with Conflicts",
-    "text": "Dealing with Conflicts\n\nWhat happens when two people make conflicting edits to a file and push them?\nCreates a merge conflict"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#ok-try-git-pull",
-    "href": "lessons/5-github-collab/slides.html#ok-try-git-pull",
-    "title": "Collaborate With GitHub",
-    "section": "Ok, try git pull",
-    "text": "Ok, try git pull"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#merge-rebase-fast-forward",
-    "href": "lessons/5-github-collab/slides.html#merge-rebase-fast-forward",
-    "title": "Collaborate With GitHub",
-    "section": "Merge, rebase, fast-forward??",
-    "text": "Merge, rebase, fast-forward??\n\nThese are alternative ways to deal with conflicts—we won’t get into the details\nFor now, we recommend you stick with the “merge” option\n\n\nUse:\ngit config pull.rebase false\nOr, if you want to set this option for all future repos too\ngit config --global pull.rebase false"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#fixing-a-merge-conflict",
-    "href": "lessons/5-github-collab/slides.html#fixing-a-merge-conflict",
-    "title": "Collaborate With GitHub",
-    "section": "Fixing a Merge Conflict",
-    "text": "Fixing a Merge Conflict\n\n\nResolve the conflict however you want (i.e. keep one of the two sections)\nDelete all lines with &lt;&lt;&lt;&lt;&lt;&lt;&lt;, &gt;&gt;&gt;&gt;&gt;&gt;&gt;, or =======\nSave and commit\n\n\nLet’s have a round of applause for our volunteer!"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#avoid-merge-conflicts-by-working-on-branches",
-    "href": "lessons/5-github-collab/slides.html#avoid-merge-conflicts-by-working-on-branches",
-    "title": "Collaborate With GitHub",
-    "section": "Avoid merge conflicts by working on branches",
-    "text": "Avoid merge conflicts by working on branches\nEach person works on a “branch”—an independent series of commits that can be merged back into the “main” branch.\n\n\n\n\n\ngitGraph\n   commit\n   commit\n   branch person_1\n   commit\n   commit\n   commit\n   checkout main\n   branch person_2\n   commit\n   commit\n   checkout main\n   merge person_1\n   merge person_2\n   commit"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#working-on-a-branch",
-    "href": "lessons/5-github-collab/slides.html#working-on-a-branch",
-    "title": "Collaborate With GitHub",
-    "section": "Working on a Branch",
-    "text": "Working on a Branch\n\nMake a new branch using RStudio’s Git pane (for this demo, use your name)\nCommit changes and push to your branch\nView changes on GitHub"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#pull-requests",
-    "href": "lessons/5-github-collab/slides.html#pull-requests",
-    "title": "Collaborate With GitHub",
-    "section": "Pull Requests",
-    "text": "Pull Requests\nA request to merge changes into the main branch\n\nNeed another volunteer to share screen and be guided through making a pull request\nThis time, everyone can follow along!"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#forks",
-    "href": "lessons/5-github-collab/slides.html#forks",
-    "title": "Collaborate With GitHub",
-    "section": "Forks",
-    "text": "Forks\n\n\nWhat if you don’t have permission to push to a GitHub repo but you want to contribute?\n\n\nMake a fork!\n\n\n\n\n\n\n\n\n\n\n\n\n\nSince you can’t push to “upstream”, you can make a connected copy on GitHub called a “fork”\n\nYou can clone the fork and since you own it, you can push to it.\nOn GitHub, you can sync upstream changes with your fork and you can make pull requests to integrate changes on your fork into upstream.\nThat means you can contribute to anything! (as long as it is a public repo)"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#collaborating-with-forks",
-    "href": "lessons/5-github-collab/slides.html#collaborating-with-forks",
-    "title": "Collaborate With GitHub",
-    "section": "Collaborating with Forks",
-    "text": "Collaborating with Forks\nTo contribute to a repo you don’t have push permission for:\n\nFork the repo to your own GitHub\nClone the fork to your local computer\nMake commits (ideally on a branch)\nMake a pull request to the upstream repo\n\nLearn more, including handy usethis shortcuts: https://happygitwithr.com/fork-and-clone\n\n\n\n\n\n\nExercise\n\n\nIn pairs, practice this workflow to make a PR to our example repo"
-  },
-  {
-    "objectID": "lessons/5-github-collab/slides.html#references",
-    "href": "lessons/5-github-collab/slides.html#references",
-    "title": "Collaborate With GitHub",
-    "section": "References",
-    "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
+    "objectID": "lessons/2-markdown-quarto/slides.html#your-tasks",
+    "href": "lessons/2-markdown-quarto/slides.html#your-tasks",
+    "title": "Documentation & Literate Programming",
+    "section": "Your tasks",
+    "text": "Your tasks\n\nUse Quarto to create a report for your compendium\nTry converting a R script with a lot of comments into a Quarto document instead\n\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "emails.html",
@@ -700,116 +469,25 @@
     "text": "Attribution 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public: \nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\nIf You Share Adapted Material You produce, the Adapter’s License You apply must not prevent recipients of the Adapted Material from complying with this Public License.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org.\n\n\n\nCitationBibTeX citation:@online{scott2024,\n  author = {Scott, Eric and Diaz, Renata and Guo, Jessica and Riemer,\n    Kristina},\n  date = {2024},\n  url = {https://cct-datascience.github.io/repro-data-sci/LICENSE.html},\n  doi = {10.5281/zenodo.8411612},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nScott, Eric, Renata Diaz, Jessica Guo, and Kristina Riemer. 2024.\nReproducibility & Data Science in R. 2024. https://doi.org/10.5281/zenodo.8411612."
   },
   {
-    "objectID": "lessons/5-github-collab/notes.html",
-    "href": "lessons/5-github-collab/notes.html",
-    "title": "Collaborating with GitHub",
+    "objectID": "lessons/2-markdown-quarto/notes.html",
+    "href": "lessons/2-markdown-quarto/notes.html",
+    "title": "Documentation and Literate Programming",
     "section": "",
-    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
+    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
   },
   {
-    "objectID": "lessons/5-github-collab/notes.html#objective",
-    "href": "lessons/5-github-collab/notes.html#objective",
-    "title": "Collaborating with GitHub",
+    "objectID": "lessons/2-markdown-quarto/notes.html#objective",
+    "href": "lessons/2-markdown-quarto/notes.html#objective",
+    "title": "Documentation and Literate Programming",
     "section": "",
-    "text": "Learners will fork and clone a repository on GitHub and use branches to open pull requests."
+    "text": "Understand how to write a README.md using markdown basics and introduce the concept of literate programming with Quarto."
   },
   {
-    "objectID": "lessons/5-github-collab/notes.html#lesson-outline",
-    "href": "lessons/5-github-collab/notes.html#lesson-outline",
-    "title": "Collaborating with GitHub",
+    "objectID": "lessons/2-markdown-quarto/notes.html#lesson-outline",
+    "href": "lessons/2-markdown-quarto/notes.html#lesson-outline",
+    "title": "Documentation and Literate Programming",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nReview Homework:\n\nAnyone put a repo on GitHub? Any difficulties encountered?\n\nLive Coding: Collaborating with GitHub\n\nShare a repo with everyone & have everyone clone w/ RStudio\nAsk 1 (one) volunteer to make a change and practice commit + push\nInstructor makes commit + push, volunteer pulls\n\nLive Coding: Merge conflict\n\nInstructor makes commit to README and pushes to GitHub\nVolunteer makes commit to the same line of README and pushes without pulling first\nShould error for volunteer\n\nSlides: Resolving merge conflict\nLive Coding: Resolve merge conflict\n\nTry following the hints in the error and pull\nNew error about divergent branches\nThen have everyone set git config pull.rebase false\n\nWorking on branches (slides)\nLive Coding:\n\nMake a branch with your name in RStudio\nAdd your name to README and commit\nSwitch between branches and see the file change in RStudio AND in File Explorer / Finder\nPush & see branches on GitHub\n\nPull Requests (slides)\nLive Coding:\n\nHave everyone make a PR to add their name to the README\nDemo merging one or two & ask volunteer to resolve any merge conflicts\n\nForks (slides)\n\nDiscuss when you would work on a branch of a fork vs. working in a branch but on the same repo\n\nLive Coding:\n\nHave students create a fork of a second example repo and clone their fork\nIn pairs, have them practice making a branch, making changes, commit + push, and make a PR on GitHub\n\nHomework:\n\nMaybe try cloning a repo that you don’t have permission to push to to see what happens\nTry using usethis::pr_finish() on a branch that was already merged on GitHub and take note of what it does"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/notes.html",
-    "href": "lessons/6-data-manipulation/notes.html",
-    "title": "Data manipulation",
-    "section": "",
-    "text": "Use git branches in the “real world”\nReproducibly clean, summarize, and organize dataframes using tidyverse packages\nUnderstand how R stores different data types (data frames, vector types, missing data)\nKnow what the tidyverse is, how it differs from base R, and the philosophy behind using it here.\nUse the pipe to chain operations together\nUse dplyr functions to subset data (select, filter; logic and select fxns including where, ==, %in%, !) and manipulate data (mutate; lubridate; split-apply-combine)\nUse tidyr functions to reshape data (pivot_wider and pivot_longer)"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/notes.html#objective",
-    "href": "lessons/6-data-manipulation/notes.html#objective",
-    "title": "Data manipulation",
-    "section": "",
-    "text": "Use git branches in the “real world”\nReproducibly clean, summarize, and organize dataframes using tidyverse packages\nUnderstand how R stores different data types (data frames, vector types, missing data)\nKnow what the tidyverse is, how it differs from base R, and the philosophy behind using it here.\nUse the pipe to chain operations together\nUse dplyr functions to subset data (select, filter; logic and select fxns including where, ==, %in%, !) and manipulate data (mutate; lubridate; split-apply-combine)\nUse tidyr functions to reshape data (pivot_wider and pivot_longer)"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/notes.html#lesson-outline",
-    "href": "lessons/6-data-manipulation/notes.html#lesson-outline",
-    "title": "Data manipulation",
-    "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview from last week\nWarm-up: create a branch for today’s work\nSlides/discussion: using R for reproducible data analysis\n\nWhy use R?\nWhat is the tidyverse and why use it?\nInstall dplyr and tidyr\n\nLive coding: How R thinks about data\n\nData carpentry R ecology revamp episode #2\nData frames\nVectors and data types\nMissing data\n\nLive coding: dplyr and tidyr\n\nData carpentry R ecology revamp episode #3\nRecent DC + R lesson\nChaining lines together with the pipe\n\n%&gt;%, |&gt;\n\nSubsetting and filtering data\n\nincl. selection and pick https://dplyr.tidyverse.org/reference/dplyr_tidy_select.html\n\nAdding columns\nSplit-apply-combine\nReshaping\n\nLive coding: advanced tidyverse topics\n\nOptions: across; dates; advanced joins; others?\n\nLive coding/discussion: getting help\n\nreprex\n\nLive coding: practice modify-add-commit cycle\nHomework: None"
-  },
-  {
-    "objectID": "lessons/6-data-manipulation/notes.html#installation-materials",
-    "href": "lessons/6-data-manipulation/notes.html#installation-materials",
-    "title": "Data manipulation",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nInstall R packages ‘dplyr’, ‘tidyr’, ‘readr’\nData carpentry R ecology revamp episode #2\nData carpentry R ecology revamp episode #3"
-  },
-  {
-    "objectID": "lessons/3-git/notes.html",
-    "href": "lessons/3-git/notes.html",
-    "title": "Version control with git",
-    "section": "",
-    "text": "Understand the concept and motivation of version control\nSet up git on their machine (email address linked to their GH account; --global config)\nUnderstand that repos == folders =can= .Rproj.\nInitialize a git repo associated with an RStudio project called pilot-analyses.\nUnderstand the modify-add-commit progression. Apply this by making modifications to some R code and then committing it to the pilot-analyses repo (git commands: status, log, diff, add, commit)\nUse .gitignore to selectively exclude files from git."
-  },
-  {
-    "objectID": "lessons/3-git/notes.html#objective",
-    "href": "lessons/3-git/notes.html#objective",
-    "title": "Version control with git",
-    "section": "",
-    "text": "Understand the concept and motivation of version control\nSet up git on their machine (email address linked to their GH account; --global config)\nUnderstand that repos == folders =can= .Rproj.\nInitialize a git repo associated with an RStudio project called pilot-analyses.\nUnderstand the modify-add-commit progression. Apply this by making modifications to some R code and then committing it to the pilot-analyses repo (git commands: status, log, diff, add, commit)\nUse .gitignore to selectively exclude files from git."
-  },
-  {
-    "objectID": "lessons/3-git/notes.html#lesson-outline",
-    "href": "lessons/3-git/notes.html#lesson-outline",
-    "title": "Version control with git",
-    "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview of last week\n\nAsk folks to share the diagram of their file system\nWarm-up with review question from the slide deck\n\nSlides/lecture: Intro to version control with git\n\nWhat is version control?\nWhy should I learn this? When will I need it?\n\nLive coding: git config\n\nSW Carpentry Git lesson 2 https://swcarpentry.github.io/git-novice/02-setup\nSetting up git using git config\n\nMake sure participants use their GH email/intended GH email\ngit verb options\ngit config --global core.editor \"vim\"\ngit verb --help\n\n\nLive coding: git init\n\nSW Carpentry Git lesson 3 https://swcarpentry.github.io/git-novice/03-create.html\nIntroduce the concept of a repository\nGo over 3 ways to init a git repo and when to use each\nBreak to all create a project + repo called pilot-analyses\n\nLive coding: git status\n\nUse git status to check that git init worked\nTalk about git status as a bridge to tracking changes.\n\nLive coding: Tracking changes\n\nSW Carpentry Git lesson 4 https://swcarpentry.github.io/git-novice/04-changes\nVisualize in slides\nCreate a blank R file (using RStudio point and click)\nMake comments/pseudocode changes.\ngit status\nGo through git add/commit cycle\nRepeat with additional changes, use git diff\nRepeat with multiple files\nUndo saved changes to a file using git restore\nUse git reset HEAD~ to undo the git add and git commit commands\n\nLive coding: .gitignore\n\nSW Carpentry Git lesson 6https://swcarpentry.github.io/git-novice/06-ignore\n.gitignore:\n\nDS_Store\nCreate a file and then ignore it.\n\n\n(Time permitting): SW Carpentry Git lesson 5\n\nhttps://swcarpentry.github.io/git-novice/05-history\nNavigating git history\n\nHomework:\n\nCreate a GitHub account if you don’t have one.\n(Optional) identify an existing folder and turn it into a repository."
-  },
-  {
-    "objectID": "lessons/3-git/notes.html#installation-materials",
-    "href": "lessons/3-git/notes.html#installation-materials",
-    "title": "Version control with git",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nSoftware Carpentry Version Control with Git episode #2\nSoftware Carpentry Version Control with Git episode #3\nSoftware Carpentry Version Control with Git episode #4\nSoftware Carpentry Version Control with Git episode #6\n(optional) Software Carpentry Version Control with Git episode #5"
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html",
-    "href": "lessons/7-intermediate-r-1/notes.html",
-    "title": "Intermediate R programming I",
-    "section": "",
-    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#objective",
-    "href": "lessons/7-intermediate-r-1/notes.html#objective",
-    "title": "Intermediate R programming I",
-    "section": "",
-    "text": "Understand the utility of writing your own functions and managing control flow.\nWrite functions and if/else statements to improve code readability and reusability\nCreate pull requests updating a git repo with new code."
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#lesson-outline",
-    "href": "lessons/7-intermediate-r-1/notes.html#lesson-outline",
-    "title": "Intermediate R programming I",
-    "section": "Lesson outline",
-    "text": "Lesson outline\n\nReview from last session\nWarm-up\n\nUpdate working branch from upstream\n\nSlides/lecture: Why write functions?\n\nBase on DC semester biology lesson\nUnderstandable and reusable code\n\nHuman-understandable chunks\nDesigned to be reused\n\n\nLive-coding: functions\n\nFunction basics from DC semester lesson\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nDiscuss ordering of an R script\n\nSlides/lecture: control flow\n\nExamples of use of if/else statements (find some real-world examples)\nDC semester on conditionals\nReview conditional logic\nConditionals outside functions\nConditionals inside functions\n\nLive-coding: practice commit + PR\nDiscussion: application to own work + showcase\nHomework:\n\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!\n\nFind a section of own code to turn into a function"
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#installation-materials",
-    "href": "lessons/7-intermediate-r-1/notes.html#installation-materials",
-    "title": "Intermediate R programming I",
-    "section": "Installation & materials",
-    "text": "Installation & materials\n\nSlides\nData Carpentry for Biologists functions lecture\nData Carpentry for Biologists conditionals lecture"
-  },
-  {
-    "objectID": "lessons/7-intermediate-r-1/notes.html#notes-from-before",
-    "href": "lessons/7-intermediate-r-1/notes.html#notes-from-before",
-    "title": "Intermediate R programming I",
-    "section": "Notes from before",
-    "text": "Notes from before\n\nReview\nAsk to share cleaning up of example script, their own script, or their research project folder from lesson 5.\n\n\nModifications\n\nFor functions lecture, had them do only the “Use and Modify” exercise\nFrom conditionals lecture, only did “if statements” section\nFrom latter, only did “Basic If Statements” #2 exercise\nAdded on brief explanation of ifelse, using the example of ifelse(length == 5, \"correct\", \"incorrect\")\nMention case_when from dplyr for more complicated if & else steps\n\n\n\nTeaching notes\n\nBefore doing functions and conditions, demonstrate updating local cct-organization repo from upstream after adding a commit to the upstream\nCreate new R script for functions content, and another new R script for control flow (ifelse and for loops) content. Put both scripts into repro-DS-workshop repo\nMention functions are often used with for loops or apply statements\nAfter functions, mention consistent order of sections in scripts; example is libraries, read in data, functions, executing functions\nInclude real world examples of if and ifelse statements to motivate their use, especially for checking if files already exist\nDemonstrate making a new branch and opening up a pull request in their repro-DS-workshop repo at the end of each set of material; can merge pull request\n\n\n\nHomework\nCreate a plan for applying these skills to their own research projects. Can apply different parts to different projects, or more integratively to one single project. Some possibilities:\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, if/for loops, or format code according to best practices\nImprove file and folder organization for project or your entire computer!"
+    "text": "Lesson Outline\n\nQuarto: an open-source scientific and technical publishing system\n\nAllows combining markdown, code, and code output (tables, plots, etc)\nWide variety of outputs: html, pdf, word, and more\nUse cases:\n\nNotebook\nShare results with collaborators\nPresentations\nReproducible manuscripts\n\n\nHow does it work?\n\nqmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.\n\nAnatomy of a .Qmd\n\nLook familiar if you’ve used RMarkdown\nYAML header has metadata and settings\nMarkdown body\nCode chunks with R, Python, Julia, or other code\n\nCreate .Qmd and play\nDemo visual editor\n\nSwitch back and forth\n“Add anything” menu with cmd-/cmd-/\n\nRunning code in code chunks\nCode chunk options\n\nDemo some common ones like label, echo: false, fig-cap\n\nSections (and TOC)\nEquations\nCitations\nCross refs\nCallouts\nMention journal articles (check out AGU format example https://quarto-journals.github.io/agu/)\nPoint students toward tutorial and full documentation"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#papers-with-open-code-are-cited-more",
@@ -1057,88 +735,95 @@
     "text": "References\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nHicks, Michael Townsen, James Humphries, and Joe Slater. 2024. “ChatGPT Is Bullshit.” Ethics and Information Technology 26 (2): 38. https://doi.org/10.1007/s10676-024-09775-5.\n\n\nKabir, Samia, David N. Udo-Imeh, Bonan Kou, and Tianyi Zhang. 2024. “Is Stack Overflow Obsolete? An Empirical Study of the Characteristics of ChatGPT Answers to Stack Overflow Questions.” In, 117. CHI ’24. New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/3613904.3642596.\n\n\nSeibold, Heidi. 2024. 6 Steps Towards Reproducible Research. Zenodo. https://doi.org/10.5281/zenodo.12744715.\n\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” Edited by Francis Ouellette. PLoS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#readme",
-    "href": "lessons/9-markdown-quarto/slides.html#readme",
-    "title": "Documentation & Literate Programming",
-    "section": "README",
-    "text": "README\nREADME.md is the landing page for your GitHub repo, and the first place to look for help understanding it.\n\n\nBrief project summary\nProject status (just an experiment, WIP, archived?)\nHow to give credit (e.g. if it is associated with a published paper)\nStructure of repo (which files do what?)\nInstructions on how to reproduce results"
+    "objectID": "lessons/4-git/slides.html#section",
+    "href": "lessons/4-git/slides.html#section",
+    "title": "Version Control With git",
+    "section": "",
+    "text": "Version Control\nSemi-automated system for tracking changes with unlimited “undo”"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#example-readmes-for-research-compendia",
-    "href": "lessons/9-markdown-quarto/slides.html#example-readmes-for-research-compendia",
-    "title": "Documentation & Literate Programming",
-    "section": "Example READMEs for research compendia",
-    "text": "Example READMEs for research compendia\n\nhttps://github.com/Aariq/BACE-legacy-effects\nhttps://github.com/ecohealthalliance/amr-analysis\nhttps://github.com/atredennick/size-environment"
+    "objectID": "lessons/4-git/slides.html#why-learn-version-control",
+    "href": "lessons/4-git/slides.html#why-learn-version-control",
+    "title": "Version Control With git",
+    "section": "Why Learn Version Control?",
+    "text": "Why Learn Version Control?\n\nTrack development of research projects like a lab notebook\nKeep project in sync across computers including HPC\nShare and collaborate on projects in a clear and manageable way"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#markdown",
-    "href": "lessons/9-markdown-quarto/slides.html#markdown",
-    "title": "Documentation & Literate Programming",
-    "section": "Markdown",
-    "text": "Markdown\nMarkdown is a “markup language” that let’s you write plain text to indicate formatting. For example:\n\n**bold text** becomes bold text\n~~strikethrough~~ becomes strikethrough\n$E = mc^2$ becomes \\(E = mc^2\\)\n[link](https://www.google.com) becomes link\n`code()` becomes code()\n\nCheck Help &gt; Markdown quick reference in RStudio"
+    "objectID": "lessons/4-git/slides.html#git-and-github-for-version-control",
+    "href": "lessons/4-git/slides.html#git-and-github-for-version-control",
+    "title": "Version Control With git",
+    "section": "Git and GitHub for version control",
+    "text": "Git and GitHub for version control\n\nGit: version control on your computer.\nGitHub: connects your local Git to the cloud.\n\nProject management\nCollaboration\nVisual interface\nOptional, but we will be using it!"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#readme.md",
-    "href": "lessons/9-markdown-quarto/slides.html#readme.md",
-    "title": "Documentation & Literate Programming",
-    "section": "README.md",
-    "text": "README.md\n\n\n\n\n\n\nExercise (~5 min)\n\n\nEdit a README.md using some of the markdown tips from the RStudio markdown quick reference"
+    "objectID": "lessons/4-git/slides.html#rstudio-new-project-wizard",
+    "href": "lessons/4-git/slides.html#rstudio-new-project-wizard",
+    "title": "Version Control With git",
+    "section": "RStudio New Project Wizard",
+    "text": "RStudio New Project Wizard\n\nBefore you create the directory…\nFile &gt; New R Project…"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#common-markdown-pitfalls",
-    "href": "lessons/9-markdown-quarto/slides.html#common-markdown-pitfalls",
-    "title": "Documentation & Literate Programming",
-    "section": "Common markdown pitfalls",
-    "text": "Common markdown pitfalls\nSpaces between elements matter! How would you fix each of these?\n###Heading 3\n###Heading 3\n\nColors:\n- red\n- green\nColors: - red - green\n\n\n1.Number one\n2.Number two\n1.Number one 2.Number two"
+    "objectID": "lessons/4-git/slides.html#rstudio-new-project-wizard-1",
+    "href": "lessons/4-git/slides.html#rstudio-new-project-wizard-1",
+    "title": "Version Control With git",
+    "section": "RStudio New Project Wizard",
+    "text": "RStudio New Project Wizard"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#common-markdown-pitfalls-1",
-    "href": "lessons/9-markdown-quarto/slides.html#common-markdown-pitfalls-1",
-    "title": "Documentation & Literate Programming",
-    "section": "Common markdown pitfalls",
-    "text": "Common markdown pitfalls\nSpaces within elements don’t matter!\nThis     sentence still  gets    rendered  correctly!\nThis sentence still gets rendered correctly!\nSingle line breaks don't separate paragraphs.\nSee?\n\nYou need two line breaks for that!\nSingle line breaks don’t separate paragraphs. See?\nYou need two line breaks for that!"
+    "objectID": "lessons/4-git/slides.html#git-init",
+    "href": "lessons/4-git/slides.html#git-init",
+    "title": "Version Control With git",
+    "section": "git init",
+    "text": "git init\n\nCreate a new directory (or R project) on your computer"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#what-is-quarto",
-    "href": "lessons/9-markdown-quarto/slides.html#what-is-quarto",
-    "title": "Documentation & Literate Programming",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\n“An open-source scientific and technical publishing system”\n\n\nMix markdown, code, and the output of code\nProduce beautifully formatted documents in a variety of formats (html, Word, pdf, etc.)\nData analysis notebook\nPresentations for collaborators\nReproducible manuscripts\n…and more!"
+    "objectID": "lessons/4-git/slides.html#git-init-1",
+    "href": "lessons/4-git/slides.html#git-init-1",
+    "title": "Version Control With git",
+    "section": "git init",
+    "text": "git init"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#how-does-quarto-work",
-    "href": "lessons/9-markdown-quarto/slides.html#how-does-quarto-work",
-    "title": "Documentation & Literate Programming",
-    "section": "How does Quarto work?",
-    "text": "How does Quarto work?\n\nCommand line tool, not an R package, but works well with RStudio\n\n\n\nknitr or jupyter are used to convert code chunks into markdown, pandoc converts markdown into output"
+    "objectID": "lessons/4-git/slides.html#git-init-2",
+    "href": "lessons/4-git/slides.html#git-init-2",
+    "title": "Version Control With git",
+    "section": "git init",
+    "text": "git init\n\nNavigate to it on the command line\nRun git init from the command line"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#anatomy-of-a-.qmd-file",
-    "href": "lessons/9-markdown-quarto/slides.html#anatomy-of-a-.qmd-file",
-    "title": "Documentation & Literate Programming",
-    "section": "Anatomy of a .Qmd file",
-    "text": "Anatomy of a .Qmd file\n\n\nmyreport.qmd\n\n---\ntitle: \"My Report\"\nauthor: \"Eric Scott\"\nformat: \n  html:\n    toc: true\n---\n\n```{r}\n#| label: load-packages\n#| include: false\n\nlibrary(tidyverse)\nlibrary(gapminder)\n```\n\n## Data\n\nMy data source is the [gapminder](https://www.gapminder.org/) dataset.\n\n```{r}\nhead(gapminder)\n```\n\n\nIf this looks familiar to RMarkdown users, that’s because Quarto was built on lessons learned from developing RMarkdown. It includes all the features of RMarkdown and more."
+    "objectID": "lessons/4-git/slides.html#git-init-3",
+    "href": "lessons/4-git/slides.html#git-init-3",
+    "title": "Version Control With git",
+    "section": "git init",
+    "text": "git init"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#our-turn",
-    "href": "lessons/9-markdown-quarto/slides.html#our-turn",
-    "title": "Documentation & Literate Programming",
-    "section": "Our turn",
-    "text": "Our turn\n\nCreate a new Quarto Document\nPractice editing and rendering\nExplore the Visual editor mode\nAdd citations and cross-references"
+    "objectID": "lessons/4-git/slides.html#usethisuse_git",
+    "href": "lessons/4-git/slides.html#usethisuse_git",
+    "title": "Version Control With git",
+    "section": "usethis::use_git()",
+    "text": "usethis::use_git()\n\nCreate a new R Project"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#learn-more",
-    "href": "lessons/9-markdown-quarto/slides.html#learn-more",
-    "title": "Documentation & Literate Programming",
-    "section": "Learn more",
-    "text": "Learn more\n\nGetting started tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\nQuarto Manuscripts (upcoming feature)"
+    "objectID": "lessons/4-git/slides.html#usethisuse_git-1",
+    "href": "lessons/4-git/slides.html#usethisuse_git-1",
+    "title": "Version Control With git",
+    "section": "usethis::use_git()",
+    "text": "usethis::use_git()"
   },
   {
-    "objectID": "lessons/9-markdown-quarto/slides.html#drop-in-session-showcase",
-    "href": "lessons/9-markdown-quarto/slides.html#drop-in-session-showcase",
-    "title": "Documentation & Literate Programming",
-    "section": "Drop-in Session & Showcase",
-    "text": "Drop-in Session & Showcase\n\nThis Thursday (10/5): Getting Credit For Your Work\nNext week (10/10, 10/12): No workshops!\nTuesday 10/17: Drop-in help session\nTuesday 10/24: Reproducibility show & tell\n\n\n\n\n\nReproduciblity & Data Science in R"
+    "objectID": "lessons/4-git/slides.html#usethisuse_git-2",
+    "href": "lessons/4-git/slides.html#usethisuse_git-2",
+    "title": "Version Control With git",
+    "section": "usethis::use_git()",
+    "text": "usethis::use_git()\n\nOpen the R Project\nFrom inside the R project, run…"
+  },
+  {
+    "objectID": "lessons/4-git/slides.html#usethisuse_git-3",
+    "href": "lessons/4-git/slides.html#usethisuse_git-3",
+    "title": "Version Control With git",
+    "section": "usethis::use_git()",
+    "text": "usethis::use_git()"
   },
   {
     "objectID": "lessons/11-getting-help/slides.html#shell-commands",
@@ -1232,121 +917,443 @@
     "text": "Resources: UA community\n\nUA Data Science Institute\nUA Data Science Slack\nCCT Drop-in Hours, 9-10 on Tuesdays\n\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/slides.html#show-and-tell-late-october",
-    "href": "lessons/8-intermediate-r-2/slides.html#show-and-tell-late-october",
+    "objectID": "lessons/9-intermediate-r-2/slides.html#show-and-tell-late-october",
+    "href": "lessons/9-intermediate-r-2/slides.html#show-and-tell-late-october",
     "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
     "section": "Show and tell (Late October)",
     "text": "Show and tell (Late October)\n\nAn opportunity to apply workshop skills to your own work.\nYou could apply different parts to different projects, or more integratively to one single project.\nOptional, but encouraged!"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/slides.html#some-inspirations",
-    "href": "lessons/8-intermediate-r-2/slides.html#some-inspirations",
+    "objectID": "lessons/9-intermediate-r-2/slides.html#some-inspirations",
+    "href": "lessons/9-intermediate-r-2/slides.html#some-inspirations",
     "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
     "section": "Some inspirations",
     "text": "Some inspirations\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, conditionals, or best-practices for code formatting\nImprove directory organization for project or your entire computer!"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/slides.html#iteration-by-hand",
-    "href": "lessons/8-intermediate-r-2/slides.html#iteration-by-hand",
+    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration-by-hand",
+    "href": "lessons/9-intermediate-r-2/slides.html#iteration-by-hand",
     "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
     "section": "Iteration by hand",
     "text": "Iteration by hand\nmy_first_site &lt;- read.csv(\"data_first.csv\")\nmy_second_site &lt;- read.csv(\"data_second.csv\")\nmy_third_site &lt;- read.csv(\"data_third.csv\")"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/slides.html#why-use-code-to-iterate",
-    "href": "lessons/8-intermediate-r-2/slides.html#why-use-code-to-iterate",
+    "objectID": "lessons/9-intermediate-r-2/slides.html#why-use-code-to-iterate",
+    "href": "lessons/9-intermediate-r-2/slides.html#why-use-code-to-iterate",
     "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
     "section": "Why use code to iterate?",
     "text": "Why use code to iterate?\n\nLess code: fewer bugs, easier to understand\nEasier to apply to new situations\nFaster to write, maybe faster to run"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/slides.html#iteration-using-for-loops",
-    "href": "lessons/8-intermediate-r-2/slides.html#iteration-using-for-loops",
+    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration-using-for-loops",
+    "href": "lessons/9-intermediate-r-2/slides.html#iteration-using-for-loops",
     "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
     "section": "Iteration using for loops",
     "text": "Iteration using for loops\n\nCoding objectives:\n\nWrite a for loop to apply our cleaning function to each island\nStore the results in a list\nConvert this list back to a dataframe"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/slides.html#iteration-using-purrrmap",
-    "href": "lessons/8-intermediate-r-2/slides.html#iteration-using-purrrmap",
+    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration-using-purrrmap",
+    "href": "lessons/9-intermediate-r-2/slides.html#iteration-using-purrrmap",
     "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
     "section": "Iteration using purrr::map",
     "text": "Iteration using purrr::map\n\nCoding objectives:\n\nUse purrr::map as an alternative to a for loop\nDemonstrate purrr applied to more complex workflows"
   },
   {
-    "objectID": "lessons/8-intermediate-r-2/slides.html#homework",
-    "href": "lessons/8-intermediate-r-2/slides.html#homework",
+    "objectID": "lessons/9-intermediate-r-2/slides.html#homework",
+    "href": "lessons/9-intermediate-r-2/slides.html#homework",
     "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
     "section": "Homework",
     "text": "Homework\n\nIdentify a section of your code that could be made more efficient using a for loop or iterating using a function\nStart thinking about show-and-tell opportunities!\n\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#review-homework",
-    "href": "lessons/4-github-basics/slides.html#review-homework",
+    "objectID": "lessons/7-data-manipulation/slides.html#review",
+    "href": "lessons/7-data-manipulation/slides.html#review",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Review",
+    "text": "Review\n\n\n\n\n\n\nInformal poll:\n\n\nDo you collaborate with anyone who could or currently uses GitHub?"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#review-1",
+    "href": "lessons/7-data-manipulation/slides.html#review-1",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Review",
+    "text": "Review\n\n\n\n\n\n\nChat:\n\n\nWhat would you say to encourage them to start?"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#review-2",
+    "href": "lessons/7-data-manipulation/slides.html#review-2",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Review",
+    "text": "Review\n\n\n\n\n\n\nChat:\n\n\nHow would you get set up? What would be your core workflow?"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#warm-up",
+    "href": "lessons/7-data-manipulation/slides.html#warm-up",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Warm-up",
+    "text": "Warm-up\nCreate a branch for today’s work.\n\n\n\n\n\n\nNote\n\n\nCreate this branch from a repo you own, not the demo from Tuesday!\nWe might need to create a repo for R scripting for this workshop."
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#learning-objectives",
+    "href": "lessons/7-data-manipulation/slides.html#learning-objectives",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nUnderstand the principles of “tidy data”\nUse tidyverse packages (dplyr and tidyr) to work with data in R.\nPractice tracking our work in git"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#what-is-tidy-data",
+    "href": "lessons/7-data-manipulation/slides.html#what-is-tidy-data",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "What is “tidy data”?",
+    "text": "What is “tidy data”?\nLowndes and Horst say it so beautifully."
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#the-tidyverse",
+    "href": "lessons/7-data-manipulation/slides.html#the-tidyverse",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The tidyverse",
+    "text": "The tidyverse"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#the-tidyverse-1",
+    "href": "lessons/7-data-manipulation/slides.html#the-tidyverse-1",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The “tidyverse”",
+    "text": "The “tidyverse”\n\n✨ Common structure and syntax\n✨ Emphasize user readability\n✨ Friendly documentation\n✨ Updates rapidly"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#the-tidyverse-2",
+    "href": "lessons/7-data-manipulation/slides.html#the-tidyverse-2",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The “tidyverse”",
+    "text": "The “tidyverse”\n\n‼️ Extra installs over “base R”\n‼️ Very different syntax than “base R”\n‼️ Updates rapidly"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#the-tidyverse-3",
+    "href": "lessons/7-data-manipulation/slides.html#the-tidyverse-3",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "The “tidyverse”",
+    "text": "The “tidyverse”\n\n🧭 Only install/load the functions/packages you need\n🧭 Be aware that others may be unfamiliar; comment your code well\n🧭 Keep track of your package versions\n🧭 Software developers, keep an eye on changes!"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#tidy-data-in-r",
+    "href": "lessons/7-data-manipulation/slides.html#tidy-data-in-r",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Tidy data in R",
+    "text": "Tidy data in R\nLet’s install some packages:\ninstall.packages(\"dplyr\") # dataframe manipulation\ninstall.packages(\"tidyr\") # \"reshaping\" data\ninstall.packages(\"palmerpenguins\") # open teaching dataset"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#coding-time-data-types-in-r",
+    "href": "lessons/7-data-manipulation/slides.html#coding-time-data-types-in-r",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time: Data types in R",
+    "text": "Coding time: Data types in R\nKey points:\n\nMajor data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.\nCommon tabular formats are data.frame or tibble\nYou can perform “vectorized” operations on whole vectors (or columns) at once.\nMissing data are handled as NAs."
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#coding-time-dplyr",
+    "href": "lessons/7-data-manipulation/slides.html#coding-time-dplyr",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time: dplyr",
+    "text": "Coding time: dplyr\nCore dplyr verbs:\n\nselect pulls columns\nfilter pulls rows based on values\nmutate adds or modifies a column\ngroup_by + summarize calculates group-wise summary statistics\n*_join functions combine data frames based on matching columns"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#a-note-on-pipes",
+    "href": "lessons/7-data-manipulation/slides.html#a-note-on-pipes",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "A note on pipes",
+    "text": "A note on pipes\n\nChain functions together into “paragraphs”\n%&gt;%: older, included in dplyr (ultimately depends on magrittr)\n|&gt;: included in base R as of 4.1.0"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#coding-time-tidyr",
+    "href": "lessons/7-data-manipulation/slides.html#coding-time-tidyr",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time: tidyr",
+    "text": "Coding time: tidyr\nKey tidyr manipulations:\n\npivot_longer turns columns names into row values\npivot_wider creates new columns based on the values of a given field.\n\n\n\n\n\n\n\nNote\n\n\nData should be as long as is reasonable (but not longer)!"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#coding-time-finding-the-right-function",
+    "href": "lessons/7-data-manipulation/slides.html#coding-time-finding-the-right-function",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Coding time: finding the right function",
+    "text": "Coding time: finding the right function\n\n?tidyr::pivot_wider and index pages\nMore ways of getting help: see the Getting Help section!"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#wrapping-up",
+    "href": "lessons/7-data-manipulation/slides.html#wrapping-up",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Wrapping up",
+    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub."
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#wrapping-up-1",
+    "href": "lessons/7-data-manipulation/slides.html#wrapping-up-1",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Wrapping up",
+    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub.\n\n\n\n\n\n\nCommand-line instructions\n\n\ngit add &lt;your script name&gt;\ngit commit\ngit push"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#homework",
+    "href": "lessons/7-data-manipulation/slides.html#homework",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Homework",
+    "text": "Homework\n\nFind a script you have used in one of your projects and translate it to use these verbs.\n\nBonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!\n\n\n\n\n\n\nReproduciblity & Data Science in R"
+  },
+  {
+    "objectID": "lessons/5-github-basics/slides.html#review-homework",
+    "href": "lessons/5-github-basics/slides.html#review-homework",
     "title": "GitHub",
     "section": "Review & Homework",
     "text": "Review & Homework\n\n\nIf you turned an existing project into a git repo, how did it go?\nWays to create a git repo:\n\nrun git init from the command line inside of project directory\ncreate a new RStudio project with “use git” checked\nrun usethis::use_git() in the R console in a RStudio project"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#todays-goals",
-    "href": "lessons/4-github-basics/slides.html#todays-goals",
+    "objectID": "lessons/5-github-basics/slides.html#todays-goals",
+    "href": "lessons/5-github-basics/slides.html#todays-goals",
     "title": "GitHub",
     "section": "Today’s goals",
     "text": "Today’s goals\n\nPractice using git with RStudio\nExplore commit history\nLearn how to tell git to ignore files\nPut a local repo on GitHub\nUse git push and git pull to synchronize with GitHub"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
-    "href": "lessons/4-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
+    "objectID": "lessons/5-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
+    "href": "lessons/5-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
     "title": "GitHub",
     "section": "Working with git in RStudio (Live Coding)",
     "text": "Working with git in RStudio (Live Coding)\nThe most common git commands can be used with the RStudio GUI."
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#ignoring-files",
-    "href": "lessons/4-github-basics/slides.html#ignoring-files",
+    "objectID": "lessons/5-github-basics/slides.html#ignoring-files",
+    "href": "lessons/5-github-basics/slides.html#ignoring-files",
     "title": "GitHub",
     "section": "Ignoring files",
     "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore\nUse this file (or create one) to stop git/GitHub from tracking…\n\nlarge files, especially if not plain text\nfiles with sensitive data\nunnecessary files (e.g. .DS_Store)\n\n\n\n\n\n\n\n\nExercise\n\n\nModify .gitignore to exclude all files ending in .pdf from git tracking. Make a commit for this change"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#sharing-with-github",
-    "href": "lessons/4-github-basics/slides.html#sharing-with-github",
+    "objectID": "lessons/5-github-basics/slides.html#sharing-with-github",
+    "href": "lessons/5-github-basics/slides.html#sharing-with-github",
     "title": "GitHub",
     "section": "Sharing with GitHub",
     "text": "Sharing with GitHub\n\n\n\n\n\n\n\n\nAll contributors have a local copy of the repo.\nYou might also have a copy in multiple places (on multiple computers, on university HPC).\nGitHub has a central repo that allows you to synchronize and merge work from multiple sources.\nYou can also access the repo through github.com web UI\n\n\n\nFigure 2 from (Bryan 2018)"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#connect-with-github-live-coding",
-    "href": "lessons/4-github-basics/slides.html#connect-with-github-live-coding",
+    "objectID": "lessons/5-github-basics/slides.html#connect-with-github-live-coding",
+    "href": "lessons/5-github-basics/slides.html#connect-with-github-live-coding",
     "title": "GitHub",
     "section": "Connect With GitHub (Live Coding)",
     "text": "Connect With GitHub (Live Coding)\n\nSet up your computer to “talk” to GitHub with steps in git_sitrep()\nConnect your local git repo to a remote GitHub repo with use_github()\nExplore the GitHub interface"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
-    "href": "lessons/4-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
+    "objectID": "lessons/5-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
+    "href": "lessons/5-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
     "title": "GitHub",
     "section": "Work With RStudio and GitHub (Live Coding)",
     "text": "Work With RStudio and GitHub (Live Coding)\n\nPush local changes to GitHub\nPull GitHub changes to local"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#resources",
-    "href": "lessons/4-github-basics/slides.html#resources",
+    "objectID": "lessons/5-github-basics/slides.html#resources",
+    "href": "lessons/5-github-basics/slides.html#resources",
     "title": "GitHub",
     "section": "Resources",
     "text": "Resources\n\nhappygitwithr.com\nusethis::use_github()"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#homework",
-    "href": "lessons/4-github-basics/slides.html#homework",
+    "objectID": "lessons/5-github-basics/slides.html#homework",
+    "href": "lessons/5-github-basics/slides.html#homework",
     "title": "GitHub",
     "section": "Homework",
     "text": "Homework\nPut a (real) project repo on GitHub (e.g. with use_github()) and share the link on Slack (if it can be made public)"
   },
   {
-    "objectID": "lessons/4-github-basics/slides.html#references",
-    "href": "lessons/4-github-basics/slides.html#references",
+    "objectID": "lessons/5-github-basics/slides.html#references",
+    "href": "lessons/5-github-basics/slides.html#references",
     "title": "GitHub",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#picking-up-from-last-week",
+    "href": "lessons/8-intermediate-r-1/slides.html#picking-up-from-last-week",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Picking up from last week",
+    "text": "Picking up from last week\n\nCommit last week’s work to GitHub and push\nMerge your work to main!\nCreate a new branch for today’s work and pull"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#data-wrangling-objectives",
+    "href": "lessons/8-intermediate-r-1/slides.html#data-wrangling-objectives",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Data wrangling objectives:",
+    "text": "Data wrangling objectives:\n\nWrite a data wrangling script using the functions we covered last week\n\nUse mutate to convert units of columns\nUse summarize to calculate group-wise summary statistics\nUse pivot_wider to create cross-tabs\n\nUse “tidy selection” helpers to reduce repetition in this workflow!"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#what-are-functions-in-r",
+    "href": "lessons/8-intermediate-r-1/slides.html#what-are-functions-in-r",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "What are functions in R?",
+    "text": "What are functions in R?\n\nWe use pre-written functions constantly.\nAutomated “recipes” for executing code\nInputs (“arguments”) and outputs"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#why-write-our-own-functions",
+    "href": "lessons/8-intermediate-r-1/slides.html#why-write-our-own-functions",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Why write our own functions?",
+    "text": "Why write our own functions?\n\nAvoid repetition (+ mistakes)\nEnhance portability + reproducibility"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#writing-a-function-objectives",
+    "href": "lessons/8-intermediate-r-1/slides.html#writing-a-function-objectives",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Writing a function objectives",
+    "text": "Writing a function objectives\n\nConvert our data wrangling script into a function\nBreak this function into smaller, human-readable functions\nMake this function flexible to apply to other data"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#anatomy-of-a-function",
+    "href": "lessons/8-intermediate-r-1/slides.html#anatomy-of-a-function",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Anatomy of a function",
+    "text": "Anatomy of a function\n# Defining a function\n# a_function will be the name of the function\n# arguments go within the ()\n# code goes in the curly braces\n\na_function &lt;- function(an_argument) {\n  # code to execute goes here\n  \n  # whatever is inside return() comes out of the funciton\n  return(final_output) \n}\n\n# Run the code to create the function\n# Then you can use it:\n# a_function(&lt;some_input&gt;)\n#"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#what-are-conditionals",
+    "href": "lessons/8-intermediate-r-1/slides.html#what-are-conditionals",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "What are conditionals?",
+    "text": "What are conditionals?\n\nif and ifelse statements\nBalance readability and flexibility in functions"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#conditionals-in-r",
+    "href": "lessons/8-intermediate-r-1/slides.html#conditionals-in-r",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Conditionals in R",
+    "text": "Conditionals in R\n\n== for “is equal to”\n!= for “not equal to:\n&lt;, &gt; for less than/greater than\n&lt;=, &gt;= for less than or equal to/greater than or equal to\nis.na() for is it NA?\n%in% for, is this value in a vector of possibilities\n…and more!"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#conditionals-objectives",
+    "href": "lessons/8-intermediate-r-1/slides.html#conditionals-objectives",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Conditionals objectives",
+    "text": "Conditionals objectives\n\nAdd ifelse logic to our data wrangling function"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#finishing-up",
+    "href": "lessons/8-intermediate-r-1/slides.html#finishing-up",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Finishing up",
+    "text": "Finishing up\n\nCommit your changes and push\nOpen a pull request."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#homework",
+    "href": "lessons/8-intermediate-r-1/slides.html#homework",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Homework",
+    "text": "Homework\n\nNone, except for…"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#show-and-tell-late-october",
+    "href": "lessons/8-intermediate-r-1/slides.html#show-and-tell-late-october",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Show and tell (Late October)",
+    "text": "Show and tell (Late October)\n\nAn opportunity to apply workshop skills to your own work.\nYou could apply different parts to different projects, or more integratively to one single project.\nOptional, but encouraged!"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#some-inspirations",
+    "href": "lessons/8-intermediate-r-1/slides.html#some-inspirations",
+    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "section": "Some inspirations",
+    "text": "Some inspirations\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, conditionals, or best-practices for code formatting\nImprove directory organization for project or your entire computer!\n\n\n\n\n\nReproduciblity & Data Science in R"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#review",
+    "href": "lessons/6-github-collab/slides.html#review",
+    "title": "Collaborate With GitHub",
+    "section": "Review",
+    "text": "Review\n\n\n\n\n\n\nWord Bank\n\n\nrepo | commit | remote | push | pull | add\n\n\n\n\n\nA collection of files tracked by git\nA snapshot of the state of a repository\ngit ___ is used to tell git to track a file\nFor example, a repo on GitHub\ngit ____ is used to synchronize changes on your computer with a remote"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#review-1",
+    "href": "lessons/6-github-collab/slides.html#review-1",
+    "title": "Collaborate With GitHub",
+    "section": "Review",
+    "text": "Review\nDid anyone add a repo to GitHub? What difficulties did you encounter?"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#collaborating-with-github",
+    "href": "lessons/6-github-collab/slides.html#collaborating-with-github",
+    "title": "Collaborate With GitHub",
+    "section": "Collaborating with GitHub",
+    "text": "Collaborating with GitHub\n\n\n\n\n\n\n\nA GitHub repo can be used to coordinate collaboration\nIf two people have permissions, both can push changes to the repo\nAsk for a volunteer and give them permission to push to a repo\n\n\nFigure 2 from (Bryan 2018)"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#example-repo",
+    "href": "lessons/6-github-collab/slides.html#example-repo",
+    "title": "Collaborate With GitHub",
+    "section": "Example repo",
+    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: https://github.com/cct-datascience/repro-workshop-demo 1\nNeed one volunteer to edit the README.md and practice commit + push\n\nRead more about GitHub organizations"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#dealing-with-conflicts",
+    "href": "lessons/6-github-collab/slides.html#dealing-with-conflicts",
+    "title": "Collaborate With GitHub",
+    "section": "Dealing with Conflicts",
+    "text": "Dealing with Conflicts\n\nWhat happens when two people make conflicting edits to a file and push them?\nCreates a merge conflict"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#ok-try-git-pull",
+    "href": "lessons/6-github-collab/slides.html#ok-try-git-pull",
+    "title": "Collaborate With GitHub",
+    "section": "Ok, try git pull",
+    "text": "Ok, try git pull"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#merge-rebase-fast-forward",
+    "href": "lessons/6-github-collab/slides.html#merge-rebase-fast-forward",
+    "title": "Collaborate With GitHub",
+    "section": "Merge, rebase, fast-forward??",
+    "text": "Merge, rebase, fast-forward??\n\nThese are alternative ways to deal with conflicts—we won’t get into the details\nFor now, we recommend you stick with the “merge” option\n\n\nUse:\ngit config pull.rebase false\nOr, if you want to set this option for all future repos too\ngit config --global pull.rebase false"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#fixing-a-merge-conflict",
+    "href": "lessons/6-github-collab/slides.html#fixing-a-merge-conflict",
+    "title": "Collaborate With GitHub",
+    "section": "Fixing a Merge Conflict",
+    "text": "Fixing a Merge Conflict\n\n\nResolve the conflict however you want (i.e. keep one of the two sections)\nDelete all lines with &lt;&lt;&lt;&lt;&lt;&lt;&lt;, &gt;&gt;&gt;&gt;&gt;&gt;&gt;, or =======\nSave and commit\n\n\nLet’s have a round of applause for our volunteer!"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#avoid-merge-conflicts-by-working-on-branches",
+    "href": "lessons/6-github-collab/slides.html#avoid-merge-conflicts-by-working-on-branches",
+    "title": "Collaborate With GitHub",
+    "section": "Avoid merge conflicts by working on branches",
+    "text": "Avoid merge conflicts by working on branches\nEach person works on a “branch”—an independent series of commits that can be merged back into the “main” branch.\n\n\n\n\n\ngitGraph\n   commit\n   commit\n   branch person_1\n   commit\n   commit\n   commit\n   checkout main\n   branch person_2\n   commit\n   commit\n   checkout main\n   merge person_1\n   merge person_2\n   commit"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#working-on-a-branch",
+    "href": "lessons/6-github-collab/slides.html#working-on-a-branch",
+    "title": "Collaborate With GitHub",
+    "section": "Working on a Branch",
+    "text": "Working on a Branch\n\nMake a new branch using RStudio’s Git pane (for this demo, use your name)\nCommit changes and push to your branch\nView changes on GitHub"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#pull-requests",
+    "href": "lessons/6-github-collab/slides.html#pull-requests",
+    "title": "Collaborate With GitHub",
+    "section": "Pull Requests",
+    "text": "Pull Requests\nA request to merge changes into the main branch\n\nNeed another volunteer to share screen and be guided through making a pull request\nThis time, everyone can follow along!"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#forks",
+    "href": "lessons/6-github-collab/slides.html#forks",
+    "title": "Collaborate With GitHub",
+    "section": "Forks",
+    "text": "Forks\n\n\nWhat if you don’t have permission to push to a GitHub repo but you want to contribute?\n\n\nMake a fork!\n\n\n\n\n\n\n\n\n\n\n\n\n\nSince you can’t push to “upstream”, you can make a connected copy on GitHub called a “fork”\n\nYou can clone the fork and since you own it, you can push to it.\nOn GitHub, you can sync upstream changes with your fork and you can make pull requests to integrate changes on your fork into upstream.\nThat means you can contribute to anything! (as long as it is a public repo)"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#collaborating-with-forks",
+    "href": "lessons/6-github-collab/slides.html#collaborating-with-forks",
+    "title": "Collaborate With GitHub",
+    "section": "Collaborating with Forks",
+    "text": "Collaborating with Forks\nTo contribute to a repo you don’t have push permission for:\n\nFork the repo to your own GitHub\nClone the fork to your local computer\nMake commits (ideally on a branch)\nMake a pull request to the upstream repo\n\nLearn more, including handy usethis shortcuts: https://happygitwithr.com/fork-and-clone\n\n\n\n\n\n\nExercise\n\n\nIn pairs, practice this workflow to make a PR to our example repo"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#references",
+    "href": "lessons/6-github-collab/slides.html#references",
+    "title": "Collaborate With GitHub",
     "section": "References",
     "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
   },
