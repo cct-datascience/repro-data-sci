@@ -9,31 +9,6 @@ Understand how to write a README.md using markdown basics and introduce the conc
 
 ## Lesson Outline
 
--   What goes in a README?
-
-    -   Project summary
-    -   Project status (in progress, archived, just an idea?)
-    -   How to give credit
-    -   Structure of repo (what files do what?)
-    -   How to reproduce results
-
--   Example READMEs:
-
-    -   <https://github.com/Aariq/BACE-legacy-effects>
-
-    -   <https://github.com/ecohealthalliance/amr-analysis>
-
-    -   <https://github.com/atredennick/size-environment>
-
--   Markdown & formatting a README.md
-
-    -   Markdown is a markup language: plain text --\> formatted text
-    -   Widely used (GitHub, websites, Slack, etc.)
-    -   Show markdown cheat sheet
-    -   Spaces matter, and don't matter at the same time. Err on the side of too much space between elements
-
--   Exercise: Spend a few minutes editing your README, commit, push to GitHub and observe
-
 -   Quarto: an open-source scientific and technical publishing system
 
     -   Allows combining markdown, code, and code output (tables, plots, etc)
@@ -57,20 +32,28 @@ Understand how to write a README.md using markdown basics and introduce the conc
 
 -   Create .Qmd and play
 
--   Demo rendering in different formats
-
 -   Demo visual editor
 
     -   Switch back and forth
 
-    -   Callouts
+    -   "Add anything" menu with {{< kbd cmd-/ >}}
+
+-   Running code in code chunks
 
 -   Code chunk options
 
     -   Demo some common ones like `label`, `echo: false`, `fig-cap`
 
--   Citations and cross-refs
+-   Sections (and TOC)
 
--   Tease [journal articles](https://quarto.org/docs/extensions/listing-journals.html) (check out AGU format example <https://quarto-journals.github.io/agu/>)
+-   Equations
+
+-   Citations
+
+-   Cross refs
+
+-   Callouts
+
+-   Mention [journal articles](https://quarto.org/docs/extensions/listing-journals.html) (check out AGU format example <https://quarto-journals.github.io/agu/>)
 
 -   Point students toward [tutorial](https://quarto.org/docs/get-started/hello/rstudio.html) and full [documentation](https://quarto.org/docs/guide/)

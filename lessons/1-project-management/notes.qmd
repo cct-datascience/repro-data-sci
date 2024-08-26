@@ -20,6 +20,15 @@ Learners will learn about and practice managing their projects using file struct
     -   Organize data, code, and outputs into different folders at a minimum
     -   Never edit raw data
     -   Include documentation on what each file is/does in a README
+        -   Project summary
+        -   Project status (in progress, archived, just an idea?)
+        -   How to give credit
+        -   Structure of repo (what files do what?)
+        -   How to reproduce results
+        -   Example READMEs:
+            -   <https://github.com/Aariq/BACE-legacy-effects>
+            -   <https://github.com/ecohealthalliance/amr-analysis>
+            -   <https://github.com/atredennick/size-environment>
 -   Live Coding: create an R project and add [gapminder data](https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv) to it
     -   Show file pane & connect to Windows Explorer / Finder
     -   Show how to make a file read-only

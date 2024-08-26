@@ -187,15 +187,15 @@ You need two line breaks for that!
 
 -   Add citations and cross-references
 
-## Learn more
+## Learning More & Getting Help
 
--   Getting started [tutorial](https://quarto.org/docs/get-started/hello/rstudio.html)
+-   Getting started with Quarto [tutorial](https://quarto.org/docs/get-started/hello/rstudio.html)
 
 -   Quarto for Academics [talk](https://www.youtube.com/watch?v=EbAAmrB0luA&ab_channel=PositPBC)
 
 -   Full Quarto [guide](https://quarto.org/docs/guide/) and [reference](https://quarto.org/docs/reference/) (searchable!)
 
--   [Quarto Manuscripts](https://quarto.org/docs/manuscripts/) (upcoming feature)
+-   #quarto channel in UA Data Science Slack
 
 ## Your tasks
 
