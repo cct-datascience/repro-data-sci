@@ -93,9 +93,6 @@ It includes all the features of RMarkdown and more.
 
 -   Commonly used for configuration files
 
-```{=html}
-<!-- -->
-```
 -   `key: value` pairs
 
 -   Nesting indicated by indentation with 2 spaces
