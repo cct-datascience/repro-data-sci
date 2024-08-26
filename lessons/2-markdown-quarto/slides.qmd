@@ -9,9 +9,20 @@ footer: "[Reproduciblity & Data Science in R](../../index.html)"
 logo: "../../logo.png"
 ---
 
+## Review of last lesson
+
+-   What questions do you have?
+-   What happened as you were trying to organize a research compendium?
+    -   Victories?
+    -   Stumbling blocks?
+
 ## Literate Programming
 
-<!--# what is it and when to use it -->
+-   Code is interwoven with human-language notes, comments, and documentation.
+
+-   Some kind of "engine" handles executing the code and weaving together prose, code, and results.
+
+-   Allows for extended comments on code and reproducible reports and manuscripts
 
 # {{< iconify simple-icons:quarto >}} Quarto
 
@@ -78,11 +89,24 @@ It includes all the features of RMarkdown and more.
 
 ## YAML
 
-<!--# TODO: brief explanation of YAML -->
+"Yet another markup language"
+
+-   Commonly used for configuration files
+
+```{=html}
+<!-- -->
+```
+-   `key: value` pairs
+
+-   Nesting indicated by indentation with 2 spaces
 
 ## Code
 
-<!--# Examples of code chunks & output?  E.g. a plot or a table? -->
+-   Code chunks can be R, Python, or other languages
+
+-   If R, code is executed by `knitr` engine, otherwise by `jupyter`
+
+-   Chunk options as YAML (`#| key: value`) modify execution behavior or output formatting
 
 ## Markdown
 
