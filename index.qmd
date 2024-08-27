@@ -17,6 +17,7 @@ We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
 library(tidyverse)
 library(gt)
 read_csv("schedule.csv") |>
