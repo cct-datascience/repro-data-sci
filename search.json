@@ -28,11 +28,11 @@
     "text": "Welcome to the syllabus for the CCT Data Science fall workshop series: Reproducibility and Data Science in R. If you didn’t register for the course this year, sign up for our mailing list to be notified when enrollment opens for next year’s iteration and to be notified of our other monthly workshops."
   },
   {
-    "objectID": "index.html#schedule-tentative",
-    "href": "index.html#schedule-tentative",
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
     "title": "Reproducibility and Data Science in R",
-    "section": "Schedule (tentative)",
-    "text": "Schedule (tentative)\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n—\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n—\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n—\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n—\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
+    "section": "Schedule",
+    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n—\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n—\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n—\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n—\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
   },
   {
     "objectID": "index.html#code-of-conduct",
