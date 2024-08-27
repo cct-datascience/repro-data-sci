@@ -8,9 +8,9 @@ citation:
 
 Welcome to the syllabus for the CCT Data Science fall workshop series: **Reproducibility and Data Science in R.** If you didn't register for the course this year, sign up for our [mailing list](https://datascience.cct.arizona.edu/contact) to be notified when enrollment opens for next year's iteration and to be notified of our other monthly workshops.
 
-## Schedule (tentative)
+## Schedule
 
-We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)
+We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)
 
 <!-- Edit by editing schedule.csv. To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list. -->
 
