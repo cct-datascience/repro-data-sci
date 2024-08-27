@@ -1,5 +1,5 @@
 ---
-title: "Project Management and Coding Best Practices"
+title: "Project Management and Documentation"
 format: html
 ---
 
@@ -15,24 +15,24 @@ Learners will learn about and practice managing their projects using file struct
     -   Point out code of conduct
 -   Screen setup
 -   Don't save or load .RData!
--   Discuss general best practices for research compendia (use [Carpentry lesson](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro))
+-   Discuss general best practices for research compendia (use [Carpentry lesson](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro)??)
     -   All files needed for a project in the same folder (ideally)
     -   Organize data, code, and outputs into different folders at a minimum
     -   Never edit raw data
     -   Include documentation on what each file is/does in a README
+        -   Project summary
+        -   Project status (in progress, archived, just an idea?)
+        -   How to give credit
+        -   Structure of repo (what files do what?)
+        -   How to reproduce results
+        -   Example READMEs:
+            -   <https://github.com/Aariq/BACE-legacy-effects>
+            -   <https://github.com/ecohealthalliance/amr-analysis>
+            -   <https://github.com/atredennick/size-environment>
 -   Live Coding: create an R project and add [gapminder data](https://swcarpentry.github.io/r-novice-gapminder/data/gapminder_data.csv) to it
     -   Show file pane & connect to Windows Explorer / Finder
     -   Show how to make a file read-only
     -   Demo closing, opening, and switching projects
--   Live Coding: R code best practices
-    -   Create `01-wrangle-data.R` in `R/`
-    -   Header comment
-    -   Don't use `setwd()`---not needed with .Rproj. Use relative paths!
-    -   Keyboard shortcut for adding sections + outline view and navigator at bottom of script panel
-    -   Load packages at top of script, even when not used until later
-    -   Restart R and run from top often
-    -   Code styling with RStudio (ctl + shift + A)
-    -   How to break up code (e.g. save output of `01-wrangle-data.R` into `data_clean/`, then read that in later)
 -   Homework:
     -   Apply one or more of the organizing principles of a research compendium to an existing research project.
 
@@ -41,8 +41,6 @@ Learners will learn about and practice managing their projects using file struct
 1.  [Slides](slides.qmd)
 2.  [Software Carpentry Introduction to R and RStudio episode](https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro)
 3.  [Software Carpentry Project Management with RStudio episode](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro)
-4.  [Software Carpentry Best Practices for Writing R Code](http://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R)
-5.  <https://r4ds.hadley.nz/workflow-style>
 
 ```{=html}
 <!--
