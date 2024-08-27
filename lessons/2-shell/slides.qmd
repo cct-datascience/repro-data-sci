@@ -91,7 +91,7 @@ logo: "../../logo.png"
 
 ## Coding time
 
--   Use an R project to simplify working directories
+-   Use an RStudio project to simplify working directories
 -   Copy `shell_lesson_data` to your R project
 
 ## Getting help
