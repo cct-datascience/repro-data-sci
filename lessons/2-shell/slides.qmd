@@ -56,7 +56,7 @@ logo: "../../logo.png"
 
 -   git/GitHub (next 2 lessons)
 -   Navigating your file system
--   Quarto (lesson 9)
+-   Quarto (lesson 2)
 
 ## Let's get set up!
 
