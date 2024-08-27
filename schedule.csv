@@ -1,8 +1,8 @@
 Lesson,Date,Theme,Topic,Links,Notes
 1,2024-09-03,Manage & Organize,Project managment and documentation,[slides](lessons/1-project-management/slides.html),"Also, setup RStudio for reproducibility"
 2,2024-09-05,Document & Publish,Literate programming with Quarto,[slides](lessons/2-markdown-quarto/slides.html),
-3,2024-09-10,Share & Collaborate,File systems and command line,,"Install git, carpentries shell episodes 1 & 2"
-4,2024-09-12,Share & Collaborate,Version control with git,,"git novice lessons 2-4, then git pane of RStudio"
+3,2024-09-10,Share & Collaborate,File systems and command line,[slides](lessons/3-shell/slides.html),"Install git, carpentries shell episodes 1 & 2"
+4,2024-09-12,Share & Collaborate,Version control with git,[slides](lessons/4-git/slides.html),"git novice lessons 2-4, then git pane of RStudio"
 5,2024-09-17,Share & Collaborate,Developing code on GitHub,,"git_sitrep(), use_github(), git novice lesson 7"
 6,2024-09-19,Share & Collaborate,Collaborating with GitHub,,"git novice lesson 8, pr_init(), pr_push(), pr_finish()"
 7,2024-09-24,Tidy & Wrangle,Data manipulation & coding best practices,,data carpentry R ecology episodes 2 & 3
