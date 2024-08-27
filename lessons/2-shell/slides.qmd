@@ -21,6 +21,7 @@ logo: "../../logo.png"
 -   Understand your computer's *file system*
 -   Understand the what and why of the shell command-line interface
 -   Use the CLI to navigate your computer's file system
+-   Use the shell and file system navigation within RStudio
 -   Know your options for finding help
 
 ## How well do you know your file system?
