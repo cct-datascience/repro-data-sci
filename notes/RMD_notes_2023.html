@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>rmd_notes_2023 – Reproducibility &amp; Data Science in R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="https://use.typekit.net/emv3zbo.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Reproducibility &amp; Data Science in R</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">Instructors</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-instructor-notes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Instructor Notes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-instructor-notes">    
+        <li>
+    <a class="dropdown-item" href="../lessons/1-project-management/notes.html">
+ <span class="dropdown-text">1. Project Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/2-markdown-quarto/notes.html">
+ <span class="dropdown-text">2. Documentation &amp; Literate Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/3-shell/notes.html">
+ <span class="dropdown-text">3. Shell Commands</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/4-git/notes.html">
+ <span class="dropdown-text">4. Version Control With Git</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/5-github-basics/notes.html">
+ <span class="dropdown-text">5. Developing Code on GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/6-github-collab/notes.html">
+ <span class="dropdown-text">6. Collaborating with GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/7-data-manipulation/notes.html">
+ <span class="dropdown-text">7. Data Manipulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/8-intermediate-r-1/notes.html">
+ <span class="dropdown-text">8. Intermediate R I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/9-intermediate-r-2/notes.html">
+ <span class="dropdown-text">9. Intermediate R II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/10-get-credit/notes.html">
+ <span class="dropdown-text">10. Getting Credit For Your Hard Work</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/11-getting-help/notes.html">
+ <span class="dropdown-text">11. Getting Help</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lessons/12-drop-in/notes.html">
+ <span class="dropdown-text">12. Q&amp;A session / managing complicated worflows</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../survey_responses.html">
+ <span class="dropdown-text">Post-Workshop Survey Responses</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#workshop-notes" id="toc-workshop-notes" class="nav-link active" data-scroll-target="#workshop-notes">Workshop notes</a>
+  <ul class="collapse">
+  <li><a href="#session-1---project-management-9523" id="toc-session-1---project-management-9523" class="nav-link" data-scroll-target="#session-1---project-management-9523">Session 1 - Project Management 9/5/23</a></li>
+  <li><a href="#session-2---shell-and-filesystems-9723" id="toc-session-2---shell-and-filesystems-9723" class="nav-link" data-scroll-target="#session-2---shell-and-filesystems-9723">Session 2 - Shell and filesystems 9/7/23</a>
+  <ul class="collapse">
+  <li><a href="#teaching-script" id="toc-teaching-script" class="nav-link" data-scroll-target="#teaching-script">Teaching script</a></li>
+  <li><a href="#after-teaching" id="toc-after-teaching" class="nav-link" data-scroll-target="#after-teaching">After teaching</a></li>
+  </ul></li>
+  <li><a href="#session-3---git" id="toc-session-3---git" class="nav-link" data-scroll-target="#session-3---git">Session 3 - Git</a>
+  <ul class="collapse">
+  <li><a href="#teaching-script-1" id="toc-teaching-script-1" class="nav-link" data-scroll-target="#teaching-script-1">Teaching script</a></li>
+  <li><a href="#post-teaching" id="toc-post-teaching" class="nav-link" data-scroll-target="#post-teaching">Post-teaching</a></li>
+  </ul></li>
+  <li><a href="#session-5---github-ii" id="toc-session-5---github-ii" class="nav-link" data-scroll-target="#session-5---github-ii">Session 5 - GitHub II</a></li>
+  <li><a href="#session-6---data-manipulation-with-r" id="toc-session-6---data-manipulation-with-r" class="nav-link" data-scroll-target="#session-6---data-manipulation-with-r">Session 6 - Data manipulation with R</a></li>
+  <li><a href="#session-7" id="toc-session-7" class="nav-link" data-scroll-target="#session-7">Session 7</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/notes/RMD_notes_2023.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="workshop-notes" class="level1">
+<h1>Workshop notes</h1>
+<section id="session-1---project-management-9523" class="level2">
+<h2 class="anchored" data-anchor-id="session-1---project-management-9523">Session 1 - Project Management 9/5/23</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">record (to the cloud) - avoid picture in picture</label></li>
+<li><label><input type="checkbox">if there’s time - breakout rooms to discuss a project that this could apply to</label></li>
+</ul>
+<p>In-session</p>
+<p>:+1: on the fillable boxes on the Quarto slide, they just make me happy</p>
+<p>Had some converdation about .RDS vs .RData - add this to the teaching notes.</p>
+<p>Sticky points: - putting files in the right directory (not too sticky)</p>
+<p>In this session, they created .Rprojects and dealt a fair amount with file path headaches.</p>
+<hr>
+</section>
+<section id="session-2---shell-and-filesystems-9723" class="level2">
+<h2 class="anchored" data-anchor-id="session-2---shell-and-filesystems-9723">Session 2 - Shell and filesystems 9/7/23</h2>
+<section id="teaching-script" class="level3">
+<h3 class="anchored" data-anchor-id="teaching-script">Teaching script</h3>
+<section id="welcome" class="level4">
+<h4 class="anchored" data-anchor-id="welcome">Welcome</h4>
+<p>Welcome back everyone, good to see you.</p>
+<p>As a reminder, here are links to the course website: https://cct-datascience.github.io/repro-data-sci and today’s slides: https://cct-datascience.github.io/repro-data-sci/lessons/2-shell/slides.html</p>
+<p>And, here’s the video link from last week. We’re still figuring out how to get it to load as a playlist. https://youtu.be/_hU9cNHylHM</p>
+</section>
+<section id="review-of-last-session" class="level4">
+<h4 class="anchored" data-anchor-id="review-of-last-session">Review of last session</h4>
+<p>First let’s take a look back at Tuesday’s session.</p>
+<ul>
+<li><p>What questions do you have about the workshop or anything we covered on Tuesday?</p></li>
+<li><p>Second, show of hands, who has had a chance to think about the “homework”?</p></li>
+<li><p>Let’s get into breakout rooms of 4-5 people to talk about it. It’s ok if you haven’t had a chance to do anything yet, but what comes up for you when you think about applying these ideas to things you’re currently working on? Talk for about 5 minutes, and we’ll ask for volunteers to report back when we regroup.</p></li>
+</ul>
+</section>
+<section id="learning-objectives-for-today" class="level4">
+<h4 class="anchored" data-anchor-id="learning-objectives-for-today">Learning objectives for today</h4>
+<p>Today we’re going to be talking about the shell (which is, if you’re familiar, your command line or terminal) and particularly how we can use it to navigate file systems.</p>
+<p>Then we’ll have a little bit of a review of Tuesday, where we’ll encourage using R projects so you can (mostly) avoid having to navigate really complex file system problems.</p>
+<p>Lastly, we’ll take some time to talk about different options for finding help on these topics.</p>
+</section>
+<section id="what-is-the-shell" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-the-shell">What is the shell?</h4>
+<p>Ok, for starters. Show of hands, how many folks here have used the command-line shell before?</p>
+<p>Does anyone want to offer a definition of it?</p>
+<p>So the shell is how we interact with our computer’s operating system. One way we can control our computer is via a GUI, where we navigate and point and click on things. The command line shell is a way for us to interact with the computer without necessarily using a GUI. Instead of pointing and clicking, we talk to the computer through written commands. That can be a single line to do something like open a folder or create a new file, or you can write whole scripts and programs for the shell. In this workshop we’re going to have an introduction to shell so that we can use it when it pops up later.</p>
+<p>Depending on your computer you might use different programs to run command-line shell. If you’re on a Mac; it’s going to be your Terminal program. On Windows, you have some options, but they’re all going to be command-prompt programs.</p>
+<p>There are different versions of the shell you can use that can have some subtle differences in how they look and how they work in the details. If you’ve heard of bash, that’s a popular one. On Windows, we’re going to install a program called Git Bash that will let us use an interface very similar to bash. More recent Macs default to a different interface called zsh, but you can configure them back to bash if you want.</p>
+</section>
+<section id="why-learn-the-shell" class="level4">
+<h4 class="anchored" data-anchor-id="why-learn-the-shell">Why learn the shell?</h4>
+<p>If you’re not familiar with it, the shell can feel a little intimidating at first. But, a little bit of familiarity with the shell will come in handy for data-intensive and reproducible research.</p>
+<p>First, a fair number of scientific programs are command line only; they don’t have a corresponding GUI. Or maybe one exists, but we may not want to have to use it. For our purposes, we’ll be working with the program git later in the series. Git has both a command line and various GUI interfaces. Personally, I prefer to work with the command line interface in the day-to-day because it’s more efficient and more stable than the various GUIs. So, it’s worth being comfortable interacting via the command line so we can use those.</p>
+<p>Second, sometimes we’re going to want to be able to batch large operations within our filesystem. You can write scripts for the shell that will handle this, instead of having to repeat the same sequence of point and clicks over and over and over again.</p>
+<p>And third, shell commands can be <em>really</em> important for interacting with remote computers. For example (and I’m actually not certain of this from my own experience at UA, but this has very much been my experience with other servers and high-performance computing setups). That you’ll need to use at least a little bit of shell scripting to send your work to the HPC, or to get results and such back on to your machine.</p>
+</section>
+<section id="shell-in-this-workshop" class="level4">
+<h4 class="anchored" data-anchor-id="shell-in-this-workshop">Shell in this workshop</h4>
+<p>In this workshop, we’ll be using just a little bit of shell sprinkled in. As I mentioned, we’re going to be using git and GitHub to handle version control starting next week. For that, we’re going to start by teaching you some command-line operations for using Git.</p>
+<p>In this lesson, we’re going to use command line to move around our file systems. It can be really important to have a mental model of your computer’s file system and where you’re working.</p>
+<p>And it’ll pop up later when we get going with Quarto and literate programming in a few weeks.</p>
+</section>
+<section id="lets-get-set-up" class="level4">
+<h4 class="anchored" data-anchor-id="lets-get-set-up">Let’s get set up!</h4>
+<p>Everyone will need to get set up with a program for shell scripting and git (because we’ll use that later). For Mac users, this usually comes built in, but for Windows users we’ll need to install it.</p>
+<p>So let’s take a minute to break into breakout rooms and get ourselves up and running.</p>
+<p>(break into breakout rooms and install things)</p>
+<p>Mac: https://git-scm.com/download/mac Windows: https://git-scm.com/download/win; https://carpentries.github.io/workshop-template/#setup</p>
+</section>
+<section id="data-download" class="level4">
+<h4 class="anchored" data-anchor-id="data-download">Data download</h4>
+<p>The next thing is, we’ll want to download some toy files so we can practice finding them and moving them.</p>
+<p>Download this https://swcarpentry.github.io/shell-novice/index.html#download-files and save it to your desktop.</p>
+<p>At this point, important to note that (especially Windows users) may have multiple desktops. I generally recommend working in your <em>local</em> desktop and not one that’s in OneDrive or some other cloud storage.</p>
+</section>
+<section id="coding-time" class="level4">
+<h4 class="anchored" data-anchor-id="coding-time">Coding time</h4>
+<p>Ok, now let’s hop over to RStudio. When I’m working on a project I generally work with the shell by using the “Terminal” pane in RStudio. You can also do it by opening Git Bash on Windows or opening Terminal on a Mac, but doing it in RStudio cuts down on clicking.</p>
+<p>(Open RStudio)</p>
+<p>Show different panes and location of the Terminal pane.</p>
+<p>So here in RStudio we have a pane that can communicate directly with the shell. It can take a little bit of set-up, first.</p>
+<p>First, we want to tell RStudio what shell program we want it to use. You can do this by going to Global Options, Terminal, and selecting bash or Git Bash. You might then need to restart.</p>
+<p>Second, I sometimes find that my Terminals are a little buggy on start-up with RStudio. If on Windows you open RStudio and the Terminal Pane isn’t working for you, you can create a new terminal. This also comes in handy if you crash or otherwise mess up a terminal.</p>
+<p>Ok – has everyone located their Terminal pane in Rstudio and set it up to use bash? Great.</p>
+<p>Now let’s start learning a few shell commands. Shell is kind of nice, in that we can learn just a few commands and suddenly be very very powerful.</p>
+<p>Let’s start by using shell to navigate around our file system. This is going to be exactly analogous to navigating around your files by using the File Explorer in Windows or Finder on a Mac. Or, using the Files pane in RStudio!</p>
+<p>For starters, let’s run <code>pwd</code>. This will print out the file path to where the shell currently “is”, which is analogous to which folder you have open in Finder or Explorer. Have folks contribute where on their computer they are. Show example file system structures.</p>
+<p>We can also use <code>ls</code>, to look at what is in our current directory.</p>
+<p>We can modify the behavior of commands by using what are called flags. (Show structure of command prompt).</p>
+<p>If we want to show the size of files, we can run <code>ls -s</code></p>
+<p>And if we want that to show up in human readable form, we can add <code>ls -sh</code>.</p>
+<p>We can get help for all of these flags using <code>ls --help</code>.</p>
+<p>So, where are we? We might be in all kinds of different, weird, locations. One of the core things to be able to do in shell is move around from location to location.</p>
+<p>We can do this using the <code>cd</code> command. To open up a folder, we type <code>cd &lt;folder_name&gt;</code>. In this case, we’re not using any flags, but we are supplying the folder name as an argument.</p>
+<p>To navigate up the file tree, we type <code>cd ..</code></p>
+<p>It’s good to have an awareness of how your file system is set up. This can help you avoid working in the wrong place or having duplicate copies of your work in different locations. [Demonstrate how my file system is set up and weird]. For me, I like to keep a directory high up in my file system called GitHub, and this contains all of my projects. You may end up with different structures.</p>
+<p>When we first open up RStudio, we’ll be “in” wherever R Studio is using as the default file location. You can set this using Global Options (show).</p>
+<p>Especially if you’re working with a remote computer like a HPC, you may sometimes need to move around working directories or pull files from somewhere else. Let’s do a quick exercise navigating to the “shell_lesson_data” that we downloaded to the desktop earlier.</p>
+<ul>
+<li>Work through navigating to shell-lesson-data and troubleshoot.</li>
+<li>Make the point that this is analogous to clicking around in the files pane.</li>
+<li>Point out using RStudio to syncrhonize files and terminal panes.</li>
+</ul>
+<p>Awesome.</p>
+<p>So navigating using the shell is a great skill to have, but it can also be a pain to do day to day. As Eric showed on Tuesday, we can avoid a lot of headaches by using R projects.</p>
+<p>If we use an R project, we will open up by default in the working directory for that project. To demonstrate that, let’s open our R project from Tuesday. (Do you remember where you saved it?)</p>
+<p>Examine the contents of your R project from the Terminal.</p>
+<p>Ok, bonus challenge. Let’s copy <code>shell-lesson-data</code> to our R project!</p>
+<p>To copy a directory, the command is <code>cp</code>. We need to supply the path to <em>what</em> we’re copying, followed by the path of <em>where</em> to copy it to.</p>
+<p>(Find shell_lesson_data using tab completion)</p>
+<p>(Run cp without the -r flag, show error)</p>
+<p>(Explain -r flag and copy over)</p>
+<p>And, last thing. Say we want to delete something!</p>
+<p>We can delete individual files using the rm command.</p>
+<p>And we can delete whole directories using rm -r.</p>
+<p>OK, that’s a lot!</p>
+</section>
+<section id="getting-help" class="level4">
+<h4 class="anchored" data-anchor-id="getting-help">Getting Help</h4>
+<p>So, the last thing to cover today is, we wanted to have a conversation about where you can get help with topics like the shell, or anything else that we cover in this workshop.</p>
+<p>As we’ve seen, the –help flags and man pages can be useful.</p>
+<p>(Go through Getting Help slides)</p>
+</section>
+<section id="homework-for-next-time" class="level4">
+<h4 class="anchored" data-anchor-id="homework-for-next-time">Homework for next time</h4>
+</section>
+</section>
+<section id="after-teaching" class="level3">
+<h3 class="anchored" data-anchor-id="after-teaching">After teaching</h3>
+<section id="impressions" class="level4">
+<h4 class="anchored" data-anchor-id="impressions">Impressions</h4>
+<ul>
+<li>Did not get all the way to Getting Help</li>
+<li><em>I</em> felt like things got a little chaotic with the file paths. Next time I would want to emphasize that what works for me isn’t going to work for everyone (bc our file systems are set up differently). It would have also been nice to be able to have a participant work through it on their system to show a second example.</li>
+<li>I’m also still a bit unclear (and curious) the why and wherefore of the differences in –help and man between systems. Eldridge suggested it has to do with different dialects between bash and Git Bash.</li>
+<li>A participant asked a really good question about how GitHub, git, RStudio, and shell all fit together (and, if we were using GitHub to interact with the shell - showing me we really need to explain this more clearly).</li>
+<li>For next time, I wonder if there’s a way to introduce the concept of the filesystem and the need to move in and out of directories/up and down the tree and give directions relative to the current working directory <em>before</em> getting into the command line. I ended up trying to communicate both those concepts simultaneously and I think it might have come through more easily if we’d started with a mental model of the “giving directions through the tree relative to where you’re standing” and then gone over the syntax for communicating those directions to the os. It might mean reframing the lesson as “Filesystems and Command Line Navigation” rather than “CLI and Files”…semantics but subtly significant? Especially as, the primary motivation I was able to articulate for doing CLI in this workshop was file management (for git and remote computers) and running CLI programs (here, git but potentially others). In the context of this workshop, we could do filesystems for the first chunk of lesson 2, then <em>use</em> CLI and the shell to navigate file systems. Then build on the familiarity with CLI from this session to run <em>programs</em> from the CLI (git) in the git lesson.</li>
+</ul>
+</section>
+<section id="send-to-participants" class="level4">
+<h4 class="anchored" data-anchor-id="send-to-participants">Send to participants</h4>
+<p>Email, or slack?</p>
+<ul>
+<li>Bullet list of takeaways</li>
+<li>Materials for a preview of next week</li>
+<li>Reminder of drop-in hours Tuesday</li>
+</ul>
+<p>Hi everyone - thanks for a great session yesterday! I’m following-up with a couple of friendly reminders/foreshadowing for next week, and a list of key takeaways from this session for your notes.</p>
+<ol type="1">
+<li>Next week we’ll be getting into Git and GitHub. For a taste of what’s to come, we highly recommend reading this article: <a href="https://peerj.com/preprints/3159/">Excuse me, do you have a moment to talk about version control?</a></li>
+<li>This session’s optional “homework”: Create a diagram of your file system, and identify your most often used directories. This can be a good exercise for solidifying a mental model of how your system is set up.</li>
+<li>A reminder that if you have questions or are struggling with a particularly involved data problem, we have <a href="https://datascience.cct.arizona.edu/drop-in-hours">Drop-in hours</a> from 9-10 on Tuesday mornings. You’re also more than welcome to book a 1-on-1 appointment with one of us via the calendar links <a href="https://datascience.cct.arizona.edu/">on our webpage</a>!</li>
+</ol>
+<p>Finally, some takeaways from yesterday’s session for your contemplation:</p>
+<ul>
+<li>The shell allows us to interact with our computer (run programs, move around and modify directories and files) from the command line.</li>
+<li>We can use the shell from the Terminal pane in RStudio.</li>
+<li>The file system that we interact with in the shell is the same as what we see in Finder/File Explorer/the RStudio Files pane.</li>
+<li>File systems have a nested treelike structure. When navigating our file system from the command line, we write paths <em>relative to where we’re currently working</em>.</li>
+<li>Use options, preceded by a hyphen (<code>-</code>), to modify the behavior of shell commands. Use <code>man &lt;command&gt;</code> or <code>command --help</code> to see the available options for a command.</li>
+</ul>
+</section>
+<section id="updates-to-git-lesson" class="level4">
+<h4 class="anchored" data-anchor-id="updates-to-git-lesson">Updates to git lesson</h4>
+<ul>
+<li>Consider where to put the Getting Help section</li>
+<li>Write out script</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="session-3---git" class="level2">
+<h2 class="anchored" data-anchor-id="session-3---git">Session 3 - Git</h2>
+<section id="teaching-script-1" class="level3">
+<h3 class="anchored" data-anchor-id="teaching-script-1">Teaching script</h3>
+<section id="title-slide" class="level4">
+<h4 class="anchored" data-anchor-id="title-slide">Title slide</h4>
+<p>Welcome back!</p>
+<p>YouTube link to previous session:</p>
+<p>Course website link: https://cct-datascience.github.io/repro-data-sci/</p>
+<p>Slides link: https://cct-datascience.github.io/repro-data-sci/lessons/3-git/slides.html#/review-1</p>
+</section>
+<section id="review-1" class="level4">
+<h4 class="anchored" data-anchor-id="review-1">Review 1</h4>
+<p>What are your questions?</p>
+</section>
+<section id="review-2" class="level4">
+<h4 class="anchored" data-anchor-id="review-2">Review 2</h4>
+<p>Did you diagram your file system? What did you find?</p>
+</section>
+<section id="review-3" class="level4">
+<h4 class="anchored" data-anchor-id="review-3">Review 3</h4>
+<p>Troubleshoot fiel system navigation exercise.</p>
+</section>
+<section id="learning-objectives" class="level4">
+<h4 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h4>
+<p>Today we’re going to talk about version control.</p>
+<p>What is it?</p>
+<p>Set it up on your computer. We have it installed, so now we can work on getting some system options set.</p>
+<p>And then we’ll start using git to work with our R projects.</p>
+<p>If we have time, we’ll get a little deeper into using git selectively. If not, Eric will cover that on Thursday! _Note to RMD - Or, we could switch this to the “Getting Help” conversation that we wanted to have earlier.</p>
+</section>
+<section id="version-control" class="level4">
+<h4 class="anchored" data-anchor-id="version-control">Version Control</h4>
+<p>Version control is a tool for tracking changes with unlimited “undo”.</p>
+</section>
+<section id="why-learn-version-control" class="level4">
+<h4 class="anchored" data-anchor-id="why-learn-version-control">Why learn version control?</h4>
+<p>Really handy for when:</p>
+<ul>
+<li>You don’t want to lose past versions of something, but you also don’t want to have seven thousand files</li>
+<li>You want to have a history of a project - analogous to a bench lab notebook</li>
+<li>You want to collaborate on a project across different systems, without getting confused about which version you put where</li>
+<li>You want to collaborate with <em>other people</em> without getting tangled up.</li>
+</ul>
+</section>
+<section id="git-and-github" class="level4">
+<h4 class="anchored" data-anchor-id="git-and-github">Git and GitHub</h4>
+<p>A quick note to say, Git and GitHub are different but related.</p>
+<p>Git is local. GitHub is a client for Git. There are alternatives to GitHub (but not super widely used).</p>
+<p>Today we’re going to focus on Git, and Eric will help us get started with GitHub on Thursday.</p>
+</section>
+<section id="git-setup" class="level4">
+<h4 class="anchored" data-anchor-id="git-setup">Git setup</h4>
+<p>Let’s get staretd interacting with git.</p>
+<p>git is basically a command line program. There are GUI interfaces to it, but it’s good to be able to do the basics from the CLI.</p>
+<p>So, open up your RStudio and let’s get a Terminal window open.</p>
+<p>Let’s configure your installation of git.</p>
+<p>To use git, we’re going to do what’s called “Running git commands” from the shell. To run a git command, we type “git” followed by the command, and then the options and arguments.</p>
+<p><code>git config</code> is going to modify our <em>configuration</em> of git. Here we’re using the –global option to change it for all of your repos. Set your name and your email.</p>
+</section>
+<section id="next-slide" class="level4">
+<h4 class="anchored" data-anchor-id="next-slide">Next slide</h4>
+<p>Set text editor.</p>
+<p>Go over git command options syntax again.</p>
+</section>
+<section id="creating-git-repositories---follow-slides" class="level4">
+<h4 class="anchored" data-anchor-id="creating-git-repositories---follow-slides">Creating git repositories - follow slides</h4>
+<p>Use “Show hidden files option”. s</p>
+</section>
+<section id="modifying-files-follow-slides" class="level4">
+<h4 class="anchored" data-anchor-id="modifying-files-follow-slides">Modifying files: follow slides</h4>
+<ul>
+<li>Introduce git status</li>
+<li>Introduce modifications</li>
+<li>git status</li>
+<li>git add</li>
+<li>git commit</li>
+<li>Modifications to mulitple files</li>
+<li>git add</li>
+<li>git commit</li>
+<li>Use git diff to reveal modifications</li>
+<li>Use git restore to discard modifications</li>
+<li>Use git reset HEAD~ to go back in time</li>
+</ul>
+<p>Note - pending time and vibes, use of time at the end could be to practice modify-add-commit cycle (and not introduce new stuff).</p>
+</section>
+</section>
+<section id="post-teaching" class="level3">
+<h3 class="anchored" data-anchor-id="post-teaching">Post-teaching</h3>
+<ul>
+<li>Didn’t make it to git diff, git restore, or git reset HEAD</li>
+<li>Add install.packages(“usethis)</li>
+<li>Pushing git restore and git reset HEAD~ until later - after folks have a more established mental model.</li>
+</ul>
+</section>
+</section>
+<section id="session-5---github-ii" class="level2">
+<h2 class="anchored" data-anchor-id="session-5---github-ii">Session 5 - GitHub II</h2>
+<p>Got branches and forks through.</p>
+</section>
+<section id="session-6---data-manipulation-with-r" class="level2">
+<h2 class="anchored" data-anchor-id="session-6---data-manipulation-with-r">Session 6 - Data manipulation with R</h2>
+<p>Todos:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">add a review exercise or discussion question</label></li>
+</ul>
+</section>
+<section id="session-7" class="level2">
+<h2 class="anchored" data-anchor-id="session-7">Session 7</h2>
+<ul>
+<li>Start with getting help</li>
+<li>Focus on writing functions to clean data
+<ul>
+<li>Store 3 different penguin datasets (by island) online at URLS</li>
+<li>Use writing functions as an opportunity to practice with tidyverse functions
+<ul>
+<li>incl.&nbsp;tidyselect helpers</li>
+<li>get a specific goal in mind for cleaning data</li>
+</ul></li>
+</ul></li>
+<li>This will be set up for Thursday + purrr + iteration.</li>
+</ul>
+<p>Share dplyr cheatsheet https://dplyr.tidyverse.org/#cheat-sheet</p>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{scott2024,
+  author = {Scott, Eric and Diaz, Renata and Guo, Jessica and Riemer,
+    Kristina},
+  date = {2024},
+  url = {https://cct-datascience.github.io/repro-data-sci/notes/RMD_notes_2023.html},
+  doi = {10.5281/zenodo.8411612},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-scott2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Scott, Eric, Renata Diaz, Jessica Guo, and Kristina Riemer. 2024.
+Reproducibility &amp; Data Science in R. 2024. <a href="https://doi.org/10.5281/zenodo.8411612">https://doi.org/10.5281/zenodo.8411612</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/cct-datascience\.github\.io\/repro-data-sci\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/cct-datascience/repro-data-sci/edit/main/notes/RMD_notes_2023.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/cct-datascience/repro-data-sci/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

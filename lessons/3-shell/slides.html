@@ -10,8 +10,8 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <meta name="dcterms.date" content="2023-09-07">
-  <title>Reproducibility &amp; Data Science in R – Shell and Filesystems</title>
+  <meta name="dcterms.date" content="2024-09-10">
+  <title>Reproducibility &amp; Data Science in R – File systems and the command line</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -393,16 +393,16 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Shell and Filesystems</h1>
+  <h1 class="title">File systems and the command line</h1>
   <p class="subtitle">Session 2</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">September 7, 2023</p>
+  <p class="date">September 10, 2024</p>
 </section>
-<section id="review-of-last-session" class="title-slide slide level1 center">
-<h1>Review of last session</h1>
+<section id="review-of-last-session" class="slide level2">
+<h2>Review of last session</h2>
 <ul>
 <li>What questions do you have?</li>
 <li>What happened as you were trying to re-organize projects or R code?
@@ -412,57 +412,74 @@
 </ul></li>
 </ul>
 </section>
-
-<section id="learning-objectives" class="title-slide slide level1 center">
-<h1>Learning objectives</h1>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning objectives</h2>
 <ul>
-<li>Understand the what and why of the shell</li>
-<li>Use the shell to navigate your computer’s file system</li>
-<li>Use R projects to simplify file system navigation</li>
+<li>Understand your computer’s <em>file system</em></li>
+<li>Understand the what and why of the shell command-line interface</li>
+<li>Use the CLI to navigate your computer’s file system</li>
+<li>Use the shell and file system navigation within RStudio</li>
 <li>Know your options for finding help</li>
 </ul>
 </section>
+<section id="how-well-do-you-know-your-file-system" class="slide level2">
+<h2>How well do you know your file system?</h2>
+</section>
+<section id="example-file-system" class="slide level2">
+<h2>Example file system</h2>
 
-<section id="what-is-the-shell" class="title-slide slide level1 center">
-<h1>What is the shell?</h1>
+<img data-src="file-path-example.png" class="r-stretch"></section>
+<section id="example-file-system-1" class="slide level2">
+<h2>Example file system</h2>
+
+<img data-src="file-structure-example.png" class="r-stretch"></section>
+<section id="how-do-you-navigate-your-file-system" class="slide level2">
+<h2>How do you navigate your file system?</h2>
+<ul>
+<li>Searching</li>
+<li>Point and click</li>
+<li>“Go to path”</li>
+</ul>
+</section>
+<section id="how-do-we-navigate-the-file-system-programmatically" class="slide level2">
+<h2>How do we navigate the file system <em>programmatically</em>?</h2>
+<ul>
+<li>A script can’t point and click!</li>
+<li>We need a system for moving around our file system through written commands.</li>
+</ul>
+</section>
+<section id="what-is-the-shell" class="slide level2">
+<h2>What is the shell?</h2>
 <ul>
 <li>Command-line interface, in contrast to a GUI</li>
+<li>Useful for navigating the file system</li>
+<li>…and for automating large tasks (e.g.&nbsp;renaming, moving files)</li>
+<li>…<em>and</em> for running programs that may not have a GUI</li>
+<li>…<strong>and</strong> for interfacing with remote computers (e.g.&nbsp;the HPC)</li>
 </ul>
 </section>
-
-<section id="why-learn-the-shell" class="title-slide slide level1 center">
-<h1>Why learn the shell?</h1>
-<ul>
-<li>Be able to work with tools that don’t have a GUI</li>
-<li>Batch large tasks (e.g.&nbsp;renaming files)</li>
-<li>Interact with remote computers like the University HPC</li>
-</ul>
-</section>
-
-<section id="shell-in-this-workshop" class="title-slide slide level1 center">
-<h1>Shell in this workshop</h1>
+<section id="shell-in-this-workshop" class="slide level2">
+<h2>Shell in this workshop</h2>
 <ul>
 <li>git/GitHub (next 2 lessons)</li>
 <li>Navigating your file system</li>
-<li>Quarto (lesson 9)</li>
+<li>Quarto (lesson 2)</li>
 </ul>
 </section>
-
-<section id="lets-get-set-up" class="title-slide slide level1 center">
-<h1>Let’s get set up!</h1>
+<section id="lets-get-set-up" class="slide level2">
+<h2>Let’s get set up!</h2>
 <ul>
-<li><p>macOS comes with a shell (usually Bash or Zsh) built-in</p></li>
+<li><p>macOS comes with a shell (usually Bash or zsh) built-in</p></li>
 <li><p>Windows need to install GitBash (includes Bash shell and git, which we will use later)</p></li>
 <li><p>Breakout rooms</p>
 <ul>
-<li>Mac users go with Kristina</li>
+<li>Mac users go with Eric</li>
 <li>Windows users go with Renata</li>
 </ul></li>
 </ul>
 </section>
-
-<section id="data-download" class="title-slide slide level1 center">
-<h1>Data download</h1>
+<section id="data-download" class="slide level2">
+<h2>Data download</h2>
 <ul>
 <li>Download <code>shell-lesson-data.zip</code>
 <ul>
@@ -471,113 +488,58 @@
 <li>Save it to your Desktop and unzip it.</li>
 </ul>
 </section>
-
-<section id="coding-time" class="title-slide slide level1 center">
-<h1>Coding time</h1>
+<section id="coding-time" class="slide level2">
+<h2>Coding time</h2>
 <ul>
 <li>RStudio panes</li>
 <li>Set up Terminal in RStudio</li>
 <li>Navigation using Terminal and Files pane</li>
 </ul>
 </section>
-
-<section id="example-file-system" class="title-slide slide level1 center">
-<h1>Example file system</h1>
-
-<img data-src="file-path-example.png" class="r-stretch"></section>
-
-<section id="example-file-system-1" class="title-slide slide level1 center">
-<h1>Example file system</h1>
-
-<img data-src="file-structure-example.png" class="r-stretch"></section>
-
-<section id="syntax-of-a-shell-command" class="title-slide slide level1 center">
-<h1>Syntax of a shell command</h1>
+<section id="syntax-of-a-shell-command" class="slide level2">
+<h2>Syntax of a shell command</h2>
 
 <img data-src="shell_syntax.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-
-<section id="coding-time-1" class="title-slide slide level1 center">
-<h1>Coding time</h1>
+<section id="coding-time-1" class="slide level2">
+<h2>Coding time</h2>
 <ul>
 <li>Synchronize working directories between Terminal, Files Pane, and R working directory</li>
 </ul>
 </section>
-
-<section id="coding-time-2" class="title-slide slide level1 center">
-<h1>Coding time</h1>
+<section id="coding-time-2" class="slide level2">
+<h2>Coding time</h2>
 <ul>
-<li>Use an R project to simplify working directories</li>
+<li>Use an RStudio project to simplify working directories</li>
 <li>Copy <code>shell_lesson_data</code> to your R project</li>
 </ul>
 </section>
-
-<section id="getting-help" class="title-slide slide level1 center">
-<h1>Getting help</h1>
+<section id="getting-help" class="slide level2">
+<h2>Getting help</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="fu">ls</span> <span class="at">--help</span></span>
 <span id="cb1-2"><a></a><span class="fu">man</span> ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-
-<section id="getting-help-1" class="title-slide slide level1 center">
-<h1>Getting help</h1>
+<section id="getting-help-1" class="slide level2">
+<h2>Getting help</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="fu">git</span> <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-
-<section id="getting-help-2" class="title-slide slide level1 center">
-<h1>Getting help</h1>
+<section id="getting-help-2" class="slide level2">
+<h2>Getting help</h2>
 
 <img data-src="getwd.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-
-<section id="getting-help-3" class="title-slide slide level1 center">
-<h1>Getting help</h1>
+<section id="getting-help-3" class="slide level2">
+<h2>Getting help</h2>
 
 <img data-src="man_page.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-
-<section id="getting-help-4" class="title-slide slide level1 center">
-<h1>Getting help</h1>
-
-<img data-src="stack_overflow.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-
-<section id="getting-help-5" class="title-slide slide level1 center">
-<h1>Getting help</h1>
-
-<img data-src="gpt.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-
-<section id="beware-of-stochastic-parrots" class="title-slide slide level1 center">
-<h1>Beware of stochastic parrots</h1>
-<ul>
-<li>LLMs don’t <em>understand</em>, but are good at mimicry</li>
-<li>Use with care:
-<ul>
-<li>May be wrong</li>
-<li>May be inconsistent</li>
-</ul></li>
-</ul>
-</section>
-
-<section id="beware-of-stochastic-parrots-1" class="title-slide slide level1 center">
-<h1>Beware of stochastic parrots</h1>
-<ul>
-<li>Tools like ChatGPT pose ethical issues
-<ul>
-<li>Plagiarism</li>
-<li>Labor conditions</li>
-<li>Inputs may be sent to parent companies</li>
-</ul></li>
-</ul>
-</section>
-
-<section id="getting-help-fellow-humans" class="title-slide slide level1 center">
-<h1>Getting help: fellow humans</h1>
+<section id="getting-help-fellow-humans" class="slide level2">
+<h2>Getting help: fellow humans</h2>
 
 <img data-src="ua-ds-slack.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-
-<section id="getting-help-fellow-humans-1" class="title-slide slide level1 center">
-<h1>Getting help: fellow humans</h1>
+<section id="getting-help-fellow-humans-1" class="slide level2">
+<h2>Getting help: fellow humans</h2>
 
 <img data-src="drop-ins.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-
-<section id="takeaways" class="title-slide slide level1 center">
-<h1>Takeaways</h1>
+<section id="takeaways" class="slide level2">
+<h2>Takeaways</h2>
 <ul>
 <li>The shell is a command-line interface to the computer</li>
 <li>The file system the shell sees is the <em>same</em> as your File Explorer tab</li>
@@ -585,37 +547,48 @@
 <li>Find help from built-in manual pages, Google, (maybe) AI tools, or community</li>
 </ul>
 </section>
+<section>
+<section id="break" class="title-slide slide level1 center">
+<h1>Break</h1>
 
-<section id="homework-for-next-time" class="title-slide slide level1 center">
-<h1>Homework for next time</h1>
+</section>
+<section id="reproducibility-colloquim-check-in" class="slide level2">
+<h2>Reproducibility colloquim check-in</h2>
+<ul>
+<li>Breakout rooms of 3-4</li>
+</ul>
+</section>
+<section id="check-in-questions" class="slide level2 smaller">
+<h2>Check-in questions</h2>
+<ul>
+<li>What project are you going to be focusing on for the reproducibility colloquim?</li>
+<li>In which areas do you think it will benefit the most from a makeover?
+<ul>
+<li>Project organization</li>
+<li>Collaboration practices (git, github)</li>
+<li>Code efficiency and robustness (functions, iteration)</li>
+<li>Documentation</li>
+</ul></li>
+<li>What kinds of support will help you make those improvements?</li>
+</ul>
+</section>
+<section id="homework-for-next-time" class="slide level2">
+<h2>Homework for next time</h2>
 <ul>
 <li>Read <a href="https://peerj.com/preprints/3159/">“Excuse me, do you have a moment to talk about version control?”</a></li>
 <li>Create a diagram of your file system and note your most frequently used directories</li>
 </ul>
 </section>
-
-<section id="resources-shell" class="title-slide slide level1 center">
-<h1>Resources: Shell</h1>
+<section id="resources-shell" class="slide level2">
+<h2>Resources: Shell</h2>
 <ul>
 <li><a href="https://swcarpentry.github.io/shell-novice/01-intro">Software Carpentry Unix Shell episode #1</a></li>
 <li><a href="https://swcarpentry.github.io/shell-novice/02-filedir">Software Carpentry Unix Shell episode #2</a></li>
 <li><a href="https://swcarpentry.github.io/shell-novice/03-create">Software Carpentry Unix Shell episode #3</a></li>
 </ul>
 </section>
-
-<section id="resources-ai-tools" class="title-slide slide level1 center">
-<h1>Resources: AI tools</h1>
-<ul>
-<li><a href="https://ecoevo.social/@cboettig/110934209180569370" class="uri">https://ecoevo.social/@cboettig/110934209180569370</a></li>
-<li><a href="https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html" class="uri">https://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Stochastic_parrot" class="uri">https://en.wikipedia.org/wiki/Stochastic_parrot</a></li>
-<li><a href="https://dl.acm.org/doi/abs/10.1145/3442188.3445922" class="uri">https://dl.acm.org/doi/abs/10.1145/3442188.3445922</a></li>
-<li><a href="https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0" class="uri">https://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0</a></li>
-</ul>
-</section>
-
-<section id="resources-ua-community" class="title-slide slide level1 center">
-<h1>Resources: UA community</h1>
+<section id="resources-ua-community" class="slide level2">
+<h2>Resources: UA community</h2>
 <ul>
 <li><a href="https://datascience.arizona.edu/">UA Data Science Institute</a></li>
 <li><a href="https://jcoliver.github.io/uadatascience-slack/">UA Data Science Slack</a></li>
@@ -628,7 +601,7 @@
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

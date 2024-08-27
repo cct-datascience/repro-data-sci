@@ -2,114 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/index.html</loc>
-    <lastmod>2024-08-26T22:06:07.036Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.738Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/6-github-collab/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.774Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/8-intermediate-r-1/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.778Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/5-github-basics/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.064Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.770Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/7-data-manipulation/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.774Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/9-intermediate-r-2/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.778Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/11-getting-help/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.056Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.758Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/4-git/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.064Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.770Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.040Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.742Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-shell/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.056Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.762Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/10-get-credit/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.044Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.750Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/12-drop-in/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.056Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.758Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/2-markdown-quarto/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.056Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.762Z</lastmod>
   </url>
   <url>
-    <loc>https://cct-datascience.github.io/repro-data-sci/emails.html</loc>
-    <lastmod>2024-08-26T22:06:07.032Z</lastmod>
+    <loc>https://cct-datascience.github.io/repro-data-sci/notes/RMD_notes_2023.html</loc>
+    <lastmod>2024-08-27T15:03:25.778Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/about.html</loc>
-    <lastmod>2024-08-26T22:06:07.032Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cct-datascience.github.io/repro-data-sci/emails.html</loc>
+    <lastmod>2024-08-27T15:03:25.738Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/LICENSE.html</loc>
-    <lastmod>2024-08-26T22:06:06.980Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.682Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/2-markdown-quarto/notes.html</loc>
-    <lastmod>2024-08-26T22:06:07.056Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.758Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/10-get-credit/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.044Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.750Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/3-shell/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.060Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.766Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/1-project-management/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.040Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.742Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/4-git/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.064Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.770Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/11-getting-help/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.056Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.758Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/9-intermediate-r-2/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.778Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/7-data-manipulation/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.774Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/5-github-basics/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.064Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.770Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/8-intermediate-r-1/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.778Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/lessons/6-github-collab/slides.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.774Z</lastmod>
   </url>
   <url>
     <loc>https://cct-datascience.github.io/repro-data-sci/survey_responses.html</loc>
-    <lastmod>2024-08-26T22:06:07.068Z</lastmod>
+    <lastmod>2024-08-27T15:03:25.778Z</lastmod>
   </url>
 </urlset>
