@@ -1,12 +1,8 @@
 ---
 title: "Data manipulation with `dplyr` and `tidyr`"
-subtitle: "Session 6"
-date: "2023-09-21"
-date-format: long
+subtitle: "Session 7"
+date: "2024-09-24"
 format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
 ---
 
 ## Review

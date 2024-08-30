@@ -1,12 +1,8 @@
 ---
 title: "Documentation & Literate Programming"
 subtitle: "Session 2"
-format: 
-  uaz-revealjs:
-    link-external-newwindow: true
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
+date: "2024-09-05"
+format: uaz-revealjs
 ---
 
 ## Review of last lesson
