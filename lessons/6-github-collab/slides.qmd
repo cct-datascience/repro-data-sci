@@ -29,8 +29,7 @@ repo \| commit \| remote \| push \| pull \| add
 
 ## Review
 
-Did anyone add a repo to GitHub?
-What difficulties did you encounter?
+What difficulties did you have while putting your repo on GitHub?
 
 ## Collaborating with GitHub
 
@@ -176,13 +175,40 @@ To contribute to a repo you don't have push permission for:
 3.  Make **commits** (ideally on a **branch**)
 4.  Make a **pull request** to the upstream repo
 
+::: callout-tip
 Learn more, including handy `usethis` shortcuts: <https://happygitwithr.com/fork-and-clone>
+:::
+
+## Practice
 
 ::: callout-tip
 ## Exercise
 
-In pairs, practice this workflow to make a PR to our example repo
+In pairs, practice **forking** and **cloning** a demo repo you do *not* have permission to push to.
+Make a new branch, make commits, and make a pull request to the upstream repo.
 :::
+
+::: notes
+Encourage learners to use forking and cloning to explore and contribute to any code they can find on GitHub including R packages and research compendia.
+:::
+
+## Resources
+
+<!--# TODO: add more resources for getting help with pull requests -->
+
+-   [Forking and cloning](https://happygitwithr.com/fork-and-clone)
+
+-   [Pull request helpers in `usethis`](https://usethis.r-lib.org/articles/pr-functions.html)
+
+-   #git channel in UA Data Science Slack
+
+## Your Tasks
+
+-   For the next update to your colloquium project, practice using a branch and and pull request on GitHub
+
+-   Clone a repo you do not have permission to push to without forking it and see what happens when you try to use `git push`
+
+-   Fork and clone a repo on GitHub to explore it (e.g. a lab mate's code, a research compendium, your favorite R package)
 
 ## References
 
