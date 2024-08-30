@@ -1,10 +1,10 @@
 ---
 title: "GitHub"
-subtitle: "Session 4"
-date: "2023-09-14"
-date-format: long
-format: uaz-revealjs
-chalkboard: true
+subtitle: "Session 5"
+format: 
+  uaz-revealjs:
+    link-external-newwindow: true
+    chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
 logo: "../../logo.png"
@@ -77,13 +77,16 @@ Figure 2 from [@bryan2018]
 
 ## Resources
 
+-   #git channel in UA Data Science Slack
+
 -   [happygitwithr.com](https://happygitwithr.com/)
 
 -   [`usethis::use_github()`](https://usethis.r-lib.org/reference/use_github.html)
 
-## Homework
+## Your Tasks
 
-Put a (real) project repo on GitHub (e.g. with `use_github()`) and share the link on Slack (if it can be made public)
+-   Put your research compendium on GitHub (e.g. with `use_github()`) and share the link in our Slack channel (if it can be made public)
+-   Explore other research compendia shared in Slack
 
 ## References
 

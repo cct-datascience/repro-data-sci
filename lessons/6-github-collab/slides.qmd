@@ -1,12 +1,11 @@
 ---
 title: "Collaborate With GitHub"
-subtitle: "Session 5"
-date: "2023-09-19"
-date-format: long
+subtitle: "Session 6"
 format: 
   uaz-revealjs:
     theme: "fix-mermaid.scss"
-chalkboard: true
+    link-external-newwindow: true
+    chalkboard: true
 footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
 logo: "../../logo.png"

@@ -31,8 +31,8 @@ Learners will practice developing new code on branches.
 
 -   Live Coding: GitHub setup
 
-    -   Go through checklist of `usethis::git_sitrep()` with student sharing screen
-    -   **Don't have student share screen with PAT generation! Switch to your screen!**
+    -   Before this lesson, rename \~/.gitconfig and run `gitcreds::gitcreds_delete()` to simulate a brand new setup
+    -   Go through checklist of `usethis::git_sitrep()`
 
 -   Live Coding: Putting your code on GitHub
 
