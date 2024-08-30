@@ -6,7 +6,7 @@ format: html
 ## Objective
 
 Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically.
-Learners will practice developing new code on branches.
+They'll get the basics of working by themselves with GitHub (push/pull from main branch only) using RStudio.
 
 ## Lesson Outline
 
@@ -31,8 +31,9 @@ Learners will practice developing new code on branches.
 
 -   Live Coding: GitHub setup
 
-    -   Before this lesson, rename \~/.gitconfig and run `gitcreds::gitcreds_delete()` to simulate a brand new setup
+    -   Before this lesson run `gitcreds::gitcreds_delete()` to simulate a brand new setup
     -   Go through checklist of `usethis::git_sitrep()`
+    -   Remove the token you create before video is posted
 
 -   Live Coding: Putting your code on GitHub
 
