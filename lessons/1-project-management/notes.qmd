@@ -13,6 +13,7 @@ Learners will learn about and practice managing their projects using file struct
 -   Discuss reproducibility
 -   Give tour of course website & syllabus
     -   Point out code of conduct
+-   Briefly demo Slack
 -   Screen setup
 -   Don't save or load .RData!
 -   Discuss general best practices for research compendia (use [Carpentry lesson](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro)??)
