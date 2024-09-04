@@ -32,6 +32,12 @@ Understand how to write a README.md using markdown basics and introduce the conc
 
 -   Create .Qmd and play
 
+    -   in header: title, author, date
+
+    -   in body: headers, itallics, bold, code, links
+
+    -   Render as html
+
 -   Demo visual editor
 
     -   Switch back and forth
@@ -40,15 +46,36 @@ Understand how to write a README.md using markdown basics and introduce the conc
 
 -   Running code in code chunks
 
+    ``` r
+    #| label: setup
+    #| include: false
+    library(tidyverse)
+    library(palmerpenguins)
+    library(knitr)
+    ```
+
+    ``` r
+    #| label: fig-box
+    #| fig-cap: "Boxplot of body mass in grams by penguin sex."
+    ggplot(penguins, aes(x = sex, y = body_mass_g)) + geom_boxplot()
+    ```
+
+    ``` r
+    #| label: tbl-sample
+    #| tbl-cap: "Sample sizes of penguins by sex and island"
+    table(penguins$sex, penguins$island, useNA = "always") |> kable()
+    ```
+
 -   Code chunk options
 
-    -   Demo some common ones like `label`, `echo: false`, `fig-cap`
+    -   Demo some common ones like `label`, `echo: false`, `fig-cap` , `code-fold`
+    -   Demo applying to entire doc in YAML header
 
--   Sections (and TOC)
+-   Add TOC (`toc: true`)
 
--   Equations
+-   Equations (look up how to cross ref equations during lesson)
 
--   Citations
+-   Citations (from DOI or from Zenodo)
 
 -   Cross refs
 

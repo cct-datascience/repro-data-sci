@@ -54,6 +54,12 @@ logo: "../../logo.png"
 knitr or jupyter are used to convert code chunks into markdown, pandoc converts markdown into output
 :::
 
+## Create a new Quarto document
+
+In RStudio: File \> New File \> Quarto Document
+
+Click "Render" to see the rendered output
+
 ## Anatomy of a .Qmd file
 
 ```` {.markdown code-line-numbers="|1-7|9-15|10-11|17-19|21-23|" filename="myreport.qmd"}
@@ -96,14 +102,6 @@ It includes all the features of RMarkdown and more.
 -   `key: value` pairs
 
 -   Nesting indicated by indentation with 2 spaces
-
-## Code
-
--   Code chunks can be R, Python, or other languages
-
--   If R, code is executed by `knitr` engine, otherwise by `jupyter`
-
--   Chunk options as YAML (`#| key: value`) modify execution behavior or output formatting
 
 ## Markdown
 
@@ -174,6 +172,14 @@ See?
 
 You need two line breaks for that!
 
+## Code
+
+-   Code chunks can be R, Python, or other languages
+
+-   If R, code is executed by `knitr` engine, otherwise by `jupyter`
+
+-   Chunk options as YAML (`#| key: value`) modify execution behavior or output formatting
+
 ## Our turn
 
 -   Create a new Quarto Document
@@ -184,6 +190,12 @@ You need two line breaks for that!
 
 -   Add citations and cross-references
 
+## README.md
+
+-   Your README.md uses a simple version of markdown, and will get formatted nicely once we put it on GitHub
+-   You can use the visual editor on .md files also
+-   If you need to have code executed in your README, you can use `format: gfm` for "GitHub Flavored Markdown"
+
 ## Learning More & Getting Help
 
 -   Getting started with Quarto [tutorial](https://quarto.org/docs/get-started/hello/rstudio.html)
@@ -193,6 +205,8 @@ You need two line breaks for that!
 -   Full Quarto [guide](https://quarto.org/docs/guide/) and [reference](https://quarto.org/docs/reference/) (searchable!)
 
 -   #quarto channel in UA Data Science Slack
+
+-   Rendering to [GitHub Flavored Markdown](https://quarto.org/docs/reference/formats/markdown/gfm.html)
 
 ## Your tasks
 
