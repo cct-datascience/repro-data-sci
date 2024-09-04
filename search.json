@@ -252,32 +252,60 @@
     "text": "Review\n\n\n\n\n\n\nChat:\n\n\nWhat would you say to encourage them to start?"
   },
   {
-    "objectID": "lessons/7-data-manipulation/slides.html#review-2",
-    "href": "lessons/7-data-manipulation/slides.html#review-2",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Review",
-    "text": "Review\n\n\n\n\n\n\nChat:\n\n\nHow would you get set up? What would be your core workflow?"
-  },
-  {
-    "objectID": "lessons/7-data-manipulation/slides.html#warm-up",
-    "href": "lessons/7-data-manipulation/slides.html#warm-up",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Warm-up",
-    "text": "Warm-up\nCreate a branch for today’s work.\n\n\n\n\n\n\nNote\n\n\nCreate this branch from a repo you own, not the demo from Tuesday!\nWe might need to create a repo for R scripting for this workshop."
-  },
-  {
     "objectID": "lessons/7-data-manipulation/slides.html#learning-objectives",
     "href": "lessons/7-data-manipulation/slides.html#learning-objectives",
     "title": "Data manipulation with dplyr and tidyr",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nUnderstand the principles of “tidy data”\nUse tidyverse packages (dplyr and tidyr) to work with data in R.\nPractice tracking our work in git"
+    "text": "Learning objectives\n\n\nPractice tracking our work in git\nUnderstand what makes code “good”\nUnderstand the principles of “tidy data”\nUse tidyverse packages (dplyr and tidyr) to work with data in R.\nIdentify how to apply tidy tools to your colloqium project."
   },
   {
-    "objectID": "lessons/7-data-manipulation/slides.html#what-is-tidy-data",
-    "href": "lessons/7-data-manipulation/slides.html#what-is-tidy-data",
+    "objectID": "lessons/7-data-manipulation/slides.html#github-practice",
+    "href": "lessons/7-data-manipulation/slides.html#github-practice",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "What is “tidy data”?",
-    "text": "What is “tidy data”?\nLowndes and Horst say it so beautifully."
+    "section": "GitHub practice",
+    "text": "GitHub practice\nCreate a branch for today’s work in your workshop repo."
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#discussion-what-makes-code-good",
+    "href": "lessons/7-data-manipulation/slides.html#discussion-what-makes-code-good",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Discussion: What makes code “good”?",
+    "text": "Discussion: What makes code “good”?\nBreakout rooms (5 minutes) to discuss, and then report back to the group."
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#what-makes-code-good",
+    "href": "lessons/7-data-manipulation/slides.html#what-makes-code-good",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "What makes code “good”?",
+    "text": "What makes code “good”?\nSuggestions:\n\n\nReadability\nReproducibility\nAccuracy\nSpeed/efficiency"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#what-makes-code-good-1",
+    "href": "lessons/7-data-manipulation/slides.html#what-makes-code-good-1",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "What makes code “good”?",
+    "text": "What makes code “good”?\nSuggestions:\n\nReadability\nReproducibility\nAccuracy\nSpeed/efficiency"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#readable-code",
+    "href": "lessons/7-data-manipulation/slides.html#readable-code",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Readable code",
+    "text": "Readable code\nFrom the Carpentries lab…\n\n\nUse comments to explain decisions\nBreak code into modules (covered next session)\nAvoid repetition wherever possible (covered next week)\nMake dependencies clear"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#reproducible-code",
+    "href": "lessons/7-data-manipulation/slides.html#reproducible-code",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Reproducible code",
+    "text": "Reproducible code\nFrom the Carpentries lab…\n\n\nAvoid using commenting out lines to control code\nUse a test data set\nUse version control (like GitHub!)\nKeep track of your software environment"
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#good-enough-practices",
+    "href": "lessons/7-data-manipulation/slides.html#good-enough-practices",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Good enough practices",
+    "text": "Good enough practices\nSee the paper here!"
   },
   {
     "objectID": "lessons/7-data-manipulation/slides.html#the-tidyverse",
@@ -291,21 +319,21 @@
     "href": "lessons/7-data-manipulation/slides.html#the-tidyverse-1",
     "title": "Data manipulation with dplyr and tidyr",
     "section": "The “tidyverse”",
-    "text": "The “tidyverse”\n\n✨ Common structure and syntax\n✨ Emphasize user readability\n✨ Friendly documentation\n✨ Updates rapidly"
+    "text": "The “tidyverse”\n\n\n✨ Common structure and syntax\n✨ Emphasize user readability\n✨ Friendly documentation\n✨ Updates rapidly"
   },
   {
     "objectID": "lessons/7-data-manipulation/slides.html#the-tidyverse-2",
     "href": "lessons/7-data-manipulation/slides.html#the-tidyverse-2",
     "title": "Data manipulation with dplyr and tidyr",
     "section": "The “tidyverse”",
-    "text": "The “tidyverse”\n\n‼️ Extra installs over “base R”\n‼️ Very different syntax than “base R”\n‼️ Updates rapidly"
+    "text": "The “tidyverse”\n\n\n‼️ Extra installs over “base R”\n‼️ Very different syntax than “base R”\n‼️ Updates rapidly (can be a reproducibility challenge)"
   },
   {
     "objectID": "lessons/7-data-manipulation/slides.html#the-tidyverse-3",
     "href": "lessons/7-data-manipulation/slides.html#the-tidyverse-3",
     "title": "Data manipulation with dplyr and tidyr",
     "section": "The “tidyverse”",
-    "text": "The “tidyverse”\n\n🧭 Only install/load the functions/packages you need\n🧭 Be aware that others may be unfamiliar; comment your code well\n🧭 Keep track of your package versions\n🧭 Software developers, keep an eye on changes!"
+    "text": "The “tidyverse”\n\n\n🧭 Only install/load the functions/packages you need\n🧭 Be aware that others may be unfamiliar; comment your code well\n🧭 Keep track of your package versions\n🧭 Software developers, keep an eye on changes!"
   },
   {
     "objectID": "lessons/7-data-manipulation/slides.html#tidy-data-in-r",
@@ -313,13 +341,6 @@
     "title": "Data manipulation with dplyr and tidyr",
     "section": "Tidy data in R",
     "text": "Tidy data in R\nLet’s install some packages:\ninstall.packages(\"dplyr\") # dataframe manipulation\ninstall.packages(\"tidyr\") # \"reshaping\" data\ninstall.packages(\"palmerpenguins\") # open teaching dataset"
-  },
-  {
-    "objectID": "lessons/7-data-manipulation/slides.html#coding-time-data-types-in-r",
-    "href": "lessons/7-data-manipulation/slides.html#coding-time-data-types-in-r",
-    "title": "Data manipulation with dplyr and tidyr",
-    "section": "Coding time: Data types in R",
-    "text": "Coding time: Data types in R\nKey points:\n\nMajor data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.\nCommon tabular formats are data.frame or tibble\nYou can perform “vectorized” operations on whole vectors (or columns) at once.\nMissing data are handled as NAs."
   },
   {
     "objectID": "lessons/7-data-manipulation/slides.html#coding-time-dplyr",
@@ -350,25 +371,32 @@
     "text": "Coding time: finding the right function\n\n?tidyr::pivot_wider and index pages\nMore ways of getting help: see the Getting Help section!"
   },
   {
-    "objectID": "lessons/7-data-manipulation/slides.html#wrapping-up",
-    "href": "lessons/7-data-manipulation/slides.html#wrapping-up",
+    "objectID": "lessons/7-data-manipulation/slides.html#more-git-practice",
+    "href": "lessons/7-data-manipulation/slides.html#more-git-practice",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "Wrapping up",
-    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub."
+    "section": "More git practice",
+    "text": "More git practice\nWork through the steps to synchronize the changes you’ve made today with GitHub."
   },
   {
-    "objectID": "lessons/7-data-manipulation/slides.html#wrapping-up-1",
-    "href": "lessons/7-data-manipulation/slides.html#wrapping-up-1",
+    "objectID": "lessons/7-data-manipulation/slides.html#more-git-practice-1",
+    "href": "lessons/7-data-manipulation/slides.html#more-git-practice-1",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "Wrapping up",
-    "text": "Wrapping up\nWork through the steps to synchronize the changes you’ve made today with GitHub.\n\n\n\n\n\n\nCommand-line instructions\n\n\ngit add &lt;your script name&gt;\ngit commit\ngit push"
+    "section": "More git practice",
+    "text": "More git practice\nWork through the steps to synchronize the changes you’ve made today with GitHub.\n\n\n\n\n\n\nCommand-line instructions\n\n\ngit add &lt;your script name&gt;\ngit commit\ngit push"
   },
   {
-    "objectID": "lessons/7-data-manipulation/slides.html#homework",
-    "href": "lessons/7-data-manipulation/slides.html#homework",
+    "objectID": "lessons/7-data-manipulation/slides.html#your-colloqium-project",
+    "href": "lessons/7-data-manipulation/slides.html#your-colloqium-project",
     "title": "Data manipulation with dplyr and tidyr",
-    "section": "Homework",
-    "text": "Homework\n\nFind a script you have used in one of your projects and translate it to use these verbs.\n\nBonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!\n\n\n\n\n\n\nReproduciblity & Data Science in R"
+    "section": "Your colloqium project",
+    "text": "Your colloqium project\n\nBetween now and Thursday, revisit the code in your colloquium project.\nIdentify any sections of the code that could be improved based on the conversations and tools we covered today.\nMake those changes, if you have the skills. Otherwise, take notes and we will talk more on Thursday."
+  },
+  {
+    "objectID": "lessons/7-data-manipulation/slides.html#references",
+    "href": "lessons/7-data-manipulation/slides.html#references",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "References",
+    "text": "References\nGreg Wilson, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal: \"Good Enough Practices for Scientific Computing\". http://github.com/swcarpentry/good-enough-practices-in-scientific-computing/, 2016.\nWallace, E..W.J., Meynert, A., Zielinski. T., Romanowski. A., et. al., (2022). Good Enough Practices in Scientific Computing: A Lesson (Version 0.1.0). https://doi.org/tbc; also https://github.com/carpentries-lab/good-enough-practices/.\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#review-homework",

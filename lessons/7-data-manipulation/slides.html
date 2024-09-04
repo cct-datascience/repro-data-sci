@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="dcterms.date" content="2023-09-21">
+  <meta name="dcterms.date" content="2024-09-24">
   <title>Reproducibility &amp; Data Science in R – Data manipulation with dplyr and tidyr</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -394,12 +394,12 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Data manipulation with <code>dplyr</code> and <code>tidyr</code></h1>
-  <p class="subtitle">Session 6</p>
+  <p class="subtitle">Session 7</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">September 21, 2023</p>
+  <p class="date">September 24, 2024</p>
 </section>
 <section id="review" class="slide level2">
 <h2>Review</h2>
@@ -433,50 +433,79 @@
 </div>
 </div>
 </section>
-<section id="review-2" class="slide level2">
-<h2>Review</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Chat:</strong></p>
-</div>
-<div class="callout-content">
-<p>How would you get set up? What would be your core workflow?</p>
-</div>
-</div>
-</div>
-</section>
-<section id="warm-up" class="slide level2">
-<h2>Warm-up</h2>
-<p>Create a branch for today’s work.</p>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>Create this branch from a repo you own, <em>not</em> the demo from Tuesday!</p>
-<p>We might need to create a repo for R scripting for this workshop.</p>
-</div>
-</div>
-</div>
-</section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
+<div>
 <ul>
-<li>Understand the principles of “tidy data”</li>
-<li>Use tidyverse packages (<code>dplyr</code> and <code>tidyr</code>) to work with data in R.</li>
-<li>Practice tracking our work in git</li>
+<li class="fragment">Practice tracking our work in git</li>
+<li class="fragment">Understand what makes code “good”</li>
+<li class="fragment">Understand the principles of “tidy data”</li>
+<li class="fragment">Use tidyverse packages (<code>dplyr</code> and <code>tidyr</code>) to work with data in R.</li>
+<li class="fragment">Identify how to apply tidy tools to your colloqium project.</li>
+</ul>
+</div>
+</section>
+<section id="github-practice" class="slide level2">
+<h2>GitHub practice</h2>
+<p>Create a branch for today’s work in your workshop repo.</p>
+</section>
+<section id="discussion-what-makes-code-good" class="slide level2">
+<h2>Discussion: What makes code “good”?</h2>
+<p>Breakout rooms (5 minutes) to discuss, and then report back to the group.</p>
+</section>
+<section id="what-makes-code-good" class="slide level2">
+<h2>What makes code “good”?</h2>
+<p>Suggestions:</p>
+<div>
+<ul>
+<li class="fragment">Readability</li>
+<li class="fragment">Reproducibility</li>
+<li class="fragment">Accuracy</li>
+<li class="fragment">Speed/efficiency</li>
+</ul>
+</div>
+</section>
+<section id="what-makes-code-good-1" class="slide level2">
+<h2>What makes code “good”?</h2>
+<p>Suggestions:</p>
+<ul>
+<li><strong>Readability</strong></li>
+<li><strong>Reproducibility</strong></li>
+<li>Accuracy</li>
+<li>Speed/efficiency</li>
 </ul>
 </section>
-<section id="what-is-tidy-data" class="slide level2">
-<h2>What is “tidy data”?</h2>
+<section id="readable-code" class="slide level2">
+<h2>Readable code</h2>
+<p>From <a href="https://carpentries-lab.github.io/good-enough-practices/03-software.html">the Carpentries lab</a>…</p>
+<div>
+<ul>
+<li class="fragment">Use comments to explain decisions</li>
+<li class="fragment">Break code into modules (covered next session)</li>
+<li class="fragment">Avoid repetition wherever possible (covered next week)</li>
+<li class="fragment">Make dependencies clear</li>
+</ul>
+</div>
+</section>
+<section id="reproducible-code" class="slide level2">
+<h2>Reproducible code</h2>
+<p>From <a href="https://carpentries-lab.github.io/good-enough-practices/03-software.html">the Carpentries lab</a>…</p>
+<div>
+<ul>
+<li class="fragment">Avoid using commenting out lines to control code</li>
+<li class="fragment">Use a test data set</li>
+<li class="fragment">Use version control (like GitHub!)</li>
+<li class="fragment">Keep track of your software environment</li>
+</ul>
+</div>
+</section>
+<section id="good-enough-practices" class="slide level2">
+<h2>Good enough practices</h2>
+<p><a href="http://github.com/swcarpentry/good-enough-practices-in-scientific-computing/">See the paper here!</a></p>
+</section>
+<section>
+<section id="what-is-tidy-data" class="title-slide slide level1 center">
+<h1>What is “tidy data”?</h1>
 <p><a href="https://docs.google.com/presentation/d/1N7hKepabvl9OrHjvGJWPjUsfzVdB5xzV5AsFndgSwms/edit#slide=id.p">Lowndes and Horst say it so beautifully.</a></p>
 </section>
 <section id="the-tidyverse" class="slide level2">
@@ -485,29 +514,35 @@
 </section>
 <section id="the-tidyverse-1" class="slide level2">
 <h2>The “tidyverse”</h2>
+<div>
 <ul>
-<li>✨ Common structure and syntax</li>
-<li>✨ Emphasize user readability</li>
-<li>✨ Friendly documentation</li>
-<li>✨ Updates rapidly</li>
+<li class="fragment">✨ Common structure and syntax</li>
+<li class="fragment">✨ Emphasize user readability</li>
+<li class="fragment">✨ Friendly documentation</li>
+<li class="fragment">✨ Updates rapidly</li>
 </ul>
+</div>
 </section>
 <section id="the-tidyverse-2" class="slide level2">
 <h2>The “tidyverse”</h2>
+<div>
 <ul>
-<li>‼️ Extra installs over “base R”</li>
-<li>‼️ Very different syntax than “base R”</li>
-<li>‼️ Updates rapidly</li>
+<li class="fragment">‼️ Extra installs over “base R”</li>
+<li class="fragment">‼️ Very different syntax than “base R”</li>
+<li class="fragment">‼️ Updates rapidly (can be a reproducibility challenge)</li>
 </ul>
+</div>
 </section>
 <section id="the-tidyverse-3" class="slide level2">
 <h2>The “tidyverse”</h2>
+<div>
 <ul>
-<li>🧭 Only install/load the functions/packages you need</li>
-<li>🧭 Be aware that others may be unfamiliar; comment your code well</li>
-<li>🧭 Keep track of your package versions</li>
-<li>🧭 Software developers, keep an eye on changes!</li>
+<li class="fragment">🧭 Only install/load the functions/packages you need</li>
+<li class="fragment">🧭 Be aware that others may be unfamiliar; comment your code well</li>
+<li class="fragment">🧭 Keep track of your package versions</li>
+<li class="fragment">🧭 Software developers, keep an eye on changes!</li>
 </ul>
+</div>
 </section>
 <section id="tidy-data-in-r" class="slide level2">
 <h2>Tidy data in R</h2>
@@ -515,16 +550,12 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">install.packages</span>(<span class="st">"dplyr"</span>) <span class="co"># dataframe manipulation</span></span>
 <span id="cb1-2"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyr"</span>) <span class="co"># "reshaping" data</span></span>
 <span id="cb1-3"><a></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>) <span class="co"># open teaching dataset</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="coding-time-data-types-in-r" class="slide level2">
-<h2>Coding time: Data types in R</h2>
-<p>Key points:</p>
-<ul>
-<li>Major data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.</li>
-<li>Common tabular formats are <code>data.frame</code> or <code>tibble</code></li>
-<li>You can perform “vectorized” operations on whole vectors (or columns) at once.</li>
-<li>Missing data are handled as <code>NA</code>s.</li>
-</ul>
+<!-- ## Coding time: Data types in R -->
+<!-- Key points: -->
+<!-- -   Major data types in R include characters, integers, double (numeric), Boolean (T/F), and factors. -->
+<!-- -   Common tabular formats are `data.frame` or `tibble` -->
+<!-- -   You can perform "vectorized" operations on whole vectors (or columns) at once. -->
+<!-- -   Missing data are handled as `NA`s. -->
 </section>
 <section id="coding-time-dplyr" class="slide level2">
 <h2>Coding time: <code>dplyr</code></h2>
@@ -573,12 +604,12 @@
 <li>More ways of getting help: see the <a href="../11-getting-help/slides.html">Getting Help</a> section!</li>
 </ul>
 </section>
-<section id="wrapping-up" class="slide level2">
-<h2>Wrapping up</h2>
+<section id="more-git-practice" class="slide level2">
+<h2>More git practice</h2>
 <p>Work through the steps to synchronize the changes you’ve made today with GitHub.</p>
 </section>
-<section id="wrapping-up-1" class="slide level2">
-<h2>Wrapping up</h2>
+<section id="more-git-practice-1" class="slide level2">
+<h2>More git practice</h2>
 <p>Work through the steps to synchronize the changes you’ve made today with GitHub.</p>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -596,14 +627,18 @@
 </div>
 </div>
 </section>
-<section id="homework" class="slide level2">
-<h2>Homework</h2>
+<section id="your-colloqium-project" class="slide level2">
+<h2>Your colloqium project</h2>
 <ul>
-<li>Find a script you have used in one of your projects and translate it to use these verbs.
-<ul>
-<li>Bonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!</li>
-</ul></li>
+<li>Between now and Thursday, revisit the code in your colloquium project.</li>
+<li>Identify any sections of the code that could be improved based on the conversations and tools we covered today.</li>
+<li>Make those changes, if you have the skills. Otherwise, take notes and we will talk more on Thursday.</li>
 </ul>
+</section>
+<section id="references" class="slide level2">
+<h2>References</h2>
+<pre><code>Greg Wilson, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal: "Good Enough Practices for Scientific Computing". http://github.com/swcarpentry/good-enough-practices-in-scientific-computing/, 2016.</code></pre>
+<pre><code>Wallace, E..W.J., Meynert, A., Zielinski. T., Romanowski. A., et. al., (2022). Good Enough Practices in Scientific Computing: A Lesson (Version 0.1.0). https://doi.org/tbc; also https://github.com/carpentries-lab/good-enough-practices/.</code></pre>
 
 <div class="quarto-auto-generated-content">
 <p><img src="../../logo.png" class="slide-logo"></p>
@@ -611,7 +646,7 @@
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
