@@ -21,32 +21,71 @@ Do you collaborate with anyone who could or currently uses GitHub?
 What would you say to encourage them to start?
 :::
 
-## Review
-
-::: callout-note
-## Chat:
-
-How would you get set up?
-What would be your core workflow?
-:::
-
-## Warm-up
-
-Create a branch for today's work.
-
-::: callout-note
-Create this branch from a repo you own, *not* the demo from Tuesday!
-
-We might need to create a repo for R scripting for this workshop.
-:::
-
 ## Learning objectives
 
+::: incremental
+-   Practice tracking our work in git
+-   Understand what makes code "good"
 -   Understand the principles of "tidy data"
 -   Use tidyverse packages (`dplyr` and `tidyr`) to work with data in R.
--   Practice tracking our work in git
+-   Identify how to apply tidy tools to your colloqium project.
+:::
 
-## What is "tidy data"?
+## GitHub practice
+
+Create a branch for today's work in your workshop repo.
+
+## Discussion: What makes code "good"?
+
+Breakout rooms (5 minutes) to discuss, and then report back to the group.
+
+## What makes code "good"?
+
+Suggestions:
+
+::: incremental
+-   Readability
+-   Reproducibility
+-   Accuracy
+-   Speed/efficiency
+:::
+
+## What makes code "good"?
+
+Suggestions:
+
+-   **Readability**
+-   **Reproducibility**
+-   Accuracy
+-   Speed/efficiency
+
+## Readable code
+
+From [the Carpentries lab](https://carpentries-lab.github.io/good-enough-practices/03-software.html)...
+
+::: incremental
+-   Use comments to explain decisions
+-   Break code into modules (covered next session)
+-   Avoid repetition wherever possible (covered next week)
+-   Make dependencies clear
+:::
+
+## Reproducible code
+
+From [the Carpentries lab](https://carpentries-lab.github.io/good-enough-practices/03-software.html)...
+
+::: incremental
+-   Avoid using commenting out lines to control code
+-   Use a test data set
+-   Use version control (like GitHub!)
+-   Keep track of your software environment
+:::
+
+## Good enough practices
+
+[See the paper here!](http://github.com/swcarpentry/good-enough-practices-in-scientific-computing/)
+
+# What is "tidy data"?
 
 [Lowndes and Horst say it so beautifully.](https://docs.google.com/presentation/d/1N7hKepabvl9OrHjvGJWPjUsfzVdB5xzV5AsFndgSwms/edit#slide=id.p)
 
@@ -56,23 +95,29 @@ We might need to create a repo for R scripting for this workshop.
 
 ## The "tidyverse"
 
+::: incremental
 -   ✨ Common structure and syntax
 -   ✨ Emphasize user readability
 -   ✨ Friendly documentation
 -   ✨ Updates rapidly
+:::
 
 ## The "tidyverse"
 
+::: incremental
 -   ‼️ Extra installs over "base R"
 -   ‼️ Very different syntax than "base R"
--   ‼️ Updates rapidly
+-   ‼️ Updates rapidly (can be a reproducibility challenge)
+:::
 
 ## The "tidyverse"
 
+::: incremental
 -   🧭 Only install/load the functions/packages you need
 -   🧭 Be aware that others may be unfamiliar; comment your code well
 -   🧭 Keep track of your package versions
 -   🧭 Software developers, keep an eye on changes!
+:::
 
 ## Tidy data in R
 
@@ -84,14 +129,17 @@ install.packages("tidyr") # "reshaping" data
 install.packages("palmerpenguins") # open teaching dataset
 ```
 
-## Coding time: Data types in R
+<!-- ## Coding time: Data types in R -->
 
-Key points:
+<!-- Key points: -->
 
--   Major data types in R include characters, integers, double (numeric), Boolean (T/F), and factors.
--   Common tabular formats are `data.frame` or `tibble`
--   You can perform "vectorized" operations on whole vectors (or columns) at once.
--   Missing data are handled as `NA`s.
+<!-- -   Major data types in R include characters, integers, double (numeric), Boolean (T/F), and factors. -->
+
+<!-- -   Common tabular formats are `data.frame` or `tibble` -->
+
+<!-- -   You can perform "vectorized" operations on whole vectors (or columns) at once. -->
+
+<!-- -   Missing data are handled as `NA`s. -->
 
 ## Coding time: `dplyr`
 
@@ -125,11 +173,11 @@ Data should be as long as is reasonable (but not longer)!
 -   `?tidyr::pivot_wider` and index pages
 -   More ways of getting help: see the [Getting Help](../11-getting-help/slides.html) section!
 
-## Wrapping up
+## More git practice
 
 Work through the steps to synchronize the changes you've made today with GitHub.
 
-## Wrapping up
+## More git practice
 
 Work through the steps to synchronize the changes you've made today with GitHub.
 
@@ -143,7 +191,18 @@ Work through the steps to synchronize the changes you've made today with GitHub.
 `git push`
 :::
 
-## Homework
+## Your colloqium project
 
--   Find a script you have used in one of your projects and translate it to use these verbs.
-    -   Bonus points (in the form of 🎉🎊✨) if you look up a new function and apply it!
+-   Between now and Thursday, revisit the code in your colloquium project.
+-   Identify any sections of the code that could be improved based on the conversations and tools we covered today.
+-   Make those changes, if you have the skills. Otherwise, take notes and we will talk more on Thursday.
+
+## References
+
+```         
+Greg Wilson, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal: "Good Enough Practices for Scientific Computing". http://github.com/swcarpentry/good-enough-practices-in-scientific-computing/, 2016.
+```
+
+```         
+Wallace, E..W.J., Meynert, A., Zielinski. T., Romanowski. A., et. al., (2022). Good Enough Practices in Scientific Computing: A Lesson (Version 0.1.0). https://doi.org/tbc; also https://github.com/carpentries-lab/good-enough-practices/.
+```
