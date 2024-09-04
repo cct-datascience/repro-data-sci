@@ -1,7 +1,7 @@
 ---
 title: "Version Control With `git`"
-subtitle: "Session 3"
-date: "2023-09-12"
+subtitle: "Session 4"
+date: "2024-09-12"
 date-format: long
 format: uaz-revealjs
 chalkboard: true
@@ -15,7 +15,7 @@ What are your questions from last session?
 
 # Review
 
-What stood out to you when (if) you diagrammed your file system?
+What stood out to you when you diagrammed your file system?
 
 # Review {.smaller}
 
@@ -65,7 +65,7 @@ Semi-automated system for tracking changes with unlimited "undo"
 
     -   Visual interface
 
-    -   Optional!
+    -   Optional, but we will be using it!
 
 # Coding time: Git Setup
 
@@ -194,9 +194,12 @@ You have options:
 
 # Homework
 
--   Create a [GitHub](https://github.com) account if you don't have one.
-- Slack us your GitHub username!
--   Optional: Identify an existing folder on your computer and turn it into a git repository.
+-   GitHub signup
+    -   Create a [GitHub](https://github.com) account if you don't have one.
+    -   Slack us your GitHub username!
+-   Colloqium project
+    -   Identify the folder you want to use for your colloqium project and turn it into a git repository.
+    -   Take before and after screenshots.
 
 # Resources
 

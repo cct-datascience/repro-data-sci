@@ -1,20 +1,23 @@
 ---
-title: Reproduciblity and Data Science in R
-subtitle: "Fall 2023"
+title: Reproducibility and Data Science in R
+subtitle: "Fall 2024"
 format: html
+citation:
+  title: Syllabus
 ---
 
 Welcome to the syllabus for the CCT Data Science fall workshop series: **Reproducibility and Data Science in R.** If you didn't register for the course this year, sign up for our [mailing list](https://datascience.cct.arizona.edu/contact) to be notified when enrollment opens for next year's iteration and to be notified of our other monthly workshops.
 
-## Schedule (tentative)
+## Schedule
 
-We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link)
+We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)
 
-<!-- Edit by editing schedule.csv.  To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list.-->
+<!-- Edit by editing schedule.csv. To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list. -->
 
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
 library(tidyverse)
 library(gt)
 read_csv("schedule.csv") |>
@@ -47,7 +50,7 @@ read_csv("schedule.csv") |>
 >
 > Examples of unacceptable behavior by members, collaborators, and contributors include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.
 
-Read our full [code of conduct](https://osf.io/tzmhp/wiki/Code%20of%20Conduct/) and please report any violations or concerns to the course instructors or to Kristina Riemer ([kristinariemer\@arizona.edu](mailto:kristinariemer@arizona.edu)).
+Read our full [code of conduct](https://cct-datascience.github.io/group-procedures/code-of-conduct.html) and please report any violations or concerns to the course instructors or to Kristina Riemer ([kristinariemer\@arizona.edu](mailto:kristinariemer@arizona.edu)).
 
 ## Helpful Reads
 
@@ -64,6 +67,7 @@ Best practices for reproducibility:
 -   [Data organization in spreadsheets](https://doi.org/10.1080/00031305.2017.1375989)
 -   [A beginner's guide to conducting reproducible research](https://doi.org/10.1002/bes2.1801)
 -   [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research)
+-   [6 Steps Toward Reproducible Research](https://zenodo.org/records/12744715)
 
 Version control:
 
