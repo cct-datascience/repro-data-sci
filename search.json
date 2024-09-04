@@ -525,6 +525,13 @@
     "text": "How does Quarto work?\n\nCommand line tool, not an R package, but works well with RStudio\n\n\n\nknitr or jupyter are used to convert code chunks into markdown, pandoc converts markdown into output"
   },
   {
+    "objectID": "lessons/2-markdown-quarto/slides.html#create-a-new-quarto-document",
+    "href": "lessons/2-markdown-quarto/slides.html#create-a-new-quarto-document",
+    "title": "Documentation & Literate Programming",
+    "section": "Create a new Quarto document",
+    "text": "Create a new Quarto document\nIn RStudio: File &gt; New File &gt; Quarto Document\nClick “Render” to see the rendered output"
+  },
+  {
     "objectID": "lessons/2-markdown-quarto/slides.html#anatomy-of-a-.qmd-file",
     "href": "lessons/2-markdown-quarto/slides.html#anatomy-of-a-.qmd-file",
     "title": "Documentation & Literate Programming",
@@ -537,13 +544,6 @@
     "title": "Documentation & Literate Programming",
     "section": "YAML",
     "text": "YAML\n“Yet another markup language”\n\nCommonly used for configuration files\nkey: value pairs\nNesting indicated by indentation with 2 spaces"
-  },
-  {
-    "objectID": "lessons/2-markdown-quarto/slides.html#code",
-    "href": "lessons/2-markdown-quarto/slides.html#code",
-    "title": "Documentation & Literate Programming",
-    "section": "Code",
-    "text": "Code\n\nCode chunks can be R, Python, or other languages\nIf R, code is executed by knitr engine, otherwise by jupyter\nChunk options as YAML (#| key: value) modify execution behavior or output formatting"
   },
   {
     "objectID": "lessons/2-markdown-quarto/slides.html#markdown",
@@ -567,6 +567,13 @@
     "text": "Common markdown pitfalls\nSpaces within elements don’t matter!\nThis     sentence still  gets    rendered  correctly!\nThis sentence still gets rendered correctly!\nSingle line breaks don't separate paragraphs.\nSee?\n\nYou need two line breaks for that!\nSingle line breaks don’t separate paragraphs. See?\nYou need two line breaks for that!"
   },
   {
+    "objectID": "lessons/2-markdown-quarto/slides.html#code",
+    "href": "lessons/2-markdown-quarto/slides.html#code",
+    "title": "Documentation & Literate Programming",
+    "section": "Code",
+    "text": "Code\n\nCode chunks can be R, Python, or other languages\nIf R, code is executed by knitr engine, otherwise by jupyter\nChunk options as YAML (#| key: value) modify execution behavior or output formatting"
+  },
+  {
     "objectID": "lessons/2-markdown-quarto/slides.html#our-turn",
     "href": "lessons/2-markdown-quarto/slides.html#our-turn",
     "title": "Documentation & Literate Programming",
@@ -574,11 +581,18 @@
     "text": "Our turn\n\nCreate a new Quarto Document\nPractice editing and rendering\nExplore the Visual editor mode\nAdd citations and cross-references"
   },
   {
+    "objectID": "lessons/2-markdown-quarto/slides.html#readme.md",
+    "href": "lessons/2-markdown-quarto/slides.html#readme.md",
+    "title": "Documentation & Literate Programming",
+    "section": "README.md",
+    "text": "README.md\n\nYour README.md uses a simple version of markdown, and will get formatted nicely once we put it on GitHub\nYou can use the visual editor on .md files also\nIf you need to have code executed in your README, you can use format: gfm for “GitHub Flavored Markdown”"
+  },
+  {
     "objectID": "lessons/2-markdown-quarto/slides.html#learning-more-getting-help",
     "href": "lessons/2-markdown-quarto/slides.html#learning-more-getting-help",
     "title": "Documentation & Literate Programming",
     "section": "Learning More & Getting Help",
-    "text": "Learning More & Getting Help\n\nGetting started with Quarto tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\n#quarto channel in UA Data Science Slack"
+    "text": "Learning More & Getting Help\n\nGetting started with Quarto tutorial\nQuarto for Academics talk\nFull Quarto guide and reference (searchable!)\n#quarto channel in UA Data Science Slack\nRendering to GitHub Flavored Markdown"
   },
   {
     "objectID": "lessons/2-markdown-quarto/slides.html#your-tasks",
@@ -858,7 +872,7 @@
     "href": "lessons/2-markdown-quarto/notes.html#lesson-outline",
     "title": "Documentation and Literate Programming",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nQuarto: an open-source scientific and technical publishing system\n\nAllows combining markdown, code, and code output (tables, plots, etc)\nWide variety of outputs: html, pdf, word, and more\nUse cases:\n\nNotebook\nShare results with collaborators\nPresentations\nReproducible manuscripts\n\n\nHow does it work?\n\nqmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.\n\nAnatomy of a .Qmd\n\nLook familiar if you’ve used RMarkdown\nYAML header has metadata and settings\nMarkdown body\nCode chunks with R, Python, Julia, or other code\n\nCreate .Qmd and play\nDemo visual editor\n\nSwitch back and forth\n“Add anything” menu with cmd-/cmd-/\n\nRunning code in code chunks\nCode chunk options\n\nDemo some common ones like label, echo: false, fig-cap\n\nSections (and TOC)\nEquations\nCitations\nCross refs\nCallouts\nMention journal articles (check out AGU format example https://quarto-journals.github.io/agu/)\nPoint students toward tutorial and full documentation"
+    "text": "Lesson Outline\n\nQuarto: an open-source scientific and technical publishing system\n\nAllows combining markdown, code, and code output (tables, plots, etc)\nWide variety of outputs: html, pdf, word, and more\nUse cases:\n\nNotebook\nShare results with collaborators\nPresentations\nReproducible manuscripts\n\n\nHow does it work?\n\nqmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.\n\nAnatomy of a .Qmd\n\nLook familiar if you’ve used RMarkdown\nYAML header has metadata and settings\nMarkdown body\nCode chunks with R, Python, Julia, or other code\n\nCreate .Qmd and play\n\nin header: title, author, date\nin body: headers, itallics, bold, code, links\nRender as html\n\nDemo visual editor\n\nSwitch back and forth\n“Add anything” menu with cmd-/cmd-/\n\nRunning code in code chunks\n#| label: setup\n#| include: false\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(knitr)\n#| label: fig-box\n#| fig-cap: \"Boxplot of body mass in grams by penguin sex.\"\nggplot(penguins, aes(x = sex, y = body_mass_g)) + geom_boxplot()\n#| label: tbl-sample\n#| tbl-cap: \"Sample sizes of penguins by sex and island\"\ntable(penguins$sex, penguins$island, useNA = \"always\") |&gt; kable()\nCode chunk options\n\nDemo some common ones like label, echo: false, fig-cap , code-fold\nDemo applying to entire doc in YAML header\n\nAdd TOC (toc: true)\nEquations (look up how to cross ref equations during lesson)\nCitations (from DOI or from Zenodo)\nCross refs\nCallouts\nMention journal articles (check out AGU format example https://quarto-journals.github.io/agu/)\nPoint students toward tutorial and full documentation"
   },
   {
     "objectID": "lessons/3-shell/slides.html#review-of-last-session",

@@ -458,6 +458,11 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="create-a-new-quarto-document" class="slide level2">
+<h2>Create a new Quarto document</h2>
+<p>In RStudio: File &gt; New File &gt; Quarto Document</p>
+<p>Click “Render” to see the rendered output</p>
+</section>
 <section id="anatomy-of-a-.qmd-file" class="slide level2">
 <h2>Anatomy of a .Qmd file</h2>
 <div class="code-with-filename">
@@ -511,14 +516,6 @@
 <li><p>Nesting indicated by indentation with 2 spaces</p></li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<ul>
-<li><p>Code chunks can be R, Python, or other languages</p></li>
-<li><p>If R, code is executed by <code>knitr</code> engine, otherwise by <code>jupyter</code></p></li>
-<li><p>Chunk options as YAML (<code>#| key: value</code>) modify execution behavior or output formatting</p></li>
-</ul>
-</section>
 <section id="markdown" class="slide level2">
 <h2>Markdown</h2>
 <p>Markdown is a “markup language” that let’s you write plain text to indicate formatting. For example:</p>
@@ -560,6 +557,14 @@
 <p>Single line breaks don’t separate paragraphs. See?</p>
 <p>You need two line breaks for that!</p>
 </section>
+<section id="code" class="slide level2">
+<h2>Code</h2>
+<ul>
+<li><p>Code chunks can be R, Python, or other languages</p></li>
+<li><p>If R, code is executed by <code>knitr</code> engine, otherwise by <code>jupyter</code></p></li>
+<li><p>Chunk options as YAML (<code>#| key: value</code>) modify execution behavior or output formatting</p></li>
+</ul>
+</section>
 <section id="our-turn" class="slide level2">
 <h2>Our turn</h2>
 <ul>
@@ -569,6 +574,14 @@
 <li><p>Add citations and cross-references</p></li>
 </ul>
 </section>
+<section id="readme.md" class="slide level2">
+<h2>README.md</h2>
+<ul>
+<li>Your README.md uses a simple version of markdown, and will get formatted nicely once we put it on GitHub</li>
+<li>You can use the visual editor on .md files also</li>
+<li>If you need to have code executed in your README, you can use <code>format: gfm</code> for “GitHub Flavored Markdown”</li>
+</ul>
+</section>
 <section id="learning-more-getting-help" class="slide level2">
 <h2>Learning More &amp; Getting Help</h2>
 <ul>
@@ -576,6 +589,7 @@
 <li><p>Quarto for Academics <a href="https://www.youtube.com/watch?v=EbAAmrB0luA&amp;ab_channel=PositPBC">talk</a></p></li>
 <li><p>Full Quarto <a href="https://quarto.org/docs/guide/">guide</a> and <a href="https://quarto.org/docs/reference/">reference</a> (searchable!)</p></li>
 <li><p>#quarto channel in UA Data Science Slack</p></li>
+<li><p>Rendering to <a href="https://quarto.org/docs/reference/formats/markdown/gfm.html">GitHub Flavored Markdown</a></p></li>
 </ul>
 </section>
 <section id="your-tasks" class="slide level2">
