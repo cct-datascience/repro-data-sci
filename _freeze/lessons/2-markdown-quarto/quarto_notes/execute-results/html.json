@@ -1,0 +1,17 @@
+{
+  "hash": "056c46d6da9a111dec780cd47ec6b20f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"My Notes\"\nauthor: \"Eric Scott\"\ndate: \"2024-09-05\"\nformat: \n  html: \n    toc: true\ncode-fold: true\nbibliography: references.bib\n---\n\n\n\n\n## Load Data\n\n\n\n\n\n\n\n\n\nWe're using the `penguins` dataset from the `palmerpenguins` package [@palmerpenguins], so no loading of data is needed other than `library(palmerpenguins)`.\n\n## Results\n\n### Body Size\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"show\"}\nggplot(penguins, aes(x = sex, y = body_mass_g)) + geom_boxplot()\n```\n\n::: {.cell-output-display}\n![Boxplot of penguin body mass (in grams) by sex](quarto_notes_files/figure-html/fig-box-1.png){#fig-box width=672}\n:::\n:::\n\n\n\n\nAs you can see in @fig-box, males are larger than females.\nThe sample sizes are roughly equal at all islands for males and females (@tbl-sample).\n@dunn2016 also do some research with penguin size.\n\n\n\n\n::: {#tbl-sample .cell tbl-cap='Sample sizes of penguins by sex and island'}\n\n```{.r .cell-code}\nkable(table(penguins$sex, penguins$island, useNA = \"always\"))\n```\n\n::: {.cell-output-display}\n\n\n|       | Biscoe| Dream| Torgersen| NA|\n|:------|------:|-----:|---------:|--:|\n|female |     80|    61|        24|  0|\n|male   |     83|    62|        23|  0|\n|NA     |      5|     1|         5|  0|\n\n\n:::\n:::\n\n\n\n\n### Bill length\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(penguins, aes(x = sex, y = bill_length_mm)) + geom_boxplot()\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n```\n\n\n:::\n\n::: {.cell-output-display}\n![Bill length (mm) by sex](quarto_notes_files/figure-html/fig-bill-1.png){#fig-bill width=672}\n:::\n:::\n\n\n\n\nMales also have longer bills on average than females (@fig-bill).\n\n$$\ny = mx + b\n$$ {#eq-line}\n\n@eq-line shows the equation for a line with slope ($m$) and intercept ($b$)\n\n## Escaping markdown\n\nUse `\\` as an \"escape character\" to stop symbols from doing anything special.\n\n*itallics* vs \\*literally surrounded with astrixes\\*\n",
+    "supporting": [
+      "quarto_notes_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
