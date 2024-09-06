@@ -186,7 +186,7 @@
     "href": "lessons/6-github-collab/slides.html#review-1",
     "title": "Collaborate With GitHub",
     "section": "Review",
-    "text": "Review\nDid anyone add a repo to GitHub? What difficulties did you encounter?"
+    "text": "Review\nWhat difficulties did you have while putting your repo on GitHub?"
   },
   {
     "objectID": "lessons/6-github-collab/slides.html#collaborating-with-github",
@@ -200,7 +200,7 @@
     "href": "lessons/6-github-collab/slides.html#example-repo",
     "title": "Collaborate With GitHub",
     "section": "Example repo",
-    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: https://github.com/cct-datascience/repro-workshop-demo 1\nNeed one volunteer to edit the README.md and practice commit + push\n\nRead more about GitHub organizations"
+    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: https://github.com/cct-datascience/repro-workshop-demo 1\nNeed one volunteer to edit the README.md and practice commit + push"
   },
   {
     "objectID": "lessons/6-github-collab/slides.html#dealing-with-conflicts",
@@ -263,7 +263,28 @@
     "href": "lessons/6-github-collab/slides.html#collaborating-with-forks",
     "title": "Collaborate With GitHub",
     "section": "Collaborating with Forks",
-    "text": "Collaborating with Forks\nTo contribute to a repo you don’t have push permission for:\n\nFork the repo to your own GitHub\nClone the fork to your local computer\nMake commits (ideally on a branch)\nMake a pull request to the upstream repo\n\nLearn more, including handy usethis shortcuts: https://happygitwithr.com/fork-and-clone\n\n\n\n\n\n\nExercise\n\n\nIn pairs, practice this workflow to make a PR to our example repo"
+    "text": "Collaborating with Forks\nTo contribute to a repo you don’t have push permission for:\n\nFork the repo to your own GitHub\nClone the fork to your local computer\nMake commits (ideally on a branch)\nMake a pull request to the upstream repo\n\n\n\n\n\n\n\nTip\n\n\nLearn more, including handy usethis shortcuts: https://happygitwithr.com/fork-and-clone"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#practice",
+    "href": "lessons/6-github-collab/slides.html#practice",
+    "title": "Collaborate With GitHub",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\nExercise\n\n\nIn pairs, practice forking and cloning a demo repo you do not have permission to push to. Make a new branch, make commits, and make a pull request to the upstream repo.\n\n\n\n\nEncourage learners to use forking and cloning to explore and contribute to any code they can find on GitHub including R packages and research compendia."
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#resources",
+    "href": "lessons/6-github-collab/slides.html#resources",
+    "title": "Collaborate With GitHub",
+    "section": "Resources",
+    "text": "Resources\n\n\nForking and cloning\nPull request helpers in usethis\n#git channel in UA Data Science Slack"
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#your-tasks",
+    "href": "lessons/6-github-collab/slides.html#your-tasks",
+    "title": "Collaborate With GitHub",
+    "section": "Your Tasks",
+    "text": "Your Tasks\n\nFor the next update to your colloquium project, practice using a branch and and pull request on GitHub\nClone a repo you do not have permission to push to without forking it and see what happens when you try to use git push\nFork and clone a repo on GitHub to explore it (e.g. a lab mate’s code, a research compendium, your favorite R package)"
   },
   {
     "objectID": "lessons/6-github-collab/slides.html#references",
@@ -273,25 +294,32 @@
     "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nBryan, Jennifer. 2018. “Excuse Me, Do You Have a Moment to Talk about Version Control?” The American Statistician 72 (1): 2027. https://doi.org/10.1080/00031305.2017.1399928."
   },
   {
+    "objectID": "lessons/6-github-collab/slides.html#footnotes",
+    "href": "lessons/6-github-collab/slides.html#footnotes",
+    "title": "Collaborate With GitHub",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nRead more about GitHub organizations"
+  },
+  {
     "objectID": "lessons/5-github-basics/notes.html",
     "href": "lessons/5-github-basics/notes.html",
     "title": "Developing Code on Github",
     "section": "",
-    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
+    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. They’ll get the basics of working by themselves with GitHub (push/pull from main branch only) using RStudio."
   },
   {
     "objectID": "lessons/5-github-basics/notes.html#objective",
     "href": "lessons/5-github-basics/notes.html#objective",
     "title": "Developing Code on Github",
     "section": "",
-    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. Learners will practice developing new code on branches."
+    "text": "Learners will share their local repository on GitHub and learn how to sync some files while ignoring others systematically. They’ll get the basics of working by themselves with GitHub (push/pull from main branch only) using RStudio."
   },
   {
     "objectID": "lessons/5-github-basics/notes.html#lesson-outline",
     "href": "lessons/5-github-basics/notes.html#lesson-outline",
     "title": "Developing Code on Github",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\n(live coding) turn demo project from lesson 1 into a git repo with usethis::use_git()\n\nLive Coding: working with git in RStudio\n\nDemo add commit cycle with git pane AND git menu\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\nModify and make a commit\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nGo through checklist of usethis::git_sitrep() with student sharing screen\nDon’t have student share screen with PAT generation! Switch to your screen!\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them this lesson (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
+    "text": "Lesson Outline\n\nReview:\n\nWays of creating a git repo and how to know if it worked\n(live coding) turn demo project from lesson 1 into a git repo with usethis::use_git()\n\nLive Coding: working with git in RStudio\n\nDemo add commit cycle with git pane AND git menu\n\nLive Coding: .gitignore\n\nExplore .gitignore created by RStudio\nSoftware Carpentry .gitignore lesson\nDiscuss what files to .gitignore: what is “non-diffable”?\nModify and make a commit\n\nWhat is GitHub and why use it? (slides)\nLive Coding: GitHub setup\n\nBefore this lesson run gitcreds::gitcreds_delete() to simulate a brand new setup\nGo through checklist of usethis::git_sitrep()\nRemove the token you create before video is posted\n\nLive Coding: Putting your code on GitHub\n\nLocal first: usethis::use_github()\nGitHub first: create new repo on GitHub and create new R Studio project from version control\nOther ways are possible, but we’re not going to cover them this lesson (unless someone has issues)\n\nLive Coding: Push and Pull\n\nMake changes in RStudio, push\nMake changes on GitHub, pull\nHave Renata make changes, push, then pull\n\nNext time: How to work together on GitHub more safely\nHomework: Put a personal repository on GitHub."
   },
   {
     "objectID": "lessons/5-github-basics/notes.html#installation-materials",
@@ -802,7 +830,7 @@
     "href": "lessons/11-getting-help/slides.html#beware-of-stochastic-parrots1",
     "title": "Getting Help",
     "section": "Beware of stochastic parrots1",
-    "text": "Beware of stochastic parrots1\n\nLLMs don’t understand, but are good at mimicry\nUse with care:\n\nMay be wrong\nMay be inconsistent\n\n\n\n\nTools like ChatGPT pose possible ethical issues\n\nPlagiarism\nLabor conditions\nInputs may be sent to parent companies\n\n\n\nhttps://en.wikipedia.org/wiki/Stochastic_parrot"
+    "text": "Beware of stochastic parrots1\n\nLLMs don’t understand, but are good at mimicry\nUse with care:\n\nMay be wrong\nMay be inconsistent\n\n\n\n\nTools like ChatGPT pose possible ethical issues\n\nPlagiarism\nLabor conditions\nInputs may be sent to parent companies"
   },
   {
     "objectID": "lessons/11-getting-help/slides.html#getting-help-at-uarizona",
@@ -831,6 +859,13 @@
     "title": "Getting Help",
     "section": "Resources: UA community",
     "text": "Resources: UA community\n\nUA Data Science Institute\nUA Data Science Slack\nCCT Drop-in Hours, 9-10 on Tuesdays\n\n\n\n\n\nReproduciblity & Data Science in R"
+  },
+  {
+    "objectID": "lessons/11-getting-help/slides.html#footnotes",
+    "href": "lessons/11-getting-help/slides.html#footnotes",
+    "title": "Getting Help",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Stochastic_parrot"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#papers-with-open-code-are-cited-more",
@@ -879,14 +914,14 @@
     "href": "lessons/10-get-credit/slides.html#using-renv",
     "title": "Sharing Code & Getting Credit",
     "section": "Using renv",
-    "text": "Using renv\n\n\n\n\n\n\nExercise\n\n\nInstall renv and activate it for a project with renv::init(). Inspect the files that were created.\n\n\n\n\n\n\n\n\n\n\nIf you change your mind ...\n\n\nTo deactivate renv, run renv::deactivate(). To also remove all the files it created, run renv::deactivate(clean = TRUE) instead."
+    "text": "Using renv\n\n\n\n\n\n\nExercise\n\n\nInstall renv and activate it for a project with renv::init(). Inspect the files that were created.\n\n\n\n\n\n\n\n\n\n\nIf you change your mind …\n\n\nTo deactivate renv, run renv::deactivate(). To also remove all the files it created, run renv::deactivate(clean = TRUE) instead."
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#limitations-of-renv",
     "href": "lessons/10-get-credit/slides.html#limitations-of-renv",
     "title": "Sharing Code & Getting Credit",
     "section": "Limitations of renv",
-    "text": "Limitations of renv\n\nOnly tracks R packages 1\nCan’t reproduce operating system or system libraries\nSometimes quite annoying to use (but it’s getting better!)\n\nrenv can also be set up to track Python dependencies"
+    "text": "Limitations of renv\n\nOnly tracks R packages 1\nCan’t reproduce operating system or system libraries\nSometimes quite annoying to use (but it’s getting better!)"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#reproducible-everything-with-docker",
@@ -922,6 +957,13 @@
     "title": "Sharing Code & Getting Credit",
     "section": "References",
     "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nMaitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. 2023. “Code Sharing Increases Citations, but Remains Uncommon.” https://doi.org/10.21203/rs.3.rs-3222221/v1."
+  },
+  {
+    "objectID": "lessons/10-get-credit/slides.html#footnotes",
+    "href": "lessons/10-get-credit/slides.html#footnotes",
+    "title": "Sharing Code & Getting Credit",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nrenv can also be set up to track Python dependencies"
   },
   {
     "objectID": "lessons/10-get-credit/notes.html",
@@ -1138,7 +1180,7 @@
     "href": "lessons/5-github-basics/slides.html#todays-goals",
     "title": "GitHub",
     "section": "Today’s goals",
-    "text": "Today’s goals\n\nPractice using git with RStudio\nExplore commit history\nLearn how to tell git to ignore files\nPut a local repo on GitHub\nUse git push and git pull to synchronize with GitHub"
+    "text": "Today’s goals\n\nPractice using git with RStudio\nExplore commit history\nPut a local repo on GitHub\nUse git push and git pull to synchronize with GitHub"
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
@@ -1146,13 +1188,6 @@
     "title": "GitHub",
     "section": "Working with git in RStudio (Live Coding)",
     "text": "Working with git in RStudio (Live Coding)\nThe most common git commands can be used with the RStudio GUI."
-  },
-  {
-    "objectID": "lessons/5-github-basics/slides.html#ignoring-files",
-    "href": "lessons/5-github-basics/slides.html#ignoring-files",
-    "title": "GitHub",
-    "section": "Ignoring files",
-    "text": "Ignoring files\n\nIf you created an RStudio project with git enabled, you should have a top-level .gitignore\nUse this file (or create one) to stop git/GitHub from tracking…\n\nlarge files, especially if not plain text\nfiles with sensitive data\nunnecessary files (e.g. .DS_Store)\n\n\n\n\n\n\n\n\nExercise\n\n\nModify .gitignore to exclude all files ending in .pdf from git tracking. Make a commit for this change"
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#sharing-with-github",
@@ -1176,18 +1211,25 @@
     "text": "Work With RStudio and GitHub (Live Coding)\n\nPush local changes to GitHub\nPull GitHub changes to local"
   },
   {
+    "objectID": "lessons/5-github-basics/slides.html#ignoring-files",
+    "href": "lessons/5-github-basics/slides.html#ignoring-files",
+    "title": "GitHub",
+    "section": "Ignoring files",
+    "text": "Ignoring files\n\n\nIf you enabled git with Rstudio or usethis, a .gitignore file was added for you, explore the contents\n.gitignore also prevents files from being synced to GitHub\n\nUse to keep large and non “diff-able” files local only to avoid GitHub file size limits\nUse to prevent sensitive information from getting on GitHub (e.g. sensitive data, API tokens)\nCons: if ignored files are inputs, less reproducible and no backup on GitHub\n\nIf a file is already tracked by git, you can’t (easily) retroactively remove it from git history and GitHub.\n\n\n\nRemind learners that it is best practice to consider outputs as disposable, so might be good to .gitignore them if they are non-diff-able like .png files or .pdfs generated from Quarto. Can use .gitkeep to get git to track an empty folder."
+  },
+  {
     "objectID": "lessons/5-github-basics/slides.html#resources",
     "href": "lessons/5-github-basics/slides.html#resources",
     "title": "GitHub",
     "section": "Resources",
-    "text": "Resources\n\nhappygitwithr.com\nusethis::use_github()"
+    "text": "Resources\n\n#git channel in UA Data Science Slack\nhappygitwithr.com\nusethis::use_github()"
   },
   {
-    "objectID": "lessons/5-github-basics/slides.html#homework",
-    "href": "lessons/5-github-basics/slides.html#homework",
+    "objectID": "lessons/5-github-basics/slides.html#your-tasks",
+    "href": "lessons/5-github-basics/slides.html#your-tasks",
     "title": "GitHub",
-    "section": "Homework",
-    "text": "Homework\nPut a (real) project repo on GitHub (e.g. with use_github()) and share the link on Slack (if it can be made public)"
+    "section": "Your Tasks",
+    "text": "Your Tasks\n\nPut your research compendium on GitHub (e.g. with use_github()) and share the link in our Slack channel (if it can be made public)\nExplore other research compendia shared in Slack"
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#references",
@@ -1558,7 +1600,7 @@
     "href": "index.html#schedule",
     "title": "Reproducibility and Data Science in R",
     "section": "Schedule",
-    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n—\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n—\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n—\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
+    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n—\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
   },
   {
     "objectID": "index.html#code-of-conduct",

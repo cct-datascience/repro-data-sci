@@ -484,7 +484,7 @@
 
 <img data-src="gpt.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="beware-of-stochastic-parrots1" class="slide level2 smaller">
-<h2>Beware of stochastic parrots<sup>1</sup></h2>
+<h2>Beware of stochastic parrots<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></h2>
 <ul>
 <li>LLMs don’t <em>understand</em>, but are good at mimicry</li>
 <li>Use with care:
@@ -503,7 +503,7 @@
 </ul></li>
 </ul>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://en.wikipedia.org/wiki/Stochastic_parrot" class="uri">https://en.wikipedia.org/wiki/Stochastic_parrot</a></p></li></ol></aside></section>
+<aside></aside></section>
 <section id="getting-help-at-uarizona" class="slide level2">
 <h2>Getting help at UArizona</h2>
 
@@ -540,7 +540,12 @@
 </div>
 </div>
 </section>
+<section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
+<ol>
+<li id="fn1"><p><a href="https://en.wikipedia.org/wiki/Stochastic_parrot" class="uri">https://en.wikipedia.org/wiki/Stochastic_parrot</a></p></li>
+</ol>
+</section>
     </div>
   </div>
 
@@ -856,6 +861,11 @@
             if (link.dataset.originalHref !== undefined) {
               link.href = link.dataset.originalHref;
             }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
           }
         }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

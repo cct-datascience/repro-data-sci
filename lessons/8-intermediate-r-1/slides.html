@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="dcterms.date" content="2023-09-26">
+  <meta name="dcterms.date" content="2024-09-26">
   <title>Reproducibility &amp; Data Science in R – Intermediate R: Advanced data wrangling, functions, and control flow</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -394,12 +394,12 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Intermediate R: Advanced data wrangling, functions, and control flow</h1>
-  <p class="subtitle">Session 7</p>
+  <p class="subtitle">Session 8</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">September 26, 2023</p>
+  <p class="date">September 26, 2024</p>
 </section>
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning objectives</h1>
@@ -863,6 +863,11 @@
             if (link.dataset.originalHref !== undefined) {
               link.href = link.dataset.originalHref;
             }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
           }
         }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

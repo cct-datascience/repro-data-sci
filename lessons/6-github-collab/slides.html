@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="dcterms.date" content="2023-09-19">
+  <meta name="dcterms.date" content="2024-09-19">
   <title>Reproducibility &amp; Data Science in R – Collaborate With GitHub</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -417,12 +417,12 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Collaborate With GitHub</h1>
-  <p class="subtitle">Session 5</p>
+  <p class="subtitle">Session 6</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">September 19, 2023</p>
+  <p class="date">September 19, 2024</p>
 </section>
 <section id="review" class="slide level2">
 <h2>Review</h2>
@@ -451,7 +451,7 @@
 </section>
 <section id="review-1" class="slide level2">
 <h2>Review</h2>
-<p>Did anyone add a repo to GitHub? What difficulties did you encounter?</p>
+<p>What difficulties did you have while putting your repo on GitHub?</p>
 </section>
 <section id="collaborating-with-github" class="slide level2">
 <h2>Collaborating with GitHub</h2>
@@ -482,10 +482,10 @@
 <section id="example-repo" class="slide level2">
 <h2>Example repo</h2>
 <ul>
-<li><p>Everyone practice cloning this example repo as a new RStudio project: <a href="https://github.com/cct-datascience/repro-workshop-demo" class="uri">https://github.com/cct-datascience/repro-workshop-demo</a> <sup>1</sup></p></li>
+<li><p>Everyone practice cloning this example repo as a new RStudio project: <a href="https://github.com/cct-datascience/repro-workshop-demo" class="uri">https://github.com/cct-datascience/repro-workshop-demo</a> <a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></p></li>
 <li><p>Need <strong>one</strong> volunteer to edit the README.md and practice commit + push</p></li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">Read more about <strong>GitHub organizations</strong></a></p></li></ol></aside></section>
+<aside></aside></section>
 <section id="dealing-with-conflicts" class="slide level2">
 <h2>Dealing with Conflicts</h2>
 <ul>
@@ -627,7 +627,22 @@ You can clone the fork and since you own it, you can push to it.</p>
 <li>Make <strong>commits</strong> (ideally on a <strong>branch</strong>)</li>
 <li>Make a <strong>pull request</strong> to the upstream repo</li>
 </ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
 <p>Learn more, including handy <code>usethis</code> shortcuts: <a href="https://happygitwithr.com/fork-and-clone" class="uri">https://happygitwithr.com/fork-and-clone</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="practice" class="slide level2">
+<h2>Practice</h2>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -637,10 +652,40 @@ You can clone the fork and since you own it, you can push to it.</p>
 <p><strong>Exercise</strong></p>
 </div>
 <div class="callout-content">
-<p>In pairs, practice this workflow to make a PR to our example repo</p>
+<p>In pairs, practice <strong>forking</strong> and <strong>cloning</strong> a demo repo you do <em>not</em> have permission to push to. Make a new branch, make commits, and make a pull request to the upstream repo.</p>
 </div>
 </div>
 </div>
+<aside class="notes">
+<p>Encourage learners to use forking and cloning to explore and contribute to any code they can find on GitHub including R packages and research compendia.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
+<!--# TODO: add more resources for getting help with pull requests -->
+<ul>
+<li><p><a href="https://happygitwithr.com/fork-and-clone">Forking and cloning</a></p></li>
+<li><p><a href="https://usethis.r-lib.org/articles/pr-functions.html">Pull request helpers in <code>usethis</code></a></p></li>
+<li><p>#git channel in UA Data Science Slack</p></li>
+</ul>
+</section>
+<section id="your-tasks" class="slide level2">
+<h2>Your Tasks</h2>
+<ul>
+<li><p>For the next update to your colloquium project, practice using a branch and and pull request on GitHub</p></li>
+<li><p>Clone a repo you do not have permission to push to without forking it and see what happens when you try to use <code>git push</code></p></li>
+<li><p>Fork and clone a repo on GitHub to explore it (e.g.&nbsp;a lab mate’s code, a research compendium, your favorite R package)</p></li>
+</ul>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
@@ -660,7 +705,12 @@ Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk about Ve
 </div>
 </div>
 </section>
+<section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
+<ol>
+<li id="fn1"><p><a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">Read more about <strong>GitHub organizations</strong></a></p></li>
+</ol>
+</section>
     </div>
   </div>
 
@@ -976,6 +1026,11 @@ Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk about Ve
             if (link.dataset.originalHref !== undefined) {
               link.href = link.dataset.originalHref;
             }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
           }
         }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

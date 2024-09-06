@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="dcterms.date" content="2023-09-14">
+  <meta name="dcterms.date" content="2024-09-17">
   <title>Reproducibility &amp; Data Science in R – GitHub</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -349,12 +349,12 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">GitHub</h1>
-  <p class="subtitle">Session 4</p>
+  <p class="subtitle">Session 5</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">September 14, 2023</p>
+  <p class="date">September 17, 2024</p>
 </section>
 <section id="review-homework" class="slide level2">
 <h2>Review &amp; Homework</h2>
@@ -375,7 +375,6 @@
 <ol type="1">
 <li>Practice using git with RStudio</li>
 <li>Explore commit history</li>
-<li>Learn how to tell git to ignore files</li>
 <li>Put a local repo on GitHub</li>
 <li>Use <code>git push</code> and <code>git pull</code> to synchronize with GitHub</li>
 </ol>
@@ -383,31 +382,6 @@
 <section id="working-with-git-in-rstudio-live-coding" class="slide level2">
 <h2>Working with git in RStudio (Live Coding)</h2>
 <p>The most common git commands can be used with the RStudio GUI.</p>
-</section>
-<section id="ignoring-files" class="slide level2 smaller">
-<h2>Ignoring files</h2>
-<ul>
-<li>If you created an RStudio project with git enabled, you should have a top-level <code>.gitignore</code></li>
-<li>Use this file (or create one) to stop git/GitHub from tracking…
-<ul>
-<li>large files, especially if not plain text</li>
-<li>files with sensitive data</li>
-<li>unnecessary files (e.g.&nbsp;<code>.DS_Store</code>)</li>
-</ul></li>
-</ul>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Exercise</strong></p>
-</div>
-<div class="callout-content">
-<p>Modify <code>.gitignore</code> to exclude all files ending in <code>.pdf</code> from git tracking. Make a commit for this change</p>
-</div>
-</div>
-</div>
 </section>
 <section id="sharing-with-github" class="slide level2">
 <h2>Sharing with GitHub</h2>
@@ -453,16 +427,48 @@
 <li>Pull GitHub changes to local</li>
 </ul>
 </section>
+<section id="ignoring-files" class="slide level2 smaller">
+<h2>Ignoring files</h2>
+<div>
+<ul>
+<li class="fragment">If you enabled git with Rstudio or <code>usethis</code>, a .gitignore file was added for you, explore the contents</li>
+<li class="fragment"><code>.gitignore</code> also prevents files from being synced to GitHub
+<ul>
+<li class="fragment">Use to keep large and non “diff-able” files local only to avoid GitHub file size limits</li>
+<li class="fragment">Use to prevent sensitive information from getting on GitHub (e.g.&nbsp;sensitive data, API tokens)</li>
+<li class="fragment">Cons: if ignored files are <em>inputs</em>, less reproducible and no backup on GitHub</li>
+</ul></li>
+<li class="fragment">If a file is already tracked by git, you can’t (easily) retroactively remove it from git history and GitHub.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Remind learners that it is best practice to consider outputs as disposable, so might be good to .gitignore them if they are non-diff-able like .png files or .pdfs generated from Quarto. Can use .gitkeep to get git to track an empty folder.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="resources" class="slide level2">
 <h2>Resources</h2>
 <ul>
+<li><p>#git channel in UA Data Science Slack</p></li>
 <li><p><a href="https://happygitwithr.com/">happygitwithr.com</a></p></li>
 <li><p><a href="https://usethis.r-lib.org/reference/use_github.html"><code>usethis::use_github()</code></a></p></li>
 </ul>
 </section>
-<section id="homework" class="slide level2">
-<h2>Homework</h2>
-<p>Put a (real) project repo on GitHub (e.g.&nbsp;with <code>use_github()</code>) and share the link on Slack (if it can be made public)</p>
+<section id="your-tasks" class="slide level2">
+<h2>Your Tasks</h2>
+<ul>
+<li>Put your research compendium on GitHub (e.g.&nbsp;with <code>use_github()</code>) and share the link in our Slack channel (if it can be made public)</li>
+<li>Explore other research compendia shared in Slack</li>
+</ul>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
@@ -797,6 +803,11 @@ Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk about Ve
             if (link.dataset.originalHref !== undefined) {
               link.href = link.dataset.originalHref;
             }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
           }
         }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

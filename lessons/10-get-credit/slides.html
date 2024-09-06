@@ -10,7 +10,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="dcterms.date" content="2023-10-05">
+  <meta name="dcterms.date" content="2024-10-03">
   <title>Reproducibility &amp; Data Science in R – Sharing Code &amp; Getting Credit</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -419,7 +419,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">October 5, 2023</p>
+  <p class="date">October 3, 2024</p>
 </section>
 <section>
 <section id="why-share-code" class="title-slide slide level1 center">
@@ -576,7 +576,7 @@
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>If you change your mind ...</strong></p>
+<p><strong>If you change your mind …</strong></p>
 </div>
 <div class="callout-content">
 <p>To deactivate <code>renv</code>, run <code>renv::deactivate()</code>. To also remove all the files it created, run <code>renv::deactivate(clean = TRUE)</code> instead.</p>
@@ -588,11 +588,11 @@
 <section id="limitations-of-renv" class="slide level2">
 <h2>Limitations of <code>renv</code></h2>
 <ul>
-<li><p>Only tracks R packages <sup>1</sup></p></li>
+<li><p>Only tracks R packages <a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></p></li>
 <li><p>Can’t reproduce operating system or system libraries</p></li>
 <li><p>Sometimes quite annoying to use (but it’s getting better!)</p></li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><code>renv</code> can also be set up to track <a href="https://rstudio.github.io/renv/articles/python.html">Python dependencies</a></p></li></ol></aside></section>
+<aside></aside></section>
 <section id="reproducible-everything-with-docker" class="slide level2">
 <h2>Reproducible Everything with Docker</h2>
 <p>Docker containers…</p>
@@ -661,7 +661,12 @@ Maitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matis
 </div>
 </div>
 </section></section>
+<section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
+<ol>
+<li id="fn1"><p><code>renv</code> can also be set up to track <a href="https://rstudio.github.io/renv/articles/python.html">Python dependencies</a></p></li>
+</ol>
+</section>
     </div>
   </div>
 
@@ -977,6 +982,11 @@ Maitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matis
             if (link.dataset.originalHref !== undefined) {
               link.href = link.dataset.originalHref;
             }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
           }
         }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
