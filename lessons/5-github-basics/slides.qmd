@@ -1,13 +1,9 @@
 ---
 title: "GitHub"
-subtitle: "Session 4"
-date: "2023-09-14"
-date-format: long
+subtitle: "Session 5"
+date: "2024-09-17"
 format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
-logo: "../../logo.png"
 ---
 
 ## Review & Homework

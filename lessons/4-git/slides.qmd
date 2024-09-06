@@ -2,11 +2,7 @@
 title: "Version Control With `git`"
 subtitle: "Session 4"
 date: "2024-09-12"
-date-format: long
 format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
 ---
 
 # Review

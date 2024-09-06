@@ -1,12 +1,8 @@
 ---
 title: "Intermediate R II: Functions cont'd, iteration, and getting help"
-subtitle: "Session 8"
-date: "2023-09-28"
-date-format: long
+subtitle: "Session 9"
+date: "2023-10-01"
 format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
 ---
 
 # Before we jump in...
