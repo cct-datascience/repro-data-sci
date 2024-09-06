@@ -198,6 +198,11 @@ Work through the steps to synchronize the changes you've made today with GitHub.
 `git push`
 :::
 
+## Resources
+
+-   [R for Data Science online book](https://r4ds.hadley.nz/)
+-   [Tidyverse website](https://www.tidyverse.org/)
+
 ## Your colloqium project
 
 -   Between now and Thursday, revisit the code in your colloquium project.
