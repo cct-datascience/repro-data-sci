@@ -1,12 +1,16 @@
 ---
 title: "Intermediate R: Functions and control flow"
+
 subtitle: "Session 8"
 date: "2024-09-26"
 date-format: long
-format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
+format:
+  uaz-revealjs:
+    reference-location: document
+    link-external-newwindow: true
+    chalkboard: true
+    logo: "../../logo.png"
+    footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 # Learning objectives

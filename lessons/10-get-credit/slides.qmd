@@ -1,13 +1,16 @@
 ---
 title: "Sharing Code & Getting Credit"
 subtitle: "Session 10"
-date: "2023-10-05"
+date: "2024-10-03"
 date-format: long
-format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
+format:
+  uaz-revealjs:
+    reference-location: document
+    link-external-newwindow: true
+    chalkboard: true
+    logo: "../../logo.png"
+    footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
-logo: "../../logo.png"
 ---
 
 # Why share code?
@@ -104,7 +107,7 @@ Inspect the files that were created.
 . . .
 
 ::: callout-tip
-## If you change your mind \...
+## If you change your mind ...
 
 To deactivate `renv`, run `renv::deactivate()`.
 To also remove all the files it created, run `renv::deactivate(clean = TRUE)` instead.
