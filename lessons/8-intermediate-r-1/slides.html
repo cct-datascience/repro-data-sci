@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="dcterms.date" content="2024-09-26">
-  <title>Reproducibility &amp; Data Science in R – Intermediate R: Advanced data wrangling, functions, and control flow</title>
+  <title>Reproducibility &amp; Data Science in R – Intermediate R: Functions and control flow</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -393,7 +393,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Intermediate R: Advanced data wrangling, functions, and control flow</h1>
+  <h1 class="title">Intermediate R: Functions and control flow</h1>
   <p class="subtitle">Session 8</p>
 
 <div class="quarto-title-authors">
@@ -401,19 +401,13 @@
 
   <p class="date">September 26, 2024</p>
 </section>
+<section>
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning objectives</h1>
 <ul>
-<li>Write a data wrangling script using tidy verbs</li>
-<li>Convert a tailor-made script to a function</li>
+<li>Write custom functions</li>
 <li>Use if-else logic to generalize functions</li>
 </ul>
-</section>
-
-<section>
-<section id="part-i-data-wrangling-refresher" class="title-slide slide level1 center">
-<h1>Part I: Data wrangling refresher</h1>
-
 </section>
 <section id="picking-up-from-last-week" class="slide level2">
 <h2>Picking up from last week</h2>
@@ -423,21 +417,17 @@
 <li>Create a new branch for today’s work and pull</li>
 </ul>
 </section>
-<section id="data-wrangling-objectives" class="slide level2">
-<h2>Data wrangling objectives:</h2>
+<section id="revisiting-the-penguins-data" class="slide level2 incremental">
+<h2>Revisiting the penguins data</h2>
 <ul>
-<li>Write a data wrangling script using the functions we covered last week
-<ul>
-<li>Use <code>mutate</code> to convert units of columns</li>
-<li>Use <code>summarize</code> to calculate group-wise summary statistics</li>
-<li>Use <code>pivot_wider</code> to create cross-tabs</li>
-</ul></li>
-<li>Use “tidy selection” helpers to reduce repetition in this workflow!</li>
+<li>Note that units are in mm and g</li>
+<li>Today we’ll convert these to imperial measurements (inches and pounds)</li>
+<li>For this, we’ll use <em>functions</em>.</li>
 </ul>
 </section></section>
 <section>
-<section id="part-ii-functions" class="title-slide slide level1 center">
-<h1>Part II: Functions</h1>
+<section id="functions" class="title-slide slide level1 center">
+<h1>Functions</h1>
 
 </section>
 <section id="what-are-functions-in-r" class="slide level2">
@@ -481,21 +471,51 @@
 <span id="cb1-14"><a></a><span class="co"># Then you can use it:</span></span>
 <span id="cb1-15"><a></a><span class="co"># a_function(&lt;some_input&gt;)</span></span>
 <span id="cb1-16"><a></a><span class="co"># </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="coding-time" class="slide level2">
+<h2>Coding time</h2>
+<p>Write a function to convert metric to imperial measurements.</p>
+</section>
+<section id="sourcing-functions" class="slide level2">
+<h2>Sourcing functions</h2>
+<ul>
+<li>You can store functions in separate R scripts and import them to your main working script.</li>
+<li>This helps keep your main script simple and keeps your whole repo organized.</li>
+<li>Use <code>source(&lt;path_to_functions_script&gt;)</code> in your main script.</li>
+</ul>
+</section>
+<section id="coding-time-1" class="slide level2">
+<h2>Coding time</h2>
+<p>Save our function in a separate R script and source it from a data wrangling script.</p>
 </section></section>
 <section>
-<section id="part-iii-conditionals" class="title-slide slide level1 center">
-<h1>Part III: Conditionals</h1>
+<section id="control-flow-with-conditionals" class="title-slide slide level1 center">
+<h1>Control flow with conditionals</h1>
 
 </section>
 <section id="what-are-conditionals" class="slide level2">
 <h2>What are conditionals?</h2>
 <ul>
-<li><code>if</code> and <code>ifelse</code> statements</li>
-<li>Balance readability and flexibility in functions</li>
+<li>Decide which action to take based on whether some condition is <code>TRUE</code> or <code>FALSE</code></li>
+<li>Balance readability and flexibility in scripts and functions</li>
 </ul>
 </section>
-<section id="conditionals-in-r" class="slide level2">
-<h2>Conditionals in R</h2>
+<section id="conditional-syntax" class="slide level2">
+<h2>Conditional syntax</h2>
+<pre><code>if(&lt;condition&gt;) {
+  &lt;action to take if TRUE&gt;
+}</code></pre>
+</section>
+<section id="conditional-syntax-1" class="slide level2">
+<h2>Conditional syntax</h2>
+<pre><code>if(&lt;condition&gt;) {
+  &lt;action to take if TRUE&gt;
+} else {
+  &lt;action to take if FALSE&gt;
+}</code></pre>
+</section>
+<section id="defining-conditions" class="slide level2">
+<h2>Defining conditions</h2>
 <ul>
 <li><code>==</code> for “is equal to”</li>
 <li><code>!=</code> for “not equal to:</li>
@@ -506,10 +526,10 @@
 <li>…and more!</li>
 </ul>
 </section>
-<section id="conditionals-objectives" class="slide level2">
-<h2>Conditionals objectives</h2>
+<section id="coding-time-2" class="slide level2">
+<h2>Coding time</h2>
 <ul>
-<li>Add <code>ifelse</code> logic to our data wrangling function</li>
+<li>Use conditionals to make a flexible function.</li>
 </ul>
 </section>
 <section id="finishing-up" class="slide level2">
@@ -519,26 +539,19 @@
 <li>Open a pull request.</li>
 </ul>
 </section>
-<section id="homework" class="slide level2">
-<h2>Homework</h2>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
 <ul>
-<li>None, except for…</li>
+<li><a href="https://rstudio-education.github.io/hopr/">Hands-on Programming with R online book</a></li>
+<li><a href="https://swcarpentry.github.io/r-novice-gapminder/">Software Carpentry intermediate R lesson</a></li>
 </ul>
 </section>
-<section id="show-and-tell-late-october" class="slide level2">
-<h2>Show and tell (Late October)</h2>
+<section id="your-tasks" class="slide level2">
+<h2>Your tasks</h2>
 <ul>
-<li>An opportunity to apply workshop skills to your own work.</li>
-<li>You could apply different parts to different projects, or more integratively to one single project.</li>
-<li>Optional, but encouraged!</li>
-</ul>
-</section>
-<section id="some-inspirations" class="slide level2">
-<h2>Some inspirations</h2>
-<ul>
-<li>Turn the project folder for one of your current research project into a git/GitHub repo and/or R project</li>
-<li>Modify an R script to use functions, conditionals, or best-practices for code formatting</li>
-<li>Improve directory organization for project or your entire computer!</li>
+<li>Identify parts of your colloquium project code that could be turned into functions.</li>
+<li>Good candidates are: repeated sections, complicated sidebars to the main flow</li>
+<li>Convert these sections to functions and <code>source()</code> them to clean up the main script.</li>
 </ul>
 
 <div class="quarto-auto-generated-content">

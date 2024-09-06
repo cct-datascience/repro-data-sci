@@ -1386,6 +1386,13 @@
     "text": "More git practice\nWork through the steps to synchronize the changes you’ve made today with GitHub.\n\n\n\n\n\n\nCommand-line instructions\n\n\ngit add &lt;your script name&gt;\ngit commit\ngit push"
   },
   {
+    "objectID": "lessons/7-data-manipulation/slides.html#resources",
+    "href": "lessons/7-data-manipulation/slides.html#resources",
+    "title": "Data manipulation with dplyr and tidyr",
+    "section": "Resources",
+    "text": "Resources\n\nR for Data Science online book\nTidyverse website"
+  },
+  {
     "objectID": "lessons/7-data-manipulation/slides.html#your-colloqium-project",
     "href": "lessons/7-data-manipulation/slides.html#your-colloqium-project",
     "title": "Data manipulation with dplyr and tidyr",
@@ -1402,93 +1409,121 @@
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#picking-up-from-last-week",
     "href": "lessons/8-intermediate-r-1/slides.html#picking-up-from-last-week",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "title": "Intermediate R: Functions and control flow",
     "section": "Picking up from last week",
     "text": "Picking up from last week\n\nCommit last week’s work to GitHub and push\nMerge your work to main!\nCreate a new branch for today’s work and pull"
   },
   {
-    "objectID": "lessons/8-intermediate-r-1/slides.html#data-wrangling-objectives",
-    "href": "lessons/8-intermediate-r-1/slides.html#data-wrangling-objectives",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Data wrangling objectives:",
-    "text": "Data wrangling objectives:\n\nWrite a data wrangling script using the functions we covered last week\n\nUse mutate to convert units of columns\nUse summarize to calculate group-wise summary statistics\nUse pivot_wider to create cross-tabs\n\nUse “tidy selection” helpers to reduce repetition in this workflow!"
+    "objectID": "lessons/8-intermediate-r-1/slides.html#revisiting-the-penguins-data",
+    "href": "lessons/8-intermediate-r-1/slides.html#revisiting-the-penguins-data",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Revisiting the penguins data",
+    "text": "Revisiting the penguins data\n\nNote that units are in mm and g\nToday we’ll convert these to imperial measurements (inches and pounds)\nFor this, we’ll use functions."
   },
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#what-are-functions-in-r",
     "href": "lessons/8-intermediate-r-1/slides.html#what-are-functions-in-r",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "title": "Intermediate R: Functions and control flow",
     "section": "What are functions in R?",
     "text": "What are functions in R?\n\nWe use pre-written functions constantly.\nAutomated “recipes” for executing code\nInputs (“arguments”) and outputs"
   },
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#why-write-our-own-functions",
     "href": "lessons/8-intermediate-r-1/slides.html#why-write-our-own-functions",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "title": "Intermediate R: Functions and control flow",
     "section": "Why write our own functions?",
     "text": "Why write our own functions?\n\nAvoid repetition (+ mistakes)\nEnhance portability + reproducibility"
   },
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#writing-a-function-objectives",
     "href": "lessons/8-intermediate-r-1/slides.html#writing-a-function-objectives",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "title": "Intermediate R: Functions and control flow",
     "section": "Writing a function objectives",
     "text": "Writing a function objectives\n\nConvert our data wrangling script into a function\nBreak this function into smaller, human-readable functions\nMake this function flexible to apply to other data"
   },
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#anatomy-of-a-function",
     "href": "lessons/8-intermediate-r-1/slides.html#anatomy-of-a-function",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "title": "Intermediate R: Functions and control flow",
     "section": "Anatomy of a function",
     "text": "Anatomy of a function\n# Defining a function\n# a_function will be the name of the function\n# arguments go within the ()\n# code goes in the curly braces\n\na_function &lt;- function(an_argument) {\n  # code to execute goes here\n  \n  # whatever is inside return() comes out of the funciton\n  return(final_output) \n}\n\n# Run the code to create the function\n# Then you can use it:\n# a_function(&lt;some_input&gt;)\n#"
   },
   {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#coding-time",
+    "href": "lessons/8-intermediate-r-1/slides.html#coding-time",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Coding time",
+    "text": "Coding time\nWrite a function to convert metric to imperial measurements."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#sourcing-functions",
+    "href": "lessons/8-intermediate-r-1/slides.html#sourcing-functions",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Sourcing functions",
+    "text": "Sourcing functions\n\nYou can store functions in separate R scripts and import them to your main working script.\nThis helps keep your main script simple and keeps your whole repo organized.\nUse source(&lt;path_to_functions_script&gt;) in your main script."
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#coding-time-1",
+    "href": "lessons/8-intermediate-r-1/slides.html#coding-time-1",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Coding time",
+    "text": "Coding time\nSave our function in a separate R script and source it from a data wrangling script."
+  },
+  {
     "objectID": "lessons/8-intermediate-r-1/slides.html#what-are-conditionals",
     "href": "lessons/8-intermediate-r-1/slides.html#what-are-conditionals",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "title": "Intermediate R: Functions and control flow",
     "section": "What are conditionals?",
-    "text": "What are conditionals?\n\nif and ifelse statements\nBalance readability and flexibility in functions"
+    "text": "What are conditionals?\n\nDecide which action to take based on whether some condition is TRUE or FALSE\nBalance readability and flexibility in scripts and functions"
   },
   {
-    "objectID": "lessons/8-intermediate-r-1/slides.html#conditionals-in-r",
-    "href": "lessons/8-intermediate-r-1/slides.html#conditionals-in-r",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Conditionals in R",
-    "text": "Conditionals in R\n\n== for “is equal to”\n!= for “not equal to:\n&lt;, &gt; for less than/greater than\n&lt;=, &gt;= for less than or equal to/greater than or equal to\nis.na() for is it NA?\n%in% for, is this value in a vector of possibilities\n…and more!"
+    "objectID": "lessons/8-intermediate-r-1/slides.html#conditional-syntax",
+    "href": "lessons/8-intermediate-r-1/slides.html#conditional-syntax",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Conditional syntax",
+    "text": "Conditional syntax\nif(&lt;condition&gt;) {\n  &lt;action to take if TRUE&gt;\n}"
   },
   {
-    "objectID": "lessons/8-intermediate-r-1/slides.html#conditionals-objectives",
-    "href": "lessons/8-intermediate-r-1/slides.html#conditionals-objectives",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Conditionals objectives",
-    "text": "Conditionals objectives\n\nAdd ifelse logic to our data wrangling function"
+    "objectID": "lessons/8-intermediate-r-1/slides.html#conditional-syntax-1",
+    "href": "lessons/8-intermediate-r-1/slides.html#conditional-syntax-1",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Conditional syntax",
+    "text": "Conditional syntax\nif(&lt;condition&gt;) {\n  &lt;action to take if TRUE&gt;\n} else {\n  &lt;action to take if FALSE&gt;\n}"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#defining-conditions",
+    "href": "lessons/8-intermediate-r-1/slides.html#defining-conditions",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Defining conditions",
+    "text": "Defining conditions\n\n== for “is equal to”\n!= for “not equal to:\n&lt;, &gt; for less than/greater than\n&lt;=, &gt;= for less than or equal to/greater than or equal to\nis.na() for is it NA?\n%in% for, is this value in a vector of possibilities\n…and more!"
+  },
+  {
+    "objectID": "lessons/8-intermediate-r-1/slides.html#coding-time-2",
+    "href": "lessons/8-intermediate-r-1/slides.html#coding-time-2",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Coding time",
+    "text": "Coding time\n\nUse conditionals to make a flexible function."
   },
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#finishing-up",
     "href": "lessons/8-intermediate-r-1/slides.html#finishing-up",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
+    "title": "Intermediate R: Functions and control flow",
     "section": "Finishing up",
     "text": "Finishing up\n\nCommit your changes and push\nOpen a pull request."
   },
   {
-    "objectID": "lessons/8-intermediate-r-1/slides.html#homework",
-    "href": "lessons/8-intermediate-r-1/slides.html#homework",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Homework",
-    "text": "Homework\n\nNone, except for…"
+    "objectID": "lessons/8-intermediate-r-1/slides.html#resources",
+    "href": "lessons/8-intermediate-r-1/slides.html#resources",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Resources",
+    "text": "Resources\n\nHands-on Programming with R online book\nSoftware Carpentry intermediate R lesson"
   },
   {
-    "objectID": "lessons/8-intermediate-r-1/slides.html#show-and-tell-late-october",
-    "href": "lessons/8-intermediate-r-1/slides.html#show-and-tell-late-october",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Show and tell (Late October)",
-    "text": "Show and tell (Late October)\n\nAn opportunity to apply workshop skills to your own work.\nYou could apply different parts to different projects, or more integratively to one single project.\nOptional, but encouraged!"
-  },
-  {
-    "objectID": "lessons/8-intermediate-r-1/slides.html#some-inspirations",
-    "href": "lessons/8-intermediate-r-1/slides.html#some-inspirations",
-    "title": "Intermediate R: Advanced data wrangling, functions, and control flow",
-    "section": "Some inspirations",
-    "text": "Some inspirations\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, conditionals, or best-practices for code formatting\nImprove directory organization for project or your entire computer!\n\n\n\n\n\nReproduciblity & Data Science in R"
+    "objectID": "lessons/8-intermediate-r-1/slides.html#your-tasks",
+    "href": "lessons/8-intermediate-r-1/slides.html#your-tasks",
+    "title": "Intermediate R: Functions and control flow",
+    "section": "Your tasks",
+    "text": "Your tasks\n\nIdentify parts of your colloquium project code that could be turned into functions.\nGood candidates are: repeated sections, complicated sidebars to the main flow\nConvert these sections to functions and source() them to clean up the main script.\n\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/9-intermediate-r-2/slides.html#show-and-tell-late-october",
@@ -1600,7 +1635,7 @@
     "href": "index.html#schedule",
     "title": "Reproducibility and Data Science in R",
     "section": "Schedule",
-    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n—\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
+    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
   },
   {
     "objectID": "index.html#code-of-conduct",
