@@ -2,14 +2,7 @@
 title: "Reproducibility & Data Science in R"
 subtitle: "Session 1"
 date: "2024-09-03"
-date-format: long
-format: 
-  uaz-revealjs:
-    reference-location: document
-    link-external-newwindow: true
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
+format: uaz-revealjs
 bibliography: references.bib
 ---
 

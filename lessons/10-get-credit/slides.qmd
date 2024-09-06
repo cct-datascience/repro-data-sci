@@ -1,13 +1,9 @@
 ---
 title: "Sharing Code & Getting Credit"
 subtitle: "Session 10"
-date: "2023-10-05"
-date-format: long
+date: "2024-10-03"
 format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
-logo: "../../logo.png"
 ---
 
 # Why share code?
@@ -56,7 +52,7 @@ Make it **easier** for people to cite your code
 ## Options for archiving {.smaller}
 
 | Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
-|--------------|--------------|--------------|--------------|----------------|
+|-------------|-------------|--------------|-------------|---------------------|
 | Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |
 | Dryad     | Yes             | No, but some publishers cover cost | No                  | Intended for data, not code. Partners with Zenodo |
 | Figshare  | Yes             | Yes                                | Yes                 | Can't choose your license                         |
@@ -104,7 +100,7 @@ Inspect the files that were created.
 . . .
 
 ::: callout-tip
-## If you change your mind \...
+## If you change your mind ...
 
 To deactivate `renv`, run `renv::deactivate()`.
 To also remove all the files it created, run `renv::deactivate(clean = TRUE)` instead.

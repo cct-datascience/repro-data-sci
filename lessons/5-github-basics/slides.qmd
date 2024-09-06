@@ -1,13 +1,9 @@
 ---
 title: "GitHub"
 subtitle: "Session 5"
-format: 
-  uaz-revealjs:
-    link-external-newwindow: true
-    chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
+date: "2024-09-17"
+format: uaz-revealjs
 bibliography: references.bib
-logo: "../../logo.png"
 ---
 
 ## Review & Homework

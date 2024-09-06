@@ -1,14 +1,11 @@
 ---
 title: "Collaborate With GitHub"
 subtitle: "Session 6"
+date: "2024-09-19"
 format: 
   uaz-revealjs:
     theme: "fix-mermaid.scss"
-    link-external-newwindow: true
-    chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
-logo: "../../logo.png"
 ---
 
 ## Review

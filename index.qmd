@@ -12,7 +12,7 @@ Welcome to the syllabus for the CCT Data Science fall workshop series: **Reprodu
 
 We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)
 
-<!-- Edit by editing schedule.csv. To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list.  -->
+<!-- Edit by editing schedule.csv. To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list.-->
 
 ```{r}
 #| echo: false
@@ -48,7 +48,7 @@ read_csv("schedule.csv") |>
 >
 > Our group is committed to ensuring a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.
 >
-> Examples of unacceptable behavior by members, collaborators, and contributors include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.
+> Examples of unacceptable behavior by members, collaborators, and contributors include: the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.
 
 Read our full [code of conduct](https://cct-datascience.github.io/group-procedures/code-of-conduct.html) and please report any violations or concerns to the course instructors or to Kristina Riemer ([kristinariemer\@arizona.edu](mailto:kristinariemer@arizona.edu)).
 

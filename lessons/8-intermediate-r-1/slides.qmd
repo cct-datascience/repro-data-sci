@@ -1,12 +1,8 @@
 ---
 title: "Intermediate R: Advanced data wrangling, functions, and control flow"
-subtitle: "Session 7"
-date: "2023-09-26"
-date-format: long
+subtitle: "Session 8"
+date: "2024-09-26"
 format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
 ---
 
 # Learning objectives

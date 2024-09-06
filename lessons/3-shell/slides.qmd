@@ -2,11 +2,7 @@
 title: "File systems and the command line"
 subtitle: "Session 3"
 date: "2024-09-10"
-date-format: long
 format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
 ---
 
 ## Review of last session
