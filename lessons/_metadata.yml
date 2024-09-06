@@ -1,8 +1,0 @@
-format: 
-  uaz-revealjs:
-    reference-location: document
-    link-external-newwindow: true
-    chalkboard: true
-date-format: long
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
