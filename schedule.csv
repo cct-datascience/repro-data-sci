@@ -3,8 +3,8 @@ Lesson,Date,Theme,Topic,Links,Notes
 2,2024-09-05,Document & Publish,Literate programming with Quarto,"[slides](lessons/2-markdown-quarto/slides.html), [example qmd](https://github.com/cct-datascience/repro-data-sci/raw/main/lessons/2-markdown-quarto/quarto_example.zip) (also includes .bib file)",
 3,2024-09-10,Share & Collaborate,File systems and command line,[slides](lessons/3-shell/slides.html),"Install git, carpentries shell episodes 1 & 2"
 4,2024-09-12,Share & Collaborate,Version control with git,[slides](lessons/4-git/slides.html),"git novice lessons 2-4, then git pane of RStudio"
-5,2024-09-17,Share & Collaborate,Developing code on GitHub,,"git_sitrep(), use_github(), git novice lesson 7"
-6,2024-09-19,Share & Collaborate,Collaborating with GitHub,,"git novice lesson 8, pr_init(), pr_push(), pr_finish()"
+5,2024-09-17,Share & Collaborate,Developing code on GitHub,[slides](lessons/5-github-basics/slides.html),"git_sitrep(), use_github(), git novice lesson 7"
+6,2024-09-19,Share & Collaborate,Collaborating with GitHub,[slides](lessons/6-github-collab/slides.html),"git novice lesson 8, pr_init(), pr_push(), pr_finish()"
 7,2024-09-24,Tidy & Wrangle,Data manipulation & coding best practices,[slides](lessons/7-data-manipulation/slides.html),data carpentry R ecology episodes 2 & 3
 8,2024-09-26,Repeat & Reproduce,Intermediate R programming I,[slides](lessons/8-intermediate-r-1/slides.html),functions
 9,2024-10-01,Repeat & Reproduce,Intermediate R programming II,,iteration (and anonymous functions)

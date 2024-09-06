@@ -1,9 +1,13 @@
 ---
 title: "Getting Help"
-format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
+date-format: long
+format:
+  uaz-revealjs:
+    reference-location: document
+    link-external-newwindow: true
+    chalkboard: true
+    logo: "../../logo.png"
+    footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 ## Shell commands

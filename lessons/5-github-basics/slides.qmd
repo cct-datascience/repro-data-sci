@@ -1,13 +1,16 @@
 ---
 title: "GitHub"
-subtitle: "Session 4"
-date: "2023-09-14"
+subtitle: "Session 5"
+date: "2024-09-17"
 date-format: long
-format: uaz-revealjs
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
+format:
+  uaz-revealjs:
+    reference-location: document
+    link-external-newwindow: true
+    chalkboard: true
+    logo: "../../logo.png"
+    footer: "[Reproduciblity & Data Science in R](../../index.html)"
 bibliography: references.bib
-logo: "../../logo.png"
 ---
 
 ## Review & Homework
@@ -26,28 +29,12 @@ logo: "../../logo.png"
 
 1.  Practice using git with RStudio
 2.  Explore commit history
-3.  Learn how to tell git to ignore files
-4.  Put a local repo on GitHub
-5.  Use `git push` and `git pull` to synchronize with GitHub
+3.  Put a local repo on GitHub
+4.  Use `git push` and `git pull` to synchronize with GitHub
 
 ## Working with git in RStudio (Live Coding)
 
 The most common git commands can be used with the RStudio GUI.
-
-## Ignoring files {.smaller}
-
--   If you created an RStudio project with git enabled, you should have a top-level `.gitignore`
--   Use this file (or create one) to stop git/GitHub from tracking...
-    -   large files, especially if not plain text
-    -   files with sensitive data
-    -   unnecessary files (e.g. `.DS_Store`)
-
-::: callout-tip
-## Exercise
-
-Modify `.gitignore` to exclude all files ending in `.pdf` from git tracking.
-Make a commit for this change
-:::
 
 ## Sharing with GitHub
 
@@ -75,15 +62,34 @@ Figure 2 from [@bryan2018]
 -   Push local changes to GitHub
 -   Pull GitHub changes to local
 
+## Ignoring files {.smaller}
+
+::: incremental
+-   If you enabled git with Rstudio or `usethis`, a .gitignore file was added for you, explore the contents
+-   `.gitignore` also prevents files from being synced to GitHub
+    -   Use to keep large and non "diff-able" files local only to avoid GitHub file size limits
+    -   Use to prevent sensitive information from getting on GitHub (e.g. sensitive data, API tokens)
+    -   Cons: if ignored files are *inputs*, less reproducible and no backup on GitHub
+-   If a file is already tracked by git, you can't (easily) retroactively remove it from git history and GitHub.
+:::
+
+::: notes
+Remind learners that it is best practice to consider outputs as disposable, so might be good to .gitignore them if they are non-diff-able like .png files or .pdfs generated from Quarto.
+Can use .gitkeep to get git to track an empty folder.
+:::
+
 ## Resources
+
+-   #git channel in UA Data Science Slack
 
 -   [happygitwithr.com](https://happygitwithr.com/)
 
 -   [`usethis::use_github()`](https://usethis.r-lib.org/reference/use_github.html)
 
-## Homework
+## Your Tasks
 
-Put a (real) project repo on GitHub (e.g. with `use_github()`) and share the link on Slack (if it can be made public)
+-   Put your research compendium on GitHub (e.g. with `use_github()`) and share the link in our Slack channel (if it can be made public)
+-   Explore other research compendia shared in Slack
 
 ## References
 

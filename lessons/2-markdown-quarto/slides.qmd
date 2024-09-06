@@ -1,12 +1,15 @@
 ---
 title: "Documentation & Literate Programming"
 subtitle: "Session 2"
-format: 
+date: "2024-09-05"
+date-format: long
+format:
   uaz-revealjs:
+    reference-location: document
     link-external-newwindow: true
-chalkboard: true
-footer: "[Reproduciblity & Data Science in R](../../index.html)"
-logo: "../../logo.png"
+    chalkboard: true
+    logo: "../../logo.png"
+    footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
 ## Review of last lesson
