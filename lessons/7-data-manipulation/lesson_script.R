@@ -8,11 +8,13 @@ if (FALSE) {
   install.packages("dplyr")
   install.packages("tidyr")
   install.packages("palmerpenguins")
+  install.packages("ggplot2")
 }
 
 library(dplyr)
 library(tidyr)
 library(palmerpenguins)
+library(ggplot2)
 
 # Load data
 
@@ -127,7 +129,6 @@ island_coordinates <- data.frame(
   latitude = c(-65.433, -64.733, -64.766),
   longitude = c(-65.5, -64.344, -64.083)
 )
-library(ggplot2)
 
 ggplot(island_coordinates, aes(latitude, longitude)) +
   geom_point() +
@@ -138,8 +139,6 @@ penguins_coords <- left_join(penguins, island_coordinates)
 ggplot(penguins_coords, aes(longitude, body_mass_g, color = species)) +
   geom_jitter() +
   scale_color_viridis_d(option = "mako", begin = .2, end = .8)
-
-#### Optional: advanced topics ####
 
 #### Modify - add - commit ####
 

@@ -1,5 +1,5 @@
 ---
-title: "Intermediate R: Advanced data wrangling, functions, and control flow"
+title: "Intermediate R: Functions and control flow"
 subtitle: "Session 8"
 date: "2024-09-26"
 date-format: long
@@ -11,11 +11,8 @@ logo: "../../logo.png"
 
 # Learning objectives
 
--   Write a data wrangling script using tidy verbs
--   Convert a tailor-made script to a function
+-   Write custom functions
 -   Use if-else logic to generalize functions
-
-# Part I: Data wrangling refresher
 
 ## Picking up from last week
 
@@ -23,15 +20,13 @@ logo: "../../logo.png"
 -   Merge your work to main!
 -   Create a new branch for today's work and pull
 
-## Data wrangling objectives:
+## Revisiting the penguins data {.incremental}
 
--   Write a data wrangling script using the functions we covered last week
-    -   Use `mutate` to convert units of columns
-    -   Use `summarize` to calculate group-wise summary statistics
-    -   Use `pivot_wider` to create cross-tabs
--   Use "tidy selection" helpers to reduce repetition in this workflow!
+-   Note that units are in mm and g
+-   Today we'll convert these to imperial measurements (inches and pounds)
+-   For this, we'll use *functions*.
 
-# Part II: Functions
+# Functions
 
 ## What are functions in R?
 
@@ -71,14 +66,46 @@ a_function <- function(an_argument) {
 # 
 ```
 
-# Part III: Conditionals
+## Coding time
+
+Write a function to convert metric to imperial measurements.
+
+## Sourcing functions
+
+-   You can store functions in separate R scripts and import them to your main working script.
+-   This helps keep your main script simple and keeps your whole repo organized.
+-   Use `source(<path_to_functions_script>)` in your main script.
+
+## Coding time
+
+Save our function in a separate R script and source it from a data wrangling script.
+
+# Control flow with conditionals
 
 ## What are conditionals?
 
--   `if` and `ifelse` statements
--   Balance readability and flexibility in functions
+-   Decide which action to take based on whether some condition is `TRUE` or `FALSE`
+-   Balance readability and flexibility in scripts and functions
 
-## Conditionals in R
+## Conditional syntax
+
+```         
+if(<condition>) {
+  <action to take if TRUE>
+}
+```
+
+## Conditional syntax
+
+```         
+if(<condition>) {
+  <action to take if TRUE>
+} else {
+  <action to take if FALSE>
+}
+```
+
+## Defining conditions
 
 -   `==` for "is equal to"
 -   `!=` for "not equal to:
@@ -88,27 +115,17 @@ a_function <- function(an_argument) {
 -   `%in%` for, is this value in a vector of possibilities
 -   ...and more!
 
-## Conditionals objectives
+## Coding time
 
--   Add `ifelse` logic to our data wrangling function
+-   Use conditionals to make a flexible function.
 
 ## Finishing up
 
 -   Commit your changes and push
 -   Open a pull request.
 
-## Homework
+## Your tasks
 
--   None, except for...
-
-## Show and tell (Late October)
-
--   An opportunity to apply workshop skills to your own work.
--   You could apply different parts to different projects, or more integratively to one single project.
--   Optional, but encouraged!
-
-## Some inspirations
-
--   Turn the project folder for one of your current research project into a git/GitHub repo and/or R project
--   Modify an R script to use functions, conditionals, or best-practices for code formatting
--   Improve directory organization for project or your entire computer!
+-   Identify parts of your colloquium project code that could be turned into functions.
+-   Good candidates are: repeated sections, complicated sidebars to the main flow
+-   Convert these sections to functions and `source()` them to clean up the main script.
