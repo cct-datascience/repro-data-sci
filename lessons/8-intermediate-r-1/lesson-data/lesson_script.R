@@ -42,7 +42,7 @@ get_penguins_data <- function(units = "metric") {
     
     return(penguins_imperial)
   } else {
-    message("Please specify units as either 'metric' or 'imperial'!")
+    stop("Please specify units as either 'metric' or 'imperial'!")
   }
   
 }
