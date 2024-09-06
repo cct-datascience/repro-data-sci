@@ -124,6 +124,11 @@ if(<condition>) {
 -   Commit your changes and push
 -   Open a pull request.
 
+## Resources
+
+-   [Hands-on Programming with R online book](https://rstudio-education.github.io/hopr/)
+-   [Software Carpentry intermediate R lesson](https://swcarpentry.github.io/r-novice-gapminder/)
+
 ## Your tasks
 
 -   Identify parts of your colloquium project code that could be turned into functions.
