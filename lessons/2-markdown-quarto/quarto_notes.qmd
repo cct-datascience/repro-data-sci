@@ -1,0 +1,67 @@
+---
+title: "My Notes"
+author: "Eric Scott"
+date: "2024-09-05"
+format: 
+  html: 
+    toc: true
+code-fold: true
+bibliography: references.bib
+---
+
+## Load Data
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(palmerpenguins)
+library(knitr)
+```
+
+We're using the `penguins` dataset from the `palmerpenguins` package [@palmerpenguins], so no loading of data is needed other than `library(palmerpenguins)`.
+
+## Results
+
+### Body Size
+
+```{r}
+#| warning: false 
+#| code-fold: show
+#| label: fig-box
+#| fig-cap: "Boxplot of penguin body mass (in grams) by sex"
+ggplot(penguins, aes(x = sex, y = body_mass_g)) + geom_boxplot()
+```
+
+As you can see in @fig-box, males are larger than females.
+The sample sizes are roughly equal at all islands for males and females (@tbl-sample).
+@dunn2016 also do some research with penguin size.
+
+```{r}
+#| label: tbl-sample
+#| tbl-cap: "Sample sizes of penguins by sex and island"
+kable(table(penguins$sex, penguins$island, useNA = "always"))
+```
+
+### Bill length
+
+```{r}
+#| label: fig-bill
+#| fig-cap: "Bill length (mm) by sex" 
+
+ggplot(penguins, aes(x = sex, y = bill_length_mm)) + geom_boxplot()
+```
+
+Males also have longer bills on average than females (@fig-bill).
+
+$$
+y = mx + b
+$$ {#eq-line}
+
+@eq-line shows the equation for a line with slope ($m$) and intercept ($b$)
+
+## Escaping markdown
+
+Use `\` as an "escape character" to stop symbols from doing anything special.
+
+*itallics* vs \*literally surrounded with astrixes\*
