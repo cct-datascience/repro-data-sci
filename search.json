@@ -1187,7 +1187,7 @@
     "href": "lessons/5-github-basics/slides.html#working-with-git-in-rstudio-live-coding",
     "title": "GitHub",
     "section": "Working with git in RStudio (Live Coding)",
-    "text": "Working with git in RStudio (Live Coding)\nThe most common git commands can be used with the RStudio GUI."
+    "text": "Working with git in RStudio (Live Coding)\nThe most common git commands can be used with the RStudio GUI.\n\nDemo save, add, commit cycle with Git pane AND git menu in RStudio"
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#sharing-with-github",
@@ -1201,14 +1201,14 @@
     "href": "lessons/5-github-basics/slides.html#connect-with-github-live-coding",
     "title": "GitHub",
     "section": "Connect With GitHub (Live Coding)",
-    "text": "Connect With GitHub (Live Coding)\n\nSet up your computer to “talk” to GitHub with steps in git_sitrep()\nConnect your local git repo to a remote GitHub repo with use_github()\nExplore the GitHub interface"
+    "text": "Connect With GitHub (Live Coding)\n\nSet up your computer to “talk” to GitHub with steps in git_sitrep()\nConnect your local git repo to a remote GitHub repo with use_github()\nExplore the GitHub interface\n\n\nDemo “starting from scratch” by running gitcreds::gitcreds_delete(). Remember to delete the PAT you create and show on camera.\n\n\nRemind learners that repos can be private. use_github(private = TRUE)"
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
     "href": "lessons/5-github-basics/slides.html#work-with-rstudio-and-github-live-coding",
     "title": "GitHub",
     "section": "Work With RStudio and GitHub (Live Coding)",
-    "text": "Work With RStudio and GitHub (Live Coding)\n\nPush local changes to GitHub\nPull GitHub changes to local"
+    "text": "Work With RStudio and GitHub (Live Coding)\n\nPush local changes to GitHub\nPull GitHub changes to local\n\n\nDemo save, add, commit, push and check GitHub for changes. Then, edit README on github and pull changes."
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#ignoring-files",
@@ -1229,7 +1229,7 @@
     "href": "lessons/5-github-basics/slides.html#your-tasks",
     "title": "GitHub",
     "section": "Your Tasks",
-    "text": "Your Tasks\n\nPut your research compendium on GitHub (e.g. with use_github()) and share the link in our Slack channel (if it can be made public)\nExplore other research compendia shared in Slack"
+    "text": "Your Tasks\n\nPut your research compendium on GitHub (e.g. with use_github()) and share the link in our Slack channel (if it can be made public)\nExplore other research compendia shared in Slack\n\n\nIf there is extra time, encourage learners to use it to practice these new skills with a real project repo while you’re all still there to help troubleshoot."
   },
   {
     "objectID": "lessons/5-github-basics/slides.html#references",
