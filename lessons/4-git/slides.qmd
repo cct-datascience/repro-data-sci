@@ -22,7 +22,7 @@ What stood out to you when you diagrammed your file system?
 
 # Review {.smaller}
 
-![](/lessons/2-shell/file-structure-example.png)
+![](../3-shell/file-structure-example.png)
 
 If your current working directory is `Users/kristinariemer/Dropbox/Documents`, what command could be used to change directory into the local Documents folder?
 
@@ -112,7 +112,7 @@ You have options:
 
 ## RStudio New Project Wizard
 
-![](/lessons/3-git/new_proj_with_git.png)
+![](new_proj_with_git.png)
 
 ## `git init`
 
@@ -120,7 +120,7 @@ You have options:
 
 ## `git init`
 
-![](/lessons/3-git/new_proj_no_git.png)
+![](new_proj_no_git.png)
 
 ## `git init`
 
@@ -129,7 +129,7 @@ You have options:
 
 ## `git init`
 
-![](/lessons/3-git/new_proj_git_init.png)
+![](new_proj_git_init.png)
 
 ## `usethis::use_git()`
 
@@ -137,7 +137,7 @@ You have options:
 
 ## `usethis::use_git()`
 
-![](/lessons/3-git/new_proj_no_git.png)
+![](new_proj_no_git.png)
 
 ## usethis::use_git()
 
@@ -146,7 +146,7 @@ You have options:
 
 ## `usethis::use_git()`
 
-![](/lessons/3-git/new_proj_usegit.png)
+![](new_proj_usegit.png)
 
 # Coding time
 
