@@ -200,7 +200,7 @@
     "href": "lessons/6-github-collab/slides.html#example-repo",
     "title": "Collaborate With GitHub",
     "section": "Example repo",
-    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: https://github.com/cct-datascience/repro-workshop-demo 1\nNeed one volunteer to edit the README.md and practice commit + push"
+    "text": "Example repo\n\nEveryone practice cloning this example repo as a new RStudio project: https://github.com/cct-datascience/demo-repo-2024 1\nNeed one volunteer to edit the README.md and practice commit + push"
   },
   {
     "objectID": "lessons/6-github-collab/slides.html#dealing-with-conflicts",
@@ -242,7 +242,14 @@
     "href": "lessons/6-github-collab/slides.html#working-on-a-branch",
     "title": "Collaborate With GitHub",
     "section": "Working on a Branch",
-    "text": "Working on a Branch\n\nMake a new branch using RStudio’s Git pane (for this demo, use your name)\nCommit changes and push to your branch\nView changes on GitHub"
+    "text": "Working on a Branch\n\nMake a new branch using RStudio’s Git pane (for this demo, use your name)\nMake some edits (e.g. to README.md), save, add, commit.\nYou can go back to the “main” version of your project at any time.\n\n\nDemonstrate how switching branches changes the files on their computer. Hammer home that this is why it is a bad idea to use git for projects on shared drives."
+  },
+  {
+    "objectID": "lessons/6-github-collab/slides.html#working-on-a-branch-1",
+    "href": "lessons/6-github-collab/slides.html#working-on-a-branch-1",
+    "title": "Collaborate With GitHub",
+    "section": "Working on a Branch",
+    "text": "Working on a Branch\n\nPush your branch to GitHub\nView changes on GitHub\n\n\nShow how to look at different branches on GitHub"
   },
   {
     "objectID": "lessons/6-github-collab/slides.html#pull-requests",
@@ -270,7 +277,7 @@
     "href": "lessons/6-github-collab/slides.html#practice",
     "title": "Collaborate With GitHub",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\nExercise\n\n\nIn pairs, practice forking and cloning a demo repo you do not have permission to push to. Make a new branch, make commits, and make a pull request to the upstream repo.\n\n\n\n\nEncourage learners to use forking and cloning to explore and contribute to any code they can find on GitHub including R packages and research compendia."
+    "text": "Practice\n\n\n\n\n\n\nExercise\n\n\nIn pairs, practice forking and cloning a demo repo you do not have permission to push to: https://github.com/cct-datascience/demo-repo-fork-2024.\nMake a new branch, make commits, and make a pull request to the upstream repo.\n\n\n\n\nEncourage learners to use forking and cloning to explore and contribute to any code they can find on GitHub including R packages and research compendia."
   },
   {
     "objectID": "lessons/6-github-collab/slides.html#resources",
