@@ -202,8 +202,7 @@ Learn more, including handy `usethis` shortcuts: <https://happygitwithr.com/fork
 ::: callout-tip
 ## Exercise
 
-In pairs, practice **forking** and **cloning** a demo repo you do *not* have permission to push to: <https://github.com/cct-datascience/demo-repo-fork-2024>.
-\
+In pairs, practice **forking** and **cloning** a demo repo you do *not* have permission to push to: <https://github.com/cct-datascience/demo-repo-fork-2024>.\
 Make a new branch, make commits, and make a pull request to the upstream repo.
 :::
 
