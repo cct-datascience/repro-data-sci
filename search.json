@@ -973,6 +973,20 @@
     "text": "Footnotes\n\n\nrenv can also be set up to track Python dependencies"
   },
   {
+    "objectID": "colloquium.html",
+    "href": "colloquium.html",
+    "title": "Reproducibility Colloquium",
+    "section": "",
+    "text": "The final session of this workshop series is our ✨Reproducibility Colloquium✨, where you all get a chance to share what you’ve learned with each other and anyone you’d like to invite to attend. You are invited to give a short (about 5min) talk with slides (about 5). To make this as low stakes as possible, here is a template you may follow when putting together your presentation."
+  },
+  {
+    "objectID": "colloquium.html#footnotes",
+    "href": "colloquium.html#footnotes",
+    "title": "Reproducibility Colloquium",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is a good opportunity to practice an elevator pitch! Try to keep it to just a couple sentences—just enough background to give some context to your data and code. The goal of the presentation is to focus on your project organization and reproducibility, not the details of your research topic.↩︎"
+  },
+  {
     "objectID": "lessons/10-get-credit/notes.html",
     "href": "lessons/10-get-credit/notes.html",
     "title": "Getting Credit For Your Hard Work",
@@ -1642,7 +1656,7 @@
     "href": "index.html#schedule",
     "title": "Reproducibility and Data Science in R",
     "section": "Schedule",
-    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n—"
+    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n\nguidelines"
   },
   {
     "objectID": "index.html#code-of-conduct",
