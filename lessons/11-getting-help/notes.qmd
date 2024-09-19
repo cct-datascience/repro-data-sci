@@ -1,6 +1,8 @@
 ---
 title: "Getting help"
-format: html
+format: 
+  html: default
+  typst: default
 ---
 
 [Slides](slides.qmd)

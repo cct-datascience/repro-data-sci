@@ -1,6 +1,8 @@
 ---
 title: "Version control with git"
-format: html
+format: 
+  html: default
+  typst: default
 ---
 
 ## Objective
@@ -24,10 +26,10 @@ format: html
     -   SW Carpentry Git lesson 2 https://swcarpentry.github.io/git-novice/02-setup
     -   Setting up git using git config
         -   Make sure participants use their GH email/intended GH email
-        - `git` `verb` `options`
-        - `git config --global core.editor "vim"`
-        - `git` `verb` `--help`
--   Live coding: git init 
+        -   `git` `verb` `options`
+        -   `git config --global core.editor "vim"`
+        -   `git` `verb` `--help`
+-   Live coding: git init
     -   SW Carpentry Git lesson 3 https://swcarpentry.github.io/git-novice/03-create.html
     -   Introduce the concept of a repository
     -   Go over 3 ways to init a git repo and when to use each
@@ -49,8 +51,8 @@ format: html
 -   Live coding: `.gitignore`
     -   SW Carpentry Git lesson 6https://swcarpentry.github.io/git-novice/06-ignore
     -   .gitignore:
-        - `DS_Store`
-        - Create a file and then ignore it.
+        -   `DS_Store`
+        -   Create a file and then ignore it.
 -   (Time permitting): SW Carpentry Git lesson 5
     -   https://swcarpentry.github.io/git-novice/05-history
     -   Navigating git history
@@ -67,6 +69,7 @@ format: html
 5.  [Software Carpentry Version Control with Git episode #6](https://swcarpentry.github.io/git-novice/06-ignore)
 6.  (optional) [Software Carpentry Version Control with Git episode #5](https://swcarpentry.github.io/git-novice/05-history)
 
+```{=html}
 <!---
  
 ## Notes from before
@@ -98,3 +101,4 @@ Create a GitHub account if you don't already have one.
 For an extra challenge, identify an existing folder and turn into a repository.
  
 --->
+```

@@ -1,5 +1,8 @@
 ---
 title: "Drop-in / Q&A"
+format: 
+  html: default
+  typst: default
 ---
 
 We asked learners to vote on the following topics for a mini-lesson for the last session before the show-and-tell session:
