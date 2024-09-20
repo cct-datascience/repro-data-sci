@@ -58,9 +58,9 @@ format:
 # code goes in the curly braces
 
 a_function <- function(an_argument) {
-  # code to execute goes here
+  # code using an_argument to produce final_output
   
-  # whatever is inside return() comes out of the funciton
+  # whatever is inside return() comes out of the function
   return(final_output) 
 }
 
