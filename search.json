@@ -466,7 +466,7 @@
     "href": "lessons/8-intermediate-r-1/slides.html#anatomy-of-a-function",
     "title": "Intermediate R: Functions and control flow",
     "section": "Anatomy of a function",
-    "text": "Anatomy of a function\n# Defining a function\n# a_function will be the name of the function\n# arguments go within the ()\n# code goes in the curly braces\n\na_function &lt;- function(an_argument) {\n  # code to execute goes here\n  \n  # whatever is inside return() comes out of the funciton\n  return(final_output) \n}\n\n# Run the code to create the function\n# Then you can use it:\n# a_function(&lt;some_input&gt;)\n#"
+    "text": "Anatomy of a function\n# Defining a function\n# a_function will be the name of the function\n# arguments go within the ()\n# code goes in the curly braces\n\na_function &lt;- function(an_argument) {\n  # code using an_argument to produce final_output\n  \n  # whatever is inside return() comes out of the function\n  return(final_output) \n}\n\n# Run the code to create the function\n# Then you can use it:\n# a_function(&lt;some_input&gt;)\n#"
   },
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#coding-time",
