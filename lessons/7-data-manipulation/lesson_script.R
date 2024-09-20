@@ -25,7 +25,7 @@ penguins_data <- penguins
 
 write.csv(
   penguins_data,
-  "lessons/7-data-manipulation/data_raw/penguins_data_raw.csv",
+  "penguins_data_raw.csv",
   row.names = F
 )
 
@@ -142,7 +142,7 @@ ggplot(penguins_coords, aes(longitude, body_mass_g, color = species)) +
 
 #### Modify - add - commit ####
 
-# adds penguins + penguins_long to repo
+# adds penguins_data_raw repo
 # commit and push
 
 #### Palmer penguins citation ####

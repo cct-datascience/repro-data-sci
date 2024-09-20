@@ -52,7 +52,7 @@ Ask for a volunteer and give them permission to push to a repo
 
 ## Example repo
 
--   Everyone practice cloning this example repo as a new RStudio project: <https://github.com/cct-datascience/repro-workshop-demo> [^1]
+-   Everyone practice cloning this example repo as a new RStudio project: <https://github.com/cct-datascience/demo-repo-2024> [^1]
 
 -   Need **one** volunteer to edit the README.md and practice commit + push
 
@@ -92,11 +92,11 @@ git config --global pull.rebase false
 
 ![](merge_conflict.png)
 
--   Resolve the conflict however you want (i.e. keep one of the two sections)
+1.  Resolve the conflict however you want (i.e. keep one of the two sections)
 
--   Delete all lines with `<<<<<<<`, `>>>>>>>`, or `=======`
+2.  Delete all lines with `<<<<<<<`, `>>>>>>>`, or `=======`
 
--   Save and commit
+3.  Save and commit
 
 ::: notes
 Let's have a round of applause for our volunteer!
@@ -104,7 +104,7 @@ Let's have a round of applause for our volunteer!
 
 ## Avoid merge conflicts by working on branches
 
-Each person works on a "branch"---an independent series of commits that can be merged back into the "main" branch.
+Each person works on a "branch"—an independent series of commits that can be merged back into the "main" branch.
 
 ```{mermaid}
 gitGraph
@@ -129,9 +129,24 @@ gitGraph
 
 -   Make a new branch using RStudio's Git pane (for this demo, use your name)
 
--   Commit changes and push to your branch
+-   Make some edits (e.g. to README.md), save, add, commit.
+
+-   You can go back to the "main" version of your project at any time.
+
+::: notes
+Demonstrate how switching branches changes the files on their computer.
+Hammer home that this is why it is a bad idea to use git for projects on shared drives.
+:::
+
+## Working on a Branch
+
+-   Push your branch to GitHub
 
 -   View changes on GitHub
+
+::: notes
+Show how to look at different branches on GitHub
+:::
 
 ## Pull Requests
 
@@ -187,7 +202,7 @@ Learn more, including handy `usethis` shortcuts: <https://happygitwithr.com/fork
 ::: callout-tip
 ## Exercise
 
-In pairs, practice **forking** and **cloning** a demo repo you do *not* have permission to push to.
+In pairs, practice **forking** and **cloning** a demo repo you do *not* have permission to push to: <https://github.com/cct-datascience/demo-repo-fork-2024>.\
 Make a new branch, make commits, and make a pull request to the upstream repo.
 :::
 

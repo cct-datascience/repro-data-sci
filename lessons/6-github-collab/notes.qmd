@@ -1,6 +1,9 @@
 ---
 title: "Collaborating with GitHub"
-format: html
+format:
+  typst: 
+    output-file: "lesson-6-notes.pdf"
+  html: default
 ---
 
 ## Objective

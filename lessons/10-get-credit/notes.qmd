@@ -1,6 +1,8 @@
 ---
 title: "Getting Credit For Your Hard Work"
-format: html
+format: 
+  html: default
+  typst: default
 bibliography: references.bib
 ---
 

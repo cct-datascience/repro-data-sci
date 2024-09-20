@@ -36,6 +36,10 @@ bibliography: references.bib
 
 The most common git commands can be used with the RStudio GUI.
 
+::: notes
+Demo save, add, commit cycle with Git pane AND git menu in RStudio
+:::
+
 ## Sharing with GitHub
 
 ![](github-diagram-bryan.png){fig-align="center" width="671"}
@@ -57,10 +61,24 @@ Figure 2 from [@bryan2018]
 -   Connect your local git repo to a remote GitHub repo with `use_github()`
 -   Explore the GitHub interface
 
+::: notes
+Demo "starting from scratch" by running `gitcreds::gitcreds_delete()`.
+Remember to delete the PAT you create and show on camera.\
+
+\
+Remind learners that repos can be private.
+`use_github(private = TRUE)`
+:::
+
 ## Work With RStudio and GitHub (Live Coding)
 
 -   Push local changes to GitHub
 -   Pull GitHub changes to local
+
+::: notes
+Demo save, add, commit, push and check GitHub for changes.
+Then, edit README on github and pull changes.
+:::
 
 ## Ignoring files {.smaller}
 
@@ -90,6 +108,10 @@ Can use .gitkeep to get git to track an empty folder.
 
 -   Put your research compendium on GitHub (e.g. with `use_github()`) and share the link in our Slack channel (if it can be made public)
 -   Explore other research compendia shared in Slack
+
+::: notes
+If there is extra time, encourage learners to use it to practice these new skills with a *real* project repo while you're all still there to help troubleshoot.
+:::
 
 ## References
 
