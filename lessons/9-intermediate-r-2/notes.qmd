@@ -1,6 +1,8 @@
 ---
 title: "Intermediate R programming II"
-format: html
+format: 
+  html: default
+  typst: default
 ---
 
 ## Objective

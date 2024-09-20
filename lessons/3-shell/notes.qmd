@@ -1,6 +1,8 @@
 ---
 title: "Using the Shell"
-format: html
+format: 
+  html: default
+  typst: default
 ---
 
 ## Objectives
