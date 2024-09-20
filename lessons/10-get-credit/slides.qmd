@@ -81,6 +81,14 @@ More detailed comparisons [here](https://www.agu.org/-/media/Files/Publications/
 Demo archiving a repo with sandbox.zenodo.org and have everyone follow along with the repo they've been using for notes.
 :::
 
+## When to archive?
+
+No hard rules on this, but my preference:
+
+1.  Just before submitting a manuscript: release v 0.1.0
+2.  After responding to reviewers or re-submitting: increment "minor" version, e.g. v 0.2.0
+3.  After acceptance: release v 1.0.0
+
 ## Reproducible computational environments
 
 Congrats!
