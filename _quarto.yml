@@ -12,6 +12,10 @@ website:
   repo-actions: [edit, issue]
   site-url: https://cct-datascience.github.io/repro-data-sci/
   navbar:
+    tools:
+      - icon: github
+        text: Source #shows on hover
+        href: https://github.com/cct-datascience/repro-data-sci
     left:
       - href: index.qmd
         text: Home
