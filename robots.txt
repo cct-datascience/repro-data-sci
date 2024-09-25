@@ -1,30 +1,51 @@
+# sources: 
+# https://www.cyberciti.biz/web-developer/block-openai-bard-bing-ai-crawler-bots-using-robots-txt-file/
+# https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/
+
+# Data from Common Crawl is used to train ChatGPT, Bard, etc.
 User-agent: CCBot
 Disallow: /
 
+# Stops ChatGPT users from instructing ChatGPT to access our site
 User-agent: ChatGPT-User
 Disallow: /
 
+# Don't add any content to the GPT model
 User-agent: GPTBot
 Disallow: /
 
+# Blocks Bard and VertexAI. Does not impact search indexing.
 User-agent: Google-Extended
 Disallow: /
 
+# webz.io.  They sell data for training LLMs 
 User-agent: Omgilibot
 Disallow: /
 
 User-agent: Omgili
 Disallow: /
 
+# Specific to AI.  Won't prevent previews from showing up correctly on Facebook posts
 User-agent: FacebookBot
 Disallow: /
 
-User-agent: PerplexityBot
-Disallow: /
-
+# Anthropic AI (Claude)
 User-agent: anthropic-ai
 Disallow: /
-‍User-agent: Claude-Web
+
+User-agent: Claude-Web
 Disallow: /
+
 User-agent: ClaudeBot
+Disallow: /
+
+# ByteDance's bot for gathering LLM training data
+User-agent: Bytespider
+Disallow: /
+
+User-agent: ImagesiftBot 
+Disallow: /
+
+# Takes content and re-writes it using genAI
+User-agent: PerplexityBot
 Disallow: /
