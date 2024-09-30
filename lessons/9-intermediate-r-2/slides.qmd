@@ -93,7 +93,7 @@ purrr::map(1:10, \(x) x^2)
 
 # Storing the output of `purrr::map`
 
-```         
+```r         
 purr_squares <- purrr::map(1:10, \(x) x^2)
 ```
 
