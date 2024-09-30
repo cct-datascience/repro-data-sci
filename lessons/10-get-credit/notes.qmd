@@ -8,7 +8,9 @@ bibliography: references.bib
 
 ## Objective
 
--   Learn the wrap-up steps to publish/archive a research compendium with a DOI.
+-   Add a basic CITATION.cff file to your repo
+
+-   Practice the wrap-up steps to publish/archive a research compendium with a DOI.
 
 -   Understand concept of a reproducible computational environment.
 
@@ -33,12 +35,12 @@ bibliography: references.bib
 
     -   Show CITATION.cff files for this repo and maybe one for a research compendium
     -   Show "cite this" button on GitHub
-    -   Show CITATION.cff creation tool [CFFINIT](https://citation-file-format.github.io/cff-initializer-javascript/#/)
+    -   Everyone use CITATION.cff creation tool [CFFINIT](https://citation-file-format.github.io/cff-initializer-javascript/#/) to create a *basic* CITATION.cff
     -   *Maybe* mention `cffr::cff_validate()`
 
 -   Archiving
 
-    -   Demo archiving a repo with Zenodo using sandbox.zenodo.org
+    -   Exercise: guide everyone through archiving a repo with Zenodo using sandbox.zenodo.org
     -   Add DOI badge to readme
     -   Update CITATION.cff with DOI
 
