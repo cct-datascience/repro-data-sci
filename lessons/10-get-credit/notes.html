@@ -222,7 +222,12 @@ div.csl-indent {
 
 <section id="objective" class="level2">
 <h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<p>Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn <code>renv</code> and discuss Docker (concept).</p>
+<ul>
+<li><p>Add a basic CITATION.cff file to your repo</p></li>
+<li><p>Practice the wrap-up steps to publish/archive a research compendium with a DOI.</p></li>
+<li><p>Understand concept of a reproducible computational environment.</p></li>
+<li><p>Learn <code>renv</code> and discuss Docker (concept).</p></li>
+</ul>
 </section>
 <section id="lesson-outline" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-outline">Lesson Outline</h2>
@@ -244,22 +249,21 @@ div.csl-indent {
 <ul>
 <li>Show CITATION.cff files for this repo and maybe one for a research compendium</li>
 <li>Show “cite this” button on GitHub</li>
-<li>Show CITATION.cff creation tool <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">CFFINIT</a></li>
-<li>Maybe mention <code>cffr::cff_validate()</code></li>
+<li>Everyone use CITATION.cff creation tool <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">CFFINIT</a> to create a <em>basic</em> CITATION.cff</li>
+<li><em>Maybe</em> mention <code>cffr::cff_validate()</code></li>
 </ul></li>
 <li><p>Archiving</p>
 <ul>
-<li>Most participants probably won’t be ready to follow along with their own repos, but we will be there to help when they are ready</li>
-<li>Demo archiving a repo with Zenodo using this repo</li>
+<li>Exercise: guide everyone through archiving a repo with Zenodo using sandbox.zenodo.org</li>
 <li>Add DOI badge to readme</li>
 <li>Update CITATION.cff with DOI</li>
 </ul></li>
 <li><p><code>renv</code></p>
 <ul>
 <li>Discuss why</li>
-<li>Ask students to activate <code>renv</code> for a project and inspect files it creates (have co-instructor share screen)</li>
+<li>Ask students to activate <code>renv</code> for a project and inspect files it creates</li>
 <li>Explain how <code>renv</code> works, especially <code>renv::status()</code> , and <code>renv::snapshot()</code></li>
-<li>Clone co-instructor’s repo with <code>renv</code> files
+<li>Clone demo repo with <code>renv</code> files
 <ul>
 <li>Show that no packages are available initially (project is isolated)</li>
 <li>run <code>renv::restore()</code></li>
@@ -275,7 +279,7 @@ div.csl-indent {
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <ul>
-<li>Prep for showcase session</li>
+<li>Prep for reproducibility colloquium</li>
 </ul>
 
 

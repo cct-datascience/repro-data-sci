@@ -1096,7 +1096,7 @@
     "href": "lessons/10-get-credit/slides.html#papers-with-open-code-are-cited-more",
     "title": "Sharing Code & Getting Credit",
     "section": "Papers with open code are cited more",
-    "text": "Papers with open code are cited more\n\n\n\n\n\n\n\nFigure 2: Predicted impacts of code-sharing on cumulative citations. Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed. Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code. Predictions are based on estimated model coe cients (Table 2)\n\n\nFigure 2 from Maitner et al. (2023)"
+    "text": "Papers with open code are cited more\n\n\n\n\n\n\n\nFigure 2: Predicted impacts of code-sharing on cumulative citations. Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed. Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code. Predictions are based on estimated model coeficients (Table 2)\n\n\nFigure 2 from Maitner et al. (2023)"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#getting-credit-for-your-code",
@@ -1110,7 +1110,7 @@
     "href": "lessons/10-get-credit/slides.html#citation.cff",
     "title": "Sharing Code & Getting Credit",
     "section": "CITATION.cff",
-    "text": "CITATION.cff\n\n\nCitation File Format are plain text files written in YAML\nAdding a CITATION.cff file to your repo…\n\nPuts a “cite this repository” button on GitHub\nHelps code archive tools fill out metadata correctly when you archive your repo\n\nCreate a CITATION.cff file with this helper\nSee example here"
+    "text": "CITATION.cff\n\n\nA CITATION.cff file contains citation information written in YAML\nAdding a CITATION.cff file to your repo…\n\nPuts a “cite this repository” button on GitHub\nHelps code archive tools fill out metadata correctly when you archive your repo\n\nLearn more and create your own: https://citation-file-format.github.io/\nSee example here"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#options-for-archiving",
@@ -1118,6 +1118,20 @@
     "title": "Sharing Code & Getting Credit",
     "section": "Options for archiving",
     "text": "Options for archiving\n\n\n\n\n\n\n\n\n\n\nService\nVersioned DOIs?\nFree?\nGitHub integration?\nNotes\n\n\n\n\nZenodo\nYes\nYes\nYes\nBacked by CERN, built with code and data in mind\n\n\nDryad\nYes\nNo, but some publishers cover cost\nNo\nIntended for data, not code. Partners with Zenodo\n\n\nFigshare\nYes\nYes\nYes\nCan’t choose your license\n\n\nUA ReDATA\nYes\nYes (for UA researchers)\nNo\nUniversity of Arizona Libraries\n\n\n\n\n\nMore detailed comparisons here"
+  },
+  {
+    "objectID": "lessons/10-get-credit/slides.html#zenodo-archiving-demo",
+    "href": "lessons/10-get-credit/slides.html#zenodo-archiving-demo",
+    "title": "Sharing Code & Getting Credit",
+    "section": "Zenodo Archiving Demo",
+    "text": "Zenodo Archiving Demo\n\nLog in to sandbox.zenodo.org using GitHub1\nIn drop-down menu with your username, select “GitHub”\nFind your repo in the list and flip the switch next to it\nGo to your repo on GitHub and make a release\nOn sandbox.zenodo.org, get markdown to add a badge to README.md\n\n\nDemo archiving a repo with sandbox.zenodo.org and have everyone follow along with the repo they’ve been using for notes.\n\n\n\n\n\nsandbox.zenodo.org is just for practice. Use zenodo.org when you’re ready to get a real DOI!↩︎"
+  },
+  {
+    "objectID": "lessons/10-get-credit/slides.html#when-to-archive",
+    "href": "lessons/10-get-credit/slides.html#when-to-archive",
+    "title": "Sharing Code & Getting Credit",
+    "section": "When to archive?",
+    "text": "When to archive?\nNo hard rules on this, but my preference:\n\nJust before submitting a manuscript: release v 0.1.0\nAfter responding to reviewers or re-submitting: increment “minor” version, e.g. v 0.2.0\nAfter acceptance: release v 1.0.0"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#reproducible-computational-environments",
@@ -1138,42 +1152,42 @@
     "href": "lessons/10-get-credit/slides.html#using-renv",
     "title": "Sharing Code & Getting Credit",
     "section": "Using renv",
-    "text": "Using renv\n\n\n\n\n\n\nExercise\n\n\nInstall renv and activate it for a project with renv::init(). Inspect the files that were created.\n\n\n\n\n\n\n\n\n\n\nIf you change your mind …\n\n\nTo deactivate renv, run renv::deactivate(). To also remove all the files it created, run renv::deactivate(clean = TRUE) instead."
+    "text": "Using renv\n\n\n\n\n\n\nExercise\n\n\nInstall renv and activate it for a project with renv::init(). Inspect the files that were created.\n\n\n\n\n\n\n\n\n\n\nIf you change your mind …\n\n\nTo deactivate renv, run renv::deactivate(). To also remove all the files it created, run renv::deactivate(clean = TRUE) instead.\n\n\n\n\nBriefly discuss the contents of renv.lock, .Rprofile, and renv/. Point out renv/.gitignore — trust it about which files should go on GitHub."
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#limitations-of-renv",
     "href": "lessons/10-get-credit/slides.html#limitations-of-renv",
     "title": "Sharing Code & Getting Credit",
     "section": "Limitations of renv",
-    "text": "Limitations of renv\n\nOnly tracks R packages 1\nCan’t reproduce operating system or system libraries\nSometimes quite annoying to use (but it’s getting better!)"
+    "text": "Limitations of renv\n\nOnly tracks R packages 1\nCan’t reproduce operating system or system libraries\nSometimes quite annoying to use (but it’s getting better!)\n\n\n\n\n\nrenv can also be set up to track Python dependencies↩︎"
   },
   {
-    "objectID": "lessons/10-get-credit/slides.html#reproducible-everything-with-docker",
-    "href": "lessons/10-get-credit/slides.html#reproducible-everything-with-docker",
+    "objectID": "lessons/10-get-credit/slides.html#more-reproducibility-with-docker",
+    "href": "lessons/10-get-credit/slides.html#more-reproducibility-with-docker",
     "title": "Sharing Code & Getting Credit",
-    "section": "Reproducible Everything with Docker",
-    "text": "Reproducible Everything with Docker\nDocker containers…\n\n\nAre isolated “virtual machines”\nRun Linux regardless of the host machine OS\nCan be built with specific versions of OS, system libraries, and R packages (using renv)\nCan be downloaded and run from the command line"
-  },
-  {
-    "objectID": "lessons/10-get-credit/slides.html#making-a-docker-container",
-    "href": "lessons/10-get-credit/slides.html#making-a-docker-container",
-    "title": "Sharing Code & Getting Credit",
-    "section": "Making a Docker Container",
-    "text": "Making a Docker Container\nA Dockerfile holds instructions on what to install and what code to run. Actually creating a Docker container is beyond the scope of this workshop, but you can learn how!\n# Base image https://hub.docker.com/u/rocker/\nFROM rocker/r-base:latest\n\n## create directories\nRUN mkdir -p /01_data\nRUN mkdir -p /02_code\nRUN mkdir -p /03_output\n\n## copy files\nCOPY /02_code/install_packages.R /02_code/install_packages.R\nCOPY /02_code/myScript.R /02_code/myScript.R\n\n## install R-packages\nRUN Rscript /02_code/install_packages.R"
+    "section": "More Reproducibility with Docker",
+    "text": "More Reproducibility with Docker\nDocker containers…\n\n\nAre isolated “virtual machines”\nRun Linux regardless of the host machine OS\nCan be built with specific versions of OS, system libraries, and R packages (using renv)\nCan be downloaded and run from the command line"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#hold-up-what-is-reproducibility-again",
     "href": "lessons/10-get-credit/slides.html#hold-up-what-is-reproducibility-again",
     "title": "Sharing Code & Getting Credit",
     "section": "Hold up, what is reproducibility again?",
-    "text": "Hold up, what is reproducibility again?\nThere is a reproducibility tradeoff for using renv and Docker—robust computational reproducibility but harder for novices to reproduce\n\nIf you use these tools, provide:\n\nInstructions on how to run code\nWhere to go for help troubleshooting\nWays to access your code without extra layers"
+    "text": "Hold up, what is reproducibility again?\nThere is a reproducibility trade-off for using renv and Docker—robust computational reproducibility but harder for novices to reproduce\n\nIf you use these tools, provide:\n\nInstructions on how to run code\nWhere to go for help troubleshooting\nWays to access your code without extra layers"
   },
   {
-    "objectID": "lessons/10-get-credit/slides.html#drop-in-session-showcase",
-    "href": "lessons/10-get-credit/slides.html#drop-in-session-showcase",
+    "objectID": "lessons/10-get-credit/slides.html#resources",
+    "href": "lessons/10-get-credit/slides.html#resources",
     "title": "Sharing Code & Getting Credit",
-    "section": "Drop-in Session & Showcase",
-    "text": "Drop-in Session & Showcase\n\nNext week (10/10, 10/12): No workshops!\nTuesday 10/17: Drop-in help session\nTuesday 10/24: Reproducibility show & tell"
+    "section": "Resources",
+    "text": "Resources\n\nrenv website\nCITATION.cff info and creator tool\nZenodo-GitHub integration\nReproducible computational environments with Docker"
+  },
+  {
+    "objectID": "lessons/10-get-credit/slides.html#next-week",
+    "href": "lessons/10-get-credit/slides.html#next-week",
+    "title": "Sharing Code & Getting Credit",
+    "section": "Next week",
+    "text": "Next week\n\nTuesday 10/18: Drop-in co-working session.\n\nCome and work on your reproducibility colloquium project/presentation\n\nThursday 10/10: Reproducibility Colloquium!\n\nInvite your lab-mates, PI, friends!"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#references",
@@ -1181,13 +1195,6 @@
     "title": "Sharing Code & Getting Credit",
     "section": "References",
     "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nMaitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. 2023. “Code Sharing Increases Citations, but Remains Uncommon.” https://doi.org/10.21203/rs.3.rs-3222221/v1."
-  },
-  {
-    "objectID": "lessons/10-get-credit/slides.html#footnotes",
-    "href": "lessons/10-get-credit/slides.html#footnotes",
-    "title": "Sharing Code & Getting Credit",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nrenv can also be set up to track Python dependencies"
   },
   {
     "objectID": "colloquium.html",
@@ -1208,28 +1215,28 @@
     "href": "lessons/10-get-credit/notes.html",
     "title": "Getting Credit For Your Hard Work",
     "section": "",
-    "text": "Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn renv and discuss Docker (concept)."
+    "text": "Add a basic CITATION.cff file to your repo\nPractice the wrap-up steps to publish/archive a research compendium with a DOI.\nUnderstand concept of a reproducible computational environment.\nLearn renv and discuss Docker (concept)."
   },
   {
     "objectID": "lessons/10-get-credit/notes.html#objective",
     "href": "lessons/10-get-credit/notes.html#objective",
     "title": "Getting Credit For Your Hard Work",
     "section": "",
-    "text": "Learn the wrap-up steps to publish/archive a research compendium with a DOI. Understand reproducible computational environment. Learn renv and discuss Docker (concept)."
+    "text": "Add a basic CITATION.cff file to your repo\nPractice the wrap-up steps to publish/archive a research compendium with a DOI.\nUnderstand concept of a reproducible computational environment.\nLearn renv and discuss Docker (concept)."
   },
   {
     "objectID": "lessons/10-get-credit/notes.html#lesson-outline",
     "href": "lessons/10-get-credit/notes.html#lesson-outline",
     "title": "Getting Credit For Your Hard Work",
     "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (2023)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nShow CITATION.cff creation tool CFFINIT\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nMost participants probably won’t be ready to follow along with their own repos, but we will be there to help when they are ready\nDemo archiving a repo with Zenodo using this repo\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates (have co-instructor share screen)\nExplain how renv works, especially renv::status() , and renv::snapshot()\nClone co-instructor’s repo with renv files\n\nShow that no packages are available initially (project is isolated)\nrun renv::restore()\n\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
+    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (2023)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nEveryone use CITATION.cff creation tool CFFINIT to create a basic CITATION.cff\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nExercise: guide everyone through archiving a repo with Zenodo using sandbox.zenodo.org\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates\nExplain how renv works, especially renv::status() , and renv::snapshot()\nClone demo repo with renv files\n\nShow that no packages are available initially (project is isolated)\nrun renv::restore()\n\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
   },
   {
     "objectID": "lessons/10-get-credit/notes.html#homework",
     "href": "lessons/10-get-credit/notes.html#homework",
     "title": "Getting Credit For Your Hard Work",
     "section": "Homework",
-    "text": "Homework\n\nPrep for showcase session"
+    "text": "Homework\n\nPrep for reproducibility colloquium"
   },
   {
     "objectID": "lessons/11-getting-help/notes.html",
@@ -1656,7 +1663,7 @@
     "href": "index.html#schedule",
     "title": "Reproducibility and Data Science in R",
     "section": "Schedule",
-    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n—\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n\nguidelines"
+    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n\nslides\n\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n\nguidelines"
   },
   {
     "objectID": "index.html#code-of-conduct",

@@ -435,7 +435,7 @@
 </div>
 
 <aside class="notes">
-<p>Figure 2: Predicted impacts of code-sharing on cumulative citations. Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed. Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code. Predictions are based on estimated model coe cients (Table 2)</p>
+<p>Figure 2: Predicted impacts of code-sharing on cumulative citations. Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed. Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code. Predictions are based on estimated model coeficients (Table 2)</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -463,13 +463,13 @@
 <h2>CITATION.cff</h2>
 <div>
 <ul>
-<li class="fragment"><p>Citation File Format are plain text files written in YAML</p></li>
+<li class="fragment"><p>A <code>CITATION.cff</code> file contains citation information written in YAML</p></li>
 <li class="fragment"><p>Adding a <code>CITATION.cff</code> file to your repo…</p>
 <ul>
 <li class="fragment"><p>Puts a “cite this repository” button on GitHub</p></li>
 <li class="fragment"><p>Helps code archive tools fill out metadata correctly when you archive your repo</p></li>
 </ul></li>
-<li class="fragment"><p>Create a CITATION.cff file with this <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">helper</a></p></li>
+<li class="fragment"><p>Learn more and create your own: <a href="https://citation-file-format.github.io/" class="uri">https://citation-file-format.github.io/</a></p></li>
 <li class="fragment"><p>See example <a href="https://github.com/cct-datascience/repro-data-sci/blob/main/CITATION.cff">here</a></p></li>
 </ul>
 </div>
@@ -478,11 +478,11 @@
 <h2>Options for archiving</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 22%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -527,11 +527,44 @@
 
 <aside><div>
 <p>More detailed comparisons <a href="https://www.agu.org/-/media/Files/Publications/Generalist-Data-Repository-Grid.pdf">here</a></p>
-</div></aside></section></section>
-<section>
-<section id="zenodo-archiving-demo" class="title-slide slide level1 center">
-<h1>Zenodo Archiving Demo</h1>
+</div></aside></section>
+<section id="zenodo-archiving-demo" class="slide level2">
+<h2>Zenodo Archiving Demo</h2>
+<ol type="1">
+<li>Log in to <a href="https://sandbox.zenodo.org">sandbox.zenodo.org</a> using GitHub<sup>1</sup></li>
+<li>In drop-down menu with your username, select “GitHub”</li>
+<li>Find your repo in the list and flip the switch next to it</li>
+<li>Go to your repo on GitHub and make a release</li>
+<li>On sandbox.zenodo.org, get markdown to add a badge to README.md</li>
+</ol>
+<aside class="notes">
+<p>Demo archiving a repo with sandbox.zenodo.org and have everyone follow along with the repo they’ve been using for notes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
+<aside><div>
+<hr>
+<ol>
+<li id="fn1"><p>sandbox.zenodo.org is just for practice. Use zenodo.org when you’re ready to get a <em>real</em> DOI!<a href="#/fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</div><ol class="aside-footnotes"></ol></aside></section>
+<section id="when-to-archive" class="slide level2">
+<h2>When to archive?</h2>
+<p>No hard rules on this, but my preference:</p>
+<ol type="1">
+<li>Just before submitting a manuscript: release v 0.1.0</li>
+<li>After responding to reviewers or re-submitting: increment “minor” version, e.g.&nbsp;v 0.2.0</li>
+<li>After acceptance: release v 1.0.0</li>
+</ol>
 </section>
 <section id="reproducible-computational-environments" class="slide level2">
 <h2>Reproducible computational environments</h2>
@@ -583,18 +616,37 @@
 </div>
 </div>
 </div>
+<aside class="notes">
+<p>Briefly discuss the contents of <code>renv.lock</code>, <code>.Rprofile</code>, and <code>renv/</code>. Point out <code>renv/.gitignore</code> — trust it about which files should go on GitHub.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="limitations-of-renv" class="slide level2">
 <h2>Limitations of <code>renv</code></h2>
 <ul>
-<li><p>Only tracks R packages <a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></p></li>
+<li><p>Only tracks R packages <sup>1</sup></p></li>
 <li><p>Can’t reproduce operating system or system libraries</p></li>
 <li><p>Sometimes quite annoying to use (but it’s getting better!)</p></li>
 </ul>
-<aside></aside></section>
-<section id="reproducible-everything-with-docker" class="slide level2">
-<h2>Reproducible Everything with Docker</h2>
+
+<aside><div>
+<hr>
+<ol start="2">
+<li id="fn2"><p><code>renv</code> can also be set up to track <a href="https://rstudio.github.io/renv/articles/python.html">Python dependencies</a><a href="#/fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</div><ol class="aside-footnotes"></ol></aside></section>
+<section id="more-reproducibility-with-docker" class="slide level2">
+<h2><em>More</em> Reproducibility with Docker</h2>
 <p>Docker containers…</p>
 <div>
 <ul>
@@ -605,27 +657,10 @@
 </ul>
 </div>
 </section>
-<section id="making-a-docker-container" class="slide level2">
-<h2>Making a Docker Container</h2>
-<p>A <strong>Dockerfile</strong> holds instructions on what to install and what code to run. Actually creating a Docker container is beyond the scope of this workshop, but you can <a href="https://www.r-bloggers.com/2019/02/running-your-r-script-in-docker/">learn how</a>!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource docker number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a># Base image https://hub.docker.com/u/rocker/</span>
-<span id="cb1-2"><a></a>FROM rocker/r-base:latest</span>
-<span id="cb1-3"><a></a></span>
-<span id="cb1-4"><a></a>## create directories</span>
-<span id="cb1-5"><a></a>RUN mkdir -p /01_data</span>
-<span id="cb1-6"><a></a>RUN mkdir -p /02_code</span>
-<span id="cb1-7"><a></a>RUN mkdir -p /03_output</span>
-<span id="cb1-8"><a></a></span>
-<span id="cb1-9"><a></a>## copy files</span>
-<span id="cb1-10"><a></a>COPY /02_code/install_packages.R /02_code/install_packages.R</span>
-<span id="cb1-11"><a></a>COPY /02_code/myScript.R /02_code/myScript.R</span>
-<span id="cb1-12"><a></a></span>
-<span id="cb1-13"><a></a>## install R-packages</span>
-<span id="cb1-14"><a></a>RUN Rscript /02_code/install_packages.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+
 <section id="hold-up-what-is-reproducibility-again" class="slide level2">
 <h2>Hold up, what <em>is</em> reproducibility again?</h2>
-<p>There is a reproducibility <strong>tradeoff</strong> for using <code>renv</code> and Docker—robust computational reproducibility <strong>but</strong> harder for novices to reproduce</p>
+<p>There is a reproducibility <strong>trade-off</strong> for using <code>renv</code> and Docker—robust computational reproducibility <strong>but</strong> harder for novices to reproduce</p>
 <div class="fragment">
 <p>If you use these tools, provide:</p>
 <ul>
@@ -635,12 +670,26 @@
 </ul>
 </div>
 </section>
-<section id="drop-in-session-showcase" class="slide level2">
-<h2>Drop-in Session &amp; Showcase</h2>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
 <ul>
-<li><p>Next week (10/10, 10/12): No workshops!</p></li>
-<li><p>Tuesday 10/17: Drop-in help session</p></li>
-<li><p>Tuesday 10/24: Reproducibility show &amp; tell</p></li>
+<li><p><a href="https://rstudio.github.io/renv/articles/renv.html"><code>renv</code> website</a></p></li>
+<li><p>CITATION.cff <a href="https://citation-file-format.github.io/">info</a> and <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">creator tool</a></p></li>
+<li><p><a href="https://zenodo.org/account/settings/github/">Zenodo-GitHub integration</a></p></li>
+<li><p><a href="https://reproducibility.rocks/materials/day4/01-docker/">Reproducible computational environments with Docker</a></p></li>
+</ul>
+</section>
+<section id="next-week" class="slide level2">
+<h2>Next week</h2>
+<ul>
+<li><p>Tuesday 10/18: <strong>Drop-in co-working session</strong>.</p>
+<ul>
+<li>Come and work on your reproducibility colloquium project/presentation</li>
+</ul></li>
+<li><p>Thursday 10/10: <strong>Reproducibility Colloquium!</strong></p>
+<ul>
+<li>Invite your lab-mates, PI, friends!</li>
+</ul></li>
 </ul>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
@@ -661,12 +710,6 @@ Maitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matis
 </div>
 </div>
 </section></section>
-<section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><code>renv</code> can also be set up to track <a href="https://rstudio.github.io/renv/articles/python.html">Python dependencies</a></p></li>
-</ol>
-</section>
     </div>
   </div>
 
