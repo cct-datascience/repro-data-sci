@@ -12,39 +12,45 @@ format:
     footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
-# Learning objectives
+## Learning objectives
 
 -   Write a more advanced function
 -   Set up an analysis with function and analysis scripts
 -   Use *iteration* to streamline workflows involving functions
 
-# When should I write my own function?
+## When should I write my own function?
 
 -   Standardized procedures done many times
 -   Discrete chunks of a workflow
 -   Code used by multiple scripts or at multiple points in a workflow
 
-# When should I leave code in a script?
+## When should I leave code in a script?
 
 -   Single-use, highly-customized code (e.g. a plot)
 -   Code that is changing a lot
 -   Code that *tells the story* of your analysis
 
-# Questions to ask yourself
+## Questions to ask yourself
 
 -   Do I find myself typing the same code over and over?
 -   Am I copy-pasting and changing a single variable/character?
 -   Does this code distract from the readability of a script?
 -   Is there an existing function I could pull from an R package?
 
-# Coding time
+## Coding time
+
+::: callout-important
+Make sure you are in the right project and on an appropriate branch!
+:::
+
+## Coding time
 
 -   Review sample analysis to decide what could be a function
 -   Organize this analysis into analysis and function scripts
 
-# Iteration
+## Iteration
 
-# Iteration
+## Iteration {.smaller}
 
 -   Iteration allows you to repeat the same process many times on different objects.
 -   `for` loops:
@@ -56,7 +62,7 @@ format:
     -   Fairly readable
     -   More efficient
 
-# Anatomy of `for` loops
+## Anatomy of `for` loops
 
 ```         
 for(<thing> in <some things>) {
@@ -70,9 +76,9 @@ for(i in 1:10) {
 }
 ```
 
-# Storing the output of `for` loops
+## Storing the output of `for` loops
 
-```r         
+``` r
 
 squares <- vector(length = 10)
 
@@ -81,27 +87,27 @@ for(i in 1:10){
 }
 ```
 
-# Anatomy of `purrr::map`
+## Anatomy of `purrr::map`
 
-```r         
+``` r
 purrr::map(<some things>, <a function>)
 ```
 
-```r         
+``` r
 purrr::map(1:10, \(x) x^2)
 ```
 
-# Storing the output of `purrr::map`
+## Storing the output of `purrr::map`
 
-```r         
+``` r
 purr_squares <- purrr::map(1:10, \(x) x^2)
 ```
 
-# Coding time
+## Coding time
 
 -   Practice using a for loop and a map statement to apply our function to each island in turn.
 
-# Resources
+## Resources
 
 -   [R4DS on iteration](https://r4ds.hadley.nz/iteration.html)
 -   [`purrr`](https://purrr.tidyverse.org/) and [`furrr`](https://furrr.futureverse.org/) documentation

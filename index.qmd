@@ -10,7 +10,8 @@ Welcome to the syllabus for the CCT Data Science fall workshop series: **Reprodu
 
 ## Schedule
 
-We'll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)
+We'll meet on Tuesdays and Thursdays from 11 a.m.to 1 p.m.
+via Zoom (link pinned in Slack channel)
 
 <!-- Edit by editing schedule.csv. To add links, use markdown [text](url) separated by commas. This code turns that into a bulleted list. -->
 
