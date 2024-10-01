@@ -1,7 +1,7 @@
 ---
-title: "Intermediate R II: Functions cont'd, iteration, and getting help"
-subtitle: "Session 9"
-date: "2023-10-01"
+title: "Intermediate R II: Iteration and more functions"
+subtitle: "Session 10"
+date: "2024-10-01"
 date-format: long
 format:
   uaz-revealjs:
@@ -12,73 +12,102 @@ format:
     footer: "[Reproduciblity & Data Science in R](../../index.html)"
 ---
 
-# Before we jump in...
+## Learning objectives
 
-## Show and tell (Late October)
+-   Write a more advanced function
+-   Set up an analysis with function and analysis scripts
+-   Use *iteration* to streamline workflows involving functions
 
--   An opportunity to apply workshop skills to your own work.
--   You could apply different parts to different projects, or more integratively to one single project.
--   Optional, but encouraged!
+## When should I write my own function?
 
-## Some inspirations
+-   Standardized procedures done many times
+-   Discrete chunks of a workflow
+-   Code used by multiple scripts or at multiple points in a workflow
 
--   Turn the project folder for one of your current research project into a git/GitHub repo and/or R project
--   Modify an R script to use functions, conditionals, or best-practices for code formatting
--   Improve directory organization for project or your entire computer!
+## When should I leave code in a script?
 
-# Today's objectives
+-   Single-use, highly-customized code (e.g. a plot)
+-   Code that is changing a lot
+-   Code that *tells the story* of your analysis
 
--   Modify our data cleaning function to apply to different islands
--   Use iteration to apply this function to each island
--   Organize our workflow into "functions" and "running" scripts
--   Learn how to get help with more advanced topics
+## Questions to ask yourself
 
-# Part I: Generalizing a function
+-   Do I find myself typing the same code over and over?
+-   Am I copy-pasting and changing a single variable/character?
+-   Does this code distract from the readability of a script?
+-   Is there an existing function I could pull from an R package?
 
--   Open up your Rproject from Tuesday
--   Coding objectives:
-    -   Make sure the function we wrote works
-    -   Apply this function to different islands by swapping URLS
-    -   Add "ifelse" logic to avoid having to re-type the URL every time
+## Coding time
 
-# Part II: Iteration
+::: callout-important
+Make sure you are in the right project and on an appropriate branch!
+:::
 
-## Iteration by hand
+## Coding time
 
-``` r
-my_first_site <- read.csv("data_first.csv")
-my_second_site <- read.csv("data_second.csv")
-my_third_site <- read.csv("data_third.csv")
+-   Review sample analysis to decide what could be a function
+-   Organize this analysis into analysis and function scripts
+
+## Iteration
+
+## Iteration {.smaller}
+
+-   Iteration allows you to repeat the same process many times on different objects.
+-   `for` loops:
+    -   Run sequentially
+    -   Easy to write and read
+    -   Slower, can be inefficient
+-   `purrr::map`:
+    -   *Can* run in parallel
+    -   Fairly readable
+    -   More efficient
+
+## Anatomy of `for` loops
+
+```         
+for(<thing> in <some things>) {
+  <do something with or to the thing>
+}
 ```
 
-## Why use code to iterate?
+```         
+for(i in 1:10) {
+  print(i^2)
+}
+```
 
--   Less code: fewer bugs, easier to understand
--   Easier to apply to new situations
--   Faster to write, maybe faster to run
+## Storing the output of `for` loops
 
-## Iteration using for loops
+``` r
 
--   Coding objectives:
-    -   Write a for loop to apply our cleaning function to each island
-    -   Store the results in a list
-    -   Convert this list back to a dataframe
+squares <- vector(length = 10)
 
-## Iteration using purrr::map
+for(i in 1:10){
+  squares[i] <- i^2
+}
+```
 
--   Coding objectives:
-    -   Use `purrr::map` as an alternative to a for loop
-    -   Demonstrate `purrr` applied to more complex workflows
+## Anatomy of `purrr::map`
 
-# Part III: Getting help
+``` r
+purrr::map(<some things>, <a function>)
+```
 
--   See the [Getting Help](../11-getting-help/slides.html) section!
+``` r
+purrr::map(1:10, \(x) x^2)
+```
 
-# Wrap-up
+## Storing the output of `purrr::map`
 
-Commit this week's work and create a new PR.
+``` r
+purr_squares <- purrr::map(1:10, \(x) x^2)
+```
 
-## Homework
+## Coding time
 
--   Identify a section of your code that could be made more efficient using a for loop or iterating using a function
--   Start thinking about show-and-tell opportunities!
+-   Practice using a for loop and a map statement to apply our function to each island in turn.
+
+## Resources
+
+-   [R4DS on iteration](https://r4ds.hadley.nz/iteration.html)
+-   [`purrr`](https://purrr.tidyverse.org/) and [`furrr`](https://furrr.futureverse.org/) documentation
