@@ -5,7 +5,7 @@ date: "2024-10-03"
 date-format: long
 format:
   uaz-revealjs:
-    reference-location: document
+    reference-location: section
     link-external-newwindow: true
     chalkboard: true
     logo: "../../logo.png"
@@ -27,7 +27,7 @@ Figure 2 from @maitner
 Figure 2: Predicted impacts of code-sharing on cumulative citations.
 Predicted values shown are for the mean Impact Factor (3.0) across the publications analyzed.
 Fully open = open code and open-access publication; fully closed = closed-access publication and no publicly available code.
-Predictions are based on estimated model coe cients (Table 2)
+Predictions are based on estimated model coeficients (Table 2)
 :::
 
 ## Getting credit for your code
@@ -43,7 +43,7 @@ Make it **easier** for people to cite your code
 ## CITATION.cff
 
 ::: incremental
--   Citation File Format are plain text files written in YAML
+-   A `CITATION.cff` file contains citation information written in YAML
 
 -   Adding a `CITATION.cff` file to your repo...
 
@@ -51,25 +51,43 @@ Make it **easier** for people to cite your code
 
     -   Helps code archive tools fill out metadata correctly when you archive your repo
 
--   Create a CITATION.cff file with this [helper](https://citation-file-format.github.io/cff-initializer-javascript/#/)
+-   Learn more and create your own: <https://citation-file-format.github.io/>
 
 -   See example [here](https://github.com/cct-datascience/repro-data-sci/blob/main/CITATION.cff)
 :::
 
 ## Options for archiving {.smaller}
 
-| Service   | Versioned DOIs? | Free?                              | GitHub integration? | Notes                                             |
-|--------------|--------------|--------------|--------------|----------------|
-| Zenodo    | Yes             | Yes                                | Yes                 | Backed by CERN, built with code and data in mind  |
-| Dryad     | Yes             | No, but some publishers cover cost | No                  | Intended for data, not code. Partners with Zenodo |
-| Figshare  | Yes             | Yes                                | Yes                 | Can't choose your license                         |
-| UA ReDATA | Yes             | Yes (for UA researchers)           | No                  | University of Arizona Libraries                   |
+| Service | Versioned DOIs? | Free? | GitHub integration? | Notes |
+|---------------|---------------|---------------|---------------|---------------|
+| Zenodo | Yes | Yes | Yes | Backed by CERN, built with code and data in mind |
+| Dryad | Yes | No, but some publishers cover cost | No | Intended for data, not code. Partners with Zenodo |
+| Figshare | Yes | Yes | Yes | Can't choose your license |
+| UA ReDATA | Yes | Yes (for UA researchers) | No | University of Arizona Libraries |
 
 ::: aside
 More detailed comparisons [here](https://www.agu.org/-/media/Files/Publications/Generalist-Data-Repository-Grid.pdf)
 :::
 
-# Zenodo Archiving Demo
+## Zenodo Archiving Demo
+
+1.  Log in to [sandbox.zenodo.org](https://sandbox.zenodo.org) using GitHub[^1]
+2.  In drop-down menu with your username, select "GitHub"
+3.  Find your repo in the list and flip the switch next to it
+4.  Go to your repo on GitHub and make a release
+5.  On sandbox.zenodo.org, get markdown to add a badge to README.md
+
+::: notes
+Demo archiving a repo with sandbox.zenodo.org and have everyone follow along with the repo they've been using for notes.
+:::
+
+## When to archive?
+
+No hard rules on this, but my preference:
+
+1.  Just before submitting a manuscript: release v 0.1.0
+2.  After responding to reviewers or re-submitting: increment "minor" version, e.g. v 0.2.0
+3.  After acceptance: release v 1.0.0
 
 ## Reproducible computational environments
 
@@ -113,15 +131,20 @@ To deactivate `renv`, run `renv::deactivate()`.
 To also remove all the files it created, run `renv::deactivate(clean = TRUE)` instead.
 :::
 
+::: notes
+Briefly discuss the contents of `renv.lock`, `.Rprofile`, and `renv/`.
+Point out `renv/.gitignore` — trust it about which files should go on GitHub.
+:::
+
 ## Limitations of `renv`
 
--   Only tracks R packages [^1]
+-   Only tracks R packages [^2]
 
 -   Can't reproduce operating system or system libraries
 
 -   Sometimes quite annoying to use (but it's getting better!)
 
-## Reproducible Everything with Docker
+## *More* Reproducibility with Docker
 
 Docker containers...
 
@@ -135,7 +158,7 @@ Docker containers...
 -   Can be downloaded and run from the command line
 :::
 
-## Making a Docker Container
+## Making a Docker Container <!--# skipped for 2024 --> {visibility="hidden"}
 
 A **Dockerfile** holds instructions on what to install and what code to run.
 Actually creating a Docker container is beyond the scope of this workshop, but you can [learn how](https://www.r-bloggers.com/2019/02/running-your-r-script-in-docker/)!
@@ -159,7 +182,7 @@ RUN Rscript /02_code/install_packages.R
 
 ## Hold up, what *is* reproducibility again?
 
-There is a reproducibility **tradeoff** for using `renv` and Docker---robust computational reproducibility **but** harder for novices to reproduce
+There is a reproducibility **trade-off** for using `renv` and Docker---robust computational reproducibility **but** harder for novices to reproduce
 
 . . .
 
@@ -169,17 +192,32 @@ If you use these tools, provide:
 -   Where to go for help troubleshooting
 -   Ways to access your code *without* extra layers
 
-## Drop-in Session & Showcase
+## Resources
 
--   Next week (10/10, 10/12): No workshops!
+-   [`renv` website](https://rstudio.github.io/renv/articles/renv.html)
 
--   Tuesday 10/17: Drop-in help session
+-   CITATION.cff [info](https://citation-file-format.github.io/) and [creator tool](https://citation-file-format.github.io/cff-initializer-javascript/#/)
 
--   Tuesday 10/24: Reproducibility show & tell
+-   [Zenodo-GitHub integration](https://zenodo.org/account/settings/github/)
+
+-   [Reproducible computational environments with Docker](https://reproducibility.rocks/materials/day4/01-docker/)
+
+## Next week
+
+-   Tuesday 10/18: **Drop-in co-working session**.
+
+    -   Come and work on your reproducibility colloquium project/presentation
+
+-   Thursday 10/10: **Reproducibility Colloquium!**
+
+    -   Invite your lab-mates, PI, friends!
 
 ## References
 
 ::: refs
 :::
 
-[^1]: `renv` can also be set up to track [Python dependencies](https://rstudio.github.io/renv/articles/python.html)
+[^1]: sandbox.zenodo.org is just for practice.
+    Use zenodo.org when you're ready to get a *real* DOI!
+
+[^2]: `renv` can also be set up to track [Python dependencies](https://rstudio.github.io/renv/articles/python.html)

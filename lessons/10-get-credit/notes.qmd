@@ -8,9 +8,13 @@ bibliography: references.bib
 
 ## Objective
 
-Learn the wrap-up steps to publish/archive a research compendium with a DOI.
-Understand reproducible computational environment.
-Learn `renv` and discuss Docker (concept).
+-   Add a basic CITATION.cff file to your repo
+
+-   Practice the wrap-up steps to publish/archive a research compendium with a DOI.
+
+-   Understand concept of a reproducible computational environment.
+
+-   Learn `renv` and discuss Docker (concept).
 
 ## Lesson Outline
 
@@ -31,22 +35,21 @@ Learn `renv` and discuss Docker (concept).
 
     -   Show CITATION.cff files for this repo and maybe one for a research compendium
     -   Show "cite this" button on GitHub
-    -   Show CITATION.cff creation tool [CFFINIT](https://citation-file-format.github.io/cff-initializer-javascript/#/)
-    -   Maybe mention `cffr::cff_validate()`
+    -   Everyone use CITATION.cff creation tool [CFFINIT](https://citation-file-format.github.io/cff-initializer-javascript/#/) to create a *basic* CITATION.cff
+    -   *Maybe* mention `cffr::cff_validate()`
 
 -   Archiving
 
-    -   Most participants probably won't be ready to follow along with their own repos, but we will be there to help when they are ready
-    -   Demo archiving a repo with Zenodo using this repo
+    -   Exercise: guide everyone through archiving a repo with Zenodo using sandbox.zenodo.org
     -   Add DOI badge to readme
     -   Update CITATION.cff with DOI
 
 -   `renv`
 
     -   Discuss why
-    -   Ask students to activate `renv` for a project and inspect files it creates (have co-instructor share screen)
+    -   Ask students to activate `renv` for a project and inspect files it creates
     -   Explain how `renv` works, especially `renv::status()` , and `renv::snapshot()`
-    -   Clone co-instructor's repo with `renv` files
+    -   Clone demo repo with `renv` files
         -   Show that no packages are available initially (project is isolated)
         -   run `renv::restore()`
 
@@ -58,4 +61,4 @@ Learn `renv` and discuss Docker (concept).
 
 ## Homework
 
--   Prep for showcase session
+-   Prep for reproducibility colloquium
