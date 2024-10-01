@@ -10,8 +10,8 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="dcterms.date" content="2023-10-01">
-  <title>Reproducibility &amp; Data Science in R – Intermediate R II: Functions cont’d, iteration, and getting help</title>
+  <meta name="dcterms.date" content="2024-10-01">
+  <title>Reproducibility &amp; Data Science in R – Intermediate R II: Iteration and more functions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -393,115 +393,129 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Intermediate R II: Functions cont’d, iteration, and getting help</h1>
-  <p class="subtitle">Session 9</p>
+  <h1 class="title">Intermediate R II: Iteration and more functions</h1>
+  <p class="subtitle">Session 10</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">October 1, 2023</p>
+  <p class="date">October 1, 2024</p>
 </section>
-<section>
-<section id="before-we-jump-in" class="title-slide slide level1 center">
-<h1>Before we jump in…</h1>
-
-</section>
-<section id="show-and-tell-late-october" class="slide level2">
-<h2>Show and tell (Late October)</h2>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning objectives</h2>
 <ul>
-<li>An opportunity to apply workshop skills to your own work.</li>
-<li>You could apply different parts to different projects, or more integratively to one single project.</li>
-<li>Optional, but encouraged!</li>
+<li>Write a more advanced function</li>
+<li>Set up an analysis with function and analysis scripts</li>
+<li>Use <em>iteration</em> to streamline workflows involving functions</li>
 </ul>
 </section>
-<section id="some-inspirations" class="slide level2">
-<h2>Some inspirations</h2>
+<section id="when-should-i-write-my-own-function" class="slide level2">
+<h2>When should I write my own function?</h2>
 <ul>
-<li>Turn the project folder for one of your current research project into a git/GitHub repo and/or R project</li>
-<li>Modify an R script to use functions, conditionals, or best-practices for code formatting</li>
-<li>Improve directory organization for project or your entire computer!</li>
-</ul>
-</section></section>
-<section id="todays-objectives" class="title-slide slide level1 center">
-<h1>Today’s objectives</h1>
-<ul>
-<li>Modify our data cleaning function to apply to different islands</li>
-<li>Use iteration to apply this function to each island</li>
-<li>Organize our workflow into “functions” and “running” scripts</li>
-<li>Learn how to get help with more advanced topics</li>
+<li>Standardized procedures done many times</li>
+<li>Discrete chunks of a workflow</li>
+<li>Code used by multiple scripts or at multiple points in a workflow</li>
 </ul>
 </section>
-
-<section id="part-i-generalizing-a-function" class="title-slide slide level1 center">
-<h1>Part I: Generalizing a function</h1>
+<section id="when-should-i-leave-code-in-a-script" class="slide level2">
+<h2>When should I leave code in a script?</h2>
 <ul>
-<li>Open up your Rproject from Tuesday</li>
-<li>Coding objectives:
+<li>Single-use, highly-customized code (e.g.&nbsp;a plot)</li>
+<li>Code that is changing a lot</li>
+<li>Code that <em>tells the story</em> of your analysis</li>
+</ul>
+</section>
+<section id="questions-to-ask-yourself" class="slide level2">
+<h2>Questions to ask yourself</h2>
 <ul>
-<li>Make sure the function we wrote works</li>
-<li>Apply this function to different islands by swapping URLS</li>
-<li>Add “ifelse” logic to avoid having to re-type the URL every time</li>
+<li>Do I find myself typing the same code over and over?</li>
+<li>Am I copy-pasting and changing a single variable/character?</li>
+<li>Does this code distract from the readability of a script?</li>
+<li>Is there an existing function I could pull from an R package?</li>
+</ul>
+</section>
+<section id="coding-time" class="slide level2">
+<h2>Coding time</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Make sure you are in the right project and on an appropriate branch!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="coding-time-1" class="slide level2">
+<h2>Coding time</h2>
+<ul>
+<li>Review sample analysis to decide what could be a function</li>
+<li>Organize this analysis into analysis and function scripts</li>
+</ul>
+</section>
+<section id="iteration" class="slide level2">
+<h2>Iteration</h2>
+</section>
+<section id="iteration-1" class="slide level2 smaller">
+<h2>Iteration</h2>
+<ul>
+<li>Iteration allows you to repeat the same process many times on different objects.</li>
+<li><code>for</code> loops:
+<ul>
+<li>Run sequentially</li>
+<li>Easy to write and read</li>
+<li>Slower, can be inefficient</li>
+</ul></li>
+<li><code>purrr::map</code>:
+<ul>
+<li><em>Can</em> run in parallel</li>
+<li>Fairly readable</li>
+<li>More efficient</li>
 </ul></li>
 </ul>
 </section>
-
-<section>
-<section id="part-ii-iteration" class="title-slide slide level1 center">
-<h1>Part II: Iteration</h1>
-
+<section id="anatomy-of-for-loops" class="slide level2">
+<h2>Anatomy of <code>for</code> loops</h2>
+<pre><code>for(&lt;thing&gt; in &lt;some things&gt;) {
+  &lt;do something with or to the thing&gt;
+}</code></pre>
+<pre><code>for(i in 1:10) {
+  print(i^2)
+}</code></pre>
 </section>
-<section id="iteration-by-hand" class="slide level2">
-<h2>Iteration by hand</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>my_first_site <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data_first.csv"</span>)</span>
-<span id="cb1-2"><a></a>my_second_site <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data_second.csv"</span>)</span>
-<span id="cb1-3"><a></a>my_third_site <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data_third.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="storing-the-output-of-for-loops" class="slide level2">
+<h2>Storing the output of <code>for</code> loops</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a></span>
+<span id="cb3-2"><a></a>squares <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="at">length =</span> <span class="dv">10</span>)</span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>){</span>
+<span id="cb3-5"><a></a>  squares[i] <span class="ot">&lt;-</span> i<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb3-6"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="why-use-code-to-iterate" class="slide level2">
-<h2>Why use code to iterate?</h2>
+<section id="anatomy-of-purrrmap" class="slide level2">
+<h2>Anatomy of <code>purrr::map</code></h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>purrr<span class="sc">::</span><span class="fu">map</span>(<span class="sc">&lt;</span>some things<span class="sc">&gt;</span>, <span class="sc">&lt;</span>a <span class="cf">function</span><span class="sc">&gt;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>purrr<span class="sc">::</span><span class="fu">map</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, \(x) x<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="storing-the-output-of-purrrmap" class="slide level2">
+<h2>Storing the output of <code>purrr::map</code></h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>purr_squares <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, \(x) x<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="coding-time-2" class="slide level2">
+<h2>Coding time</h2>
 <ul>
-<li>Less code: fewer bugs, easier to understand</li>
-<li>Easier to apply to new situations</li>
-<li>Faster to write, maybe faster to run</li>
+<li>Practice using a for loop and a map statement to apply our function to each island in turn.</li>
 </ul>
 </section>
-<section id="iteration-using-for-loops" class="slide level2">
-<h2>Iteration using for loops</h2>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
 <ul>
-<li>Coding objectives:
-<ul>
-<li>Write a for loop to apply our cleaning function to each island</li>
-<li>Store the results in a list</li>
-<li>Convert this list back to a dataframe</li>
-</ul></li>
-</ul>
-</section>
-<section id="iteration-using-purrrmap" class="slide level2">
-<h2>Iteration using purrr::map</h2>
-<ul>
-<li>Coding objectives:
-<ul>
-<li>Use <code>purrr::map</code> as an alternative to a for loop</li>
-<li>Demonstrate <code>purrr</code> applied to more complex workflows</li>
-</ul></li>
-</ul>
-</section></section>
-<section id="part-iii-getting-help" class="title-slide slide level1 center">
-<h1>Part III: Getting help</h1>
-<ul>
-<li>See the <a href="../11-getting-help/slides.html">Getting Help</a> section!</li>
-</ul>
-</section>
-
-<section>
-<section id="wrap-up" class="title-slide slide level1 center">
-<h1>Wrap-up</h1>
-<p>Commit this week’s work and create a new PR.</p>
-</section>
-<section id="homework" class="slide level2">
-<h2>Homework</h2>
-<ul>
-<li>Identify a section of your code that could be made more efficient using a for loop or iterating using a function</li>
-<li>Start thinking about show-and-tell opportunities!</li>
+<li><a href="https://r4ds.hadley.nz/iteration.html">R4DS on iteration</a></li>
+<li><a href="https://purrr.tidyverse.org/"><code>purrr</code></a> and <a href="https://furrr.futureverse.org/"><code>furrr</code></a> documentation</li>
 </ul>
 
 <div class="quarto-auto-generated-content">
@@ -510,7 +524,7 @@
 <p><a href="../../index.html">Reproduciblity &amp; Data Science in R</a></p>
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

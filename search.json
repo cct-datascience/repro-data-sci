@@ -378,53 +378,102 @@
     "text": "Installation & materials\n\nSlides\nmacOS git installation\nWindows git installation (detailed step-by-step here)\nSoftware Carpentry Unix Shell episode #1\nSoftware Carpentry Unix Shell episode #2\nSoftware Carpentry Unix Shell episode #3 (time permitting)"
   },
   {
-    "objectID": "lessons/9-intermediate-r-2/slides.html#show-and-tell-late-october",
-    "href": "lessons/9-intermediate-r-2/slides.html#show-and-tell-late-october",
-    "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
-    "section": "Show and tell (Late October)",
-    "text": "Show and tell (Late October)\n\nAn opportunity to apply workshop skills to your own work.\nYou could apply different parts to different projects, or more integratively to one single project.\nOptional, but encouraged!"
+    "objectID": "lessons/9-intermediate-r-2/slides.html#learning-objectives",
+    "href": "lessons/9-intermediate-r-2/slides.html#learning-objectives",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nWrite a more advanced function\nSet up an analysis with function and analysis scripts\nUse iteration to streamline workflows involving functions"
   },
   {
-    "objectID": "lessons/9-intermediate-r-2/slides.html#some-inspirations",
-    "href": "lessons/9-intermediate-r-2/slides.html#some-inspirations",
-    "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
-    "section": "Some inspirations",
-    "text": "Some inspirations\n\nTurn the project folder for one of your current research project into a git/GitHub repo and/or R project\nModify an R script to use functions, conditionals, or best-practices for code formatting\nImprove directory organization for project or your entire computer!"
+    "objectID": "lessons/9-intermediate-r-2/slides.html#when-should-i-write-my-own-function",
+    "href": "lessons/9-intermediate-r-2/slides.html#when-should-i-write-my-own-function",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "When should I write my own function?",
+    "text": "When should I write my own function?\n\nStandardized procedures done many times\nDiscrete chunks of a workflow\nCode used by multiple scripts or at multiple points in a workflow"
   },
   {
-    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration-by-hand",
-    "href": "lessons/9-intermediate-r-2/slides.html#iteration-by-hand",
-    "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
-    "section": "Iteration by hand",
-    "text": "Iteration by hand\nmy_first_site &lt;- read.csv(\"data_first.csv\")\nmy_second_site &lt;- read.csv(\"data_second.csv\")\nmy_third_site &lt;- read.csv(\"data_third.csv\")"
+    "objectID": "lessons/9-intermediate-r-2/slides.html#when-should-i-leave-code-in-a-script",
+    "href": "lessons/9-intermediate-r-2/slides.html#when-should-i-leave-code-in-a-script",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "When should I leave code in a script?",
+    "text": "When should I leave code in a script?\n\nSingle-use, highly-customized code (e.g. a plot)\nCode that is changing a lot\nCode that tells the story of your analysis"
   },
   {
-    "objectID": "lessons/9-intermediate-r-2/slides.html#why-use-code-to-iterate",
-    "href": "lessons/9-intermediate-r-2/slides.html#why-use-code-to-iterate",
-    "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
-    "section": "Why use code to iterate?",
-    "text": "Why use code to iterate?\n\nLess code: fewer bugs, easier to understand\nEasier to apply to new situations\nFaster to write, maybe faster to run"
+    "objectID": "lessons/9-intermediate-r-2/slides.html#questions-to-ask-yourself",
+    "href": "lessons/9-intermediate-r-2/slides.html#questions-to-ask-yourself",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Questions to ask yourself",
+    "text": "Questions to ask yourself\n\nDo I find myself typing the same code over and over?\nAm I copy-pasting and changing a single variable/character?\nDoes this code distract from the readability of a script?\nIs there an existing function I could pull from an R package?"
   },
   {
-    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration-using-for-loops",
-    "href": "lessons/9-intermediate-r-2/slides.html#iteration-using-for-loops",
-    "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
-    "section": "Iteration using for loops",
-    "text": "Iteration using for loops\n\nCoding objectives:\n\nWrite a for loop to apply our cleaning function to each island\nStore the results in a list\nConvert this list back to a dataframe"
+    "objectID": "lessons/9-intermediate-r-2/slides.html#coding-time",
+    "href": "lessons/9-intermediate-r-2/slides.html#coding-time",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Coding time",
+    "text": "Coding time\n\n\n\n\n\n\nImportant\n\n\nMake sure you are in the right project and on an appropriate branch!"
   },
   {
-    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration-using-purrrmap",
-    "href": "lessons/9-intermediate-r-2/slides.html#iteration-using-purrrmap",
-    "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
-    "section": "Iteration using purrr::map",
-    "text": "Iteration using purrr::map\n\nCoding objectives:\n\nUse purrr::map as an alternative to a for loop\nDemonstrate purrr applied to more complex workflows"
+    "objectID": "lessons/9-intermediate-r-2/slides.html#coding-time-1",
+    "href": "lessons/9-intermediate-r-2/slides.html#coding-time-1",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Coding time",
+    "text": "Coding time\n\nReview sample analysis to decide what could be a function\nOrganize this analysis into analysis and function scripts"
   },
   {
-    "objectID": "lessons/9-intermediate-r-2/slides.html#homework",
-    "href": "lessons/9-intermediate-r-2/slides.html#homework",
-    "title": "Intermediate R II: Functions cont’d, iteration, and getting help",
-    "section": "Homework",
-    "text": "Homework\n\nIdentify a section of your code that could be made more efficient using a for loop or iterating using a function\nStart thinking about show-and-tell opportunities!\n\n\n\n\n\nReproduciblity & Data Science in R"
+    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration",
+    "href": "lessons/9-intermediate-r-2/slides.html#iteration",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Iteration",
+    "text": "Iteration"
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/slides.html#iteration-1",
+    "href": "lessons/9-intermediate-r-2/slides.html#iteration-1",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Iteration",
+    "text": "Iteration\n\nIteration allows you to repeat the same process many times on different objects.\nfor loops:\n\nRun sequentially\nEasy to write and read\nSlower, can be inefficient\n\npurrr::map:\n\nCan run in parallel\nFairly readable\nMore efficient"
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/slides.html#anatomy-of-for-loops",
+    "href": "lessons/9-intermediate-r-2/slides.html#anatomy-of-for-loops",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Anatomy of for loops",
+    "text": "Anatomy of for loops\nfor(&lt;thing&gt; in &lt;some things&gt;) {\n  &lt;do something with or to the thing&gt;\n}\nfor(i in 1:10) {\n  print(i^2)\n}"
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/slides.html#storing-the-output-of-for-loops",
+    "href": "lessons/9-intermediate-r-2/slides.html#storing-the-output-of-for-loops",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Storing the output of for loops",
+    "text": "Storing the output of for loops\n\nsquares &lt;- vector(length = 10)\n\nfor(i in 1:10){\n  squares[i] &lt;- i^2\n}"
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/slides.html#anatomy-of-purrrmap",
+    "href": "lessons/9-intermediate-r-2/slides.html#anatomy-of-purrrmap",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Anatomy of purrr::map",
+    "text": "Anatomy of purrr::map\npurrr::map(&lt;some things&gt;, &lt;a function&gt;)\npurrr::map(1:10, \\(x) x^2)"
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/slides.html#storing-the-output-of-purrrmap",
+    "href": "lessons/9-intermediate-r-2/slides.html#storing-the-output-of-purrrmap",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Storing the output of purrr::map",
+    "text": "Storing the output of purrr::map\npurr_squares &lt;- purrr::map(1:10, \\(x) x^2)"
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/slides.html#coding-time-2",
+    "href": "lessons/9-intermediate-r-2/slides.html#coding-time-2",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Coding time",
+    "text": "Coding time\n\nPractice using a for loop and a map statement to apply our function to each island in turn."
+  },
+  {
+    "objectID": "lessons/9-intermediate-r-2/slides.html#resources",
+    "href": "lessons/9-intermediate-r-2/slides.html#resources",
+    "title": "Intermediate R II: Iteration and more functions",
+    "section": "Resources",
+    "text": "Resources\n\nR4DS on iteration\npurrr and furrr documentation\n\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/8-intermediate-r-1/slides.html#picking-up-from-last-week",
@@ -1663,7 +1712,7 @@
     "href": "index.html#schedule",
     "title": "Reproducibility and Data Science in R",
     "section": "Schedule",
-    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11am to 1pm via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n—\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n\nslides\n\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n\nguidelines"
+    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11 a.m.to 1 p.m. via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n\nslides\n\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n\nslides\n\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n\nguidelines"
   },
   {
     "objectID": "index.html#code-of-conduct",
