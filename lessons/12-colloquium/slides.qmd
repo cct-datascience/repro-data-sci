@@ -1,0 +1,87 @@
+---
+title: "Reproducibility & Data Science in R Colloqium"
+subtitle: "CCT Data Science presents.."
+date: "2024-10-10"
+date-format: "MMMM YYYY"
+format:
+  uaz-revealjs:
+    theme: custom.scss
+    template-partials: 
+      - title-slide.html
+    link-external-newwindow: true
+    logo: "../../logo.png"
+    footer: "[Reproduciblity & Data Science in R](../../index.html)"
+---
+
+# Welcome!
+
+## Who we are
+
+Communications & Cyber Technologies Data Science Team.
+
+::: {layout-ncol="2"}
+![Kristina Riemer](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_card_image/public/2023-11/372401452_145369451922152_6979083237186890441_n.jpeg?itok=MhmVIWCM){fig-align="left" width="240"}
+
+![Chistophe Schnaufer](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_card_image/public/2023-11/chris_schnaufer_ua.png?itok=N7cQOPuh){fig-align="left" width="240"}
+
+![Eric Scott](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_card_image/public/2023-11/eric_scott_lowres.jpeg?itok=iIbodI-n){fig-align="left" width="254"}
+
+![Renata Diaz](https://datascience.cct.arizona.edu/sites/datascience.cct.arizona.edu/files/styles/az_card_image/public/2023-11/rmd.png?itok=VLWXSaNK){fig-align="left" width="240"}
+:::
+
+## What we offer {.smaller}
+
+::::::::: columns
+::::: {.column width="50%"}
+::: fragment
+### [Workshops](https://datascience.cct.arizona.edu/workshops)
+
+-   Monthly, on various topics
+-   Past workshops on [{{< iconify logos:youtube>}}](https://www.youtube.com/channel/UCiBfho07gp4LMbWY3_EG8Iw)
+:::
+
+::: fragment
+### [Incubator](https://datascience.cct.arizona.edu/incubator)
+
+-   Collaboration on short-term or preliminary projects
+-   "Pre-funded" (i.e. free for ALVSCE researchers)
+:::
+:::::
+
+::::: {.column width="50%"}
+::: fragment
+### [Proposals & Collaboration](https://datascience.cct.arizona.edu/projects)
+
+-   Help with grant-writing (e.g. data mangement plans)
+-   Longer-term funded projects
+:::
+
+::: fragment
+### [Drop-in hours](https://datascience.cct.arizona.edu/drop-in-hours)
+
+-   Virtually, every Tuesday at 9am
+:::
+:::::
+:::::::::
+
+## Reproducibility & Data Science in R
+
+::: incremental
+-   Offered every fall by application only
+-   Topics covered include:
+    -   Organizing a research compendium
+    -   Reproducible reports & manuscripts
+    -   Version control with git and GitHub
+    -   Data wrangling and programming with R
+    -   Archiving data and code
+:::
+
+## Get in touch!
+
+{{< iconify mdi:web >}} [datascience.cct.arizona.edu](https://datascience.cct.arizona.edu/)
+
+{{< iconify mdi:email >}} [cct-datascience\@arizona.edu](mailto:cct-datascience@arizona.edu)
+
+{{< iconify mdi:mastodon >}} [\@cct_datascience\@fosstodon.org](https://fosstodon.org/@cct_datascience)
+
+{{< iconify mdi:youtube >}} [youtube.com/\@uofa-cctdatascience](https://www.youtube.com/channel/UCiBfho07gp4LMbWY3_EG8Iw)

@@ -1,0 +1,22 @@
+{
+  "hash": "041ac4c3529c6f4feb84b8949154f77f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Reproducibility & Data Science in R Colloqium\"\nsubtitle: \"CCT Data Science presents..\"\ndate: \"2024-10-10\"\ndate-format: \"MMMM YYYY\"\nformat:\n  uaz-revealjs:\n    template-partials: \n      - title-slide.html\n    link-external-newwindow: true\n    logo: \"../../logo.png\"\n    footer: \"[Reproduciblity & Data Science in R](../../index.html)\"\n---\n\n\n\n# Welcome!\n\n## Who we are\n\nCommunications & Cyber Technologies Data Science Team\n\n<!-- pics go here, including Renata -->\n\n## What we offer {.smaller}\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<bslib-layout-columns class=\"bslib-grid grid bslib-mb-spacing html-fill-item\" data-require-bs-caller=\"layout_columns()\" data-require-bs-version=\"5\">\n<div class=\"bslib-grid-item bslib-gap-spacing html-fill-container\">\n<div class=\"card bslib-card bslib-mb-spacing html-fill-item html-fill-container\" data-bslib-card-init data-require-bs-caller=\"card()\" data-require-bs-version=\"5\">\n<div class=\"card-header\">Drop-in Hours</div>\n<div class=\"card-body bslib-gap-spacing html-fill-item html-fill-container\" style=\"margin-top:auto;margin-bottom:auto;flex:1 1 auto;\">- Virtually, every Tuesday at 9am</div>\n<script data-bslib-card-init>bslib.Card.initializeAllCards();</script>\n</div>\n</div>\n</bslib-layout-columns>\n```\n\n:::\n:::\n\n\n\n::::: columns\n::: {.column width=\"50%\"}\n### Drop-in hours\n\n-   Virtually, every Tuesday at 9am\n\n### Workshops\n\n-   Monthly, on various topics\n-   Past workshops on YouTube\n:::\n\n::: {.column width=\"50%\"}\n### Data Science Incubator\n\n-   \\~80 hours of our time on a 3-6 month project\n-   \"pre-funded\" (i.e. free for ALVSCE researchers)\n-   See past workshops on our website\n:::\n:::::\n\n::: notes\n-   Our 2024 cohort was selected from a group of competitive applications\n-   10 lessons\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"../../site_libs/bslib-component-js-0.8.0/components.min.js\"></script>\n<script src=\"../../site_libs/bslib-component-js-0.8.0/web-components.min.js\" type=\"module\"></script>\n<link href=\"../../site_libs/bslib-component-css-0.8.0/components.css\" rel=\"stylesheet\" />\n<link href=\"../../site_libs/htmltools-fill-0.5.8.1/fill.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/bslib-tag-require-0.8.0/tag-require.js\"></script>\n"
+      ],
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
