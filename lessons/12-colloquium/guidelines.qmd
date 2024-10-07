@@ -2,7 +2,7 @@
 title: "Reproducibility Colloquium"
 ---
 
-The [final session](index.qmd#schedule) of this workshop series is our ✨**Reproducibility Colloquium**✨, where you all get a chance to share what you've learned with each other and anyone you'd like to invite to attend.
+The [final session](../../index.qmd#schedule) of this workshop series is our ✨**Reproducibility Colloquium**✨, where you all get a chance to share what you've learned with each other and anyone you'd like to invite to attend.
 You are invited to give a short (about 5min) talk with slides (about 5).
 To make this as low stakes as possible, here is an outline you may follow when putting together your presentation.
 
