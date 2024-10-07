@@ -59,7 +59,7 @@ Make it **easier** for people to cite your code
 ## Options for archiving {.smaller}
 
 | Service | Versioned DOIs? | Free? | GitHub integration? | Notes |
-|---------------|---------------|---------------|---------------|---------------|
+|----|----|----|----|----|
 | Zenodo | Yes | Yes | Yes | Backed by CERN, built with code and data in mind |
 | Dryad | Yes | No, but some publishers cover cost | No | Intended for data, not code. Partners with Zenodo |
 | Figshare | Yes | Yes | Yes | Can't choose your license |
