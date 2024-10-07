@@ -44,12 +44,7 @@ website:
             text: "9. Intermediate R II"
           - href: "lessons/10-get-credit/notes.qmd"
             text: "10. Getting Credit For Your Hard Work"
-          - href: "lessons/11-getting-help/notes.qmd"
-            text: "11. Getting Help"
-          - href: "lessons/12-drop-in/notes.qmd"
-            text: "12. Q&A session / managing complicated worflows"
-          - href: "survey_responses.qmd"
-            text: "Post-Workshop Survey Responses"
+
 format:
   html:
     theme: 
@@ -57,6 +52,7 @@ format:
       - custom.scss
     css: https://use.typekit.net/emv3zbo.css #proxima-nova font
     toc: true
+    
 editor: 
   markdown:
     wrap: sentence
