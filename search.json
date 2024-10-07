@@ -1043,102 +1043,46 @@
     "text": "Lesson Outline\n\nQuarto: an open-source scientific and technical publishing system\n\nAllows combining markdown, code, and code output (tables, plots, etc)\nWide variety of outputs: html, pdf, word, and more\nUse cases:\n\nNotebook\nShare results with collaborators\nPresentations\nReproducible manuscripts\n\n\nHow does it work?\n\nqmd -&gt; knitr -&gt; md -&gt; pandoc -&gt; word, pdf, html, etc.\n\nAnatomy of a .Qmd\n\nLook familiar if you’ve used RMarkdown\nYAML header has metadata and settings\nMarkdown body\nCode chunks with R, Python, Julia, or other code\n\nCreate .Qmd and play\n\nin header: title, author, date\nin body: headers, itallics, bold, code, links\nRender as html\n\nDemo visual editor\n\nSwitch back and forth\n“Add anything” menu with cmd-/cmd-/\n\nRunning code in code chunks\n#| label: setup\n#| include: false\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(knitr)\n#| label: fig-box\n#| fig-cap: \"Boxplot of body mass in grams by penguin sex.\"\nggplot(penguins, aes(x = sex, y = body_mass_g)) + geom_boxplot()\n#| label: tbl-sample\n#| tbl-cap: \"Sample sizes of penguins by sex and island\"\ntable(penguins$sex, penguins$island, useNA = \"always\") |&gt; kable()\nCode chunk options\n\nDemo some common ones like label, echo: false, fig-cap , code-fold\nDemo applying to entire doc in YAML header\n\nAdd TOC (toc: true)\nEquations (look up how to cross ref equations during lesson)\nCitations (from DOI or from Zenodo)\nCross refs\nCallouts\nMention journal articles (check out AGU format example https://quarto-journals.github.io/agu/)\nPoint students toward tutorial and full documentation"
   },
   {
-    "objectID": "lessons/11-getting-help/slides.html#shell-commands",
-    "href": "lessons/11-getting-help/slides.html#shell-commands",
-    "title": "Getting Help",
-    "section": "Shell commands",
-    "text": "Shell commands\nls --help\nman ls\ngit --help"
+    "objectID": "lessons/12-colloquium/guidelines.html",
+    "href": "lessons/12-colloquium/guidelines.html",
+    "title": "Reproducibility Colloquium",
+    "section": "",
+    "text": "The final session of this workshop series is our ✨Reproducibility Colloquium✨, where you all get a chance to share what you’ve learned with each other and anyone you’d like to invite to attend. You are invited to give a short (about 5min) talk with slides (about 5). To make this as low stakes as possible, here is an outline you may follow when putting together your presentation."
   },
   {
-    "objectID": "lessons/11-getting-help/slides.html#in-rstudio",
-    "href": "lessons/11-getting-help/slides.html#in-rstudio",
-    "title": "Getting Help",
-    "section": "In RStudio",
-    "text": "In RStudio"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#package-websites",
-    "href": "lessons/11-getting-help/slides.html#package-websites",
-    "title": "Getting Help",
-    "section": "Package Websites",
-    "text": "Package Websites\n\n\n\n\n\n\nPackage websites often are the same exact content as help pages + vignettes, but easier to read and examples have already been rendered"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#asking-questions",
-    "href": "lessons/11-getting-help/slides.html#asking-questions",
-    "title": "Getting Help",
-    "section": "Asking questions",
-    "text": "Asking questions"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#asking-questions-1",
-    "href": "lessons/11-getting-help/slides.html#asking-questions-1",
-    "title": "Getting Help",
-    "section": "Asking questions",
-    "text": "Asking questions"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#minimal-reproducible-examples",
-    "href": "lessons/11-getting-help/slides.html#minimal-reproducible-examples",
-    "title": "Getting Help",
-    "section": "Minimal Reproducible Examples",
-    "text": "Minimal Reproducible Examples\n\n\n\n\n\n\nThe reprex package helps you make reproducible examples and format them for pasting into GitHub, Slack, etc."
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#reporting-bugs-or-is-it-just-me",
-    "href": "lessons/11-getting-help/slides.html#reporting-bugs-or-is-it-just-me",
-    "title": "Getting Help",
-    "section": "Reporting bugs (or is it just me?)",
-    "text": "Reporting bugs (or is it just me?)\n\n\nPay attention when opening an issue on GitHub—sometimes they are only supposed to be used for bug reports or feature requests and will direct you elsewhere for asking for help"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#asking-ai-not-recommended",
-    "href": "lessons/11-getting-help/slides.html#asking-ai-not-recommended",
-    "title": "Getting Help",
-    "section": "Asking AI (not recommended)",
-    "text": "Asking AI (not recommended)"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#beware-of-stochastic-parrots1",
-    "href": "lessons/11-getting-help/slides.html#beware-of-stochastic-parrots1",
-    "title": "Getting Help",
-    "section": "Beware of stochastic parrots1",
-    "text": "Beware of stochastic parrots1\n\nLLMs don’t understand, but are good at mimicry\nUse with care:\n\nMay be wrong\nMay be inconsistent\n\n\n\n\nTools like ChatGPT pose possible ethical issues\n\nPlagiarism\nLabor conditions\nInputs may be sent to parent companies"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#getting-help-at-uarizona",
-    "href": "lessons/11-getting-help/slides.html#getting-help-at-uarizona",
-    "title": "Getting Help",
-    "section": "Getting help at UArizona",
-    "text": "Getting help at UArizona"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#getting-help-at-uarizona-1",
-    "href": "lessons/11-getting-help/slides.html#getting-help-at-uarizona-1",
-    "title": "Getting Help",
-    "section": "Getting help at UArizona",
-    "text": "Getting help at UArizona"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#resources-ai-tools",
-    "href": "lessons/11-getting-help/slides.html#resources-ai-tools",
-    "title": "Getting Help",
-    "section": "Resources: AI tools",
-    "text": "Resources: AI tools\n\nhttps://ecoevo.social/@cboettig/110934209180569370\nhttps://www.infoworld.com/article/3694611/8-chatgpt-tools-for-r-programming.html\nhttps://dl.acm.org/doi/abs/10.1145/3442188.3445922\nhttps://medium.com/@konstantine_45825/chatgpt-is-no-stochastic-parrot-but-it-also-claims-that-1-is-greater-than-1-e3cd1fc303e0"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#resources-ua-community",
-    "href": "lessons/11-getting-help/slides.html#resources-ua-community",
-    "title": "Getting Help",
-    "section": "Resources: UA community",
-    "text": "Resources: UA community\n\nUA Data Science Institute\nUA Data Science Slack\nCCT Drop-in Hours, 9-10 on Tuesdays\n\n\n\n\n\nReproduciblity & Data Science in R"
-  },
-  {
-    "objectID": "lessons/11-getting-help/slides.html#footnotes",
-    "href": "lessons/11-getting-help/slides.html#footnotes",
-    "title": "Getting Help",
+    "objectID": "lessons/12-colloquium/guidelines.html#footnotes",
+    "href": "lessons/12-colloquium/guidelines.html#footnotes",
+    "title": "Reproducibility Colloquium",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nhttps://en.wikipedia.org/wiki/Stochastic_parrot"
+    "text": "Footnotes\n\n\nThis is a good opportunity to practice an elevator pitch! Try to keep it to just a couple sentences—just enough background to give some context to your data and code. The goal of the presentation is to focus on your project organization and reproducibility, not the details of your research topic.↩︎"
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html",
+    "href": "lessons/10-get-credit/notes.html",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "",
+    "text": "Add a basic CITATION.cff file to your repo\nPractice the wrap-up steps to publish/archive a research compendium with a DOI.\nUnderstand concept of a reproducible computational environment.\nLearn renv and discuss Docker (concept)."
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html#objective",
+    "href": "lessons/10-get-credit/notes.html#objective",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "",
+    "text": "Add a basic CITATION.cff file to your repo\nPractice the wrap-up steps to publish/archive a research compendium with a DOI.\nUnderstand concept of a reproducible computational environment.\nLearn renv and discuss Docker (concept)."
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html#lesson-outline",
+    "href": "lessons/10-get-credit/notes.html#lesson-outline",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "Lesson Outline",
+    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (2023)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nEveryone use CITATION.cff creation tool CFFINIT to create a basic CITATION.cff\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nExercise: guide everyone through archiving a repo with Zenodo using sandbox.zenodo.org\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates\nExplain how renv works, especially renv::status() , and renv::snapshot()\nClone demo repo with renv files\n\nShow that no packages are available initially (project is isolated)\nrun renv::restore()\n\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
+  },
+  {
+    "objectID": "lessons/10-get-credit/notes.html#homework",
+    "href": "lessons/10-get-credit/notes.html#homework",
+    "title": "Getting Credit For Your Hard Work",
+    "section": "Homework",
+    "text": "Homework\n\nPrep for reproducibility colloquium"
   },
   {
     "objectID": "lessons/10-get-credit/slides.html#papers-with-open-code-are-cited-more",
@@ -1246,88 +1190,32 @@
     "text": "References\n\n\n\n\n\n\n\nReproduciblity & Data Science in R\n\n\n\n\nMaitner, Brian, Paul Santos-Andrade, Luna Lei, George Barbosa, Brad Boyle, Matiss Castorena, Brian Enquist, et al. 2023. “Code Sharing Increases Citations, but Remains Uncommon.” https://doi.org/10.21203/rs.3.rs-3222221/v1."
   },
   {
-    "objectID": "colloquium.html",
-    "href": "colloquium.html",
-    "title": "Reproducibility Colloquium",
-    "section": "",
-    "text": "The final session of this workshop series is our ✨Reproducibility Colloquium✨, where you all get a chance to share what you’ve learned with each other and anyone you’d like to invite to attend. You are invited to give a short (about 5min) talk with slides (about 5). To make this as low stakes as possible, here is an outline you may follow when putting together your presentation."
+    "objectID": "lessons/12-colloquium/slides.html#who-we-are",
+    "href": "lessons/12-colloquium/slides.html#who-we-are",
+    "title": "Reproducibility & Data Science in R Colloqium",
+    "section": "Who we are",
+    "text": "Who we are\nCommunications & Cyber Technologies Data Science Team.\n\n\n\n\n\n\n\n\n\nKristina Riemer\n\n\n\n\n\n\n\nChistophe Schnaufer\n\n\n\n\n\n\n\n\n\nEric Scott\n\n\n\n\n\n\n\nRenata Diaz"
   },
   {
-    "objectID": "colloquium.html#footnotes",
-    "href": "colloquium.html#footnotes",
-    "title": "Reproducibility Colloquium",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThis is a good opportunity to practice an elevator pitch! Try to keep it to just a couple sentences—just enough background to give some context to your data and code. The goal of the presentation is to focus on your project organization and reproducibility, not the details of your research topic.↩︎"
+    "objectID": "lessons/12-colloquium/slides.html#what-we-offer",
+    "href": "lessons/12-colloquium/slides.html#what-we-offer",
+    "title": "Reproducibility & Data Science in R Colloqium",
+    "section": "What we offer",
+    "text": "What we offer\n\n\n\n\nWorkshops\n\nMonthly, on various topics\nPast workshops on \n\n\n\n\nIncubator\n\nCollaboration on short-term or preliminary projects\n“Pre-funded” (i.e. free for ALVSCE researchers)\n\n\n\n\n\nProposals & Collaboration\n\nHelp with grant-writing (e.g. data mangement plans)\nLonger-term funded projects\n\n\n\n\nDrop-in hours\n\nVirtually, every Tuesday at 9am"
   },
   {
-    "objectID": "lessons/10-get-credit/notes.html",
-    "href": "lessons/10-get-credit/notes.html",
-    "title": "Getting Credit For Your Hard Work",
-    "section": "",
-    "text": "Add a basic CITATION.cff file to your repo\nPractice the wrap-up steps to publish/archive a research compendium with a DOI.\nUnderstand concept of a reproducible computational environment.\nLearn renv and discuss Docker (concept)."
+    "objectID": "lessons/12-colloquium/slides.html#reproducibility-data-science-in-r",
+    "href": "lessons/12-colloquium/slides.html#reproducibility-data-science-in-r",
+    "title": "Reproducibility & Data Science in R Colloqium",
+    "section": "Reproducibility & Data Science in R",
+    "text": "Reproducibility & Data Science in R\n\n\nOffered every fall by application only\nTopics covered include:\n\nOrganizing a research compendium\nReproducible reports & manuscripts\nVersion control with git and GitHub\nData wrangling and programming with R\nArchiving data and code"
   },
   {
-    "objectID": "lessons/10-get-credit/notes.html#objective",
-    "href": "lessons/10-get-credit/notes.html#objective",
-    "title": "Getting Credit For Your Hard Work",
-    "section": "",
-    "text": "Add a basic CITATION.cff file to your repo\nPractice the wrap-up steps to publish/archive a research compendium with a DOI.\nUnderstand concept of a reproducible computational environment.\nLearn renv and discuss Docker (concept)."
-  },
-  {
-    "objectID": "lessons/10-get-credit/notes.html#lesson-outline",
-    "href": "lessons/10-get-credit/notes.html#lesson-outline",
-    "title": "Getting Credit For Your Hard Work",
-    "section": "Lesson Outline",
-    "text": "Lesson Outline\n\nWhy share code?\n\nFacilitate discussion\nShow figure from Maitner et al. (2023)\nHigher citations\nTo “pay it forward” to other researchers\nTo demonstrate your skills\nTo facilitate error correction\n\nGetting credit for code\n\nCode is not cited often, but partly because it’s not made easy to cite\n\nCITATION.cff\n\nShow CITATION.cff files for this repo and maybe one for a research compendium\nShow “cite this” button on GitHub\nEveryone use CITATION.cff creation tool CFFINIT to create a basic CITATION.cff\nMaybe mention cffr::cff_validate()\n\nArchiving\n\nExercise: guide everyone through archiving a repo with Zenodo using sandbox.zenodo.org\nAdd DOI badge to readme\nUpdate CITATION.cff with DOI\n\nrenv\n\nDiscuss why\nAsk students to activate renv for a project and inspect files it creates\nExplain how renv works, especially renv::status() , and renv::snapshot()\nClone demo repo with renv files\n\nShow that no packages are available initially (project is isolated)\nrun renv::restore()\n\n\nDocker (if time)\n\nConceptual overview of what it is\nDiscuss how tools like renv and Docker both help and hinder reproducibility"
-  },
-  {
-    "objectID": "lessons/10-get-credit/notes.html#homework",
-    "href": "lessons/10-get-credit/notes.html#homework",
-    "title": "Getting Credit For Your Hard Work",
-    "section": "Homework",
-    "text": "Homework\n\nPrep for reproducibility colloquium"
-  },
-  {
-    "objectID": "lessons/11-getting-help/notes.html",
-    "href": "lessons/11-getting-help/notes.html",
-    "title": "Getting help",
-    "section": "",
-    "text": "Slides"
-  },
-  {
-    "objectID": "lessons/11-getting-help/notes.html#objectives",
-    "href": "lessons/11-getting-help/notes.html#objectives",
-    "title": "Getting help",
-    "section": "Objectives",
-    "text": "Objectives\n\nKnow your options for finding help\nUnderstand how to create a minimal reproducible example to get better help"
-  },
-  {
-    "objectID": "lessons/11-getting-help/notes.html#live-codingdiscussion-options-for-finding-help",
-    "href": "lessons/11-getting-help/notes.html#live-codingdiscussion-options-for-finding-help",
-    "title": "Getting help",
-    "section": "Live coding/discussion: options for finding help",
-    "text": "Live coding/discussion: options for finding help\n\n--help flag\nman pages\n? in R\nPackage websites (found with google or through CRAN page)\n\nThese often are the same material as help files + vignettes, but easier to read and examples are rendered on web\n\nStackOverflow\n\nPeople aren’t always the friendliest, but making a reprex helps you get good answers\n\nMinimal reproducible examples with reprex\n\nDemo RStudio addin\n\nChatGPT\n\nNot recommended for beginners!\nSometimes (~50% by some estimates) gives the wrong answer, difficult to spot mistakes if you’re a beginner"
-  },
-  {
-    "objectID": "lessons/12-drop-in/notes.html",
-    "href": "lessons/12-drop-in/notes.html",
-    "title": "Drop-in / Q&A",
-    "section": "",
-    "text": "We asked learners to vote on the following topics for a mini-lesson for the last session before the show-and-tell session:\nThey overwhelmingly chose #3"
-  },
-  {
-    "objectID": "lessons/12-drop-in/notes.html#targets",
-    "href": "lessons/12-drop-in/notes.html#targets",
-    "title": "Drop-in / Q&A",
-    "section": "Targets",
-    "text": "Targets\n\nShow slides from part 1 of previous targets workshop\nDemo repo (targets version on a branch): https://github.com/cct-datascience/targets-demo/tree/with-targets\n\nExplore files\n\nR/\n_targets.R\n\nDemonstrate tar_visnetwork(), tar_make(), tar_read()\n\nInvestigate _targets/\n\nDemonstrating invalidating a target by adding species to the model fit by lm() in one of the functions in fit_models.R.\n\nre-run tar_visnetwork() and tar_make()\n\n\nExplore a medium complexity targets project on GitHub: https://github.com/ecohealthalliance/mpx-diagnosis\n\nmaybe try to reproduce it\n\nMention that targets can be configured to work on UA HPC to run individual targets as SLURM jobs or multiple cores with Open on Demand.\n\nOpen on Demand example: https://github.com/cct-datascience/targets-uahpc\n\nDirect people to targets manual and discussions"
-  },
-  {
-    "objectID": "lessons/12-drop-in/notes.html#executing-r-code-in-the-shell-shell-code-in-r",
-    "href": "lessons/12-drop-in/notes.html#executing-r-code-in-the-shell-shell-code-in-r",
-    "title": "Drop-in / Q&A",
-    "section": "Executing R code in the shell / shell code in R",
-    "text": "Executing R code in the shell / shell code in R\n\nExample of running R and Python scripts from bash:\nRscript 01-save_penguins.R\nbash 02-rename_penguins.sh\npython 03-print_penguins.py\nExample of multi-lingual quarto doc"
+    "objectID": "lessons/12-colloquium/slides.html#get-in-touch",
+    "href": "lessons/12-colloquium/slides.html#get-in-touch",
+    "title": "Reproducibility & Data Science in R Colloqium",
+    "section": "Get in touch!",
+    "text": "Get in touch!\n datascience.cct.arizona.edu\n cct-datascience@arizona.edu\n @cct_datascience@fosstodon.org\n youtube.com/@uofa-cctdatascience\n\n\n\n\nReproduciblity & Data Science in R"
   },
   {
     "objectID": "lessons/2-markdown-quarto/slides.html#review-of-last-lesson",
@@ -1712,7 +1600,7 @@
     "href": "index.html#schedule",
     "title": "Reproducibility and Data Science in R",
     "section": "Schedule",
-    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11 a.m.to 1 p.m. via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n\nslides\n\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n\nslides\n\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n\nguidelines"
+    "text": "Schedule\nWe’ll meet on Tuesdays and Thursdays from 11 a.m.to 1 p.m. via Zoom (link pinned in Slack channel)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nDate\nTheme\nTopic\nLinks\n\n\n\n\n1\nTue, 9/3\nManage & Organize\nProject managment and documentation\n\nslides\n\n\n\n2\nThu, 9/5\nDocument & Publish\nLiterate programming with Quarto\n\nslides\nexample qmd (also includes .bib file)\n\n\n\n3\nTue, 9/10\nShare & Collaborate\nFile systems and command line\n\nslides\n\n\n\n4\nThu, 9/12\nShare & Collaborate\nVersion control with git\n\nslides\n\n\n\n5\nTue, 9/17\nShare & Collaborate\nDeveloping code on GitHub\n\nslides\n\n\n\n6\nThu, 9/19\nShare & Collaborate\nCollaborating with GitHub\n\nslides\n\n\n\n7\nTue, 9/24\nTidy & Wrangle\nData manipulation & coding best practices\n\nslides\n\n\n\n8\nThu, 9/26\nRepeat & Reproduce\nIntermediate R programming I\n\nslides\n\n\n\n9\nTue, 10/1\nRepeat & Reproduce\nIntermediate R programming II\n\nslides\n\n\n\n10\nThu, 10/3\nDocument & Publish\nGetting credit for your hard work\n\nslides\n\n\n\n11\nTue, 10/8\nReview\nDrop-in co-working\n—\n\n\n12\nThu, 10/10\nReproducibility Colloquium\nAn opportunity for you to show off what you've learned\n\nguidelines\nslides"
   },
   {
     "objectID": "index.html#code-of-conduct",
