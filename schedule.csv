@@ -10,4 +10,4 @@ Lesson,Date,Theme,Topic,Links,Notes
 9,2024-10-01,Repeat & Reproduce,Intermediate R programming II,[slides](lessons/9-intermediate-r-2/slides.html),iteration 
 10,2024-10-03,Document & Publish,Getting credit for your hard work,[slides](lessons/10-get-credit/slides.html),"renv, LICENSE, CITATION.cff, Zenodo, GitHub releases"
 11,2024-10-08,Review,Drop-in co-working,,
-12,2024-10-10,Reproducibility Colloquium,An opportunity for you to show off what you've learned,[guidelines](lessons/12-colloquium/guidelines.html),
+12,2024-10-10,Reproducibility Colloquium,An opportunity for you to show off what you've learned,"[guidelines](lessons/12-colloquium/guidelines.html), [slides](lessons/12-colloquium/slides.html)",
