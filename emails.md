@@ -59,3 +59,25 @@ These are some example template emails that can be used for communicating with a
 >
 > \
 > - Eric & Renata
+
+## Wrap-up
+
+To send to all learners after the last session.
+
+> Thank you all for participating in the CCT Data Science Reproducibility & Data Science in R workshop series!
+> It was really wonderful working with you all for the past 6 weeks and we appreciate your questions and comments.
+> Please help us improve this workshop series by taking a [short survey](https://docs.google.com/forms/d/e/1FAIpQLSf_WNPLH-sp01r5Pqdjh_g0udjDrca0DzqinAa2Ts4ukKF77A/viewform?usp=sf_link).
+> We hope you'll encourage your lab-mates to apply to attend this workshop series when we offer it again in Fall 2025.
+>
+> In case you missed it, we recorded the presentations made at our wrap-up Reproducibility Colloquium—feel free to share [the recording](https://youtu.be/EHFsg4KMYrI).
+>
+> Although we won't be meeting formally as a group again, you'll all retain access to our Slack channel and are encouraged to use it.
+> I'd also like to encourage you to help answer questions in the [#r-help](https://uadatascience.slack.com/archives/C97MTTD40) and [#git](https://uadatascience.slack.com/archives/C9HLKM8DS) channels.
+> All of the recordings of our sessions will also remain on YouTube on this [unlisted playlist](https://www.youtube.com/playlist?list=PLt1LZzVO-Voc9ji8i4RyYfXRWECmwOUP9) and you can access the slides on our [workshop website](https://cct-datascience.github.io/repro-data-sci/).
+>
+> You are also welcome to come by our [drop-in hours](https://datascience.cct.arizona.edu/drop-in-hours) every Tuesday morning to get help with any of the topics we covered in the workshop series (and more!).
+> Our group can also help out in more hands-on ways—you can see some examples of past [data science incubator](https://datascience.cct.arizona.edu/incubator) projects and [other collaborations](https://datascience.cct.arizona.edu/projects) on our website.
+>
+> See you around, and please reach out with any questions or suggestions!
+>
+> -Eric
